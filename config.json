@@ -1,0 +1,8 @@
+{
+  "siteName": "PickRadar",
+  "baseUrl": "",
+  "adsenseClient": "",
+  "contactEmail": "",
+  "defaultLang": "en",
+  "langs": ["en", "tr", "id", "es", "pt"]
+}
