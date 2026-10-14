@@ -1568,5 +1568,48 @@
     "url": "https://www.mlcounters.app/patch",
     "date": "2026-10-14",
     "scope": "ranked"
+  },
+  "emblemOptions": {
+    "set": [
+      "Common",
+      "Tank",
+      "Fighter",
+      "Assassin",
+      "Mage",
+      "Marksman",
+      "Support"
+    ],
+    "t1": [
+      "Thrill",
+      "Swift",
+      "Vitality",
+      "Rupture",
+      "Inspire",
+      "Firmness",
+      "Agility",
+      "Fatal"
+    ],
+    "t2": [
+      "Wilderness Blessing",
+      "Seasoned Hunter",
+      "Tenacity",
+      "Master Assassin",
+      "Bargain Hunter",
+      "Festival of Blood",
+      "Pull Yourself Together",
+      "Weapon Master"
+    ],
+    "core": [
+      "Impure Rage",
+      "Quantum Charge",
+      "War Cry",
+      "Temporal Reign",
+      "Concussive Blast",
+      "Killing Spree",
+      "Lethal Ignition",
+      "Brave Smite",
+      "Focusing Mark",
+      "Weakness Finder"
+    ]
   }
 }

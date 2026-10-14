@@ -189,6 +189,57 @@
     return Math.max(0, Math.min(100, Math.round((sum / team.length) * 10 - bad * 6)));
   }
 
+  /* ---------- Build editing and scoring (draft practice) ---------- */
+  const CKEY = { antiheal: 'r_antiheal', magic: 'r_magic', magicHeavy: 'r_magic', basic: 'r_basic', phys: 'r_phys', burst: 'r_burst' };
+  function itemReasons(data, item) {
+    const C = data.counters || {}, out = new Set();
+    for (const k in C) {
+      if (k === 'ccBoots') { if (C[k] === item) out.add('r_cc'); continue; }
+      if (k === 'purify' || !C[k] || typeof C[k] !== 'object') continue;
+      if (Object.values(C[k]).includes(item)) out.add(k === 'pen' ? (/Void|Glaive|mpen/.test(item) ? 'r_mpen' : 'r_pen') : CKEY[k]);
+    }
+    return [...out].filter(Boolean);
+  }
+  function itemOptions(data) {
+    const set = new Set();
+    Object.values(data.archetypes || {}).forEach(a => (a.items || []).forEach(i => set.add(i)));
+    (data.heroes || []).forEach(h => (h.build || []).forEach(i => set.add(i)));
+    const C = data.counters || {};
+    Object.entries(C).forEach(([k, v]) => { if (k === 'ccBoots' && v) set.add(v); else if (v && typeof v === 'object') Object.values(v).forEach(i => i && set.add(i)); });
+    return [...set].sort((a, b) => a.localeCompare(b));
+  }
+  function buildScore(data, hero, enemy, items, emblem) {
+    const rec = mlBuild(data, hero, enemy);
+    const need = [...new Set(rec.items.filter(x => x.adapt && x.reason).map(x => x.reason))];
+    const have = new Set(items.filter(Boolean).flatMap(i => itemReasons(data, i)));
+    const covered = need.filter(r => have.has(r));
+    const coverage = need.length ? covered.length / need.length : 1;
+    const h = mlIndex(data)[hero], a = data.archetypes[h.b];
+    const good = new Set([...rec.items.map(x => x.item), ...(h.build || []), ...(a.items || [])]);
+    const filled = items.filter(Boolean);
+    const unique = new Set(filled);
+    const overlap = filled.length ? [...unique].filter(i => good.has(i)).length / Math.max(6, filled.length) : 0;
+    let em = 1;
+    if (rec.emblem && emblem) {
+      const parts = ['set', 't1', 't2', 'core'].filter(k => rec.emblem[k]);
+      em = parts.filter(k => emblem[k] === rec.emblem[k]).length / parts.length;
+      if (emblem.core && emblem.core === rec.emblem.core) em = Math.max(em, 0.75);
+    }
+    const dupPenalty = (filled.length - unique.size) * 8;
+    const score = Math.max(0, Math.min(100, Math.round(45 * coverage + 40 * overlap + 15 * em - dupPenalty)));
+    return { score, missing: need.filter(r => !have.has(r)), rec };
+  }
+  /* Heroes most worth banning in general: meta tier, sourced win rate, number of counter strengths. */
+  function banRank(data, taken) {
+    const TB = { S: 4, A: 3, B: 1, C: 0 };
+    return data.heroes.filter(h => !taken.includes(h.n)).map(h => ({ n: h.n, s: (TB[h.tier] || 0) + h.s.length * 0.6 + (h.wr ? (h.wr - 50) / 3 : 0) }))
+      .sort((a, b) => b.s - a.s || a.n.localeCompare(b.n));
+  }
+  function botBan(data, taken, rnd) {
+    const list = banRank(data, taken).slice(0, 6);
+    return list[Math.floor((rnd == null ? Math.random() : rnd) * list.length)];
+  }
+
   /* ---------- Brawl Stars ---------- */
   const BS_MATCH = {
     tank: { assassin: 2, damage: 1, support: 0.5, marksman: -1, controller: -1 },
@@ -285,6 +336,6 @@
     return best;
   }
 
-  const Engine = { ROLES, mlTeam, mlCounters, mlBans, mlBotPick, mlDraftRating, mlStats, mlScore, mlBuild, mlTips, mlCounterItems, mlStrongAgainst, bsScore, bsStrongAgainst, BS_MODES, FF_STYLE, FF_MODE, FF_THREAT, ffRank, ffCombo, ffBestStyle };
+  const Engine = { itemReasons, itemOptions, buildScore, botBan, banRank, ROLES, mlTeam, mlCounters, mlBans, mlBotPick, mlDraftRating, mlStats, mlScore, mlBuild, mlTips, mlCounterItems, mlStrongAgainst, bsScore, bsStrongAgainst, BS_MODES, FF_STYLE, FF_MODE, FF_THREAT, ffRank, ffCombo, ffBestStyle };
   if (typeof module !== 'undefined' && module.exports) module.exports = Engine; else root.Engine = Engine;
 })(typeof window !== 'undefined' ? window : globalThis);

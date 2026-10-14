@@ -151,14 +151,21 @@ ${isMoba ? `<section id="buildsec"><h2>${esc(t.yourHero)}</h2><div class="heroli
       write(`${gp}/index.html`, layout({ lang, rel: `${gp}/`, title: `${gameTitle(g)} · ${cfg.siteName}`, desc: gameDesc(g), active: g.id, body, app }));
 
       if (isMoba) write(`${gp}/draft/index.html`, layout({
-        lang, rel: `${gp}/draft/`, active: g.id, app: { lang, game: g.id, kind: 'draft', t: tSub, data: D },
+        lang, rel: `${gp}/draft/`, active: g.id, app: { lang, game: g.id, kind: 'draft', t: tSub, data: D, itemsTr: lang === 'tr' && g.id === 'mlbb' ? ITEMS_TR : null },
         title: `${tt('draftTitle', { g: g.name })} · ${cfg.siteName}`, desc: t.draftDesc,
         body: `<section><h1>${esc(tt('draftTitle', { g: g.name }))}</h1><p class="lead">${esc(t.draftDesc)}</p></section>
+<section><div class="row seg"><span class="note">${esc(t.dMode)}:</span><span class="row seg" id="dmodeSeg"></span></div>
+<div class="row seg" id="banRow" style="margin-top:8px"><span class="note">${esc(t.banCount)}:</span><span class="row seg" id="banSeg"></span></div>
+<p class="note" id="classicNote" hidden>${esc(t.classicNote)}</p></section>
+<section id="banBox"><div class="teams"><div class="team"><b>${esc(t.yourBans)}</b><div class="slots bans" id="dmeBan"></div></div>
+<div class="team"><b>${esc(t.botBans)}</b><div class="slots bans" id="dbotBan"></div></div></div></section>
 <section><div class="teams"><div class="team"><b>${esc(t.draftYou)}</b><div class="slots" id="dme" style="grid-template-columns:repeat(5,1fr)"></div></div>
 <div class="team"><b>${esc(t.draftBot)}</b><div class="slots" id="dbot" style="grid-template-columns:repeat(5,1fr)"></div></div></div>
 <p class="status" id="status" aria-live="polite"></p><ul class="tips" id="dlog" style="margin:0"></ul></section>
-<section id="pickbox"><h2>${esc(t.suggestForYou)}</h2><div class="pool" id="sugg" style="max-height:none"></div>
+<section id="pickbox"><h2 id="suggHead"></h2><div class="pool" id="sugg" style="max-height:none"></div>
 <input id="q" type="search" placeholder="${esc(t.search)}" autocomplete="off" aria-label="${esc(t.search)}"><div class="pool" id="pool"></div></section>
+<section class="card" id="prep" hidden></section>
+<section class="card" id="botBuilds" hidden></section>
 <section class="card" id="result" hidden></section>
 <div class="bar"><button class="btn" id="again" type="button">${esc(t.draftAgain)}</button><a class="btn ghost" href="/${gp}/">${esc(gameTitle(g))}</a></div>`
       }));

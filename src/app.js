@@ -223,53 +223,136 @@
 
   /* ---------- Draft practice vs AI ---------- */
   function draftTool() {
-    const heroes = A.data.heroes, all = heroes.map(h => h.n), roleOf = Object.fromEntries(heroes.map(h => [h.n, h.r]));
+    const D = A.data, heroes = D.heroes, all = heroes.map(h => h.n), roleOf = Object.fromEntries(heroes.map(h => [h.n, h.r]));
     const ORDER = ['B', 'R', 'R', 'B', 'B', 'R', 'R', 'B', 'B', 'R'];
-    let me = [], bot = [], step = 0, log = [];
-    const taken = () => [...me, ...bot];
-    function slots(id, arr, cls) {
-      const box = $(id); box.innerHTML = '';
-      for (let i = 0; i < 5; i++) { const n = arr[i]; box.appendChild(el('div', { class: 'slot' + (n ? ' ' + cls : '') }, n ? I.hero(n, roleOf[n], 26) + '<span>' + esc(n) + '</span>' : esc(t('emptySlot')))); }
+    const OPTS = E.itemOptions(D), EM = D.emblemOptions || null;
+    const cfg = load({ dmode: 'ranked', bans: 3 });
+    let me, bot, myBans, botBans, phase, step, log, pending, prep;
+    const banned = () => [...myBans, ...botBans];
+    /* Ranked: nobody can take a banned hero or one already picked by either side. Classic: only your own picks are blocked. */
+    const blockedFor = side => cfg.dmode === 'ranked' ? [...banned(), ...me, ...bot] : (side === 'B' ? me : bot);
+    function reset() {
+      me = []; bot = []; myBans = []; botBans = []; step = 0; log = []; pending = false; prep = null;
+      phase = cfg.dmode === 'ranked' ? 'ban' : 'pick';
+      save(cfg); render();
     }
-    let pending = false;
-    function botTurn() {
+    const banOrder = () => Array.from({ length: cfg.bans * 2 }, (_, i) => i % 2 ? 'R' : 'B');
+    function slots(id, arr, n, cls) {
+      const box = $(id); box.innerHTML = '';
+      for (let i = 0; i < n; i++) { const x = arr[i]; box.appendChild(el('div', { class: 'slot' + (x ? ' ' + cls : '') }, x ? I.hero(x, roleOf[x], 26) + '<span>' + esc(x) + '</span>' : esc(t('emptySlot')))); }
+    }
+    function seg(id, items, cur, on) {
+      const box = $(id); box.innerHTML = '';
+      items.forEach(([k, label]) => { const b = el('button', { type: 'button', 'aria-pressed': String(k) === String(cur) }, esc(label)); b.onclick = () => on(k); box.appendChild(b); });
+    }
+    function botAct() {
       if (pending) return; pending = true;
-      $('status').textContent = t('draftTurnBot');
+      $('status').textContent = phase === 'ban' ? t('botBanning') : t('draftTurnBot');
       setTimeout(() => {
         pending = false;
-        const p = E.mlBotPick(A.data, me, bot, taken());
-        bot.push(p.n); log.unshift(t('botPicked', { x: p.n }) + (p.why.length ? ': ' + [...new Set(p.why.map(k => t(k)))].slice(0, 2).join(' · ') : ''));
-        step++; render();
-      }, 650);
+        if (phase === 'ban') {
+          const b = E.botBan(D, [...banned(), ...me, ...bot]);
+          botBans.push(b.n); log.unshift(t('botBanned', { x: b.n }));
+        } else {
+          const p = E.mlBotPick(D, me, bot, blockedFor('R'));
+          bot.push(p.n); log.unshift(t('botPicked', { x: p.n }) + (p.why.length ? ': ' + [...new Set(p.why.map(k => t(k)))].slice(0, 2).join(' · ') : ''));
+        }
+        advance();
+      }, 600);
+    }
+    function advance() {
+      step++;
+      if (phase === 'ban' && step >= banOrder().length) { phase = 'pick'; step = 0; }
+      else if (phase === 'pick' && step >= ORDER.length) { phase = 'done'; prep = null; }
+      render();
+    }
+    function userChoose(n) {
+      if (phase === 'ban') myBans.push(n); else me.push(n);
+      $('q').value = ''; advance();
     }
     function render() {
-      slots('dme', me, 'ally'); slots('dbot', bot, 'on');
+      seg('dmodeSeg', [['ranked', t('dRanked')], ['classic', t('dClassic')]], cfg.dmode, k => { cfg.dmode = k; reset(); });
+      seg('banSeg', [[3, '3'], [5, '5']], cfg.bans, k => { cfg.bans = k; reset(); });
+      $('banRow').hidden = cfg.dmode !== 'ranked';
+      $('classicNote').hidden = cfg.dmode === 'ranked';
+      $('banBox').hidden = cfg.dmode !== 'ranked';
+      slots('dmeBan', myBans, cfg.bans, 'banned'); slots('dbotBan', botBans, cfg.bans, 'banned');
+      slots('dme', me, 5, 'ally'); slots('dbot', bot, 5, 'on');
       $('dlog').innerHTML = log.slice(0, 4).map(l => '<li>' + esc(l) + '</li>').join('');
-      const done = step >= ORDER.length, myTurn = !done && ORDER[step] === 'B';
-      $('status').textContent = done ? t('draftDone') : myTurn ? t('draftTurnYou') : t('draftTurnBot');
+      const order = phase === 'ban' ? banOrder() : ORDER;
+      const done = phase === 'done', myTurn = !done && order[step] === 'B';
+      $('status').textContent = done ? t('draftDone') : myTurn ? (phase === 'ban' ? t('phaseBan') : t('draftTurnYou')) : (phase === 'ban' ? t('botBanning') : t('draftTurnBot'));
+      $('pickbox').hidden = done;
+      const blocked = phase === 'ban' ? [...banned(), ...me, ...bot] : blockedFor('B');
       const q = $('q').value.trim().toLowerCase(), pool = $('pool'); pool.innerHTML = '';
       all.filter(n => !q || n.toLowerCase().includes(q)).forEach(n => {
-        const b = chipOf(n, roleOf[n]); b.disabled = !myTurn || taken().includes(n);
-        b.onclick = () => { me.push(n); $('q').value = ''; step++; render(); };
-        pool.appendChild(b);
+        const b = chipOf(n, roleOf[n], banned().includes(n) ? 'isbanned' : ''); b.disabled = !myTurn || blocked.includes(n);
+        b.onclick = () => userChoose(n); pool.appendChild(b);
       });
-      $('pickbox').hidden = done;
+      $('suggHead').textContent = phase === 'ban' ? t('banSugg') : t('suggestForYou');
       const sg = $('sugg'); sg.innerHTML = '';
-      if (myTurn) E.mlScore(A.data, bot, null, me).filter(x => !taken().includes(x.n)).slice(0, 3).forEach(r => {
-        const b = chipOf(r.n, roleOf[r.n], 'mine'); b.onclick = () => { me.push(r.n); step++; render(); }; sg.appendChild(b);
-      });
-      const res = $('result');
-      res.hidden = !done;
-      if (done) {
-        const a = E.mlDraftRating(A.data, me, bot), b = E.mlDraftRating(A.data, bot, me);
-        const verdict = Math.abs(a - b) <= 2 ? t('draftDraw') : a > b ? t('draftWin') : t('draftLose');
-        res.innerHTML = '<h2>' + esc(t('draftRating')) + '</h2><div class="score-row"><span><b>' + esc(t('draftYou')) + '</b> <span class="big good">' + a + '</span></span><span><b>' + esc(t('draftBot')) + '</b> <span class="big bad">' + b + '</span></span></div><p class="lead" style="margin:6px 0 14px">' + esc(verdict) + '</p><div class="teams">' + teamBlock(t('allySide'), me, true) + teamBlock(t('enemySide'), bot, false) + '</div>';
+      if (myTurn) {
+        const list = phase === 'ban'
+          ? (me.length ? E.mlBans(D, me, blocked).map(x => x.n) : []).concat(E.banRank(D, blocked).map(x => x.n))
+          : E.mlScore(D, bot, null, me).map(x => x.n);
+        [...new Set(list)].filter(n => !blocked.includes(n)).slice(0, 3).forEach(n => {
+          const b = chipOf(n, roleOf[n], 'mine'); b.onclick = () => userChoose(n); sg.appendChild(b);
+        });
       }
-      if (!done && !myTurn) botTurn();
+      renderResult(done);
+      if (!done && !myTurn) botAct();
+    }
+    /* ----- match prep: items and emblem ----- */
+    function initPrep(hero) {
+      const rec = E.mlBuild(D, hero, bot);
+      prep = { hero, items: rec.items.map(x => x.item).concat(Array(6).fill(null)).slice(0, 6), emblem: Object.assign({}, rec.emblem || {}), slot: null };
+    }
+    function renderPrep() {
+      if (!prep || !me.includes(prep.hero)) initPrep(me[0]);
+      const box = $('prep');
+      const sel = '<select class="lang" id="prepHero" aria-label="' + esc(t('prepHero')) + '">' + me.map(n => '<option' + (n === prep.hero ? ' selected' : '') + '>' + esc(n) + '</option>').join('') + '</select>';
+      const items = prep.items.map((it, i) => '<li class="' + (prep.slot === i ? 'adapt' : '') + '"><button type="button" class="slotbtn" data-i="' + i + '">' + (it ? I.item(it, 30) + '<span class="iname">' + esc(itemName(it)) + '<small class="why">' + esc(E.itemReasons(D, it).map(r => t(r)).join(' · ') || t('core')) + '</small></span>' : '<span class="iname">+ ' + esc(t('pickItemFor', { n: i + 1 })) + '</span>') + '</button></li>').join('');
+      let emHtml = '';
+      if (EM) {
+        const keys = Object.keys(EM);
+        emHtml = '<h2 style="margin:16px 0 10px">' + esc(EM.set ? t('emblemTitle') : t('runeTitle')) + '</h2><div class="emsel">' + keys.map(k =>
+          '<label><span class="note">' + esc(k === 'core' && !EM.set ? t('runeTitle') : t('em_' + k)) + '</span><span class="emrow">' + I.talent(prep.emblem[k] || '', 26) + '<select class="lang" data-k="' + k + '">' + EM[k].map(o => '<option' + (o === prep.emblem[k] ? ' selected' : '') + '>' + esc(o) + '</option>').join('') + '</select></span></label>').join('') + '</div>';
+      }
+      const sc = E.buildScore(D, prep.hero, bot, prep.items, EM ? prep.emblem : null);
+      const fit = '<div class="score-row" style="margin-top:14px"><span><b>' + esc(t('buildFit')) + '</b> <span class="big ' + (sc.score >= 70 ? 'good' : sc.score >= 45 ? 'mid' : 'bad') + '">' + sc.score + '</span></span></div>' +
+        (sc.missing.length ? '<ul class="warn">' + sc.missing.map(r => '<li>' + esc(t('missing', { x: t(r) })) + '</li>').join('') + '</ul>' : '<ul class="warn"><li class="ok">' + esc(t('buildGood')) + '</li></ul>');
+      const picker = prep.slot != null ? '<div class="card" style="margin-top:10px"><p class="note" style="margin:0 0 8px">' + esc(t('pickItemFor', { n: prep.slot + 1 })) + '</p><div class="pool" style="max-height:240px">' +
+        OPTS.map(o => '<button type="button" class="chip itemopt" data-o="' + esc(o) + '">' + I.item(o, 18) + '<span>' + esc(itemName(o)) + '</span></button>').join('') + '</div><button class="btn ghost" type="button" id="pickCancel" style="margin-top:8px">' + esc(t('cancel')) + '</button></div>' : '';
+      box.innerHTML = '<h2>' + esc(t('prepTitle')) + '</h2><p class="note">' + esc(t('prepHint')) + '</p><div class="heroline" style="margin-bottom:12px">' + I.hero(prep.hero, roleOf[prep.hero], 40) + sel +
+        '<button class="btn ghost" type="button" id="autoFill">' + esc(t('autoFill')) + '</button></div><ol class="build">' + items + '</ol>' + picker + emHtml + fit;
+      $('prepHero').onchange = e => { initPrep(e.target.value); renderResult(true); };
+      $('autoFill').onclick = () => { initPrep(prep.hero); renderResult(true); };
+      box.querySelectorAll('.slotbtn').forEach(b => b.onclick = () => { prep.slot = +b.dataset.i; renderResult(true); });
+      box.querySelectorAll('.itemopt').forEach(b => b.onclick = () => { prep.items[prep.slot] = b.dataset.o; prep.slot = null; renderResult(true); });
+      if ($('pickCancel')) $('pickCancel').onclick = () => { prep.slot = null; renderResult(true); };
+      box.querySelectorAll('.emsel select').forEach(s => s.onchange = () => { prep.emblem[s.dataset.k] = s.value; renderResult(true); });
+      return sc.score;
+    }
+    function renderResult(done) {
+      const res = $('result'), prepBox = $('prep'), botB = $('botBuilds');
+      res.hidden = prepBox.hidden = botB.hidden = !done;
+      if (!done) return;
+      const myBuild = renderPrep();
+      botB.innerHTML = '<h2>' + esc(t('botBuilds')) + '</h2>' + bot.map(n => {
+        const b = E.mlBuild(D, n, me);
+        return '<div class="botbuild">' + I.hero(n, roleOf[n], 28) + '<b>' + esc(n) + '</b><span class="icons">' + b.items.map(x => '<span title="' + esc(itemName(x.item)) + '">' + I.item(x.item, 24) + '</span>').join('') + '</span></div>';
+      }).join('');
+      const a = E.mlDraftRating(D, me, bot), b = E.mlDraftRating(D, bot, me);
+      const botBuild = Math.round(bot.reduce((s, n) => { const r = E.mlBuild(D, n, me); return s + E.buildScore(D, n, me, r.items.map(x => x.item), r.emblem).score; }, 0) / bot.length);
+      const ta = Math.round(a * 0.75 + myBuild * 0.25), tb = Math.round(b * 0.75 + botBuild * 0.25);
+      const verdict = Math.abs(ta - tb) <= 2 ? t('draftDraw') : ta > tb ? t('draftWin') : t('draftLose');
+      res.innerHTML = '<h2>' + esc(t('draftRating')) + '</h2><div class="score-row"><span><b>' + esc(t('draftYou')) + '</b> <span class="big good">' + a + '</span></span><span><b>' + esc(t('draftBot')) + '</b> <span class="big bad">' + b + '</span></span></div>' +
+        '<h2 style="margin-top:14px">' + esc(t('total')) + '</h2><div class="score-row"><span><b>' + esc(t('draftYou')) + '</b> <span class="big good">' + ta + '</span></span><span><b>' + esc(t('draftBot')) + '</b> <span class="big bad">' + tb + '</span></span></div>' +
+        '<p class="lead" style="margin:6px 0 14px">' + esc(verdict) + '</p><div class="teams">' + teamBlock(t('allySide'), me, true) + teamBlock(t('enemySide'), bot, false) + '</div>';
     }
     $('q').oninput = render;
-    $('again').onclick = () => { me = []; bot = []; step = 0; log = []; render(); };
-    render();
+    $('again').onclick = reset;
+    reset();
   }
 
   /* ---------- Free Fire tool ---------- */

@@ -1055,5 +1055,21 @@
       "tier": null
     }
   ],
-  "emblemLabel": "rune"
+  "emblemLabel": "rune",
+  "emblemOptions": {
+    "core": [
+      "Conqueror",
+      "Electrocute",
+      "Lethal Tempo",
+      "Fleet Footwork",
+      "Aftershock",
+      "Grasp of the Undying",
+      "Summon Aery",
+      "Arcane Comet",
+      "Phase Rush",
+      "Glacial Augment",
+      "Dark Harvest",
+      "First Strike"
+    ]
+  }
 }
