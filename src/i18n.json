@@ -189,7 +189,7 @@
   "fp_best": "{x} için önerilen kombinasyon",
   "fp_style": "En uygun oyun tarzı",
   "say_ff": "Aktif yetenek {a}. Pasifler: {p}.",
-  "news": "Yama Haberleri",
+  "news": "Yama Haberleri ve Rehberler",
   "newsDesc": "Mobil oyunlardaki son yamaların kendi yorumumuzla özetleri: kim güçlendi, kim zayıfladı, ne almalısın.",
   "latestNews": "Son yama özetleri",
   "readMore": "Devamını oku",
@@ -202,7 +202,11 @@
   "em_t2": "2. yetenek",
   "em_core": "Ana yetenek",
   "gearTitle": "Önerilen ekipman (gear)",
-  "say_emblem": "Amblem: {e}."
+  "say_emblem": "Amblem: {e}.",
+  "type_patch": "Yama",
+  "type_meta": "Meta raporu",
+  "type_guide": "Rehber",
+  "heroGuide": "Kahraman rehberi"
  },
  "en": {
   "langName": "English",
@@ -394,7 +398,7 @@
   "fp_best": "Suggested combination for {x}",
   "fp_style": "Best playstyle",
   "say_ff": "Active skill {a}. Passives: {p}.",
-  "news": "Patch News",
+  "news": "Patch News & Guides",
   "newsDesc": "Our own summaries of the latest mobile game patches: who got stronger, who got weaker, what to build.",
   "latestNews": "Latest patch summaries",
   "readMore": "Read more",
@@ -407,7 +411,11 @@
   "em_t2": "Talent 2",
   "em_core": "Core talent",
   "gearTitle": "Suggested gears",
-  "say_emblem": "Emblem: {e}."
+  "say_emblem": "Emblem: {e}.",
+  "type_patch": "Patch",
+  "type_meta": "Meta report",
+  "type_guide": "Guide",
+  "heroGuide": "Hero guide"
  },
  "id": {
   "langName": "Bahasa Indonesia",
@@ -599,7 +607,7 @@
   "fp_best": "Kombinasi yang disarankan untuk {x}",
   "fp_style": "Gaya bermain terbaik",
   "say_ff": "Skill aktif {a}. Pasif: {p}.",
-  "news": "Berita Patch",
+  "news": "Berita Patch & Panduan",
   "newsDesc": "Ringkasan kami sendiri tentang patch terbaru game mobile: siapa yang lebih kuat, siapa yang melemah, apa yang harus dibeli.",
   "latestNews": "Ringkasan patch terbaru",
   "readMore": "Baca selengkapnya",
@@ -612,7 +620,11 @@
   "em_t2": "Talent 2",
   "em_core": "Talent inti",
   "gearTitle": "Gear yang disarankan",
-  "say_emblem": "Emblem: {e}."
+  "say_emblem": "Emblem: {e}.",
+  "type_patch": "Patch",
+  "type_meta": "Laporan meta",
+  "type_guide": "Panduan",
+  "heroGuide": "Panduan hero"
  },
  "es": {
   "langName": "Español",
@@ -804,7 +816,7 @@
   "fp_best": "Combinación sugerida para {x}",
   "fp_style": "Mejor estilo de juego",
   "say_ff": "Habilidad activa {a}. Pasivas: {p}.",
-  "news": "Noticias de Parches",
+  "news": "Parches y Guías",
   "newsDesc": "Nuestros propios resúmenes de los últimos parches de juegos móviles: quién se fortaleció, quién se debilitó y qué comprar.",
   "latestNews": "Últimos resúmenes de parches",
   "readMore": "Leer más",
@@ -817,7 +829,11 @@
   "em_t2": "Talento 2",
   "em_core": "Talento principal",
   "gearTitle": "Equipo sugerido (gears)",
-  "say_emblem": "Emblema: {e}."
+  "say_emblem": "Emblema: {e}.",
+  "type_patch": "Parche",
+  "type_meta": "Informe del meta",
+  "type_guide": "Guía",
+  "heroGuide": "Guía de héroe"
  },
  "pt": {
   "langName": "Português",
@@ -1009,7 +1025,7 @@
   "fp_best": "Combinação sugerida para {x}",
   "fp_style": "Melhor estilo de jogo",
   "say_ff": "Habilidade ativa {a}. Passivas: {p}.",
-  "news": "Notícias de Patch",
+  "news": "Patches e Guias",
   "newsDesc": "Nossos próprios resumos dos últimos patches de jogos mobile: quem ficou mais forte, quem enfraqueceu e o que comprar.",
   "latestNews": "Últimos resumos de patch",
   "readMore": "Ler mais",
@@ -1022,6 +1038,10 @@
   "em_t2": "Talento 2",
   "em_core": "Talento principal",
   "gearTitle": "Equipamentos sugeridos (gears)",
-  "say_emblem": "Emblema: {e}."
+  "say_emblem": "Emblema: {e}.",
+  "type_patch": "Patch",
+  "type_meta": "Relatório de meta",
+  "type_guide": "Guia",
+  "heroGuide": "Guia de herói"
  }
 }

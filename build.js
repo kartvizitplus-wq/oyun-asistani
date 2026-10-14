@@ -79,7 +79,7 @@ ${appJs}<script src="/assets/icons.js"></script><script src="/assets/app.js"></s
 </html>`;
 }
 
-const newsCards = (lang, list) => list.length ? `<div class="newslist">${list.map(n => `<a class="newsitem" href="/${lang}/news/${n.slug}/"><span class="note">${esc(n.date)} · ${esc(GAMES.find(g => g.id === n.game)?.name || '')}</span><h3>${esc(n.title[lang] || n.title.en)}</h3><span class="note">${esc(n.summary[lang] || n.summary.en)}</span></a>`).join('')}</div>` : `<p class="note">${esc(I18N[lang].noNews)}</p>`;
+const newsCards = (lang, list) => list.length ? `<div class="newslist">${list.map(n => `<a class="newsitem" href="/${lang}/news/${n.slug}/"><span class="note">${esc(n.date)} · ${esc(GAMES.find(g => g.id === n.game)?.name || '')} · ${esc(I18N[lang]['type_' + (n.type || 'patch')] || '')}</span><h3>${esc(n.title[lang] || n.title.en)}</h3><span class="note">${esc(n.summary[lang] || n.summary.en)}</span></a>`).join('')}</div>` : `<p class="note">${esc(I18N[lang].noNews)}</p>`;
 
 for (const lang of cfg.langs) {
   const t = I18N[lang];
@@ -200,10 +200,10 @@ ${strong.length ? `<section><h2>${esc(tt('bp_strong', { x }))}</h2><p style="mar
     const title = n.title[lang] || n.title.en;
     write(`${lang}/news/${n.slug}/index.html`, layout({
       lang, rel: `${lang}/news/${n.slug}/`, active: 'news', type: 'article', title: `${title} · ${cfg.siteName}`, desc: n.summary[lang] || n.summary.en,
-      jsonld: { '@context': 'https://schema.org', '@type': 'NewsArticle', headline: title, datePublished: n.date, dateModified: n.date, inLanguage: lang, publisher: { '@type': 'Organization', name: cfg.siteName }, author: { '@type': 'Organization', name: cfg.siteName } },
+      jsonld: { '@context': 'https://schema.org', '@type': n.type === 'guide' ? 'Article' : 'NewsArticle', headline: title, datePublished: n.date, dateModified: n.date, inLanguage: lang, publisher: { '@type': 'Organization', name: cfg.siteName }, author: { '@type': 'Organization', name: cfg.siteName } },
       body: `<article class="prose"><p class="note">${esc(t.publishedOn)}: ${esc(n.date)}${g ? ' · ' + esc(g.full) : ''}</p><h1>${esc(title)}</h1>${blocks}
 ${n.sources && n.sources.length ? `<p class="note">${esc(n.sources.join(' · '))}</p>` : ''}</article>
-${g ? `<div class="bar"><a class="btn" href="/${lang}/${g.slug}/">${esc(t.openTool)} →</a></div>` : ''}`
+<div class="bar">${g && n.hero ? `<a class="btn ghost" href="/${lang}/${g.slug}/${slug(n.hero)}/">${esc(tt('hp_h1', { x: n.hero }))}</a>` : ''}${g ? `<a class="btn" href="/${lang}/${g.slug}/">${esc(t.openTool)} →</a>` : ''}</div>`
     }));
   }
 

@@ -1,8 +1,11 @@
 {
+  "type": "patch",
   "slug": "mlbb-patch-2-2-16",
   "date": "2026-10-14",
   "game": "mlbb",
-  "sources": ["Moonton official patch notes 2.2.16 (summaries: blooing.com, mlcounters.app)"],
+  "sources": [
+    "Moonton official patch notes 2.2.16 (summaries: blooing.com, mlcounters.app)"
+  ],
   "title": {
     "tr": "Mobile Legends 2.2.16 yaması: kim güçlendi, kim zayıfladı?",
     "en": "Mobile Legends patch 2.2.16: who got stronger, who got weaker?",
@@ -19,69 +22,234 @@
   },
   "body": {
     "tr": [
-      {"p": "Sezon 42 ile gelen 2.2.16 yaması 16 Eylül 2026'da yayınlandı ve 22 kahramanı etkiledi. Yıllık harita değişikliği de 28 Eylül'de oyuna eklendi. Aşağıda değişiklikleri kendi özetimizle ve oyuna etkisiyle birlikte bulabilirsin."},
-      {"h": "Güçlenenler"},
-      {"ul": ["Aulus: Becerileri artık normal saldırı etkisini tetikliyor ve her vuruşta can kazanıyor; ikinci becerinin ilk kullanımı sersemletiyor. Yamadan sonra en çok yükselen kahramanlardan biri.", "Alpha: Pasifi toplam fiziksel saldırıyla ölçekleniyor, ikinci becerinin iyileştirmesi yaklaşık iki katına çıktı.", "Argus: Pasif kritik şansı kazandı, canı azaldıkça ultisi daha güçlü vuruyor.", "Aldous: Kalkanı artık zamanla doluyor ve kalkan gelince hız kazanıyor.", "Lukas, Edith, Karina, Kaja, Cici ve Kalea da hasar, bekleme süresi veya iyileştirme tarafında güçlendirildi."]},
-      {"h": "Zayıflayanlar"},
-      {"ul": ["Melissa: Birinci becerinin saldırı hızı bonusu ve süresi azaldı.", "Miya: Pasif hasarı düştü, fazladan hasar veren bir hata düzeltildi.", "Hanabi: Aynı hedefe seken saldırılar her seferinde daha az vuruyor.", "Yi Sun-shin, Paquito ve Marcel de bekleme süresi veya hasar tarafında zayıfladı."]},
-      {"h": "Yeniden tasarlananlar"},
-      {"p": "Masha ve Bruno'nun becerileri baştan yazıldı. Sun ve Odette'de oynanışı değiştiren ayarlar var: Odette artık ultisi sırasında yavaşça hareket edebiliyor."},
-      {"h": "Harita değişiklikleri"},
-      {"p": "Çalılardaki gizli rakipleri gösteren yeni toplanabilir ışıklar geldi. İyileştiren Kaplumbağa artık kalkan vermiyor; bunun yerine en güçlü rakip koridorda takımına yardım eden bir müttefik kaplumbağa çıkarıyor. Altın Kule yıkıldığında takıma daha fazla altın veriyor."},
-      {"h": "Bizim yorumumuz"},
-      {"p": "EXP koridorunda Aulus ve Alpha şu an çok değerli. Nişancı tarafında Miya ve Melissa'nın düşüşüyle diğer seçenekler öne çıkıyor. Draft asistanımızdaki önerileri bu yamaya göre güncelledik."}
+      {
+        "p": "Sezon 42 ile gelen 2.2.16 yaması 16 Eylül 2026'da yayınlandı ve 22 kahramanı etkiledi. Yıllık harita değişikliği de 28 Eylül'de oyuna eklendi. Aşağıda değişiklikleri kendi özetimizle ve oyuna etkisiyle birlikte bulabilirsin."
+      },
+      {
+        "h": "Güçlenenler"
+      },
+      {
+        "ul": [
+          "Aulus: Becerileri artık normal saldırı etkisini tetikliyor ve her vuruşta can kazanıyor; ikinci becerinin ilk kullanımı sersemletiyor. Yamadan sonra en çok yükselen kahramanlardan biri.",
+          "Alpha: Pasifi toplam fiziksel saldırıyla ölçekleniyor, ikinci becerinin iyileştirmesi yaklaşık iki katına çıktı.",
+          "Argus: Pasif kritik şansı kazandı, canı azaldıkça ultisi daha güçlü vuruyor.",
+          "Aldous: Kalkanı artık zamanla doluyor ve kalkan gelince hız kazanıyor.",
+          "Lukas, Edith, Karina, Kaja, Cici ve Kalea da hasar, bekleme süresi veya iyileştirme tarafında güçlendirildi."
+        ]
+      },
+      {
+        "h": "Zayıflayanlar"
+      },
+      {
+        "ul": [
+          "Melissa: Birinci becerinin saldırı hızı bonusu ve süresi azaldı.",
+          "Miya: Pasif hasarı düştü, fazladan hasar veren bir hata düzeltildi.",
+          "Hanabi: Aynı hedefe seken saldırılar her seferinde daha az vuruyor.",
+          "Yi Sun-shin, Paquito ve Marcel de bekleme süresi veya hasar tarafında zayıfladı."
+        ]
+      },
+      {
+        "h": "Yeniden tasarlananlar"
+      },
+      {
+        "p": "Masha ve Bruno'nun becerileri baştan yazıldı. Sun ve Odette'de oynanışı değiştiren ayarlar var: Odette artık ultisi sırasında yavaşça hareket edebiliyor."
+      },
+      {
+        "h": "Harita değişiklikleri"
+      },
+      {
+        "p": "Çalılardaki gizli rakipleri gösteren yeni toplanabilir ışıklar geldi. İyileştiren Kaplumbağa artık kalkan vermiyor; bunun yerine en güçlü rakip koridorda takımına yardım eden bir müttefik kaplumbağa çıkarıyor. Altın Kule yıkıldığında takıma daha fazla altın veriyor."
+      },
+      {
+        "h": "Bizim yorumumuz"
+      },
+      {
+        "p": "EXP koridorunda Aulus ve Alpha şu an çok değerli. Nişancı tarafında Miya ve Melissa'nın düşüşüyle diğer seçenekler öne çıkıyor. Draft asistanımızdaki önerileri bu yamaya göre güncelledik."
+      }
     ],
     "en": [
-      {"p": "Patch 2.2.16 arrived with Season 42 on September 16, 2026 and touched 22 heroes. The yearly map update followed on September 28. Here is our own summary of the changes and what they mean in game."},
-      {"h": "Buffed"},
-      {"ul": ["Aulus: His skills now trigger his basic attack effect and heal him on every hit, and the first cast of Skill 2 stuns. He is one of the biggest winners of the patch.", "Alpha: His passive scales with total physical attack and Skill 2 healing roughly doubled.", "Argus: Gains passive crit chance, and his ultimate hits harder as his HP drops.", "Aldous: His shield now refreshes on a timer and gives a burst of speed.", "Lukas, Edith, Karina, Kaja, Cici and Kalea also gained damage, cooldown or healing."]},
-      {"h": "Nerfed"},
-      {"ul": ["Melissa: Skill 1 attack speed bonus and duration were reduced.", "Miya: Lower passive damage, and a bug that added extra damage was fixed.", "Hanabi: Repeated bounces on the same target deal less damage each time.", "Yi Sun-shin, Paquito and Marcel were also toned down in cooldown or damage."]},
-      {"h": "Reworked"},
-      {"p": "Masha and Bruno received full kit reworks. Sun and Odette got playstyle adjustments: Odette can now move slowly while her ultimate is active."},
-      {"h": "Map changes"},
-      {"p": "New pickable lights reveal hidden enemies in bushes. The Healing Turtle no longer gives a shield; instead it sends an allied turtle down the enemy's strongest lane. The Golden Turret now gives the team more gold when destroyed."},
-      {"h": "Our take"},
-      {"p": "Aulus and Alpha are very valuable in the EXP lane right now. With Miya and Melissa down, other marksmen move up. We updated the suggestions in our draft assistant for this patch."}
+      {
+        "p": "Patch 2.2.16 arrived with Season 42 on September 16, 2026 and touched 22 heroes. The yearly map update followed on September 28. Here is our own summary of the changes and what they mean in game."
+      },
+      {
+        "h": "Buffed"
+      },
+      {
+        "ul": [
+          "Aulus: His skills now trigger his basic attack effect and heal him on every hit, and the first cast of Skill 2 stuns. He is one of the biggest winners of the patch.",
+          "Alpha: His passive scales with total physical attack and Skill 2 healing roughly doubled.",
+          "Argus: Gains passive crit chance, and his ultimate hits harder as his HP drops.",
+          "Aldous: His shield now refreshes on a timer and gives a burst of speed.",
+          "Lukas, Edith, Karina, Kaja, Cici and Kalea also gained damage, cooldown or healing."
+        ]
+      },
+      {
+        "h": "Nerfed"
+      },
+      {
+        "ul": [
+          "Melissa: Skill 1 attack speed bonus and duration were reduced.",
+          "Miya: Lower passive damage, and a bug that added extra damage was fixed.",
+          "Hanabi: Repeated bounces on the same target deal less damage each time.",
+          "Yi Sun-shin, Paquito and Marcel were also toned down in cooldown or damage."
+        ]
+      },
+      {
+        "h": "Reworked"
+      },
+      {
+        "p": "Masha and Bruno received full kit reworks. Sun and Odette got playstyle adjustments: Odette can now move slowly while her ultimate is active."
+      },
+      {
+        "h": "Map changes"
+      },
+      {
+        "p": "New pickable lights reveal hidden enemies in bushes. The Healing Turtle no longer gives a shield; instead it sends an allied turtle down the enemy's strongest lane. The Golden Turret now gives the team more gold when destroyed."
+      },
+      {
+        "h": "Our take"
+      },
+      {
+        "p": "Aulus and Alpha are very valuable in the EXP lane right now. With Miya and Melissa down, other marksmen move up. We updated the suggestions in our draft assistant for this patch."
+      }
     ],
     "id": [
-      {"p": "Patch 2.2.16 hadir bersama Season 42 pada 16 September 2026 dan mengubah 22 hero. Pembaruan map tahunan menyusul pada 28 September. Berikut ringkasan kami sendiri beserta dampaknya di dalam game."},
-      {"h": "Buff"},
-      {"ul": ["Aulus: Skill-nya kini memicu efek basic attack dan memulihkan HP di setiap hit, serta cast pertama Skill 2 memberi stun. Salah satu pemenang terbesar patch ini.", "Alpha: Pasifnya kini berskala dengan total physical attack dan heal Skill 2 naik sekitar dua kali lipat.", "Argus: Mendapat critical chance dari pasif, dan ultimate-nya makin sakit saat HP-nya turun.", "Aldous: Shield-nya kini muncul berdasarkan waktu dan memberi tambahan kecepatan.", "Lukas, Edith, Karina, Kaja, Cici, dan Kalea juga mendapat buff pada damage, cooldown, atau heal."]},
-      {"h": "Nerf"},
-      {"ul": ["Melissa: Bonus attack speed dan durasi Skill 1 dikurangi.", "Miya: Damage pasif turun, dan bug yang menambah damage diperbaiki.", "Hanabi: Pantulan berulang ke target yang sama memberi damage lebih kecil.", "Yi Sun-shin, Paquito, dan Marcel juga diturunkan di sisi cooldown atau damage."]},
-      {"h": "Revamp"},
-      {"p": "Masha dan Bruno mendapat perombakan skill penuh. Sun dan Odette mendapat penyesuaian gaya main: Odette kini bisa bergerak pelan saat ultimate aktif."},
-      {"h": "Perubahan map"},
-      {"p": "Ada cahaya baru yang bisa diambil untuk menampilkan musuh di semak. Turtle penyembuh tidak lagi memberi shield, melainkan mengirim turtle sekutu ke lane musuh yang paling kuat. Golden Turret kini memberi gold lebih banyak ke tim saat hancur."},
-      {"h": "Pendapat kami"},
-      {"p": "Aulus dan Alpha sangat berharga di EXP lane saat ini. Dengan turunnya Miya dan Melissa, marksman lain naik. Kami sudah memperbarui saran di asisten draft kami untuk patch ini."}
+      {
+        "p": "Patch 2.2.16 hadir bersama Season 42 pada 16 September 2026 dan mengubah 22 hero. Pembaruan map tahunan menyusul pada 28 September. Berikut ringkasan kami sendiri beserta dampaknya di dalam game."
+      },
+      {
+        "h": "Buff"
+      },
+      {
+        "ul": [
+          "Aulus: Skill-nya kini memicu efek basic attack dan memulihkan HP di setiap hit, serta cast pertama Skill 2 memberi stun. Salah satu pemenang terbesar patch ini.",
+          "Alpha: Pasifnya kini berskala dengan total physical attack dan heal Skill 2 naik sekitar dua kali lipat.",
+          "Argus: Mendapat critical chance dari pasif, dan ultimate-nya makin sakit saat HP-nya turun.",
+          "Aldous: Shield-nya kini muncul berdasarkan waktu dan memberi tambahan kecepatan.",
+          "Lukas, Edith, Karina, Kaja, Cici, dan Kalea juga mendapat buff pada damage, cooldown, atau heal."
+        ]
+      },
+      {
+        "h": "Nerf"
+      },
+      {
+        "ul": [
+          "Melissa: Bonus attack speed dan durasi Skill 1 dikurangi.",
+          "Miya: Damage pasif turun, dan bug yang menambah damage diperbaiki.",
+          "Hanabi: Pantulan berulang ke target yang sama memberi damage lebih kecil.",
+          "Yi Sun-shin, Paquito, dan Marcel juga diturunkan di sisi cooldown atau damage."
+        ]
+      },
+      {
+        "h": "Revamp"
+      },
+      {
+        "p": "Masha dan Bruno mendapat perombakan skill penuh. Sun dan Odette mendapat penyesuaian gaya main: Odette kini bisa bergerak pelan saat ultimate aktif."
+      },
+      {
+        "h": "Perubahan map"
+      },
+      {
+        "p": "Ada cahaya baru yang bisa diambil untuk menampilkan musuh di semak. Turtle penyembuh tidak lagi memberi shield, melainkan mengirim turtle sekutu ke lane musuh yang paling kuat. Golden Turret kini memberi gold lebih banyak ke tim saat hancur."
+      },
+      {
+        "h": "Pendapat kami"
+      },
+      {
+        "p": "Aulus dan Alpha sangat berharga di EXP lane saat ini. Dengan turunnya Miya dan Melissa, marksman lain naik. Kami sudah memperbarui saran di asisten draft kami untuk patch ini."
+      }
     ],
     "es": [
-      {"p": "El parche 2.2.16 llegó con la Temporada 42 el 16 de septiembre de 2026 y cambió 22 héroes. El cambio anual del mapa llegó el 28 de septiembre. Aquí va nuestro propio resumen y lo que significa en partida."},
-      {"h": "Mejorados"},
-      {"ul": ["Aulus: Sus habilidades ahora activan el efecto de su ataque básico y lo curan en cada golpe, y el primer uso de la Habilidad 2 aturde. Es uno de los grandes ganadores del parche.", "Alpha: Su pasiva escala con el ataque físico total y la curación de la Habilidad 2 casi se duplicó.", "Argus: Gana probabilidad de crítico en la pasiva y su definitiva golpea más fuerte cuanto menos vida tiene.", "Aldous: Su escudo ahora se recarga con el tiempo y le da un impulso de velocidad.", "Lukas, Edith, Karina, Kaja, Cici y Kalea también ganaron daño, enfriamiento o curación."]},
-      {"h": "Debilitados"},
-      {"ul": ["Melissa: Se redujo la bonificación de velocidad de ataque y la duración de la Habilidad 1.", "Miya: Menos daño en la pasiva y se corrigió un error que añadía daño extra.", "Hanabi: Los rebotes repetidos sobre el mismo objetivo hacen menos daño cada vez.", "Yi Sun-shin, Paquito y Marcel también bajaron en enfriamiento o daño."]},
-      {"h": "Rediseñados"},
-      {"p": "Masha y Bruno recibieron un rediseño completo de habilidades. Sun y Odette tuvieron ajustes de estilo de juego: Odette ahora puede moverse lentamente durante su definitiva."},
-      {"h": "Cambios en el mapa"},
-      {"p": "Hay nuevas luces recogibles que revelan enemigos ocultos en los arbustos. La Tortuga sanadora ya no da escudo; ahora envía una tortuga aliada a la línea más fuerte del rival. La Torre Dorada da más oro al equipo al ser destruida."},
-      {"h": "Nuestra opinión"},
-      {"p": "Aulus y Alpha son muy valiosos en la línea de experiencia ahora mismo. Con Miya y Melissa a la baja, otros tiradores suben. Actualizamos las sugerencias de nuestro asistente de draft para este parche."}
+      {
+        "p": "El parche 2.2.16 llegó con la Temporada 42 el 16 de septiembre de 2026 y cambió 22 héroes. El cambio anual del mapa llegó el 28 de septiembre. Aquí va nuestro propio resumen y lo que significa en partida."
+      },
+      {
+        "h": "Mejorados"
+      },
+      {
+        "ul": [
+          "Aulus: Sus habilidades ahora activan el efecto de su ataque básico y lo curan en cada golpe, y el primer uso de la Habilidad 2 aturde. Es uno de los grandes ganadores del parche.",
+          "Alpha: Su pasiva escala con el ataque físico total y la curación de la Habilidad 2 casi se duplicó.",
+          "Argus: Gana probabilidad de crítico en la pasiva y su definitiva golpea más fuerte cuanto menos vida tiene.",
+          "Aldous: Su escudo ahora se recarga con el tiempo y le da un impulso de velocidad.",
+          "Lukas, Edith, Karina, Kaja, Cici y Kalea también ganaron daño, enfriamiento o curación."
+        ]
+      },
+      {
+        "h": "Debilitados"
+      },
+      {
+        "ul": [
+          "Melissa: Se redujo la bonificación de velocidad de ataque y la duración de la Habilidad 1.",
+          "Miya: Menos daño en la pasiva y se corrigió un error que añadía daño extra.",
+          "Hanabi: Los rebotes repetidos sobre el mismo objetivo hacen menos daño cada vez.",
+          "Yi Sun-shin, Paquito y Marcel también bajaron en enfriamiento o daño."
+        ]
+      },
+      {
+        "h": "Rediseñados"
+      },
+      {
+        "p": "Masha y Bruno recibieron un rediseño completo de habilidades. Sun y Odette tuvieron ajustes de estilo de juego: Odette ahora puede moverse lentamente durante su definitiva."
+      },
+      {
+        "h": "Cambios en el mapa"
+      },
+      {
+        "p": "Hay nuevas luces recogibles que revelan enemigos ocultos en los arbustos. La Tortuga sanadora ya no da escudo; ahora envía una tortuga aliada a la línea más fuerte del rival. La Torre Dorada da más oro al equipo al ser destruida."
+      },
+      {
+        "h": "Nuestra opinión"
+      },
+      {
+        "p": "Aulus y Alpha son muy valiosos en la línea de experiencia ahora mismo. Con Miya y Melissa a la baja, otros tiradores suben. Actualizamos las sugerencias de nuestro asistente de draft para este parche."
+      }
     ],
     "pt": [
-      {"p": "O patch 2.2.16 chegou com a Temporada 42 em 16 de setembro de 2026 e mudou 22 heróis. A mudança anual do mapa veio em 28 de setembro. Veja nosso próprio resumo e o que isso muda nas partidas."},
-      {"h": "Fortalecidos"},
-      {"ul": ["Aulus: Suas habilidades agora ativam o efeito do ataque básico e o curam a cada acerto, e o primeiro uso da Habilidade 2 atordoa. É um dos grandes vencedores do patch.", "Alpha: A passiva escala com o ataque físico total e a cura da Habilidade 2 quase dobrou.", "Argus: Ganha chance de crítico na passiva e a ultimate bate mais forte quanto menos vida ele tem.", "Aldous: O escudo agora recarrega com o tempo e dá um impulso de velocidade.", "Lukas, Edith, Karina, Kaja, Cici e Kalea também ganharam dano, recarga ou cura."]},
-      {"h": "Enfraquecidos"},
-      {"ul": ["Melissa: O bônus de velocidade de ataque e a duração da Habilidade 1 foram reduzidos.", "Miya: Menos dano na passiva e foi corrigido um bug que dava dano extra.", "Hanabi: Ricochetes repetidos no mesmo alvo causam menos dano a cada vez.", "Yi Sun-shin, Paquito e Marcel também caíram em recarga ou dano."]},
-      {"h": "Reformulados"},
-      {"p": "Masha e Bruno receberam reformulação completa das habilidades. Sun e Odette tiveram ajustes de estilo: Odette agora pode se mover devagar durante a ultimate."},
-      {"h": "Mudanças no mapa"},
-      {"p": "Novas luzes coletáveis revelam inimigos escondidos nas moitas. A Tartaruga de cura não dá mais escudo; agora envia uma tartaruga aliada para a rota mais forte do inimigo. A Torre Dourada dá mais ouro ao time quando destruída."},
-      {"h": "Nossa opinião"},
-      {"p": "Aulus e Alpha estão muito valiosos na rota de experiência agora. Com Miya e Melissa em baixa, outros atiradores sobem. Atualizamos as sugestões do nosso assistente de draft para este patch."}
+      {
+        "p": "O patch 2.2.16 chegou com a Temporada 42 em 16 de setembro de 2026 e mudou 22 heróis. A mudança anual do mapa veio em 28 de setembro. Veja nosso próprio resumo e o que isso muda nas partidas."
+      },
+      {
+        "h": "Fortalecidos"
+      },
+      {
+        "ul": [
+          "Aulus: Suas habilidades agora ativam o efeito do ataque básico e o curam a cada acerto, e o primeiro uso da Habilidade 2 atordoa. É um dos grandes vencedores do patch.",
+          "Alpha: A passiva escala com o ataque físico total e a cura da Habilidade 2 quase dobrou.",
+          "Argus: Ganha chance de crítico na passiva e a ultimate bate mais forte quanto menos vida ele tem.",
+          "Aldous: O escudo agora recarrega com o tempo e dá um impulso de velocidade.",
+          "Lukas, Edith, Karina, Kaja, Cici e Kalea também ganharam dano, recarga ou cura."
+        ]
+      },
+      {
+        "h": "Enfraquecidos"
+      },
+      {
+        "ul": [
+          "Melissa: O bônus de velocidade de ataque e a duração da Habilidade 1 foram reduzidos.",
+          "Miya: Menos dano na passiva e foi corrigido um bug que dava dano extra.",
+          "Hanabi: Ricochetes repetidos no mesmo alvo causam menos dano a cada vez.",
+          "Yi Sun-shin, Paquito e Marcel também caíram em recarga ou dano."
+        ]
+      },
+      {
+        "h": "Reformulados"
+      },
+      {
+        "p": "Masha e Bruno receberam reformulação completa das habilidades. Sun e Odette tiveram ajustes de estilo: Odette agora pode se mover devagar durante a ultimate."
+      },
+      {
+        "h": "Mudanças no mapa"
+      },
+      {
+        "p": "Novas luzes coletáveis revelam inimigos escondidos nas moitas. A Tartaruga de cura não dá mais escudo; agora envia uma tartaruga aliada para a rota mais forte do inimigo. A Torre Dourada dá mais ouro ao time quando destruída."
+      },
+      {
+        "h": "Nossa opinião"
+      },
+      {
+        "p": "Aulus e Alpha estão muito valiosos na rota de experiência agora. Com Miya e Melissa em baixa, outros atiradores sobem. Atualizamos as sugestões do nosso assistente de draft para este patch."
+      }
     ]
   }
 }
