@@ -22,6 +22,18 @@
   const load = def => { try { return Object.assign(def, JSON.parse(localStorage.getItem(KEY) || '{}')); } catch (e) { return def; } };
   const save = st => { try { localStorage.setItem(KEY, JSON.stringify(st)); } catch (e) {} };
 
+  function teamBlock(title, names, showWarn) {
+    const tm = E.mlTeam(A.data, names);
+    const tot = tm.P + tm.M || 1, pp = Math.round(tm.P / tot * 100);
+    const roles = E.ROLES.map(r => '<span class="rolechip' + (tm.roles[r] ? ' on' : '') + '" title="' + esc(t('role_' + r)) + '">' + I.talent(r.charAt(0).toUpperCase() + r.slice(1), 22) + '<small>' + esc(t('role_' + r)) + (tm.roles[r] > 1 ? ' ×' + tm.roles[r] : '') + '</small></span>').join('');
+    return '<div class="team"><b>' + esc(title) + '</b>' +
+      '<div class="dmgbar" role="img" aria-label="' + esc(t('dmgPhys')) + ' ' + pp + '%, ' + esc(t('dmgMag')) + ' ' + (100 - pp) + '%"><span class="p" style="width:' + (names.length ? pp : 50) + '%"></span><span class="m" style="width:' + (names.length ? 100 - pp : 50) + '%"></span></div>' +
+      '<div class="dmglabels"><span>' + esc(t('dmgPhys')) + ' ' + (names.length ? pp + '%' : '–') + '</span><span>' + esc(t('dmgMag')) + ' ' + (names.length ? (100 - pp) + '%' : '–') + '</span></div>' +
+      '<div class="roles">' + roles + '</div>' +
+      (showWarn && tm.warn.length ? '<ul class="warn">' + tm.warn.map(k => '<li class="' + (k === 'wa_ok' ? 'ok' : '') + '">' + esc(t(k)) + '</li>').join('') + '</ul>' : '') + '</div>';
+  }
+  const chipOf = (n, role, cls) => el('button', { class: 'chip ' + (cls || ''), type: 'button' }, I.hero(n, role, 18) + '<span>' + esc(n) + '</span>');
+  if (A.kind === 'draft') return draftTool();
   if (A.kind === 'ff') return ffTool();
 
   /* ---------- MOBA and Brawl Stars tools ---------- */
@@ -100,15 +112,14 @@
       pk.appendChild(d);
     });
   }
-  function teamBlock(title, names, showWarn) {
-    const tm = E.mlTeam(A.data, names);
-    const tot = tm.P + tm.M || 1, pp = Math.round(tm.P / tot * 100);
-    const roles = E.ROLES.map(r => '<span class="rolechip' + (tm.roles[r] ? ' on' : '') + '" title="' + esc(t('role_' + r)) + '">' + I.talent(r.charAt(0).toUpperCase() + r.slice(1), 22) + '<small>' + esc(t('role_' + r)) + (tm.roles[r] > 1 ? ' ×' + tm.roles[r] : '') + '</small></span>').join('');
-    return '<div class="team"><b>' + esc(title) + '</b>' +
-      '<div class="dmgbar" role="img" aria-label="' + esc(t('dmgPhys')) + ' ' + pp + '%, ' + esc(t('dmgMag')) + ' ' + (100 - pp) + '%"><span class="p" style="width:' + (names.length ? pp : 50) + '%"></span><span class="m" style="width:' + (names.length ? 100 - pp : 50) + '%"></span></div>' +
-      '<div class="dmglabels"><span>' + esc(t('dmgPhys')) + ' ' + (names.length ? pp + '%' : '–') + '</span><span>' + esc(t('dmgMag')) + ' ' + (names.length ? (100 - pp) + '%' : '–') + '</span></div>' +
-      '<div class="roles">' + roles + '</div>' +
-      (showWarn && tm.warn.length ? '<ul class="warn">' + tm.warn.map(k => '<li class="' + (k === 'wa_ok' ? 'ok' : '') + '">' + esc(t(k)) + '</li>').join('') + '</ul>' : '') + '</div>';
+  function renderBans() {
+    const box = $('bans'); if (!box) return;
+    const mine = [...new Set([...st.a, ...st.pool])];
+    const bans = E.mlBans(A.data, mine, [...st.e, ...st.a]);
+    box.innerHTML = (mine.length ? '' : '<p class="note">' + esc(t('banHint')) + '</p>') + bans.map(b => {
+      const why = [b.hits.length ? t('ban_vs', { x: b.hits.join(', ') }) : '', b.meta ? t('ban_meta') : '', !b.hits.length && !b.meta ? t('ban_gen') : ''].filter(Boolean).join(' · ');
+      return '<div class="pick">' + I.hero(b.n, roleOf[b.n], 36) + '<span class="pmain"><span><b>' + esc(b.n) + '</b> <span class="role">' + esc(t('role_' + b.r)) + '</span></span><span class="why">' + esc(why) + '</span></span><span class="banx" aria-hidden="true">✕</span></div>';
+    }).join('');
   }
   function renderTeam() {
     const box = $('team'); if (!box) return;
@@ -170,7 +181,7 @@
     renderSlots(); renderPool(); renderMyPool();
     if (!isMoba) renderModes();
     renderPicks();
-    if (isMoba) { renderTeam(); renderBuild(); } else renderBsTips();
+    if (isMoba) { renderTeam(); renderBans(); renderBuild(); } else renderBsTips();
     $('example').hidden = !example;
     save(st);
   }
@@ -194,6 +205,57 @@
   $('pq').oninput = renderMyPool;
   if (isMoba) $('heroSel').onchange = e => { st.hero = e.target.value; update(); };
   update();
+
+  /* ---------- Draft practice vs AI ---------- */
+  function draftTool() {
+    const heroes = A.data.heroes, all = heroes.map(h => h.n), roleOf = Object.fromEntries(heroes.map(h => [h.n, h.r]));
+    const ORDER = ['B', 'R', 'R', 'B', 'B', 'R', 'R', 'B', 'B', 'R'];
+    let me = [], bot = [], step = 0, log = [];
+    const taken = () => [...me, ...bot];
+    function slots(id, arr, cls) {
+      const box = $(id); box.innerHTML = '';
+      for (let i = 0; i < 5; i++) { const n = arr[i]; box.appendChild(el('div', { class: 'slot' + (n ? ' ' + cls : '') }, n ? I.hero(n, roleOf[n], 26) + '<span>' + esc(n) + '</span>' : esc(t('emptySlot')))); }
+    }
+    let pending = false;
+    function botTurn() {
+      if (pending) return; pending = true;
+      $('status').textContent = t('draftTurnBot');
+      setTimeout(() => {
+        pending = false;
+        const p = E.mlBotPick(A.data, me, bot, taken());
+        bot.push(p.n); log.unshift(t('botPicked', { x: p.n }) + (p.why.length ? ': ' + [...new Set(p.why.map(k => t(k)))].slice(0, 2).join(' · ') : ''));
+        step++; render();
+      }, 650);
+    }
+    function render() {
+      slots('dme', me, 'ally'); slots('dbot', bot, 'on');
+      $('dlog').innerHTML = log.slice(0, 4).map(l => '<li>' + esc(l) + '</li>').join('');
+      const done = step >= ORDER.length, myTurn = !done && ORDER[step] === 'B';
+      $('status').textContent = done ? t('draftDone') : myTurn ? t('draftTurnYou') : t('draftTurnBot');
+      const q = $('q').value.trim().toLowerCase(), pool = $('pool'); pool.innerHTML = '';
+      all.filter(n => !q || n.toLowerCase().includes(q)).forEach(n => {
+        const b = chipOf(n, roleOf[n]); b.disabled = !myTurn || taken().includes(n);
+        b.onclick = () => { me.push(n); $('q').value = ''; step++; render(); };
+        pool.appendChild(b);
+      });
+      $('pickbox').hidden = done;
+      const sg = $('sugg'); sg.innerHTML = '';
+      if (myTurn) E.mlScore(A.data, bot, null, me).filter(x => !taken().includes(x.n)).slice(0, 3).forEach(r => {
+        const b = chipOf(r.n, roleOf[r.n], 'mine'); b.onclick = () => { me.push(r.n); step++; render(); }; sg.appendChild(b);
+      });
+      const res = $('result');
+      res.hidden = !done;
+      if (done) {
+        const a = E.mlDraftRating(A.data, me, bot), b = E.mlDraftRating(A.data, bot, me);
+        const verdict = Math.abs(a - b) <= 2 ? t('draftDraw') : a > b ? t('draftWin') : t('draftLose');
+        res.innerHTML = '<h2>' + esc(t('draftRating')) + '</h2><div class="score-row"><span><b>' + esc(t('draftYou')) + '</b> <span class="big good">' + a + '</span></span><span><b>' + esc(t('draftBot')) + '</b> <span class="big bad">' + b + '</span></span></div><p class="lead" style="margin:6px 0 14px">' + esc(verdict) + '</p><div class="teams">' + teamBlock(t('allySide'), me, true) + teamBlock(t('enemySide'), bot, false) + '</div>';
+      }
+      if (!done && !myTurn) botTurn();
+    }
+    $('q').oninput = render;
+    $('again').onclick = () => { me = []; bot = []; step = 0; log = []; render(); };
+    render();
+  }
 
   /* ---------- Free Fire tool ---------- */
   function ffTool() {

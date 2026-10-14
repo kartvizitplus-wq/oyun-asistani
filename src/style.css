@@ -97,3 +97,12 @@ nav.games::-webkit-scrollbar{display:none}
 .rolechip small{font-size:.78rem;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
 ul.warn{margin:2px 0 0;padding-left:18px;font-size:.88rem;color:var(--gold)}
 ul.warn li.ok{color:var(--green)}
+
+.banx{color:var(--red);font:700 1.1rem var(--display);padding:0 4px}
+.status{font:700 1rem var(--display);color:var(--gold);margin:12px 0 6px}
+.score-row{display:flex;gap:28px;flex-wrap:wrap;align-items:center}
+.big{font:700 2rem var(--display);padding:2px 12px;border-radius:8px;font-variant-numeric:tabular-nums}
+.tierlink{display:inline-flex;align-items:center;gap:6px}
+.tier{font:700 .7rem var(--display);padding:1px 6px;border-radius:4px}
+.tier.tS{background:var(--red-bg);color:var(--red)}.tier.tA{background:var(--gold-bg);color:var(--gold)}
+[hidden]{display:none!important}

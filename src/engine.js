@@ -151,6 +151,44 @@
     return h.s.filter(k => test[k]);
   }
 
+  /* Does hero x counter hero y (by x's strengths vs y's role/traits)? */
+  const STRONG = {
+    antidash: y => y.t.includes('d'), antitank: y => y.r === 'tank', antisquishy: y => y.r === 'mage' || y.r === 'marksman',
+    antiheal: y => y.t.includes('h'), antiburst: y => y.t.includes('b'), antimm: y => y.r === 'marksman', anticc: y => y.t.includes('c')
+  };
+  function mlCounters(data, x, y) {
+    const H = mlIndex(data), a = H[x], b = H[y];
+    return !!(a && b && a.s.some(k => STRONG[k] && STRONG[k](b)));
+  }
+  /* Ban suggestions: strong in the meta, or counters the heroes the user plays / their team. */
+  function mlBans(data, mine, taken) {
+    const TB = { S: 3, A: 2, B: 0.5, C: 0 };
+    return data.heroes.filter(h => !taken.includes(h.n) && !mine.includes(h.n)).map(h => {
+      const hits = mine.filter(m => mlCounters(data, h.n, m));
+      const s = (TB[h.tier] || 0) + hits.length * 1.4 + h.s.length * 0.15;
+      return { n: h.n, r: h.r, s, hits: hits.slice(0, 3), meta: h.tier === 'S' || h.tier === 'A' };
+    }).filter(x => x.s > 0.5).sort((a, b) => b.s - a.s || a.n.localeCompare(b.n)).slice(0, 3);
+  }
+  /* Bot pick for draft practice: best answer to the opponent while keeping its own team balanced. */
+  function mlBotPick(data, opp, own, taken, rnd) {
+    const list = mlScore(data, opp, null, own).filter(x => !taken.includes(x.n));
+    const top = list.slice(0, 2);
+    return top[Math.floor((rnd == null ? Math.random() : rnd) * top.length)] || list[0];
+  }
+  /* Draft rating 0-100 for a team: how well its heroes answer the enemy, plus composition balance. */
+  function mlDraftRating(data, team, enemy) {
+    if (!team.length) return 0;
+    let sum = 0;
+    team.forEach((n, i) => {
+      const others = team.filter((_, j) => j !== i);
+      const r = mlScore(data, enemy, [n], others)[0];
+      sum += r ? r.s : 5;
+    });
+    const tm = mlTeam(data, team);
+    const bad = tm.warn.filter(w => w !== 'wa_ok').length;
+    return Math.max(0, Math.min(100, Math.round((sum / team.length) * 10 - bad * 6)));
+  }
+
   /* ---------- Brawl Stars ---------- */
   const BS_MATCH = {
     tank: { assassin: 2, damage: 1, support: 0.5, marksman: -1, controller: -1 },
@@ -247,6 +285,6 @@
     return best;
   }
 
-  const Engine = { ROLES, mlTeam, mlStats, mlScore, mlBuild, mlTips, mlCounterItems, mlStrongAgainst, bsScore, bsStrongAgainst, BS_MODES, FF_STYLE, FF_MODE, FF_THREAT, ffRank, ffCombo, ffBestStyle };
+  const Engine = { ROLES, mlTeam, mlCounters, mlBans, mlBotPick, mlDraftRating, mlStats, mlScore, mlBuild, mlTips, mlCounterItems, mlStrongAgainst, bsScore, bsStrongAgainst, BS_MODES, FF_STYLE, FF_MODE, FF_THREAT, ffRank, ffCombo, ffBestStyle };
   if (typeof module !== 'undefined' && module.exports) module.exports = Engine; else root.Engine = Engine;
 })(typeof window !== 'undefined' ? window : globalThis);
