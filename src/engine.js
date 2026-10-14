@@ -46,18 +46,30 @@
     const a = data.archetypes[h.b];
     const base = h.build || a.items;
     const c = mlStats(data, enemy);
-    const front = a.group === 'front', T = a.type;
+    const front = a.group === 'front', T = a.type, g = front ? 'front' : 'back';
+    const C = data.counters || {};
+    const pick = key => { const m = C[key] || {}; return m[g + T] || m[g] || m[T] || m.any || null; };
     const adds = [];
-    const want = (item, p, reason) => adds.push({ item, p, reason });
-    if (c.h) want(T === 'T' ? 'Dominance Ice' : T === 'M' ? 'Necklace of Durance' : 'Sea Halberd', c.h * 2 + 1, 'r_antiheal');
-    if (c.M >= 2) want("Athena's Shield", c.M * 1.5, 'r_magic');
-    if (c.M >= 4 && front) want('Radiant Armor', c.M, 'r_magic');
-    if (c.mm >= 2) want(front ? (T === 'T' ? 'Blade Armor' : 'Dominance Ice') : (T === 'M' ? 'Winter Crown' : 'Wind of Nature'), c.mm * 1.5, 'r_basic');
-    if (c.P >= 4) want(front ? 'Antique Cuirass' : (T === 'M' ? 'Winter Crown' : 'Wind of Nature'), c.P, 'r_phys');
-    if (c.tank >= 2 && T !== 'T') want(T === 'M' ? 'Divine Glaive' : 'Malefic Roar', c.tank * 1.5, T === 'M' ? 'r_mpen' : 'r_pen');
-    if (c.b >= 3) want(T === 'M' && !front ? 'Winter Crown' : 'Immortality', c.b * 1.5, 'r_burst');
+    const want = (item, p, reason) => { if (item) adds.push({ item, p, reason }); };
+    if (c.h) want(pick('antiheal'), c.h * 2 + 1, 'r_antiheal');
+    if (c.M >= 2) want(pick('magic'), c.M * 1.5, 'r_magic');
+    if (c.M >= 4) want(pick('magicHeavy'), c.M, 'r_magic');
+    if (c.mm >= 2) want(pick('basic'), c.mm * 1.5, 'r_basic');
+    if (c.P >= 4) want(pick('phys'), c.P, 'r_phys');
+    if (c.tank >= 2 && T !== 'T') want(pick('pen'), c.tank * 1.5, T === 'M' ? 'r_mpen' : 'r_pen');
+    if (c.b >= 3) want(pick('burst'), c.b * 1.5, 'r_burst');
+    const ccBoots = C.ccBoots;
+    let spell = h.spell || a.spell;
+    if (c.c >= 3 && !front && C.purify) spell = C.purify;
+    if (!base.length) {
+      // No fixed build for this game yet: return only the counter items for this enemy team.
+      const list = [];
+      if ((c.M >= 3 || c.c >= 3) && ccBoots) list.push({ item: ccBoots, adapt: true, reason: c.M >= 3 ? 'r_magic' : 'r_cc', slot: 'boots' });
+      adds.sort((x, y) => y.p - x.p).forEach(x => { if (!list.some(l => l.item === x.item)) list.push({ item: x.item, adapt: true, reason: x.reason }); });
+      return { items: list, spell, partial: true };
+    }
     let boots = base[0], bootsAdapt = false;
-    if (c.M >= 3 || c.c >= 3) { if (boots !== 'Tough Boots') { boots = 'Tough Boots'; bootsAdapt = true; } }
+    if ((c.M >= 3 || c.c >= 3) && ccBoots && boots !== ccBoots) { boots = ccBoots; bootsAdapt = true; }
     const core = [boots, base[1], base[2]];
     const pool = [...adds.sort((x, y) => y.p - x.p).map(x => ({ item: x.item, adapt: true, reason: x.reason })),
       ...base.slice(3).map(i => ({ item: i, adapt: false }))];
@@ -67,7 +79,6 @@
       if (core.includes(x.item) || flex.some(f => f.item === x.item)) continue;
       flex.push(x);
     }
-    const spell = (c.c >= 3 && !front) ? 'Purify' : (h.spell || a.spell);
     return {
       items: [{ item: boots, adapt: bootsAdapt, reason: bootsAdapt ? (c.M >= 3 ? 'r_magic' : 'r_cc') : null, slot: 'boots' },
         { item: core[1], adapt: false, slot: 'core' }, { item: core[2], adapt: false, slot: 'core' }, ...flex],
@@ -86,16 +97,19 @@
   }
   /* Items that answer a single hero (used on hero pages). */
   function mlCounterItems(data, name) {
-    const h = mlIndex(data)[name], out = [];
-    if (h.t.includes('h')) out.push(['Sea Halberd', 'r_antiheal'], ['Necklace of Durance', 'r_antiheal'], ['Dominance Ice', 'r_antiheal']);
-    if (h.d === 'M') out.push(["Athena's Shield", 'r_magic']);
-    if (h.r === 'marksman' && h.d === 'P') out.push(['Blade Armor', 'r_basic'], ['Wind of Nature', 'r_basic']);
-    if (h.d === 'P' && h.r !== 'marksman') out.push(['Antique Cuirass', 'r_phys']);
-    if (h.r === 'tank') out.push(['Malefic Roar', 'r_pen'], ['Divine Glaive', 'r_mpen']);
-    if (h.t.includes('b')) out.push(['Immortality', 'r_burst'], ['Winter Crown', 'r_burst']);
-    if (h.t.includes('c')) out.push(['Tough Boots', 'r_cc']);
+    const h = mlIndex(data)[name], out = [], C = data.counters || {};
+    const all = key => Object.values(C[key] || {}).filter(Boolean).map(i => [i, key]);
+    const R = { antiheal: 'r_antiheal', magic: 'r_magic', basic: 'r_basic', phys: 'r_phys', pen: 'r_pen', burst: 'r_burst' };
+    if (h.t.includes('h')) out.push(...all('antiheal'));
+    if (h.d === 'M') out.push(...all('magic'));
+    if (h.r === 'marksman' && h.d === 'P') out.push(...all('basic'));
+    if (h.d === 'P' && h.r !== 'marksman') out.push(...all('phys'));
+    if (h.r === 'tank') out.push(...all('pen'));
+    if (h.t.includes('b')) out.push(...all('burst'));
+    const res = out.map(([i, k]) => [i, k === 'pen' && /Void|Glaive|mpen/.test(i) ? 'r_mpen' : R[k]]);
+    if (h.t.includes('c') && C.ccBoots) res.push([C.ccBoots, 'r_cc']);
     const seen = new Set();
-    return out.filter(([i]) => !seen.has(i) && seen.add(i)).slice(0, 6);
+    return res.filter(([i]) => !seen.has(i) && seen.add(i)).slice(0, 6);
   }
   function mlStrongAgainst(data, name) {
     const h = mlIndex(data)[name];
@@ -160,6 +174,48 @@
     return [...set];
   }
 
-  const Engine = { mlStats, mlScore, mlBuild, mlTips, mlCounterItems, mlStrongAgainst, bsScore, bsStrongAgainst, BS_MODES };
+  /* ---------- Free Fire ---------- */
+  const FF_STYLE = {
+    rush: { rush: 3, mobility: 2, heal: 1, armor: 1 },
+    sniper: { sniper: 3, intel: 2, heal: 1, antirush: 1 },
+    support: { support: 3, heal: 3, intel: 1 },
+    balanced: { heal: 2, armor: 2, intel: 1, mobility: 1, rush: 1, sniper: 1 }
+  };
+  const FF_MODE = { br: { br: 1.5, intel: 0.5 }, cs: { cs: 1.5, armor: 0.5 } };
+  const FF_THREAT = { gloo: { antigloo: 3 }, rush: { antirush: 3, armor: 1, heal: 0.5 }, sniper: { antisniper: 3, mobility: 1 } };
+  function ffWeights(style, mode, threats) {
+    const w = {};
+    const add = m => { for (const k in m || {}) w[k] = (w[k] || 0) + m[k]; };
+    add(FF_STYLE[style]); add(FF_MODE[mode]); (threats || []).forEach(t => add(FF_THREAT[t]));
+    return w;
+  }
+  function ffRank(data, style, mode, threats) {
+    const w = ffWeights(style, mode, threats);
+    return data.characters.map(ch => {
+      let s = 0; const why = [];
+      ch.tags.forEach(t => { if (w[t]) { s += w[t]; why.push({ t, v: w[t] }); } });
+      if (ch.tier && TIER[ch.tier]) s += TIER[ch.tier] * 2;
+      why.sort((a, b) => b.v - a.v);
+      return { n: ch.n, type: ch.type, s, why: why.slice(0, 2).map(x => 'f_' + x.t) };
+    }).sort((a, b) => b.s - a.s || a.n.localeCompare(b.n));
+  }
+  function ffCombo(data, style, mode, threats, force) {
+    const r = ffRank(data, style, mode, threats);
+    const f = force && r.find(x => x.n === force);
+    const active = f && f.type === 'a' ? f : r.find(x => x.type === 'a');
+    const passives = r.filter(x => x.type === 'p' && (!f || x.n !== f.n));
+    const p = f && f.type === 'p' ? [f, ...passives.slice(0, 2)] : passives.slice(0, 3);
+    return { active, passives: p };
+  }
+  function ffBestStyle(data, name) {
+    let best = null;
+    for (const st of Object.keys(FF_STYLE)) for (const md of Object.keys(FF_MODE)) {
+      const r = ffRank(data, st, md, []).find(x => x.n === name);
+      if (!best || r.s > best.s) best = { style: st, mode: md, s: r.s };
+    }
+    return best;
+  }
+
+  const Engine = { mlStats, mlScore, mlBuild, mlTips, mlCounterItems, mlStrongAgainst, bsScore, bsStrongAgainst, BS_MODES, FF_STYLE, FF_MODE, FF_THREAT, ffRank, ffCombo, ffBestStyle };
   if (typeof module !== 'undefined' && module.exports) module.exports = Engine; else root.Engine = Engine;
 })(typeof window !== 'undefined' ? window : globalThis);

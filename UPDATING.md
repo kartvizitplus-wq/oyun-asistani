@@ -1,20 +1,23 @@
-# Weekly data update procedure
+# Weekly update procedure
 
-This file is the instruction set for the automated weekly update run. A human can follow it too.
+Instruction set for the automated weekly run (a human can follow it too).
 
-## Goal
-Keep `data/mlbb.json` and `data/brawlstars.json` in line with the latest game patches, then rebuild and push.
+## 1. Game data
+Files: `data/mlbb.json`, `data/hok.json`, `data/wildrift.json`, `data/brawlstars.json`, `data/freefire.json` (each has a `notes` field describing its schema).
 
-## Steps
-1. Research the most recent official patch / balance notes:
-   - Mobile Legends: Bang Bang: official patch notes (Moonton site, official social channels, reputable esports news). Note the patch number.
-   - Brawl Stars: latest balance changes and new brawlers (Supercell blog / official channels).
-2. For each game update the data file:
-   - **New heroes / brawlers**: add an entry with the same fields as existing ones (see each file's `notes`). Keep the list alphabetical.
-   - **Buffs / nerfs and meta**: set `tier` to `S`, `A`, `B` or `C` only where at least one reliable source supports it (patch notes, tier lists from reputable sites, pro pick rates). Leave `null` when unsure. Re-check existing tiers each week; reset a tier to `null` when it is no longer supported.
-   - **Item changes (MLBB)**: if an item in `archetypes` or a hero `build` was removed or renamed, replace it with its current equivalent. If a Turkish name is known, update `data/mlbb-items-tr.json`.
-   - Update `updated` to today's date (YYYY-MM-DD) and `patch` (MLBB) to the patch number.
-3. Do not invent data. Only change what sources confirm.
-4. Run `node build.js` and make sure it finishes without errors.
-5. Commit with a message like `Data update YYYY-MM-DD: MLBB patch X, Brawl Stars changes` listing the main changes, then push to `main`. Cloudflare Pages redeploys automatically.
-6. Never commit the `dist/` folder.
+For every game, research the latest official patch / balance notes (official site and channels, Liquipedia, reputable esports news):
+- **New heroes / brawlers / characters**: add entries with the same fields as existing ones, keep the list alphabetical. Only add what sources confirm (role, damage type, main traits).
+- **Buffs / nerfs / meta**: set `tier` to `S`, `A`, `B` or `C` only when a reliable source supports it (patch direction plus win rate or reputable tier list). Use `null` when unsure. Re-check existing tiers every week.
+- **Items**: if an item in `archetypes`, a hero `build` or `counters` was removed or renamed, replace it with its current equivalent. Honor of Kings archetypes currently have empty `items` and category placeholders (`#cat_...`) in `counters`; replace them with exact item names once a reliable source confirms them.
+- Update `updated` (YYYY-MM-DD) and `patch` where the file has it.
+- Turkish item names for MLBB live in `data/mlbb-items-tr.json`.
+
+## 2. Patch news (SEO content)
+For each game that had a patch since the last article, add one file `data/news/YYYY-MM-DD-<game>-patch-<version>.json` with the same structure as the existing article:
+- `slug`, `date`, `game` (mlbb, hok, wildrift, freefire, brawlstars), `sources` (names of sources used)
+- `title`, `summary` and `body` in all five languages: tr, en, id, es, pt
+- `body` blocks: `{"h": "heading"}`, `{"p": "paragraph"}`, `{"ul": ["item", ...]}`
+- Write everything in our own words. Never copy sentences from sources; no quotes longer than a few words. Summarize: who was buffed, who was nerfed, reworks, item/map changes, and a short "our take" section that links the change to picks and builds. Do not invent numbers or changes.
+
+## 3. Publish
+Run `node build.js` (must finish without errors), commit with a message such as `Weekly update YYYY-MM-DD: <games and patches>`, and push to `main`. Cloudflare Pages redeploys automatically. Never commit `dist/`.

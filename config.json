@@ -4,5 +4,12 @@
   "adsenseClient": "",
   "contactEmail": "",
   "defaultLang": "en",
-  "langs": ["en", "tr", "id", "es", "pt"]
+  "langs": [
+    "en",
+    "tr",
+    "id",
+    "es",
+    "pt"
+  ],
+  "googleVerification": ""
 }

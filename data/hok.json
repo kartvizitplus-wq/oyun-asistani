@@ -1,0 +1,1047 @@
+{
+  "game": "hok",
+  "patch": "",
+  "updated": "2026-10-14",
+  "notes": "Same schema as mlbb.json. tier=S/A/B/C or null (weekly updater). Item names starting with # are category keys translated in src/i18n.json.",
+  "archetypes": {
+    "fP": {
+      "group": "front",
+      "type": "P",
+      "spell": "Flicker",
+      "items": []
+    },
+    "fM": {
+      "group": "front",
+      "type": "M",
+      "spell": "Flicker",
+      "items": []
+    },
+    "tank": {
+      "group": "front",
+      "type": "T",
+      "spell": "Flicker",
+      "items": []
+    },
+    "support": {
+      "group": "front",
+      "type": "T",
+      "spell": "Flicker",
+      "items": []
+    },
+    "mmC": {
+      "group": "back",
+      "type": "P",
+      "spell": "Flicker",
+      "items": []
+    },
+    "mmA": {
+      "group": "back",
+      "type": "P",
+      "spell": "Flicker",
+      "items": []
+    },
+    "mmB": {
+      "group": "back",
+      "type": "P",
+      "spell": "Flicker",
+      "items": []
+    },
+    "mage": {
+      "group": "back",
+      "type": "M",
+      "spell": "Flicker",
+      "items": []
+    },
+    "assP": {
+      "group": "back",
+      "type": "P",
+      "spell": "Punish",
+      "items": []
+    },
+    "assM": {
+      "group": "back",
+      "type": "M",
+      "spell": "Punish",
+      "items": []
+    }
+  },
+  "counters": {
+    "antiheal": {
+      "any": "#cat_antiheal"
+    },
+    "magic": {
+      "any": "#cat_magicdef"
+    },
+    "magicHeavy": {},
+    "basic": {
+      "front": "#cat_antiatk",
+      "back": "#cat_lifesave"
+    },
+    "phys": {
+      "front": "#cat_armor",
+      "back": "#cat_lifesave"
+    },
+    "pen": {
+      "P": "#cat_pen",
+      "M": "#cat_mpen"
+    },
+    "burst": {
+      "any": "#cat_lifesave"
+    },
+    "ccBoots": "#cat_ccboots",
+    "purify": "Purify"
+  },
+  "heroes": [
+    {
+      "n": "Agudo",
+      "r": "assassin",
+      "d": "P",
+      "t": "bd",
+      "s": [
+        "antisquishy"
+      ],
+      "b": "assP",
+      "tier": null
+    },
+    {
+      "n": "Allain",
+      "r": "fighter",
+      "d": "P",
+      "t": "h",
+      "s": [],
+      "b": "fP",
+      "tier": null
+    },
+    {
+      "n": "Angela",
+      "r": "mage",
+      "d": "M",
+      "t": "bc",
+      "s": [
+        "antisquishy"
+      ],
+      "b": "mage",
+      "tier": null
+    },
+    {
+      "n": "Ao'yin",
+      "r": "marksman",
+      "d": "P",
+      "t": "",
+      "s": [],
+      "b": "mmC",
+      "tier": null
+    },
+    {
+      "n": "Arke",
+      "r": "assassin",
+      "d": "P",
+      "t": "bd",
+      "s": [
+        "antisquishy"
+      ],
+      "b": "assP",
+      "tier": null
+    },
+    {
+      "n": "Arli",
+      "r": "marksman",
+      "d": "P",
+      "t": "d",
+      "s": [],
+      "b": "mmA",
+      "tier": null
+    },
+    {
+      "n": "Arthur",
+      "r": "fighter",
+      "d": "P",
+      "t": "c",
+      "s": [],
+      "b": "fP",
+      "tier": null
+    },
+    {
+      "n": "Ata",
+      "r": "fighter",
+      "d": "P",
+      "t": "c",
+      "s": [],
+      "b": "fP",
+      "tier": null
+    },
+    {
+      "n": "Athena",
+      "r": "assassin",
+      "d": "P",
+      "t": "bd",
+      "s": [],
+      "b": "assP",
+      "tier": null
+    },
+    {
+      "n": "Augran",
+      "r": "fighter",
+      "d": "P",
+      "t": "h",
+      "s": [],
+      "b": "fP",
+      "tier": null
+    },
+    {
+      "n": "Bai Qi",
+      "r": "tank",
+      "d": "M",
+      "t": "c",
+      "s": [],
+      "b": "tank",
+      "tier": null
+    },
+    {
+      "n": "Biron",
+      "r": "fighter",
+      "d": "P",
+      "t": "h",
+      "s": [
+        "antitank"
+      ],
+      "b": "fP",
+      "tier": null
+    },
+    {
+      "n": "Butterfly",
+      "r": "assassin",
+      "d": "P",
+      "t": "bd",
+      "s": [
+        "antisquishy"
+      ],
+      "b": "assP",
+      "tier": null
+    },
+    {
+      "n": "Cai Yan",
+      "r": "support",
+      "d": "M",
+      "t": "h",
+      "s": [
+        "antiburst"
+      ],
+      "b": "support",
+      "tier": null
+    },
+    {
+      "n": "Chano",
+      "r": "marksman",
+      "d": "P",
+      "t": "",
+      "s": [],
+      "b": "mmA",
+      "tier": null
+    },
+    {
+      "n": "Charlotte",
+      "r": "fighter",
+      "d": "P",
+      "t": "d",
+      "s": [],
+      "b": "fP",
+      "tier": null
+    },
+    {
+      "n": "Cirrus",
+      "r": "assassin",
+      "d": "P",
+      "t": "bd",
+      "s": [],
+      "b": "assP",
+      "tier": null
+    },
+    {
+      "n": "Consort Yu",
+      "r": "marksman",
+      "d": "M",
+      "t": "b",
+      "s": [
+        "antidash"
+      ],
+      "b": "mage",
+      "tier": null
+    },
+    {
+      "n": "Da Qiao",
+      "r": "support",
+      "d": "M",
+      "t": "c",
+      "s": [],
+      "b": "support",
+      "tier": null
+    },
+    {
+      "n": "Daji",
+      "r": "mage",
+      "d": "M",
+      "t": "bc",
+      "s": [
+        "antisquishy"
+      ],
+      "b": "mage",
+      "tier": null
+    },
+    {
+      "n": "Devara",
+      "r": "fighter",
+      "d": "P",
+      "t": "",
+      "s": [],
+      "b": "fP",
+      "tier": null
+    },
+    {
+      "n": "Dharma",
+      "r": "fighter",
+      "d": "P",
+      "t": "c",
+      "s": [],
+      "b": "fP",
+      "tier": null
+    },
+    {
+      "n": "Di Renjie",
+      "r": "marksman",
+      "d": "P",
+      "t": "c",
+      "s": [
+        "anticc"
+      ],
+      "b": "mmA",
+      "tier": null
+    },
+    {
+      "n": "Dian Wei",
+      "r": "fighter",
+      "d": "P",
+      "t": "h",
+      "s": [
+        "antitank"
+      ],
+      "b": "fP",
+      "tier": null
+    },
+    {
+      "n": "Diaochan",
+      "r": "mage",
+      "d": "M",
+      "t": "hd",
+      "s": [],
+      "b": "mage",
+      "tier": null
+    },
+    {
+      "n": "Dolia",
+      "r": "support",
+      "d": "M",
+      "t": "h",
+      "s": [],
+      "b": "support",
+      "tier": null
+    },
+    {
+      "n": "Donghuang",
+      "r": "tank",
+      "d": "M",
+      "t": "c",
+      "s": [
+        "antidash"
+      ],
+      "b": "tank",
+      "tier": null
+    },
+    {
+      "n": "Dr Bian",
+      "r": "mage",
+      "d": "M",
+      "t": "c",
+      "s": [],
+      "b": "mage",
+      "tier": null
+    },
+    {
+      "n": "Dun",
+      "r": "tank",
+      "d": "P",
+      "t": "ch",
+      "s": [
+        "anticc"
+      ],
+      "b": "tank",
+      "tier": null
+    },
+    {
+      "n": "Dyadia",
+      "r": "support",
+      "d": "M",
+      "t": "h",
+      "s": [
+        "antiburst"
+      ],
+      "b": "support",
+      "tier": null
+    },
+    {
+      "n": "Erin",
+      "r": "marksman",
+      "d": "P",
+      "t": "",
+      "s": [],
+      "b": "mmA",
+      "tier": null
+    },
+    {
+      "n": "Fang",
+      "r": "marksman",
+      "d": "P",
+      "t": "",
+      "s": [],
+      "b": "mmC",
+      "tier": null
+    },
+    {
+      "n": "Fatih",
+      "r": "fighter",
+      "d": "P",
+      "t": "",
+      "s": [],
+      "b": "fP",
+      "tier": null
+    },
+    {
+      "n": "Feyd",
+      "r": "assassin",
+      "d": "P",
+      "t": "bd",
+      "s": [],
+      "b": "assP",
+      "tier": null
+    },
+    {
+      "n": "Florentino",
+      "r": "fighter",
+      "d": "P",
+      "t": "d",
+      "s": [],
+      "b": "fP",
+      "tier": null
+    },
+    {
+      "n": "Fuzi",
+      "r": "fighter",
+      "d": "P",
+      "t": "c",
+      "s": [],
+      "b": "fP",
+      "tier": null
+    },
+    {
+      "n": "Gan & Mo",
+      "r": "mage",
+      "d": "M",
+      "t": "b",
+      "s": [
+        "antisquishy"
+      ],
+      "b": "mage",
+      "tier": null
+    },
+    {
+      "n": "Gao",
+      "r": "mage",
+      "d": "M",
+      "t": "b",
+      "s": [
+        "antisquishy"
+      ],
+      "b": "mage",
+      "tier": null
+    },
+    {
+      "n": "Gao Changgong",
+      "r": "assassin",
+      "d": "P",
+      "t": "b",
+      "s": [
+        "antisquishy",
+        "antimm"
+      ],
+      "b": "assP",
+      "tier": null
+    },
+    {
+      "n": "Garo",
+      "r": "marksman",
+      "d": "P",
+      "t": "",
+      "s": [
+        "antitank"
+      ],
+      "b": "mmC",
+      "tier": null
+    },
+    {
+      "n": "Guan Yu",
+      "r": "fighter",
+      "d": "P",
+      "t": "cd",
+      "s": [],
+      "b": "fP",
+      "tier": null
+    },
+    {
+      "n": "Guiguzi",
+      "r": "support",
+      "d": "M",
+      "t": "c",
+      "s": [],
+      "b": "support",
+      "tier": null
+    },
+    {
+      "n": "Han Xin",
+      "r": "assassin",
+      "d": "P",
+      "t": "d",
+      "s": [],
+      "b": "assP",
+      "tier": null
+    },
+    {
+      "n": "Hou Yi",
+      "r": "marksman",
+      "d": "P",
+      "t": "c",
+      "s": [],
+      "b": "mmA",
+      "tier": null
+    },
+    {
+      "n": "Huang Zhong",
+      "r": "marksman",
+      "d": "P",
+      "t": "",
+      "s": [],
+      "b": "mmC",
+      "tier": null
+    },
+    {
+      "n": "Jing",
+      "r": "assassin",
+      "d": "P",
+      "t": "bd",
+      "s": [
+        "antisquishy"
+      ],
+      "b": "assP",
+      "tier": null
+    },
+    {
+      "n": "Kaizer",
+      "r": "fighter",
+      "d": "P",
+      "t": "c",
+      "s": [],
+      "b": "fP",
+      "tier": null
+    },
+    {
+      "n": "Kongming",
+      "r": "mage",
+      "d": "M",
+      "t": "bd",
+      "s": [
+        "antisquishy"
+      ],
+      "b": "mage",
+      "tier": null
+    },
+    {
+      "n": "Kui",
+      "r": "tank",
+      "d": "P",
+      "t": "c",
+      "s": [],
+      "b": "tank",
+      "tier": null
+    },
+    {
+      "n": "Lady Sun",
+      "r": "marksman",
+      "d": "P",
+      "t": "d",
+      "s": [],
+      "b": "mmC",
+      "tier": null
+    },
+    {
+      "n": "Lady Zhen",
+      "r": "mage",
+      "d": "M",
+      "t": "c",
+      "s": [],
+      "b": "mage",
+      "tier": null
+    },
+    {
+      "n": "Lam",
+      "r": "assassin",
+      "d": "P",
+      "t": "bd",
+      "s": [
+        "antisquishy"
+      ],
+      "b": "assP",
+      "tier": null
+    },
+    {
+      "n": "Li Bai",
+      "r": "assassin",
+      "d": "P",
+      "t": "bd",
+      "s": [
+        "antisquishy"
+      ],
+      "b": "assP",
+      "tier": null
+    },
+    {
+      "n": "Li Xin",
+      "r": "fighter",
+      "d": "P",
+      "t": "",
+      "s": [],
+      "b": "fP",
+      "tier": null
+    },
+    {
+      "n": "Lian Po",
+      "r": "tank",
+      "d": "M",
+      "t": "c",
+      "s": [],
+      "b": "tank",
+      "tier": null
+    },
+    {
+      "n": "Liang",
+      "r": "mage",
+      "d": "M",
+      "t": "c",
+      "s": [],
+      "b": "mage",
+      "tier": null
+    },
+    {
+      "n": "Liu Bang",
+      "r": "tank",
+      "d": "M",
+      "t": "c",
+      "s": [],
+      "b": "tank",
+      "tier": null
+    },
+    {
+      "n": "Liu Bei",
+      "r": "assassin",
+      "d": "P",
+      "t": "d",
+      "s": [],
+      "b": "assP",
+      "tier": null
+    },
+    {
+      "n": "Liu Shan",
+      "r": "support",
+      "d": "M",
+      "t": "c",
+      "s": [],
+      "b": "support",
+      "tier": null
+    },
+    {
+      "n": "Lu Bu",
+      "r": "fighter",
+      "d": "P",
+      "t": "h",
+      "s": [
+        "antitank"
+      ],
+      "b": "fP",
+      "tier": null
+    },
+    {
+      "n": "Luban No.7",
+      "r": "marksman",
+      "d": "P",
+      "t": "",
+      "s": [],
+      "b": "mmC",
+      "tier": null
+    },
+    {
+      "n": "Luna",
+      "r": "assassin",
+      "d": "M",
+      "t": "bd",
+      "s": [
+        "antisquishy"
+      ],
+      "b": "assM",
+      "tier": null
+    },
+    {
+      "n": "Mai Shiranui",
+      "r": "mage",
+      "d": "M",
+      "t": "bd",
+      "s": [
+        "antisquishy"
+      ],
+      "b": "mage",
+      "tier": null
+    },
+    {
+      "n": "Marco Polo",
+      "r": "marksman",
+      "d": "P",
+      "t": "d",
+      "s": [
+        "antitank"
+      ],
+      "b": "mmA",
+      "tier": null
+    },
+    {
+      "n": "Mayene",
+      "r": "fighter",
+      "d": "P",
+      "t": "c",
+      "s": [],
+      "b": "fP",
+      "tier": null
+    },
+    {
+      "n": "Meng Ya",
+      "r": "marksman",
+      "d": "P",
+      "t": "",
+      "s": [],
+      "b": "mmA",
+      "tier": null
+    },
+    {
+      "n": "Mi Yue",
+      "r": "fighter",
+      "d": "M",
+      "t": "h",
+      "s": [
+        "antitank"
+      ],
+      "b": "fM",
+      "tier": null
+    },
+    {
+      "n": "Milady",
+      "r": "mage",
+      "d": "M",
+      "t": "",
+      "s": [],
+      "b": "mage",
+      "tier": null
+    },
+    {
+      "n": "Ming",
+      "r": "support",
+      "d": "M",
+      "t": "h",
+      "s": [
+        "antiburst"
+      ],
+      "b": "support",
+      "tier": null
+    },
+    {
+      "n": "Mozi",
+      "r": "mage",
+      "d": "M",
+      "t": "c",
+      "s": [],
+      "b": "mage",
+      "tier": null
+    },
+    {
+      "n": "Mulan",
+      "r": "fighter",
+      "d": "P",
+      "t": "bd",
+      "s": [],
+      "b": "fP",
+      "tier": null
+    },
+    {
+      "n": "Musashi",
+      "r": "fighter",
+      "d": "P",
+      "t": "d",
+      "s": [],
+      "b": "fP",
+      "tier": null
+    },
+    {
+      "n": "Nakoruru",
+      "r": "assassin",
+      "d": "P",
+      "t": "bd",
+      "s": [
+        "antisquishy"
+      ],
+      "b": "assP",
+      "tier": null
+    },
+    {
+      "n": "Nezha",
+      "r": "fighter",
+      "d": "P",
+      "t": "h",
+      "s": [],
+      "b": "fP",
+      "tier": null
+    },
+    {
+      "n": "Nuwa",
+      "r": "mage",
+      "d": "M",
+      "t": "b",
+      "s": [],
+      "b": "mage",
+      "tier": null
+    },
+    {
+      "n": "Pei",
+      "r": "assassin",
+      "d": "P",
+      "t": "bd",
+      "s": [],
+      "b": "assP",
+      "tier": null
+    },
+    {
+      "n": "Sakeer",
+      "r": "tank",
+      "d": "M",
+      "t": "c",
+      "s": [],
+      "b": "tank",
+      "tier": null
+    },
+    {
+      "n": "Shangguan",
+      "r": "mage",
+      "d": "M",
+      "t": "bd",
+      "s": [
+        "antisquishy"
+      ],
+      "b": "mage",
+      "tier": null
+    },
+    {
+      "n": "Shouyue",
+      "r": "marksman",
+      "d": "P",
+      "t": "b",
+      "s": [],
+      "b": "mmB",
+      "tier": null
+    },
+    {
+      "n": "Sima Yi",
+      "r": "assassin",
+      "d": "M",
+      "t": "bd",
+      "s": [
+        "antisquishy"
+      ],
+      "b": "assM",
+      "tier": null
+    },
+    {
+      "n": "Sun Bin",
+      "r": "support",
+      "d": "M",
+      "t": "h",
+      "s": [],
+      "b": "support",
+      "tier": null
+    },
+    {
+      "n": "Sun Ce",
+      "r": "fighter",
+      "d": "P",
+      "t": "c",
+      "s": [],
+      "b": "fP",
+      "tier": null
+    },
+    {
+      "n": "Ukyo Tachibana",
+      "r": "assassin",
+      "d": "P",
+      "t": "bd",
+      "s": [],
+      "b": "assP",
+      "tier": null
+    },
+    {
+      "n": "Wang Zhaojun",
+      "r": "mage",
+      "d": "M",
+      "t": "c",
+      "s": [],
+      "b": "mage",
+      "tier": null
+    },
+    {
+      "n": "Wukong",
+      "r": "assassin",
+      "d": "P",
+      "t": "b",
+      "s": [],
+      "b": "assP",
+      "tier": null
+    },
+    {
+      "n": "Xiang Yu",
+      "r": "tank",
+      "d": "P",
+      "t": "c",
+      "s": [],
+      "b": "tank",
+      "tier": null
+    },
+    {
+      "n": "Xiao Qiao",
+      "r": "mage",
+      "d": "M",
+      "t": "b",
+      "s": [
+        "antisquishy"
+      ],
+      "b": "mage",
+      "tier": null
+    },
+    {
+      "n": "Yang Jian",
+      "r": "fighter",
+      "d": "P",
+      "t": "c",
+      "s": [],
+      "b": "fP",
+      "tier": null
+    },
+    {
+      "n": "Yao",
+      "r": "fighter",
+      "d": "P",
+      "t": "h",
+      "s": [],
+      "b": "fP",
+      "tier": null
+    },
+    {
+      "n": "Yaria",
+      "r": "support",
+      "d": "M",
+      "t": "h",
+      "s": [
+        "antiburst"
+      ],
+      "b": "support",
+      "tier": null
+    },
+    {
+      "n": "Ying",
+      "r": "assassin",
+      "d": "P",
+      "t": "bd",
+      "s": [],
+      "b": "assP",
+      "tier": null
+    },
+    {
+      "n": "Yixing",
+      "r": "mage",
+      "d": "M",
+      "t": "c",
+      "s": [],
+      "b": "mage",
+      "tier": null
+    },
+    {
+      "n": "Yuhuan",
+      "r": "mage",
+      "d": "M",
+      "t": "h",
+      "s": [],
+      "b": "mage",
+      "tier": null
+    },
+    {
+      "n": "Zhang Fei",
+      "r": "tank",
+      "d": "P",
+      "t": "c",
+      "s": [
+        "antiburst"
+      ],
+      "b": "tank",
+      "tier": null
+    },
+    {
+      "n": "Zhou Yu",
+      "r": "mage",
+      "d": "M",
+      "t": "",
+      "s": [],
+      "b": "mage",
+      "tier": null
+    },
+    {
+      "n": "Zhuangzi",
+      "r": "tank",
+      "d": "M",
+      "t": "h",
+      "s": [
+        "anticc"
+      ],
+      "b": "tank",
+      "tier": null
+    },
+    {
+      "n": "Zilong",
+      "r": "assassin",
+      "d": "P",
+      "t": "d",
+      "s": [],
+      "b": "assP",
+      "tier": null
+    },
+    {
+      "n": "Ziya",
+      "r": "mage",
+      "d": "M",
+      "t": "c",
+      "s": [],
+      "b": "mage",
+      "tier": null
+    }
+  ]
+}

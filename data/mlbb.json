@@ -1,142 +1,1482 @@
 {
   "game": "mlbb",
-  "patch": "",
+  "patch": "2.2.16",
   "updated": "2026-10-14",
   "notes": "r=role, d=damage type (P/M), t=traits (h heal/sustain, c crowd control, b burst, d dash/mobility), s=strengths, b=build archetype, tier=S/A/B/C or null (set by weekly updater from patch notes/meta). build/spell override archetype defaults.",
   "archetypes": {
-    "fP": {"group": "front", "type": "P", "spell": "Petrify", "items": ["Warrior Boots", "War Axe", "Hunter Strike", "Malefic Roar", "Queen's Wings", "Immortality"]},
-    "fM": {"group": "front", "type": "M", "spell": "Vengeance", "items": ["Arcane Boots", "Clock of Destiny", "Oracle", "Lightning Truncheon", "Athena's Shield", "Immortality"]},
-    "tank": {"group": "front", "type": "T", "spell": "Flicker", "items": ["Tough Boots", "Cursed Helmet", "Dominance Ice", "Athena's Shield", "Antique Cuirass", "Immortality"]},
-    "support": {"group": "front", "type": "T", "spell": "Flicker", "items": ["Tough Boots", "Fleeting Time", "Enchanted Talisman", "Oracle", "Athena's Shield", "Immortality"]},
-    "mmC": {"group": "back", "type": "P", "spell": "Flicker", "items": ["Swift Boots", "Berserker's Fury", "Windtalker", "Blade of Despair", "Malefic Roar", "Wind of Nature"]},
-    "mmA": {"group": "back", "type": "P", "spell": "Flicker", "items": ["Swift Boots", "Demon Hunter Sword", "Golden Staff", "Corrosion Scythe", "Malefic Roar", "Wind of Nature"]},
-    "mmB": {"group": "back", "type": "P", "spell": "Flicker", "items": ["Warrior Boots", "Blade of the Heptaseas", "Hunter Strike", "Blade of Despair", "Malefic Roar", "Wind of Nature"]},
-    "mage": {"group": "back", "type": "M", "spell": "Flicker", "items": ["Arcane Boots", "Clock of Destiny", "Lightning Truncheon", "Holy Crystal", "Divine Glaive", "Blood Wings"]},
-    "assP": {"group": "back", "type": "P", "spell": "Retribution", "items": ["Warrior Boots", "Hunter Strike", "Blade of the Heptaseas", "Blade of Despair", "Malefic Roar", "Immortality"]},
-    "assM": {"group": "back", "type": "M", "spell": "Retribution", "items": ["Arcane Boots", "Lightning Truncheon", "Holy Crystal", "Divine Glaive", "Blood Wings", "Immortality"]}
+    "fP": {
+      "group": "front",
+      "type": "P",
+      "spell": "Petrify",
+      "items": [
+        "Warrior Boots",
+        "War Axe",
+        "Hunter Strike",
+        "Malefic Roar",
+        "Queen's Wings",
+        "Immortality"
+      ]
+    },
+    "fM": {
+      "group": "front",
+      "type": "M",
+      "spell": "Vengeance",
+      "items": [
+        "Arcane Boots",
+        "Clock of Destiny",
+        "Oracle",
+        "Lightning Truncheon",
+        "Athena's Shield",
+        "Immortality"
+      ]
+    },
+    "tank": {
+      "group": "front",
+      "type": "T",
+      "spell": "Flicker",
+      "items": [
+        "Tough Boots",
+        "Cursed Helmet",
+        "Dominance Ice",
+        "Athena's Shield",
+        "Antique Cuirass",
+        "Immortality"
+      ]
+    },
+    "support": {
+      "group": "front",
+      "type": "T",
+      "spell": "Flicker",
+      "items": [
+        "Tough Boots",
+        "Fleeting Time",
+        "Enchanted Talisman",
+        "Oracle",
+        "Athena's Shield",
+        "Immortality"
+      ]
+    },
+    "mmC": {
+      "group": "back",
+      "type": "P",
+      "spell": "Flicker",
+      "items": [
+        "Swift Boots",
+        "Berserker's Fury",
+        "Windtalker",
+        "Blade of Despair",
+        "Malefic Roar",
+        "Wind of Nature"
+      ]
+    },
+    "mmA": {
+      "group": "back",
+      "type": "P",
+      "spell": "Flicker",
+      "items": [
+        "Swift Boots",
+        "Demon Hunter Sword",
+        "Golden Staff",
+        "Corrosion Scythe",
+        "Malefic Roar",
+        "Wind of Nature"
+      ]
+    },
+    "mmB": {
+      "group": "back",
+      "type": "P",
+      "spell": "Flicker",
+      "items": [
+        "Warrior Boots",
+        "Blade of the Heptaseas",
+        "Hunter Strike",
+        "Blade of Despair",
+        "Malefic Roar",
+        "Wind of Nature"
+      ]
+    },
+    "mage": {
+      "group": "back",
+      "type": "M",
+      "spell": "Flicker",
+      "items": [
+        "Arcane Boots",
+        "Clock of Destiny",
+        "Lightning Truncheon",
+        "Holy Crystal",
+        "Divine Glaive",
+        "Blood Wings"
+      ]
+    },
+    "assP": {
+      "group": "back",
+      "type": "P",
+      "spell": "Retribution",
+      "items": [
+        "Warrior Boots",
+        "Hunter Strike",
+        "Blade of the Heptaseas",
+        "Blade of Despair",
+        "Malefic Roar",
+        "Immortality"
+      ]
+    },
+    "assM": {
+      "group": "back",
+      "type": "M",
+      "spell": "Retribution",
+      "items": [
+        "Arcane Boots",
+        "Lightning Truncheon",
+        "Holy Crystal",
+        "Divine Glaive",
+        "Blood Wings",
+        "Immortality"
+      ]
+    }
   },
   "heroes": [
-    {"n":"Aamon","r":"assassin","d":"M","t":"bd","s":["antisquishy"],"b":"assM","tier":null},
-    {"n":"Akai","r":"tank","d":"P","t":"cd","s":[],"b":"tank","tier":null},
-    {"n":"Aldous","r":"fighter","d":"P","t":"b","s":["antisquishy"],"b":"fP","tier":null},
-    {"n":"Alice","r":"mage","d":"M","t":"hd","s":[],"b":"mage","tier":null},
-    {"n":"Alpha","r":"fighter","d":"P","t":"cd","s":["antitank"],"b":"fP","tier":null},
-    {"n":"Alucard","r":"fighter","d":"P","t":"hd","s":[],"b":"fP","tier":null},
-    {"n":"Angela","r":"support","d":"M","t":"h","s":["antiburst"],"b":"support","tier":null},
-    {"n":"Argus","r":"fighter","d":"P","t":"d","s":[],"b":"fP","tier":null},
-    {"n":"Arlott","r":"fighter","d":"P","t":"cd","s":[],"b":"fP","tier":null},
-    {"n":"Atlas","r":"tank","d":"M","t":"c","s":[],"b":"tank","tier":null},
-    {"n":"Aulus","r":"fighter","d":"P","t":"","s":["antitank"],"b":"fP","build":["Tough Boots","War Axe","Corrosion Scythe","Malefic Roar","Queen's Wings","Immortality"],"tier":null},
-    {"n":"Aurora","r":"mage","d":"M","t":"bc","s":["antisquishy"],"b":"mage","tier":null},
-    {"n":"Badang","r":"fighter","d":"P","t":"bc","s":["antisquishy"],"b":"fP","build":["Warrior Boots","Hunter Strike","Blade of Despair","Malefic Roar","Queen's Wings","Immortality"],"tier":null},
-    {"n":"Balmond","r":"fighter","d":"P","t":"h","s":[],"b":"fP","tier":null},
-    {"n":"Barats","r":"tank","d":"P","t":"c","s":[],"b":"tank","tier":null},
-    {"n":"Baxia","r":"tank","d":"M","t":"c","s":["antiheal"],"b":"tank","tier":null},
-    {"n":"Beatrix","r":"marksman","d":"P","t":"b","s":[],"b":"mmB","tier":null},
-    {"n":"Belerick","r":"tank","d":"M","t":"c","s":["antimm"],"b":"tank","build":["Tough Boots","Cursed Helmet","Blade Armor","Dominance Ice","Athena's Shield","Immortality"],"tier":null},
-    {"n":"Benedetta","r":"assassin","d":"P","t":"d","s":[],"b":"assP","tier":null},
-    {"n":"Brody","r":"marksman","d":"P","t":"b","s":[],"b":"mmB","tier":null},
-    {"n":"Bruno","r":"marksman","d":"P","t":"","s":[],"b":"mmC","tier":null},
-    {"n":"Carmilla","r":"support","d":"M","t":"c","s":[],"b":"support","tier":null},
-    {"n":"Cecilion","r":"mage","d":"M","t":"b","s":["antisquishy"],"b":"mage","tier":null},
-    {"n":"Chang'e","r":"mage","d":"M","t":"","s":[],"b":"mage","tier":null},
-    {"n":"Chou","r":"fighter","d":"P","t":"cd","s":["antidash","anticc"],"b":"fP","tier":null},
-    {"n":"Cici","r":"fighter","d":"P","t":"hd","s":[],"b":"fP","tier":null},
-    {"n":"Claude","r":"marksman","d":"P","t":"d","s":[],"b":"mmA","tier":null},
-    {"n":"Clint","r":"marksman","d":"P","t":"b","s":[],"b":"mmB","tier":null},
-    {"n":"Cyclops","r":"mage","d":"M","t":"bc","s":[],"b":"mage","tier":null},
-    {"n":"Diggie","r":"support","d":"M","t":"c","s":["antiburst","anticc"],"b":"support","tier":null},
-    {"n":"Dyrroth","r":"fighter","d":"P","t":"bd","s":["antitank"],"b":"fP","build":["Warrior Boots","War Axe","Hunter Strike","Blade of Despair","Queen's Wings","Immortality"],"tier":null},
-    {"n":"Edith","r":"tank","d":"P","t":"c","s":[],"b":"tank","tier":null},
-    {"n":"Esmeralda","r":"fighter","d":"M","t":"hd","s":["antitank","antiburst"],"b":"fM","tier":null},
-    {"n":"Estes","r":"support","d":"M","t":"h","s":["antiburst"],"b":"support","tier":null},
-    {"n":"Eudora","r":"mage","d":"M","t":"bc","s":["antisquishy","antidash"],"b":"mage","tier":null},
-    {"n":"Fanny","r":"assassin","d":"P","t":"bd","s":["antisquishy"],"b":"assP","tier":null},
-    {"n":"Faramis","r":"support","d":"M","t":"","s":[],"b":"support","tier":null},
-    {"n":"Floryn","r":"support","d":"M","t":"h","s":["antiburst"],"b":"support","tier":null},
-    {"n":"Franco","r":"tank","d":"P","t":"c","s":["antidash"],"b":"tank","tier":null},
-    {"n":"Fredrinn","r":"tank","d":"P","t":"ch","s":[],"b":"tank","tier":null},
-    {"n":"Freya","r":"fighter","d":"P","t":"hd","s":[],"b":"fP","tier":null},
-    {"n":"Gatotkaca","r":"tank","d":"M","t":"c","s":[],"b":"tank","tier":null},
-    {"n":"Gloo","r":"tank","d":"M","t":"c","s":[],"b":"tank","tier":null},
-    {"n":"Gord","r":"mage","d":"M","t":"","s":[],"b":"mage","tier":null},
-    {"n":"Granger","r":"marksman","d":"P","t":"b","s":[],"b":"mmC","tier":null},
-    {"n":"Grock","r":"tank","d":"P","t":"c","s":[],"b":"tank","tier":null},
-    {"n":"Guinevere","r":"fighter","d":"M","t":"bcd","s":["antisquishy"],"b":"fM","tier":null},
-    {"n":"Gusion","r":"assassin","d":"M","t":"bd","s":["antisquishy"],"b":"assM","tier":null},
-    {"n":"Hanabi","r":"marksman","d":"P","t":"","s":[],"b":"mmA","tier":null},
-    {"n":"Hanzo","r":"assassin","d":"P","t":"b","s":[],"b":"assP","tier":null},
-    {"n":"Harith","r":"mage","d":"M","t":"d","s":[],"b":"mage","tier":null},
-    {"n":"Harley","r":"mage","d":"M","t":"bd","s":["antisquishy"],"b":"mage","tier":null},
-    {"n":"Hayabusa","r":"assassin","d":"P","t":"bd","s":["antisquishy","antimm"],"b":"assP","tier":null},
-    {"n":"Helcurt","r":"assassin","d":"P","t":"bc","s":["antisquishy","antimm"],"b":"assP","tier":null},
-    {"n":"Hilda","r":"fighter","d":"P","t":"h","s":["antisquishy"],"b":"fP","build":["Tough Boots","War Axe","Hunter Strike","Queen's Wings","Dominance Ice","Immortality"],"tier":null},
-    {"n":"Hylos","r":"tank","d":"M","t":"ch","s":[],"b":"tank","tier":null},
-    {"n":"Irithel","r":"marksman","d":"P","t":"","s":[],"b":"mmC","tier":null},
-    {"n":"Ixia","r":"marksman","d":"P","t":"h","s":[],"b":"mmA","tier":null},
-    {"n":"Jawhead","r":"fighter","d":"P","t":"c","s":["antisquishy"],"b":"fP","tier":null},
-    {"n":"Johnson","r":"tank","d":"M","t":"c","s":[],"b":"tank","tier":null},
-    {"n":"Joy","r":"assassin","d":"M","t":"d","s":["antisquishy"],"b":"assM","tier":null},
-    {"n":"Julian","r":"fighter","d":"M","t":"bd","s":[],"b":"fM","tier":null},
-    {"n":"Kadita","r":"mage","d":"M","t":"bcd","s":["antisquishy"],"b":"mage","tier":null},
-    {"n":"Kagura","r":"mage","d":"M","t":"bcd","s":["antisquishy"],"b":"mage","tier":null},
-    {"n":"Kaja","r":"support","d":"M","t":"c","s":["antidash"],"b":"support","tier":null},
-    {"n":"Karina","r":"assassin","d":"M","t":"bd","s":["antisquishy"],"b":"assM","tier":null},
-    {"n":"Karrie","r":"marksman","d":"P","t":"","s":["antitank"],"b":"mmA","tier":null},
-    {"n":"Khaleed","r":"fighter","d":"P","t":"h","s":[],"b":"fP","tier":null},
-    {"n":"Khufra","r":"tank","d":"P","t":"cd","s":["antidash","antimm"],"b":"tank","tier":null},
-    {"n":"Kimmy","r":"marksman","d":"M","t":"","s":[],"b":"mage","tier":null},
-    {"n":"Lancelot","r":"assassin","d":"P","t":"bd","s":["antisquishy","antimm"],"b":"assP","tier":null},
-    {"n":"Lapu-Lapu","r":"fighter","d":"P","t":"hcd","s":[],"b":"fP","tier":null},
-    {"n":"Layla","r":"marksman","d":"P","t":"","s":[],"b":"mmC","tier":null},
-    {"n":"Leomord","r":"fighter","d":"P","t":"d","s":[],"b":"fP","tier":null},
-    {"n":"Lesley","r":"marksman","d":"P","t":"b","s":[],"b":"mmC","tier":null},
-    {"n":"Ling","r":"assassin","d":"P","t":"bd","s":["antisquishy"],"b":"assP","tier":null},
-    {"n":"Lolita","r":"tank","d":"P","t":"c","s":["antimm"],"b":"tank","tier":null},
-    {"n":"Lunox","r":"mage","d":"M","t":"bd","s":["antitank"],"b":"mage","tier":null},
-    {"n":"Luo Yi","r":"mage","d":"M","t":"c","s":[],"b":"mage","tier":null},
-    {"n":"Lylia","r":"mage","d":"M","t":"","s":[],"b":"mage","tier":null},
-    {"n":"Martis","r":"fighter","d":"P","t":"cd","s":["anticc"],"b":"fP","tier":null},
-    {"n":"Masha","r":"fighter","d":"P","t":"h","s":["antitank"],"b":"fP","tier":null},
-    {"n":"Mathilda","r":"support","d":"M","t":"cd","s":["antiburst"],"b":"support","tier":null},
-    {"n":"Melissa","r":"marksman","d":"P","t":"","s":[],"b":"mmA","tier":null},
-    {"n":"Minotaur","r":"tank","d":"P","t":"ch","s":[],"b":"tank","tier":null},
-    {"n":"Minsitthar","r":"fighter","d":"P","t":"c","s":["antidash"],"b":"fP","tier":null},
-    {"n":"Miya","r":"marksman","d":"P","t":"","s":[],"b":"mmA","tier":null},
-    {"n":"Moskov","r":"marksman","d":"P","t":"","s":[],"b":"mmA","tier":null},
-    {"n":"Nana","r":"mage","d":"M","t":"c","s":[],"b":"mage","tier":null},
-    {"n":"Natalia","r":"assassin","d":"P","t":"b","s":["antisquishy","antimm"],"b":"assP","tier":null},
-    {"n":"Natan","r":"marksman","d":"M","t":"","s":[],"b":"mage","tier":null},
-    {"n":"Nolan","r":"assassin","d":"P","t":"bd","s":["antisquishy"],"b":"assP","tier":null},
-    {"n":"Novaria","r":"mage","d":"M","t":"b","s":[],"b":"mage","tier":null},
-    {"n":"Odette","r":"mage","d":"M","t":"bc","s":[],"b":"mage","tier":null},
-    {"n":"Paquito","r":"fighter","d":"P","t":"bd","s":["antisquishy"],"b":"fP","tier":null},
-    {"n":"Pharsa","r":"mage","d":"M","t":"b","s":["antisquishy"],"b":"mage","tier":null},
-    {"n":"Phoveus","r":"fighter","d":"M","t":"cd","s":["antidash"],"b":"fM","tier":null},
-    {"n":"Popol and Kupa","r":"marksman","d":"P","t":"c","s":[],"b":"mmB","tier":null},
-    {"n":"Rafaela","r":"support","d":"M","t":"h","s":["antiburst"],"b":"support","tier":null},
-    {"n":"Roger","r":"fighter","d":"P","t":"b","s":["antisquishy"],"b":"fP","tier":null},
-    {"n":"Ruby","r":"fighter","d":"P","t":"hc","s":[],"b":"fP","tier":null},
-    {"n":"Saber","r":"assassin","d":"P","t":"bc","s":["antisquishy","antimm","antidash"],"b":"assP","tier":null},
-    {"n":"Selena","r":"assassin","d":"M","t":"bc","s":["antisquishy"],"b":"assM","tier":null},
-    {"n":"Silvanna","r":"fighter","d":"M","t":"cd","s":[],"b":"fM","tier":null},
-    {"n":"Sun","r":"fighter","d":"P","t":"h","s":[],"b":"fP","tier":null},
-    {"n":"Terizla","r":"fighter","d":"P","t":"hc","s":[],"b":"fP","tier":null},
-    {"n":"Thamuz","r":"fighter","d":"P","t":"hd","s":[],"b":"fP","tier":null},
-    {"n":"Tigreal","r":"tank","d":"P","t":"c","s":[],"b":"tank","tier":null},
-    {"n":"Uranus","r":"tank","d":"M","t":"h","s":["antiburst"],"b":"tank","tier":null},
-    {"n":"Vale","r":"mage","d":"M","t":"bc","s":[],"b":"mage","tier":null},
-    {"n":"Valentina","r":"mage","d":"M","t":"bd","s":["anticc"],"b":"mage","tier":null},
-    {"n":"Valir","r":"mage","d":"M","t":"c","s":[],"b":"mage","tier":null},
-    {"n":"Vexana","r":"mage","d":"M","t":"c","s":[],"b":"mage","tier":null},
-    {"n":"Wanwan","r":"marksman","d":"P","t":"d","s":["antitank"],"b":"mmA","tier":null},
-    {"n":"X.Borg","r":"fighter","d":"P","t":"","s":["antitank"],"b":"fP","tier":null},
-    {"n":"Xavier","r":"mage","d":"M","t":"b","s":[],"b":"mage","tier":null},
-    {"n":"Yi Sun-shin","r":"marksman","d":"P","t":"","s":[],"b":"mmC","tier":null},
-    {"n":"Yin","r":"fighter","d":"P","t":"bc","s":["antisquishy"],"b":"fP","tier":null},
-    {"n":"Yu Zhong","r":"fighter","d":"P","t":"hcd","s":[],"b":"fP","tier":null},
-    {"n":"Yve","r":"mage","d":"M","t":"c","s":[],"b":"mage","tier":null},
-    {"n":"Zhask","r":"mage","d":"M","t":"","s":[],"b":"mage","tier":null},
-    {"n":"Zilong","r":"fighter","d":"P","t":"d","s":[],"b":"fP","tier":null}
-  ]
+    {
+      "n": "Aamon",
+      "r": "assassin",
+      "d": "M",
+      "t": "bd",
+      "s": [
+        "antisquishy"
+      ],
+      "b": "assM",
+      "tier": null
+    },
+    {
+      "n": "Akai",
+      "r": "tank",
+      "d": "P",
+      "t": "cd",
+      "s": [],
+      "b": "tank",
+      "tier": null
+    },
+    {
+      "n": "Aldous",
+      "r": "fighter",
+      "d": "P",
+      "t": "b",
+      "s": [
+        "antisquishy"
+      ],
+      "b": "fP",
+      "tier": null
+    },
+    {
+      "n": "Alice",
+      "r": "mage",
+      "d": "M",
+      "t": "hd",
+      "s": [],
+      "b": "mage",
+      "tier": null
+    },
+    {
+      "n": "Alpha",
+      "r": "fighter",
+      "d": "P",
+      "t": "cd",
+      "s": [
+        "antitank"
+      ],
+      "b": "fP",
+      "tier": null
+    },
+    {
+      "n": "Alucard",
+      "r": "fighter",
+      "d": "P",
+      "t": "hd",
+      "s": [],
+      "b": "fP",
+      "tier": null
+    },
+    {
+      "n": "Angela",
+      "r": "support",
+      "d": "M",
+      "t": "h",
+      "s": [
+        "antiburst"
+      ],
+      "b": "support",
+      "tier": null
+    },
+    {
+      "n": "Argus",
+      "r": "fighter",
+      "d": "P",
+      "t": "d",
+      "s": [],
+      "b": "fP",
+      "tier": null
+    },
+    {
+      "n": "Arlott",
+      "r": "fighter",
+      "d": "P",
+      "t": "cd",
+      "s": [],
+      "b": "fP",
+      "tier": null
+    },
+    {
+      "n": "Atlas",
+      "r": "tank",
+      "d": "M",
+      "t": "c",
+      "s": [],
+      "b": "tank",
+      "tier": null
+    },
+    {
+      "n": "Aulus",
+      "r": "fighter",
+      "d": "P",
+      "t": "",
+      "s": [
+        "antitank"
+      ],
+      "b": "fP",
+      "build": [
+        "Tough Boots",
+        "War Axe",
+        "Corrosion Scythe",
+        "Malefic Roar",
+        "Queen's Wings",
+        "Immortality"
+      ],
+      "tier": "A"
+    },
+    {
+      "n": "Aurora",
+      "r": "mage",
+      "d": "M",
+      "t": "bc",
+      "s": [
+        "antisquishy"
+      ],
+      "b": "mage",
+      "tier": null
+    },
+    {
+      "n": "Badang",
+      "r": "fighter",
+      "d": "P",
+      "t": "bc",
+      "s": [
+        "antisquishy"
+      ],
+      "b": "fP",
+      "build": [
+        "Warrior Boots",
+        "Hunter Strike",
+        "Blade of Despair",
+        "Malefic Roar",
+        "Queen's Wings",
+        "Immortality"
+      ],
+      "tier": null
+    },
+    {
+      "n": "Balmond",
+      "r": "fighter",
+      "d": "P",
+      "t": "h",
+      "s": [],
+      "b": "fP",
+      "tier": null
+    },
+    {
+      "n": "Barats",
+      "r": "tank",
+      "d": "P",
+      "t": "c",
+      "s": [],
+      "b": "tank",
+      "tier": null
+    },
+    {
+      "n": "Baxia",
+      "r": "tank",
+      "d": "M",
+      "t": "c",
+      "s": [
+        "antiheal"
+      ],
+      "b": "tank",
+      "tier": null
+    },
+    {
+      "n": "Beatrix",
+      "r": "marksman",
+      "d": "P",
+      "t": "b",
+      "s": [],
+      "b": "mmB",
+      "tier": null
+    },
+    {
+      "n": "Belerick",
+      "r": "tank",
+      "d": "M",
+      "t": "c",
+      "s": [
+        "antimm"
+      ],
+      "b": "tank",
+      "build": [
+        "Tough Boots",
+        "Cursed Helmet",
+        "Blade Armor",
+        "Dominance Ice",
+        "Athena's Shield",
+        "Immortality"
+      ],
+      "tier": null
+    },
+    {
+      "n": "Benedetta",
+      "r": "assassin",
+      "d": "P",
+      "t": "d",
+      "s": [],
+      "b": "assP",
+      "tier": null
+    },
+    {
+      "n": "Brody",
+      "r": "marksman",
+      "d": "P",
+      "t": "b",
+      "s": [],
+      "b": "mmB",
+      "tier": null
+    },
+    {
+      "n": "Bruno",
+      "r": "marksman",
+      "d": "P",
+      "t": "",
+      "s": [],
+      "b": "mmC",
+      "tier": null
+    },
+    {
+      "n": "Carmilla",
+      "r": "support",
+      "d": "M",
+      "t": "c",
+      "s": [],
+      "b": "support",
+      "tier": null
+    },
+    {
+      "n": "Cecilion",
+      "r": "mage",
+      "d": "M",
+      "t": "b",
+      "s": [
+        "antisquishy"
+      ],
+      "b": "mage",
+      "tier": null
+    },
+    {
+      "n": "Chang'e",
+      "r": "mage",
+      "d": "M",
+      "t": "",
+      "s": [],
+      "b": "mage",
+      "tier": null
+    },
+    {
+      "n": "Chip",
+      "r": "support",
+      "d": "M",
+      "t": "c",
+      "s": [],
+      "b": "support",
+      "tier": null
+    },
+    {
+      "n": "Chou",
+      "r": "fighter",
+      "d": "P",
+      "t": "cd",
+      "s": [
+        "antidash",
+        "anticc"
+      ],
+      "b": "fP",
+      "tier": null
+    },
+    {
+      "n": "Cici",
+      "r": "fighter",
+      "d": "P",
+      "t": "hd",
+      "s": [],
+      "b": "fP",
+      "tier": null
+    },
+    {
+      "n": "Claude",
+      "r": "marksman",
+      "d": "P",
+      "t": "d",
+      "s": [],
+      "b": "mmA",
+      "tier": null
+    },
+    {
+      "n": "Clint",
+      "r": "marksman",
+      "d": "P",
+      "t": "b",
+      "s": [],
+      "b": "mmB",
+      "tier": null
+    },
+    {
+      "n": "Cyclops",
+      "r": "mage",
+      "d": "M",
+      "t": "bc",
+      "s": [],
+      "b": "mage",
+      "tier": null
+    },
+    {
+      "n": "Diggie",
+      "r": "support",
+      "d": "M",
+      "t": "c",
+      "s": [
+        "antiburst",
+        "anticc"
+      ],
+      "b": "support",
+      "tier": null
+    },
+    {
+      "n": "Dyrroth",
+      "r": "fighter",
+      "d": "P",
+      "t": "bd",
+      "s": [
+        "antitank"
+      ],
+      "b": "fP",
+      "build": [
+        "Warrior Boots",
+        "War Axe",
+        "Hunter Strike",
+        "Blade of Despair",
+        "Queen's Wings",
+        "Immortality"
+      ],
+      "tier": null
+    },
+    {
+      "n": "Edith",
+      "r": "tank",
+      "d": "P",
+      "t": "c",
+      "s": [],
+      "b": "tank",
+      "tier": null
+    },
+    {
+      "n": "Esmeralda",
+      "r": "fighter",
+      "d": "M",
+      "t": "hd",
+      "s": [
+        "antitank",
+        "antiburst"
+      ],
+      "b": "fM",
+      "tier": null
+    },
+    {
+      "n": "Estes",
+      "r": "support",
+      "d": "M",
+      "t": "h",
+      "s": [
+        "antiburst"
+      ],
+      "b": "support",
+      "tier": null
+    },
+    {
+      "n": "Eudora",
+      "r": "mage",
+      "d": "M",
+      "t": "bc",
+      "s": [
+        "antisquishy",
+        "antidash"
+      ],
+      "b": "mage",
+      "tier": null
+    },
+    {
+      "n": "Fanny",
+      "r": "assassin",
+      "d": "P",
+      "t": "bd",
+      "s": [
+        "antisquishy"
+      ],
+      "b": "assP",
+      "tier": null
+    },
+    {
+      "n": "Faramis",
+      "r": "support",
+      "d": "M",
+      "t": "",
+      "s": [],
+      "b": "support",
+      "tier": null
+    },
+    {
+      "n": "Floryn",
+      "r": "support",
+      "d": "M",
+      "t": "h",
+      "s": [
+        "antiburst"
+      ],
+      "b": "support",
+      "tier": null
+    },
+    {
+      "n": "Franco",
+      "r": "tank",
+      "d": "P",
+      "t": "c",
+      "s": [
+        "antidash"
+      ],
+      "b": "tank",
+      "tier": null
+    },
+    {
+      "n": "Fredrinn",
+      "r": "tank",
+      "d": "P",
+      "t": "ch",
+      "s": [],
+      "b": "tank",
+      "tier": null
+    },
+    {
+      "n": "Freya",
+      "r": "fighter",
+      "d": "P",
+      "t": "hd",
+      "s": [],
+      "b": "fP",
+      "tier": null
+    },
+    {
+      "n": "Gatotkaca",
+      "r": "tank",
+      "d": "M",
+      "t": "c",
+      "s": [],
+      "b": "tank",
+      "tier": null
+    },
+    {
+      "n": "Gloo",
+      "r": "tank",
+      "d": "M",
+      "t": "c",
+      "s": [],
+      "b": "tank",
+      "tier": null
+    },
+    {
+      "n": "Gord",
+      "r": "mage",
+      "d": "M",
+      "t": "",
+      "s": [],
+      "b": "mage",
+      "tier": null
+    },
+    {
+      "n": "Granger",
+      "r": "marksman",
+      "d": "P",
+      "t": "b",
+      "s": [],
+      "b": "mmC",
+      "tier": null
+    },
+    {
+      "n": "Grock",
+      "r": "tank",
+      "d": "P",
+      "t": "c",
+      "s": [],
+      "b": "tank",
+      "tier": null
+    },
+    {
+      "n": "Guinevere",
+      "r": "fighter",
+      "d": "M",
+      "t": "bcd",
+      "s": [
+        "antisquishy"
+      ],
+      "b": "fM",
+      "tier": null
+    },
+    {
+      "n": "Gusion",
+      "r": "assassin",
+      "d": "M",
+      "t": "bd",
+      "s": [
+        "antisquishy"
+      ],
+      "b": "assM",
+      "tier": null
+    },
+    {
+      "n": "Hanabi",
+      "r": "marksman",
+      "d": "P",
+      "t": "",
+      "s": [],
+      "b": "mmA",
+      "tier": null
+    },
+    {
+      "n": "Hanzo",
+      "r": "assassin",
+      "d": "P",
+      "t": "b",
+      "s": [],
+      "b": "assP",
+      "tier": null
+    },
+    {
+      "n": "Harith",
+      "r": "mage",
+      "d": "M",
+      "t": "d",
+      "s": [],
+      "b": "mage",
+      "tier": null
+    },
+    {
+      "n": "Harley",
+      "r": "mage",
+      "d": "M",
+      "t": "bd",
+      "s": [
+        "antisquishy"
+      ],
+      "b": "mage",
+      "tier": null
+    },
+    {
+      "n": "Hayabusa",
+      "r": "assassin",
+      "d": "P",
+      "t": "bd",
+      "s": [
+        "antisquishy",
+        "antimm"
+      ],
+      "b": "assP",
+      "tier": null
+    },
+    {
+      "n": "Helcurt",
+      "r": "assassin",
+      "d": "P",
+      "t": "bc",
+      "s": [
+        "antisquishy",
+        "antimm"
+      ],
+      "b": "assP",
+      "tier": null
+    },
+    {
+      "n": "Hilda",
+      "r": "fighter",
+      "d": "P",
+      "t": "h",
+      "s": [
+        "antisquishy"
+      ],
+      "b": "fP",
+      "build": [
+        "Tough Boots",
+        "War Axe",
+        "Hunter Strike",
+        "Queen's Wings",
+        "Dominance Ice",
+        "Immortality"
+      ],
+      "tier": null
+    },
+    {
+      "n": "Hylos",
+      "r": "tank",
+      "d": "M",
+      "t": "ch",
+      "s": [],
+      "b": "tank",
+      "tier": null
+    },
+    {
+      "n": "Irithel",
+      "r": "marksman",
+      "d": "P",
+      "t": "",
+      "s": [],
+      "b": "mmC",
+      "tier": null
+    },
+    {
+      "n": "Ixia",
+      "r": "marksman",
+      "d": "P",
+      "t": "h",
+      "s": [],
+      "b": "mmA",
+      "tier": null
+    },
+    {
+      "n": "Jawhead",
+      "r": "fighter",
+      "d": "P",
+      "t": "c",
+      "s": [
+        "antisquishy"
+      ],
+      "b": "fP",
+      "tier": null
+    },
+    {
+      "n": "Johnson",
+      "r": "tank",
+      "d": "M",
+      "t": "c",
+      "s": [],
+      "b": "tank",
+      "tier": null
+    },
+    {
+      "n": "Joy",
+      "r": "assassin",
+      "d": "M",
+      "t": "d",
+      "s": [
+        "antisquishy"
+      ],
+      "b": "assM",
+      "tier": null
+    },
+    {
+      "n": "Julian",
+      "r": "fighter",
+      "d": "M",
+      "t": "bd",
+      "s": [],
+      "b": "fM",
+      "tier": null
+    },
+    {
+      "n": "Kadita",
+      "r": "mage",
+      "d": "M",
+      "t": "bcd",
+      "s": [
+        "antisquishy"
+      ],
+      "b": "mage",
+      "tier": null
+    },
+    {
+      "n": "Kagura",
+      "r": "mage",
+      "d": "M",
+      "t": "bcd",
+      "s": [
+        "antisquishy"
+      ],
+      "b": "mage",
+      "tier": null
+    },
+    {
+      "n": "Kaja",
+      "r": "support",
+      "d": "M",
+      "t": "c",
+      "s": [
+        "antidash"
+      ],
+      "b": "support",
+      "tier": null
+    },
+    {
+      "n": "Karina",
+      "r": "assassin",
+      "d": "M",
+      "t": "bd",
+      "s": [
+        "antisquishy"
+      ],
+      "b": "assM",
+      "tier": null
+    },
+    {
+      "n": "Karrie",
+      "r": "marksman",
+      "d": "P",
+      "t": "",
+      "s": [
+        "antitank"
+      ],
+      "b": "mmA",
+      "tier": null
+    },
+    {
+      "n": "Khaleed",
+      "r": "fighter",
+      "d": "P",
+      "t": "h",
+      "s": [],
+      "b": "fP",
+      "tier": null
+    },
+    {
+      "n": "Khufra",
+      "r": "tank",
+      "d": "P",
+      "t": "cd",
+      "s": [
+        "antidash",
+        "antimm"
+      ],
+      "b": "tank",
+      "tier": null
+    },
+    {
+      "n": "Kimmy",
+      "r": "marksman",
+      "d": "M",
+      "t": "",
+      "s": [],
+      "b": "mage",
+      "tier": null
+    },
+    {
+      "n": "Lancelot",
+      "r": "assassin",
+      "d": "P",
+      "t": "bd",
+      "s": [
+        "antisquishy",
+        "antimm"
+      ],
+      "b": "assP",
+      "tier": null
+    },
+    {
+      "n": "Lapu-Lapu",
+      "r": "fighter",
+      "d": "P",
+      "t": "hcd",
+      "s": [],
+      "b": "fP",
+      "tier": null
+    },
+    {
+      "n": "Layla",
+      "r": "marksman",
+      "d": "P",
+      "t": "",
+      "s": [],
+      "b": "mmC",
+      "tier": null
+    },
+    {
+      "n": "Leomord",
+      "r": "fighter",
+      "d": "P",
+      "t": "d",
+      "s": [],
+      "b": "fP",
+      "tier": null
+    },
+    {
+      "n": "Lesley",
+      "r": "marksman",
+      "d": "P",
+      "t": "b",
+      "s": [],
+      "b": "mmC",
+      "tier": null
+    },
+    {
+      "n": "Ling",
+      "r": "assassin",
+      "d": "P",
+      "t": "bd",
+      "s": [
+        "antisquishy"
+      ],
+      "b": "assP",
+      "tier": null
+    },
+    {
+      "n": "Lolita",
+      "r": "tank",
+      "d": "P",
+      "t": "c",
+      "s": [
+        "antimm"
+      ],
+      "b": "tank",
+      "tier": null
+    },
+    {
+      "n": "Lukas",
+      "r": "fighter",
+      "d": "P",
+      "t": "hd",
+      "s": [],
+      "b": "fP",
+      "tier": null
+    },
+    {
+      "n": "Lunox",
+      "r": "mage",
+      "d": "M",
+      "t": "bd",
+      "s": [
+        "antitank"
+      ],
+      "b": "mage",
+      "tier": null
+    },
+    {
+      "n": "Luo Yi",
+      "r": "mage",
+      "d": "M",
+      "t": "c",
+      "s": [],
+      "b": "mage",
+      "tier": null
+    },
+    {
+      "n": "Lylia",
+      "r": "mage",
+      "d": "M",
+      "t": "",
+      "s": [],
+      "b": "mage",
+      "tier": null
+    },
+    {
+      "n": "Martis",
+      "r": "fighter",
+      "d": "P",
+      "t": "cd",
+      "s": [
+        "anticc"
+      ],
+      "b": "fP",
+      "tier": null
+    },
+    {
+      "n": "Masha",
+      "r": "fighter",
+      "d": "P",
+      "t": "h",
+      "s": [
+        "antitank"
+      ],
+      "b": "fP",
+      "tier": null
+    },
+    {
+      "n": "Mathilda",
+      "r": "support",
+      "d": "M",
+      "t": "cd",
+      "s": [
+        "antiburst"
+      ],
+      "b": "support",
+      "tier": null
+    },
+    {
+      "n": "Melissa",
+      "r": "marksman",
+      "d": "P",
+      "t": "",
+      "s": [],
+      "b": "mmA",
+      "tier": null
+    },
+    {
+      "n": "Minotaur",
+      "r": "tank",
+      "d": "P",
+      "t": "ch",
+      "s": [],
+      "b": "tank",
+      "tier": null
+    },
+    {
+      "n": "Minsitthar",
+      "r": "fighter",
+      "d": "P",
+      "t": "c",
+      "s": [
+        "antidash"
+      ],
+      "b": "fP",
+      "tier": null
+    },
+    {
+      "n": "Miya",
+      "r": "marksman",
+      "d": "P",
+      "t": "",
+      "s": [],
+      "b": "mmA",
+      "tier": null
+    },
+    {
+      "n": "Moskov",
+      "r": "marksman",
+      "d": "P",
+      "t": "",
+      "s": [],
+      "b": "mmA",
+      "tier": null
+    },
+    {
+      "n": "Nana",
+      "r": "mage",
+      "d": "M",
+      "t": "c",
+      "s": [],
+      "b": "mage",
+      "tier": null
+    },
+    {
+      "n": "Natalia",
+      "r": "assassin",
+      "d": "P",
+      "t": "b",
+      "s": [
+        "antisquishy",
+        "antimm"
+      ],
+      "b": "assP",
+      "tier": null
+    },
+    {
+      "n": "Natan",
+      "r": "marksman",
+      "d": "M",
+      "t": "",
+      "s": [],
+      "b": "mage",
+      "tier": null
+    },
+    {
+      "n": "Nolan",
+      "r": "assassin",
+      "d": "P",
+      "t": "bd",
+      "s": [
+        "antisquishy"
+      ],
+      "b": "assP",
+      "tier": null
+    },
+    {
+      "n": "Novaria",
+      "r": "mage",
+      "d": "M",
+      "t": "b",
+      "s": [],
+      "b": "mage",
+      "tier": null
+    },
+    {
+      "n": "Odette",
+      "r": "mage",
+      "d": "M",
+      "t": "bc",
+      "s": [],
+      "b": "mage",
+      "tier": null
+    },
+    {
+      "n": "Paquito",
+      "r": "fighter",
+      "d": "P",
+      "t": "bd",
+      "s": [
+        "antisquishy"
+      ],
+      "b": "fP",
+      "tier": null
+    },
+    {
+      "n": "Pharsa",
+      "r": "mage",
+      "d": "M",
+      "t": "b",
+      "s": [
+        "antisquishy"
+      ],
+      "b": "mage",
+      "tier": null
+    },
+    {
+      "n": "Phoveus",
+      "r": "fighter",
+      "d": "M",
+      "t": "cd",
+      "s": [
+        "antidash"
+      ],
+      "b": "fM",
+      "tier": null
+    },
+    {
+      "n": "Popol and Kupa",
+      "r": "marksman",
+      "d": "P",
+      "t": "c",
+      "s": [],
+      "b": "mmB",
+      "tier": null
+    },
+    {
+      "n": "Rafaela",
+      "r": "support",
+      "d": "M",
+      "t": "h",
+      "s": [
+        "antiburst"
+      ],
+      "b": "support",
+      "tier": null
+    },
+    {
+      "n": "Roger",
+      "r": "fighter",
+      "d": "P",
+      "t": "b",
+      "s": [
+        "antisquishy"
+      ],
+      "b": "fP",
+      "tier": null
+    },
+    {
+      "n": "Ruby",
+      "r": "fighter",
+      "d": "P",
+      "t": "hc",
+      "s": [],
+      "b": "fP",
+      "tier": null
+    },
+    {
+      "n": "Saber",
+      "r": "assassin",
+      "d": "P",
+      "t": "bc",
+      "s": [
+        "antisquishy",
+        "antimm",
+        "antidash"
+      ],
+      "b": "assP",
+      "tier": null
+    },
+    {
+      "n": "Selena",
+      "r": "assassin",
+      "d": "M",
+      "t": "bc",
+      "s": [
+        "antisquishy"
+      ],
+      "b": "assM",
+      "tier": null
+    },
+    {
+      "n": "Silvanna",
+      "r": "fighter",
+      "d": "M",
+      "t": "cd",
+      "s": [],
+      "b": "fM",
+      "tier": null
+    },
+    {
+      "n": "Sora",
+      "r": "fighter",
+      "d": "P",
+      "t": "d",
+      "s": [],
+      "b": "fP",
+      "tier": null
+    },
+    {
+      "n": "Sun",
+      "r": "fighter",
+      "d": "P",
+      "t": "h",
+      "s": [],
+      "b": "fP",
+      "tier": null
+    },
+    {
+      "n": "Suyou",
+      "r": "assassin",
+      "d": "P",
+      "t": "bd",
+      "s": [
+        "antisquishy"
+      ],
+      "b": "assP",
+      "tier": null
+    },
+    {
+      "n": "Terizla",
+      "r": "fighter",
+      "d": "P",
+      "t": "hc",
+      "s": [],
+      "b": "fP",
+      "tier": null
+    },
+    {
+      "n": "Thamuz",
+      "r": "fighter",
+      "d": "P",
+      "t": "hd",
+      "s": [],
+      "b": "fP",
+      "tier": null
+    },
+    {
+      "n": "Tigreal",
+      "r": "tank",
+      "d": "P",
+      "t": "c",
+      "s": [],
+      "b": "tank",
+      "tier": null
+    },
+    {
+      "n": "Uranus",
+      "r": "tank",
+      "d": "M",
+      "t": "h",
+      "s": [
+        "antiburst"
+      ],
+      "b": "tank",
+      "tier": null
+    },
+    {
+      "n": "Vale",
+      "r": "mage",
+      "d": "M",
+      "t": "bc",
+      "s": [],
+      "b": "mage",
+      "tier": null
+    },
+    {
+      "n": "Valentina",
+      "r": "mage",
+      "d": "M",
+      "t": "bd",
+      "s": [
+        "anticc"
+      ],
+      "b": "mage",
+      "tier": null
+    },
+    {
+      "n": "Valir",
+      "r": "mage",
+      "d": "M",
+      "t": "c",
+      "s": [],
+      "b": "mage",
+      "tier": null
+    },
+    {
+      "n": "Vexana",
+      "r": "mage",
+      "d": "M",
+      "t": "c",
+      "s": [],
+      "b": "mage",
+      "tier": null
+    },
+    {
+      "n": "Wanwan",
+      "r": "marksman",
+      "d": "P",
+      "t": "d",
+      "s": [
+        "antitank"
+      ],
+      "b": "mmA",
+      "tier": null
+    },
+    {
+      "n": "X.Borg",
+      "r": "fighter",
+      "d": "P",
+      "t": "",
+      "s": [
+        "antitank"
+      ],
+      "b": "fP",
+      "tier": null
+    },
+    {
+      "n": "Xavier",
+      "r": "mage",
+      "d": "M",
+      "t": "b",
+      "s": [],
+      "b": "mage",
+      "tier": null
+    },
+    {
+      "n": "Yi Sun-shin",
+      "r": "marksman",
+      "d": "P",
+      "t": "",
+      "s": [],
+      "b": "mmC",
+      "tier": null
+    },
+    {
+      "n": "Yin",
+      "r": "fighter",
+      "d": "P",
+      "t": "bc",
+      "s": [
+        "antisquishy"
+      ],
+      "b": "fP",
+      "tier": null
+    },
+    {
+      "n": "Yu Zhong",
+      "r": "fighter",
+      "d": "P",
+      "t": "hcd",
+      "s": [],
+      "b": "fP",
+      "tier": null
+    },
+    {
+      "n": "Yve",
+      "r": "mage",
+      "d": "M",
+      "t": "c",
+      "s": [],
+      "b": "mage",
+      "tier": null
+    },
+    {
+      "n": "Zhask",
+      "r": "mage",
+      "d": "M",
+      "t": "",
+      "s": [],
+      "b": "mage",
+      "tier": null
+    },
+    {
+      "n": "Zhuxin",
+      "r": "mage",
+      "d": "M",
+      "t": "c",
+      "s": [],
+      "b": "mage",
+      "tier": null
+    },
+    {
+      "n": "Zilong",
+      "r": "fighter",
+      "d": "P",
+      "t": "d",
+      "s": [],
+      "b": "fP",
+      "tier": null
+    }
+  ],
+  "counters": {
+    "antiheal": {
+      "P": "Sea Halberd",
+      "M": "Necklace of Durance",
+      "T": "Dominance Ice"
+    },
+    "magic": {
+      "any": "Athena's Shield"
+    },
+    "magicHeavy": {
+      "front": "Radiant Armor"
+    },
+    "basic": {
+      "frontT": "Blade Armor",
+      "frontP": "Dominance Ice",
+      "frontM": "Dominance Ice",
+      "backP": "Wind of Nature",
+      "backM": "Winter Crown"
+    },
+    "phys": {
+      "front": "Antique Cuirass",
+      "backP": "Wind of Nature",
+      "backM": "Winter Crown"
+    },
+    "pen": {
+      "P": "Malefic Roar",
+      "M": "Divine Glaive"
+    },
+    "burst": {
+      "front": "Immortality",
+      "backP": "Immortality",
+      "backM": "Winter Crown"
+    },
+    "ccBoots": "Tough Boots",
+    "purify": "Purify"
+  }
 }

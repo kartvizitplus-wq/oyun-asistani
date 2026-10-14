@@ -1,0 +1,359 @@
+{
+  "game": "freefire",
+  "updated": "2026-10-14",
+  "notes": "type a=active skill, p=passive skill. tags: rush, sniper, support, heal, mobility, armor, intel, antigloo, antirush, antisniper, br (Battle Royale), cs (Clash Squad). tier=S/A/B/C or null (weekly updater). A combo is 1 active + 3 passives.",
+  "characters": [
+    {
+      "n": "A124",
+      "type": "a",
+      "tags": [
+        "cs",
+        "antirush"
+      ],
+      "tier": null
+    },
+    {
+      "n": "Alok",
+      "type": "a",
+      "tags": [
+        "heal",
+        "mobility",
+        "support",
+        "br",
+        "cs",
+        "rush"
+      ],
+      "tier": null
+    },
+    {
+      "n": "Andrew",
+      "type": "p",
+      "tags": [
+        "armor",
+        "br"
+      ],
+      "tier": null
+    },
+    {
+      "n": "Antonio",
+      "type": "p",
+      "tags": [
+        "armor",
+        "cs"
+      ],
+      "tier": null
+    },
+    {
+      "n": "Caroline",
+      "type": "p",
+      "tags": [
+        "rush",
+        "mobility"
+      ],
+      "tier": null
+    },
+    {
+      "n": "Chrono",
+      "type": "a",
+      "tags": [
+        "rush",
+        "antirush",
+        "cs",
+        "antisniper",
+        "armor"
+      ],
+      "tier": null
+    },
+    {
+      "n": "Clu",
+      "type": "a",
+      "tags": [
+        "intel",
+        "sniper",
+        "br"
+      ],
+      "tier": null
+    },
+    {
+      "n": "Dasha",
+      "type": "p",
+      "tags": [
+        "rush",
+        "br"
+      ],
+      "tier": null
+    },
+    {
+      "n": "Dimitri",
+      "type": "a",
+      "tags": [
+        "heal",
+        "support",
+        "br"
+      ],
+      "tier": null
+    },
+    {
+      "n": "Ford",
+      "type": "p",
+      "tags": [
+        "br"
+      ],
+      "tier": null
+    },
+    {
+      "n": "Hayato",
+      "type": "p",
+      "tags": [
+        "rush",
+        "sniper",
+        "cs"
+      ],
+      "tier": null
+    },
+    {
+      "n": "Homer",
+      "type": "a",
+      "tags": [
+        "rush",
+        "cs"
+      ],
+      "tier": null
+    },
+    {
+      "n": "Iris",
+      "type": "a",
+      "tags": [
+        "antigloo",
+        "rush",
+        "cs"
+      ],
+      "tier": null
+    },
+    {
+      "n": "Joseph",
+      "type": "p",
+      "tags": [
+        "mobility",
+        "antirush",
+        "antisniper"
+      ],
+      "tier": null
+    },
+    {
+      "n": "Jota",
+      "type": "p",
+      "tags": [
+        "heal",
+        "rush",
+        "cs"
+      ],
+      "tier": null
+    },
+    {
+      "n": "K",
+      "type": "a",
+      "tags": [
+        "heal",
+        "sniper",
+        "br",
+        "cs"
+      ],
+      "tier": null
+    },
+    {
+      "n": "Kapella",
+      "type": "p",
+      "tags": [
+        "heal",
+        "support"
+      ],
+      "tier": null
+    },
+    {
+      "n": "Kelly",
+      "type": "p",
+      "tags": [
+        "mobility",
+        "rush",
+        "br"
+      ],
+      "tier": null
+    },
+    {
+      "n": "Kenta",
+      "type": "a",
+      "tags": [
+        "armor",
+        "antirush",
+        "antisniper",
+        "cs"
+      ],
+      "tier": null
+    },
+    {
+      "n": "Laura",
+      "type": "p",
+      "tags": [
+        "sniper"
+      ],
+      "tier": null
+    },
+    {
+      "n": "Leon",
+      "type": "p",
+      "tags": [
+        "heal",
+        "br",
+        "cs"
+      ],
+      "tier": null
+    },
+    {
+      "n": "Luqueta",
+      "type": "p",
+      "tags": [
+        "rush",
+        "br",
+        "armor"
+      ],
+      "tier": null
+    },
+    {
+      "n": "Maxim",
+      "type": "p",
+      "tags": [
+        "heal",
+        "br"
+      ],
+      "tier": null
+    },
+    {
+      "n": "Miguel",
+      "type": "p",
+      "tags": [
+        "rush",
+        "br"
+      ],
+      "tier": null
+    },
+    {
+      "n": "Moco",
+      "type": "p",
+      "tags": [
+        "intel",
+        "rush",
+        "sniper",
+        "br",
+        "cs"
+      ],
+      "tier": null
+    },
+    {
+      "n": "Olivia",
+      "type": "p",
+      "tags": [
+        "support",
+        "heal"
+      ],
+      "tier": null
+    },
+    {
+      "n": "Orion",
+      "type": "a",
+      "tags": [
+        "rush",
+        "armor",
+        "cs"
+      ],
+      "tier": null
+    },
+    {
+      "n": "Otho",
+      "type": "p",
+      "tags": [
+        "intel",
+        "br"
+      ],
+      "tier": null
+    },
+    {
+      "n": "Rafael",
+      "type": "p",
+      "tags": [
+        "sniper",
+        "br"
+      ],
+      "tier": null
+    },
+    {
+      "n": "Shani",
+      "type": "p",
+      "tags": [
+        "armor",
+        "cs"
+      ],
+      "tier": null
+    },
+    {
+      "n": "Skyler",
+      "type": "a",
+      "tags": [
+        "antigloo",
+        "rush",
+        "cs"
+      ],
+      "tier": null
+    },
+    {
+      "n": "Steffie",
+      "type": "a",
+      "tags": [
+        "armor",
+        "support",
+        "antirush"
+      ],
+      "tier": null
+    },
+    {
+      "n": "Tatsuya",
+      "type": "a",
+      "tags": [
+        "rush",
+        "mobility",
+        "cs"
+      ],
+      "tier": null
+    },
+    {
+      "n": "Thiva",
+      "type": "p",
+      "tags": [
+        "support",
+        "br"
+      ],
+      "tier": null
+    },
+    {
+      "n": "Wukong",
+      "type": "a",
+      "tags": [
+        "br",
+        "mobility",
+        "antisniper"
+      ],
+      "tier": null
+    },
+    {
+      "n": "Xayne",
+      "type": "a",
+      "tags": [
+        "antigloo",
+        "rush",
+        "armor",
+        "cs"
+      ],
+      "tier": null
+    }
+  ]
+}
