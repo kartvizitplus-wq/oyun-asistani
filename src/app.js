@@ -95,6 +95,7 @@
     if (typeof w === 'string') return t(w);
     if (w.k === 'bw_counter') return t('bw_counter', { cls: t('cl_' + w.cls) });
     if (w.k === 'bw_mode') return t('bw_mode', { mode: t('m_' + w.mode) });
+    if (w.k === 'w_countered') return t('w_countered', { x: w.x });
     return t(w.k);
   }
   let lastPicks = [];
@@ -160,6 +161,16 @@
     if (!sel.options.length) all.forEach(n => sel.appendChild(el('option', { value: n }, esc(n))));
     sel.value = hero;
     $('heroIcon').innerHTML = I.hero(hero, roleOf[hero], 44);
+    const mbox = $('myMatch');
+    if (mbox) {
+      if (!st.e.length) mbox.innerHTML = '<p class="note" style="margin:0">' + esc(t('mm_none')) + '</p>';
+      else {
+        const m = E.mlMatchup(A.data, hero, st.e);
+        const lines = [...m.bad.map(p => '<li class="bad">' + esc(t('mm_bad', { x: p.n })) + (p.bad.length ? ': ' + esc([...new Set(p.bad.map(k => t(k)))].join(' · ')) : '') + '</li>'),
+          ...m.good.map(p => '<li class="good">' + esc(t('mm_good', { x: p.n })) + (p.good.length ? ': ' + esc([...new Set(p.good.map(k => t(k)))].join(' · ')) : '') + '</li>')];
+        mbox.innerHTML = '<div class="score-row"><span><b>' + esc(t('myMatch')) + '</b> <span class="big ' + scoreCls(m.s) + '">' + m.s.toFixed(1) + '</span></span></div>' + (lines.length ? '<ul class="mm">' + lines.join('') + '</ul>' : '<p class="note">' + esc(t('neutral')) + '</p>');
+      }
+    }
     const b = E.mlBuild(A.data, hero, st.e), bl = $('build'); bl.innerHTML = '';
     b.items.forEach(x => {
       const li = el('li', { class: x.adapt ? 'adapt' : '' });
@@ -255,7 +266,7 @@
           botBans.push(b.n); log.unshift(t('botBanned', { x: b.n }));
         } else {
           const p = E.mlBotPick(D, me, bot, blockedFor('R'));
-          bot.push(p.n); log.unshift(t('botPicked', { x: p.n }) + (p.why.length ? ': ' + [...new Set(p.why.map(k => t(k)))].slice(0, 2).join(' · ') : ''));
+          bot.push(p.n); log.unshift(t('botPicked', { x: p.n }) + (p.why.filter(k => typeof k === 'string').length ? ': ' + [...new Set(p.why.filter(k => typeof k === 'string').map(k => t(k)))].slice(0, 2).join(' · ') : ''));
         }
         advance();
       }, 600);

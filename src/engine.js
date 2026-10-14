@@ -40,23 +40,40 @@
     }
     return { n: c.n, P: c.P, M: c.M, cc: c.c, heal: c.h, roles, warn: w };
   }
+  /* Pairwise matchup: positive when hero h is good against enemy e. */
+  const STRONG_T = {
+    antidash: y => y.t.includes('d'), antitank: y => y.r === 'tank', antisquishy: y => y.r === 'mage' || y.r === 'marksman',
+    antiheal: y => y.t.includes('h'), antiburst: y => y.t.includes('b'), antimm: y => y.r === 'marksman', anticc: y => y.t.includes('c')
+  };
+  const WHY = { antidash: 'w_dash', antitank: 'w_tank', antisquishy: 'w_squishy', antiheal: 'w_heal', antiburst: 'w_burst', antimm: 'w_mm', anticc: 'w_cc' };
+  const RT = { assassin: { marksman: 0.8, mage: 0.8, support: 0.4 }, marksman: { tank: 0.4, fighter: 0.2 }, tank: { assassin: 0.5 }, fighter: { assassin: 0.3, marksman: 0.4 }, mage: { fighter: 0.3, support: 0.2 }, support: {} };
+  function pair(h, e) {
+    let v = 0; const good = [], bad = [];
+    h.s.forEach(k => { if (STRONG_T[k] && STRONG_T[k](e)) { v += 1.6; good.push(WHY[k]); } });
+    e.s.forEach(k => { if (STRONG_T[k] && STRONG_T[k](h)) { v -= 1.6; bad.push(WHY[k]); } });
+    v += ((RT[h.r] || {})[e.r] || 0) - ((RT[e.r] || {})[h.r] || 0);
+    return { v: Math.max(-3, Math.min(3, v)), good, bad };
+  }
+  /* How well one hero fits against the enemy team: score plus who is easy and who is dangerous. */
+  function mlMatchup(data, hero, enemy) {
+    const H = mlIndex(data), h = H[hero], es = enemy.map(n => H[n]).filter(Boolean);
+    if (!h) return null;
+    const pairs = es.map(e => Object.assign({ n: e.n }, pair(h, e)));
+    const sum = pairs.reduce((a, p) => a + p.v, 0), avg = pairs.length ? sum / pairs.length : 0;
+    let s = 5 + 0.9 * avg + 0.35 * sum + (h.wr ? (h.wr - 50) * 0.04 : 0);
+    if (h.tier && TIER[h.tier]) s += TIER[h.tier];
+    return { s: clamp(s), pairs, good: pairs.filter(p => p.v > 0.5), bad: pairs.filter(p => p.v < -0.5) };
+  }
   function mlScore(data, enemy, pool, allies) {
-    const c = mlStats(data, enemy);
     allies = allies || [];
     const a = mlTeam(data, allies), ac = mlStats(data, allies);
     const list = data.heroes.filter(h => !enemy.includes(h.n) && !allies.includes(h.n) && (!pool || !pool.length || pool.includes(h.n)));
     return list.map(h => {
-      let s = 5; const why = [];
+      const m = mlMatchup(data, h.n, enemy);
+      let s = m.s; const why = [];
+      m.pairs.forEach(p => p.good.forEach(k => { if (!why.includes(k)) why.push(k); }));
+      m.bad.forEach(p => why.push({ k: 'w_countered', x: p.n }));
       const add = (cond, v, key) => { if (!cond || !v) return; s += v * 0.55; if (Math.abs(v) >= 0.9) why.push(key); };
-      const has = k => h.s.includes(k);
-      add(has('antidash'), 1.5 * c.d, 'w_dash');
-      add(has('antitank'), 1.3 * c.tank, 'w_tank');
-      add(has('antisquishy'), 0.9 * c.sq, 'w_squishy');
-      add(has('antiheal'), 1.5 * c.h, 'w_heal');
-      add(has('antiburst'), 0.8 * c.b, 'w_burst');
-      add(has('antimm'), 1.3 * c.mm, 'w_mm');
-      add(has('anticc'), 0.9 * c.c, 'w_cc');
-      add(h.r === 'mage' || h.r === 'marksman', -0.6 * c.ass, 'w_weak');
       if (allies.length >= 2) {
         add(!a.roles.tank && h.r === 'tank', 2.4, 'w_needTank');
         add(!ac.M && h.d === 'M', 1.7, 'w_needMagic');
@@ -65,7 +82,7 @@
         add(allies.length >= 3 && !a.roles.marksman && h.r === 'marksman', 1.5, 'w_needMM');
         add(a.roles[h.r] >= 2, -2, 'w_dupRole');
       }
-      if (h.tier && TIER[h.tier]) { s += TIER[h.tier]; if (TIER[h.tier] > 0) why.push('w_tier'); }
+      if (h.tier && TIER[h.tier] > 0) why.push('w_tier');
       return { n: h.n, r: h.r, s: clamp(s), why };
     }).sort((a, b) => b.s - a.s || a.n.localeCompare(b.n));
   }
@@ -73,34 +90,35 @@
     const h = mlIndex(data)[heroName];
     const a = data.archetypes[h.b];
     const base = h.build || a.items;
-    const c = mlStats(data, enemy);
+    const c = mlStats(data, enemy), n = c.n || 1, need = f => Math.max(1, Math.ceil(n * f));
     const front = a.group === 'front', T = a.type, g = front ? 'front' : 'back';
     const C = data.counters || {};
     const pick = key => { const m = C[key] || {}; return m[g + T] || m[g] || m[T] || m.any || null; };
     const adds = [];
     const want = (item, p, reason) => { if (item) adds.push({ item, p, reason }); };
     if (c.h) want(pick('antiheal'), c.h * 2 + 1, 'r_antiheal');
-    if (c.M >= 2) want(pick('magic'), c.M * 1.5, 'r_magic');
+    if (c.M >= need(0.4)) want(pick('magic'), c.M * 1.5 + 1, 'r_magic');
     if (c.M >= 4) want(pick('magicHeavy'), c.M, 'r_magic');
-    if (c.mm >= 2) want(pick('basic'), c.mm * 1.5, 'r_basic');
-    if (c.P >= 4) want(pick('phys'), c.P, 'r_phys');
-    if (c.tank >= 2 && T !== 'T') want(pick('pen'), c.tank * 1.5, T === 'M' ? 'r_mpen' : 'r_pen');
-    if (c.b >= 3) want(pick('burst'), c.b * 1.5, 'r_burst');
+    if (c.mm >= (n <= 2 ? 1 : 2)) want(pick('basic'), c.mm * 1.5 + 1, 'r_basic');
+    if (c.P >= need(0.6)) want(pick('phys'), c.P + 0.5, 'r_phys');
+    if (c.tank >= need(0.4) && T !== 'T') want(pick('pen'), c.tank * 1.5 + 0.5, T === 'M' ? 'r_mpen' : 'r_pen');
+    if (c.b >= need(0.6)) want(pick('burst'), c.b * 1.5, 'r_burst');
     const ccBoots = C.ccBoots;
     let spell = h.spell || a.spell;
-    if (c.c >= 3 && !front && C.purify) spell = C.purify;
+    const ccHeavy = c.c >= need(0.6);
+    if (ccHeavy && !front && C.purify) spell = C.purify;
     let emblem = h.emblem || a.emblem || null;
-    if (emblem && data.emblemCounters && T === 'M' && !front && c.tank >= 2 && data.emblemCounters.tankyMage)
+    if (emblem && data.emblemCounters && T === 'M' && !front && c.tank >= need(0.4) && data.emblemCounters.tankyMage)
       emblem = Object.assign({}, emblem, { core: data.emblemCounters.tankyMage, coreAdapt: true });
     if (!base.length) {
       // No fixed build for this game yet: return only the counter items for this enemy team.
       const list = [];
-      if ((c.M >= 3 || c.c >= 3) && ccBoots) list.push({ item: ccBoots, adapt: true, reason: c.M >= 3 ? 'r_magic' : 'r_cc', slot: 'boots' });
+      if ((c.M >= need(0.6) || ccHeavy) && ccBoots) list.push({ item: ccBoots, adapt: true, reason: ccHeavy ? 'r_cc' : 'r_magic', slot: 'boots' });
       adds.sort((x, y) => y.p - x.p).forEach(x => { if (!list.some(l => l.item === x.item)) list.push({ item: x.item, adapt: true, reason: x.reason }); });
       return { items: list, spell, emblem, partial: true };
     }
     let boots = base[0], bootsAdapt = false;
-    if ((c.M >= 3 || c.c >= 3) && ccBoots && boots !== ccBoots) { boots = ccBoots; bootsAdapt = true; }
+    if ((c.M >= need(0.6) || ccHeavy) && ccBoots && boots !== ccBoots) { boots = ccBoots; bootsAdapt = true; }
     const core = [boots, base[1], base[2]];
     const pool = [...adds.sort((x, y) => y.p - x.p).map(x => ({ item: x.item, adapt: true, reason: x.reason })),
       ...base.slice(3).map(i => ({ item: i, adapt: false }))];
@@ -111,18 +129,18 @@
       flex.push(x);
     }
     return {
-      items: [{ item: boots, adapt: bootsAdapt, reason: bootsAdapt ? (c.M >= 3 ? 'r_magic' : 'r_cc') : null, slot: 'boots' },
+      items: [{ item: boots, adapt: bootsAdapt, reason: bootsAdapt ? (ccHeavy ? 'r_cc' : 'r_magic') : null, slot: 'boots' },
         { item: core[1], adapt: false, slot: 'core' }, { item: core[2], adapt: false, slot: 'core' }, ...flex],
       spell, emblem
     };
   }
   function mlTips(data, enemy) {
-    const c = mlStats(data, enemy), t = [];
-    if (c.c >= 3) t.push('tip_cc');
+    const c = mlStats(data, enemy), t = [], n = c.n || 1, need = f => Math.max(1, Math.ceil(n * f));
+    if (c.c >= need(0.6)) t.push('tip_cc');
     if (c.h) t.push('tip_heal');
-    if (c.b >= 3) t.push('tip_burst');
-    if (c.d >= 3) t.push('tip_dash');
-    if (c.tank >= 2) t.push('tip_tank');
+    if (c.b >= need(0.6)) t.push('tip_burst');
+    if (c.d >= need(0.6)) t.push('tip_dash');
+    if (c.tank >= need(0.4)) t.push('tip_tank');
     if (!t.length) t.push('tip_neutral');
     return t;
   }
@@ -336,6 +354,6 @@
     return best;
   }
 
-  const Engine = { itemReasons, itemOptions, buildScore, botBan, banRank, ROLES, mlTeam, mlCounters, mlBans, mlBotPick, mlDraftRating, mlStats, mlScore, mlBuild, mlTips, mlCounterItems, mlStrongAgainst, bsScore, bsStrongAgainst, BS_MODES, FF_STYLE, FF_MODE, FF_THREAT, ffRank, ffCombo, ffBestStyle };
+  const Engine = { mlMatchup, itemReasons, itemOptions, buildScore, botBan, banRank, ROLES, mlTeam, mlCounters, mlBans, mlBotPick, mlDraftRating, mlStats, mlScore, mlBuild, mlTips, mlCounterItems, mlStrongAgainst, bsScore, bsStrongAgainst, BS_MODES, FF_STYLE, FF_MODE, FF_THREAT, ffRank, ffCombo, ffBestStyle };
   if (typeof module !== 'undefined' && module.exports) module.exports = Engine; else root.Engine = Engine;
 })(typeof window !== 'undefined' ? window : globalThis);

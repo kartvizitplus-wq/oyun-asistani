@@ -129,3 +129,7 @@ ul.warn li.ok{color:var(--green)}
 .chip:disabled:not(.wait):not(.isbanned):not(.isbot):not(.ismine){opacity:.3}
 .ctag{font:700 .62rem var(--display);letter-spacing:.04em;padding:1px 4px;border-radius:3px;background:var(--red);color:#fff;text-decoration:none;display:inline-block}
 .chip.ismine .ctag{background:var(--blue)}
+
+ul.mm{margin:8px 0 0;padding-left:18px;font-size:.9rem}
+ul.mm li.bad{color:var(--red)}ul.mm li.good{color:var(--green)}
+.big.mid{background:var(--gold-bg);color:var(--gold)}
