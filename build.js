@@ -261,7 +261,7 @@ ${n.sources && n.sources.length ? `<p class="note">${esc(n.sources.join(' · '))
     jsonld: { '@context': 'https://schema.org', '@type': 'HowTo', name: G.title, description: G.desc, inLanguage: lang,
       step: G.sections.map(sec => ({ '@type': 'HowToSection', name: sec.h, itemListElement: sec.steps.map(st => ({ '@type': 'HowToStep', text: st })) })) },
     body: `<article class="prose guide"><h1>${esc(G.title)}</h1><p class="lead">${esc(G.intro)}</p>
-${lang === 'tr' ? `<video class="guidevid" controls playsinline preload="none" poster="/video/pickradar-tr.jpg" src="/video/pickradar-tr.mp4"></video>` : ''}
+${fs.existsSync(R(`static/video/pickradar-${lang}.mp4`)) ? `<video class="guidevid" controls playsinline preload="none" poster="/video/pickradar-${lang}.jpg" src="/video/pickradar-${lang}.mp4"></video>` : ''}
 <nav class="toc card">${G.sections.map((sec, i) => `<a href="#s${i + 1}">${esc(sec.h)}</a>`).join('')}</nav>
 ${G.sections.map((sec, i) => `<h2 id="s${i + 1}">${esc(sec.h)}</h2><ol>${sec.steps.map(st => `<li>${esc(st)}</li>`).join('')}</ol>`).join('\n')}
 </article>
