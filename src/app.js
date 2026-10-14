@@ -283,10 +283,15 @@
       const done = phase === 'done', myTurn = !done && order[step] === 'B';
       $('status').textContent = done ? t('draftDone') : myTurn ? (phase === 'ban' ? t('phaseBan') : t('draftTurnYou')) : (phase === 'ban' ? t('botBanning') : t('draftTurnBot'));
       $('pickbox').hidden = done;
+      /* While it is the AI's turn, keep the list readable: only taken/banned heroes are greyed out. */
       const blocked = phase === 'ban' ? [...banned(), ...me, ...bot] : blockedFor('B');
       const q = $('q').value.trim().toLowerCase(), pool = $('pool'); pool.innerHTML = '';
       all.filter(n => !q || n.toLowerCase().includes(q)).forEach(n => {
-        const b = chipOf(n, roleOf[n], banned().includes(n) ? 'isbanned' : ''); b.disabled = !myTurn || blocked.includes(n);
+        const tag = banned().includes(n) ? 'isbanned' : me.includes(n) ? 'ismine' : bot.includes(n) ? 'isbot' : '';
+        const b = chipOf(n, roleOf[n], tag); b.disabled = blocked.includes(n) || !myTurn;
+        if (!myTurn && !blocked.includes(n)) b.classList.add('wait');
+        if (tag) b.insertAdjacentHTML('beforeend', '<span class="ctag">' + esc(tag === 'isbanned' ? 'BAN' : tag === 'ismine' ? t('draftYou') : t('draftBot')) + '</span>');
+        if (blocked.includes(n)) b.title = tag === 'isbanned' ? 'BAN' : t('draftBot');
         b.onclick = () => userChoose(n); pool.appendChild(b);
       });
       $('suggHead').textContent = phase === 'ban' ? t('banSugg') : t('suggestForYou');

@@ -110,7 +110,7 @@ ul.warn li.ok{color:var(--green)}
 
 .slots.bans{grid-template-columns:repeat(5,1fr)}
 .slot.banned{border:1px solid var(--line);color:var(--muted);background:var(--panel2);text-decoration:line-through}
-.chip.isbanned{text-decoration:line-through}
+
 .slotbtn{all:unset;display:flex;align-items:center;gap:9px;cursor:pointer;width:100%;min-width:0}
 .slotbtn:focus-visible{outline:2px solid var(--gold);outline-offset:4px;border-radius:4px}
 .emsel{display:grid;grid-template-columns:repeat(auto-fit,minmax(170px,1fr));gap:10px}
@@ -120,3 +120,12 @@ ul.warn li.ok{color:var(--green)}
 .botbuild{display:flex;align-items:center;gap:8px;flex-wrap:wrap;padding:6px 0;border-bottom:1px solid var(--line)}
 .botbuild b{min-width:90px;font-family:var(--display)}
 .botbuild .icons{display:flex;gap:4px;flex-wrap:wrap}
+
+.chip:disabled.isbanned,.chip:disabled.isbot,.chip:disabled.ismine{opacity:.55}
+.chip.isbanned{border-color:var(--red);text-decoration:line-through;background:var(--red-bg)}
+.chip.isbot{border-color:var(--red)}
+.chip.ismine{border-color:var(--blue)}
+.chip:disabled.wait{opacity:.85}
+.chip:disabled:not(.wait):not(.isbanned):not(.isbot):not(.ismine){opacity:.3}
+.ctag{font:700 .62rem var(--display);letter-spacing:.04em;padding:1px 4px;border-radius:3px;background:var(--red);color:#fff;text-decoration:none;display:inline-block}
+.chip.ismine .ctag{background:var(--blue)}
