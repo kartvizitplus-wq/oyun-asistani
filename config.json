@@ -1,6 +1,6 @@
 {
   "siteName": "PickRadar",
-  "baseUrl": "",
+  "baseUrl": "https://pickradar.pages.dev",
   "adsenseClient": "",
   "contactEmail": "",
   "defaultLang": "en",
