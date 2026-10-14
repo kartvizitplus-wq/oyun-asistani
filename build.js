@@ -121,7 +121,7 @@ ${isMoba ? '' : `<section><h2>${esc(t.mode)}</h2><div class="row seg" id="modes"
 <p class="note">${esc(t.poolHint)}</p><input id="pq" type="search" placeholder="${esc(t.search)}" autocomplete="off" aria-label="${esc(t.search)}"><div class="pool" id="mypool"></div></details></section>
 ${isMoba ? `<section id="buildsec"><h2>${esc(t.yourHero)}</h2><div class="heroline"><span id="heroIcon"></span>
 <select class="lang" id="heroSel" aria-label="${esc(t.yourHero)}" style="font-size:1rem;padding:8px 10px;max-width:260px"></select></div></section>
-<section><h2>${esc(t.buildTitle)}</h2><div class="card"><p class="note" id="partial" hidden>${esc(t.partialNote)}</p><ol class="build" id="build"></ol><ul class="tips" id="tips"></ul></div>
+<section><h2>${esc(t.buildTitle)}</h2><div class="card"><p class="note" id="partial" hidden>${esc(t.partialNote)}</p><ol class="build" id="build"></ol><h2 id="emblemHead" style="margin:16px 0 10px" hidden></h2><ol class="build" id="emblem" hidden></ol><ul class="tips" id="tips"></ul></div>
 <p class="note" style="margin-top:8px">${esc(t.itemNote)}</p></section>` : `<section><div class="card"><ul class="tips" id="tips" style="margin:0"></ul></div></section>`}
 <div class="bar"><button class="btn" id="speak" type="button">🔊 ${esc(t.speak)}</button><button class="btn ghost" id="clear" type="button">${esc(t.clear)}</button></div>
 <section><h2>${esc(isMoba ? t.allHeroes : t.allBrawlers)}</h2><div class="list-links">${links}</div></section>`;
@@ -142,7 +142,8 @@ ${isMoba ? `<section id="buildsec"><h2>${esc(t.yourHero)}</h2><div class="heroli
 ${items.length ? `<section><h2>${esc(tt('hp_items', { x }))}</h2><div class="card"><ol class="build">${items.map(([i, r]) => `<li class="adapt">${itemHtml(lang, i, t)}<small class="why">${esc(t[r] || '')}</small></span></li>`).join('')}</ol></div></section>` : ''}
 ${strong.length ? `<section><h2>${esc(tt('hp_strong', { x }))}</h2><p style="margin:0">${esc(strong.map(k => t['s_' + k]).join(', '))}</p></section>` : ''}
 ${own.items.length ? `<section><h2>${esc(tt('hp_build', { x }))}</h2><div class="card"><ol class="build">${own.items.map(o => `<li>${itemHtml(lang, o.item, t)}</span></li>`).join('')}</ol>
-<ul class="tips">${own.emblem ? `<li>${own.emblem.set ? `${esc(t.emblemTitle)}: ${esc([own.emblem.set, own.emblem.t1, own.emblem.t2, own.emblem.core].join(' · '))}` : `${esc(t.runeTitle)}: ${esc(own.emblem.core)}`}</li>` : ''}<li>${esc(t.spell)}: ${esc(itemName(lang, own.spell, t))}</li></ul></div></section>` : ''}`;
+${own.emblem ? `<h2 style="margin:16px 0 10px">${esc(own.emblem.set ? t.emblemTitle : t.runeTitle)}</h2><ol class="build">${(own.emblem.set ? [['em_set', own.emblem.set], ['em_t1', own.emblem.t1], ['em_t2', own.emblem.t2], ['em_core', own.emblem.core]] : [['runeTitle', own.emblem.core]]).map(([k, v]) => `<li>${Icons.talent(v, 32)}<span class="iname">${esc(v)}<small class="why">${esc(t[k])}</small></span></li>`).join('')}</ol>` : ''}
+<ul class="tips"><li>${esc(t.spell)}: ${esc(itemName(lang, own.spell, t))}</li></ul></div></section>` : ''}`;
         } else {
           const picks = Engine.bsScore(D, [x], null, null).slice(0, 8);
           const strong = Engine.bsStrongAgainst(D, x);

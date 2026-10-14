@@ -91,6 +91,19 @@
   }
   const emblemText = em => em.set ? t('emblemTitle') + ': ' + [em.set, em.t1, em.t2, em.core].filter(Boolean).join(' · ') + (em.coreAdapt ? ' (' + t('adapted') + ')' : '')
     : t('runeTitle') + ': ' + em.core;
+  function renderEmblem(em) {
+    const box = $('emblem'), head = $('emblemHead');
+    if (!box) return;
+    box.innerHTML = '';
+    head.hidden = box.hidden = !em;
+    if (!em) return;
+    head.textContent = em.set ? t('emblemTitle') : t('runeTitle');
+    const parts = em.set ? [['em_set', em.set], ['em_t1', em.t1], ['em_t2', em.t2], ['em_core', em.core, em.coreAdapt]] : [['runeTitle', em.core]];
+    parts.filter(p => p[1]).forEach(([k, v, ad]) => {
+      const li = el('li', { class: ad ? 'adapt' : '' }, I.talent(v, 32) + '<span class="iname">' + esc(v) + '<small class="why">' + esc(ad ? t('adapted') : t(k)) + '</small></span>');
+      box.appendChild(li);
+    });
+  }
   const currentHero = () => (st.hero && all.includes(st.hero)) ? st.hero : (lastPicks[0] ? lastPicks[0].n : all[0]);
   function renderBuild() {
     const hero = currentHero(), sel = $('heroSel');
@@ -108,7 +121,8 @@
     $('partial').hidden = !b.partial;
     const tl = $('tips'); tl.innerHTML = '';
     const sp = itemName(b.spell);
-    [...(b.emblem ? [emblemText(b.emblem)] : []), t('spell') + ': ' + sp + (sp !== b.spell ? ' (' + b.spell + ')' : ''), ...(st.e.length ? E.mlTips(A.data, st.e).map(k => t(k)) : [])]
+    renderEmblem(b.emblem);
+    [t('spell') + ': ' + sp + (sp !== b.spell ? ' (' + b.spell + ')' : ''), ...(st.e.length ? E.mlTips(A.data, st.e).map(k => t(k)) : [])]
       .forEach(s => tl.appendChild(el('li', {}, esc(s))));
   }
   function renderBsTips() {

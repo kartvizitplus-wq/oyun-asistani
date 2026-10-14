@@ -76,6 +76,26 @@
     const s = size || 30, k = itemKind(name), c = COLOR[k];
     return `<svg class="ico item" width="${s}" height="${s}" viewBox="0 0 30 30" role="img" aria-label="${ea(name.replace(/^#/, ''))}"><rect width="30" height="30" rx="8" fill="${c}" opacity=".15"/><rect x=".5" y=".5" width="29" height="29" rx="7.5" fill="none" stroke="${c}" opacity=".5"/><g transform="translate(4 4) scale(.92)">${paint(k, c, '#0c1018')}</g></svg>`;
   }
-  const Icons = { hero, item, itemKind };
+  /* Emblem sets, talents and runes: round badges with a glyph that matches what the talent does. */
+  G.flame = '<path d="M12 23c-5 0-8-3.5-8-8 0-4 3-6.5 4-10 2 2 3 4 3 6 1.5-1.5 2-3.5 2-6 4 2.5 7 6.5 7 10.5 0 4.5-3 7.5-8 7.5z" fill="C"/><path d="M12 21c-2 0-3.5-1.5-3.5-3.5 0-2 1.5-3 2-4.5 1 1 1.5 2 1.5 3 .8-.6 1.2-1.5 1.2-2.6 1.6 1 2.3 2.6 2.3 4.1 0 2-1.5 3.5-3.5 3.5z" fill="D" opacity=".55"/>';
+  G.target = '<circle cx="12" cy="12" r="10" stroke="C" stroke-width="2" fill="none"/><circle cx="12" cy="12" r="5.5" stroke="C" stroke-width="2" fill="none"/><circle cx="12" cy="12" r="2" fill="C"/>';
+  G.coin = '<circle cx="12" cy="12" r="10" fill="C"/><circle cx="12" cy="12" r="7" stroke="D" stroke-width="1.2" fill="none"/><path d="M12 7.5v9M9.5 9.5h4a1.5 1.5 0 0 1 0 3h-3a1.5 1.5 0 0 0 0 3h4" stroke="D" stroke-width="1.3" fill="none"/>';
+  const TALENT = [
+    [/^fighter/i, 'sword', '#d1793f'], [/^tank/i, 'shield', '#3f6fd1'], [/^assassin/i, 'dagger', '#9b4fd1'], [/^mage/i, 'staff', '#3fb3d1'],
+    [/^marksman/i, 'bow', '#d1b23f'], [/^support/i, 'heart', '#4fc28a'], [/^common/i, 'star', '#9aa6bd'],
+    [/thrill|rupture/i, 'bolt', '#e8b44a'], [/swift/i, 'bow', '#e8b44a'], [/vitality/i, 'heart', '#4fc28a'], [/inspire|temporal|pull yourself/i, 'hourglass', '#6fd0e8'],
+    [/fatal|master assassin/i, 'dagger', '#e8606a'], [/agility|wilderness|fleet|phase/i, 'boots', '#9aa6bd'], [/firmness|tenacity|guardian|grasp/i, 'shield', '#4a9bea'],
+    [/festival|vamp/i, 'heart', '#e8606a'], [/seasoned hunter/i, 'axe', '#d1793f'], [/bargain/i, 'coin', '#e8b44a'], [/weapon/i, 'sword', '#e8b44a'],
+    [/brave smite|conqueror/i, 'sword', '#e8806a'], [/killing spree|dark harvest/i, 'dagger', '#c96ae8'], [/lethal ignition|electrocute|comet/i, 'flame', '#e8606a'],
+    [/concussive|aftershock/i, 'bomb', '#5a9bea'], [/focusing mark|aery/i, 'target', '#4fc28a'], [/quantum|lethal tempo/i, 'bolt', '#6fd0e8'],
+    [/weakness finder|glacial/i, 'snowflake', '#7fd8f0'], [/impure rage/i, 'flame', '#a57bf0'], [/war cry/i, 'crown', '#e8b44a']
+  ];
+  function talent(name, size) {
+    const s = size || 30;
+    let k = 'star', c = '#9aa6bd';
+    for (const [re, g, col] of TALENT) if (re.test(name)) { k = g; c = col; break; }
+    return `<svg class="ico talent" width="${s}" height="${s}" viewBox="0 0 30 30" role="img" aria-label="${ea(name)}"><circle cx="15" cy="15" r="14.5" fill="${c}" opacity=".16"/><circle cx="15" cy="15" r="13.5" fill="none" stroke="${c}" stroke-width="1.5" opacity=".8"/><g transform="translate(7 7) scale(.667)">${paint(k, c, '#0c1018')}</g></svg>`;
+  }
+  const Icons = { hero, item, itemKind, talent };
   if (typeof module !== 'undefined' && module.exports) module.exports = Icons; else root.Icons = Icons;
 })(typeof window !== 'undefined' ? window : globalThis);
