@@ -133,3 +133,8 @@ ul.warn li.ok{color:var(--green)}
 ul.mm{margin:8px 0 0;padding-left:18px;font-size:.9rem}
 ul.mm li.bad{color:var(--red)}ul.mm li.good{color:var(--green)}
 .big.mid{background:var(--gold-bg);color:var(--gold)}
+
+.guide h2{font-size:1rem;letter-spacing:.04em;text-transform:none;color:var(--fg);margin-top:26px;scroll-margin-top:12px}
+.guide ol{padding-left:22px;max-width:68ch;display:flex;flex-direction:column;gap:6px}
+.toc{display:flex;flex-direction:column;gap:6px;margin:14px 0}
+.toc a{text-decoration:none}

@@ -1,0 +1,282 @@
+{
+  "tr": {
+    "nav": "Nasıl kullanılır",
+    "title": "PickRadar nasıl kullanılır?",
+    "desc": "Draft asistanı, takım analizi, ban önerileri, item ve amblem dizilimi, draft pratiği ve diğer araçların adım adım kullanım rehberi.",
+    "intro": "PickRadar maç öncesi kahraman seçim ekranında sana yardım eder. Aşağıdaki adımları bir kez okuman yeterli; birkaç maçtan sonra 30 saniyede kullanır hale gelirsin.",
+    "sections": [
+      {"h": "1. Draft asistanı (Mobile Legends, Honor of Kings, Wild Rift)", "steps": [
+        "Üst menüden oyununu seç.",
+        "Rakip takım kahramanlarını listeden seç. Rakip kahraman seçtikçe öneriler anında güncellenir.",
+        "İstersen \"Takımım\" düğmesine geçip kendi takım arkadaşlarını da ekle. Öneriler takımının eksiğine göre de değişir (tank yoksa tank, büyü hasarı yoksa büyücü öne çıkar).",
+        "\"Önerilen seçimler\" listesindeki puan 10 üzerinden: 7 ve üzeri yeşil iyi seçim, 5 civarı sarı nötr, düşük kırmızı riskli demektir. Altındaki açıklama nedenini söyler."
+      ]},
+      {"h": "2. Takım analizi", "steps": [
+        "Kırmızı-mavi çubuk takımın fiziksel ve büyü hasarı oranını gösterir. Tek tür hasar varsa rakip tek tür savunmayla seni durdurabilir.",
+        "Rol simgeleri hangi rollerin dolu, hangilerinin boş olduğunu gösterir.",
+        "Sarı uyarılar takımındaki eksikleri söyler: tank yok, kontrol becerisi yok gibi."
+      ]},
+      {"h": "3. Ban önerileri", "steps": [
+        "Ban önerileri güncel metada güçlü kahramanları gösterir.",
+        "\"Oynadığım kahramanlar\" bölümünde kendi kahramanlarını işaretlersen banlar sana göre kişiselleşir: senin kahramanlarına karşı en tehlikeli rakipler önerilir.",
+        "Not: Bu bölümde kahraman işaretlersen \"Önerilen seçimler\" de sadece o kahramanlar arasından yapılır. Tüm kahramanlardan öneri istiyorsan işaretleri kaldır."
+      ]},
+      {"h": "4. Kendi kahramanın: uyum puanı, item ve amblem", "steps": [
+        "\"Oynayacağın kahraman\" kutusundan kahramanını seç ya da önerilerdeki \"Item dizilimi\" düğmesine bas.",
+        "\"Rakibe karşı uyumun\" puanı seçtiğin kahramanın bu rakiplere karşı ne kadar iyi olduğunu gösterir. Sana karşı tehlikeli rakipler kırmızı, avantajlı olduğun rakipler yeşil yazılır.",
+        "Item dizilimi rakibe göre otomatik değişir. Mavi çerçeveli itemler bu rakip takım için eklenmiş karşı itemlerdir.",
+        "Altında amblem (Wild Rift'te rün) ve savaş büyüsü önerisi yer alır."
+      ]},
+      {"h": "5. Sesli okuma", "steps": [
+        "\"Sesli oku\" düğmesine basınca en iyi seçim, item sırası, amblem ve taktik sesli okunur. Seçim ekranında ekrana bakmadan dinleyebilirsin.",
+        "Ses gelmezse telefonunun metin okuma ayarlarında bu dilin sesinin yüklü olduğunu kontrol et."
+      ]},
+      {"h": "6. Yapay zekâya karşı draft pratiği", "steps": [
+        "Asistandaki \"Yapay zekâya karşı draft pratiği yap\" düğmesine bas.",
+        "Mod seç: Sıralı (önce ban, sonra seçim; aynı kahraman iki tarafta olamaz) veya Klasik (ban yok).",
+        "Ban sırasında önerilen banlardan birini ya da listeden istediğini seç. Banlanan kahramanlar kırmızı BAN etiketiyle işaretlenir ve seçilemez.",
+        "Seçim sırasında \"Senin için öneriler\" sana iyi karşılıklar önerir. Yapay zekâ seçimlerini ve nedenlerini altta yazar.",
+        "Draft bitince \"Maç hazırlığı\" bölümünde kahramanını seç. Item ve amblem otomatik gelir; bir slota dokunup kendin değiştirebilirsin. Dizilim uyumu puanı ve eksik karşı itemler gösterilir.",
+        "En altta draft puanı ve toplam puan (draft + dizilim) ile kimin daha iyi hazırlandığını görürsün."
+      ]},
+      {"h": "7. Brawl Stars", "steps": [
+        "Rakip brawlerları (3 kişi) ve oyun modunu seç.",
+        "Öneriler rakiplerin sınıfına ve moda göre sıralanır; en iyi seçim için taktik ve önerilen ekipman (gear) gösterilir."
+      ]},
+      {"h": "8. Free Fire", "steps": [
+        "Oyun tarzını (yakın dövüş, keskin nişancı, destek, dengeli) ve modu seç.",
+        "İstersen rakiplerin ne yaptığını işaretle (gloo duvarı, üstüne koşma, uzaktan vurma).",
+        "Sana 1 aktif ve 3 pasif yetenekten oluşan en iyi karakter kombinasyonu önerilir."
+      ]},
+      {"h": "9. Kahraman sayfaları ve maç sonucu", "steps": [
+        "Her kahramanın kendi sayfası vardır: ona karşı en iyi seçimler, alınacak itemler, önerilen dizilim ve güvenilir kaynaklardan kazanma oranı.",
+        "Maçtan sonra asistanda \"Kazandım\" veya \"Kaybettim\" düğmesine basarak sonucu bildirebilirsin. Yeterli sonuç birikince kahraman sayfalarında topluluk kazanma oranları görünür.",
+        "\"Yama Haberleri ve Rehberler\" bölümünde her hafta güncel yama özetleri, meta raporları ve kahraman rehberleri yayınlanır."
+      ]}
+    ]
+  },
+  "en": {
+    "nav": "How to use",
+    "title": "How to use PickRadar",
+    "desc": "A step-by-step guide to the draft assistant, team analysis, ban suggestions, item and emblem builds, draft practice and the other tools.",
+    "intro": "PickRadar helps you on the hero select screen before a match. Read these steps once; after a few matches you will use it in 30 seconds.",
+    "sections": [
+      {"h": "1. Draft assistant (Mobile Legends, Honor of Kings, Wild Rift)", "steps": [
+        "Choose your game in the top menu.",
+        "Pick the enemy heroes from the list. Suggestions update instantly as you add enemies.",
+        "Switch to \"My team\" to add your teammates too. Suggestions then also fill your team's gaps (a tank if you have none, a mage if you lack magic damage).",
+        "Scores in \"Suggested picks\" are out of 10: 7 or more (green) is a good pick, around 5 (yellow) is neutral, low (red) is risky. The line below explains why."
+      ]},
+      {"h": "2. Team analysis", "steps": [
+        "The red-blue bar shows your physical and magic damage split. With only one damage type, the enemy can stop you with one type of defense.",
+        "Role icons show which roles are filled and which are missing.",
+        "Yellow warnings point out gaps such as no tank or no crowd control."
+      ]},
+      {"h": "3. Ban suggestions", "steps": [
+        "Ban suggestions show heroes that are strong in the current meta.",
+        "Mark your own heroes in \"Heroes I play\" to personalize bans: the enemies most dangerous to your heroes are suggested.",
+        "Note: when heroes are marked there, \"Suggested picks\" also come only from them. Unmark them to get suggestions from all heroes."
+      ]},
+      {"h": "4. Your hero: matchup score, items and emblem", "steps": [
+        "Choose your hero in \"Your hero\" or press \"Item build\" next to a suggestion.",
+        "\"Your matchup\" shows how good your hero is against these enemies. Dangerous enemies are shown in red, the ones you beat in green.",
+        "The item build adapts to the enemy automatically. Items with a blue border are counter items added for this enemy team.",
+        "Below it you get an emblem (rune in Wild Rift) and battle spell suggestion."
+      ]},
+      {"h": "5. Read aloud", "steps": [
+        "Press \"Read aloud\" to hear the best pick, item order, emblem and a tip without looking at the screen.",
+        "If there is no sound, check that a voice for this language is installed in your phone's text-to-speech settings."
+      ]},
+      {"h": "6. Draft practice against the AI", "steps": [
+        "Press \"Practice drafting against the AI\" in the assistant.",
+        "Choose a mode: Ranked (bans first, then picks; the same hero cannot be on both sides) or Classic (no bans).",
+        "During bans, pick a suggested ban or any hero from the list. Banned heroes get a red BAN tag and cannot be picked.",
+        "During picks, \"Suggestions for you\" offers good answers. The AI shows its picks and reasons below.",
+        "When the draft ends, choose your hero in \"Match prep\". Items and emblem are filled in automatically; tap a slot to change it yourself. You get a build fit score and any missing counter items.",
+        "At the bottom you see the draft rating and the total score (draft + build) for both sides."
+      ]},
+      {"h": "7. Brawl Stars", "steps": [
+        "Pick the enemy brawlers (3) and the game mode.",
+        "Suggestions are ranked by the enemies' classes and the mode; the best pick comes with a tactic and suggested gears."
+      ]},
+      {"h": "8. Free Fire", "steps": [
+        "Choose your playstyle (rusher, sniper, support, balanced) and the mode.",
+        "Optionally mark what enemies do (gloo walls, rushing, sniping).",
+        "You get the best character combination of 1 active and 3 passive skills."
+      ]},
+      {"h": "9. Hero pages and match results", "steps": [
+        "Every hero has a page: best picks against it, items to buy, a suggested build and win rates from reliable sources.",
+        "After a match, press \"I won\" or \"I lost\" in the assistant to report the result. Once enough results are in, community win rates appear on hero pages.",
+        "\"Patch News & Guides\" publishes patch summaries, meta reports and hero guides every week."
+      ]}
+    ]
+  },
+  "id": {
+    "nav": "Cara pakai",
+    "title": "Cara menggunakan PickRadar",
+    "desc": "Panduan langkah demi langkah untuk asisten draft, analisis tim, saran ban, build item dan emblem, latihan draft, dan alat lainnya.",
+    "intro": "PickRadar membantumu di layar pemilihan hero sebelum pertandingan. Baca langkah ini sekali; setelah beberapa pertandingan kamu bisa memakainya dalam 30 detik.",
+    "sections": [
+      {"h": "1. Asisten draft (Mobile Legends, Honor of Kings, Wild Rift)", "steps": [
+        "Pilih game-mu di menu atas.",
+        "Pilih hero musuh dari daftar. Saran langsung diperbarui setiap kamu menambah musuh.",
+        "Pindah ke \"Timku\" untuk menambahkan rekan setimmu. Saran juga akan menutup kekurangan timmu (tank jika tidak ada, mage jika kurang magic damage).",
+        "Skor di \"Pick yang disarankan\" dari 10: 7 ke atas (hijau) pilihan bagus, sekitar 5 (kuning) netral, rendah (merah) berisiko. Baris di bawahnya menjelaskan alasannya."
+      ]},
+      {"h": "2. Analisis tim", "steps": [
+        "Bar merah-biru menunjukkan pembagian physical dan magic damage timmu. Jika hanya satu jenis damage, musuh bisa menahanmu dengan satu jenis defense.",
+        "Ikon role menunjukkan role mana yang sudah terisi dan mana yang kosong.",
+        "Peringatan kuning menunjukkan kekurangan seperti tidak ada tank atau crowd control."
+      ]},
+      {"h": "3. Saran ban", "steps": [
+        "Saran ban menunjukkan hero yang kuat di meta saat ini.",
+        "Tandai hero-mu di \"Hero yang saya mainkan\" agar ban lebih personal: musuh yang paling berbahaya untuk hero-mu akan disarankan.",
+        "Catatan: jika ada hero yang ditandai, \"Pick yang disarankan\" juga hanya diambil dari hero tersebut. Hapus tanda untuk mendapat saran dari semua hero."
+      ]},
+      {"h": "4. Hero-mu: skor matchup, item, dan emblem", "steps": [
+        "Pilih hero-mu di \"Hero kamu\" atau tekan \"Build item\" di samping saran.",
+        "\"Matchup-mu\" menunjukkan seberapa bagus hero-mu melawan musuh ini. Musuh berbahaya ditampilkan merah, yang bisa kamu kalahkan hijau.",
+        "Build item menyesuaikan musuh secara otomatis. Item berbingkai biru adalah item counter untuk tim musuh ini.",
+        "Di bawahnya ada saran emblem (rune di Wild Rift) dan battle spell."
+      ]},
+      {"h": "5. Bacakan", "steps": [
+        "Tekan \"Bacakan\" untuk mendengar pick terbaik, urutan item, emblem, dan tips tanpa melihat layar.",
+        "Jika tidak ada suara, pastikan suara untuk bahasa ini terpasang di pengaturan text-to-speech ponselmu."
+      ]},
+      {"h": "6. Latihan draft melawan AI", "steps": [
+        "Tekan \"Latihan draft melawan AI\" di asisten.",
+        "Pilih mode: Ranked (ban dulu, lalu pick; hero yang sama tidak boleh di kedua tim) atau Classic (tanpa ban).",
+        "Saat ban, pilih saran ban atau hero lain dari daftar. Hero yang di-ban diberi label merah BAN dan tidak bisa dipilih.",
+        "Saat pick, \"Saran untukmu\" memberi pilihan bagus. AI menampilkan pilihannya dan alasannya di bawah.",
+        "Setelah draft selesai, pilih hero-mu di \"Persiapan\". Item dan emblem terisi otomatis; ketuk slot untuk mengganti sendiri. Kamu mendapat skor kecocokan build dan item counter yang kurang.",
+        "Di bagian bawah terlihat rating draft dan skor total (draft + build) kedua tim."
+      ]},
+      {"h": "7. Brawl Stars", "steps": [
+        "Pilih brawler musuh (3) dan mode permainan.",
+        "Saran diurutkan berdasarkan kelas musuh dan mode; pilihan terbaik disertai taktik dan gear yang disarankan."
+      ]},
+      {"h": "8. Free Fire", "steps": [
+        "Pilih gaya bermain (rusher, sniper, support, seimbang) dan mode.",
+        "Jika mau, tandai apa yang dilakukan musuh (gloo wall, rush, menembak dari jauh).",
+        "Kamu mendapat kombinasi karakter terbaik berisi 1 skill aktif dan 3 skill pasif."
+      ]},
+      {"h": "9. Halaman hero dan hasil pertandingan", "steps": [
+        "Setiap hero punya halaman: pick terbaik melawannya, item yang dibeli, build yang disarankan, dan win rate dari sumber tepercaya.",
+        "Setelah pertandingan, tekan \"Menang\" atau \"Kalah\" di asisten untuk melaporkan hasil. Jika hasil sudah cukup, win rate komunitas muncul di halaman hero.",
+        "\"Berita Patch & Panduan\" menerbitkan ringkasan patch, laporan meta, dan panduan hero setiap minggu."
+      ]}
+    ]
+  },
+  "es": {
+    "nav": "Cómo usar",
+    "title": "Cómo usar PickRadar",
+    "desc": "Guía paso a paso del asistente de draft, el análisis de equipo, las sugerencias de baneo, las builds de objetos y emblemas, la práctica de draft y las demás herramientas.",
+    "intro": "PickRadar te ayuda en la pantalla de selección de héroes antes de cada partida. Lee estos pasos una vez; tras unas partidas lo usarás en 30 segundos.",
+    "sections": [
+      {"h": "1. Asistente de draft (Mobile Legends, Honor of Kings, Wild Rift)", "steps": [
+        "Elige tu juego en el menú superior.",
+        "Elige los héroes rivales de la lista. Las sugerencias se actualizan al instante con cada rival.",
+        "Cambia a \"Mi equipo\" para añadir a tus compañeros. Las sugerencias también cubrirán lo que le falta a tu equipo (un tanque si no hay, un mago si falta daño mágico).",
+        "Las puntuaciones de \"Selecciones sugeridas\" son sobre 10: 7 o más (verde) es buena opción, cerca de 5 (amarillo) es neutral, baja (rojo) es arriesgada. La línea de abajo explica el motivo."
+      ]},
+      {"h": "2. Análisis del equipo", "steps": [
+        "La barra roja y azul muestra el reparto de daño físico y mágico. Con un solo tipo de daño, el rival puede frenarte con un solo tipo de defensa.",
+        "Los iconos de rol muestran qué roles están cubiertos y cuáles faltan.",
+        "Los avisos amarillos señalan carencias como no tener tanque o control."
+      ]},
+      {"h": "3. Sugerencias de baneo", "steps": [
+        "Las sugerencias de baneo muestran héroes fuertes en el meta actual.",
+        "Marca tus héroes en \"Héroes que juego\" para personalizar los baneos: se sugieren los rivales más peligrosos para tus héroes.",
+        "Nota: si marcas héroes ahí, \"Selecciones sugeridas\" también saldrán solo de ellos. Desmárcalos para ver sugerencias de todos los héroes."
+      ]},
+      {"h": "4. Tu héroe: enfrentamiento, objetos y emblema", "steps": [
+        "Elige tu héroe en \"Tu héroe\" o pulsa \"Build de objetos\" junto a una sugerencia.",
+        "\"Tu enfrentamiento\" muestra qué tan bueno es tu héroe contra estos rivales. Los rivales peligrosos aparecen en rojo y los que superas en verde.",
+        "La build se adapta al rival automáticamente. Los objetos con borde azul son counters añadidos para este equipo rival.",
+        "Debajo tienes la sugerencia de emblema (runa en Wild Rift) y hechizo de batalla."
+      ]},
+      {"h": "5. Leer en voz alta", "steps": [
+        "Pulsa \"Leer en voz alta\" para oír la mejor opción, el orden de objetos, el emblema y un consejo sin mirar la pantalla.",
+        "Si no hay sonido, comprueba que tu teléfono tenga instalada una voz de este idioma en la conversión de texto a voz."
+      ]},
+      {"h": "6. Práctica de draft contra la IA", "steps": [
+        "Pulsa \"Practica el draft contra la IA\" en el asistente.",
+        "Elige modo: Clasificatoria (primero baneos y luego selecciones; el mismo héroe no puede estar en ambos lados) o Clásica (sin baneos).",
+        "En los baneos, elige un baneo sugerido o cualquier héroe. Los baneados llevan la etiqueta roja BAN y no se pueden elegir.",
+        "En las selecciones, \"Sugerencias para ti\" ofrece buenas respuestas. La IA muestra sus elecciones y motivos debajo.",
+        "Al terminar, elige tu héroe en \"Preparación\". Objetos y emblema se completan solos; toca una casilla para cambiarla. Verás el ajuste de tu build y los counters que faltan.",
+        "Abajo verás la valoración del draft y la puntuación total (draft + build) de ambos lados."
+      ]},
+      {"h": "7. Brawl Stars", "steps": [
+        "Elige los brawlers rivales (3) y el modo de juego.",
+        "Las sugerencias se ordenan según las clases rivales y el modo; la mejor opción incluye una táctica y el equipo sugerido."
+      ]},
+      {"h": "8. Free Fire", "steps": [
+        "Elige tu estilo de juego (rusher, francotirador, apoyo, equilibrado) y el modo.",
+        "Si quieres, marca lo que hacen los rivales (paredes gloo, rush, disparos de lejos).",
+        "Recibes la mejor combinación de 1 habilidad activa y 3 pasivas."
+      ]},
+      {"h": "9. Páginas de héroes y resultados", "steps": [
+        "Cada héroe tiene su página: mejores opciones contra él, objetos, build sugerida y tasas de victoria de fuentes fiables.",
+        "Tras una partida, pulsa \"Gané\" o \"Perdí\" en el asistente. Con suficientes resultados, aparecen tasas de victoria de la comunidad en las páginas de héroes.",
+        "\"Parches y Guías\" publica cada semana resúmenes de parches, informes del meta y guías de héroes."
+      ]}
+    ]
+  },
+  "pt": {
+    "nav": "Como usar",
+    "title": "Como usar o PickRadar",
+    "desc": "Guia passo a passo do assistente de draft, análise do time, sugestões de banimento, builds de itens e emblemas, treino de draft e demais ferramentas.",
+    "intro": "O PickRadar ajuda você na tela de escolha de heróis antes da partida. Leia estes passos uma vez; depois de algumas partidas você usará em 30 segundos.",
+    "sections": [
+      {"h": "1. Assistente de draft (Mobile Legends, Honor of Kings, Wild Rift)", "steps": [
+        "Escolha seu jogo no menu de cima.",
+        "Escolha os heróis inimigos na lista. As sugestões atualizam na hora a cada inimigo adicionado.",
+        "Troque para \"Meu time\" para adicionar seus companheiros. As sugestões também cobrem o que falta no seu time (um tanque se não houver, um mago se faltar dano mágico).",
+        "As notas em \"Escolhas sugeridas\" vão até 10: 7 ou mais (verde) é boa escolha, perto de 5 (amarelo) é neutro, baixo (vermelho) é arriscado. A linha abaixo explica o motivo."
+      ]},
+      {"h": "2. Análise do time", "steps": [
+        "A barra vermelha e azul mostra a divisão de dano físico e mágico. Com um só tipo de dano, o inimigo pode parar vocês com um só tipo de defesa.",
+        "Os ícones de função mostram quais funções estão preenchidas e quais faltam.",
+        "Os avisos amarelos apontam faltas como nenhum tanque ou nenhum controle."
+      ]},
+      {"h": "3. Sugestões de banimento", "steps": [
+        "As sugestões de banimento mostram heróis fortes no meta atual.",
+        "Marque seus heróis em \"Heróis que eu jogo\" para personalizar: são sugeridos os inimigos mais perigosos para os seus heróis.",
+        "Atenção: com heróis marcados ali, as \"Escolhas sugeridas\" também saem só deles. Desmarque para ver sugestões de todos os heróis."
+      ]},
+      {"h": "4. Seu herói: confronto, itens e emblema", "steps": [
+        "Escolha seu herói em \"Seu herói\" ou toque em \"Build de itens\" ao lado de uma sugestão.",
+        "\"Seu confronto\" mostra o quanto seu herói é bom contra estes inimigos. Os perigosos aparecem em vermelho e os que você vence em verde.",
+        "A build se adapta ao inimigo automaticamente. Itens com borda azul são counters adicionados para este time inimigo.",
+        "Abaixo vem a sugestão de emblema (runa no Wild Rift) e feitiço de batalha."
+      ]},
+      {"h": "5. Ler em voz alta", "steps": [
+        "Toque em \"Ler em voz alta\" para ouvir a melhor escolha, a ordem dos itens, o emblema e uma dica sem olhar a tela.",
+        "Se não houver som, confira se há uma voz deste idioma instalada nas configurações de texto para fala do celular."
+      ]},
+      {"h": "6. Treino de draft contra a IA", "steps": [
+        "Toque em \"Treine o draft contra a IA\" no assistente.",
+        "Escolha o modo: Ranqueada (primeiro banimentos e depois escolhas; o mesmo herói não pode estar nos dois lados) ou Clássica (sem banimentos).",
+        "Nos banimentos, escolha uma sugestão ou qualquer herói. Heróis banidos ganham a etiqueta vermelha BAN e não podem ser escolhidos.",
+        "Nas escolhas, \"Sugestões para você\" oferece boas respostas. A IA mostra suas escolhas e motivos abaixo.",
+        "No fim, escolha seu herói em \"Preparação\". Itens e emblema vêm sozinhos; toque num espaço para trocar. Você vê o encaixe da build e os counters que faltam.",
+        "Embaixo aparecem a nota do draft e a pontuação total (draft + build) dos dois lados."
+      ]},
+      {"h": "7. Brawl Stars", "steps": [
+        "Escolha os brawlers inimigos (3) e o modo de jogo.",
+        "As sugestões seguem as classes inimigas e o modo; a melhor escolha vem com tática e equipamentos sugeridos."
+      ]},
+      {"h": "8. Free Fire", "steps": [
+        "Escolha seu estilo (rusher, sniper, suporte, equilibrado) e o modo.",
+        "Se quiser, marque o que os inimigos fazem (paredes de gel, rush, tiros de longe).",
+        "Você recebe a melhor combinação de 1 habilidade ativa e 3 passivas."
+      ]},
+      {"h": "9. Páginas de heróis e resultados", "steps": [
+        "Cada herói tem sua página: melhores escolhas contra ele, itens, build sugerida e taxas de vitória de fontes confiáveis.",
+        "Depois da partida, toque em \"Ganhei\" ou \"Perdi\" no assistente. Com resultados suficientes, as taxas de vitória da comunidade aparecem nas páginas de heróis.",
+        "\"Patches e Guias\" publica toda semana resumos de patch, relatórios de meta e guias de heróis."
+      ]}
+    ]
+  }
+}

@@ -3,7 +3,7 @@
 const fs = require('fs'), path = require('path');
 const R = p => path.join(__dirname, p);
 const read = p => JSON.parse(fs.readFileSync(R(p), 'utf8'));
-const cfg = read('config.json'), I18N = read('src/i18n.json'), ITEMS_TR = read('data/mlbb-items-tr.json');
+const cfg = read('config.json'), I18N = read('src/i18n.json'), ITEMS_TR = read('data/mlbb-items-tr.json'), GUIDE = read('src/guide.json');
 const Engine = require('./src/engine.js'), Icons = require('./src/icons.js');
 const OUT = R('dist');
 /* Cache-busting: asset URLs carry a hash of their content so browsers never mix old and new scripts. */
@@ -48,7 +48,8 @@ function layout({ lang, rel, title, desc, body, active, app, type, jsonld }) {
   const verify = cfg.googleVerification ? `<meta name="google-site-verification" content="${esc(cfg.googleVerification)}">` : '';
   const appJs = app ? `<script>window.APP=${JSON.stringify(app).replace(/</g, '\\u003c')}</script><script src="${asset('engine.js')}"></script>` : '';
   const nav = GAMES.map(g => `<a href="/${lang}/${g.slug}/"${active === g.id ? ' aria-current="page"' : ''}>${esc(g.name)}</a>`).join('') +
-    `<a href="/${lang}/news/"${active === 'news' ? ' aria-current="page"' : ''}>${esc(t.news)}</a>`;
+    `<a href="/${lang}/news/"${active === 'news' ? ' aria-current="page"' : ''}>${esc(t.news)}</a>` +
+    `<a href="/${lang}/guide/"${active === 'guide' ? ' aria-current="page"' : ''}>${esc(GUIDE[lang].nav)}</a>`;
   return `<!doctype html>
 <html lang="${lang}">
 <head>
@@ -108,7 +109,7 @@ for (const lang of cfg.langs) {
   write(`${lang}/index.html`, layout({
     lang, rel: `${lang}/`, title: `${cfg.siteName} · ${t.tagline}`, desc: t.homeText,
     jsonld: { '@context': 'https://schema.org', '@type': 'WebSite', name: cfg.siteName, url: `${base}/${lang}/`, inLanguage: lang },
-    body: `<section><h1>${esc(t.homeH1)}</h1><p class="lead">${esc(t.homeText)}</p></section>
+    body: `<section><h1>${esc(t.homeH1)}</h1><p class="lead">${esc(t.homeText)}</p><div class="bar" style="margin-top:12px"><a class="btn ghost" href="/${lang}/guide/">❓ ${esc(GUIDE[lang].nav)}</a></div></section>
 <section><h2>${esc(t.chooseGame)}</h2><div class="games-grid">
 ${GAMES.map(g => `<a class="game" href="/${lang}/${g.slug}/"><h3>${esc(g.full)}</h3><span class="note">${esc(gameDesc(g))}</span><span class="go">${esc(t.openTool)} →</span></a>`).join('\n')}
 </div></section>
@@ -126,7 +127,7 @@ ${showcase(lang)}
       const list = isMoba ? D.heroes : D.brawlers;
       const roleOf = x => isMoba ? x.r : x.c;
       const links = list.map(h => `<a href="/${gp}/${slug(h.n)}/">${esc(h.n)}</a>`).join('');
-      const body = `<section><h1>${esc(gameTitle(g))}</h1><p class="lead">${esc(gameDesc(g))}</p></section>
+      const body = `<section><h1>${esc(gameTitle(g))}</h1><p class="lead">${esc(gameDesc(g))} <a href="/${lang}/guide/">${esc(GUIDE[lang].nav)} →</a></p></section>
 <section><h2>${esc(t.enemyTeam)}</h2>
 <div class="slots" id="slots" style="grid-template-columns:repeat(${isMoba ? 5 : 3},1fr)"></div>
 ${isMoba ? `<h2 style="margin-top:14px">${esc(t.myTeam)}</h2><div class="slots" id="aslots" style="grid-template-columns:repeat(4,1fr)"></div>
@@ -213,7 +214,7 @@ ${src}${comm}
     if (g.kind === 'ff') {
       const chars = D.characters;
       const links = chars.map(c => `<a href="/${gp}/${slug(c.n)}/">${esc(c.n)}</a>`).join('');
-      const body = `<section><h1>${esc(t.ffToolTitle)}</h1><p class="lead">${esc(t.ffToolDesc)}</p></section>
+      const body = `<section><h1>${esc(t.ffToolTitle)}</h1><p class="lead">${esc(t.ffToolDesc)} <a href="/${lang}/guide/">${esc(GUIDE[lang].nav)} →</a></p></section>
 <section><h2>${esc(t.playstyle)}</h2><div class="row seg" id="styles"></div></section>
 <section><h2>${esc(t.ffMode)}</h2><div class="row seg" id="ffmodes"></div></section>
 <section><h2>${esc(t.threats)}</h2><div class="row seg" id="threats"></div></section>
@@ -252,6 +253,19 @@ ${n.sources && n.sources.length ? `<p class="note">${esc(n.sources.join(' · '))
 <div class="bar">${g && n.hero ? `<a class="btn ghost" href="/${lang}/${g.slug}/${slug(n.hero)}/">${esc(tt('hp_h1', { x: n.hero }))}</a>` : ''}${g ? `<a class="btn" href="/${lang}/${g.slug}/">${esc(t.openTool)} →</a>` : ''}</div>`
     }));
   }
+
+  /* How-to guide */
+  const G = GUIDE[lang];
+  write(`${lang}/guide/index.html`, layout({
+    lang, rel: `${lang}/guide/`, active: 'guide', type: 'article', title: `${G.title} · ${cfg.siteName}`, desc: G.desc,
+    jsonld: { '@context': 'https://schema.org', '@type': 'HowTo', name: G.title, description: G.desc, inLanguage: lang,
+      step: G.sections.map(sec => ({ '@type': 'HowToSection', name: sec.h, itemListElement: sec.steps.map(st => ({ '@type': 'HowToStep', text: st })) })) },
+    body: `<article class="prose guide"><h1>${esc(G.title)}</h1><p class="lead">${esc(G.intro)}</p>
+<nav class="toc card">${G.sections.map((sec, i) => `<a href="#s${i + 1}">${esc(sec.h)}</a>`).join('')}</nav>
+${G.sections.map((sec, i) => `<h2 id="s${i + 1}">${esc(sec.h)}</h2><ol>${sec.steps.map(st => `<li>${esc(st)}</li>`).join('')}</ol>`).join('\n')}
+</article>
+<div class="bar">${GAMES.map(gm => `<a class="btn ghost" href="/${lang}/${gm.slug}/">${esc(gm.name)}</a>`).join('')}</div>`
+  }));
 
   /* Privacy & About */
   write(`${lang}/privacy/index.html`, layout({ lang, rel: `${lang}/privacy/`, title: `${t.privTitle} · ${cfg.siteName}`, desc: t.privBody[0],
