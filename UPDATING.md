@@ -9,6 +9,7 @@ For every game, research the latest official patch / balance notes (official sit
 - **New heroes / brawlers / characters**: add entries with the same fields as existing ones, keep the list alphabetical. Only add what sources confirm (role, damage type, main traits).
 - **Buffs / nerfs / meta**: set `tier` to `S`, `A`, `B` or `C` only when a reliable source supports it (patch direction plus win rate or reputable tier list). Use `null` when unsure. Re-check existing tiers every week.
 - **Items**: if an item in `archetypes`, a hero `build` or `counters` was removed or renamed, replace it with its current equivalent. Honor of Kings archetypes currently have empty `items` and category placeholders (`#cat_...`) in `counters`; replace them with exact item names once a reliable source confirms them.
+- **Emblems / runes / gears**: MLBB archetypes carry `emblem` (set, t1, t2, core), Wild Rift archetypes carry `emblem.core` (keystone rune), Brawl Stars has `gears` per class. Update them when the game changes these systems. Honor of Kings Arcana is not added yet: add `emblem` entries to `data/hok.json` archetypes once a reliable source confirms current Arcana setups.
 - Update `updated` (YYYY-MM-DD) and `patch` where the file has it.
 - Turkish item names for MLBB live in `data/mlbb-items-tr.json`.
 

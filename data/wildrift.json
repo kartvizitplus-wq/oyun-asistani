@@ -15,7 +15,10 @@
         "Black Cleaver",
         "Death's Dance",
         "Guardian Angel"
-      ]
+      ],
+      "emblem": {
+        "core": "Conqueror"
+      }
     },
     "fM": {
       "group": "front",
@@ -28,7 +31,10 @@
         "Void Staff",
         "Zhonya's Hourglass",
         "Rabadon's Deathcap"
-      ]
+      ],
+      "emblem": {
+        "core": "Conqueror"
+      }
     },
     "tank": {
       "group": "front",
@@ -41,7 +47,10 @@
         "Force of Nature",
         "Randuin's Omen",
         "Gargoyle Stoneplate"
-      ]
+      ],
+      "emblem": {
+        "core": "Aftershock"
+      }
     },
     "support": {
       "group": "front",
@@ -54,7 +63,10 @@
         "Athene's Unholy Grail",
         "Force of Nature",
         "Zhonya's Hourglass"
-      ]
+      ],
+      "emblem": {
+        "core": "Summon Aery"
+      }
     },
     "mmC": {
       "group": "back",
@@ -67,7 +79,10 @@
         "Bloodthirster",
         "Lord Dominik's Regards",
         "Guardian Angel"
-      ]
+      ],
+      "emblem": {
+        "core": "Fleet Footwork"
+      }
     },
     "mmA": {
       "group": "back",
@@ -80,7 +95,10 @@
         "Runaan's Hurricane",
         "Lord Dominik's Regards",
         "Guardian Angel"
-      ]
+      ],
+      "emblem": {
+        "core": "Lethal Tempo"
+      }
     },
     "mmB": {
       "group": "back",
@@ -93,7 +111,10 @@
         "Serylda's Grudge",
         "Bloodthirster",
         "Guardian Angel"
-      ]
+      ],
+      "emblem": {
+        "core": "Conqueror"
+      }
     },
     "mage": {
       "group": "back",
@@ -106,7 +127,10 @@
         "Void Staff",
         "Zhonya's Hourglass",
         "Infinity Orb"
-      ]
+      ],
+      "emblem": {
+        "core": "Electrocute"
+      }
     },
     "assP": {
       "group": "back",
@@ -119,7 +143,10 @@
         "Serylda's Grudge",
         "Death's Dance",
         "Guardian Angel"
-      ]
+      ],
+      "emblem": {
+        "core": "Electrocute"
+      }
     },
     "assM": {
       "group": "back",
@@ -132,7 +159,10 @@
         "Void Staff",
         "Zhonya's Hourglass",
         "Banshee's Veil"
-      ]
+      ],
+      "emblem": {
+        "core": "Electrocute"
+      }
     }
   },
   "counters": {
@@ -1024,5 +1054,6 @@
       "b": "mage",
       "tier": null
     }
-  ]
+  ],
+  "emblemLabel": "rune"
 }

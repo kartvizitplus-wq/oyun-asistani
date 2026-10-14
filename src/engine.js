@@ -61,12 +61,15 @@
     const ccBoots = C.ccBoots;
     let spell = h.spell || a.spell;
     if (c.c >= 3 && !front && C.purify) spell = C.purify;
+    let emblem = h.emblem || a.emblem || null;
+    if (emblem && data.emblemCounters && T === 'M' && !front && c.tank >= 2 && data.emblemCounters.tankyMage)
+      emblem = Object.assign({}, emblem, { core: data.emblemCounters.tankyMage, coreAdapt: true });
     if (!base.length) {
       // No fixed build for this game yet: return only the counter items for this enemy team.
       const list = [];
       if ((c.M >= 3 || c.c >= 3) && ccBoots) list.push({ item: ccBoots, adapt: true, reason: c.M >= 3 ? 'r_magic' : 'r_cc', slot: 'boots' });
       adds.sort((x, y) => y.p - x.p).forEach(x => { if (!list.some(l => l.item === x.item)) list.push({ item: x.item, adapt: true, reason: x.reason }); });
-      return { items: list, spell, partial: true };
+      return { items: list, spell, emblem, partial: true };
     }
     let boots = base[0], bootsAdapt = false;
     if ((c.M >= 3 || c.c >= 3) && ccBoots && boots !== ccBoots) { boots = ccBoots; bootsAdapt = true; }
@@ -82,7 +85,7 @@
     return {
       items: [{ item: boots, adapt: bootsAdapt, reason: bootsAdapt ? (c.M >= 3 ? 'r_magic' : 'r_cc') : null, slot: 'boots' },
         { item: core[1], adapt: false, slot: 'core' }, { item: core[2], adapt: false, slot: 'core' }, ...flex],
-      spell
+      spell, emblem
     };
   }
   function mlTips(data, enemy) {

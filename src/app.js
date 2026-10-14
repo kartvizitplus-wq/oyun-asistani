@@ -89,6 +89,8 @@
       pk.appendChild(d);
     });
   }
+  const emblemText = em => em.set ? t('emblemTitle') + ': ' + [em.set, em.t1, em.t2, em.core].filter(Boolean).join(' · ') + (em.coreAdapt ? ' (' + t('adapted') + ')' : '')
+    : t('runeTitle') + ': ' + em.core;
   const currentHero = () => (st.hero && all.includes(st.hero)) ? st.hero : (lastPicks[0] ? lastPicks[0].n : all[0]);
   function renderBuild() {
     const hero = currentHero(), sel = $('heroSel');
@@ -106,13 +108,15 @@
     $('partial').hidden = !b.partial;
     const tl = $('tips'); tl.innerHTML = '';
     const sp = itemName(b.spell);
-    [t('spell') + ': ' + sp + (sp !== b.spell ? ' (' + b.spell + ')' : ''), ...(st.e.length ? E.mlTips(A.data, st.e).map(k => t(k)) : [])]
+    [...(b.emblem ? [emblemText(b.emblem)] : []), t('spell') + ': ' + sp + (sp !== b.spell ? ' (' + b.spell + ')' : ''), ...(st.e.length ? E.mlTips(A.data, st.e).map(k => t(k)) : [])]
       .forEach(s => tl.appendChild(el('li', {}, esc(s))));
   }
   function renderBsTips() {
     const tl = $('tips'); tl.innerHTML = '';
     const top = lastPicks[0];
     if (top) tl.appendChild(el('li', {}, '<b>' + esc(t('bp_tip', { cls: t('cl_' + top.c) })) + ':</b> ' + esc(t('bt_' + top.c))));
+    const gear = top && A.data.gears && A.data.gears[top.c];
+    if (gear) tl.appendChild(el('li', {}, '<b>' + esc(t('gearTitle')) + ' (' + esc(top.n) + '):</b> ' + esc(gear.join(' + '))));
   }
   function renderModes() {
     const m = $('modes');
@@ -138,9 +142,10 @@
     if (isMoba) {
       const hero = currentHero(), b = E.mlBuild(A.data, hero, st.e);
       if (b.items.length) parts.push(t('say_build', { h: hero, items: b.items.map(x => itemName(x.item)).join(', ') }));
+      if (b.emblem) parts.push(t('say_emblem', { e: [b.emblem.set, b.emblem.t1, b.emblem.t2, b.emblem.core].filter(Boolean).join(', ') }));
       parts.push(t('say_spell', { s: itemName(b.spell) }));
       parts.push(t(E.mlTips(A.data, st.e)[0]));
-    } else if (lastPicks[0]) parts.push(t('bt_' + lastPicks[0].c));
+    } else if (lastPicks[0]) { parts.push(t('bt_' + lastPicks[0].c)); const g = A.data.gears && A.data.gears[lastPicks[0].c]; if (g) parts.push(t('gearTitle') + ': ' + g.join(', ') + '.'); }
     return parts.join(' ');
   }
   $('speak').onclick = () => speak(speechText());

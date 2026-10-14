@@ -15,7 +15,13 @@
         "Malefic Roar",
         "Queen's Wings",
         "Immortality"
-      ]
+      ],
+      "emblem": {
+        "set": "Fighter",
+        "t1": "Thrill",
+        "t2": "Festival of Blood",
+        "core": "Brave Smite"
+      }
     },
     "fM": {
       "group": "front",
@@ -28,7 +34,13 @@
         "Lightning Truncheon",
         "Athena's Shield",
         "Immortality"
-      ]
+      ],
+      "emblem": {
+        "set": "Fighter",
+        "t1": "Thrill",
+        "t2": "Festival of Blood",
+        "core": "Brave Smite"
+      }
     },
     "tank": {
       "group": "front",
@@ -41,7 +53,13 @@
         "Athena's Shield",
         "Antique Cuirass",
         "Immortality"
-      ]
+      ],
+      "emblem": {
+        "set": "Tank",
+        "t1": "Vitality",
+        "t2": "Tenacity",
+        "core": "Concussive Blast"
+      }
     },
     "support": {
       "group": "front",
@@ -54,7 +72,13 @@
         "Oracle",
         "Athena's Shield",
         "Immortality"
-      ]
+      ],
+      "emblem": {
+        "set": "Support",
+        "t1": "Agility",
+        "t2": "Pull Yourself Together",
+        "core": "Focusing Mark"
+      }
     },
     "mmC": {
       "group": "back",
@@ -67,7 +91,13 @@
         "Blade of Despair",
         "Malefic Roar",
         "Wind of Nature"
-      ]
+      ],
+      "emblem": {
+        "set": "Marksman",
+        "t1": "Fatal",
+        "t2": "Weapon Master",
+        "core": "Quantum Charge"
+      }
     },
     "mmA": {
       "group": "back",
@@ -80,7 +110,13 @@
         "Corrosion Scythe",
         "Malefic Roar",
         "Wind of Nature"
-      ]
+      ],
+      "emblem": {
+        "set": "Marksman",
+        "t1": "Swift",
+        "t2": "Weapon Master",
+        "core": "Weakness Finder"
+      }
     },
     "mmB": {
       "group": "back",
@@ -93,7 +129,13 @@
         "Blade of Despair",
         "Malefic Roar",
         "Wind of Nature"
-      ]
+      ],
+      "emblem": {
+        "set": "Marksman",
+        "t1": "Fatal",
+        "t2": "Weapon Master",
+        "core": "Quantum Charge"
+      }
     },
     "mage": {
       "group": "back",
@@ -106,7 +148,13 @@
         "Holy Crystal",
         "Divine Glaive",
         "Blood Wings"
-      ]
+      ],
+      "emblem": {
+        "set": "Mage",
+        "t1": "Inspire",
+        "t2": "Bargain Hunter",
+        "core": "Lethal Ignition"
+      }
     },
     "assP": {
       "group": "back",
@@ -119,7 +167,13 @@
         "Blade of Despair",
         "Malefic Roar",
         "Immortality"
-      ]
+      ],
+      "emblem": {
+        "set": "Assassin",
+        "t1": "Thrill",
+        "t2": "Seasoned Hunter",
+        "core": "Killing Spree"
+      }
     },
     "assM": {
       "group": "back",
@@ -132,7 +186,13 @@
         "Divine Glaive",
         "Blood Wings",
         "Immortality"
-      ]
+      ],
+      "emblem": {
+        "set": "Assassin",
+        "t1": "Thrill",
+        "t2": "Seasoned Hunter",
+        "core": "Killing Spree"
+      }
     }
   },
   "heroes": [
@@ -1478,5 +1538,9 @@
     },
     "ccBoots": "Tough Boots",
     "purify": "Purify"
+  },
+  "emblemLabel": "emblem",
+  "emblemCounters": {
+    "tankyMage": "Impure Rage"
   }
 }

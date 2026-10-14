@@ -194,7 +194,15 @@
   "latestNews": "Son yama özetleri",
   "readMore": "Devamını oku",
   "publishedOn": "Yayın tarihi",
-  "noNews": "Yakında ilk yama özeti burada."
+  "noNews": "Yakında ilk yama özeti burada.",
+  "emblemTitle": "Amblem",
+  "runeTitle": "Ana rün",
+  "em_set": "Set",
+  "em_t1": "1. yetenek",
+  "em_t2": "2. yetenek",
+  "em_core": "Ana yetenek",
+  "gearTitle": "Önerilen ekipman (gear)",
+  "say_emblem": "Amblem: {e}."
  },
  "en": {
   "langName": "English",
@@ -391,7 +399,15 @@
   "latestNews": "Latest patch summaries",
   "readMore": "Read more",
   "publishedOn": "Published",
-  "noNews": "The first patch summary will appear here soon."
+  "noNews": "The first patch summary will appear here soon.",
+  "emblemTitle": "Emblem",
+  "runeTitle": "Keystone rune",
+  "em_set": "Set",
+  "em_t1": "Talent 1",
+  "em_t2": "Talent 2",
+  "em_core": "Core talent",
+  "gearTitle": "Suggested gears",
+  "say_emblem": "Emblem: {e}."
  },
  "id": {
   "langName": "Bahasa Indonesia",
@@ -588,7 +604,15 @@
   "latestNews": "Ringkasan patch terbaru",
   "readMore": "Baca selengkapnya",
   "publishedOn": "Diterbitkan",
-  "noNews": "Ringkasan patch pertama akan segera muncul di sini."
+  "noNews": "Ringkasan patch pertama akan segera muncul di sini.",
+  "emblemTitle": "Emblem",
+  "runeTitle": "Rune utama",
+  "em_set": "Set",
+  "em_t1": "Talent 1",
+  "em_t2": "Talent 2",
+  "em_core": "Talent inti",
+  "gearTitle": "Gear yang disarankan",
+  "say_emblem": "Emblem: {e}."
  },
  "es": {
   "langName": "Español",
@@ -785,7 +809,15 @@
   "latestNews": "Últimos resúmenes de parches",
   "readMore": "Leer más",
   "publishedOn": "Publicado",
-  "noNews": "Pronto aparecerá aquí el primer resumen de parche."
+  "noNews": "Pronto aparecerá aquí el primer resumen de parche.",
+  "emblemTitle": "Emblema",
+  "runeTitle": "Runa clave",
+  "em_set": "Conjunto",
+  "em_t1": "Talento 1",
+  "em_t2": "Talento 2",
+  "em_core": "Talento principal",
+  "gearTitle": "Equipo sugerido (gears)",
+  "say_emblem": "Emblema: {e}."
  },
  "pt": {
   "langName": "Português",
@@ -982,6 +1014,14 @@
   "latestNews": "Últimos resumos de patch",
   "readMore": "Ler mais",
   "publishedOn": "Publicado",
-  "noNews": "O primeiro resumo de patch aparecerá aqui em breve."
+  "noNews": "O primeiro resumo de patch aparecerá aqui em breve.",
+  "emblemTitle": "Emblema",
+  "runeTitle": "Runa principal",
+  "em_set": "Conjunto",
+  "em_t1": "Talento 1",
+  "em_t2": "Talento 2",
+  "em_core": "Talento principal",
+  "gearTitle": "Equipamentos sugeridos (gears)",
+  "say_emblem": "Emblema: {e}."
  }
 }
