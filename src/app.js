@@ -30,8 +30,11 @@
   const all = list.map(h => h.n);
   const roleOf = Object.fromEntries(list.map(h => [h.n, isMoba ? h.r : h.c]));
   const maxEnemy = isMoba ? 5 : 3;
-  const st = load({ e: [], pool: [], hero: null, mode: 'gem' });
+  const st = load({ e: [], a: [], side: 'e', pool: [], hero: null, mode: 'gem' });
   st.e = (st.e || []).filter(n => all.includes(n));
+  st.a = isMoba ? (st.a || []).filter(n => all.includes(n)) : [];
+  if (!isMoba) st.side = 'e';
+  const maxAlly = 4;
   st.pool = (st.pool || []).filter(n => all.includes(n));
   const qp = new URLSearchParams(location.search).get('e');
   if (qp && all.includes(qp)) st.e = [qp];
@@ -39,21 +42,29 @@
   if (!st.e.length && !qp && A.example) { st.e = A.example.filter(n => all.includes(n)); example = true; }
   const chip = (n, cls) => el('button', { class: 'chip ' + (cls || ''), type: 'button' }, I.hero(n, roleOf[n], 18) + '<span>' + esc(n) + '</span>');
 
-  function renderSlots() {
-    const sl = $('slots'); sl.innerHTML = '';
-    for (let i = 0; i < maxEnemy; i++) {
-      const n = st.e[i];
-      const b = el('button', { class: 'slot' + (n ? ' on' : ''), type: 'button', id: 'slot' + i }, n ? I.hero(n, roleOf[n], 26) + '<span>' + esc(n) + '</span>' : esc(t('emptySlot')));
-      if (n) b.onclick = () => { st.e.splice(i, 1); example = false; update(); };
+  function slotRow(id, arr, max, cls) {
+    const sl = $(id); if (!sl) return; sl.innerHTML = '';
+    for (let i = 0; i < max; i++) {
+      const n = arr[i];
+      const b = el('button', { class: 'slot' + (n ? ' ' + cls : ''), type: 'button' }, n ? I.hero(n, roleOf[n], 26) + '<span>' + esc(n) + '</span>' : esc(t('emptySlot')));
+      if (n) b.onclick = () => { arr.splice(i, 1); example = false; update(); };
       sl.appendChild(b);
     }
   }
+  function renderSlots() {
+    slotRow('slots', st.e, maxEnemy, 'on');
+    slotRow('aslots', st.a, maxAlly, 'ally');
+    const se = $('sideE'), sa = $('sideA');
+    if (se) { se.setAttribute('aria-pressed', st.side === 'e'); sa.setAttribute('aria-pressed', st.side === 'a'); }
+  }
+  const target = () => st.side === 'a' ? st.a : st.e;
+  const targetMax = () => st.side === 'a' ? maxAlly : maxEnemy;
   function renderPool() {
     const q = $('q').value.trim().toLowerCase(), p = $('pool'); p.innerHTML = '';
     all.filter(n => !q || n.toLowerCase().includes(q)).forEach(n => {
       const b = chip(n);
-      b.disabled = st.e.includes(n) || st.e.length >= maxEnemy;
-      b.onclick = () => { st.e.push(n); $('q').value = ''; example = false; update(); };
+      b.disabled = st.e.includes(n) || st.a.includes(n) || target().length >= targetMax();
+      b.onclick = () => { target().push(n); $('q').value = ''; example = false; update(); };
       p.appendChild(b);
     });
   }
@@ -77,7 +88,7 @@
   function renderPicks() {
     const pk = $('picks'); pk.innerHTML = '';
     if (!st.e.length) { pk.innerHTML = '<p class="note">' + esc(t('noEnemy')) + '</p>'; lastPicks = []; return; }
-    const res = isMoba ? E.mlScore(A.data, st.e, st.pool) : E.bsScore(A.data, st.e, st.mode, st.pool);
+    const res = isMoba ? E.mlScore(A.data, st.e, st.pool, st.a) : E.bsScore(A.data, st.e, st.mode, st.pool);
     lastPicks = res.slice(0, 6);
     lastPicks.forEach((r, i) => {
       const d = el('div', { class: 'pick' });
@@ -88,6 +99,20 @@
       if (isMoba) d.querySelector('button').onclick = () => { st.hero = r.n; update(); $('buildsec').scrollIntoView({ behavior: 'smooth', block: 'start' }); };
       pk.appendChild(d);
     });
+  }
+  function teamBlock(title, names, showWarn) {
+    const tm = E.mlTeam(A.data, names);
+    const tot = tm.P + tm.M || 1, pp = Math.round(tm.P / tot * 100);
+    const roles = E.ROLES.map(r => '<span class="rolechip' + (tm.roles[r] ? ' on' : '') + '" title="' + esc(t('role_' + r)) + '">' + I.talent(r.charAt(0).toUpperCase() + r.slice(1), 22) + '<small>' + esc(t('role_' + r)) + (tm.roles[r] > 1 ? ' ×' + tm.roles[r] : '') + '</small></span>').join('');
+    return '<div class="team"><b>' + esc(title) + '</b>' +
+      '<div class="dmgbar" role="img" aria-label="' + esc(t('dmgPhys')) + ' ' + pp + '%, ' + esc(t('dmgMag')) + ' ' + (100 - pp) + '%"><span class="p" style="width:' + (names.length ? pp : 50) + '%"></span><span class="m" style="width:' + (names.length ? 100 - pp : 50) + '%"></span></div>' +
+      '<div class="dmglabels"><span>' + esc(t('dmgPhys')) + ' ' + (names.length ? pp + '%' : '–') + '</span><span>' + esc(t('dmgMag')) + ' ' + (names.length ? (100 - pp) + '%' : '–') + '</span></div>' +
+      '<div class="roles">' + roles + '</div>' +
+      (showWarn && tm.warn.length ? '<ul class="warn">' + tm.warn.map(k => '<li class="' + (k === 'wa_ok' ? 'ok' : '') + '">' + esc(t(k)) + '</li>').join('') + '</ul>' : '') + '</div>';
+  }
+  function renderTeam() {
+    const box = $('team'); if (!box) return;
+    box.innerHTML = teamBlock(t('allySide'), st.a, true) + teamBlock(t('enemySide'), st.e, false);
   }
   const emblemText = em => em.set ? t('emblemTitle') + ': ' + [em.set, em.t1, em.t2, em.core].filter(Boolean).join(' · ') + (em.coreAdapt ? ' (' + t('adapted') + ')' : '')
     : t('runeTitle') + ': ' + em.core;
@@ -145,7 +170,7 @@
     renderSlots(); renderPool(); renderMyPool();
     if (!isMoba) renderModes();
     renderPicks();
-    if (isMoba) renderBuild(); else renderBsTips();
+    if (isMoba) { renderTeam(); renderBuild(); } else renderBsTips();
     $('example').hidden = !example;
     save(st);
   }
@@ -163,7 +188,8 @@
     return parts.join(' ');
   }
   $('speak').onclick = () => speak(speechText());
-  $('clear').onclick = () => { st.e = []; example = false; update(); };
+  $('clear').onclick = () => { st.e = []; st.a = []; example = false; update(); };
+  if ($('sideE')) { $('sideE').onclick = () => { st.side = 'e'; update(); }; $('sideA').onclick = () => { st.side = 'a'; update(); }; }
   $('q').oninput = renderPool;
   $('pq').oninput = renderMyPool;
   if (isMoba) $('heroSel').onchange = e => { st.hero = e.target.value; update(); };

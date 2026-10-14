@@ -22,9 +22,29 @@
     if (!data._idx) data._idx = Object.fromEntries(data.heroes.map(h => [h.n, h]));
     return data._idx;
   }
-  function mlScore(data, enemy, pool) {
+  const ROLES = ['tank', 'fighter', 'assassin', 'mage', 'marksman', 'support'];
+  /* Team composition analysis: damage split, role coverage and warnings. */
+  function mlTeam(data, names) {
+    const H = mlIndex(data), c = mlStats(data, names), roles = {};
+    ROLES.forEach(r => roles[r] = 0);
+    names.forEach(n => { const h = H[n]; if (h) roles[h.r]++; });
+    const w = [];
+    if (c.n >= 2) {
+      if (!roles.tank) w.push('wa_noTank');
+      if (!c.M) w.push('wa_noMagic');
+      if (!c.P) w.push('wa_noPhys');
+      if (!c.c) w.push('wa_noCC');
+      if (c.sq >= 4) w.push('wa_squishy');
+      if (c.n >= 4 && !roles.marksman && !roles.mage) w.push('wa_noCarry');
+      if (!w.length) w.push('wa_ok');
+    }
+    return { n: c.n, P: c.P, M: c.M, cc: c.c, heal: c.h, roles, warn: w };
+  }
+  function mlScore(data, enemy, pool, allies) {
     const c = mlStats(data, enemy);
-    const list = data.heroes.filter(h => !enemy.includes(h.n) && (!pool || !pool.length || pool.includes(h.n)));
+    allies = allies || [];
+    const a = mlTeam(data, allies), ac = mlStats(data, allies);
+    const list = data.heroes.filter(h => !enemy.includes(h.n) && !allies.includes(h.n) && (!pool || !pool.length || pool.includes(h.n)));
     return list.map(h => {
       let s = 5; const why = [];
       const add = (cond, v, key) => { if (!cond || !v) return; s += v * 0.55; if (Math.abs(v) >= 0.9) why.push(key); };
@@ -37,6 +57,14 @@
       add(has('antimm'), 1.3 * c.mm, 'w_mm');
       add(has('anticc'), 0.9 * c.c, 'w_cc');
       add(h.r === 'mage' || h.r === 'marksman', -0.6 * c.ass, 'w_weak');
+      if (allies.length >= 2) {
+        add(!a.roles.tank && h.r === 'tank', 2.4, 'w_needTank');
+        add(!ac.M && h.d === 'M', 1.7, 'w_needMagic');
+        add(!ac.P && h.d === 'P', 1.7, 'w_needPhys');
+        add(!ac.c && h.t.includes('c'), 1.2, 'w_needCC');
+        add(allies.length >= 3 && !a.roles.marksman && h.r === 'marksman', 1.5, 'w_needMM');
+        add(a.roles[h.r] >= 2, -2, 'w_dupRole');
+      }
       if (h.tier && TIER[h.tier]) { s += TIER[h.tier]; if (TIER[h.tier] > 0) why.push('w_tier'); }
       return { n: h.n, r: h.r, s: clamp(s), why };
     }).sort((a, b) => b.s - a.s || a.n.localeCompare(b.n));
@@ -219,6 +247,6 @@
     return best;
   }
 
-  const Engine = { mlStats, mlScore, mlBuild, mlTips, mlCounterItems, mlStrongAgainst, bsScore, bsStrongAgainst, BS_MODES, FF_STYLE, FF_MODE, FF_THREAT, ffRank, ffCombo, ffBestStyle };
+  const Engine = { ROLES, mlTeam, mlStats, mlScore, mlBuild, mlTips, mlCounterItems, mlStrongAgainst, bsScore, bsStrongAgainst, BS_MODES, FF_STYLE, FF_MODE, FF_THREAT, ffRank, ffCombo, ffBestStyle };
   if (typeof module !== 'undefined' && module.exports) module.exports = Engine; else root.Engine = Engine;
 })(typeof window !== 'undefined' ? window : globalThis);

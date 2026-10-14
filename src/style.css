@@ -84,3 +84,16 @@ button:focus-visible,a:focus-visible,input:focus-visible,select:focus-visible,su
 
 header.top nav.games{flex-basis:100%;order:3;padding-bottom:2px}
 nav.games::-webkit-scrollbar{display:none}
+
+.slot.ally{border:1px solid var(--blue);color:var(--fg);background:#13233a}
+.teams{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:18px}
+.team{display:flex;flex-direction:column;gap:8px;min-width:0}
+.dmgbar{display:flex;height:10px;border-radius:99px;overflow:hidden;background:var(--panel2)}
+.dmgbar .p{background:var(--red)}.dmgbar .m{background:var(--blue)}
+.dmglabels{display:flex;justify-content:space-between;font-size:.78rem;color:var(--muted);font-variant-numeric:tabular-nums}
+.roles{display:grid;grid-template-columns:repeat(3,1fr);gap:6px}
+.rolechip{display:flex;align-items:center;gap:6px;font-size:.78rem;color:var(--muted);opacity:.38;min-width:0}
+.rolechip.on{opacity:1;color:var(--fg)}
+.rolechip small{font-size:.78rem;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+ul.warn{margin:2px 0 0;padding-left:18px;font-size:.88rem;color:var(--gold)}
+ul.warn li.ok{color:var(--green)}
