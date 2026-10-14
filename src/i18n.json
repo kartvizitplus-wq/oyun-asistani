@@ -130,6 +130,7 @@
   "privBody": [
    "Bu site hesap açmanızı istemez ve kişisel bilgi toplamaz. Seçimleriniz yalnızca kendi tarayıcınızda saklanır.",
    "Sitede Google AdSense reklamları gösterilebilir. Google ve iş ortakları, ilgi alanına dayalı reklam göstermek için çerez kullanabilir. Bunu Google Reklam Ayarları sayfasından kapatabilirsiniz.",
+   "Site, ziyaretçilerin isteğe bağlı bildirdiği maç sonuçlarını isimsiz olarak saklar. Kötüye kullanımı önlemek için IP adresiniz günlük değişen bir şifreyle tek yönlü dönüştürülür ve ham hali saklanmaz.",
    "Site bağlantı ortaklığı linkleri içerebilir. Bu linklerden yapılan alışverişlerden komisyon alabiliriz; fiyat sizin için değişmez.",
    "Sorularınız için Hakkında sayfasındaki iletişim adresini kullanabilirsiniz."
   ],
@@ -251,7 +252,17 @@
   "draftAgain": "Yeniden oyna",
   "draftLink": "Yapay zekâya karşı draft pratiği yap",
   "botPicked": "Yapay zekâ {x} seçti",
-  "suggestForYou": "Senin için öneriler"
+  "suggestForYou": "Senin için öneriler",
+  "reportTitle": "Maç sonucunu bildir",
+  "reportHint": "{h} ile bu rakiplere karşı oynadıysan sonucu işaretle; topluluk kazanma oranlarına katkı sağlarsın.",
+  "winBtn": "Kazandım",
+  "lossBtn": "Kaybettim",
+  "thanks": "Teşekkürler, sonuç kaydedildi.",
+  "reportFail": "Şu an kaydedilemedi, sonra tekrar dene.",
+  "commTitle": "Topluluk verisi",
+  "commRate": "Oyuncularımızın bildirdiği {n} maçta %{p} kazanma oranı.",
+  "commVs": "{x} karşısında %{p} ({n} maç)",
+  "commFew": "Henüz yeterli topluluk verisi yok. Asistanda maç sonucunu bildirerek katkı sağlayabilirsin."
  },
  "en": {
   "langName": "English",
@@ -384,6 +395,7 @@
   "privBody": [
    "This site does not ask you to create an account and does not collect personal information. Your selections are stored only in your own browser.",
    "This site may show Google AdSense ads. Google and its partners may use cookies to show interest-based ads. You can turn this off in Google Ads Settings.",
+   "The site stores match results that visitors choose to report, anonymously. To prevent abuse, your IP address is turned into a one-way code that changes daily; the raw address is not stored.",
    "This site may contain affiliate links. We may earn a commission on purchases made through them at no extra cost to you.",
    "For questions, use the contact address on the About page."
   ],
@@ -505,7 +517,17 @@
   "draftAgain": "Play again",
   "draftLink": "Practice drafting against the AI",
   "botPicked": "The AI picked {x}",
-  "suggestForYou": "Suggestions for you"
+  "suggestForYou": "Suggestions for you",
+  "reportTitle": "Report your match result",
+  "reportHint": "If you played {h} against these enemies, mark the result to help build community win rates.",
+  "winBtn": "I won",
+  "lossBtn": "I lost",
+  "thanks": "Thanks, your result was saved.",
+  "reportFail": "Could not save right now, please try again later.",
+  "commTitle": "Community data",
+  "commRate": "{p}% win rate across {n} matches reported by our players.",
+  "commVs": "{p}% against {x} ({n} matches)",
+  "commFew": "Not enough community data yet. You can help by reporting your match result in the assistant."
  },
  "id": {
   "langName": "Bahasa Indonesia",
@@ -638,6 +660,7 @@
   "privBody": [
    "Situs ini tidak meminta kamu membuat akun dan tidak mengumpulkan data pribadi. Pilihanmu hanya disimpan di browsermu sendiri.",
    "Situs ini dapat menampilkan iklan Google AdSense. Google dan mitranya dapat memakai cookie untuk iklan berbasis minat. Kamu bisa menonaktifkannya di Setelan Iklan Google.",
+   "Situs menyimpan hasil pertandingan yang dilaporkan pengunjung secara anonim. Untuk mencegah penyalahgunaan, alamat IP-mu diubah menjadi kode satu arah yang berganti setiap hari; alamat aslinya tidak disimpan.",
    "Situs ini dapat berisi link afiliasi. Kami bisa mendapat komisi dari pembelian lewat link tersebut tanpa biaya tambahan untukmu.",
    "Untuk pertanyaan, gunakan alamat kontak di halaman Tentang."
   ],
@@ -759,7 +782,17 @@
   "draftAgain": "Main lagi",
   "draftLink": "Latihan draft melawan AI",
   "botPicked": "AI memilih {x}",
-  "suggestForYou": "Saran untukmu"
+  "suggestForYou": "Saran untukmu",
+  "reportTitle": "Laporkan hasil pertandingan",
+  "reportHint": "Jika kamu bermain {h} melawan musuh ini, tandai hasilnya untuk membantu win rate komunitas.",
+  "winBtn": "Menang",
+  "lossBtn": "Kalah",
+  "thanks": "Terima kasih, hasilmu tersimpan.",
+  "reportFail": "Belum bisa disimpan, coba lagi nanti.",
+  "commTitle": "Data komunitas",
+  "commRate": "Win rate {p}% dari {n} pertandingan yang dilaporkan pemain kami.",
+  "commVs": "{p}% melawan {x} ({n} pertandingan)",
+  "commFew": "Data komunitas belum cukup. Kamu bisa membantu dengan melaporkan hasil pertandingan di asisten."
  },
  "es": {
   "langName": "Español",
@@ -892,6 +925,7 @@
   "privBody": [
    "Este sitio no te pide crear una cuenta y no recopila datos personales. Tus selecciones se guardan solo en tu navegador.",
    "Este sitio puede mostrar anuncios de Google AdSense. Google y sus socios pueden usar cookies para mostrar anuncios basados en intereses. Puedes desactivarlo en la Configuración de anuncios de Google.",
+   "El sitio guarda de forma anónima los resultados de partidas que los visitantes deciden informar. Para evitar abusos, tu dirección IP se convierte en un código de un solo sentido que cambia cada día; la dirección original no se guarda.",
    "Este sitio puede contener enlaces de afiliado. Podemos ganar una comisión por compras hechas a través de ellos sin costo extra para ti.",
    "Para preguntas, usa la dirección de contacto de la página Acerca de."
   ],
@@ -1013,7 +1047,17 @@
   "draftAgain": "Jugar de nuevo",
   "draftLink": "Practica el draft contra la IA",
   "botPicked": "La IA eligió a {x}",
-  "suggestForYou": "Sugerencias para ti"
+  "suggestForYou": "Sugerencias para ti",
+  "reportTitle": "Informa el resultado de tu partida",
+  "reportHint": "Si jugaste con {h} contra estos rivales, marca el resultado para ayudar a crear tasas de victoria de la comunidad.",
+  "winBtn": "Gané",
+  "lossBtn": "Perdí",
+  "thanks": "Gracias, tu resultado se guardó.",
+  "reportFail": "No se pudo guardar ahora, inténtalo más tarde.",
+  "commTitle": "Datos de la comunidad",
+  "commRate": "{p}% de victorias en {n} partidas informadas por nuestros jugadores.",
+  "commVs": "{p}% contra {x} ({n} partidas)",
+  "commFew": "Aún no hay suficientes datos de la comunidad. Puedes ayudar informando tu resultado en el asistente."
  },
  "pt": {
   "langName": "Português",
@@ -1146,6 +1190,7 @@
   "privBody": [
    "Este site não pede que você crie uma conta e não coleta dados pessoais. Suas escolhas ficam salvas apenas no seu navegador.",
    "Este site pode exibir anúncios do Google AdSense. O Google e seus parceiros podem usar cookies para anúncios baseados em interesses. Você pode desativar isso nas Configurações de anúncios do Google.",
+   "O site guarda de forma anônima os resultados de partidas que os visitantes escolhem informar. Para evitar abusos, seu endereço IP vira um código de mão única que muda todo dia; o endereço original não é guardado.",
    "Este site pode conter links de afiliado. Podemos receber comissão por compras feitas por eles, sem custo extra para você.",
    "Para dúvidas, use o endereço de contato na página Sobre."
   ],
@@ -1267,6 +1312,16 @@
   "draftAgain": "Jogar de novo",
   "draftLink": "Treine o draft contra a IA",
   "botPicked": "A IA escolheu {x}",
-  "suggestForYou": "Sugestões para você"
+  "suggestForYou": "Sugestões para você",
+  "reportTitle": "Informe o resultado da partida",
+  "reportHint": "Se você jogou de {h} contra estes inimigos, marque o resultado para ajudar a criar taxas de vitória da comunidade.",
+  "winBtn": "Ganhei",
+  "lossBtn": "Perdi",
+  "thanks": "Obrigado, seu resultado foi salvo.",
+  "reportFail": "Não foi possível salvar agora, tente mais tarde.",
+  "commTitle": "Dados da comunidade",
+  "commRate": "{p}% de vitórias em {n} partidas informadas pelos nossos jogadores.",
+  "commVs": "{p}% contra {x} ({n} partidas)",
+  "commFew": "Ainda não há dados suficientes da comunidade. Você pode ajudar informando o resultado no assistente."
  }
 }

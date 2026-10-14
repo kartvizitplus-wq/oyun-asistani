@@ -121,6 +121,19 @@
       return '<div class="pick">' + I.hero(b.n, roleOf[b.n], 36) + '<span class="pmain"><span><b>' + esc(b.n) + '</b> <span class="role">' + esc(t('role_' + b.r)) + '</span></span><span class="why">' + esc(why) + '</span></span><span class="banx" aria-hidden="true">✕</span></div>';
     }).join('');
   }
+  function renderReport() {
+    const box = $('report'); if (!box || A.kind !== 'moba') return;
+    const hero = currentHero();
+    $('reportHint').textContent = t('reportHint', { h: hero });
+    $('reportMsg').textContent = '';
+  }
+  async function sendReport(result) {
+    const msg = $('reportMsg');
+    try {
+      const r = await fetch('/api/vote', { method: 'POST', headers: { 'content-type': 'application/json' }, body: JSON.stringify({ game: A.game, hero: currentHero(), enemy: st.e, result }) });
+      msg.textContent = r.ok ? t('thanks') : t('reportFail');
+    } catch (e) { msg.textContent = t('reportFail'); }
+  }
   function renderTeam() {
     const box = $('team'); if (!box) return;
     box.innerHTML = teamBlock(t('allySide'), st.a, true) + teamBlock(t('enemySide'), st.e, false);
@@ -181,7 +194,7 @@
     renderSlots(); renderPool(); renderMyPool();
     if (!isMoba) renderModes();
     renderPicks();
-    if (isMoba) { renderTeam(); renderBans(); renderBuild(); } else renderBsTips();
+    if (isMoba) { renderTeam(); renderBans(); renderBuild(); renderReport(); } else renderBsTips();
     $('example').hidden = !example;
     save(st);
   }
@@ -200,6 +213,7 @@
   }
   $('speak').onclick = () => speak(speechText());
   $('clear').onclick = () => { st.e = []; st.a = []; example = false; update(); };
+  if ($('winBtn')) { $('winBtn').onclick = () => sendReport('win'); $('lossBtn').onclick = () => sendReport('loss'); }
   if ($('sideE')) { $('sideE').onclick = () => { st.side = 'e'; update(); }; $('sideA').onclick = () => { st.side = 'a'; update(); }; }
   $('q').oninput = renderPool;
   $('pq').oninput = renderMyPool;
@@ -286,6 +300,27 @@
     $('speak').onclick = () => speak(t('say_ff', { a: combo.active.n, p: combo.passives.map(p => p.n).join(', ') }));
     render();
   }
+})();
+
+/* Community win rates on hero pages */
+(function () {
+  const box = document.getElementById('community');
+  if (!box) return;
+  const T = JSON.parse(box.dataset.t || '{}');
+  const f = (s, v) => { for (const k in v) s = s.split('{' + k + '}').join(v[k]); return s; };
+  const esc = s => String(s).replace(/[&<>"]/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[c]));
+  fetch('/api/stats?game=' + encodeURIComponent(box.dataset.game) + '&hero=' + encodeURIComponent(box.dataset.hero)).then(r => r.ok ? r.json() : null).then(d => {
+    if (!d || !d.ok) return;
+    const n = d.wins + d.losses;
+    let html = '<h2>' + esc(T.commTitle) + '</h2>';
+    if (n < 20) html += '<p class="note">' + esc(T.commFew) + '</p>';
+    else {
+      html += '<p style="margin:0">' + esc(f(T.commRate, { n, p: Math.round(d.wins / n * 100) })) + '</p>';
+      const vs = d.vs.map(v => ({ n: v.n, t: v.wins + v.losses, p: Math.round(v.wins / (v.wins + v.losses) * 100) })).sort((a, b) => b.p - a.p);
+      if (vs.length) html += '<ul class="tips">' + vs.slice(0, 6).map(v => '<li>' + esc(f(T.commVs, { x: v.n, p: v.p, n: v.t })) + '</li>').join('') + '</ul>';
+    }
+    box.innerHTML = html; box.hidden = false;
+  }).catch(() => {});
 })();
 
 /* Language picker (all pages) */
