@@ -262,7 +262,10 @@
   "commTitle": "Topluluk verisi",
   "commRate": "Oyuncularımızın bildirdiği {n} maçta %{p} kazanma oranı.",
   "commVs": "{x} karşısında %{p} ({n} maç)",
-  "commFew": "Henüz yeterli topluluk verisi yok. Asistanda maç sonucunu bildirerek katkı sağlayabilirsin."
+  "commFew": "Henüz yeterli topluluk verisi yok. Asistanda maç sonucunu bildirerek katkı sağlayabilirsin.",
+  "srcTitle": "Kaynak verisi",
+  "srcRate": "{src} verisine göre dereceli maçlarda %{p} kazanma oranı (tarih: {d}).",
+  "srcShort": "KO %{p}"
  },
  "en": {
   "langName": "English",
@@ -527,7 +530,10 @@
   "commTitle": "Community data",
   "commRate": "{p}% win rate across {n} matches reported by our players.",
   "commVs": "{p}% against {x} ({n} matches)",
-  "commFew": "Not enough community data yet. You can help by reporting your match result in the assistant."
+  "commFew": "Not enough community data yet. You can help by reporting your match result in the assistant.",
+  "srcTitle": "Source data",
+  "srcRate": "{p}% win rate in ranked matches according to {src} (date: {d}).",
+  "srcShort": "WR {p}%"
  },
  "id": {
   "langName": "Bahasa Indonesia",
@@ -792,7 +798,10 @@
   "commTitle": "Data komunitas",
   "commRate": "Win rate {p}% dari {n} pertandingan yang dilaporkan pemain kami.",
   "commVs": "{p}% melawan {x} ({n} pertandingan)",
-  "commFew": "Data komunitas belum cukup. Kamu bisa membantu dengan melaporkan hasil pertandingan di asisten."
+  "commFew": "Data komunitas belum cukup. Kamu bisa membantu dengan melaporkan hasil pertandingan di asisten.",
+  "srcTitle": "Data sumber",
+  "srcRate": "Win rate {p}% di ranked menurut {src} (tanggal: {d}).",
+  "srcShort": "WR {p}%"
  },
  "es": {
   "langName": "Español",
@@ -1057,7 +1066,10 @@
   "commTitle": "Datos de la comunidad",
   "commRate": "{p}% de victorias en {n} partidas informadas por nuestros jugadores.",
   "commVs": "{p}% contra {x} ({n} partidas)",
-  "commFew": "Aún no hay suficientes datos de la comunidad. Puedes ayudar informando tu resultado en el asistente."
+  "commFew": "Aún no hay suficientes datos de la comunidad. Puedes ayudar informando tu resultado en el asistente.",
+  "srcTitle": "Datos de la fuente",
+  "srcRate": "{p}% de victorias en clasificatorias según {src} (fecha: {d}).",
+  "srcShort": "V {p}%"
  },
  "pt": {
   "langName": "Português",
@@ -1322,6 +1334,9 @@
   "commTitle": "Dados da comunidade",
   "commRate": "{p}% de vitórias em {n} partidas informadas pelos nossos jogadores.",
   "commVs": "{p}% contra {x} ({n} partidas)",
-  "commFew": "Ainda não há dados suficientes da comunidade. Você pode ajudar informando o resultado no assistente."
+  "commFew": "Ainda não há dados suficientes da comunidade. Você pode ajudar informando o resultado no assistente.",
+  "srcTitle": "Dados da fonte",
+  "srcRate": "{p}% de vitórias no ranqueado segundo {src} (data: {d}).",
+  "srcShort": "V {p}%"
  }
 }

@@ -41,6 +41,7 @@
   const list = isMoba ? A.data.heroes : A.data.brawlers;
   const all = list.map(h => h.n);
   const roleOf = Object.fromEntries(list.map(h => [h.n, isMoba ? h.r : h.c]));
+  const wrOf = Object.fromEntries(list.filter(h => h.wr).map(h => [h.n, h.wr]));
   const maxEnemy = isMoba ? 5 : 3;
   const st = load({ e: [], a: [], side: 'e', pool: [], hero: null, mode: 'gem' });
   st.e = (st.e || []).filter(n => all.includes(n));
@@ -106,7 +107,7 @@
       const d = el('div', { class: 'pick' });
       const role = isMoba ? t('role_' + r.r) : t('cl_' + r.c);
       const why = r.why.length ? [...new Set(r.why.map(whyText))].join(' · ') : t('neutral');
-      d.innerHTML = I.hero(r.n, roleOf[r.n], 36) + '<span class="pmain"><span><span class="score ' + scoreCls(r.s) + '">' + r.s.toFixed(1) + '</span> <b>' + esc(r.n) + '</b> <span class="role">' + esc(role) + (i === 0 ? ' · ' + esc(t('bestChoice')) : '') + '</span></span><span class="why">' + esc(why) + '</span></span>' +
+      d.innerHTML = I.hero(r.n, roleOf[r.n], 36) + '<span class="pmain"><span><span class="score ' + scoreCls(r.s) + '">' + r.s.toFixed(1) + '</span> <b>' + esc(r.n) + '</b> <span class="role">' + esc(role) + (i === 0 ? ' · ' + esc(t('bestChoice')) : '') + '</span>' + (wrOf[r.n] ? ' <span class="wr" title="' + esc(A.data.wrSource ? A.data.wrSource.name + ' · ' + A.data.wrSource.date : '') + '">' + esc(t('srcShort', { p: wrOf[r.n].toFixed(1) })) + '</span>' : '') + '</span><span class="why">' + esc(why) + '</span></span>' +
         (isMoba ? '<button class="use" type="button">' + esc(t('buildTitle')) + '</button>' : '');
       if (isMoba) d.querySelector('button').onclick = () => { st.hero = r.n; update(); $('buildsec').scrollIntoView({ behavior: 'smooth', block: 'start' }); };
       pk.appendChild(d);

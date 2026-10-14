@@ -106,3 +106,4 @@ ul.warn li.ok{color:var(--green)}
 .tier{font:700 .7rem var(--display);padding:1px 6px;border-radius:4px}
 .tier.tS{background:var(--red-bg);color:var(--red)}.tier.tA{background:var(--gold-bg);color:var(--gold)}
 [hidden]{display:none!important}
+.wr{font:600 .72rem var(--display);color:var(--muted);border:1px solid var(--line);border-radius:4px;padding:0 5px;font-variant-numeric:tabular-nums}

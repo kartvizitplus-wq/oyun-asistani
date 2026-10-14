@@ -2,7 +2,7 @@
   "game": "mlbb",
   "patch": "2.2.16",
   "updated": "2026-10-14",
-  "notes": "r=role, d=damage type (P/M), t=traits (h heal/sustain, c crowd control, b burst, d dash/mobility), s=strengths, b=build archetype, tier=S/A/B/C or null (set by weekly updater from patch notes/meta). build/spell override archetype defaults.",
+  "notes": "r=role, d=damage type (P/M), t=traits (h heal/sustain, c crowd control, b burst, d dash/mobility), s=strengths, b=build archetype, tier=S/A/B/C or null (set by weekly updater from patch notes/meta). build/spell override archetype defaults. wr = public ranked win rate (%) from data.wrSource; set only from a named public source, never estimated.",
   "archetypes": {
     "fP": {
       "group": "front",
@@ -225,7 +225,8 @@
         "antisquishy"
       ],
       "b": "fP",
-      "tier": null
+      "tier": null,
+      "wr": 50.6
     },
     {
       "n": "Alice",
@@ -245,7 +246,8 @@
         "antitank"
       ],
       "b": "fP",
-      "tier": null
+      "tier": null,
+      "wr": 48.2
     },
     {
       "n": "Alucard",
@@ -274,7 +276,8 @@
       "t": "d",
       "s": [],
       "b": "fP",
-      "tier": null
+      "tier": null,
+      "wr": 56.0
     },
     {
       "n": "Arlott",
@@ -311,7 +314,8 @@
         "Queen's Wings",
         "Immortality"
       ],
-      "tier": "A"
+      "tier": "A",
+      "wr": 60.0
     },
     {
       "n": "Aurora",
@@ -484,7 +488,8 @@
       "t": "hd",
       "s": [],
       "b": "fP",
-      "tier": null
+      "tier": null,
+      "wr": 49.5
     },
     {
       "n": "Claude",
@@ -551,7 +556,8 @@
       "t": "c",
       "s": [],
       "b": "tank",
-      "tier": null
+      "tier": null,
+      "wr": 52.6
     },
     {
       "n": "Esmeralda",
@@ -722,7 +728,8 @@
       "t": "",
       "s": [],
       "b": "mmA",
-      "tier": null
+      "tier": null,
+      "wr": 52.4
     },
     {
       "n": "Hanzo",
@@ -803,7 +810,8 @@
       "t": "ch",
       "s": [],
       "b": "tank",
-      "tier": null
+      "tier": null,
+      "wr": 48.9
     },
     {
       "n": "Irithel",
@@ -872,7 +880,8 @@
         "antisquishy"
       ],
       "b": "mage",
-      "tier": null
+      "tier": null,
+      "wr": 51.2
     },
     {
       "n": "Kagura",
@@ -883,7 +892,8 @@
         "antisquishy"
       ],
       "b": "mage",
-      "tier": null
+      "tier": null,
+      "wr": 51.5
     },
     {
       "n": "Kaja",
@@ -894,7 +904,8 @@
         "antidash"
       ],
       "b": "support",
-      "tier": null
+      "tier": null,
+      "wr": 49.6
     },
     {
       "n": "Karina",
@@ -905,7 +916,8 @@
         "antisquishy"
       ],
       "b": "assM",
-      "tier": null
+      "tier": null,
+      "wr": 47.8
     },
     {
       "n": "Karrie",
@@ -1025,7 +1037,8 @@
       "t": "hd",
       "s": [],
       "b": "fP",
-      "tier": null
+      "tier": null,
+      "wr": 52.4
     },
     {
       "n": "Lunox",
@@ -1096,7 +1109,8 @@
       "t": "",
       "s": [],
       "b": "mmA",
-      "tier": null
+      "tier": null,
+      "wr": 48.6
     },
     {
       "n": "Minotaur",
@@ -1125,7 +1139,8 @@
       "t": "",
       "s": [],
       "b": "mmA",
-      "tier": null
+      "tier": null,
+      "wr": 49.4
     },
     {
       "n": "Moskov",
@@ -1193,7 +1208,8 @@
       "t": "bc",
       "s": [],
       "b": "mage",
-      "tier": null
+      "tier": null,
+      "wr": 49.3
     },
     {
       "n": "Paquito",
@@ -1204,7 +1220,8 @@
         "antisquishy"
       ],
       "b": "fP",
-      "tier": null
+      "tier": null,
+      "wr": 50.1
     },
     {
       "n": "Pharsa",
@@ -1317,7 +1334,8 @@
       "t": "h",
       "s": [],
       "b": "fP",
-      "tier": null
+      "tier": null,
+      "wr": 52.5
     },
     {
       "n": "Suyou",
@@ -1355,7 +1373,8 @@
       "t": "c",
       "s": [],
       "b": "tank",
-      "tier": null
+      "tier": null,
+      "wr": 44.9
     },
     {
       "n": "Uranus",
@@ -1444,7 +1463,8 @@
       "t": "",
       "s": [],
       "b": "mmC",
-      "tier": null
+      "tier": null,
+      "wr": 49.6
     },
     {
       "n": "Yin",
@@ -1542,5 +1562,11 @@
   "emblemLabel": "emblem",
   "emblemCounters": {
     "tankyMage": "Impure Rage"
+  },
+  "wrSource": {
+    "name": "mlcounters.app",
+    "url": "https://www.mlcounters.app/patch",
+    "date": "2026-10-14",
+    "scope": "ranked"
   }
 }
