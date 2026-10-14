@@ -138,3 +138,4 @@ ul.mm li.bad{color:var(--red)}ul.mm li.good{color:var(--green)}
 .guide ol{padding-left:22px;max-width:68ch;display:flex;flex-direction:column;gap:6px}
 .toc{display:flex;flex-direction:column;gap:6px;margin:14px 0}
 .toc a{text-decoration:none}
+.guidevid{width:100%;max-width:360px;aspect-ratio:9/16;border-radius:12px;border:1px solid var(--line);background:#000;display:block;margin:14px 0}

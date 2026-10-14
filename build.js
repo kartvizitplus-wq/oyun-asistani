@@ -261,6 +261,7 @@ ${n.sources && n.sources.length ? `<p class="note">${esc(n.sources.join(' · '))
     jsonld: { '@context': 'https://schema.org', '@type': 'HowTo', name: G.title, description: G.desc, inLanguage: lang,
       step: G.sections.map(sec => ({ '@type': 'HowToSection', name: sec.h, itemListElement: sec.steps.map(st => ({ '@type': 'HowToStep', text: st })) })) },
     body: `<article class="prose guide"><h1>${esc(G.title)}</h1><p class="lead">${esc(G.intro)}</p>
+${lang === 'tr' ? `<video class="guidevid" controls playsinline preload="none" poster="/video/pickradar-tr.jpg" src="/video/pickradar-tr.mp4"></video>` : ''}
 <nav class="toc card">${G.sections.map((sec, i) => `<a href="#s${i + 1}">${esc(sec.h)}</a>`).join('')}</nav>
 ${G.sections.map((sec, i) => `<h2 id="s${i + 1}">${esc(sec.h)}</h2><ol>${sec.steps.map(st => `<li>${esc(st)}</li>`).join('')}</ol>`).join('\n')}
 </article>
@@ -287,6 +288,7 @@ ${cfg.langs.map(l => `<a style="color:#e8b44a;margin-right:12px" href="/${l}/">$
 </body></html>`);
 fs.mkdirSync(path.join(OUT, 'assets'), { recursive: true });
 for (const f of ['style.css', 'app.js', 'engine.js', 'icons.js']) fs.copyFileSync(R('src/' + f), path.join(OUT, 'assets', f));
+if (fs.existsSync(R('static'))) fs.cpSync(R('static'), OUT, { recursive: true });
 fs.writeFileSync(path.join(OUT, 'assets/icon.svg'), '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32"><rect width="32" height="32" rx="7" fill="#0c1018"/><circle cx="16" cy="16" r="10" fill="none" stroke="#e8b44a" stroke-width="2.5"/><circle cx="16" cy="16" r="4" fill="#e2595b"/><path d="M16 3v6M16 23v6M3 16h6M23 16h6" stroke="#e8b44a" stroke-width="2.5"/></svg>');
 fs.writeFileSync(path.join(OUT, 'robots.txt'), `User-agent: *\nAllow: /\n${base ? `Sitemap: ${base}/sitemap.xml\n` : ''}`);
 if (base) fs.writeFileSync(path.join(OUT, 'sitemap.xml'), `<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n${pages.map(p => `<url><loc>${base}/${p}</loc><lastmod>${lastUpdated}</lastmod></url>`).join('\n')}\n</urlset>\n`);
