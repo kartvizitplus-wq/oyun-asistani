@@ -120,6 +120,13 @@ ${showcase(lang)}
   for (const g of GAMES) {
     const D = g.data;
     const gp = `${lang}/${g.slug}`;
+    /* SEO helpers: patch or year label, readable update date, natural-language lists, FAQ block. */
+    const period = D.patch ? fill(t.patchLbl, { v: D.patch }) : String(D.updated || '').slice(0, 4);
+    const dateTxt = (() => { try { return new Date(D.updated).toLocaleDateString(lang, { month: 'long', year: 'numeric' }); } catch (e) { return D.updated; } })();
+    const gshort = { mlbb: 'MLBB', hok: 'HoK', wildrift: 'Wild Rift', brawlstars: 'Brawl Stars', freefire: 'Free Fire' }[g.id] || g.name;
+    const listOf = arr => { try { return new Intl.ListFormat(lang, { type: 'conjunction' }).format(arr); } catch (e) { return arr.join(', '); } };
+    const faqBlock = qa => qa.length ? `<section class="faq"><h2>${esc(t.faqTitle)}</h2>${qa.map(([q, a]) => `<h3>${esc(q)}</h3><p>${esc(a)}</p>`).join('')}</section>` : '';
+    const faqLd = qa => qa.length ? { '@context': 'https://schema.org', '@type': 'FAQPage', mainEntity: qa.map(([q, a]) => ({ '@type': 'Question', name: q, acceptedAnswer: { '@type': 'Answer', text: a } })) } : null;
     const app = { lang, game: g.id, kind: g.kind, t: tSub, data: D, example: g.example || null, itemsTr: lang === 'tr' && g.id === 'mlbb' ? ITEMS_TR : null };
 
     if (g.kind === 'moba' || g.kind === 'bs') {
@@ -173,7 +180,7 @@ ${isMoba ? `<section id="buildsec"><h2>${esc(t.yourHero)}</h2><div class="heroli
       }));
       for (const h of list) {
         const x = h.n;
-        let inner;
+        let inner, qa = [], topNames = [];
         if (isMoba) {
           const picks = Engine.mlScore(D, [x], null).slice(0, 8);
           const strong = Engine.mlStrongAgainst(D, x);
@@ -188,6 +195,25 @@ ${strong.length ? `<section><h2>${esc(tt('hp_strong', { x }))}</h2><p style="mar
 ${own.items.length ? `<section><h2>${esc(tt('hp_build', { x }))}</h2><div class="card"><ol class="build">${own.items.map(o => `<li>${itemHtml(lang, o.item, t)}</span></li>`).join('')}</ol>
 ${own.emblem ? `<h2 style="margin:16px 0 10px">${esc(own.emblem.set ? t.emblemTitle : t.runeTitle)}</h2><ol class="build">${(own.emblem.set ? [['em_set', own.emblem.set], ['em_t1', own.emblem.t1], ['em_t2', own.emblem.t2], ['em_core', own.emblem.core]] : [['runeTitle', own.emblem.core]]).map(([k, v]) => `<li>${Icons.talent(v, 32)}<span class="iname">${esc(v)}<small class="why">${esc(t[k])}</small></span></li>`).join('')}</ol>` : ''}
 <ul class="tips"><li>${esc(t.spell)}: ${esc(itemName(lang, own.spell, t))}</li></ul></div></section>` : ''}`;
+          /* How to play against this hero, derived from its traits and data. */
+          const ah = Engine.mlCounterItems(D, x).find(([, r]) => r === 'r_antiheal');
+          const vs = [];
+          if (h.t.includes('h')) vs.push(tt('vt_h', { x, i: ah ? itemName(lang, ah[0], t) : t.cat_antiheal }));
+          if (h.t.includes('c')) vs.push(tt('vt_c', { x }));
+          if (h.t.includes('b')) vs.push(tt('vt_b', { x }));
+          if (h.t.includes('d')) vs.push(tt('vt_d', { x }));
+          if (h.r === 'tank') vs.push(tt('vt_tank', { x }));
+          if ((h.r === 'mage' || h.r === 'marksman') && !h.t.includes('d')) vs.push(tt('vt_squishy', { x }));
+          vs.push(tt(h.d === 'M' ? 'vt_M' : 'vt_P', { x }));
+          if (h.wr) vs.push(tt('vt_wr', { x, p: h.wr.toFixed(1) }));
+          inner += `<section><h2>${esc(tt('playVs', { x }))}</h2><ul class="tips" style="margin:0">${vs.map(v => `<li>${esc(v)}</li>`).join('')}</ul></section>`;
+          const top3 = picks.slice(0, 3), w0 = top3[0] && top3[0].why.find(w => typeof w === 'string');
+          qa = [[tt('q_best', { x }), tt('a_best', { x, list: listOf(top3.map(p => p.n)), first: top3[0].n, why: w0 ? t[w0] : t.neutral })]];
+          if (items.length) qa.push([tt('q_items', { x }), tt('a_items', { x, list: listOf(items.map(([i]) => itemName(lang, i, t))) })]);
+          if (strong.length) qa.push([tt('q_strong', { x }), tt('a_strong', { x, list: listOf(strong.map(k => t['s_' + k])) })]);
+          if (own.items.length) qa.push([tt('q_build', { x }), tt('a_build', { x, list: listOf(own.items.map(o => itemName(lang, o.item, t))) }) +
+            (own.emblem ? (own.emblem.set ? tt('a_emblem', { e: [own.emblem.set, own.emblem.t1, own.emblem.t2, own.emblem.core].join(', ') }) : tt('a_rune', { e: own.emblem.core })) : '')]);
+          topNames = top3.map(p => p.n);
         } else {
           const picks = Engine.bsScore(D, [x], null, null).slice(0, 8);
           const strong = Engine.bsStrongAgainst(D, x);
@@ -196,17 +222,22 @@ ${own.emblem ? `<h2 style="margin:16px 0 10px">${esc(own.emblem.set ? t.emblemTi
 <section><h2>${esc(tt('bp_best', { x }))}</h2><div class="card">${picks.map(p => `<div class="pick">${Icons.hero(p.n, p.c, 36)}<span class="pmain"><span><span class="score ${scoreCls(p.s)}">${p.s.toFixed(1)}</span> <b><a href="/${gp}/${slug(p.n)}/" style="color:inherit">${esc(p.n)}</a></b> <span class="role">${esc(t['cl_' + p.c])}</span></span><span class="why">${esc(p.why.length ? [...new Set(p.why.map(whyTxt))].join(' · ') : t.neutral)}</span></span><span></span></div>`).join('')}</div></section>
 ${strong.length ? `<section><h2>${esc(tt('bp_strong', { x }))}</h2><p style="margin:0">${esc(strong.map(c => t['cl_' + c]).join(', '))}</p></section>` : ''}
 <section><h2>${esc(tt('bp_tip', { cls: t['cl_' + h.c] }))}</h2><p style="margin:0">${esc(t['bt_' + h.c])}</p>${D.gears && D.gears[h.c] ? `<p style="margin:8px 0 0"><b>${esc(t.gearTitle)}:</b> ${esc(D.gears[h.c].join(' + '))}</p>` : ''}</section>`;
+          const top3 = picks.slice(0, 3), w0 = top3[0] && top3[0].why[0];
+          qa = [[tt('q_bsbest', { x }), tt('a_best', { x, list: listOf(top3.map(p => p.n)), first: top3[0].n, why: w0 ? whyTxt(w0) : t.neutral })]];
+          if (strong.length) qa.push([tt('q_strong', { x }), tt('a_strong', { x, list: listOf(strong.map(c => t['cl_' + c])) })]);
+          topNames = top3.map(p => p.n);
         }
         const src = isMoba && h.wr && D.wrSource ? `<section class="card"><h2>${esc(t.srcTitle)}</h2><p style="margin:0">${esc(tt('srcRate', { p: h.wr.toFixed(1), src: D.wrSource.name, d: D.wrSource.date }))}</p><p class="note" style="margin-top:6px"><a href="${esc(D.wrSource.url)}" rel="nofollow noopener" target="_blank">${esc(D.wrSource.name)}</a></p></section>` : '';
         const comm = isMoba ? `<section class="card" id="community" hidden data-game="${g.id}" data-hero="${esc(x)}" data-t="${esc(JSON.stringify({ commTitle: t.commTitle, commRate: t.commRate, commVs: t.commVs, commFew: t.commFew }))}"></section>` : '';
         const body2 = `${inner}
 ${src}${comm}
 <div class="bar"><a class="btn" href="/${gp}/?e=${encodeURIComponent(x)}">${esc(tt('hp_try', { x }))}</a></div>
+${faqBlock(qa)}
 <section><h2>${esc(isMoba ? t.allHeroes : t.allBrawlers)}</h2><div class="list-links">${links}</div></section>`;
         write(`${gp}/${slug(x)}/index.html`, layout({
-          lang, rel: `${gp}/${slug(x)}/`, active: g.id, body: body2,
-          title: `${isMoba ? tt('hp_title', { x }) : tt('bp_title', { x })} · ${g.name}`,
-          desc: isMoba ? tt('hp_desc', { x, g: g.full }) : tt('bp_desc', { x })
+          lang, rel: `${gp}/${slug(x)}/`, active: g.id, body: body2, jsonld: faqLd(qa),
+          title: `${tt(isMoba ? 'hp_title2' : 'bp_title2', { x, p: period })} · ${gshort}`,
+          desc: tt(isMoba ? 'hp_desc2' : 'bp_desc2', { x, g: g.full, top: listOf(topNames), d: dateTxt })
         }));
       }
     }
@@ -227,13 +258,17 @@ ${src}${comm}
         const combo = Engine.ffCombo(D, best.style, best.mode, [], c.n);
         const card = (x, label) => `<div class="pick">${Icons.hero(x.n, x.type, 40)}<span class="pmain"><span><b><a href="/${gp}/${slug(x.n)}/" style="color:inherit">${esc(x.n)}</a></b> <span class="role">${esc(label)}</span></span><span class="why">${esc(x.why.map(k => t[k]).join(' · '))}</span></span><span></span></div>`;
         const tags = c.tags.map(k => t['f_' + k]).filter(Boolean);
+        const comboTxt = `${combo.active.n} + ${listOf(combo.passives.map(p => p.n))}`;
+        const fqa = [[tt('q_ffbest', { x: c.n }), tt('a_ffbest', { x: c.n, a: combo.active.n, p: listOf(combo.passives.map(p => p.n)), s: `${t['ps_' + best.style]} · ${t['ff_' + best.mode]}` })]];
         const body2 = `<section><div class="heroline">${Icons.hero(c.n, c.type, 56)}<h1>${esc(tt('fp_h1', { x: c.n }))}</h1></div>
 <p class="lead">${esc(tt(c.type === 'a' ? 'fp_aboutA' : 'fp_aboutP', { x: c.n }))} ${esc(tags.join(', '))}.</p></section>
 <section><h2>${esc(tt('fp_best', { x: c.n }))}</h2><p class="note" style="margin:0 0 8px">${esc(t.fp_style)}: ${esc(t['ps_' + best.style])} · ${esc(t['ff_' + best.mode])}</p>
 <div class="card">${card(combo.active, t.activeSkill)}${combo.passives.map(p => card(p, t.passiveSkill)).join('')}</div></section>
 <div class="bar"><a class="btn" href="/${gp}/?c=${encodeURIComponent(c.n)}">${esc(tt('hp_try', { x: c.n }))}</a></div>
+${faqBlock(fqa)}
 <section><h2>${esc(t.allCharacters)}</h2><div class="list-links">${links}</div></section>`;
-        write(`${gp}/${slug(c.n)}/index.html`, layout({ lang, rel: `${gp}/${slug(c.n)}/`, active: g.id, body: body2, title: `${tt('fp_title', { x: c.n })} · Free Fire`, desc: tt('fp_desc', { x: c.n }) }));
+        write(`${gp}/${slug(c.n)}/index.html`, layout({ lang, rel: `${gp}/${slug(c.n)}/`, active: g.id, body: body2, jsonld: faqLd(fqa),
+          title: `${tt('fp_title2', { x: c.n, p: period })} · Free Fire`, desc: tt('fp_desc2', { x: c.n, top: comboTxt, d: dateTxt }) }));
       }
     }
   }
