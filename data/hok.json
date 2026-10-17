@@ -101,7 +101,7 @@
         "antisquishy"
       ],
       "b": "assP",
-      "tier": null
+      "tier": "D"
     },
     {
       "n": "Allain",
@@ -110,7 +110,7 @@
       "t": "h",
       "s": [],
       "b": "fP",
-      "tier": null
+      "tier": "B"
     },
     {
       "n": "Angela",
@@ -121,7 +121,7 @@
         "antisquishy"
       ],
       "b": "mage",
-      "tier": null
+      "tier": "A"
     },
     {
       "n": "Ao'yin",
@@ -141,7 +141,7 @@
         "antisquishy"
       ],
       "b": "assP",
-      "tier": null
+      "tier": "S"
     },
     {
       "n": "Arli",
@@ -150,7 +150,7 @@
       "t": "d",
       "s": [],
       "b": "mmA",
-      "tier": null
+      "tier": "B"
     },
     {
       "n": "Arthur",
@@ -159,7 +159,7 @@
       "t": "c",
       "s": [],
       "b": "fP",
-      "tier": null
+      "tier": "A"
     },
     {
       "n": "Ata",
@@ -168,7 +168,7 @@
       "t": "c",
       "s": [],
       "b": "fP",
-      "tier": null
+      "tier": "D"
     },
     {
       "n": "Athena",
@@ -177,7 +177,7 @@
       "t": "bd",
       "s": [],
       "b": "assP",
-      "tier": null
+      "tier": "D"
     },
     {
       "n": "Augran",
@@ -186,7 +186,7 @@
       "t": "h",
       "s": [],
       "b": "fP",
-      "tier": null
+      "tier": "S"
     },
     {
       "n": "Bai Qi",
@@ -195,7 +195,7 @@
       "t": "c",
       "s": [],
       "b": "tank",
-      "tier": null
+      "tier": "A"
     },
     {
       "n": "Biron",
@@ -206,7 +206,7 @@
         "antitank"
       ],
       "b": "fP",
-      "tier": null
+      "tier": "B"
     },
     {
       "n": "Butterfly",
@@ -217,7 +217,7 @@
         "antisquishy"
       ],
       "b": "assP",
-      "tier": null
+      "tier": "B"
     },
     {
       "n": "Cai Yan",
@@ -228,7 +228,7 @@
         "antiburst"
       ],
       "b": "support",
-      "tier": null
+      "tier": "A"
     },
     {
       "n": "Chano",
@@ -237,7 +237,7 @@
       "t": "",
       "s": [],
       "b": "mmA",
-      "tier": null
+      "tier": "A"
     },
     {
       "n": "Charlotte",
@@ -246,7 +246,7 @@
       "t": "d",
       "s": [],
       "b": "fP",
-      "tier": null
+      "tier": "B"
     },
     {
       "n": "Cirrus",
@@ -255,7 +255,7 @@
       "t": "bd",
       "s": [],
       "b": "assP",
-      "tier": null
+      "tier": "D"
     },
     {
       "n": "Consort Yu",
@@ -266,7 +266,7 @@
         "antidash"
       ],
       "b": "mage",
-      "tier": null
+      "tier": "A"
     },
     {
       "n": "Da Qiao",
@@ -275,7 +275,7 @@
       "t": "c",
       "s": [],
       "b": "support",
-      "tier": null
+      "tier": "S"
     },
     {
       "n": "Daji",
@@ -286,7 +286,7 @@
         "antisquishy"
       ],
       "b": "mage",
-      "tier": null
+      "tier": "S"
     },
     {
       "n": "Devara",
@@ -304,7 +304,7 @@
       "t": "c",
       "s": [],
       "b": "fP",
-      "tier": null
+      "tier": "D"
     },
     {
       "n": "Di Renjie",
@@ -315,7 +315,7 @@
         "anticc"
       ],
       "b": "mmA",
-      "tier": null
+      "tier": "C"
     },
     {
       "n": "Dian Wei",
@@ -326,7 +326,7 @@
         "antitank"
       ],
       "b": "fP",
-      "tier": null
+      "tier": "A"
     },
     {
       "n": "Diaochan",
@@ -335,7 +335,7 @@
       "t": "hd",
       "s": [],
       "b": "mage",
-      "tier": null
+      "tier": "B"
     },
     {
       "n": "Dolia",
@@ -344,7 +344,7 @@
       "t": "h",
       "s": [],
       "b": "support",
-      "tier": null
+      "tier": "A"
     },
     {
       "n": "Donghuang",
@@ -355,7 +355,7 @@
         "antidash"
       ],
       "b": "tank",
-      "tier": null
+      "tier": "B"
     },
     {
       "n": "Dr Bian",
@@ -364,7 +364,7 @@
       "t": "c",
       "s": [],
       "b": "mage",
-      "tier": null
+      "tier": "D"
     },
     {
       "n": "Dun",
@@ -375,7 +375,7 @@
         "anticc"
       ],
       "b": "tank",
-      "tier": null
+      "tier": "A"
     },
     {
       "n": "Dyadia",
@@ -395,7 +395,7 @@
       "t": "",
       "s": [],
       "b": "mmA",
-      "tier": null
+      "tier": "B"
     },
     {
       "n": "Fang",
@@ -404,7 +404,7 @@
       "t": "",
       "s": [],
       "b": "mmC",
-      "tier": null
+      "tier": "B"
     },
     {
       "n": "Fatih",
@@ -413,7 +413,7 @@
       "t": "",
       "s": [],
       "b": "fP",
-      "tier": null
+      "tier": "S"
     },
     {
       "n": "Feyd",
@@ -422,7 +422,7 @@
       "t": "bd",
       "s": [],
       "b": "assP",
-      "tier": null
+      "tier": "S"
     },
     {
       "n": "Florentino",
@@ -431,7 +431,7 @@
       "t": "d",
       "s": [],
       "b": "fP",
-      "tier": null
+      "tier": "A"
     },
     {
       "n": "Fuzi",
@@ -440,7 +440,7 @@
       "t": "c",
       "s": [],
       "b": "fP",
-      "tier": null
+      "tier": "C"
     },
     {
       "n": "Gan & Mo",
@@ -451,7 +451,7 @@
         "antisquishy"
       ],
       "b": "mage",
-      "tier": null
+      "tier": "B"
     },
     {
       "n": "Gao",
@@ -462,7 +462,7 @@
         "antisquishy"
       ],
       "b": "mage",
-      "tier": null
+      "tier": "D"
     },
     {
       "n": "Gao Changgong",
@@ -474,7 +474,7 @@
         "antimm"
       ],
       "b": "assP",
-      "tier": null
+      "tier": "A"
     },
     {
       "n": "Garo",
@@ -485,7 +485,7 @@
         "antitank"
       ],
       "b": "mmC",
-      "tier": null
+      "tier": "B"
     },
     {
       "n": "Guan Yu",
@@ -494,7 +494,7 @@
       "t": "cd",
       "s": [],
       "b": "fP",
-      "tier": null
+      "tier": "D"
     },
     {
       "n": "Guiguzi",
@@ -503,7 +503,7 @@
       "t": "c",
       "s": [],
       "b": "support",
-      "tier": null
+      "tier": "D"
     },
     {
       "n": "Han Xin",
@@ -512,7 +512,7 @@
       "t": "d",
       "s": [],
       "b": "assP",
-      "tier": null
+      "tier": "C"
     },
     {
       "n": "Hou Yi",
@@ -521,7 +521,7 @@
       "t": "c",
       "s": [],
       "b": "mmA",
-      "tier": null
+      "tier": "S"
     },
     {
       "n": "Huang Zhong",
@@ -530,7 +530,7 @@
       "t": "",
       "s": [],
       "b": "mmC",
-      "tier": null
+      "tier": "C"
     },
     {
       "n": "Jing",
@@ -541,7 +541,7 @@
         "antisquishy"
       ],
       "b": "assP",
-      "tier": null
+      "tier": "D"
     },
     {
       "n": "Kaizer",
@@ -550,7 +550,7 @@
       "t": "c",
       "s": [],
       "b": "fP",
-      "tier": null
+      "tier": "C"
     },
     {
       "n": "Kongming",
@@ -561,7 +561,7 @@
         "antisquishy"
       ],
       "b": "mage",
-      "tier": null
+      "tier": "A"
     },
     {
       "n": "Kui",
@@ -570,7 +570,7 @@
       "t": "c",
       "s": [],
       "b": "tank",
-      "tier": null
+      "tier": "B"
     },
     {
       "n": "Lady Sun",
@@ -579,7 +579,7 @@
       "t": "d",
       "s": [],
       "b": "mmC",
-      "tier": null
+      "tier": "A"
     },
     {
       "n": "Lady Zhen",
@@ -588,7 +588,7 @@
       "t": "c",
       "s": [],
       "b": "mage",
-      "tier": null
+      "tier": "B"
     },
     {
       "n": "Lam",
@@ -599,7 +599,7 @@
         "antisquishy"
       ],
       "b": "assP",
-      "tier": null
+      "tier": "S"
     },
     {
       "n": "Li Bai",
@@ -610,7 +610,7 @@
         "antisquishy"
       ],
       "b": "assP",
-      "tier": null
+      "tier": "D"
     },
     {
       "n": "Li Xin",
@@ -619,7 +619,7 @@
       "t": "",
       "s": [],
       "b": "fP",
-      "tier": null
+      "tier": "A"
     },
     {
       "n": "Lian Po",
@@ -628,7 +628,7 @@
       "t": "c",
       "s": [],
       "b": "tank",
-      "tier": null
+      "tier": "B"
     },
     {
       "n": "Liang",
@@ -646,7 +646,7 @@
       "t": "c",
       "s": [],
       "b": "tank",
-      "tier": null
+      "tier": "D"
     },
     {
       "n": "Liu Bei",
@@ -655,7 +655,7 @@
       "t": "d",
       "s": [],
       "b": "assP",
-      "tier": null
+      "tier": "C"
     },
     {
       "n": "Liu Shan",
@@ -664,7 +664,7 @@
       "t": "c",
       "s": [],
       "b": "support",
-      "tier": null
+      "tier": "B"
     },
     {
       "n": "Lu Bu",
@@ -675,7 +675,7 @@
         "antitank"
       ],
       "b": "fP",
-      "tier": null
+      "tier": "B"
     },
     {
       "n": "Luban No.7",
@@ -684,7 +684,7 @@
       "t": "",
       "s": [],
       "b": "mmC",
-      "tier": null
+      "tier": "A"
     },
     {
       "n": "Luna",
@@ -695,7 +695,7 @@
         "antisquishy"
       ],
       "b": "assM",
-      "tier": null
+      "tier": "D"
     },
     {
       "n": "Mai Shiranui",
@@ -706,7 +706,7 @@
         "antisquishy"
       ],
       "b": "mage",
-      "tier": null
+      "tier": "B"
     },
     {
       "n": "Marco Polo",
@@ -717,7 +717,7 @@
         "antitank"
       ],
       "b": "mmA",
-      "tier": null
+      "tier": "S"
     },
     {
       "n": "Mayene",
@@ -726,7 +726,7 @@
       "t": "c",
       "s": [],
       "b": "fP",
-      "tier": null
+      "tier": "C"
     },
     {
       "n": "Meng Ya",
@@ -735,7 +735,7 @@
       "t": "",
       "s": [],
       "b": "mmA",
-      "tier": null
+      "tier": "C"
     },
     {
       "n": "Mi Yue",
@@ -746,7 +746,7 @@
         "antitank"
       ],
       "b": "fM",
-      "tier": null
+      "tier": "A"
     },
     {
       "n": "Milady",
@@ -755,7 +755,7 @@
       "t": "",
       "s": [],
       "b": "mage",
-      "tier": null
+      "tier": "A"
     },
     {
       "n": "Ming",
@@ -766,7 +766,7 @@
         "antiburst"
       ],
       "b": "support",
-      "tier": null
+      "tier": "C"
     },
     {
       "n": "Mozi",
@@ -775,7 +775,7 @@
       "t": "c",
       "s": [],
       "b": "mage",
-      "tier": null
+      "tier": "A"
     },
     {
       "n": "Mulan",
@@ -784,7 +784,7 @@
       "t": "bd",
       "s": [],
       "b": "fP",
-      "tier": null
+      "tier": "D"
     },
     {
       "n": "Musashi",
@@ -793,7 +793,7 @@
       "t": "d",
       "s": [],
       "b": "fP",
-      "tier": null
+      "tier": "A"
     },
     {
       "n": "Nakoruru",
@@ -804,7 +804,7 @@
         "antisquishy"
       ],
       "b": "assP",
-      "tier": null
+      "tier": "C"
     },
     {
       "n": "Nezha",
@@ -813,7 +813,7 @@
       "t": "h",
       "s": [],
       "b": "fP",
-      "tier": null
+      "tier": "C"
     },
     {
       "n": "Nuwa",
@@ -822,7 +822,7 @@
       "t": "b",
       "s": [],
       "b": "mage",
-      "tier": null
+      "tier": "D"
     },
     {
       "n": "Pei",
@@ -831,7 +831,7 @@
       "t": "bd",
       "s": [],
       "b": "assP",
-      "tier": null
+      "tier": "D"
     },
     {
       "n": "Sakeer",
@@ -840,7 +840,7 @@
       "t": "c",
       "s": [],
       "b": "tank",
-      "tier": null
+      "tier": "B"
     },
     {
       "n": "Shangguan",
@@ -851,7 +851,7 @@
         "antisquishy"
       ],
       "b": "mage",
-      "tier": null
+      "tier": "C"
     },
     {
       "n": "Shouyue",
@@ -860,7 +860,7 @@
       "t": "b",
       "s": [],
       "b": "mmB",
-      "tier": null
+      "tier": "B"
     },
     {
       "n": "Sima Yi",
@@ -871,7 +871,7 @@
         "antisquishy"
       ],
       "b": "assM",
-      "tier": null
+      "tier": "D"
     },
     {
       "n": "Sun Bin",
@@ -880,7 +880,7 @@
       "t": "h",
       "s": [],
       "b": "support",
-      "tier": null
+      "tier": "D"
     },
     {
       "n": "Sun Ce",
@@ -889,7 +889,7 @@
       "t": "c",
       "s": [],
       "b": "fP",
-      "tier": null
+      "tier": "A"
     },
     {
       "n": "Ukyo Tachibana",
@@ -898,7 +898,7 @@
       "t": "bd",
       "s": [],
       "b": "assP",
-      "tier": null
+      "tier": "D"
     },
     {
       "n": "Wang Zhaojun",
@@ -916,7 +916,7 @@
       "t": "b",
       "s": [],
       "b": "assP",
-      "tier": null
+      "tier": "A"
     },
     {
       "n": "Xiang Yu",
@@ -925,7 +925,7 @@
       "t": "c",
       "s": [],
       "b": "tank",
-      "tier": null
+      "tier": "C"
     },
     {
       "n": "Xiao Qiao",
@@ -936,7 +936,7 @@
         "antisquishy"
       ],
       "b": "mage",
-      "tier": null
+      "tier": "A"
     },
     {
       "n": "Yang Jian",
@@ -945,7 +945,7 @@
       "t": "c",
       "s": [],
       "b": "fP",
-      "tier": null
+      "tier": "C"
     },
     {
       "n": "Yao",
@@ -954,7 +954,7 @@
       "t": "h",
       "s": [],
       "b": "fP",
-      "tier": null
+      "tier": "B"
     },
     {
       "n": "Yaria",
@@ -965,7 +965,7 @@
         "antiburst"
       ],
       "b": "support",
-      "tier": null
+      "tier": "S"
     },
     {
       "n": "Ying",
@@ -974,7 +974,7 @@
       "t": "bd",
       "s": [],
       "b": "assP",
-      "tier": null
+      "tier": "D"
     },
     {
       "n": "Yixing",
@@ -983,7 +983,7 @@
       "t": "c",
       "s": [],
       "b": "mage",
-      "tier": null
+      "tier": "A"
     },
     {
       "n": "Yuhuan",
@@ -992,7 +992,7 @@
       "t": "h",
       "s": [],
       "b": "mage",
-      "tier": null
+      "tier": "B"
     },
     {
       "n": "Zhang Fei",
@@ -1003,7 +1003,7 @@
         "antiburst"
       ],
       "b": "tank",
-      "tier": null
+      "tier": "C"
     },
     {
       "n": "Zhou Yu",
@@ -1012,7 +1012,7 @@
       "t": "",
       "s": [],
       "b": "mage",
-      "tier": null
+      "tier": "C"
     },
     {
       "n": "Zhuangzi",
@@ -1023,7 +1023,7 @@
         "anticc"
       ],
       "b": "tank",
-      "tier": null
+      "tier": "B"
     },
     {
       "n": "Zilong",
@@ -1032,7 +1032,7 @@
       "t": "d",
       "s": [],
       "b": "assP",
-      "tier": null
+      "tier": "C"
     },
     {
       "n": "Ziya",
@@ -1041,7 +1041,133 @@
       "t": "c",
       "s": [],
       "b": "mage",
-      "tier": null
+      "tier": "B"
     }
-  ]
+  ],
+  "tierSource": {
+    "name": "hokbuild.com",
+    "url": "https://hokbuild.com/tier-list/",
+    "date": "2026-08-27"
+  },
+  "tierList": {
+    "S": [
+      "Augran",
+      "Loong",
+      "Lam",
+      "Marco Polo",
+      "Da Qiao",
+      "Daji",
+      "Hou Yi",
+      "Yaria",
+      "Arke",
+      "Feyd",
+      "Fatih",
+      "Garuda",
+      "Chi Cha"
+    ],
+    "A": [
+      "Angela",
+      "Yixing",
+      "Dolia",
+      "Lady Sun",
+      "Dun",
+      "Luban No.7",
+      "Kongming",
+      "Dian Wei",
+      "Wukong",
+      "Xiao Qiao",
+      "Sun Ce",
+      "Li Xin",
+      "Milady",
+      "Gao Changgong",
+      "Consort Yu",
+      "Musashi",
+      "Cai Yan",
+      "Mozi",
+      "Mi Yue",
+      "Arthur",
+      "Bai Qi",
+      "Chano",
+      "Flowborn",
+      "Umbrosa",
+      "DaYu",
+      "Florentino",
+      "Lorion"
+    ],
+    "B": [
+      "Mai Shiranui",
+      "Lady Zhen",
+      "Xuance",
+      "Alessio",
+      "Diaochan",
+      "Gan & Mo",
+      "Luara",
+      "Erin",
+      "Fang",
+      "Garo",
+      "Shouyue",
+      "Butterfly",
+      "Princess Frost",
+      "Heino",
+      "Donghuang",
+      "Kui",
+      "Yao",
+      "Allain",
+      "Shi",
+      "Lian Po",
+      "Ziya",
+      "Charlotte",
+      "Biron",
+      "Lu Bu",
+      "Yuhuan",
+      "Liu Shan",
+      "Zhuangzi",
+      "Arli",
+      "Sakeer",
+      "Haya"
+    ],
+    "C": [
+      "Kaizer",
+      "Huang Zhong",
+      "Zhang Fei",
+      "Zilong",
+      "Fuzi",
+      "Ming",
+      "Xiang Yu",
+      "Menki",
+      "Yang Jian",
+      "Di Renjie",
+      "Liu Bei",
+      "Nakoruru",
+      "Han Xin",
+      "Mayene",
+      "Meng Ya",
+      "Nezha",
+      "Shangguan",
+      "Zhou Yu"
+    ],
+    "D": [
+      "Li Bai",
+      "Ying",
+      "Ukyo Tachibana",
+      "Mulan",
+      "Dr Bian",
+      "Sima Yi",
+      "Gao",
+      "Liu Bang",
+      "Wuyan",
+      "Sun Bin",
+      "Dharma",
+      "Cirrus",
+      "Luna",
+      "Nuwa",
+      "Jing",
+      "Ata",
+      "Guiguzi",
+      "Guan Yu",
+      "Pei",
+      "Agudo",
+      "Athena"
+    ]
+  }
 }

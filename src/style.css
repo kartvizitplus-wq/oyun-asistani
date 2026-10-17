@@ -141,3 +141,11 @@ ul.mm li.bad{color:var(--red)}ul.mm li.good{color:var(--green)}
 .guidevid{width:100%;max-width:360px;aspect-ratio:9/16;border-radius:12px;border:1px solid var(--line);background:#000;display:block;margin:14px 0}
 .faq h3{font:600 1rem var(--body);margin:16px 0 4px;color:var(--fg)}
 .faq p{margin:0;max-width:68ch;color:var(--muted)}
+
+.tiers{display:flex;flex-direction:column;gap:12px}
+.tierrow{display:grid;grid-template-columns:44px 1fr;gap:10px;align-items:start}
+.tierbadge{font:700 1.1rem var(--display);text-align:center;border-radius:8px;padding:8px 0}
+.tierbadge.tS{background:var(--red-bg);color:var(--red)}.tierbadge.tA{background:var(--gold-bg);color:var(--gold)}
+.tierbadge.tB{background:var(--green-bg);color:var(--green)}.tierbadge.tC{background:#13233a;color:var(--blue)}.tierbadge.tD{background:var(--panel2);color:var(--muted)}
+.tierlink.nolink{font-size:.85rem;border:1px dashed var(--line);border-radius:6px;padding:4px 9px;color:var(--muted)}
+.tlper{font-size:.55em;color:var(--gold);vertical-align:middle}

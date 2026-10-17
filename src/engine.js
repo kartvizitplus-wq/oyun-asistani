@@ -1,6 +1,6 @@
 /* Recommendation engine shared by the browser tools and the static page generator. */
 (function (root) {
-  const TIER = { S: 1.2, A: 0.6, B: 0, C: -0.6 };
+  const TIER = { S: 1.2, A: 0.6, B: 0, C: -0.6, D: -1.0 };
   const clamp = v => Math.max(0, Math.min(10, v));
 
   /* ---------- Mobile Legends ---------- */

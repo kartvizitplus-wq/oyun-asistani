@@ -91,7 +91,7 @@ function showcase(lang) {
     const list = (g.data.heroes || g.data.brawlers || g.data.characters || []).filter(h => h.tier === 'S' || h.tier === 'A')
       .sort((a, b) => order[a.tier] - order[b.tier] || a.n.localeCompare(b.n)).slice(0, 10);
     if (!list.length) return '';
-    return `<div class="team"><b>${esc(g.name)}</b><div class="list-links">${list.map(h => `<a href="/${lang}/${g.slug}/${slug(h.n)}/" class="tierlink">${Icons.hero(h.n, h.r || h.c || h.type, 20)}<span>${esc(h.n)}</span><span class="tier t${h.tier}">${h.tier}</span></a>`).join('')}</div></div>`;
+    return `<div class="team"><b><a href="/${lang}/${g.slug}/${g.data.tierList ? 'tier-list/' : ''}" style="color:inherit">${esc(g.name)} →</a></b><div class="list-links">${list.map(h => `<a href="/${lang}/${g.slug}/${slug(h.n)}/" class="tierlink">${Icons.hero(h.n, h.r || h.c || h.type, 20)}<span>${esc(h.n)}</span><span class="tier t${h.tier}">${h.tier}</span></a>`).join('')}</div></div>`;
   }).filter(Boolean);
   if (!blocks.length) return '';
   return `<section><h2>${esc(t.topHome)}</h2><div class="card teams">${blocks.join('')}</div><p class="note" style="margin-top:6px">${esc(t.topHomeNote)}</p></section>`;
@@ -134,7 +134,7 @@ ${showcase(lang)}
       const list = isMoba ? D.heroes : D.brawlers;
       const roleOf = x => isMoba ? x.r : x.c;
       const links = list.map(h => `<a href="/${gp}/${slug(h.n)}/">${esc(h.n)}</a>`).join('');
-      const body = `<section><h1>${esc(gameTitle(g))}</h1><p class="lead">${esc(gameDesc(g))} <a href="/${lang}/guide/">${esc(GUIDE[lang].nav)} →</a></p></section>
+      const body = `<section><h1>${esc(gameTitle(g))}</h1><p class="lead">${esc(gameDesc(g))} <a href="/${lang}/guide/">${esc(GUIDE[lang].nav)} →</a>${D.tierList ? ` · <a href="/${gp}/tier-list/">${esc(tt('tl_h1', { g: g.name }))} →</a>` : ''}</p></section>
 <section><h2>${esc(t.enemyTeam)}</h2>
 <div class="slots" id="slots" style="grid-template-columns:repeat(${isMoba ? 5 : 3},1fr)"></div>
 ${isMoba ? `<h2 style="margin-top:14px">${esc(t.myTeam)}</h2><div class="slots" id="aslots" style="grid-template-columns:repeat(4,1fr)"></div>
@@ -159,6 +159,25 @@ ${isMoba ? `<section id="buildsec"><h2>${esc(t.yourHero)}</h2><div class="heroli
 <section><h2>${esc(isMoba ? t.allHeroes : t.allBrawlers)}</h2><div class="list-links">${links}</div></section>`;
       write(`${gp}/index.html`, layout({ lang, rel: `${gp}/`, title: `${gameTitle(g)} · ${cfg.siteName}`, desc: gameDesc(g), active: g.id, body, app }));
 
+      /* Tier list page (sourced, refreshed weekly by the updater). */
+      if (D.tierList) {
+        const byName = Object.fromEntries(list.map(h => [h.n.toLowerCase(), h]));
+        const rOf = h => isMoba ? h.r : h.c;
+        const chipFor = n => { const h = byName[n.toLowerCase()]; return h ? `<a href="/${gp}/${slug(h.n)}/" class="tierlink">${Icons.hero(h.n, rOf(h), 22)}<span>${esc(h.n)}</span></a>` : `<span class="tierlink nolink" title="${esc(t.tl_new)}">${Icons.hero(n, '', 22)}<span>${esc(n)}</span></span>`; };
+        const rows = tl => ['S', 'A', 'B', 'C', 'D'].filter(k => tl[k] && tl[k].length).map(k => `<div class="tierrow"><span class="tierbadge t${k}">${k}</span><div class="list-links">${tl[k].map(chipFor).join('')}</div></div>`).join('');
+        const lanes = D.tierListByLane ? Object.entries(D.tierList) : null;
+        const sTop = lanes ? [...new Set(lanes.flatMap(([, tl]) => tl.S || []))] : (D.tierList.S || []);
+        const src = D.tierSource || {};
+        const tlPeriod = D.patch ? period : src.patch ? fill(t.patchLbl, { v: src.patch }) : period;
+        const tqa = [[tt('tl_q', { g: g.name }), tt('tl_a', { list: listOf(sTop.slice(0, 10)) })]];
+        const tbody = `<section><h1>${esc(tt('tl_h1', { g: g.name }))} <span class="tlper">${esc(tlPeriod)}</span></h1><p class="lead">${esc(tt('tl_intro', { src: src.name || '' }))}</p>
+<p class="note">${esc(t.tl_src)}: ${src.url ? `<a href="${esc(src.url)}" rel="nofollow noopener" target="_blank">${esc(src.name)}</a>` : esc(src.name || '')} · ${esc(src.date || D.updated)}</p></section>
+${lanes ? lanes.map(([lane, tl]) => `<section><h2>${esc(t['tl_lane_' + lane] || lane)}</h2><div class="card tiers">${rows(tl)}</div></section>`).join('') : `<section><div class="card tiers">${rows(D.tierList)}</div></section>`}
+<div class="bar"><a class="btn" href="/${gp}/">${esc(gameTitle(g))} →</a></div>
+${faqBlock(tqa)}`;
+        write(`${gp}/tier-list/index.html`, layout({ lang, rel: `${gp}/tier-list/`, active: g.id, body: tbody, jsonld: faqLd(tqa),
+          title: tt('tl_title', { g: g.name, p: tlPeriod }), desc: tt('tl_desc', { g: g.name, top: listOf(sTop.slice(0, 4)), d: dateTxt }) }));
+      }
       if (isMoba) write(`${gp}/draft/index.html`, layout({
         lang, rel: `${gp}/draft/`, active: g.id, app: { lang, game: g.id, kind: 'draft', t: tSub, data: D, itemsTr: lang === 'tr' && g.id === 'mlbb' ? ITEMS_TR : null },
         title: `${tt('draftTitle', { g: g.name })} · ${cfg.siteName}`, desc: t.draftDesc,
@@ -231,7 +250,7 @@ ${strong.length ? `<section><h2>${esc(tt('bp_strong', { x }))}</h2><p style="mar
         const comm = isMoba ? `<section class="card" id="community" hidden data-game="${g.id}" data-hero="${esc(x)}" data-t="${esc(JSON.stringify({ commTitle: t.commTitle, commRate: t.commRate, commVs: t.commVs, commFew: t.commFew }))}"></section>` : '';
         const body2 = `${inner}
 ${src}${comm}
-<div class="bar"><a class="btn" href="/${gp}/?e=${encodeURIComponent(x)}">${esc(tt('hp_try', { x }))}</a></div>
+<div class="bar"><a class="btn" href="/${gp}/?e=${encodeURIComponent(x)}">${esc(tt('hp_try', { x }))}</a>${D.tierList ? `<a class="btn ghost" href="/${gp}/tier-list/">${esc(tt('tl_h1', { g: g.name }))}</a>` : ''}</div>
 ${faqBlock(qa)}
 <section><h2>${esc(isMoba ? t.allHeroes : t.allBrawlers)}</h2><div class="list-links">${links}</div></section>`;
         write(`${gp}/${slug(x)}/index.html`, layout({
@@ -326,7 +345,22 @@ fs.mkdirSync(path.join(OUT, 'assets'), { recursive: true });
 for (const f of ['style.css', 'app.js', 'engine.js', 'icons.js']) fs.copyFileSync(R('src/' + f), path.join(OUT, 'assets', f));
 if (fs.existsSync(R('static'))) fs.cpSync(R('static'), OUT, { recursive: true });
 fs.writeFileSync(path.join(OUT, 'assets/icon.svg'), '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32"><rect width="32" height="32" rx="7" fill="#0c1018"/><circle cx="16" cy="16" r="10" fill="none" stroke="#e8b44a" stroke-width="2.5"/><circle cx="16" cy="16" r="4" fill="#e2595b"/><path d="M16 3v6M16 23v6M3 16h6M23 16h6" stroke="#e8b44a" stroke-width="2.5"/></svg>');
-fs.writeFileSync(path.join(OUT, 'robots.txt'), `User-agent: *\nAllow: /\n${base ? `Sitemap: ${base}/sitemap.xml\n` : ''}`);
+/* Search engines and AI assistants (search and answer bots) are explicitly welcome. */
+const AI_BOTS = ['Googlebot', 'Bingbot', 'OAI-SearchBot', 'ChatGPT-User', 'GPTBot', 'PerplexityBot', 'Perplexity-User', 'ClaudeBot', 'Claude-SearchBot', 'Claude-User', 'Google-Extended', 'Applebot', 'Applebot-Extended', 'DuckAssistBot', 'meta-externalagent'];
+fs.writeFileSync(path.join(OUT, 'robots.txt'), AI_BOTS.map(b => `User-agent: ${b}\nAllow: /\n`).join('\n') + `\nUser-agent: *\nAllow: /\n${base ? `\nSitemap: ${base}/sitemap.xml\n` : ''}`);
+/* llms.txt: a plain summary that AI assistants can read to understand and cite the site. */
+{
+  const en = I18N.en, B = base || '';
+  const gl = GAMES.map(g => {
+    const n = (g.data.heroes || g.data.brawlers || g.data.characters || []).length;
+    const tool = g.kind === 'moba' ? en.mobaToolDesc : g.kind === 'bs' ? en.bsToolDesc : en.ffToolDesc;
+    return `## ${g.full}\n- [Assistant](${B}/en/${g.slug}/): ${tool}\n` +
+      (g.data.tierList ? `- [Tier list](${B}/en/${g.slug}/tier-list/): current ranking of every ${g.kind === 'bs' ? 'brawler' : 'hero'} from S to D, from ${g.data.tierSource ? g.data.tierSource.name : 'public sources'}, reviewed weekly.\n` : '') +
+      (g.kind === 'moba' ? `- [Draft practice](${B}/en/${g.slug}/draft/): ranked or classic draft with bans against an AI, with item and emblem prep and scoring.\n` : '') +
+      `- ${n} ${g.kind === 'ff' ? 'character' : g.kind === 'bs' ? 'brawler' : 'hero'} pages at ${B}/en/${g.slug}/<name>/ (example: ${B}/en/${g.slug}/${slug((g.data.heroes || g.data.brawlers || g.data.characters)[0].n)}/): ${g.kind === 'ff' ? 'best active and passive skill combination' : g.kind === 'bs' ? 'best counter brawlers, tips by class and mode, suggested gears, FAQ' : 'best counter picks, items to buy against it, suggested build, how to play against it, FAQ'}.\n`;
+  }).join('\n');
+  fs.writeFileSync(path.join(OUT, 'llms.txt'), `# ${cfg.siteName}\n\n> Free, multilingual pick assistant for mobile games: pick the enemy team and get counter picks, team analysis, ban suggestions, item builds and emblems that adapt to the enemy, with optional read-aloud. Covers Mobile Legends: Bang Bang, Honor of Kings, League of Legends: Wild Rift, Free Fire and Brawl Stars. No sign-up. Data and patch news are updated every week. Available in English, Turkish, Indonesian, Spanish and Portuguese (replace /en/ with /tr/, /id/, /es/ or /pt/).\n\n${gl}\n## More\n- [Patch news and guides](${B}/en/news/): weekly patch summaries, meta reports and hero guides written in our own words.\n- [How to use](${B}/en/guide/)\n- [About](${B}/en/about/) · Contact: ${cfg.contactEmail || ''}\n`);
+}
 if (base) fs.writeFileSync(path.join(OUT, 'sitemap.xml'), `<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n${pages.map(p => `<url><loc>${base}/${p}</loc><lastmod>${lastUpdated}</lastmod></url>`).join('\n')}\n</urlset>\n`);
 if (cfg.adsenseClient) fs.writeFileSync(path.join(OUT, 'ads.txt'), `google.com, ${cfg.adsenseClient.replace(/^ca-/, '')}, DIRECT, f08c47fec0942fa0\n`);
 fs.writeFileSync(path.join(OUT, '404.html'), `<!doctype html><meta charset="utf-8"><title>404</title><body style="background:#0c1018;color:#e9edf5;font-family:system-ui;padding:24px"><p>404 · <a style="color:#e8b44a" href="/">${esc(cfg.siteName)}</a></p></body>`);

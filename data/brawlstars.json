@@ -7,19 +7,19 @@
       "n": "8-Bit",
       "c": "damage",
       "s": [],
-      "tier": null
+      "tier": "A"
     },
     {
       "n": "Amber",
       "c": "controller",
       "s": [],
-      "tier": null
+      "tier": "S"
     },
     {
       "n": "Angelo",
       "c": "marksman",
       "s": [],
-      "tier": null
+      "tier": "C"
     },
     {
       "n": "Ash",
@@ -27,25 +27,25 @@
       "s": [
         "antiassassin"
       ],
-      "tier": null
+      "tier": "A"
     },
     {
       "n": "Barley",
       "c": "artillery",
       "s": [],
-      "tier": null
+      "tier": "D"
     },
     {
       "n": "Bea",
       "c": "marksman",
       "s": [],
-      "tier": null
+      "tier": "D"
     },
     {
       "n": "Belle",
       "c": "marksman",
       "s": [],
-      "tier": null
+      "tier": "D"
     },
     {
       "n": "Berry",
@@ -53,7 +53,7 @@
       "s": [
         "heal"
       ],
-      "tier": null
+      "tier": "D"
     },
     {
       "n": "Bibi",
@@ -61,13 +61,13 @@
       "s": [
         "antiassassin"
       ],
-      "tier": null
+      "tier": "A"
     },
     {
       "n": "Bo",
       "c": "controller",
       "s": [],
-      "tier": null
+      "tier": "A"
     },
     {
       "n": "Bonnie",
@@ -81,7 +81,7 @@
       "s": [
         "wallbreak"
       ],
-      "tier": null
+      "tier": "A"
     },
     {
       "n": "Bull",
@@ -91,7 +91,7 @@
         "antitank",
         "wallbreak"
       ],
-      "tier": null
+      "tier": "C"
     },
     {
       "n": "Buster",
@@ -103,7 +103,7 @@
       "n": "Buzz",
       "c": "assassin",
       "s": [],
-      "tier": null
+      "tier": "C"
     },
     {
       "n": "Byron",
@@ -111,13 +111,13 @@
       "s": [
         "heal"
       ],
-      "tier": null
+      "tier": "D"
     },
     {
       "n": "Carl",
       "c": "damage",
       "s": [],
-      "tier": null
+      "tier": "D"
     },
     {
       "n": "Charlie",
@@ -129,13 +129,13 @@
       "n": "Chester",
       "c": "damage",
       "s": [],
-      "tier": null
+      "tier": "B"
     },
     {
       "n": "Chuck",
       "c": "controller",
       "s": [],
-      "tier": null
+      "tier": "C"
     },
     {
       "n": "Clancy",
@@ -151,7 +151,7 @@
       "s": [
         "antitank"
       ],
-      "tier": null
+      "tier": "B"
     },
     {
       "n": "Colt",
@@ -159,7 +159,7 @@
       "s": [
         "wallbreak"
       ],
-      "tier": null
+      "tier": "B"
     },
     {
       "n": "Cordelius",
@@ -167,13 +167,13 @@
       "s": [
         "antitank"
       ],
-      "tier": null
+      "tier": "C"
     },
     {
       "n": "Crow",
       "c": "assassin",
       "s": [],
-      "tier": null
+      "tier": "D"
     },
     {
       "n": "Darryl",
@@ -181,7 +181,7 @@
       "s": [
         "antiassassin"
       ],
-      "tier": null
+      "tier": "C"
     },
     {
       "n": "Doug",
@@ -189,13 +189,13 @@
       "s": [
         "heal"
       ],
-      "tier": null
+      "tier": "D"
     },
     {
       "n": "Draco",
       "c": "tank",
       "s": [],
-      "tier": null
+      "tier": "D"
     },
     {
       "n": "Dynamike",
@@ -203,13 +203,13 @@
       "s": [
         "wallbreak"
       ],
-      "tier": null
+      "tier": "C"
     },
     {
       "n": "Edgar",
       "c": "assassin",
       "s": [],
-      "tier": null
+      "tier": "B"
     },
     {
       "n": "El Primo",
@@ -218,7 +218,7 @@
         "antiassassin",
         "wallbreak"
       ],
-      "tier": null
+      "tier": "S"
     },
     {
       "n": "Emz",
@@ -226,7 +226,7 @@
       "s": [
         "antitank"
       ],
-      "tier": null
+      "tier": "A"
     },
     {
       "n": "Eve",
@@ -238,7 +238,7 @@
       "n": "Fang",
       "c": "assassin",
       "s": [],
-      "tier": null
+      "tier": "C"
     },
     {
       "n": "Frank",
@@ -246,7 +246,7 @@
       "s": [
         "wallbreak"
       ],
-      "tier": null
+      "tier": "D"
     },
     {
       "n": "Gale",
@@ -255,7 +255,7 @@
         "antiassassin",
         "antitank"
       ],
-      "tier": null
+      "tier": "C"
     },
     {
       "n": "Gene",
@@ -267,13 +267,13 @@
       "n": "Gray",
       "c": "support",
       "s": [],
-      "tier": null
+      "tier": "D"
     },
     {
       "n": "Griff",
       "c": "controller",
       "s": [],
-      "tier": null
+      "tier": "B"
     },
     {
       "n": "Grom",
@@ -287,13 +287,13 @@
       "s": [
         "heal"
       ],
-      "tier": null
+      "tier": "A"
     },
     {
       "n": "Hank",
       "c": "tank",
       "s": [],
-      "tier": null
+      "tier": "B"
     },
     {
       "n": "Jacky",
@@ -301,25 +301,25 @@
       "s": [
         "antiassassin"
       ],
-      "tier": null
+      "tier": "D"
     },
     {
       "n": "Janet",
       "c": "marksman",
       "s": [],
-      "tier": null
+      "tier": "D"
     },
     {
       "n": "Jessie",
       "c": "controller",
       "s": [],
-      "tier": null
+      "tier": "C"
     },
     {
       "n": "Kenji",
       "c": "assassin",
       "s": [],
-      "tier": null
+      "tier": "C"
     },
     {
       "n": "Kit",
@@ -327,19 +327,19 @@
       "s": [
         "heal"
       ],
-      "tier": null
+      "tier": "B"
     },
     {
       "n": "Larry & Lawrie",
       "c": "artillery",
       "s": [],
-      "tier": null
+      "tier": "B"
     },
     {
       "n": "Leon",
       "c": "assassin",
       "s": [],
-      "tier": null
+      "tier": "C"
     },
     {
       "n": "Lily",
@@ -351,7 +351,7 @@
       "n": "Lola",
       "c": "damage",
       "s": [],
-      "tier": null
+      "tier": "D"
     },
     {
       "n": "Lou",
@@ -359,55 +359,55 @@
       "s": [
         "antitank"
       ],
-      "tier": null
+      "tier": "D"
     },
     {
       "n": "Maisie",
       "c": "marksman",
       "s": [],
-      "tier": null
+      "tier": "C"
     },
     {
       "n": "Mandy",
       "c": "marksman",
       "s": [],
-      "tier": null
+      "tier": "B"
     },
     {
       "n": "Max",
       "c": "support",
       "s": [],
-      "tier": null
+      "tier": "B"
     },
     {
       "n": "Meg",
       "c": "tank",
       "s": [],
-      "tier": null
+      "tier": "C"
     },
     {
       "n": "Melodie",
       "c": "assassin",
       "s": [],
-      "tier": null
+      "tier": "A"
     },
     {
       "n": "Mico",
       "c": "assassin",
       "s": [],
-      "tier": null
+      "tier": "C"
     },
     {
       "n": "Moe",
       "c": "damage",
       "s": [],
-      "tier": null
+      "tier": "D"
     },
     {
       "n": "Mortis",
       "c": "assassin",
       "s": [],
-      "tier": null
+      "tier": "B"
     },
     {
       "n": "Mr. P",
@@ -419,13 +419,13 @@
       "n": "Nani",
       "c": "marksman",
       "s": [],
-      "tier": null
+      "tier": "C"
     },
     {
       "n": "Nita",
       "c": "damage",
       "s": [],
-      "tier": null
+      "tier": "A"
     },
     {
       "n": "Otis",
@@ -433,7 +433,7 @@
       "s": [
         "antitank"
       ],
-      "tier": null
+      "tier": "C"
     },
     {
       "n": "Pam",
@@ -447,19 +447,19 @@
       "n": "Pearl",
       "c": "damage",
       "s": [],
-      "tier": null
+      "tier": "A"
     },
     {
       "n": "Penny",
       "c": "artillery",
       "s": [],
-      "tier": null
+      "tier": "C"
     },
     {
       "n": "Piper",
       "c": "marksman",
       "s": [],
-      "tier": null
+      "tier": "D"
     },
     {
       "n": "Poco",
@@ -467,7 +467,7 @@
       "s": [
         "heal"
       ],
-      "tier": null
+      "tier": "C"
     },
     {
       "n": "R-T",
@@ -475,13 +475,13 @@
       "s": [
         "antitank"
       ],
-      "tier": null
+      "tier": "A"
     },
     {
       "n": "Rico",
       "c": "damage",
       "s": [],
-      "tier": null
+      "tier": "A"
     },
     {
       "n": "Rosa",
@@ -489,13 +489,13 @@
       "s": [
         "antiassassin"
       ],
-      "tier": null
+      "tier": "C"
     },
     {
       "n": "Ruffs",
       "c": "support",
       "s": [],
-      "tier": null
+      "tier": "D"
     },
     {
       "n": "Sam",
@@ -507,13 +507,13 @@
       "n": "Sandy",
       "c": "controller",
       "s": [],
-      "tier": null
+      "tier": "C"
     },
     {
       "n": "Shade",
       "c": "assassin",
       "s": [],
-      "tier": null
+      "tier": "S"
     },
     {
       "n": "Shelly",
@@ -522,7 +522,7 @@
         "antitank",
         "antiassassin"
       ],
-      "tier": null
+      "tier": "C"
     },
     {
       "n": "Spike",
@@ -530,49 +530,49 @@
       "s": [
         "antitank"
       ],
-      "tier": null
+      "tier": "C"
     },
     {
       "n": "Sprout",
       "c": "artillery",
       "s": [],
-      "tier": null
+      "tier": "A"
     },
     {
       "n": "Squeak",
       "c": "controller",
       "s": [],
-      "tier": null
+      "tier": "C"
     },
     {
       "n": "Stu",
       "c": "assassin",
       "s": [],
-      "tier": null
+      "tier": "B"
     },
     {
       "n": "Surge",
       "c": "damage",
       "s": [],
-      "tier": null
+      "tier": "B"
     },
     {
       "n": "Tara",
       "c": "controller",
       "s": [],
-      "tier": null
+      "tier": "A"
     },
     {
       "n": "Tick",
       "c": "artillery",
       "s": [],
-      "tier": null
+      "tier": "C"
     },
     {
       "n": "Willow",
       "c": "controller",
       "s": [],
-      "tier": null
+      "tier": "C"
     }
   ],
   "gears": {
@@ -603,6 +603,117 @@
     "damage": [
       "Damage",
       "Shield"
+    ]
+  },
+  "tierSource": {
+    "name": "Timesaver.gg (SeeMeta data)",
+    "url": "https://timesaver.gg/blog/brawl-stars-tier-list-october-2026",
+    "date": "2026-10-01"
+  },
+  "tierList": {
+    "S": [
+      "Wendy",
+      "Shade",
+      "Juju",
+      "Amber",
+      "El Primo",
+      "Cosmo"
+    ],
+    "A": [
+      "Gus",
+      "Sprout",
+      "Tara",
+      "Nita",
+      "Melodie",
+      "Bo",
+      "Pearl",
+      "Ash",
+      "Bibi",
+      "Rico",
+      "8-Bit",
+      "R-T",
+      "Emz",
+      "Bolt",
+      "Sirius",
+      "Nori",
+      "Ollie",
+      "Brock"
+    ],
+    "B": [
+      "Colt",
+      "Starr Nova",
+      "Griff",
+      "Mortis",
+      "Edgar",
+      "Larry & Lawrie",
+      "Hank",
+      "Mina",
+      "Gigi",
+      "Damian",
+      "Surge",
+      "Chester",
+      "Mandy",
+      "Pierce",
+      "Kit",
+      "Stu",
+      "Max",
+      "Colette"
+    ],
+    "C": [
+      "Bull",
+      "Tick",
+      "Spike",
+      "Penny",
+      "Meg",
+      "Rosa",
+      "Angelo",
+      "Chuck",
+      "Willow",
+      "Nani",
+      "Fang",
+      "Leon",
+      "Gale",
+      "Buzz",
+      "Dynamike",
+      "Kenji",
+      "Jessie",
+      "Poco",
+      "Shelly",
+      "Maisie",
+      "Otis",
+      "Sandy",
+      "Cordelius",
+      "Mico",
+      "Darryl",
+      "Squeak",
+      "Ziggy"
+    ],
+    "D": [
+      "Bea",
+      "Lou",
+      "Berry",
+      "Crow",
+      "Barley",
+      "Piper",
+      "Byron",
+      "Jacky",
+      "Belle",
+      "Frank",
+      "Carl",
+      "Ruffs",
+      "Janet",
+      "Gray",
+      "Glowy",
+      "Kaze",
+      "Moe",
+      "Lola",
+      "Doug",
+      "Trunk",
+      "Jae-yong",
+      "Finx",
+      "Draco",
+      "Meeple",
+      "Alli"
     ]
   }
 }

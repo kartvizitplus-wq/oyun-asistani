@@ -205,7 +205,7 @@
         "antisquishy"
       ],
       "b": "assM",
-      "tier": null
+      "tier": "B"
     },
     {
       "n": "Akai",
@@ -214,7 +214,7 @@
       "t": "cd",
       "s": [],
       "b": "tank",
-      "tier": null
+      "tier": "B"
     },
     {
       "n": "Aldous",
@@ -225,7 +225,7 @@
         "antisquishy"
       ],
       "b": "fP",
-      "tier": null,
+      "tier": "B",
       "wr": 50.6
     },
     {
@@ -235,7 +235,7 @@
       "t": "hd",
       "s": [],
       "b": "mage",
-      "tier": null
+      "tier": "B"
     },
     {
       "n": "Alpha",
@@ -246,7 +246,7 @@
         "antitank"
       ],
       "b": "fP",
-      "tier": null,
+      "tier": "C",
       "wr": 48.2
     },
     {
@@ -256,7 +256,7 @@
       "t": "hd",
       "s": [],
       "b": "fP",
-      "tier": null
+      "tier": "C"
     },
     {
       "n": "Angela",
@@ -267,7 +267,7 @@
         "antiburst"
       ],
       "b": "support",
-      "tier": null
+      "tier": "B"
     },
     {
       "n": "Argus",
@@ -276,7 +276,7 @@
       "t": "d",
       "s": [],
       "b": "fP",
-      "tier": null,
+      "tier": "S",
       "wr": 56.0
     },
     {
@@ -286,7 +286,7 @@
       "t": "cd",
       "s": [],
       "b": "fP",
-      "tier": null
+      "tier": "C"
     },
     {
       "n": "Atlas",
@@ -295,7 +295,7 @@
       "t": "c",
       "s": [],
       "b": "tank",
-      "tier": null
+      "tier": "A"
     },
     {
       "n": "Aulus",
@@ -314,7 +314,7 @@
         "Queen's Wings",
         "Immortality"
       ],
-      "tier": "A",
+      "tier": "S",
       "wr": 60.0
     },
     {
@@ -326,7 +326,7 @@
         "antisquishy"
       ],
       "b": "mage",
-      "tier": null
+      "tier": "C"
     },
     {
       "n": "Badang",
@@ -345,7 +345,7 @@
         "Queen's Wings",
         "Immortality"
       ],
-      "tier": null
+      "tier": "B"
     },
     {
       "n": "Balmond",
@@ -354,7 +354,7 @@
       "t": "h",
       "s": [],
       "b": "fP",
-      "tier": null
+      "tier": "D"
     },
     {
       "n": "Barats",
@@ -363,7 +363,7 @@
       "t": "c",
       "s": [],
       "b": "tank",
-      "tier": null
+      "tier": "A"
     },
     {
       "n": "Baxia",
@@ -374,7 +374,7 @@
         "antiheal"
       ],
       "b": "tank",
-      "tier": null
+      "tier": "D"
     },
     {
       "n": "Beatrix",
@@ -383,7 +383,7 @@
       "t": "b",
       "s": [],
       "b": "mmB",
-      "tier": null
+      "tier": "B"
     },
     {
       "n": "Belerick",
@@ -402,7 +402,7 @@
         "Athena's Shield",
         "Immortality"
       ],
-      "tier": null
+      "tier": "A"
     },
     {
       "n": "Benedetta",
@@ -411,7 +411,7 @@
       "t": "d",
       "s": [],
       "b": "assP",
-      "tier": null
+      "tier": "A"
     },
     {
       "n": "Brody",
@@ -420,7 +420,7 @@
       "t": "b",
       "s": [],
       "b": "mmB",
-      "tier": null
+      "tier": "B"
     },
     {
       "n": "Bruno",
@@ -429,7 +429,7 @@
       "t": "",
       "s": [],
       "b": "mmC",
-      "tier": null
+      "tier": "A"
     },
     {
       "n": "Carmilla",
@@ -438,7 +438,7 @@
       "t": "c",
       "s": [],
       "b": "support",
-      "tier": null
+      "tier": "S"
     },
     {
       "n": "Cecilion",
@@ -449,7 +449,7 @@
         "antisquishy"
       ],
       "b": "mage",
-      "tier": null
+      "tier": "B"
     },
     {
       "n": "Chang'e",
@@ -458,7 +458,7 @@
       "t": "",
       "s": [],
       "b": "mage",
-      "tier": null
+      "tier": "C"
     },
     {
       "n": "Chip",
@@ -467,7 +467,7 @@
       "t": "c",
       "s": [],
       "b": "support",
-      "tier": null
+      "tier": "C"
     },
     {
       "n": "Chou",
@@ -479,7 +479,7 @@
         "anticc"
       ],
       "b": "fP",
-      "tier": null
+      "tier": "D"
     },
     {
       "n": "Cici",
@@ -488,7 +488,7 @@
       "t": "hd",
       "s": [],
       "b": "fP",
-      "tier": null,
+      "tier": "B",
       "wr": 49.5
     },
     {
@@ -498,7 +498,7 @@
       "t": "d",
       "s": [],
       "b": "mmA",
-      "tier": null
+      "tier": "B"
     },
     {
       "n": "Clint",
@@ -507,7 +507,7 @@
       "t": "b",
       "s": [],
       "b": "mmB",
-      "tier": null
+      "tier": "B"
     },
     {
       "n": "Cyclops",
@@ -516,7 +516,7 @@
       "t": "bc",
       "s": [],
       "b": "mage",
-      "tier": null
+      "tier": "B"
     },
     {
       "n": "Diggie",
@@ -528,7 +528,7 @@
         "anticc"
       ],
       "b": "support",
-      "tier": null
+      "tier": "A"
     },
     {
       "n": "Dyrroth",
@@ -547,7 +547,7 @@
         "Queen's Wings",
         "Immortality"
       ],
-      "tier": null
+      "tier": "B"
     },
     {
       "n": "Edith",
@@ -556,7 +556,7 @@
       "t": "c",
       "s": [],
       "b": "tank",
-      "tier": null,
+      "tier": "A",
       "wr": 52.6
     },
     {
@@ -569,7 +569,7 @@
         "antiburst"
       ],
       "b": "fM",
-      "tier": null
+      "tier": "C"
     },
     {
       "n": "Estes",
@@ -580,7 +580,7 @@
         "antiburst"
       ],
       "b": "support",
-      "tier": null
+      "tier": "A"
     },
     {
       "n": "Eudora",
@@ -592,7 +592,7 @@
         "antidash"
       ],
       "b": "mage",
-      "tier": null
+      "tier": "A"
     },
     {
       "n": "Fanny",
@@ -603,7 +603,7 @@
         "antisquishy"
       ],
       "b": "assP",
-      "tier": null
+      "tier": "D"
     },
     {
       "n": "Faramis",
@@ -612,7 +612,7 @@
       "t": "",
       "s": [],
       "b": "support",
-      "tier": null
+      "tier": "B"
     },
     {
       "n": "Floryn",
@@ -623,7 +623,7 @@
         "antiburst"
       ],
       "b": "support",
-      "tier": null
+      "tier": "S"
     },
     {
       "n": "Franco",
@@ -634,7 +634,7 @@
         "antidash"
       ],
       "b": "tank",
-      "tier": null
+      "tier": "D"
     },
     {
       "n": "Fredrinn",
@@ -643,7 +643,7 @@
       "t": "ch",
       "s": [],
       "b": "tank",
-      "tier": null
+      "tier": "B"
     },
     {
       "n": "Freya",
@@ -652,7 +652,7 @@
       "t": "hd",
       "s": [],
       "b": "fP",
-      "tier": null
+      "tier": "C"
     },
     {
       "n": "Gatotkaca",
@@ -661,7 +661,7 @@
       "t": "c",
       "s": [],
       "b": "tank",
-      "tier": null
+      "tier": "D"
     },
     {
       "n": "Gloo",
@@ -670,7 +670,7 @@
       "t": "c",
       "s": [],
       "b": "tank",
-      "tier": null
+      "tier": "S"
     },
     {
       "n": "Gord",
@@ -679,7 +679,7 @@
       "t": "",
       "s": [],
       "b": "mage",
-      "tier": null
+      "tier": "A"
     },
     {
       "n": "Granger",
@@ -688,7 +688,7 @@
       "t": "b",
       "s": [],
       "b": "mmC",
-      "tier": null
+      "tier": "D"
     },
     {
       "n": "Grock",
@@ -697,7 +697,7 @@
       "t": "c",
       "s": [],
       "b": "tank",
-      "tier": null
+      "tier": "C"
     },
     {
       "n": "Guinevere",
@@ -708,7 +708,7 @@
         "antisquishy"
       ],
       "b": "fM",
-      "tier": null
+      "tier": "B"
     },
     {
       "n": "Gusion",
@@ -719,7 +719,7 @@
         "antisquishy"
       ],
       "b": "assM",
-      "tier": null
+      "tier": "C"
     },
     {
       "n": "Hanabi",
@@ -728,7 +728,7 @@
       "t": "",
       "s": [],
       "b": "mmA",
-      "tier": null,
+      "tier": "A",
       "wr": 52.4
     },
     {
@@ -738,7 +738,7 @@
       "t": "b",
       "s": [],
       "b": "assP",
-      "tier": null
+      "tier": "B"
     },
     {
       "n": "Harith",
@@ -747,7 +747,7 @@
       "t": "d",
       "s": [],
       "b": "mage",
-      "tier": null
+      "tier": "D"
     },
     {
       "n": "Harley",
@@ -758,7 +758,7 @@
         "antisquishy"
       ],
       "b": "mage",
-      "tier": null
+      "tier": "C"
     },
     {
       "n": "Hayabusa",
@@ -770,7 +770,7 @@
         "antimm"
       ],
       "b": "assP",
-      "tier": null
+      "tier": "C"
     },
     {
       "n": "Helcurt",
@@ -782,7 +782,7 @@
         "antimm"
       ],
       "b": "assP",
-      "tier": null
+      "tier": "C"
     },
     {
       "n": "Hilda",
@@ -801,7 +801,7 @@
         "Dominance Ice",
         "Immortality"
       ],
-      "tier": null
+      "tier": "B"
     },
     {
       "n": "Hylos",
@@ -810,7 +810,7 @@
       "t": "ch",
       "s": [],
       "b": "tank",
-      "tier": null,
+      "tier": "C",
       "wr": 48.9
     },
     {
@@ -820,7 +820,7 @@
       "t": "",
       "s": [],
       "b": "mmC",
-      "tier": null
+      "tier": "A"
     },
     {
       "n": "Ixia",
@@ -829,7 +829,7 @@
       "t": "h",
       "s": [],
       "b": "mmA",
-      "tier": null
+      "tier": "B"
     },
     {
       "n": "Jawhead",
@@ -840,7 +840,7 @@
         "antisquishy"
       ],
       "b": "fP",
-      "tier": null
+      "tier": "C"
     },
     {
       "n": "Johnson",
@@ -849,7 +849,7 @@
       "t": "c",
       "s": [],
       "b": "tank",
-      "tier": null
+      "tier": "C"
     },
     {
       "n": "Joy",
@@ -860,7 +860,7 @@
         "antisquishy"
       ],
       "b": "assM",
-      "tier": null
+      "tier": "C"
     },
     {
       "n": "Julian",
@@ -869,7 +869,7 @@
       "t": "bd",
       "s": [],
       "b": "fM",
-      "tier": null
+      "tier": "B"
     },
     {
       "n": "Kadita",
@@ -880,7 +880,7 @@
         "antisquishy"
       ],
       "b": "mage",
-      "tier": null,
+      "tier": "A",
       "wr": 51.2
     },
     {
@@ -892,7 +892,7 @@
         "antisquishy"
       ],
       "b": "mage",
-      "tier": null,
+      "tier": "A",
       "wr": 51.5
     },
     {
@@ -904,7 +904,7 @@
         "antidash"
       ],
       "b": "support",
-      "tier": null,
+      "tier": "B",
       "wr": 49.6
     },
     {
@@ -916,7 +916,7 @@
         "antisquishy"
       ],
       "b": "assM",
-      "tier": null,
+      "tier": "C",
       "wr": 47.8
     },
     {
@@ -928,7 +928,7 @@
         "antitank"
       ],
       "b": "mmA",
-      "tier": null
+      "tier": "C"
     },
     {
       "n": "Khaleed",
@@ -937,7 +937,7 @@
       "t": "h",
       "s": [],
       "b": "fP",
-      "tier": null
+      "tier": "B"
     },
     {
       "n": "Khufra",
@@ -949,7 +949,7 @@
         "antimm"
       ],
       "b": "tank",
-      "tier": null
+      "tier": "S"
     },
     {
       "n": "Kimmy",
@@ -958,7 +958,7 @@
       "t": "",
       "s": [],
       "b": "mage",
-      "tier": null
+      "tier": "C"
     },
     {
       "n": "Lancelot",
@@ -970,7 +970,7 @@
         "antimm"
       ],
       "b": "assP",
-      "tier": null
+      "tier": "D"
     },
     {
       "n": "Lapu-Lapu",
@@ -979,7 +979,7 @@
       "t": "hcd",
       "s": [],
       "b": "fP",
-      "tier": null
+      "tier": "C"
     },
     {
       "n": "Layla",
@@ -988,7 +988,7 @@
       "t": "",
       "s": [],
       "b": "mmC",
-      "tier": null
+      "tier": "B"
     },
     {
       "n": "Leomord",
@@ -997,7 +997,7 @@
       "t": "d",
       "s": [],
       "b": "fP",
-      "tier": null
+      "tier": "B"
     },
     {
       "n": "Lesley",
@@ -1006,7 +1006,7 @@
       "t": "b",
       "s": [],
       "b": "mmC",
-      "tier": null
+      "tier": "B"
     },
     {
       "n": "Ling",
@@ -1017,7 +1017,7 @@
         "antisquishy"
       ],
       "b": "assP",
-      "tier": null
+      "tier": "A"
     },
     {
       "n": "Lolita",
@@ -1028,7 +1028,7 @@
         "antimm"
       ],
       "b": "tank",
-      "tier": null
+      "tier": "A"
     },
     {
       "n": "Lukas",
@@ -1037,7 +1037,7 @@
       "t": "hd",
       "s": [],
       "b": "fP",
-      "tier": null,
+      "tier": "A",
       "wr": 52.4
     },
     {
@@ -1049,7 +1049,7 @@
         "antitank"
       ],
       "b": "mage",
-      "tier": null
+      "tier": "C"
     },
     {
       "n": "Luo Yi",
@@ -1058,7 +1058,7 @@
       "t": "c",
       "s": [],
       "b": "mage",
-      "tier": null
+      "tier": "C"
     },
     {
       "n": "Lylia",
@@ -1067,7 +1067,7 @@
       "t": "",
       "s": [],
       "b": "mage",
-      "tier": null
+      "tier": "B"
     },
     {
       "n": "Martis",
@@ -1078,7 +1078,7 @@
         "anticc"
       ],
       "b": "fP",
-      "tier": null
+      "tier": "C"
     },
     {
       "n": "Masha",
@@ -1089,7 +1089,7 @@
         "antitank"
       ],
       "b": "fP",
-      "tier": null
+      "tier": "S"
     },
     {
       "n": "Mathilda",
@@ -1100,7 +1100,7 @@
         "antiburst"
       ],
       "b": "support",
-      "tier": null
+      "tier": "D"
     },
     {
       "n": "Melissa",
@@ -1109,7 +1109,7 @@
       "t": "",
       "s": [],
       "b": "mmA",
-      "tier": null,
+      "tier": "C",
       "wr": 48.6
     },
     {
@@ -1119,7 +1119,7 @@
       "t": "ch",
       "s": [],
       "b": "tank",
-      "tier": null
+      "tier": "S"
     },
     {
       "n": "Minsitthar",
@@ -1130,7 +1130,7 @@
         "antidash"
       ],
       "b": "fP",
-      "tier": null
+      "tier": "A"
     },
     {
       "n": "Miya",
@@ -1139,7 +1139,7 @@
       "t": "",
       "s": [],
       "b": "mmA",
-      "tier": null,
+      "tier": "B",
       "wr": 49.4
     },
     {
@@ -1149,7 +1149,7 @@
       "t": "",
       "s": [],
       "b": "mmA",
-      "tier": null
+      "tier": "B"
     },
     {
       "n": "Nana",
@@ -1158,7 +1158,7 @@
       "t": "c",
       "s": [],
       "b": "mage",
-      "tier": null
+      "tier": "C"
     },
     {
       "n": "Natalia",
@@ -1170,7 +1170,7 @@
         "antimm"
       ],
       "b": "assP",
-      "tier": null
+      "tier": "B"
     },
     {
       "n": "Natan",
@@ -1179,7 +1179,7 @@
       "t": "",
       "s": [],
       "b": "mage",
-      "tier": null
+      "tier": "B"
     },
     {
       "n": "Nolan",
@@ -1190,7 +1190,7 @@
         "antisquishy"
       ],
       "b": "assP",
-      "tier": null
+      "tier": "B"
     },
     {
       "n": "Novaria",
@@ -1199,7 +1199,7 @@
       "t": "b",
       "s": [],
       "b": "mage",
-      "tier": null
+      "tier": "B"
     },
     {
       "n": "Odette",
@@ -1208,7 +1208,7 @@
       "t": "bc",
       "s": [],
       "b": "mage",
-      "tier": null,
+      "tier": "B",
       "wr": 49.3
     },
     {
@@ -1220,7 +1220,7 @@
         "antisquishy"
       ],
       "b": "fP",
-      "tier": null,
+      "tier": "B",
       "wr": 50.1
     },
     {
@@ -1232,7 +1232,7 @@
         "antisquishy"
       ],
       "b": "mage",
-      "tier": null
+      "tier": "C"
     },
     {
       "n": "Phoveus",
@@ -1243,7 +1243,7 @@
         "antidash"
       ],
       "b": "fM",
-      "tier": null
+      "tier": "C"
     },
     {
       "n": "Popol and Kupa",
@@ -1252,7 +1252,7 @@
       "t": "c",
       "s": [],
       "b": "mmB",
-      "tier": null
+      "tier": "S"
     },
     {
       "n": "Rafaela",
@@ -1263,7 +1263,7 @@
         "antiburst"
       ],
       "b": "support",
-      "tier": null
+      "tier": "S"
     },
     {
       "n": "Roger",
@@ -1274,7 +1274,7 @@
         "antisquishy"
       ],
       "b": "fP",
-      "tier": null
+      "tier": "C"
     },
     {
       "n": "Ruby",
@@ -1283,7 +1283,7 @@
       "t": "hc",
       "s": [],
       "b": "fP",
-      "tier": null
+      "tier": "B"
     },
     {
       "n": "Saber",
@@ -1296,7 +1296,7 @@
         "antidash"
       ],
       "b": "assP",
-      "tier": null
+      "tier": "B"
     },
     {
       "n": "Selena",
@@ -1307,7 +1307,7 @@
         "antisquishy"
       ],
       "b": "assM",
-      "tier": null
+      "tier": "B"
     },
     {
       "n": "Silvanna",
@@ -1316,7 +1316,7 @@
       "t": "cd",
       "s": [],
       "b": "fM",
-      "tier": null
+      "tier": "B"
     },
     {
       "n": "Sora",
@@ -1325,7 +1325,7 @@
       "t": "d",
       "s": [],
       "b": "fP",
-      "tier": null
+      "tier": "B"
     },
     {
       "n": "Sun",
@@ -1334,7 +1334,7 @@
       "t": "h",
       "s": [],
       "b": "fP",
-      "tier": null,
+      "tier": "A",
       "wr": 52.5
     },
     {
@@ -1346,7 +1346,7 @@
         "antisquishy"
       ],
       "b": "assP",
-      "tier": null
+      "tier": "B"
     },
     {
       "n": "Terizla",
@@ -1355,7 +1355,7 @@
       "t": "hc",
       "s": [],
       "b": "fP",
-      "tier": null
+      "tier": "B"
     },
     {
       "n": "Thamuz",
@@ -1364,7 +1364,7 @@
       "t": "hd",
       "s": [],
       "b": "fP",
-      "tier": null
+      "tier": "C"
     },
     {
       "n": "Tigreal",
@@ -1373,7 +1373,7 @@
       "t": "c",
       "s": [],
       "b": "tank",
-      "tier": null,
+      "tier": "D",
       "wr": 44.9
     },
     {
@@ -1385,7 +1385,7 @@
         "antiburst"
       ],
       "b": "tank",
-      "tier": null
+      "tier": "C"
     },
     {
       "n": "Vale",
@@ -1394,7 +1394,7 @@
       "t": "bc",
       "s": [],
       "b": "mage",
-      "tier": null
+      "tier": "B"
     },
     {
       "n": "Valentina",
@@ -1405,7 +1405,7 @@
         "anticc"
       ],
       "b": "mage",
-      "tier": null
+      "tier": "D"
     },
     {
       "n": "Valir",
@@ -1414,7 +1414,7 @@
       "t": "c",
       "s": [],
       "b": "mage",
-      "tier": null
+      "tier": "S"
     },
     {
       "n": "Vexana",
@@ -1423,7 +1423,7 @@
       "t": "c",
       "s": [],
       "b": "mage",
-      "tier": null
+      "tier": "B"
     },
     {
       "n": "Wanwan",
@@ -1434,7 +1434,7 @@
         "antitank"
       ],
       "b": "mmA",
-      "tier": null
+      "tier": "C"
     },
     {
       "n": "X.Borg",
@@ -1445,7 +1445,7 @@
         "antitank"
       ],
       "b": "fP",
-      "tier": null
+      "tier": "B"
     },
     {
       "n": "Xavier",
@@ -1454,7 +1454,7 @@
       "t": "b",
       "s": [],
       "b": "mage",
-      "tier": null
+      "tier": "B"
     },
     {
       "n": "Yi Sun-shin",
@@ -1463,7 +1463,7 @@
       "t": "",
       "s": [],
       "b": "mmC",
-      "tier": null,
+      "tier": "B",
       "wr": 49.6
     },
     {
@@ -1475,7 +1475,7 @@
         "antisquishy"
       ],
       "b": "fP",
-      "tier": null
+      "tier": "C"
     },
     {
       "n": "Yu Zhong",
@@ -1484,7 +1484,7 @@
       "t": "hcd",
       "s": [],
       "b": "fP",
-      "tier": null
+      "tier": "C"
     },
     {
       "n": "Yve",
@@ -1493,7 +1493,7 @@
       "t": "c",
       "s": [],
       "b": "mage",
-      "tier": null
+      "tier": "B"
     },
     {
       "n": "Zhask",
@@ -1502,7 +1502,7 @@
       "t": "",
       "s": [],
       "b": "mage",
-      "tier": null
+      "tier": "A"
     },
     {
       "n": "Zhuxin",
@@ -1511,7 +1511,7 @@
       "t": "c",
       "s": [],
       "b": "mage",
-      "tier": null
+      "tier": "B"
     },
     {
       "n": "Zilong",
@@ -1520,7 +1520,7 @@
       "t": "d",
       "s": [],
       "b": "fP",
-      "tier": null
+      "tier": "D"
     }
   ],
   "counters": {
@@ -1610,6 +1610,157 @@
       "Brave Smite",
       "Focusing Mark",
       "Weakness Finder"
+    ]
+  },
+  "tierSource": {
+    "name": "mlbbhub.com",
+    "url": "https://mlbbhub.com/tier-list",
+    "date": "2026-10-16",
+    "patch": "2.2.16a"
+  },
+  "tierList": {
+    "S": [
+      "Masha",
+      "Aulus",
+      "Marcel",
+      "Rafaela",
+      "Argus",
+      "Minotaur",
+      "Khufra",
+      "Popol and Kupa",
+      "Gloo",
+      "Floryn",
+      "Valir",
+      "Carmilla",
+      "Obsidia"
+    ],
+    "A": [
+      "Lolita",
+      "Diggie",
+      "Bruno",
+      "Gord",
+      "Lukas",
+      "Hirara",
+      "Estes",
+      "Benedetta",
+      "Edith",
+      "Irithel",
+      "Ling",
+      "Sun",
+      "Zhask",
+      "Hanabi",
+      "Atlas",
+      "Belerick",
+      "Barats",
+      "Kagura",
+      "Minsitthar",
+      "Kadita",
+      "Eudora",
+      "Zetian"
+    ],
+    "B": [
+      "Yve",
+      "Bane",
+      "Cyclops",
+      "Fredrinn",
+      "Guinevere",
+      "Beatrix",
+      "Natan",
+      "Faramis",
+      "Natalia",
+      "Silvanna",
+      "Cecilion",
+      "Alice",
+      "Terizla",
+      "Brody",
+      "Leomord",
+      "Khaleed",
+      "Hilda",
+      "Clint",
+      "Akai",
+      "Aldous",
+      "Paquito",
+      "Zhuxin",
+      "Badang",
+      "Aamon",
+      "Vale",
+      "Julian",
+      "Ixia",
+      "Saber",
+      "Moskov",
+      "X.Borg",
+      "Kaja",
+      "Hanzo",
+      "Novaria",
+      "Xavier",
+      "Suyou",
+      "Sora",
+      "Yi Sun-shin",
+      "Ruby",
+      "Vexana",
+      "Layla",
+      "Lylia",
+      "Cici",
+      "Miya",
+      "Odette",
+      "Angela",
+      "Claude",
+      "Nolan",
+      "Selena",
+      "Dyrroth",
+      "Lesley"
+    ],
+    "C": [
+      "Joy",
+      "Uranus",
+      "Yu Zhong",
+      "Hylos",
+      "Yin",
+      "Roger",
+      "Thamuz",
+      "Karrie",
+      "Kimmy",
+      "Lapu-Lapu",
+      "Melissa",
+      "Aurora",
+      "Phoveus",
+      "Johnson",
+      "Lunox",
+      "Hayabusa",
+      "Wanwan",
+      "Alpha",
+      "Freya",
+      "Alucard",
+      "Arlott",
+      "Gusion",
+      "Luo Yi",
+      "Chang'e",
+      "Jawhead",
+      "Karina",
+      "Harley",
+      "Chip",
+      "Nana",
+      "Pharsa",
+      "Martis",
+      "Esmeralda",
+      "Grock",
+      "Helcurt"
+    ],
+    "D": [
+      "Baxia",
+      "Kalea",
+      "Balmond",
+      "Harith",
+      "Zilong",
+      "Valentina",
+      "Chou",
+      "Gatotkaca",
+      "Mathilda",
+      "Tigreal",
+      "Granger",
+      "Lancelot",
+      "Fanny",
+      "Franco"
     ]
   }
 }
