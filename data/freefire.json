@@ -23,7 +23,7 @@
         "cs",
         "rush"
       ],
-      "tier": null
+      "tier": "S"
     },
     {
       "n": "Andrew",
@@ -62,7 +62,7 @@
         "antisniper",
         "armor"
       ],
-      "tier": null
+      "tier": "S"
     },
     {
       "n": "Clu",
@@ -72,7 +72,7 @@
         "sniper",
         "br"
       ],
-      "tier": null
+      "tier": "C"
     },
     {
       "n": "Dasha",
@@ -81,7 +81,7 @@
         "rush",
         "br"
       ],
-      "tier": null
+      "tier": "S"
     },
     {
       "n": "Dimitri",
@@ -91,7 +91,7 @@
         "support",
         "br"
       ],
-      "tier": null
+      "tier": "A"
     },
     {
       "n": "Ford",
@@ -99,7 +99,7 @@
       "tags": [
         "br"
       ],
-      "tier": null
+      "tier": "C"
     },
     {
       "n": "Hayato",
@@ -109,7 +109,7 @@
         "sniper",
         "cs"
       ],
-      "tier": null
+      "tier": "B"
     },
     {
       "n": "Homer",
@@ -148,7 +148,7 @@
         "rush",
         "cs"
       ],
-      "tier": null
+      "tier": "A"
     },
     {
       "n": "K",
@@ -159,7 +159,7 @@
         "br",
         "cs"
       ],
-      "tier": null
+      "tier": "A"
     },
     {
       "n": "Kapella",
@@ -178,7 +178,7 @@
         "rush",
         "br"
       ],
-      "tier": null
+      "tier": "B"
     },
     {
       "n": "Kenta",
@@ -190,6 +190,15 @@
         "cs"
       ],
       "tier": null
+    },
+    {
+      "n": "Koda",
+      "type": "p",
+      "tags": [
+        "intel",
+        "br"
+      ],
+      "tier": "B"
     },
     {
       "n": "Laura",
@@ -208,6 +217,15 @@
         "cs"
       ],
       "tier": null
+    },
+    {
+      "n": "Luna",
+      "type": "p",
+      "tags": [
+        "rush",
+        "cs"
+      ],
+      "tier": "B"
     },
     {
       "n": "Luqueta",
@@ -247,7 +265,17 @@
         "br",
         "cs"
       ],
-      "tier": null
+      "tier": "B"
+    },
+    {
+      "n": "Nairi",
+      "type": "a",
+      "tags": [
+        "heal",
+        "support",
+        "antisniper"
+      ],
+      "tier": "A"
     },
     {
       "n": "Olivia",
@@ -275,7 +303,7 @@
         "intel",
         "br"
       ],
-      "tier": null
+      "tier": "C"
     },
     {
       "n": "Rafael",
@@ -287,13 +315,33 @@
       "tier": null
     },
     {
+      "n": "Ray",
+      "type": "a",
+      "tags": [
+        "intel",
+        "rush",
+        "cs"
+      ],
+      "tier": "S"
+    },
+    {
       "n": "Shani",
       "type": "p",
       "tags": [
         "armor",
         "cs"
       ],
-      "tier": null
+      "tier": "A"
+    },
+    {
+      "n": "Shirou",
+      "type": "p",
+      "tags": [
+        "intel",
+        "rush",
+        "cs"
+      ],
+      "tier": "C"
     },
     {
       "n": "Skyler",
@@ -303,7 +351,16 @@
         "rush",
         "cs"
       ],
-      "tier": null
+      "tier": "S"
+    },
+    {
+      "n": "Sonia",
+      "type": "p",
+      "tags": [
+        "armor",
+        "cs"
+      ],
+      "tier": "B"
     },
     {
       "n": "Steffie",
@@ -323,7 +380,7 @@
         "mobility",
         "cs"
       ],
-      "tier": null
+      "tier": "A"
     },
     {
       "n": "Thiva",
@@ -342,7 +399,7 @@
         "mobility",
         "antisniper"
       ],
-      "tier": null
+      "tier": "A"
     },
     {
       "n": "Xayne",
@@ -353,7 +410,47 @@
         "armor",
         "cs"
       ],
-      "tier": null
+      "tier": "A"
     }
-  ]
+  ],
+  "tierList": {
+    "S": [
+      "Alok",
+      "Ray",
+      "Chrono",
+      "Dasha",
+      "Skyler"
+    ],
+    "A": [
+      "Jota",
+      "K",
+      "Tatsuya",
+      "Wukong",
+      "Dimitri",
+      "Xayne",
+      "Shani",
+      "Nairi"
+    ],
+    "B": [
+      "Kelly",
+      "Hayato",
+      "Moco",
+      "Koda",
+      "Sonia",
+      "Kassie",
+      "Luna"
+    ],
+    "C": [
+      "Ford",
+      "Clu",
+      "Shirou",
+      "Otho"
+    ]
+  },
+  "tierSource": {
+    "name": "Joytify (OB53)",
+    "url": "https://www.joytify.com/blog/en-my/fps-free-fire-character-tier-list/",
+    "date": "2026-05-08",
+    "patch": "OB53"
+  }
 }

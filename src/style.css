@@ -160,3 +160,10 @@ ul.mm li.bad{color:var(--red)}ul.mm li.good{color:var(--green)}
 .rf button{display:inline-flex;align-items:center;gap:5px;white-space:nowrap}
 .seg button{min-height:38px}
 @media (prefers-reduced-motion:reduce){.micbtn.rec{animation:none}}
+
+.poolcard{display:flex;flex-direction:column;gap:8px}
+.poolcard.empty{border-color:var(--gold);background:linear-gradient(0deg,var(--panel),var(--panel)),var(--gold-bg)}
+.poolhead{display:flex;justify-content:space-between;align-items:center;gap:10px;flex-wrap:wrap}
+.poolhead .btn{padding:8px 14px;font-size:.9rem}
+.poolcard .note{margin:0}
+.badge{margin:8px 0 0;color:var(--gold);font-size:.9rem}

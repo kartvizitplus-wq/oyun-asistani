@@ -103,16 +103,31 @@
       p.appendChild(b);
     });
   }
+  let poolOpen = false;
   function renderMyPool() {
+    const n = st.pool.length;
+    $('poolHint').textContent = n ? t('poolCount', { n }) : t('poolEmpty');
+    $('poolcard').classList.toggle('empty', !n);
+    const sel = $('poolSel'); sel.innerHTML = '';
+    st.pool.forEach(x => sel.appendChild(el('span', { class: 'tierlink' }, I.hero(x, roleOf[x], 20) + '<span>' + esc(x) + '</span>')));
+    const pm = $('poolMode'); pm.innerHTML = ''; pm.hidden = !n;
+    [[true, t('poolOnly')], [false, t('poolAll')]].forEach(([k, label]) => {
+      const b = el('button', { type: 'button', 'aria-pressed': String(st.poolOnly !== false ? k : !k) }, esc(label));
+      b.onclick = () => { st.poolOnly = k; update(); };
+      pm.appendChild(b);
+    });
+    $('poolPicker').hidden = !poolOpen;
+    $('poolEdit').textContent = poolOpen ? t('poolDone') : t('poolEdit');
+    if (!poolOpen) return;
     const q = $('pq').value.trim().toLowerCase(), p = $('mypool'); p.innerHTML = '';
-    all.filter(n => !q || n.toLowerCase().includes(q)).forEach(n => {
-      const on = st.pool.includes(n), b = chip(n, on ? 'mine' : '');
+    all.filter(x => !q || x.toLowerCase().includes(q)).forEach(x => {
+      const on = st.pool.includes(x), b = chip(x, on ? 'mine' : '');
       b.setAttribute('aria-pressed', on);
-      b.onclick = () => { st.pool = on ? st.pool.filter(x => x !== n) : [...st.pool, n]; update(); };
+      b.onclick = () => { st.pool = on ? st.pool.filter(y => y !== x) : [...st.pool, x]; update(); };
       p.appendChild(b);
     });
-    $('poolcount').textContent = st.pool.length ? ' (' + st.pool.length + ')' : '';
   }
+  const activePool = () => st.poolOnly === false ? [] : st.pool;
   function whyText(w) {
     if (typeof w === 'string') return t(w);
     if (w.k === 'bw_counter') return t('bw_counter', { cls: t('cl_' + w.cls) });
@@ -124,7 +139,7 @@
   function renderPicks() {
     const pk = $('picks'); pk.innerHTML = '';
     if (!st.e.length) { pk.innerHTML = '<p class="note">' + esc(t('noEnemy')) + '</p>'; lastPicks = []; return; }
-    let res = isMoba ? E.mlScore(A.data, st.e, st.pool, st.a) : E.bsScore(A.data, st.e, st.mode, st.pool);
+    let res = isMoba ? E.mlScore(A.data, st.e, activePool(), st.a) : E.bsScore(A.data, st.e, st.mode, activePool());
     if (st.lane) res = res.filter(r => (lanesOf[r.n] || []).includes(st.lane));
     lastPicks = res.slice(0, 6);
     lastPicks.forEach((r, i) => {
@@ -151,11 +166,24 @@
     const hero = currentHero();
     $('reportHint').textContent = t('reportHint', { h: hero });
     $('reportMsg').textContent = '';
+    renderBadge();
+  }
+  const RKEY = 'reports-' + A.game;
+  const reportCount = () => { try { return +localStorage.getItem(RKEY) || 0; } catch (e) { return 0; } };
+  let lastReported = '';
+  function renderBadge() {
+    const box = $('badge'); if (!box) return;
+    const n = reportCount();
+    if (!n) { box.textContent = ''; return; }
+    const tiers = [[50, 'b50'], [20, 'b20'], [5, 'b5'], [1, 'b1']], cur = tiers.find(([k]) => n >= k), next = [1, 5, 20, 50].find(k => k > n);
+    box.innerHTML = '<b>' + esc(t(cur[1])) + '</b> · ' + esc(t('badgeCount', { n })) + (next ? ' ' + esc(t('badgeNext', { n: next })) : '');
   }
   async function sendReport(result) {
-    const msg = $('reportMsg');
+    const msg = $('reportMsg'), key = currentHero() + '|' + st.e.join(',');
+    if (key === lastReported) { msg.textContent = t('reportSent'); return; }
     try {
       const r = await fetch('/api/vote', { method: 'POST', headers: { 'content-type': 'application/json' }, body: JSON.stringify({ game: A.game, hero: currentHero(), enemy: st.e, result }) });
+      if (r.ok) { lastReported = key; try { localStorage.setItem(RKEY, String(reportCount() + 1)); } catch (e) {} renderBadge(); }
       msg.textContent = r.ok ? t('thanks') : t('reportFail');
     } catch (e) { msg.textContent = t('reportFail'); }
   }
@@ -295,6 +323,7 @@
   if ($('sideE')) { $('sideE').onclick = () => { st.side = 'e'; update(); }; $('sideA').onclick = () => { st.side = 'a'; update(); }; }
   $('q').oninput = renderPool;
   $('pq').oninput = renderMyPool;
+  $('poolEdit').onclick = () => { poolOpen = !poolOpen; renderMyPool(); if (poolOpen) $('pq').focus(); };
   if (isMoba) $('heroSel').onchange = e => { st.hero = e.target.value; update(); };
   update();
 

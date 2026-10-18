@@ -127,6 +127,24 @@ ${showcase(lang)}
     const listOf = arr => { try { return new Intl.ListFormat(lang, { type: 'conjunction' }).format(arr); } catch (e) { return arr.join(', '); } };
     const faqBlock = qa => qa.length ? `<section class="faq"><h2>${esc(t.faqTitle)}</h2>${qa.map(([q, a]) => `<h3>${esc(q)}</h3><p>${esc(a)}</p>`).join('')}</section>` : '';
     const faqLd = qa => qa.length ? { '@context': 'https://schema.org', '@type': 'FAQPage', mainEntity: qa.map(([q, a]) => ({ '@type': 'Question', name: q, acceptedAnswer: { '@type': 'Answer', text: a } })) } : null;
+    /* Tier list page (sourced, refreshed weekly by the updater). */
+    const writeTier = (list, rOf) => {
+        const byName = Object.fromEntries(list.map(h => [h.n.toLowerCase(), h]));
+        const chipFor = n => { const h = byName[n.toLowerCase()]; return h ? `<a href="/${gp}/${slug(h.n)}/" class="tierlink">${Icons.hero(h.n, rOf(h), 22)}<span>${esc(h.n)}</span></a>` : `<span class="tierlink nolink" title="${esc(t.tl_new)}">${Icons.hero(n, '', 22)}<span>${esc(n)}</span></span>`; };
+        const rows = tl => ['S', 'A', 'B', 'C', 'D'].filter(k => tl[k] && tl[k].length).map(k => `<div class="tierrow"><span class="tierbadge t${k}">${k}</span><div class="list-links">${tl[k].map(chipFor).join('')}</div></div>`).join('');
+        const lanes = D.tierListByLane ? Object.entries(D.tierList) : null;
+        const sTop = lanes ? [...new Set(lanes.flatMap(([, tl]) => tl.S || []))] : (D.tierList.S || []);
+        const src = D.tierSource || {};
+        const tlPeriod = D.patch ? period : src.patch ? fill(t.patchLbl, { v: src.patch }) : period;
+        const tqa = [[tt('tl_q', { g: g.name }), tt('tl_a', { list: listOf(sTop.slice(0, 10)) })]];
+        const tbody = `<section><h1>${esc(tt('tl_h1', { g: g.name }))} <span class="tlper">${esc(tlPeriod)}</span></h1><p class="lead">${esc(tt('tl_intro', { src: src.name || '' }))}</p>
+<p class="note">${esc(t.tl_src)}: ${src.url ? `<a href="${esc(src.url)}" rel="nofollow noopener" target="_blank">${esc(src.name)}</a>` : esc(src.name || '')} · ${esc(src.date || D.updated)}</p></section>
+${lanes ? lanes.map(([lane, tl]) => `<section><h2>${esc(t['tl_lane_' + lane] || lane)}</h2><div class="card tiers">${rows(tl)}</div></section>`).join('') : `<section><div class="card tiers">${rows(D.tierList)}</div></section>`}
+<div class="bar"><a class="btn" href="/${gp}/">${esc(gameTitle(g))} →</a></div>
+${faqBlock(tqa)}`;
+        write(`${gp}/tier-list/index.html`, layout({ lang, rel: `${gp}/tier-list/`, active: g.id, body: tbody, jsonld: faqLd(tqa),
+          title: tt('tl_title', { g: g.name, p: tlPeriod }), desc: tt('tl_desc', { g: g.name, top: listOf(sTop.slice(0, 4)), d: dateTxt }) }));
+      };
     const app = { lang, game: g.id, kind: g.kind, t: tSub, data: D, example: g.example || null, itemsTr: lang === 'tr' && g.id === 'mlbb' ? ITEMS_TR : null };
 
     if (g.kind === 'moba' || g.kind === 'bs') {
@@ -147,39 +165,23 @@ ${isMoba ? `<h2 style="margin-top:14px">${esc(t.myTeam)}</h2><div class="slots" 
 ${isMoba ? '' : `<section><h2>${esc(t.mode)}</h2><div class="row seg" id="modes"></div></section>`}
 ${isMoba ? `<section><h2>${esc(t.teamAnalysis)}</h2><div class="card teams" id="team"></div></section>
 <section><h2>${esc(t.bansTitle)}</h2><div class="card" id="bans"></div></section>` : ''}
+<section class="card poolcard" id="poolcard"><div class="poolhead"><h2 style="margin:0">⭐ ${esc(t.myPool)}</h2><button class="btn ghost" id="poolEdit" type="button">${esc(t.poolEdit)}</button></div>
+<p class="note" id="poolHint"></p><div class="list-links" id="poolSel"></div><div class="row seg" id="poolMode"></div>
+<div id="poolPicker" hidden><input id="pq" type="search" placeholder="${esc(t.search)}" autocomplete="off" aria-label="${esc(t.search)}"><div class="pool" id="mypool"></div></div></section>
 <section><h2>${esc(t.bestPicks)}</h2>${D.lanes ? `<div class="row seg" style="margin-bottom:10px"><span class="note">${esc(t.myLane)}:</span><span class="row seg" id="laneSeg"></span></div>` : ''}<div class="card" id="picks"></div>
-<details class="poolbox card" style="margin-top:10px"><summary>${esc(t.myPool)}<span id="poolcount"></span></summary>
-<p class="note">${esc(t.poolHint)}</p><input id="pq" type="search" placeholder="${esc(t.search)}" autocomplete="off" aria-label="${esc(t.search)}"><div class="pool" id="mypool"></div></details></section>
+</section>
 ${isMoba ? `<section id="buildsec"><h2>${esc(t.yourHero)}</h2><div class="heroline"><span id="heroIcon"></span>
 <select class="lang" id="heroSel" aria-label="${esc(t.yourHero)}" style="font-size:1rem;padding:8px 10px;max-width:260px"></select></div>
 <div class="card" id="myMatch" style="margin-top:10px"></div></section>
 <section><h2>${esc(t.buildTitle)}</h2><div class="card"><p class="note" id="partial" hidden>${esc(t.partialNote)}</p><ol class="build" id="build"></ol><h2 id="emblemHead" style="margin:16px 0 10px" hidden></h2><ol class="build" id="emblem" hidden></ol><ul class="tips" id="tips"></ul></div>
 <p class="note" style="margin-top:8px">${esc(t.itemNote)}</p></section>
 <section class="card" id="report"><h2>${esc(t.reportTitle)}</h2><p class="note" id="reportHint"></p>
-<div class="bar"><button class="btn" id="winBtn" type="button">✓ ${esc(t.winBtn)}</button><button class="btn ghost" id="lossBtn" type="button">✕ ${esc(t.lossBtn)}</button></div><p class="note" id="reportMsg" aria-live="polite"></p></section>` : `<section><div class="card"><ul class="tips" id="tips" style="margin:0"></ul></div></section>`}
+<div class="bar"><button class="btn" id="winBtn" type="button">✓ ${esc(t.winBtn)}</button><button class="btn ghost" id="lossBtn" type="button">✕ ${esc(t.lossBtn)}</button></div><p class="note" id="reportMsg" aria-live="polite"></p><p class="badge" id="badge"></p></section>` : `<section><div class="card"><ul class="tips" id="tips" style="margin:0"></ul></div></section>`}
 <div class="bar"><button class="btn" id="speak" type="button">🔊 ${esc(t.speak)}</button><button class="btn ghost" id="clear" type="button">${esc(t.clear)}</button>${isMoba ? `<a class="btn ghost" href="/${gp}/draft/">🎯 ${esc(t.draftLink)}</a>` : ''}</div>
 <section><h2>${esc(isMoba ? t.allHeroes : t.allBrawlers)}</h2><div class="list-links">${links}</div></section>`;
       write(`${gp}/index.html`, layout({ lang, rel: `${gp}/`, title: `${gameTitle(g)} · ${cfg.siteName}`, desc: gameDesc(g), active: g.id, body, app }));
 
-      /* Tier list page (sourced, refreshed weekly by the updater). */
-      if (D.tierList) {
-        const byName = Object.fromEntries(list.map(h => [h.n.toLowerCase(), h]));
-        const rOf = h => isMoba ? h.r : h.c;
-        const chipFor = n => { const h = byName[n.toLowerCase()]; return h ? `<a href="/${gp}/${slug(h.n)}/" class="tierlink">${Icons.hero(h.n, rOf(h), 22)}<span>${esc(h.n)}</span></a>` : `<span class="tierlink nolink" title="${esc(t.tl_new)}">${Icons.hero(n, '', 22)}<span>${esc(n)}</span></span>`; };
-        const rows = tl => ['S', 'A', 'B', 'C', 'D'].filter(k => tl[k] && tl[k].length).map(k => `<div class="tierrow"><span class="tierbadge t${k}">${k}</span><div class="list-links">${tl[k].map(chipFor).join('')}</div></div>`).join('');
-        const lanes = D.tierListByLane ? Object.entries(D.tierList) : null;
-        const sTop = lanes ? [...new Set(lanes.flatMap(([, tl]) => tl.S || []))] : (D.tierList.S || []);
-        const src = D.tierSource || {};
-        const tlPeriod = D.patch ? period : src.patch ? fill(t.patchLbl, { v: src.patch }) : period;
-        const tqa = [[tt('tl_q', { g: g.name }), tt('tl_a', { list: listOf(sTop.slice(0, 10)) })]];
-        const tbody = `<section><h1>${esc(tt('tl_h1', { g: g.name }))} <span class="tlper">${esc(tlPeriod)}</span></h1><p class="lead">${esc(tt('tl_intro', { src: src.name || '' }))}</p>
-<p class="note">${esc(t.tl_src)}: ${src.url ? `<a href="${esc(src.url)}" rel="nofollow noopener" target="_blank">${esc(src.name)}</a>` : esc(src.name || '')} · ${esc(src.date || D.updated)}</p></section>
-${lanes ? lanes.map(([lane, tl]) => `<section><h2>${esc(t['tl_lane_' + lane] || lane)}</h2><div class="card tiers">${rows(tl)}</div></section>`).join('') : `<section><div class="card tiers">${rows(D.tierList)}</div></section>`}
-<div class="bar"><a class="btn" href="/${gp}/">${esc(gameTitle(g))} →</a></div>
-${faqBlock(tqa)}`;
-        write(`${gp}/tier-list/index.html`, layout({ lang, rel: `${gp}/tier-list/`, active: g.id, body: tbody, jsonld: faqLd(tqa),
-          title: tt('tl_title', { g: g.name, p: tlPeriod }), desc: tt('tl_desc', { g: g.name, top: listOf(sTop.slice(0, 4)), d: dateTxt }) }));
-      }
+      if (D.tierList) writeTier(list, h => isMoba ? h.r : h.c);
       if (isMoba) write(`${gp}/draft/index.html`, layout({
         lang, rel: `${gp}/draft/`, active: g.id, app: { lang, game: g.id, kind: 'draft', t: tSub, data: D, itemsTr: lang === 'tr' && g.id === 'mlbb' ? ITEMS_TR : null },
         title: `${tt('draftTitle', { g: g.name })} · ${cfg.siteName}`, desc: t.draftDesc,
@@ -266,7 +268,7 @@ ${faqBlock(qa)}
     if (g.kind === 'ff') {
       const chars = D.characters;
       const links = chars.map(c => `<a href="/${gp}/${slug(c.n)}/">${esc(c.n)}</a>`).join('');
-      const body = `<section><h1>${esc(t.ffToolTitle)}</h1><p class="lead">${esc(t.ffToolDesc)} <a href="/${lang}/guide/">${esc(GUIDE[lang].nav)} →</a></p></section>
+      const body = `<section><h1>${esc(t.ffToolTitle)}</h1><p class="lead">${esc(t.ffToolDesc)} <a href="/${lang}/guide/">${esc(GUIDE[lang].nav)} →</a>${D.tierList ? ` · <a href="/${gp}/tier-list/">${esc(tt('tl_h1', { g: g.name }))} →</a>` : ''}</p></section>
 <section><h2>${esc(t.playstyle)}</h2><div class="row seg" id="styles"></div></section>
 <section><h2>${esc(t.ffMode)}</h2><div class="row seg" id="ffmodes"></div></section>
 <section><h2>${esc(t.threats)}</h2><div class="row seg" id="threats"></div></section>
@@ -274,6 +276,7 @@ ${faqBlock(qa)}
 <div class="bar"><button class="btn" id="speak" type="button">🔊 ${esc(t.speak)}</button></div>
 <section><h2>${esc(t.allCharacters)}</h2><div class="list-links">${links}</div></section>`;
       write(`${gp}/index.html`, layout({ lang, rel: `${gp}/`, title: `${t.ffToolTitle} · ${cfg.siteName}`, desc: t.ffToolDesc, active: g.id, body, app }));
+      if (D.tierList) writeTier(chars, c => c.type);
       for (const c of chars) {
         const best = Engine.ffBestStyle(D, c.n);
         const combo = Engine.ffCombo(D, best.style, best.mode, [], c.n);

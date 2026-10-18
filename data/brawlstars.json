@@ -10,6 +10,12 @@
       "tier": "A"
     },
     {
+      "n": "Alli",
+      "c": "assassin",
+      "s": [],
+      "tier": "D"
+    },
+    {
       "n": "Amber",
       "c": "controller",
       "s": [],
@@ -66,6 +72,12 @@
     {
       "n": "Bo",
       "c": "controller",
+      "s": [],
+      "tier": "A"
+    },
+    {
+      "n": "Bolt",
+      "c": "tank",
       "s": [],
       "tier": "A"
     },
@@ -176,6 +188,12 @@
       "tier": "D"
     },
     {
+      "n": "Damian",
+      "c": "tank",
+      "s": [],
+      "tier": "B"
+    },
+    {
       "n": "Darryl",
       "c": "tank",
       "s": [
@@ -241,6 +259,12 @@
       "tier": "C"
     },
     {
+      "n": "Finx",
+      "c": "controller",
+      "s": [],
+      "tier": "D"
+    },
+    {
       "n": "Frank",
       "c": "tank",
       "s": [
@@ -262,6 +286,18 @@
       "c": "controller",
       "s": [],
       "tier": null
+    },
+    {
+      "n": "Gigi",
+      "c": "assassin",
+      "s": [],
+      "tier": "B"
+    },
+    {
+      "n": "Glowy",
+      "c": "support",
+      "s": [],
+      "tier": "D"
     },
     {
       "n": "Gray",
@@ -304,6 +340,12 @@
       "tier": "D"
     },
     {
+      "n": "Jae-yong",
+      "c": "support",
+      "s": [],
+      "tier": "D"
+    },
+    {
       "n": "Janet",
       "c": "marksman",
       "s": [],
@@ -314,6 +356,18 @@
       "c": "controller",
       "s": [],
       "tier": "C"
+    },
+    {
+      "n": "Juju",
+      "c": "artillery",
+      "s": [],
+      "tier": "S"
+    },
+    {
+      "n": "Kaze",
+      "c": "assassin",
+      "s": [],
+      "tier": "D"
     },
     {
       "n": "Kenji",
@@ -362,6 +416,12 @@
       "tier": "D"
     },
     {
+      "n": "Lumi",
+      "c": "damage",
+      "s": [],
+      "tier": null
+    },
+    {
       "n": "Maisie",
       "c": "marksman",
       "s": [],
@@ -378,6 +438,12 @@
       "c": "support",
       "s": [],
       "tier": "B"
+    },
+    {
+      "n": "Meeple",
+      "c": "controller",
+      "s": [],
+      "tier": "D"
     },
     {
       "n": "Meg",
@@ -398,6 +464,12 @@
       "tier": "C"
     },
     {
+      "n": "Mina",
+      "c": "damage",
+      "s": [],
+      "tier": "B"
+    },
+    {
       "n": "Moe",
       "c": "damage",
       "s": [],
@@ -416,6 +488,12 @@
       "tier": null
     },
     {
+      "n": "Najia",
+      "c": "damage",
+      "s": [],
+      "tier": null
+    },
+    {
       "n": "Nani",
       "c": "marksman",
       "s": [],
@@ -424,6 +502,18 @@
     {
       "n": "Nita",
       "c": "damage",
+      "s": [],
+      "tier": "A"
+    },
+    {
+      "n": "Nori",
+      "c": "assassin",
+      "s": [],
+      "tier": "A"
+    },
+    {
+      "n": "Ollie",
+      "c": "tank",
       "s": [],
       "tier": "A"
     },
@@ -454,6 +544,12 @@
       "c": "artillery",
       "s": [],
       "tier": "C"
+    },
+    {
+      "n": "Pierce",
+      "c": "marksman",
+      "s": [],
+      "tier": "B"
     },
     {
       "n": "Piper",
@@ -525,6 +621,12 @@
       "tier": "C"
     },
     {
+      "n": "Sirius",
+      "c": "controller",
+      "s": [],
+      "tier": "A"
+    },
+    {
       "n": "Spike",
       "c": "damage",
       "s": [
@@ -543,6 +645,12 @@
       "c": "controller",
       "s": [],
       "tier": "C"
+    },
+    {
+      "n": "Starr Nova",
+      "c": "assassin",
+      "s": [],
+      "tier": "B"
     },
     {
       "n": "Stu",
@@ -569,7 +677,25 @@
       "tier": "C"
     },
     {
+      "n": "Trunk",
+      "c": "tank",
+      "s": [],
+      "tier": "D"
+    },
+    {
+      "n": "Wendy",
+      "c": "support",
+      "s": [],
+      "tier": "S"
+    },
+    {
       "n": "Willow",
+      "c": "controller",
+      "s": [],
+      "tier": "C"
+    },
+    {
+      "n": "Ziggy",
       "c": "controller",
       "s": [],
       "tier": "C"
