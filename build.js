@@ -60,7 +60,7 @@ function layout({ lang, rel, title, desc, body, active, app, type, jsonld }) {
 ${verify}${base ? `<link rel="canonical" href="${base}/${rel}">` : ''}${alts}
 <meta property="og:title" content="${esc(title)}"><meta property="og:description" content="${esc(desc)}"><meta property="og:type" content="${type || 'website'}"><meta property="og:site_name" content="${esc(cfg.siteName)}">${base ? `<meta property="og:url" content="${base}/${rel}">` : ''}
 ${jsonld ? `<script type="application/ld+json">${JSON.stringify(jsonld).replace(/</g, '\\u003c')}</script>` : ''}
-<link rel="icon" href="/assets/icon.svg" type="image/svg+xml">
+<link rel="icon" href="/assets/icon.svg" type="image/svg+xml"><link rel="manifest" href="/manifest.webmanifest"><meta name="theme-color" content="#0c1018"><link rel="apple-touch-icon" href="/icons/icon-192.png">
 <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@500;700&family=IBM+Plex+Sans:wght@400;600&display=swap">
 <link rel="stylesheet" href="${asset('style.css')}">
@@ -140,12 +140,14 @@ ${showcase(lang)}
 ${isMoba ? `<h2 style="margin-top:14px">${esc(t.myTeam)}</h2><div class="slots" id="aslots" style="grid-template-columns:repeat(4,1fr)"></div>
 <div class="row seg" style="margin-top:12px"><span class="note">${esc(t.addingTo)}</span><button type="button" id="sideE">${esc(t.sideEnemy)}</button><button type="button" id="sideA">${esc(t.sideAlly)}</button></div>` : ''}
 <p class="note" id="example" hidden>${esc(t.exampleNote)}</p>
-<input id="q" type="search" placeholder="${esc(t.search)}" autocomplete="off" aria-label="${esc(t.search)}">
+<div class="searchrow"><input id="q" type="search" placeholder="${esc(t.search)}" autocomplete="off" aria-label="${esc(t.search)}"><button class="btn ghost micbtn" id="micBtn" type="button" hidden aria-label="${esc(t.voiceBtn)}">🎤 <span>${esc(t.voiceBtn)}</span></button></div>
+<p class="note" id="voiceMsg" aria-live="polite"></p>
+<div class="row seg rf" id="rf"></div>
 <div class="pool" id="pool"></div></section>
 ${isMoba ? '' : `<section><h2>${esc(t.mode)}</h2><div class="row seg" id="modes"></div></section>`}
 ${isMoba ? `<section><h2>${esc(t.teamAnalysis)}</h2><div class="card teams" id="team"></div></section>
 <section><h2>${esc(t.bansTitle)}</h2><div class="card" id="bans"></div></section>` : ''}
-<section><h2>${esc(t.bestPicks)}</h2><div class="card" id="picks"></div>
+<section><h2>${esc(t.bestPicks)}</h2>${D.lanes ? `<div class="row seg" style="margin-bottom:10px"><span class="note">${esc(t.myLane)}:</span><span class="row seg" id="laneSeg"></span></div>` : ''}<div class="card" id="picks"></div>
 <details class="poolbox card" style="margin-top:10px"><summary>${esc(t.myPool)}<span id="poolcount"></span></summary>
 <p class="note">${esc(t.poolHint)}</p><input id="pq" type="search" placeholder="${esc(t.search)}" autocomplete="off" aria-label="${esc(t.search)}"><div class="pool" id="mypool"></div></details></section>
 ${isMoba ? `<section id="buildsec"><h2>${esc(t.yourHero)}</h2><div class="heroline"><span id="heroIcon"></span>
@@ -212,7 +214,7 @@ ${faqBlock(tqa)}`;
 ${items.length ? `<section><h2>${esc(tt('hp_items', { x }))}</h2><div class="card"><ol class="build">${items.map(([i, r]) => `<li class="adapt">${itemHtml(lang, i, t)}<small class="why">${esc(t[r] || '')}</small></span></li>`).join('')}</ol></div></section>` : ''}
 ${strong.length ? `<section><h2>${esc(tt('hp_strong', { x }))}</h2><p style="margin:0">${esc(strong.map(k => t['s_' + k]).join(', '))}</p></section>` : ''}
 ${own.items.length ? `<section><h2>${esc(tt('hp_build', { x }))}</h2><div class="card"><ol class="build">${own.items.map(o => `<li>${itemHtml(lang, o.item, t)}</span></li>`).join('')}</ol>
-${own.emblem ? `<h2 style="margin:16px 0 10px">${esc(own.emblem.set ? t.emblemTitle : t.runeTitle)}</h2><ol class="build">${(own.emblem.set ? [['em_set', own.emblem.set], ['em_t1', own.emblem.t1], ['em_t2', own.emblem.t2], ['em_core', own.emblem.core]] : [['runeTitle', own.emblem.core]]).map(([k, v]) => `<li>${Icons.talent(v, 32)}<span class="iname">${esc(v)}<small class="why">${esc(t[k])}</small></span></li>`).join('')}</ol>` : ''}
+${own.emblem ? `<h2 style="margin:16px 0 10px">${esc(own.emblem.arcana ? t.arcanaTitle : own.emblem.set ? t.emblemTitle : t.runeTitle)}</h2><ol class="build">${(own.emblem.arcana ? own.emblem.arcana.map(a => ['arcanaSlot', a]) : own.emblem.set ? [['em_set', own.emblem.set], ['em_t1', own.emblem.t1], ['em_t2', own.emblem.t2], ['em_core', own.emblem.core]] : [['runeTitle', own.emblem.core]]).map(([k, v]) => `<li>${Icons.talent(v, 32)}<span class="iname">${esc(v)}<small class="why">${esc(t[k])}</small></span></li>`).join('')}</ol>` : ''}
 <ul class="tips"><li>${esc(t.spell)}: ${esc(itemName(lang, own.spell, t))}</li></ul></div></section>` : ''}`;
           /* How to play against this hero, derived from its traits and data. */
           const ah = Engine.mlCounterItems(D, x).find(([, r]) => r === 'r_antiheal');
@@ -231,7 +233,7 @@ ${own.emblem ? `<h2 style="margin:16px 0 10px">${esc(own.emblem.set ? t.emblemTi
           if (items.length) qa.push([tt('q_items', { x }), tt('a_items', { x, list: listOf(items.map(([i]) => itemName(lang, i, t))) })]);
           if (strong.length) qa.push([tt('q_strong', { x }), tt('a_strong', { x, list: listOf(strong.map(k => t['s_' + k])) })]);
           if (own.items.length) qa.push([tt('q_build', { x }), tt('a_build', { x, list: listOf(own.items.map(o => itemName(lang, o.item, t))) }) +
-            (own.emblem ? (own.emblem.set ? tt('a_emblem', { e: [own.emblem.set, own.emblem.t1, own.emblem.t2, own.emblem.core].join(', ') }) : tt('a_rune', { e: own.emblem.core })) : '')]);
+            (own.emblem ? (own.emblem.arcana ? tt('a_emblem', { e: own.emblem.arcana.join(', ') }).replace(/Emblem|Amblem|Emblema/, 'Arcana') : own.emblem.set ? tt('a_emblem', { e: [own.emblem.set, own.emblem.t1, own.emblem.t2, own.emblem.core].join(', ') }) : tt('a_rune', { e: own.emblem.core })) : '')]);
           topNames = top3.map(p => p.n);
         } else {
           const picks = Engine.bsScore(D, [x], null, null).slice(0, 8);
@@ -344,6 +346,13 @@ ${cfg.langs.map(l => `<a style="color:#e8b44a;margin-right:12px" href="/${l}/">$
 fs.mkdirSync(path.join(OUT, 'assets'), { recursive: true });
 for (const f of ['style.css', 'app.js', 'engine.js', 'icons.js']) fs.copyFileSync(R('src/' + f), path.join(OUT, 'assets', f));
 if (fs.existsSync(R('static'))) fs.cpSync(R('static'), OUT, { recursive: true });
+fs.writeFileSync(path.join(OUT, 'manifest.webmanifest'), JSON.stringify({
+  name: cfg.siteName + ' – ' + I18N.en.tagline, short_name: cfg.siteName, start_url: '/', scope: '/', display: 'standalone',
+  background_color: '#0c1018', theme_color: '#0c1018', description: I18N.en.homeText,
+  icons: [{ src: '/icons/icon-192.png', sizes: '192x192', type: 'image/png' }, { src: '/icons/icon-512.png', sizes: '512x512', type: 'image/png' },
+    { src: '/icons/icon-512.png', sizes: '512x512', type: 'image/png', purpose: 'maskable' }],
+  shortcuts: GAMES.map(g => ({ name: g.name, url: `/${cfg.defaultLang}/${g.slug}/` }))
+}, null, 1));
 fs.writeFileSync(path.join(OUT, 'assets/icon.svg'), '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32"><rect width="32" height="32" rx="7" fill="#0c1018"/><circle cx="16" cy="16" r="10" fill="none" stroke="#e8b44a" stroke-width="2.5"/><circle cx="16" cy="16" r="4" fill="#e2595b"/><path d="M16 3v6M16 23v6M3 16h6M23 16h6" stroke="#e8b44a" stroke-width="2.5"/></svg>');
 /* Search engines and AI assistants (search and answer bots) are explicitly welcome. */
 const AI_BOTS = ['Googlebot', 'Bingbot', 'OAI-SearchBot', 'ChatGPT-User', 'GPTBot', 'PerplexityBot', 'Perplexity-User', 'ClaudeBot', 'Claude-SearchBot', 'Claude-User', 'Google-Extended', 'Applebot', 'Applebot-Extended', 'DuckAssistBot', 'meta-externalagent'];

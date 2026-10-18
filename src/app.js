@@ -43,7 +43,10 @@
   const roleOf = Object.fromEntries(list.map(h => [h.n, isMoba ? h.r : h.c]));
   const wrOf = Object.fromEntries(list.filter(h => h.wr).map(h => [h.n, h.wr]));
   const maxEnemy = isMoba ? 5 : 3;
-  const st = load({ e: [], a: [], side: 'e', pool: [], hero: null, mode: 'gem' });
+  const st = load({ e: [], a: [], side: 'e', pool: [], hero: null, mode: 'gem', rf: '', lane: '' });
+  const lanesOf = Object.fromEntries(list.map(h => [h.n, h.lanes || []]));
+  const LANES = A.data.lanes || [];
+  if (st.lane && !LANES.includes(st.lane)) st.lane = '';
   st.e = (st.e || []).filter(n => all.includes(n));
   st.a = isMoba ? (st.a || []).filter(n => all.includes(n)) : [];
   if (!isMoba) st.side = 'e';
@@ -72,9 +75,28 @@
   }
   const target = () => st.side === 'a' ? st.a : st.e;
   const targetMax = () => st.side === 'a' ? maxAlly : maxEnemy;
+  function renderRoleFilter() {
+    const box = $('rf'); if (!box) return;
+    const roles = [...new Set(list.map(h => isMoba ? h.r : h.c))];
+    box.innerHTML = '';
+    [['', t('rfAll')], ...roles.map(r => [r, isMoba ? t('role_' + r) : t('cl_' + r)])].forEach(([k, label]) => {
+      const b = el('button', { type: 'button', 'aria-pressed': String(st.rf === k) }, (k ? I.talent(k.charAt(0).toUpperCase() + k.slice(1), 16) : '') + '<span>' + esc(label) + '</span>');
+      b.onclick = () => { st.rf = k; save(st); renderRoleFilter(); renderPool(); };
+      box.appendChild(b);
+    });
+  }
+  function renderLanes() {
+    const box = $('laneSeg'); if (!box || !LANES.length) return;
+    box.innerHTML = '';
+    [['', t('laneAll')], ...LANES.map(l => [l, t('ln_' + l)])].forEach(([k, label]) => {
+      const b = el('button', { type: 'button', 'aria-pressed': String(st.lane === k) }, esc(label));
+      b.onclick = () => { st.lane = k; update(); };
+      box.appendChild(b);
+    });
+  }
   function renderPool() {
     const q = $('q').value.trim().toLowerCase(), p = $('pool'); p.innerHTML = '';
-    all.filter(n => !q || n.toLowerCase().includes(q)).forEach(n => {
+    all.filter(n => (!q || n.toLowerCase().includes(q)) && (!st.rf || roleOf[n] === st.rf)).forEach(n => {
       const b = chip(n);
       b.disabled = st.e.includes(n) || st.a.includes(n) || target().length >= targetMax();
       b.onclick = () => { target().push(n); $('q').value = ''; example = false; update(); };
@@ -102,7 +124,8 @@
   function renderPicks() {
     const pk = $('picks'); pk.innerHTML = '';
     if (!st.e.length) { pk.innerHTML = '<p class="note">' + esc(t('noEnemy')) + '</p>'; lastPicks = []; return; }
-    const res = isMoba ? E.mlScore(A.data, st.e, st.pool, st.a) : E.bsScore(A.data, st.e, st.mode, st.pool);
+    let res = isMoba ? E.mlScore(A.data, st.e, st.pool, st.a) : E.bsScore(A.data, st.e, st.mode, st.pool);
+    if (st.lane) res = res.filter(r => (lanesOf[r.n] || []).includes(st.lane));
     lastPicks = res.slice(0, 6);
     lastPicks.forEach((r, i) => {
       const d = el('div', { class: 'pick' });
@@ -148,8 +171,8 @@
     box.innerHTML = '';
     head.hidden = box.hidden = !em;
     if (!em) return;
-    head.textContent = em.set ? t('emblemTitle') : t('runeTitle');
-    const parts = em.set ? [['em_set', em.set], ['em_t1', em.t1], ['em_t2', em.t2], ['em_core', em.core, em.coreAdapt]] : [['runeTitle', em.core]];
+    head.textContent = em.arcana ? t('arcanaTitle') : em.set ? t('emblemTitle') : t('runeTitle');
+    const parts = em.arcana ? em.arcana.map(a => ['arcanaSlot', a]) : em.set ? [['em_set', em.set], ['em_t1', em.t1], ['em_t2', em.t2], ['em_core', em.core, em.coreAdapt]] : [['runeTitle', em.core]];
     parts.filter(p => p[1]).forEach(([k, v, ad]) => {
       const li = el('li', { class: ad ? 'adapt' : '' }, I.talent(v, 32) + '<span class="iname">' + esc(v) + '<small class="why">' + esc(ad ? t('adapted') : t(k)) + '</small></span>');
       box.appendChild(li);
@@ -203,7 +226,7 @@
     [...m.children].forEach(b => b.setAttribute('aria-pressed', b.dataset.m === st.mode));
   }
   function update() {
-    renderSlots(); renderPool(); renderMyPool();
+    renderSlots(); renderRoleFilter(); renderLanes(); renderPool(); renderMyPool();
     if (!isMoba) renderModes();
     renderPicks();
     if (isMoba) { renderTeam(); renderBans(); renderBuild(); renderReport(); } else renderBsTips();
@@ -217,11 +240,54 @@
     if (isMoba) {
       const hero = currentHero(), b = E.mlBuild(A.data, hero, st.e);
       if (b.items.length) parts.push(t('say_build', { h: hero, items: b.items.map(x => itemName(x.item)).join(', ') }));
-      if (b.emblem) parts.push(t('say_emblem', { e: [b.emblem.set, b.emblem.t1, b.emblem.t2, b.emblem.core].filter(Boolean).join(', ') }));
+      if (b.emblem) parts.push(t('say_emblem', { e: (b.emblem.arcana || [b.emblem.set, b.emblem.t1, b.emblem.t2, b.emblem.core]).filter(Boolean).join(', ') }));
       parts.push(t('say_spell', { s: itemName(b.spell) }));
       parts.push(t(E.mlTips(A.data, st.e)[0]));
     } else if (lastPicks[0]) { parts.push(t('bt_' + lastPicks[0].c)); const g = A.data.gears && A.data.gears[lastPicks[0].c]; if (g) parts.push(t('gearTitle') + ': ' + g.join(', ') + '.'); }
     return parts.join(' ');
+  }
+  /* Voice input: say hero names, matched against the hero list (Web Speech API, runs in the browser). */
+  const norm = x => x.toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g, '').replace(/[^a-z0-9]/g, '');
+  const lev = (a, b) => { const d = Array.from({ length: a.length + 1 }, (_, i) => [i]); for (let j = 1; j <= b.length; j++) d[0][j] = j;
+    for (let i = 1; i <= a.length; i++) for (let j = 1; j <= b.length; j++) d[i][j] = Math.min(d[i - 1][j] + 1, d[i][j - 1] + 1, d[i - 1][j - 1] + (a[i - 1] === b[j - 1] ? 0 : 1)); return d[a.length][b.length]; };
+  function matchNames(text) {
+    const words = text.toLowerCase().split(/[\s,.;]+/).filter(Boolean), found = [];
+    const names = all.map(n => [n, norm(n), n.split(/[\s-]+/).length]);
+    for (let i = 0; i < words.length; i++) {
+      let best = null;
+      for (const [n, nn, k] of names) for (let w = Math.min(k + 1, 3); w >= 1; w--) {
+        const chunk = norm(words.slice(i, i + w).join(''));
+        if (!chunk) continue;
+        const dist = chunk === nn ? 0 : (nn.length >= 4 ? lev(chunk, nn) : 9);
+        const ok = dist === 0 || (dist <= 1 && nn.length >= 4) || (dist <= 2 && nn.length >= 7);
+        if (ok && (!best || dist < best.d || (dist === best.d && w > best.w))) best = { n, d: dist, w };
+      }
+      if (best) { if (!found.includes(best.n)) found.push(best.n); i += best.w - 1; }
+    }
+    return found;
+  }
+  const SR = window.SpeechRecognition || window.webkitSpeechRecognition;
+  const mic = $('micBtn');
+  if (mic && SR) {
+    mic.hidden = false;
+    mic.onclick = () => {
+      const msg = $('voiceMsg'), rec = new SR();
+      rec.lang = T.speechLang; rec.interimResults = false; rec.maxAlternatives = 3;
+      msg.textContent = t('voiceListening'); mic.classList.add('rec');
+      rec.onresult = ev => {
+        const alts = [...ev.results[0]].map(r => r.transcript);
+        let found = [];
+        for (const a of alts) { const f = matchNames(a); if (f.length > found.length) found = f; }
+        const room = targetMax() - target().length;
+        const add = found.filter(n => !st.e.includes(n) && !st.a.includes(n)).slice(0, Math.max(0, room));
+        add.forEach(n => target().push(n));
+        example = false; update();
+        msg.textContent = t('voiceHeard', { t: alts[0] }) + ' · ' + (add.length ? t('voiceAdded', { x: add.join(', ') }) : t('voiceNone'));
+      };
+      rec.onerror = () => { msg.textContent = t('voiceErr'); };
+      rec.onend = () => mic.classList.remove('rec');
+      try { rec.start(); } catch (e) { msg.textContent = t('voiceErr'); mic.classList.remove('rec'); }
+    };
   }
   $('speak').onclick = () => speak(speechText());
   $('clear').onclick = () => { st.e = []; st.a = []; example = false; update(); };
@@ -428,3 +494,6 @@
   const s = document.getElementById('langSel');
   if (s) s.onchange = () => { try { localStorage.setItem('lang', s.value); } catch (e) {} location.href = s.options[s.selectedIndex].dataset.href; };
 })();
+
+/* Installable app: register the service worker. */
+(function () { try { if ('serviceWorker' in navigator) window.addEventListener('load', () => navigator.serviceWorker.register('/sw.js').catch(() => {})); } catch (e) {} })();

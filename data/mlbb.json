@@ -2,7 +2,7 @@
   "game": "mlbb",
   "patch": "2.2.16",
   "updated": "2026-10-14",
-  "notes": "r=role, d=damage type (P/M), t=traits (h heal/sustain, c crowd control, b burst, d dash/mobility), s=strengths, b=build archetype, tier=S/A/B/C or null (set by weekly updater from patch notes/meta). build/spell override archetype defaults. wr = public ranked win rate (%) from data.wrSource; set only from a named public source, never estimated.",
+  "notes": "r=role, d=damage type (P/M), t=traits (h heal/sustain, c crowd control, b burst, d dash/mobility), s=strengths, b=build archetype, tier=S/A/B/C or null (set by weekly updater from patch notes/meta). build/spell override archetype defaults. wr = public ranked win rate (%) from data.wrSource; set only from a named public source, never estimated. lanes = lanes the hero is commonly played in.",
   "archetypes": {
     "fP": {
       "group": "front",
@@ -205,7 +205,10 @@
         "antisquishy"
       ],
       "b": "assM",
-      "tier": "B"
+      "tier": "B",
+      "lanes": [
+        "jungle"
+      ]
     },
     {
       "n": "Akai",
@@ -214,7 +217,11 @@
       "t": "cd",
       "s": [],
       "b": "tank",
-      "tier": "B"
+      "tier": "B",
+      "lanes": [
+        "roam",
+        "jungle"
+      ]
     },
     {
       "n": "Aldous",
@@ -226,7 +233,10 @@
       ],
       "b": "fP",
       "tier": "B",
-      "wr": 50.6
+      "wr": 50.6,
+      "lanes": [
+        "exp"
+      ]
     },
     {
       "n": "Alice",
@@ -235,7 +245,11 @@
       "t": "hd",
       "s": [],
       "b": "mage",
-      "tier": "B"
+      "tier": "B",
+      "lanes": [
+        "exp",
+        "mid"
+      ]
     },
     {
       "n": "Alpha",
@@ -247,7 +261,11 @@
       ],
       "b": "fP",
       "tier": "C",
-      "wr": 48.2
+      "wr": 48.2,
+      "lanes": [
+        "exp",
+        "jungle"
+      ]
     },
     {
       "n": "Alucard",
@@ -256,7 +274,11 @@
       "t": "hd",
       "s": [],
       "b": "fP",
-      "tier": "C"
+      "tier": "C",
+      "lanes": [
+        "jungle",
+        "exp"
+      ]
     },
     {
       "n": "Angela",
@@ -267,7 +289,10 @@
         "antiburst"
       ],
       "b": "support",
-      "tier": "B"
+      "tier": "B",
+      "lanes": [
+        "roam"
+      ]
     },
     {
       "n": "Argus",
@@ -277,7 +302,10 @@
       "s": [],
       "b": "fP",
       "tier": "S",
-      "wr": 56.0
+      "wr": 56.0,
+      "lanes": [
+        "exp"
+      ]
     },
     {
       "n": "Arlott",
@@ -286,7 +314,11 @@
       "t": "cd",
       "s": [],
       "b": "fP",
-      "tier": "C"
+      "tier": "C",
+      "lanes": [
+        "exp",
+        "roam"
+      ]
     },
     {
       "n": "Atlas",
@@ -295,7 +327,10 @@
       "t": "c",
       "s": [],
       "b": "tank",
-      "tier": "A"
+      "tier": "A",
+      "lanes": [
+        "roam"
+      ]
     },
     {
       "n": "Aulus",
@@ -315,7 +350,11 @@
         "Immortality"
       ],
       "tier": "S",
-      "wr": 60.0
+      "wr": 60.0,
+      "lanes": [
+        "exp",
+        "jungle"
+      ]
     },
     {
       "n": "Aurora",
@@ -326,7 +365,10 @@
         "antisquishy"
       ],
       "b": "mage",
-      "tier": "C"
+      "tier": "C",
+      "lanes": [
+        "mid"
+      ]
     },
     {
       "n": "Badang",
@@ -345,7 +387,10 @@
         "Queen's Wings",
         "Immortality"
       ],
-      "tier": "B"
+      "tier": "B",
+      "lanes": [
+        "exp"
+      ]
     },
     {
       "n": "Balmond",
@@ -354,7 +399,11 @@
       "t": "h",
       "s": [],
       "b": "fP",
-      "tier": "D"
+      "tier": "D",
+      "lanes": [
+        "jungle",
+        "exp"
+      ]
     },
     {
       "n": "Barats",
@@ -363,7 +412,11 @@
       "t": "c",
       "s": [],
       "b": "tank",
-      "tier": "A"
+      "tier": "A",
+      "lanes": [
+        "jungle",
+        "exp"
+      ]
     },
     {
       "n": "Baxia",
@@ -374,7 +427,11 @@
         "antiheal"
       ],
       "b": "tank",
-      "tier": "D"
+      "tier": "D",
+      "lanes": [
+        "jungle",
+        "roam"
+      ]
     },
     {
       "n": "Beatrix",
@@ -383,7 +440,10 @@
       "t": "b",
       "s": [],
       "b": "mmB",
-      "tier": "B"
+      "tier": "B",
+      "lanes": [
+        "gold"
+      ]
     },
     {
       "n": "Belerick",
@@ -402,7 +462,11 @@
         "Athena's Shield",
         "Immortality"
       ],
-      "tier": "A"
+      "tier": "A",
+      "lanes": [
+        "roam",
+        "exp"
+      ]
     },
     {
       "n": "Benedetta",
@@ -411,7 +475,10 @@
       "t": "d",
       "s": [],
       "b": "assP",
-      "tier": "A"
+      "tier": "A",
+      "lanes": [
+        "exp"
+      ]
     },
     {
       "n": "Brody",
@@ -420,7 +487,10 @@
       "t": "b",
       "s": [],
       "b": "mmB",
-      "tier": "B"
+      "tier": "B",
+      "lanes": [
+        "gold"
+      ]
     },
     {
       "n": "Bruno",
@@ -429,7 +499,10 @@
       "t": "",
       "s": [],
       "b": "mmC",
-      "tier": "A"
+      "tier": "A",
+      "lanes": [
+        "gold"
+      ]
     },
     {
       "n": "Carmilla",
@@ -438,7 +511,10 @@
       "t": "c",
       "s": [],
       "b": "support",
-      "tier": "S"
+      "tier": "S",
+      "lanes": [
+        "roam"
+      ]
     },
     {
       "n": "Cecilion",
@@ -449,7 +525,10 @@
         "antisquishy"
       ],
       "b": "mage",
-      "tier": "B"
+      "tier": "B",
+      "lanes": [
+        "mid"
+      ]
     },
     {
       "n": "Chang'e",
@@ -458,7 +537,10 @@
       "t": "",
       "s": [],
       "b": "mage",
-      "tier": "C"
+      "tier": "C",
+      "lanes": [
+        "mid"
+      ]
     },
     {
       "n": "Chip",
@@ -467,7 +549,10 @@
       "t": "c",
       "s": [],
       "b": "support",
-      "tier": "C"
+      "tier": "C",
+      "lanes": [
+        "roam"
+      ]
     },
     {
       "n": "Chou",
@@ -479,7 +564,11 @@
         "anticc"
       ],
       "b": "fP",
-      "tier": "D"
+      "tier": "D",
+      "lanes": [
+        "roam",
+        "exp"
+      ]
     },
     {
       "n": "Cici",
@@ -489,7 +578,10 @@
       "s": [],
       "b": "fP",
       "tier": "B",
-      "wr": 49.5
+      "wr": 49.5,
+      "lanes": [
+        "exp"
+      ]
     },
     {
       "n": "Claude",
@@ -498,7 +590,10 @@
       "t": "d",
       "s": [],
       "b": "mmA",
-      "tier": "B"
+      "tier": "B",
+      "lanes": [
+        "gold"
+      ]
     },
     {
       "n": "Clint",
@@ -507,7 +602,10 @@
       "t": "b",
       "s": [],
       "b": "mmB",
-      "tier": "B"
+      "tier": "B",
+      "lanes": [
+        "gold"
+      ]
     },
     {
       "n": "Cyclops",
@@ -516,7 +614,10 @@
       "t": "bc",
       "s": [],
       "b": "mage",
-      "tier": "B"
+      "tier": "B",
+      "lanes": [
+        "mid"
+      ]
     },
     {
       "n": "Diggie",
@@ -528,7 +629,10 @@
         "anticc"
       ],
       "b": "support",
-      "tier": "A"
+      "tier": "A",
+      "lanes": [
+        "roam"
+      ]
     },
     {
       "n": "Dyrroth",
@@ -547,7 +651,10 @@
         "Queen's Wings",
         "Immortality"
       ],
-      "tier": "B"
+      "tier": "B",
+      "lanes": [
+        "exp"
+      ]
     },
     {
       "n": "Edith",
@@ -557,7 +664,11 @@
       "s": [],
       "b": "tank",
       "tier": "A",
-      "wr": 52.6
+      "wr": 52.6,
+      "lanes": [
+        "exp",
+        "roam"
+      ]
     },
     {
       "n": "Esmeralda",
@@ -569,7 +680,10 @@
         "antiburst"
       ],
       "b": "fM",
-      "tier": "C"
+      "tier": "C",
+      "lanes": [
+        "exp"
+      ]
     },
     {
       "n": "Estes",
@@ -580,7 +694,10 @@
         "antiburst"
       ],
       "b": "support",
-      "tier": "A"
+      "tier": "A",
+      "lanes": [
+        "roam"
+      ]
     },
     {
       "n": "Eudora",
@@ -592,7 +709,10 @@
         "antidash"
       ],
       "b": "mage",
-      "tier": "A"
+      "tier": "A",
+      "lanes": [
+        "mid"
+      ]
     },
     {
       "n": "Fanny",
@@ -603,7 +723,10 @@
         "antisquishy"
       ],
       "b": "assP",
-      "tier": "D"
+      "tier": "D",
+      "lanes": [
+        "jungle"
+      ]
     },
     {
       "n": "Faramis",
@@ -612,7 +735,11 @@
       "t": "",
       "s": [],
       "b": "support",
-      "tier": "B"
+      "tier": "B",
+      "lanes": [
+        "roam",
+        "mid"
+      ]
     },
     {
       "n": "Floryn",
@@ -623,7 +750,10 @@
         "antiburst"
       ],
       "b": "support",
-      "tier": "S"
+      "tier": "S",
+      "lanes": [
+        "roam"
+      ]
     },
     {
       "n": "Franco",
@@ -634,7 +764,10 @@
         "antidash"
       ],
       "b": "tank",
-      "tier": "D"
+      "tier": "D",
+      "lanes": [
+        "roam"
+      ]
     },
     {
       "n": "Fredrinn",
@@ -643,7 +776,11 @@
       "t": "ch",
       "s": [],
       "b": "tank",
-      "tier": "B"
+      "tier": "B",
+      "lanes": [
+        "jungle",
+        "exp"
+      ]
     },
     {
       "n": "Freya",
@@ -652,7 +789,11 @@
       "t": "hd",
       "s": [],
       "b": "fP",
-      "tier": "C"
+      "tier": "C",
+      "lanes": [
+        "exp",
+        "jungle"
+      ]
     },
     {
       "n": "Gatotkaca",
@@ -661,7 +802,11 @@
       "t": "c",
       "s": [],
       "b": "tank",
-      "tier": "D"
+      "tier": "D",
+      "lanes": [
+        "roam",
+        "exp"
+      ]
     },
     {
       "n": "Gloo",
@@ -670,7 +815,11 @@
       "t": "c",
       "s": [],
       "b": "tank",
-      "tier": "S"
+      "tier": "S",
+      "lanes": [
+        "exp",
+        "roam"
+      ]
     },
     {
       "n": "Gord",
@@ -679,7 +828,10 @@
       "t": "",
       "s": [],
       "b": "mage",
-      "tier": "A"
+      "tier": "A",
+      "lanes": [
+        "mid"
+      ]
     },
     {
       "n": "Granger",
@@ -688,7 +840,11 @@
       "t": "b",
       "s": [],
       "b": "mmC",
-      "tier": "D"
+      "tier": "D",
+      "lanes": [
+        "gold",
+        "jungle"
+      ]
     },
     {
       "n": "Grock",
@@ -697,7 +853,10 @@
       "t": "c",
       "s": [],
       "b": "tank",
-      "tier": "C"
+      "tier": "C",
+      "lanes": [
+        "roam"
+      ]
     },
     {
       "n": "Guinevere",
@@ -708,7 +867,11 @@
         "antisquishy"
       ],
       "b": "fM",
-      "tier": "B"
+      "tier": "B",
+      "lanes": [
+        "exp",
+        "jungle"
+      ]
     },
     {
       "n": "Gusion",
@@ -719,7 +882,11 @@
         "antisquishy"
       ],
       "b": "assM",
-      "tier": "C"
+      "tier": "C",
+      "lanes": [
+        "jungle",
+        "mid"
+      ]
     },
     {
       "n": "Hanabi",
@@ -729,7 +896,10 @@
       "s": [],
       "b": "mmA",
       "tier": "A",
-      "wr": 52.4
+      "wr": 52.4,
+      "lanes": [
+        "gold"
+      ]
     },
     {
       "n": "Hanzo",
@@ -738,7 +908,10 @@
       "t": "b",
       "s": [],
       "b": "assP",
-      "tier": "B"
+      "tier": "B",
+      "lanes": [
+        "jungle"
+      ]
     },
     {
       "n": "Harith",
@@ -747,7 +920,11 @@
       "t": "d",
       "s": [],
       "b": "mage",
-      "tier": "D"
+      "tier": "D",
+      "lanes": [
+        "gold",
+        "mid"
+      ]
     },
     {
       "n": "Harley",
@@ -758,7 +935,11 @@
         "antisquishy"
       ],
       "b": "mage",
-      "tier": "C"
+      "tier": "C",
+      "lanes": [
+        "jungle",
+        "mid"
+      ]
     },
     {
       "n": "Hayabusa",
@@ -770,7 +951,10 @@
         "antimm"
       ],
       "b": "assP",
-      "tier": "C"
+      "tier": "C",
+      "lanes": [
+        "jungle"
+      ]
     },
     {
       "n": "Helcurt",
@@ -782,7 +966,10 @@
         "antimm"
       ],
       "b": "assP",
-      "tier": "C"
+      "tier": "C",
+      "lanes": [
+        "jungle"
+      ]
     },
     {
       "n": "Hilda",
@@ -801,7 +988,11 @@
         "Dominance Ice",
         "Immortality"
       ],
-      "tier": "B"
+      "tier": "B",
+      "lanes": [
+        "exp",
+        "roam"
+      ]
     },
     {
       "n": "Hylos",
@@ -811,7 +1002,10 @@
       "s": [],
       "b": "tank",
       "tier": "C",
-      "wr": 48.9
+      "wr": 48.9,
+      "lanes": [
+        "roam"
+      ]
     },
     {
       "n": "Irithel",
@@ -820,7 +1014,10 @@
       "t": "",
       "s": [],
       "b": "mmC",
-      "tier": "A"
+      "tier": "A",
+      "lanes": [
+        "gold"
+      ]
     },
     {
       "n": "Ixia",
@@ -829,7 +1026,10 @@
       "t": "h",
       "s": [],
       "b": "mmA",
-      "tier": "B"
+      "tier": "B",
+      "lanes": [
+        "gold"
+      ]
     },
     {
       "n": "Jawhead",
@@ -840,7 +1040,11 @@
         "antisquishy"
       ],
       "b": "fP",
-      "tier": "C"
+      "tier": "C",
+      "lanes": [
+        "roam",
+        "exp"
+      ]
     },
     {
       "n": "Johnson",
@@ -849,7 +1053,10 @@
       "t": "c",
       "s": [],
       "b": "tank",
-      "tier": "C"
+      "tier": "C",
+      "lanes": [
+        "roam"
+      ]
     },
     {
       "n": "Joy",
@@ -860,7 +1067,11 @@
         "antisquishy"
       ],
       "b": "assM",
-      "tier": "C"
+      "tier": "C",
+      "lanes": [
+        "jungle",
+        "exp"
+      ]
     },
     {
       "n": "Julian",
@@ -869,7 +1080,11 @@
       "t": "bd",
       "s": [],
       "b": "fM",
-      "tier": "B"
+      "tier": "B",
+      "lanes": [
+        "jungle",
+        "exp"
+      ]
     },
     {
       "n": "Kadita",
@@ -881,7 +1096,11 @@
       ],
       "b": "mage",
       "tier": "A",
-      "wr": 51.2
+      "wr": 51.2,
+      "lanes": [
+        "mid",
+        "roam"
+      ]
     },
     {
       "n": "Kagura",
@@ -893,7 +1112,10 @@
       ],
       "b": "mage",
       "tier": "A",
-      "wr": 51.5
+      "wr": 51.5,
+      "lanes": [
+        "mid"
+      ]
     },
     {
       "n": "Kaja",
@@ -905,7 +1127,10 @@
       ],
       "b": "support",
       "tier": "B",
-      "wr": 49.6
+      "wr": 49.6,
+      "lanes": [
+        "roam"
+      ]
     },
     {
       "n": "Karina",
@@ -917,7 +1142,10 @@
       ],
       "b": "assM",
       "tier": "C",
-      "wr": 47.8
+      "wr": 47.8,
+      "lanes": [
+        "jungle"
+      ]
     },
     {
       "n": "Karrie",
@@ -928,7 +1156,10 @@
         "antitank"
       ],
       "b": "mmA",
-      "tier": "C"
+      "tier": "C",
+      "lanes": [
+        "gold"
+      ]
     },
     {
       "n": "Khaleed",
@@ -937,7 +1168,10 @@
       "t": "h",
       "s": [],
       "b": "fP",
-      "tier": "B"
+      "tier": "B",
+      "lanes": [
+        "exp"
+      ]
     },
     {
       "n": "Khufra",
@@ -949,7 +1183,10 @@
         "antimm"
       ],
       "b": "tank",
-      "tier": "S"
+      "tier": "S",
+      "lanes": [
+        "roam"
+      ]
     },
     {
       "n": "Kimmy",
@@ -958,7 +1195,11 @@
       "t": "",
       "s": [],
       "b": "mage",
-      "tier": "C"
+      "tier": "C",
+      "lanes": [
+        "gold",
+        "mid"
+      ]
     },
     {
       "n": "Lancelot",
@@ -970,7 +1211,10 @@
         "antimm"
       ],
       "b": "assP",
-      "tier": "D"
+      "tier": "D",
+      "lanes": [
+        "jungle"
+      ]
     },
     {
       "n": "Lapu-Lapu",
@@ -979,7 +1223,10 @@
       "t": "hcd",
       "s": [],
       "b": "fP",
-      "tier": "C"
+      "tier": "C",
+      "lanes": [
+        "exp"
+      ]
     },
     {
       "n": "Layla",
@@ -988,7 +1235,10 @@
       "t": "",
       "s": [],
       "b": "mmC",
-      "tier": "B"
+      "tier": "B",
+      "lanes": [
+        "gold"
+      ]
     },
     {
       "n": "Leomord",
@@ -997,7 +1247,11 @@
       "t": "d",
       "s": [],
       "b": "fP",
-      "tier": "B"
+      "tier": "B",
+      "lanes": [
+        "jungle",
+        "exp"
+      ]
     },
     {
       "n": "Lesley",
@@ -1006,7 +1260,10 @@
       "t": "b",
       "s": [],
       "b": "mmC",
-      "tier": "B"
+      "tier": "B",
+      "lanes": [
+        "gold"
+      ]
     },
     {
       "n": "Ling",
@@ -1017,7 +1274,10 @@
         "antisquishy"
       ],
       "b": "assP",
-      "tier": "A"
+      "tier": "A",
+      "lanes": [
+        "jungle"
+      ]
     },
     {
       "n": "Lolita",
@@ -1028,7 +1288,10 @@
         "antimm"
       ],
       "b": "tank",
-      "tier": "A"
+      "tier": "A",
+      "lanes": [
+        "roam"
+      ]
     },
     {
       "n": "Lukas",
@@ -1038,7 +1301,10 @@
       "s": [],
       "b": "fP",
       "tier": "A",
-      "wr": 52.4
+      "wr": 52.4,
+      "lanes": [
+        "exp"
+      ]
     },
     {
       "n": "Lunox",
@@ -1049,7 +1315,10 @@
         "antitank"
       ],
       "b": "mage",
-      "tier": "C"
+      "tier": "C",
+      "lanes": [
+        "mid"
+      ]
     },
     {
       "n": "Luo Yi",
@@ -1058,7 +1327,10 @@
       "t": "c",
       "s": [],
       "b": "mage",
-      "tier": "C"
+      "tier": "C",
+      "lanes": [
+        "mid"
+      ]
     },
     {
       "n": "Lylia",
@@ -1067,7 +1339,10 @@
       "t": "",
       "s": [],
       "b": "mage",
-      "tier": "B"
+      "tier": "B",
+      "lanes": [
+        "mid"
+      ]
     },
     {
       "n": "Martis",
@@ -1078,7 +1353,11 @@
         "anticc"
       ],
       "b": "fP",
-      "tier": "C"
+      "tier": "C",
+      "lanes": [
+        "exp",
+        "jungle"
+      ]
     },
     {
       "n": "Masha",
@@ -1089,7 +1368,10 @@
         "antitank"
       ],
       "b": "fP",
-      "tier": "S"
+      "tier": "S",
+      "lanes": [
+        "exp"
+      ]
     },
     {
       "n": "Mathilda",
@@ -1100,7 +1382,10 @@
         "antiburst"
       ],
       "b": "support",
-      "tier": "D"
+      "tier": "D",
+      "lanes": [
+        "roam"
+      ]
     },
     {
       "n": "Melissa",
@@ -1110,7 +1395,10 @@
       "s": [],
       "b": "mmA",
       "tier": "C",
-      "wr": 48.6
+      "wr": 48.6,
+      "lanes": [
+        "gold"
+      ]
     },
     {
       "n": "Minotaur",
@@ -1119,7 +1407,10 @@
       "t": "ch",
       "s": [],
       "b": "tank",
-      "tier": "S"
+      "tier": "S",
+      "lanes": [
+        "roam"
+      ]
     },
     {
       "n": "Minsitthar",
@@ -1130,7 +1421,11 @@
         "antidash"
       ],
       "b": "fP",
-      "tier": "A"
+      "tier": "A",
+      "lanes": [
+        "roam",
+        "exp"
+      ]
     },
     {
       "n": "Miya",
@@ -1140,7 +1435,10 @@
       "s": [],
       "b": "mmA",
       "tier": "B",
-      "wr": 49.4
+      "wr": 49.4,
+      "lanes": [
+        "gold"
+      ]
     },
     {
       "n": "Moskov",
@@ -1149,7 +1447,10 @@
       "t": "",
       "s": [],
       "b": "mmA",
-      "tier": "B"
+      "tier": "B",
+      "lanes": [
+        "gold"
+      ]
     },
     {
       "n": "Nana",
@@ -1158,7 +1459,11 @@
       "t": "c",
       "s": [],
       "b": "mage",
-      "tier": "C"
+      "tier": "C",
+      "lanes": [
+        "mid",
+        "roam"
+      ]
     },
     {
       "n": "Natalia",
@@ -1170,7 +1475,11 @@
         "antimm"
       ],
       "b": "assP",
-      "tier": "B"
+      "tier": "B",
+      "lanes": [
+        "jungle",
+        "roam"
+      ]
     },
     {
       "n": "Natan",
@@ -1179,7 +1488,10 @@
       "t": "",
       "s": [],
       "b": "mage",
-      "tier": "B"
+      "tier": "B",
+      "lanes": [
+        "gold"
+      ]
     },
     {
       "n": "Nolan",
@@ -1190,7 +1502,10 @@
         "antisquishy"
       ],
       "b": "assP",
-      "tier": "B"
+      "tier": "B",
+      "lanes": [
+        "jungle"
+      ]
     },
     {
       "n": "Novaria",
@@ -1199,7 +1514,10 @@
       "t": "b",
       "s": [],
       "b": "mage",
-      "tier": "B"
+      "tier": "B",
+      "lanes": [
+        "mid"
+      ]
     },
     {
       "n": "Odette",
@@ -1209,7 +1527,10 @@
       "s": [],
       "b": "mage",
       "tier": "B",
-      "wr": 49.3
+      "wr": 49.3,
+      "lanes": [
+        "mid"
+      ]
     },
     {
       "n": "Paquito",
@@ -1221,7 +1542,10 @@
       ],
       "b": "fP",
       "tier": "B",
-      "wr": 50.1
+      "wr": 50.1,
+      "lanes": [
+        "exp"
+      ]
     },
     {
       "n": "Pharsa",
@@ -1232,7 +1556,10 @@
         "antisquishy"
       ],
       "b": "mage",
-      "tier": "C"
+      "tier": "C",
+      "lanes": [
+        "mid"
+      ]
     },
     {
       "n": "Phoveus",
@@ -1243,7 +1570,10 @@
         "antidash"
       ],
       "b": "fM",
-      "tier": "C"
+      "tier": "C",
+      "lanes": [
+        "exp"
+      ]
     },
     {
       "n": "Popol and Kupa",
@@ -1252,7 +1582,10 @@
       "t": "c",
       "s": [],
       "b": "mmB",
-      "tier": "S"
+      "tier": "S",
+      "lanes": [
+        "gold"
+      ]
     },
     {
       "n": "Rafaela",
@@ -1263,7 +1596,10 @@
         "antiburst"
       ],
       "b": "support",
-      "tier": "S"
+      "tier": "S",
+      "lanes": [
+        "roam"
+      ]
     },
     {
       "n": "Roger",
@@ -1274,7 +1610,11 @@
         "antisquishy"
       ],
       "b": "fP",
-      "tier": "C"
+      "tier": "C",
+      "lanes": [
+        "jungle",
+        "gold"
+      ]
     },
     {
       "n": "Ruby",
@@ -1283,7 +1623,10 @@
       "t": "hc",
       "s": [],
       "b": "fP",
-      "tier": "B"
+      "tier": "B",
+      "lanes": [
+        "exp"
+      ]
     },
     {
       "n": "Saber",
@@ -1296,7 +1639,11 @@
         "antidash"
       ],
       "b": "assP",
-      "tier": "B"
+      "tier": "B",
+      "lanes": [
+        "jungle",
+        "roam"
+      ]
     },
     {
       "n": "Selena",
@@ -1307,7 +1654,11 @@
         "antisquishy"
       ],
       "b": "assM",
-      "tier": "B"
+      "tier": "B",
+      "lanes": [
+        "roam",
+        "mid"
+      ]
     },
     {
       "n": "Silvanna",
@@ -1316,7 +1667,10 @@
       "t": "cd",
       "s": [],
       "b": "fM",
-      "tier": "B"
+      "tier": "B",
+      "lanes": [
+        "exp"
+      ]
     },
     {
       "n": "Sora",
@@ -1325,7 +1679,10 @@
       "t": "d",
       "s": [],
       "b": "fP",
-      "tier": "B"
+      "tier": "B",
+      "lanes": [
+        "exp"
+      ]
     },
     {
       "n": "Sun",
@@ -1335,7 +1692,10 @@
       "s": [],
       "b": "fP",
       "tier": "A",
-      "wr": 52.5
+      "wr": 52.5,
+      "lanes": [
+        "exp"
+      ]
     },
     {
       "n": "Suyou",
@@ -1346,7 +1706,10 @@
         "antisquishy"
       ],
       "b": "assP",
-      "tier": "B"
+      "tier": "B",
+      "lanes": [
+        "jungle"
+      ]
     },
     {
       "n": "Terizla",
@@ -1355,7 +1718,10 @@
       "t": "hc",
       "s": [],
       "b": "fP",
-      "tier": "B"
+      "tier": "B",
+      "lanes": [
+        "exp"
+      ]
     },
     {
       "n": "Thamuz",
@@ -1364,7 +1730,10 @@
       "t": "hd",
       "s": [],
       "b": "fP",
-      "tier": "C"
+      "tier": "C",
+      "lanes": [
+        "exp"
+      ]
     },
     {
       "n": "Tigreal",
@@ -1374,7 +1743,10 @@
       "s": [],
       "b": "tank",
       "tier": "D",
-      "wr": 44.9
+      "wr": 44.9,
+      "lanes": [
+        "roam"
+      ]
     },
     {
       "n": "Uranus",
@@ -1385,7 +1757,10 @@
         "antiburst"
       ],
       "b": "tank",
-      "tier": "C"
+      "tier": "C",
+      "lanes": [
+        "exp"
+      ]
     },
     {
       "n": "Vale",
@@ -1394,7 +1769,10 @@
       "t": "bc",
       "s": [],
       "b": "mage",
-      "tier": "B"
+      "tier": "B",
+      "lanes": [
+        "mid"
+      ]
     },
     {
       "n": "Valentina",
@@ -1405,7 +1783,10 @@
         "anticc"
       ],
       "b": "mage",
-      "tier": "D"
+      "tier": "D",
+      "lanes": [
+        "mid"
+      ]
     },
     {
       "n": "Valir",
@@ -1414,7 +1795,10 @@
       "t": "c",
       "s": [],
       "b": "mage",
-      "tier": "S"
+      "tier": "S",
+      "lanes": [
+        "mid"
+      ]
     },
     {
       "n": "Vexana",
@@ -1423,7 +1807,10 @@
       "t": "c",
       "s": [],
       "b": "mage",
-      "tier": "B"
+      "tier": "B",
+      "lanes": [
+        "mid"
+      ]
     },
     {
       "n": "Wanwan",
@@ -1434,7 +1821,10 @@
         "antitank"
       ],
       "b": "mmA",
-      "tier": "C"
+      "tier": "C",
+      "lanes": [
+        "gold"
+      ]
     },
     {
       "n": "X.Borg",
@@ -1445,7 +1835,10 @@
         "antitank"
       ],
       "b": "fP",
-      "tier": "B"
+      "tier": "B",
+      "lanes": [
+        "exp"
+      ]
     },
     {
       "n": "Xavier",
@@ -1454,7 +1847,10 @@
       "t": "b",
       "s": [],
       "b": "mage",
-      "tier": "B"
+      "tier": "B",
+      "lanes": [
+        "mid"
+      ]
     },
     {
       "n": "Yi Sun-shin",
@@ -1464,7 +1860,11 @@
       "s": [],
       "b": "mmC",
       "tier": "B",
-      "wr": 49.6
+      "wr": 49.6,
+      "lanes": [
+        "jungle",
+        "gold"
+      ]
     },
     {
       "n": "Yin",
@@ -1475,7 +1875,11 @@
         "antisquishy"
       ],
       "b": "fP",
-      "tier": "C"
+      "tier": "C",
+      "lanes": [
+        "jungle",
+        "exp"
+      ]
     },
     {
       "n": "Yu Zhong",
@@ -1484,7 +1888,10 @@
       "t": "hcd",
       "s": [],
       "b": "fP",
-      "tier": "C"
+      "tier": "C",
+      "lanes": [
+        "exp"
+      ]
     },
     {
       "n": "Yve",
@@ -1493,7 +1900,10 @@
       "t": "c",
       "s": [],
       "b": "mage",
-      "tier": "B"
+      "tier": "B",
+      "lanes": [
+        "mid"
+      ]
     },
     {
       "n": "Zhask",
@@ -1502,7 +1912,10 @@
       "t": "",
       "s": [],
       "b": "mage",
-      "tier": "A"
+      "tier": "A",
+      "lanes": [
+        "mid"
+      ]
     },
     {
       "n": "Zhuxin",
@@ -1511,7 +1924,10 @@
       "t": "c",
       "s": [],
       "b": "mage",
-      "tier": "B"
+      "tier": "B",
+      "lanes": [
+        "mid"
+      ]
     },
     {
       "n": "Zilong",
@@ -1520,7 +1936,11 @@
       "t": "d",
       "s": [],
       "b": "fP",
-      "tier": "D"
+      "tier": "D",
+      "lanes": [
+        "exp",
+        "jungle"
+      ]
     }
   ],
   "counters": {
@@ -1762,5 +2182,12 @@
       "Fanny",
       "Franco"
     ]
-  }
+  },
+  "lanes": [
+    "exp",
+    "gold",
+    "mid",
+    "jungle",
+    "roam"
+  ]
 }

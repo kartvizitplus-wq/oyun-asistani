@@ -7,88 +7,231 @@
     "fP": {
       "group": "front",
       "type": "P",
-      "spell": "Flicker",
-      "items": []
+      "spell": "Execute",
+      "items": [
+        "Boots of Fortitude",
+        "Axe of Torment",
+        "Frostscar's Embrace",
+        "Glacial Buckler",
+        "Eye of the Phoenix",
+        "Cuirass of Savagery"
+      ],
+      "emblem": {
+        "arcana": [
+          "Fate",
+          "Harmony",
+          "Vacuity"
+        ]
+      }
     },
     "fM": {
       "group": "front",
       "type": "M",
-      "spell": "Flicker",
-      "items": []
+      "spell": "Execute",
+      "items": [
+        "Boots of Resistance",
+        "Scepter of Reverberation",
+        "Savant's Wrath",
+        "Void Staff",
+        "Succubus Cloak",
+        "Sage's Sanctuary"
+      ],
+      "emblem": {
+        "arcana": [
+          "Fate",
+          "Harmony",
+          "Vacuity"
+        ]
+      }
     },
     "tank": {
       "group": "front",
       "type": "T",
-      "spell": "Flicker",
-      "items": []
+      "spell": "Execute",
+      "items": [
+        "Boots of Resistance",
+        "Frostscar's Embrace",
+        "Blazing Cape",
+        "Eye of the Phoenix",
+        "Overlord's Platemail",
+        "Blood Rage"
+      ],
+      "emblem": {
+        "arcana": [
+          "Fate",
+          "Hunter",
+          "Vacuity"
+        ]
+      }
     },
     "support": {
       "group": "front",
       "type": "T",
-      "spell": "Flicker",
-      "items": []
+      "spell": "Heal",
+      "items": [
+        "Boots of Tranquility",
+        "Holy Grail",
+        "Augur's Word",
+        "Venomous Staff",
+        "Crimson Shadow - Redemption",
+        "Splendor"
+      ],
+      "emblem": {
+        "arcana": [
+          "Fate",
+          "Harmony",
+          "Vacuity"
+        ]
+      }
     },
     "mmC": {
       "group": "back",
       "type": "P",
-      "spell": "Flicker",
-      "items": []
+      "spell": "Flash",
+      "items": [
+        "Boots of Dexterity",
+        "Doomsday",
+        "Sparkforged Dagger",
+        "Daybreaker",
+        "Frostscar's Embrace",
+        "Sage's Sanctuary"
+      ],
+      "emblem": {
+        "arcana": [
+          "Red Moon",
+          "Reaver",
+          "Eagle Eye"
+        ]
+      }
     },
     "mmA": {
       "group": "back",
       "type": "P",
-      "spell": "Flicker",
-      "items": []
+      "spell": "Flash",
+      "items": [
+        "Boots of Dexterity",
+        "Doomsday",
+        "Sparkforged Dagger",
+        "Daybreaker",
+        "Frostscar's Embrace",
+        "Sage's Sanctuary"
+      ],
+      "emblem": {
+        "arcana": [
+          "Red Moon",
+          "Reaver",
+          "Eagle Eye"
+        ]
+      }
     },
     "mmB": {
       "group": "back",
       "type": "P",
-      "spell": "Flicker",
-      "items": []
+      "spell": "Flash",
+      "items": [
+        "Boots of Dexterity",
+        "Doomsday",
+        "Sparkforged Dagger",
+        "Daybreaker",
+        "Frostscar's Embrace",
+        "Sage's Sanctuary"
+      ],
+      "emblem": {
+        "arcana": [
+          "Red Moon",
+          "Reaver",
+          "Eagle Eye"
+        ]
+      }
     },
     "mage": {
       "group": "back",
       "type": "M",
-      "spell": "Flicker",
-      "items": []
+      "spell": "Flash",
+      "items": [
+        "Boots of the Arcane",
+        "Scepter of Reverberation",
+        "Savant's Wrath",
+        "Void Staff",
+        "Tome of Wisdom",
+        "Splendor"
+      ],
+      "emblem": {
+        "arcana": [
+          "Nightmare",
+          "Hunter",
+          "Mind's Eye"
+        ]
+      }
     },
     "assP": {
       "group": "back",
       "type": "P",
-      "spell": "Punish",
-      "items": []
+      "spell": "Smite",
+      "items": [
+        "Boots of Resistance",
+        "Axe of Torment",
+        "Sky Dome",
+        "Cuirass of Savagery",
+        "Rapacious Bite",
+        "Daybreaker"
+      ],
+      "emblem": {
+        "arcana": [
+          "Mutation",
+          "Concealment",
+          "Eagle Eye"
+        ]
+      }
     },
     "assM": {
       "group": "back",
       "type": "M",
-      "spell": "Punish",
-      "items": []
+      "spell": "Smite",
+      "items": [
+        "Boots of the Arcane",
+        "Scepter of Reverberation",
+        "Void Staff",
+        "Savant's Wrath",
+        "Sage's Sanctuary",
+        "Splendor"
+      ],
+      "emblem": {
+        "arcana": [
+          "Nightmare",
+          "Hunter",
+          "Mind's Eye"
+        ]
+      }
     }
   },
   "counters": {
     "antiheal": {
-      "any": "#cat_antiheal"
+      "P": "Mortal Punisher",
+      "M": "Venomous Staff",
+      "T": "Blazing Cape"
     },
     "magic": {
-      "any": "#cat_magicdef"
+      "any": "Succubus Cloak"
     },
-    "magicHeavy": {},
+    "magicHeavy": {
+      "front": "Longnight Guardian"
+    },
     "basic": {
-      "front": "#cat_antiatk",
-      "back": "#cat_lifesave"
+      "any": "Ominous Premonition"
     },
     "phys": {
-      "front": "#cat_armor",
-      "back": "#cat_lifesave"
+      "front": "Glacial Buckler",
+      "back": "Sage's Sanctuary"
     },
     "pen": {
-      "P": "#cat_pen",
-      "M": "#cat_mpen"
+      "P": "Starbreaker",
+      "M": "Void Staff"
     },
     "burst": {
-      "any": "#cat_lifesave"
+      "any": "Sage's Sanctuary"
     },
-    "ccBoots": "#cat_ccboots",
+    "ccBoots": "Boots of Resistance",
     "purify": "Purify"
   },
   "heroes": [
@@ -101,7 +244,10 @@
         "antisquishy"
       ],
       "b": "assP",
-      "tier": "D"
+      "tier": "D",
+      "lanes": [
+        "jungle"
+      ]
     },
     {
       "n": "Allain",
@@ -110,7 +256,10 @@
       "t": "h",
       "s": [],
       "b": "fP",
-      "tier": "B"
+      "tier": "B",
+      "lanes": [
+        "clash"
+      ]
     },
     {
       "n": "Angela",
@@ -121,7 +270,10 @@
         "antisquishy"
       ],
       "b": "mage",
-      "tier": "A"
+      "tier": "A",
+      "lanes": [
+        "mid"
+      ]
     },
     {
       "n": "Ao'yin",
@@ -130,7 +282,10 @@
       "t": "",
       "s": [],
       "b": "mmC",
-      "tier": null
+      "tier": null,
+      "lanes": [
+        "farm"
+      ]
     },
     {
       "n": "Arke",
@@ -141,7 +296,10 @@
         "antisquishy"
       ],
       "b": "assP",
-      "tier": "S"
+      "tier": "S",
+      "lanes": [
+        "jungle"
+      ]
     },
     {
       "n": "Arli",
@@ -150,7 +308,10 @@
       "t": "d",
       "s": [],
       "b": "mmA",
-      "tier": "B"
+      "tier": "B",
+      "lanes": [
+        "farm"
+      ]
     },
     {
       "n": "Arthur",
@@ -159,7 +320,11 @@
       "t": "c",
       "s": [],
       "b": "fP",
-      "tier": "A"
+      "tier": "A",
+      "lanes": [
+        "clash",
+        "jungle"
+      ]
     },
     {
       "n": "Ata",
@@ -168,7 +333,11 @@
       "t": "c",
       "s": [],
       "b": "fP",
-      "tier": "D"
+      "tier": "D",
+      "lanes": [
+        "clash",
+        "jungle"
+      ]
     },
     {
       "n": "Athena",
@@ -177,7 +346,10 @@
       "t": "bd",
       "s": [],
       "b": "assP",
-      "tier": "D"
+      "tier": "D",
+      "lanes": [
+        "jungle"
+      ]
     },
     {
       "n": "Augran",
@@ -186,7 +358,11 @@
       "t": "h",
       "s": [],
       "b": "fP",
-      "tier": "S"
+      "tier": "S",
+      "lanes": [
+        "jungle",
+        "clash"
+      ]
     },
     {
       "n": "Bai Qi",
@@ -195,7 +371,10 @@
       "t": "c",
       "s": [],
       "b": "tank",
-      "tier": "A"
+      "tier": "A",
+      "lanes": [
+        "clash"
+      ]
     },
     {
       "n": "Biron",
@@ -206,7 +385,10 @@
         "antitank"
       ],
       "b": "fP",
-      "tier": "B"
+      "tier": "B",
+      "lanes": [
+        "clash"
+      ]
     },
     {
       "n": "Butterfly",
@@ -217,7 +399,10 @@
         "antisquishy"
       ],
       "b": "assP",
-      "tier": "B"
+      "tier": "B",
+      "lanes": [
+        "jungle"
+      ]
     },
     {
       "n": "Cai Yan",
@@ -228,7 +413,10 @@
         "antiburst"
       ],
       "b": "support",
-      "tier": "A"
+      "tier": "A",
+      "lanes": [
+        "roam"
+      ]
     },
     {
       "n": "Chano",
@@ -237,7 +425,11 @@
       "t": "",
       "s": [],
       "b": "mmA",
-      "tier": "A"
+      "tier": "A",
+      "lanes": [
+        "farm",
+        "jungle"
+      ]
     },
     {
       "n": "Charlotte",
@@ -246,7 +438,11 @@
       "t": "d",
       "s": [],
       "b": "fP",
-      "tier": "B"
+      "tier": "B",
+      "lanes": [
+        "clash",
+        "jungle"
+      ]
     },
     {
       "n": "Cirrus",
@@ -255,7 +451,10 @@
       "t": "bd",
       "s": [],
       "b": "assP",
-      "tier": "D"
+      "tier": "D",
+      "lanes": [
+        "jungle"
+      ]
     },
     {
       "n": "Consort Yu",
@@ -266,7 +465,10 @@
         "antidash"
       ],
       "b": "mage",
-      "tier": "A"
+      "tier": "A",
+      "lanes": [
+        "farm"
+      ]
     },
     {
       "n": "Da Qiao",
@@ -275,7 +477,11 @@
       "t": "c",
       "s": [],
       "b": "support",
-      "tier": "S"
+      "tier": "S",
+      "lanes": [
+        "roam",
+        "mid"
+      ]
     },
     {
       "n": "Daji",
@@ -286,7 +492,10 @@
         "antisquishy"
       ],
       "b": "mage",
-      "tier": "S"
+      "tier": "S",
+      "lanes": [
+        "mid"
+      ]
     },
     {
       "n": "Devara",
@@ -295,7 +504,10 @@
       "t": "",
       "s": [],
       "b": "fP",
-      "tier": null
+      "tier": null,
+      "lanes": [
+        "clash"
+      ]
     },
     {
       "n": "Dharma",
@@ -304,7 +516,11 @@
       "t": "c",
       "s": [],
       "b": "fP",
-      "tier": "D"
+      "tier": "D",
+      "lanes": [
+        "clash",
+        "jungle"
+      ]
     },
     {
       "n": "Di Renjie",
@@ -315,7 +531,10 @@
         "anticc"
       ],
       "b": "mmA",
-      "tier": "C"
+      "tier": "C",
+      "lanes": [
+        "farm"
+      ]
     },
     {
       "n": "Dian Wei",
@@ -326,7 +545,10 @@
         "antitank"
       ],
       "b": "fP",
-      "tier": "A"
+      "tier": "A",
+      "lanes": [
+        "jungle"
+      ]
     },
     {
       "n": "Diaochan",
@@ -335,7 +557,11 @@
       "t": "hd",
       "s": [],
       "b": "mage",
-      "tier": "B"
+      "tier": "B",
+      "lanes": [
+        "mid",
+        "clash"
+      ]
     },
     {
       "n": "Dolia",
@@ -344,7 +570,10 @@
       "t": "h",
       "s": [],
       "b": "support",
-      "tier": "A"
+      "tier": "A",
+      "lanes": [
+        "roam"
+      ]
     },
     {
       "n": "Donghuang",
@@ -355,7 +584,11 @@
         "antidash"
       ],
       "b": "tank",
-      "tier": "B"
+      "tier": "B",
+      "lanes": [
+        "roam",
+        "clash"
+      ]
     },
     {
       "n": "Dr Bian",
@@ -364,7 +597,10 @@
       "t": "c",
       "s": [],
       "b": "mage",
-      "tier": "D"
+      "tier": "D",
+      "lanes": [
+        "mid"
+      ]
     },
     {
       "n": "Dun",
@@ -375,7 +611,11 @@
         "anticc"
       ],
       "b": "tank",
-      "tier": "A"
+      "tier": "A",
+      "lanes": [
+        "clash",
+        "roam"
+      ]
     },
     {
       "n": "Dyadia",
@@ -386,7 +626,10 @@
         "antiburst"
       ],
       "b": "support",
-      "tier": null
+      "tier": null,
+      "lanes": [
+        "roam"
+      ]
     },
     {
       "n": "Erin",
@@ -395,7 +638,10 @@
       "t": "",
       "s": [],
       "b": "mmA",
-      "tier": "B"
+      "tier": "B",
+      "lanes": [
+        "farm"
+      ]
     },
     {
       "n": "Fang",
@@ -404,7 +650,11 @@
       "t": "",
       "s": [],
       "b": "mmC",
-      "tier": "B"
+      "tier": "B",
+      "lanes": [
+        "farm",
+        "jungle"
+      ]
     },
     {
       "n": "Fatih",
@@ -413,7 +663,11 @@
       "t": "",
       "s": [],
       "b": "fP",
-      "tier": "S"
+      "tier": "S",
+      "lanes": [
+        "clash",
+        "jungle"
+      ]
     },
     {
       "n": "Feyd",
@@ -422,7 +676,10 @@
       "t": "bd",
       "s": [],
       "b": "assP",
-      "tier": "S"
+      "tier": "S",
+      "lanes": [
+        "jungle"
+      ]
     },
     {
       "n": "Florentino",
@@ -431,7 +688,10 @@
       "t": "d",
       "s": [],
       "b": "fP",
-      "tier": "A"
+      "tier": "A",
+      "lanes": [
+        "clash"
+      ]
     },
     {
       "n": "Fuzi",
@@ -440,7 +700,10 @@
       "t": "c",
       "s": [],
       "b": "fP",
-      "tier": "C"
+      "tier": "C",
+      "lanes": [
+        "clash"
+      ]
     },
     {
       "n": "Gan & Mo",
@@ -451,7 +714,10 @@
         "antisquishy"
       ],
       "b": "mage",
-      "tier": "B"
+      "tier": "B",
+      "lanes": [
+        "mid"
+      ]
     },
     {
       "n": "Gao",
@@ -462,7 +728,10 @@
         "antisquishy"
       ],
       "b": "mage",
-      "tier": "D"
+      "tier": "D",
+      "lanes": [
+        "mid"
+      ]
     },
     {
       "n": "Gao Changgong",
@@ -474,7 +743,10 @@
         "antimm"
       ],
       "b": "assP",
-      "tier": "A"
+      "tier": "A",
+      "lanes": [
+        "jungle"
+      ]
     },
     {
       "n": "Garo",
@@ -485,7 +757,10 @@
         "antitank"
       ],
       "b": "mmC",
-      "tier": "B"
+      "tier": "B",
+      "lanes": [
+        "farm"
+      ]
     },
     {
       "n": "Guan Yu",
@@ -494,7 +769,10 @@
       "t": "cd",
       "s": [],
       "b": "fP",
-      "tier": "D"
+      "tier": "D",
+      "lanes": [
+        "clash"
+      ]
     },
     {
       "n": "Guiguzi",
@@ -503,7 +781,10 @@
       "t": "c",
       "s": [],
       "b": "support",
-      "tier": "D"
+      "tier": "D",
+      "lanes": [
+        "roam"
+      ]
     },
     {
       "n": "Han Xin",
@@ -512,7 +793,10 @@
       "t": "d",
       "s": [],
       "b": "assP",
-      "tier": "C"
+      "tier": "C",
+      "lanes": [
+        "jungle"
+      ]
     },
     {
       "n": "Hou Yi",
@@ -521,7 +805,10 @@
       "t": "c",
       "s": [],
       "b": "mmA",
-      "tier": "S"
+      "tier": "S",
+      "lanes": [
+        "farm"
+      ]
     },
     {
       "n": "Huang Zhong",
@@ -530,7 +817,10 @@
       "t": "",
       "s": [],
       "b": "mmC",
-      "tier": "C"
+      "tier": "C",
+      "lanes": [
+        "farm"
+      ]
     },
     {
       "n": "Jing",
@@ -541,7 +831,10 @@
         "antisquishy"
       ],
       "b": "assP",
-      "tier": "D"
+      "tier": "D",
+      "lanes": [
+        "jungle"
+      ]
     },
     {
       "n": "Kaizer",
@@ -550,7 +843,11 @@
       "t": "c",
       "s": [],
       "b": "fP",
-      "tier": "C"
+      "tier": "C",
+      "lanes": [
+        "clash",
+        "jungle"
+      ]
     },
     {
       "n": "Kongming",
@@ -561,7 +858,11 @@
         "antisquishy"
       ],
       "b": "mage",
-      "tier": "A"
+      "tier": "A",
+      "lanes": [
+        "mid",
+        "jungle"
+      ]
     },
     {
       "n": "Kui",
@@ -570,7 +871,10 @@
       "t": "c",
       "s": [],
       "b": "tank",
-      "tier": "B"
+      "tier": "B",
+      "lanes": [
+        "roam"
+      ]
     },
     {
       "n": "Lady Sun",
@@ -579,7 +883,10 @@
       "t": "d",
       "s": [],
       "b": "mmC",
-      "tier": "A"
+      "tier": "A",
+      "lanes": [
+        "farm"
+      ]
     },
     {
       "n": "Lady Zhen",
@@ -588,7 +895,10 @@
       "t": "c",
       "s": [],
       "b": "mage",
-      "tier": "B"
+      "tier": "B",
+      "lanes": [
+        "mid"
+      ]
     },
     {
       "n": "Lam",
@@ -599,7 +909,10 @@
         "antisquishy"
       ],
       "b": "assP",
-      "tier": "S"
+      "tier": "S",
+      "lanes": [
+        "jungle"
+      ]
     },
     {
       "n": "Li Bai",
@@ -610,7 +923,10 @@
         "antisquishy"
       ],
       "b": "assP",
-      "tier": "D"
+      "tier": "D",
+      "lanes": [
+        "jungle"
+      ]
     },
     {
       "n": "Li Xin",
@@ -619,7 +935,10 @@
       "t": "",
       "s": [],
       "b": "fP",
-      "tier": "A"
+      "tier": "A",
+      "lanes": [
+        "clash"
+      ]
     },
     {
       "n": "Lian Po",
@@ -628,7 +947,11 @@
       "t": "c",
       "s": [],
       "b": "tank",
-      "tier": "B"
+      "tier": "B",
+      "lanes": [
+        "clash",
+        "roam"
+      ]
     },
     {
       "n": "Liang",
@@ -637,7 +960,10 @@
       "t": "c",
       "s": [],
       "b": "mage",
-      "tier": null
+      "tier": null,
+      "lanes": [
+        "mid"
+      ]
     },
     {
       "n": "Liu Bang",
@@ -646,7 +972,11 @@
       "t": "c",
       "s": [],
       "b": "tank",
-      "tier": "D"
+      "tier": "D",
+      "lanes": [
+        "clash",
+        "roam"
+      ]
     },
     {
       "n": "Liu Bei",
@@ -655,7 +985,10 @@
       "t": "d",
       "s": [],
       "b": "assP",
-      "tier": "C"
+      "tier": "C",
+      "lanes": [
+        "jungle"
+      ]
     },
     {
       "n": "Liu Shan",
@@ -664,7 +997,10 @@
       "t": "c",
       "s": [],
       "b": "support",
-      "tier": "B"
+      "tier": "B",
+      "lanes": [
+        "roam"
+      ]
     },
     {
       "n": "Lu Bu",
@@ -675,7 +1011,10 @@
         "antitank"
       ],
       "b": "fP",
-      "tier": "B"
+      "tier": "B",
+      "lanes": [
+        "clash"
+      ]
     },
     {
       "n": "Luban No.7",
@@ -684,7 +1023,10 @@
       "t": "",
       "s": [],
       "b": "mmC",
-      "tier": "A"
+      "tier": "A",
+      "lanes": [
+        "farm"
+      ]
     },
     {
       "n": "Luna",
@@ -695,7 +1037,10 @@
         "antisquishy"
       ],
       "b": "assM",
-      "tier": "D"
+      "tier": "D",
+      "lanes": [
+        "jungle"
+      ]
     },
     {
       "n": "Mai Shiranui",
@@ -706,7 +1051,10 @@
         "antisquishy"
       ],
       "b": "mage",
-      "tier": "B"
+      "tier": "B",
+      "lanes": [
+        "mid"
+      ]
     },
     {
       "n": "Marco Polo",
@@ -717,7 +1065,10 @@
         "antitank"
       ],
       "b": "mmA",
-      "tier": "S"
+      "tier": "S",
+      "lanes": [
+        "farm"
+      ]
     },
     {
       "n": "Mayene",
@@ -726,7 +1077,11 @@
       "t": "c",
       "s": [],
       "b": "fP",
-      "tier": "C"
+      "tier": "C",
+      "lanes": [
+        "clash",
+        "jungle"
+      ]
     },
     {
       "n": "Meng Ya",
@@ -735,7 +1090,10 @@
       "t": "",
       "s": [],
       "b": "mmA",
-      "tier": "C"
+      "tier": "C",
+      "lanes": [
+        "farm"
+      ]
     },
     {
       "n": "Mi Yue",
@@ -746,7 +1104,11 @@
         "antitank"
       ],
       "b": "fM",
-      "tier": "A"
+      "tier": "A",
+      "lanes": [
+        "clash",
+        "jungle"
+      ]
     },
     {
       "n": "Milady",
@@ -755,7 +1117,10 @@
       "t": "",
       "s": [],
       "b": "mage",
-      "tier": "A"
+      "tier": "A",
+      "lanes": [
+        "mid"
+      ]
     },
     {
       "n": "Ming",
@@ -766,7 +1131,10 @@
         "antiburst"
       ],
       "b": "support",
-      "tier": "C"
+      "tier": "C",
+      "lanes": [
+        "roam"
+      ]
     },
     {
       "n": "Mozi",
@@ -775,7 +1143,11 @@
       "t": "c",
       "s": [],
       "b": "mage",
-      "tier": "A"
+      "tier": "A",
+      "lanes": [
+        "mid",
+        "roam"
+      ]
     },
     {
       "n": "Mulan",
@@ -784,7 +1156,10 @@
       "t": "bd",
       "s": [],
       "b": "fP",
-      "tier": "D"
+      "tier": "D",
+      "lanes": [
+        "clash"
+      ]
     },
     {
       "n": "Musashi",
@@ -793,7 +1168,11 @@
       "t": "d",
       "s": [],
       "b": "fP",
-      "tier": "A"
+      "tier": "A",
+      "lanes": [
+        "jungle",
+        "clash"
+      ]
     },
     {
       "n": "Nakoruru",
@@ -804,7 +1183,10 @@
         "antisquishy"
       ],
       "b": "assP",
-      "tier": "C"
+      "tier": "C",
+      "lanes": [
+        "jungle"
+      ]
     },
     {
       "n": "Nezha",
@@ -813,7 +1195,10 @@
       "t": "h",
       "s": [],
       "b": "fP",
-      "tier": "C"
+      "tier": "C",
+      "lanes": [
+        "clash"
+      ]
     },
     {
       "n": "Nuwa",
@@ -822,7 +1207,10 @@
       "t": "b",
       "s": [],
       "b": "mage",
-      "tier": "D"
+      "tier": "D",
+      "lanes": [
+        "mid"
+      ]
     },
     {
       "n": "Pei",
@@ -831,7 +1219,10 @@
       "t": "bd",
       "s": [],
       "b": "assP",
-      "tier": "D"
+      "tier": "D",
+      "lanes": [
+        "jungle"
+      ]
     },
     {
       "n": "Sakeer",
@@ -840,7 +1231,10 @@
       "t": "c",
       "s": [],
       "b": "tank",
-      "tier": "B"
+      "tier": "B",
+      "lanes": [
+        "roam"
+      ]
     },
     {
       "n": "Shangguan",
@@ -851,7 +1245,10 @@
         "antisquishy"
       ],
       "b": "mage",
-      "tier": "C"
+      "tier": "C",
+      "lanes": [
+        "mid"
+      ]
     },
     {
       "n": "Shouyue",
@@ -860,7 +1257,10 @@
       "t": "b",
       "s": [],
       "b": "mmB",
-      "tier": "B"
+      "tier": "B",
+      "lanes": [
+        "farm"
+      ]
     },
     {
       "n": "Sima Yi",
@@ -871,7 +1271,11 @@
         "antisquishy"
       ],
       "b": "assM",
-      "tier": "D"
+      "tier": "D",
+      "lanes": [
+        "jungle",
+        "mid"
+      ]
     },
     {
       "n": "Sun Bin",
@@ -880,7 +1284,10 @@
       "t": "h",
       "s": [],
       "b": "support",
-      "tier": "D"
+      "tier": "D",
+      "lanes": [
+        "roam"
+      ]
     },
     {
       "n": "Sun Ce",
@@ -889,7 +1296,11 @@
       "t": "c",
       "s": [],
       "b": "fP",
-      "tier": "A"
+      "tier": "A",
+      "lanes": [
+        "clash",
+        "jungle"
+      ]
     },
     {
       "n": "Ukyo Tachibana",
@@ -898,7 +1309,11 @@
       "t": "bd",
       "s": [],
       "b": "assP",
-      "tier": "D"
+      "tier": "D",
+      "lanes": [
+        "jungle",
+        "clash"
+      ]
     },
     {
       "n": "Wang Zhaojun",
@@ -907,7 +1322,10 @@
       "t": "c",
       "s": [],
       "b": "mage",
-      "tier": null
+      "tier": null,
+      "lanes": [
+        "mid"
+      ]
     },
     {
       "n": "Wukong",
@@ -916,7 +1334,10 @@
       "t": "b",
       "s": [],
       "b": "assP",
-      "tier": "A"
+      "tier": "A",
+      "lanes": [
+        "jungle"
+      ]
     },
     {
       "n": "Xiang Yu",
@@ -925,7 +1346,11 @@
       "t": "c",
       "s": [],
       "b": "tank",
-      "tier": "C"
+      "tier": "C",
+      "lanes": [
+        "roam",
+        "clash"
+      ]
     },
     {
       "n": "Xiao Qiao",
@@ -936,7 +1361,10 @@
         "antisquishy"
       ],
       "b": "mage",
-      "tier": "A"
+      "tier": "A",
+      "lanes": [
+        "mid"
+      ]
     },
     {
       "n": "Yang Jian",
@@ -945,7 +1373,11 @@
       "t": "c",
       "s": [],
       "b": "fP",
-      "tier": "C"
+      "tier": "C",
+      "lanes": [
+        "clash",
+        "jungle"
+      ]
     },
     {
       "n": "Yao",
@@ -954,7 +1386,11 @@
       "t": "h",
       "s": [],
       "b": "fP",
-      "tier": "B"
+      "tier": "B",
+      "lanes": [
+        "jungle",
+        "clash"
+      ]
     },
     {
       "n": "Yaria",
@@ -965,7 +1401,10 @@
         "antiburst"
       ],
       "b": "support",
-      "tier": "S"
+      "tier": "S",
+      "lanes": [
+        "roam"
+      ]
     },
     {
       "n": "Ying",
@@ -974,7 +1413,10 @@
       "t": "bd",
       "s": [],
       "b": "assP",
-      "tier": "D"
+      "tier": "D",
+      "lanes": [
+        "jungle"
+      ]
     },
     {
       "n": "Yixing",
@@ -983,7 +1425,10 @@
       "t": "c",
       "s": [],
       "b": "mage",
-      "tier": "A"
+      "tier": "A",
+      "lanes": [
+        "mid"
+      ]
     },
     {
       "n": "Yuhuan",
@@ -992,7 +1437,11 @@
       "t": "h",
       "s": [],
       "b": "mage",
-      "tier": "B"
+      "tier": "B",
+      "lanes": [
+        "mid",
+        "roam"
+      ]
     },
     {
       "n": "Zhang Fei",
@@ -1003,7 +1452,10 @@
         "antiburst"
       ],
       "b": "tank",
-      "tier": "C"
+      "tier": "C",
+      "lanes": [
+        "roam"
+      ]
     },
     {
       "n": "Zhou Yu",
@@ -1012,7 +1464,10 @@
       "t": "",
       "s": [],
       "b": "mage",
-      "tier": "C"
+      "tier": "C",
+      "lanes": [
+        "mid"
+      ]
     },
     {
       "n": "Zhuangzi",
@@ -1023,7 +1478,11 @@
         "anticc"
       ],
       "b": "tank",
-      "tier": "B"
+      "tier": "B",
+      "lanes": [
+        "roam",
+        "clash"
+      ]
     },
     {
       "n": "Zilong",
@@ -1032,7 +1491,10 @@
       "t": "d",
       "s": [],
       "b": "assP",
-      "tier": "C"
+      "tier": "C",
+      "lanes": [
+        "jungle"
+      ]
     },
     {
       "n": "Ziya",
@@ -1041,7 +1503,11 @@
       "t": "c",
       "s": [],
       "b": "mage",
-      "tier": "B"
+      "tier": "B",
+      "lanes": [
+        "mid",
+        "roam"
+      ]
     }
   ],
   "tierSource": {
@@ -1169,5 +1635,17 @@
       "Agudo",
       "Athena"
     ]
-  }
+  },
+  "lanes": [
+    "clash",
+    "farm",
+    "mid",
+    "jungle",
+    "roam"
+  ],
+  "buildSources": [
+    "hokbuild.com hero pages (Arthur, Dun, Cai Yan, Marco Polo, Daji, Lam), 2026",
+    "bittopup.com item categories guide July 2026",
+    "pinoygamer.ph anti-heal guide"
+  ]
 }
