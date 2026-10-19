@@ -167,3 +167,5 @@ ul.mm li.bad{color:var(--red)}ul.mm li.good{color:var(--green)}
 .poolhead .btn{padding:8px 14px;font-size:.9rem}
 .poolcard .note{margin:0}
 .badge{margin:8px 0 0;color:var(--gold);font-size:.9rem}
+.crumbs{margin:14px 0 -4px;overflow-wrap:anywhere}
+.crumbs a{color:var(--muted)}

@@ -371,7 +371,10 @@
   "b20": "🥇 Koç",
   "b50": "🏆 Efsane Koç",
   "badgeNext": "Sonraki rozet: {n} maç",
-  "reportSent": "Bu draft için sonuç zaten bildirildi."
+  "reportSent": "Bu draft için sonuç zaten bildirildi.",
+  "home": "Ana sayfa",
+  "hp_news": "{x} rehberleri ve haberleri",
+  "relatedNews": "İlgili yazılar"
  },
  "en": {
   "langName": "English",
@@ -745,7 +748,10 @@
   "b20": "🥇 Coach",
   "b50": "🏆 Legend Coach",
   "badgeNext": "Next badge: {n} matches",
-  "reportSent": "You already reported this draft."
+  "reportSent": "You already reported this draft.",
+  "home": "Home",
+  "hp_news": "{x} guides and news",
+  "relatedNews": "Related articles"
  },
  "id": {
   "langName": "Bahasa Indonesia",
@@ -1119,7 +1125,10 @@
   "b20": "🥇 Pelatih",
   "b50": "🏆 Pelatih Legenda",
   "badgeNext": "Lencana berikutnya: {n} pertandingan",
-  "reportSent": "Draft ini sudah kamu laporkan."
+  "reportSent": "Draft ini sudah kamu laporkan.",
+  "home": "Beranda",
+  "hp_news": "Panduan dan berita {x}",
+  "relatedNews": "Artikel terkait"
  },
  "es": {
   "langName": "Español",
@@ -1493,7 +1502,10 @@
   "b20": "🥇 Entrenador",
   "b50": "🏆 Entrenador Leyenda",
   "badgeNext": "Siguiente insignia: {n} partidas",
-  "reportSent": "Ya informaste este draft."
+  "reportSent": "Ya informaste este draft.",
+  "home": "Inicio",
+  "hp_news": "Guías y noticias de {x}",
+  "relatedNews": "Artículos relacionados"
  },
  "pt": {
   "langName": "Português",
@@ -1867,6 +1879,9 @@
   "b20": "🥇 Treinador",
   "b50": "🏆 Treinador Lendário",
   "badgeNext": "Próxima insígnia: {n} partidas",
-  "reportSent": "Você já informou este draft."
+  "reportSent": "Você já informou este draft.",
+  "home": "Início",
+  "hp_news": "Guias e notícias de {x}",
+  "relatedNews": "Artigos relacionados"
  }
 }

@@ -37,10 +37,16 @@ const itemName = (lang, i, t) => i.startsWith('#') ? t[i.slice(1)] : ((lang === 
 const itemHtml = (lang, i, t) => { const n = itemName(lang, i, t); return Icons.item(i, 28) + '<span class="iname">' + esc(n) + (n !== i && !i.startsWith('#') ? '<small class="en">' + esc(i) + '</small>' : ''); };
 const scoreCls = s => s >= 7 ? 'good' : s >= 5 ? 'mid' : 'bad';
 
-function layout({ lang, rel, title, desc, body, active, app, type, jsonld }) {
+const OG_LOCALE = { en: 'en_US', tr: 'tr_TR', id: 'id_ID', es: 'es_ES', pt: 'pt_BR' };
+/* Breadcrumb trail as schema.org BreadcrumbList: crumbs = [[name, rel], ...]. */
+const crumbLd = crumbs => crumbs && crumbs.length > 1 ? { '@context': 'https://schema.org', '@type': 'BreadcrumbList', itemListElement: crumbs.map(([name, r], i) => ({ '@type': 'ListItem', position: i + 1, name, item: `${base}/${r}` })) } : null;
+function layout({ lang, rel, title, desc, body, active, app, type, jsonld, img, crumbs, lastmod }) {
   const t = I18N[lang];
   const tail = rel.replace(/^[a-z]{2}\//, '');
-  pages.push(rel);
+  pages.push({ rel, lastmod: lastmod || lastUpdated });
+  const ogImg = `${base}/og/${img || 'default'}.png`;
+  const lds = [].concat(jsonld || [], crumbLd(crumbs) || []).filter(Boolean);
+  const crumbNav = crumbs && crumbs.length > 1 ? `<nav class="crumbs note" aria-label="breadcrumb">${crumbs.map(([name, r], i) => i < crumbs.length - 1 ? `<a href="/${r}">${esc(name)}</a>` : `<span aria-current="page">${esc(name)}</span>`).join(' › ')}</nav>` : '';
   const alts = cfg.langs.map(l => `<link rel="alternate" hreflang="${l}" href="${base}/${l}/${tail}">`).join('') +
     `<link rel="alternate" hreflang="x-default" href="${base}/${cfg.defaultLang}/${tail}">`;
   const langOpts = cfg.langs.map(l => `<option value="${l}" data-href="/${l}/${tail}"${l === lang ? ' selected' : ''}>${esc(I18N[l].langName)}</option>`).join('');
@@ -58,8 +64,9 @@ function layout({ lang, rel, title, desc, body, active, app, type, jsonld }) {
 <title>${esc(title)}</title>
 <meta name="description" content="${esc(desc)}">
 ${verify}${base ? `<link rel="canonical" href="${base}/${rel}">` : ''}${alts}
-<meta property="og:title" content="${esc(title)}"><meta property="og:description" content="${esc(desc)}"><meta property="og:type" content="${type || 'website'}"><meta property="og:site_name" content="${esc(cfg.siteName)}">${base ? `<meta property="og:url" content="${base}/${rel}">` : ''}
-${jsonld ? `<script type="application/ld+json">${JSON.stringify(jsonld).replace(/</g, '\\u003c')}</script>` : ''}
+<meta property="og:title" content="${esc(title)}"><meta property="og:description" content="${esc(desc)}"><meta property="og:type" content="${type || 'website'}"><meta property="og:site_name" content="${esc(cfg.siteName)}">${base ? `<meta property="og:url" content="${base}/${rel}">` : ''}<meta property="og:locale" content="${OG_LOCALE[lang] || 'en_US'}"><meta property="og:image" content="${ogImg}"><meta property="og:image:width" content="1200"><meta property="og:image:height" content="630"><meta property="og:image:alt" content="${esc(cfg.siteName)}">
+<meta name="twitter:card" content="summary_large_image"><meta name="twitter:title" content="${esc(title)}"><meta name="twitter:description" content="${esc(desc)}"><meta name="twitter:image" content="${ogImg}">
+${lds.map(j => `<script type="application/ld+json">${JSON.stringify(j).replace(/</g, '\\u003c')}</script>`).join('')}
 <link rel="icon" href="/assets/icon.svg" type="image/svg+xml"><link rel="manifest" href="/manifest.webmanifest"><meta name="theme-color" content="#0c1018"><link rel="apple-touch-icon" href="/icons/icon-192.png">
 <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@500;700&family=IBM+Plex+Sans:wght@400;600&display=swap">
@@ -73,7 +80,7 @@ ${ads}
 <nav class="games">${nav}</nav>
 </div></header>
 <main class="wrap">
-${body}
+${crumbNav}${body}
 </main>
 <footer><div class="wrap">
 <span>${esc(t.disclaimer)}</span>
@@ -98,6 +105,11 @@ function showcase(lang) {
 }
 const newsCards = (lang, list) => list.length ? `<div class="newslist">${list.map(n => `<a class="newsitem" href="/${lang}/news/${n.slug}/"><span class="note">${esc(n.date)} · ${esc(GAMES.find(g => g.id === n.game)?.name || '')} · ${esc(I18N[lang]['type_' + (n.type || 'patch')] || '')}</span><h3>${esc(n.title[lang] || n.title.en)}</h3><span class="note">${esc(n.summary[lang] || n.summary.en)}</span></a>`).join('')}</div>` : `<p class="note">${esc(I18N[lang].noNews)}</p>`;
 
+/* Articles that mention a hero (guide for it, or its name in the English body), newest first. */
+const reEsc = x => x.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+const newsAbout = (gid, x) => NEWS.filter(n => n.game === gid && (n.hero === x || new RegExp(`(^|[^A-Za-z])${reEsc(x)}([^A-Za-z]|$)`).test(JSON.stringify(n.body.en) + ' ' + n.title.en)))
+  .sort((a, b) => (b.hero === x) - (a.hero === x) || b.date.localeCompare(a.date)).slice(0, 4);
+const newsSection = (lang, h, list) => list.length ? `<section><h2>${esc(h)}</h2>${newsCards(lang, list)}</section>` : '';
 for (const lang of cfg.langs) {
   const t = I18N[lang];
   const tt = (k, v) => fill(t[k] || k, v);
@@ -114,7 +126,7 @@ for (const lang of cfg.langs) {
 ${GAMES.map(g => `<a class="game" href="/${lang}/${g.slug}/"><h3>${esc(g.full)}</h3><span class="note">${esc(gameDesc(g))}</span><span class="go">${esc(t.openTool)} →</span></a>`).join('\n')}
 </div></section>
 ${showcase(lang)}
-<section><h2>${esc(t.latestNews)}</h2>${newsCards(lang, NEWS.slice(0, 3))}</section>`
+<section><h2>${esc(t.latestNews)}</h2>${newsCards(lang, NEWS.slice(0, 6))}</section>`
   }));
 
   for (const g of GAMES) {
@@ -142,7 +154,8 @@ ${showcase(lang)}
 ${lanes ? lanes.map(([lane, tl]) => `<section><h2>${esc(t['tl_lane_' + lane] || lane)}</h2><div class="card tiers">${rows(tl)}</div></section>`).join('') : `<section><div class="card tiers">${rows(D.tierList)}</div></section>`}
 <div class="bar"><a class="btn" href="/${gp}/">${esc(gameTitle(g))} →</a></div>
 ${faqBlock(tqa)}`;
-        write(`${gp}/tier-list/index.html`, layout({ lang, rel: `${gp}/tier-list/`, active: g.id, body: tbody, jsonld: faqLd(tqa),
+        write(`${gp}/tier-list/index.html`, layout({ lang, rel: `${gp}/tier-list/`, active: g.id, body: tbody, jsonld: faqLd(tqa), img: g.id, lastmod: D.updated,
+          crumbs: [[t.home, `${lang}/`], [g.name, `${gp}/`], [tt('tl_h1', { g: g.name }), `${gp}/tier-list/`]],
           title: tt('tl_title', { g: g.name, p: tlPeriod }), desc: tt('tl_desc', { g: g.name, top: listOf(sTop.slice(0, 4)), d: dateTxt }) }));
       };
     const app = { lang, game: g.id, kind: g.kind, t: tSub, data: D, example: g.example || null, itemsTr: lang === 'tr' && g.id === 'mlbb' ? ITEMS_TR : null };
@@ -179,11 +192,11 @@ ${isMoba ? `<section id="buildsec"><h2>${esc(t.yourHero)}</h2><div class="heroli
 <div class="bar"><button class="btn" id="winBtn" type="button">✓ ${esc(t.winBtn)}</button><button class="btn ghost" id="lossBtn" type="button">✕ ${esc(t.lossBtn)}</button></div><p class="note" id="reportMsg" aria-live="polite"></p><p class="badge" id="badge"></p></section>` : `<section><div class="card"><ul class="tips" id="tips" style="margin:0"></ul></div></section>`}
 <div class="bar"><button class="btn" id="speak" type="button">🔊 ${esc(t.speak)}</button><button class="btn ghost" id="clear" type="button">${esc(t.clear)}</button>${isMoba ? `<a class="btn ghost" href="/${gp}/draft/">🎯 ${esc(t.draftLink)}</a>` : ''}</div>
 <section><h2>${esc(isMoba ? t.allHeroes : t.allBrawlers)}</h2><div class="list-links">${links}</div></section>`;
-      write(`${gp}/index.html`, layout({ lang, rel: `${gp}/`, title: `${gameTitle(g)} · ${cfg.siteName}`, desc: gameDesc(g), active: g.id, body, app }));
+      write(`${gp}/index.html`, layout({ lang, rel: `${gp}/`, title: `${gameTitle(g)} · ${cfg.siteName}`, desc: gameDesc(g), active: g.id, body, app, img: g.id, lastmod: D.updated }));
 
       if (D.tierList) writeTier(list, h => isMoba ? h.r : h.c);
       if (isMoba) write(`${gp}/draft/index.html`, layout({
-        lang, rel: `${gp}/draft/`, active: g.id, app: { lang, game: g.id, kind: 'draft', t: tSub, data: D, itemsTr: lang === 'tr' && g.id === 'mlbb' ? ITEMS_TR : null },
+        lang, rel: `${gp}/draft/`, active: g.id, img: g.id, lastmod: D.updated, app: { lang, game: g.id, kind: 'draft', t: tSub, data: D, itemsTr: lang === 'tr' && g.id === 'mlbb' ? ITEMS_TR : null },
         title: `${tt('draftTitle', { g: g.name })} · ${cfg.siteName}`, desc: t.draftDesc,
         body: `<section><h1>${esc(tt('draftTitle', { g: g.name }))}</h1><p class="lead">${esc(t.draftDesc)}</p></section>
 <section><div class="row seg"><span class="note">${esc(t.dMode)}:</span><span class="row seg" id="dmodeSeg"></span></div>
@@ -255,10 +268,12 @@ ${strong.length ? `<section><h2>${esc(tt('bp_strong', { x }))}</h2><p style="mar
         const body2 = `${inner}
 ${src}${comm}
 <div class="bar"><a class="btn" href="/${gp}/?e=${encodeURIComponent(x)}">${esc(tt('hp_try', { x }))}</a>${D.tierList ? `<a class="btn ghost" href="/${gp}/tier-list/">${esc(tt('tl_h1', { g: g.name }))}</a>` : ''}</div>
+${newsSection(lang, tt('hp_news', { x }), newsAbout(g.id, x))}
 ${faqBlock(qa)}
 <section><h2>${esc(isMoba ? t.allHeroes : t.allBrawlers)}</h2><div class="list-links">${links}</div></section>`;
         write(`${gp}/${slug(x)}/index.html`, layout({
-          lang, rel: `${gp}/${slug(x)}/`, active: g.id, body: body2, jsonld: faqLd(qa),
+          lang, rel: `${gp}/${slug(x)}/`, active: g.id, body: body2, jsonld: faqLd(qa), img: g.id, lastmod: D.updated,
+          crumbs: [[t.home, `${lang}/`], [g.name, `${gp}/`], [x, `${gp}/${slug(x)}/`]],
           title: `${tt(isMoba ? 'hp_title2' : 'bp_title2', { x, p: period })} · ${gshort}`,
           desc: tt(isMoba ? 'hp_desc2' : 'bp_desc2', { x, g: g.full, top: listOf(topNames), d: dateTxt })
         }));
@@ -275,7 +290,7 @@ ${faqBlock(qa)}
 <section><h2>${esc(t.ffCombo)}</h2><div class="card" id="combo"></div></section>
 <div class="bar"><button class="btn" id="speak" type="button">🔊 ${esc(t.speak)}</button></div>
 <section><h2>${esc(t.allCharacters)}</h2><div class="list-links">${links}</div></section>`;
-      write(`${gp}/index.html`, layout({ lang, rel: `${gp}/`, title: `${t.ffToolTitle} · ${cfg.siteName}`, desc: t.ffToolDesc, active: g.id, body, app }));
+      write(`${gp}/index.html`, layout({ lang, rel: `${gp}/`, title: `${t.ffToolTitle} · ${cfg.siteName}`, desc: t.ffToolDesc, active: g.id, body, app, img: g.id, lastmod: D.updated }));
       if (D.tierList) writeTier(chars, c => c.type);
       for (const c of chars) {
         const best = Engine.ffBestStyle(D, c.n);
@@ -288,17 +303,19 @@ ${faqBlock(qa)}
 <p class="lead">${esc(tt(c.type === 'a' ? 'fp_aboutA' : 'fp_aboutP', { x: c.n }))} ${esc(tags.join(', '))}.</p></section>
 <section><h2>${esc(tt('fp_best', { x: c.n }))}</h2><p class="note" style="margin:0 0 8px">${esc(t.fp_style)}: ${esc(t['ps_' + best.style])} · ${esc(t['ff_' + best.mode])}</p>
 <div class="card">${card(combo.active, t.activeSkill)}${combo.passives.map(p => card(p, t.passiveSkill)).join('')}</div></section>
-<div class="bar"><a class="btn" href="/${gp}/?c=${encodeURIComponent(c.n)}">${esc(tt('hp_try', { x: c.n }))}</a></div>
+<div class="bar"><a class="btn" href="/${gp}/?c=${encodeURIComponent(c.n)}">${esc(tt('hp_try', { x: c.n }))}</a>${D.tierList ? `<a class="btn ghost" href="/${gp}/tier-list/">${esc(tt('tl_h1', { g: g.name }))}</a>` : ''}</div>
+${newsSection(lang, tt('hp_news', { x: c.n }), newsAbout(g.id, c.n))}
 ${faqBlock(fqa)}
 <section><h2>${esc(t.allCharacters)}</h2><div class="list-links">${links}</div></section>`;
-        write(`${gp}/${slug(c.n)}/index.html`, layout({ lang, rel: `${gp}/${slug(c.n)}/`, active: g.id, body: body2, jsonld: faqLd(fqa),
+        write(`${gp}/${slug(c.n)}/index.html`, layout({ lang, rel: `${gp}/${slug(c.n)}/`, active: g.id, body: body2, jsonld: faqLd(fqa), img: g.id, lastmod: D.updated,
+          crumbs: [[t.home, `${lang}/`], [g.name, `${gp}/`], [c.n, `${gp}/${slug(c.n)}/`]],
           title: `${tt('fp_title2', { x: c.n, p: period })} · Free Fire`, desc: tt('fp_desc2', { x: c.n, top: comboTxt, d: dateTxt }) }));
       }
     }
   }
 
   /* News */
-  write(`${lang}/news/index.html`, layout({ lang, rel: `${lang}/news/`, active: 'news', title: `${t.news} · ${cfg.siteName}`, desc: t.newsDesc,
+  write(`${lang}/news/index.html`, layout({ lang, rel: `${lang}/news/`, active: 'news', lastmod: NEWS.length ? NEWS[0].date : lastUpdated, title: `${t.news} · ${cfg.siteName}`, desc: t.newsDesc,
     body: `<section><h1>${esc(t.news)}</h1><p class="lead">${esc(t.newsDesc)}</p></section><section>${newsCards(lang, NEWS)}</section>` }));
   for (const n of NEWS) {
     const g = GAMES.find(x => x.id === n.game);
@@ -306,10 +323,16 @@ ${faqBlock(fqa)}
     const title = n.title[lang] || n.title.en;
     write(`${lang}/news/${n.slug}/index.html`, layout({
       lang, rel: `${lang}/news/${n.slug}/`, active: 'news', type: 'article', title: `${title} · ${cfg.siteName}`, desc: n.summary[lang] || n.summary.en,
-      jsonld: { '@context': 'https://schema.org', '@type': n.type === 'guide' ? 'Article' : 'NewsArticle', headline: title, datePublished: n.date, dateModified: n.date, inLanguage: lang, publisher: { '@type': 'Organization', name: cfg.siteName }, author: { '@type': 'Organization', name: cfg.siteName } },
+      img: n.game, lastmod: n.date, crumbs: [[t.home, `${lang}/`], [t.news, `${lang}/news/`], [title, `${lang}/news/${n.slug}/`]],
+      jsonld: { '@context': 'https://schema.org', '@type': n.type === 'guide' ? 'Article' : 'NewsArticle', headline: title, description: n.summary[lang] || n.summary.en,
+        image: [`${base}/og/${n.game}.png`], url: `${base}/${lang}/news/${n.slug}/`, mainEntityOfPage: `${base}/${lang}/news/${n.slug}/`,
+        datePublished: n.date, dateModified: n.date, inLanguage: lang, articleSection: I18N[lang]['type_' + (n.type || 'patch')] || undefined,
+        about: g ? { '@type': 'VideoGame', name: g.full } : undefined,
+        publisher: { '@type': 'Organization', name: cfg.siteName, url: `${base}/`, logo: { '@type': 'ImageObject', url: `${base}/icons/icon-512.png` } }, author: { '@type': 'Organization', name: cfg.siteName, url: `${base}/${lang}/about/` } },
       body: `<article class="prose"><p class="note">${esc(t.publishedOn)}: ${esc(n.date)}${g ? ' · ' + esc(g.full) : ''}</p><h1>${esc(title)}</h1>${blocks}
 ${n.sources && n.sources.length ? `<p class="note">${esc(n.sources.join(' · '))}</p>` : ''}</article>
-<div class="bar">${g && n.hero ? `<a class="btn ghost" href="/${lang}/${g.slug}/${slug(n.hero)}/">${esc(tt('hp_h1', { x: n.hero }))}</a>` : ''}${g ? `<a class="btn" href="/${lang}/${g.slug}/">${esc(t.openTool)} →</a>` : ''}</div>`
+<div class="bar">${g && n.hero ? `<a class="btn ghost" href="/${lang}/${g.slug}/${slug(n.hero)}/">${esc(tt('hp_h1', { x: n.hero }))}</a>` : ''}${g && g.data.tierList ? `<a class="btn ghost" href="/${lang}/${g.slug}/tier-list/">${esc(tt('tl_h1', { g: g.name }))}</a>` : ''}${g ? `<a class="btn" href="/${lang}/${g.slug}/">${esc(t.openTool)} →</a>` : ''}</div>
+${newsSection(lang, t.relatedNews, NEWS.filter(m => m !== n && m.game === n.game).slice(0, 4))}`
     }));
   }
 
@@ -373,7 +396,7 @@ fs.writeFileSync(path.join(OUT, 'robots.txt'), AI_BOTS.map(b => `User-agent: ${b
   }).join('\n');
   fs.writeFileSync(path.join(OUT, 'llms.txt'), `# ${cfg.siteName}\n\n> Free, multilingual pick assistant for mobile games: pick the enemy team and get counter picks, team analysis, ban suggestions, item builds and emblems that adapt to the enemy, with optional read-aloud. Covers Mobile Legends: Bang Bang, Honor of Kings, League of Legends: Wild Rift, Free Fire and Brawl Stars. No sign-up. Data and patch news are updated every week. Available in English, Turkish, Indonesian, Spanish and Portuguese (replace /en/ with /tr/, /id/, /es/ or /pt/).\n\n${gl}\n## More\n- [Patch news and guides](${B}/en/news/): weekly patch summaries, meta reports and hero guides written in our own words.\n- [How to use](${B}/en/guide/)\n- [About](${B}/en/about/) · Contact: ${cfg.contactEmail || ''}\n`);
 }
-if (base) fs.writeFileSync(path.join(OUT, 'sitemap.xml'), `<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n${pages.map(p => `<url><loc>${base}/${p}</loc><lastmod>${lastUpdated}</lastmod></url>`).join('\n')}\n</urlset>\n`);
+if (base) fs.writeFileSync(path.join(OUT, 'sitemap.xml'), `<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n${pages.map(p => `<url><loc>${base}/${p.rel}</loc><lastmod>${p.lastmod}</lastmod></url>`).join('\n')}\n</urlset>\n`);
 if (cfg.adsenseClient) fs.writeFileSync(path.join(OUT, 'ads.txt'), `google.com, ${cfg.adsenseClient.replace(/^ca-/, '')}, DIRECT, f08c47fec0942fa0\n`);
 fs.writeFileSync(path.join(OUT, '404.html'), `<!doctype html><meta charset="utf-8"><title>404</title><body style="background:#0c1018;color:#e9edf5;font-family:system-ui;padding:24px"><p>404 · <a style="color:#e8b44a" href="/">${esc(cfg.siteName)}</a></p></body>`);
 console.log(`Built ${pages.length} pages into dist/`);
