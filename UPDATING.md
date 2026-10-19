@@ -38,3 +38,5 @@ All articles live in `data/news/` as one JSON file each, same structure as the e
 
 ## 3. Publish
 Run `node build.js` (must finish without errors), commit with a message such as `Weekly update YYYY-MM-DD: <games and patches>`, and push to `main`. Cloudflare Pages redeploys automatically. Never commit `dist/`.
+
+After the push, wait about 3 minutes for Cloudflare to deploy, then run `node tools/indexnow.js` to tell Bing and other IndexNow search engines which pages changed (HTTP 200 or 202 means accepted; a failure here is not a reason to undo anything).
