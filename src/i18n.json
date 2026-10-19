@@ -293,11 +293,11 @@
   "mm_good": "{x} karşısında avantajlısın",
   "mm_bad": "{x} sana karşı tehlikeli",
   "mm_none": "Rakip seçince kahramanının uyum puanı burada çıkar.",
-  "hp_title2": "{x} Counter {p}: Nasıl Yenilir, Hangi Item?",
+  "hp_title2": "{x} Counter {g} {p}: {top} + Itemler",
   "hp_desc2": "{g} {x} counter: {top}. {x} karşısında alınacak itemler, önerilen dizilim ve taktikler. Güncelleme: {d}.",
-  "bp_title2": "{x} Counter {p}: En İyi Karşı Brawlerlar",
+  "bp_title2": "{x} Counter Brawl Stars {p}: {top}",
   "bp_desc2": "Brawl Stars'ta {x} karşısında en iyi seçimler: {top}. Moda göre taktikler. Güncelleme: {d}.",
-  "fp_title2": "{x} En İyi Kombinasyon {p}: Aktif + Pasif",
+  "fp_title2": "{x} Yeteneği ({s}) ve En İyi Kombinasyon {p}",
   "fp_desc2": "Free Fire'da {x} ile en iyi karakter kombinasyonu: {top}. Güncelleme: {d}.",
   "patchLbl": "Yama {v}",
   "playVs": "{x} karşısında nasıl oynanır?",
@@ -374,7 +374,9 @@
   "reportSent": "Bu draft için sonuç zaten bildirildi.",
   "home": "Ana sayfa",
   "hp_news": "{x} rehberleri ve haberleri",
-  "relatedNews": "İlgili yazılar"
+  "relatedNews": "İlgili yazılar",
+  "fp_skillH": "{x} yeteneği: {s}",
+  "q_ffskill": "Free Fire'da {x} yeteneği nedir?"
  },
  "en": {
   "langName": "English",
@@ -670,11 +672,11 @@
   "mm_good": "You have the edge against {x}",
   "mm_bad": "{x} is dangerous for you",
   "mm_none": "Pick enemies to see your hero's matchup score here.",
-  "hp_title2": "{x} Counter {p}: Best Picks, Items & Tips",
-  "hp_desc2": "Best counters to {x} in {g}: {top}. Items to buy against {x}, suggested build and tips. Updated {d}.",
-  "bp_title2": "{x} Counter {p}: Best Brawlers to Beat {x}",
+  "hp_title2": "{x} Counter {g} {p}: {top} + Items",
+  "hp_desc2": "Best counters (ct) to {x} in {g}: {top}. Items to buy against {x}, suggested build and tips. Updated {d}.",
+  "bp_title2": "{x} Counter Brawl Stars {p}: {top}",
   "bp_desc2": "Best picks against {x} in Brawl Stars: {top}. Tips by game mode. Updated {d}.",
-  "fp_title2": "{x} Best Combo {p}: Active + Passive Skills",
+  "fp_title2": "{x} Skill ({s}) & Best Combo {p}",
   "fp_desc2": "Best Free Fire character combination with {x}: {top}. Updated {d}.",
   "patchLbl": "Patch {v}",
   "playVs": "How to play against {x}",
@@ -751,7 +753,9 @@
   "reportSent": "You already reported this draft.",
   "home": "Home",
   "hp_news": "{x} guides and news",
-  "relatedNews": "Related articles"
+  "relatedNews": "Related articles",
+  "fp_skillH": "{x}'s skill: {s}",
+  "q_ffskill": "What is {x}'s skill in Free Fire?"
  },
  "id": {
   "langName": "Bahasa Indonesia",
@@ -1047,11 +1051,11 @@
   "mm_good": "Kamu unggul melawan {x}",
   "mm_bad": "{x} berbahaya untukmu",
   "mm_none": "Pilih musuh untuk melihat skor matchup hero-mu di sini.",
-  "hp_title2": "Counter {x} {p}: Pick, Item & Tips Terbaik",
-  "hp_desc2": "Counter terbaik untuk {x} di {g}: {top}. Item untuk melawan {x}, build yang disarankan, dan tips. Update {d}.",
-  "bp_title2": "Counter {x} {p}: Brawler Terbaik Melawan {x}",
+  "hp_title2": "Counter {x} {g} {p}: {top} + Item",
+  "hp_desc2": "Counter (ct) terbaik untuk {x} di {g}: {top}. Item untuk melawan {x}, build yang disarankan, dan tips. Update {d}.",
+  "bp_title2": "Counter {x} Brawl Stars {p}: {top}",
   "bp_desc2": "Pick terbaik melawan {x} di Brawl Stars: {top}. Tips sesuai mode. Update {d}.",
-  "fp_title2": "Kombinasi Terbaik {x} {p}: Skill Aktif + Pasif",
+  "fp_title2": "Skill {x} ({s}) & Kombinasi Terbaik {p}",
   "fp_desc2": "Kombinasi karakter Free Fire terbaik dengan {x}: {top}. Update {d}.",
   "patchLbl": "Patch {v}",
   "playVs": "Cara bermain melawan {x}",
@@ -1128,7 +1132,9 @@
   "reportSent": "Draft ini sudah kamu laporkan.",
   "home": "Beranda",
   "hp_news": "Panduan dan berita {x}",
-  "relatedNews": "Artikel terkait"
+  "relatedNews": "Artikel terkait",
+  "fp_skillH": "Skill {x}: {s}",
+  "q_ffskill": "Apa skill {x} di Free Fire?"
  },
  "es": {
   "langName": "Español",
@@ -1424,11 +1430,11 @@
   "mm_good": "Tienes ventaja contra {x}",
   "mm_bad": "{x} es peligroso para ti",
   "mm_none": "Elige rivales para ver aquí la puntuación de tu héroe.",
-  "hp_title2": "Counter de {x} {p}: Mejores Héroes, Objetos y Consejos",
+  "hp_title2": "Counter de {x} en {g} {p}: {top} + Objetos",
   "hp_desc2": "Los mejores counters de {x} en {g}: {top}. Objetos contra {x}, build sugerida y consejos. Actualizado {d}.",
-  "bp_title2": "Counter de {x} {p}: Mejores Brawlers contra {x}",
+  "bp_title2": "Counter de {x} en Brawl Stars {p}: {top}",
   "bp_desc2": "Mejores opciones contra {x} en Brawl Stars: {top}. Consejos por modo. Actualizado {d}.",
-  "fp_title2": "Mejor Combinación de {x} {p}: Activa + Pasivas",
+  "fp_title2": "Habilidad de {x} ({s}) y Mejor Combinación {p}",
   "fp_desc2": "La mejor combinación de personajes de Free Fire con {x}: {top}. Actualizado {d}.",
   "patchLbl": "Parche {v}",
   "playVs": "Cómo jugar contra {x}",
@@ -1505,7 +1511,9 @@
   "reportSent": "Ya informaste este draft.",
   "home": "Inicio",
   "hp_news": "Guías y noticias de {x}",
-  "relatedNews": "Artículos relacionados"
+  "relatedNews": "Artículos relacionados",
+  "fp_skillH": "Habilidad de {x}: {s}",
+  "q_ffskill": "¿Cuál es la habilidad de {x} en Free Fire?"
  },
  "pt": {
   "langName": "Português",
@@ -1801,11 +1809,11 @@
   "mm_good": "Você tem vantagem contra {x}",
   "mm_bad": "{x} é perigoso para você",
   "mm_none": "Escolha inimigos para ver aqui a nota do seu herói.",
-  "hp_title2": "Counter de {x} {p}: Melhores Heróis, Itens e Dicas",
+  "hp_title2": "Counter de {x} no {g} {p}: {top} + Itens",
   "hp_desc2": "Os melhores counters de {x} em {g}: {top}. Itens contra {x}, build sugerida e dicas. Atualizado {d}.",
-  "bp_title2": "Counter de {x} {p}: Melhores Brawlers contra {x}",
+  "bp_title2": "Counter de {x} no Brawl Stars {p}: {top}",
   "bp_desc2": "Melhores escolhas contra {x} no Brawl Stars: {top}. Dicas por modo. Atualizado {d}.",
-  "fp_title2": "Melhor Combinação de {x} {p}: Ativa + Passivas",
+  "fp_title2": "Habilidade de {x} ({s}) e Melhor Combinação {p}",
   "fp_desc2": "A melhor combinação de personagens do Free Fire com {x}: {top}. Atualizado {d}.",
   "patchLbl": "Patch {v}",
   "playVs": "Como jogar contra {x}",
@@ -1882,6 +1890,8 @@
   "reportSent": "Você já informou este draft.",
   "home": "Início",
   "hp_news": "Guias e notícias de {x}",
-  "relatedNews": "Artigos relacionados"
+  "relatedNews": "Artigos relacionados",
+  "fp_skillH": "Habilidade de {x}: {s}",
+  "q_ffskill": "Qual é a habilidade de {x} no Free Fire?"
  }
 }

@@ -274,7 +274,7 @@ ${faqBlock(qa)}
         write(`${gp}/${slug(x)}/index.html`, layout({
           lang, rel: `${gp}/${slug(x)}/`, active: g.id, body: body2, jsonld: faqLd(qa), img: g.id, lastmod: D.updated,
           crumbs: [[t.home, `${lang}/`], [g.name, `${gp}/`], [x, `${gp}/${slug(x)}/`]],
-          title: `${tt(isMoba ? 'hp_title2' : 'bp_title2', { x, p: period })} · ${gshort}`,
+          title: tt(isMoba ? 'hp_title2' : 'bp_title2', { x, p: period, g: gshort, top: listOf(topNames) }),
           desc: tt(isMoba ? 'hp_desc2' : 'bp_desc2', { x, g: g.full, top: listOf(topNames), d: dateTxt })
         }));
       }
@@ -298,9 +298,12 @@ ${faqBlock(qa)}
         const card = (x, label) => `<div class="pick">${Icons.hero(x.n, x.type, 40)}<span class="pmain"><span><b><a href="/${gp}/${slug(x.n)}/" style="color:inherit">${esc(x.n)}</a></b> <span class="role">${esc(label)}</span></span><span class="why">${esc(x.why.map(k => t[k]).join(' · '))}</span></span><span></span></div>`;
         const tags = c.tags.map(k => t['f_' + k]).filter(Boolean);
         const comboTxt = `${combo.active.n} + ${listOf(combo.passives.map(p => p.n))}`;
-        const fqa = [[tt('q_ffbest', { x: c.n }), tt('a_ffbest', { x: c.n, a: combo.active.n, p: listOf(combo.passives.map(p => p.n)), s: `${t['ps_' + best.style]} · ${t['ff_' + best.mode]}` })]];
+        const sd = c.sd ? (c.sd[lang] || c.sd.en) : '';
+        const fqa = c.skill && sd ? [[tt('q_ffskill', { x: c.n }), `${c.skill}. ${sd}`]] : [];
+        fqa.push([tt('q_ffbest', { x: c.n }), tt('a_ffbest', { x: c.n, a: combo.active.n, p: listOf(combo.passives.map(p => p.n)), s: `${t['ps_' + best.style]} · ${t['ff_' + best.mode]}` })]);
         const body2 = `<section><div class="heroline">${Icons.hero(c.n, c.type, 56)}<h1>${esc(tt('fp_h1', { x: c.n }))}</h1></div>
 <p class="lead">${esc(tt(c.type === 'a' ? 'fp_aboutA' : 'fp_aboutP', { x: c.n }))} ${esc(tags.join(', '))}.</p></section>
+${c.skill && sd ? `<section><h2>${esc(tt('fp_skillH', { x: c.n, s: c.skill }))}</h2><p style="margin:0">${esc(sd)}</p></section>` : ''}
 <section><h2>${esc(tt('fp_best', { x: c.n }))}</h2><p class="note" style="margin:0 0 8px">${esc(t.fp_style)}: ${esc(t['ps_' + best.style])} · ${esc(t['ff_' + best.mode])}</p>
 <div class="card">${card(combo.active, t.activeSkill)}${combo.passives.map(p => card(p, t.passiveSkill)).join('')}</div></section>
 <div class="bar"><a class="btn" href="/${gp}/?c=${encodeURIComponent(c.n)}">${esc(tt('hp_try', { x: c.n }))}</a>${D.tierList ? `<a class="btn ghost" href="/${gp}/tier-list/">${esc(tt('tl_h1', { g: g.name }))}</a>` : ''}</div>
@@ -309,7 +312,8 @@ ${faqBlock(fqa)}
 <section><h2>${esc(t.allCharacters)}</h2><div class="list-links">${links}</div></section>`;
         write(`${gp}/${slug(c.n)}/index.html`, layout({ lang, rel: `${gp}/${slug(c.n)}/`, active: g.id, body: body2, jsonld: faqLd(fqa), img: g.id, lastmod: D.updated,
           crumbs: [[t.home, `${lang}/`], [g.name, `${gp}/`], [c.n, `${gp}/${slug(c.n)}/`]],
-          title: `${tt('fp_title2', { x: c.n, p: period })} · Free Fire`, desc: tt('fp_desc2', { x: c.n, top: comboTxt, d: dateTxt }) }));
+          title: c.skill ? `${tt('fp_title2', { x: c.n, s: c.skill, p: period })} · Free Fire` : `${tt('fp_h1', { x: c.n })} ${period} · Free Fire`,
+          desc: (sd ? `${c.skill}: ${sd} ` : '') + tt('fp_desc2', { x: c.n, top: comboTxt, d: dateTxt }) }));
       }
     }
   }

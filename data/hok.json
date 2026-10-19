@@ -1,6 +1,6 @@
 {
   "game": "hok",
-  "patch": "Season 16",
+  "patch": "S16",
   "updated": "2026-10-19",
   "notes": "Same schema as mlbb.json. tier=S/A/B/C or null (weekly updater). Item names starting with # are category keys translated in src/i18n.json.",
   "archetypes": {

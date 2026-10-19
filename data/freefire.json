@@ -1,7 +1,7 @@
 {
   "game": "freefire",
   "updated": "2026-10-19",
-  "notes": "type a=active skill, p=passive skill. tags: rush, sniper, support, heal, mobility, armor, intel, antigloo, antirush, antisniper, br (Battle Royale), cs (Clash Squad). tier=S/A/B/C or null (weekly updater). A combo is 1 active + 3 passives.",
+  "notes": "type a=active skill, p=passive skill. tags: rush, sniper, support, heal, mobility, armor, intel, antigloo, antirush, antisniper, br (Battle Royale), cs (Clash Squad). tier=S/A/B/C or null (weekly updater). A combo is 1 active + 3 passives. skill = official English skill name, sd = short skill description per language (from ff.garena.com and freefiremania.com.br; refresh when a patch changes the skill).",
   "characters": [
     {
       "n": "A124",
@@ -10,7 +10,15 @@
         "cs",
         "antirush"
       ],
-      "tier": null
+      "tier": null,
+      "skill": "Thrill of Battle",
+      "sd": {
+        "en": "Active: sends out an electromagnetic wave that blocks nearby enemies' skill activation and cancels their interaction countdowns (healing, reviving, etc.).",
+        "tr": "Aktif: Elektromanyetik bir dalga yayar; yakındaki düşmanların yetenek kullanmasını engeller ve iyileşme, kaldırma gibi etkileşim sayaçlarını yarıda keser.",
+        "id": "Aktif: memancarkan gelombang elektromagnetik yang mencegah musuh di sekitar memakai skill dan membatalkan hitungan interaksi mereka (heal, revive, dll).",
+        "es": "Activa: lanza una onda electromagnética que impide a los enemigos cercanos usar habilidades y corta sus cuentas atrás de interacción (curarse, revivir, etc.).",
+        "pt": "Ativa: solta uma onda eletromagnética que impede inimigos próximos de usar habilidades e interrompe a contagem de interações deles (curar, levantar etc.)."
+      }
     },
     {
       "n": "Alok",
@@ -23,7 +31,15 @@
         "cs",
         "rush"
       ],
-      "tier": "S"
+      "tier": "S",
+      "skill": "Drop the Beat",
+      "sd": {
+        "en": "Active: creates a 5 m aura that gives +15% movement speed and restores HP for 10s to you and nearby allies. Cooldown 45s; effects don't stack.",
+        "tr": "Aktif: 5 m'lik bir aura oluşturur; sana ve yakındaki takım arkadaşlarına 10 sn boyunca +%15 hareket hızı ve HP yenilemesi verir. Bekleme süresi 45 sn, etki üst üste binmez.",
+        "id": "Aktif: membuat aura 5 m yang memberi +15% kecepatan gerak dan memulihkan HP selama 10 detik untuk kamu dan rekan di dekatmu. Cooldown 45 detik, efek tidak menumpuk.",
+        "es": "Activa: crea un aura de 5 m que da +15% de velocidad de movimiento y recupera HP durante 10 s a ti y a tus aliados cercanos. Enfriamiento de 45 s; no se acumula.",
+        "pt": "Ativa: cria uma aura de 5 m que dá +15% de velocidade e recupera HP por 10s para você e aliados próximos. Recarga de 45s; o efeito não acumula."
+      }
     },
     {
       "n": "Andrew",
@@ -32,7 +48,15 @@
         "armor",
         "br"
       ],
-      "tier": null
+      "tier": null,
+      "skill": "Armor Specialist",
+      "sd": {
+        "en": "Passive: your vest loses durability more slowly when you take hits, by up to 12% at max level.",
+        "tr": "Pasif: Hasar aldığında yeleğinin dayanıklılığı daha yavaş düşer; maksimum seviyede kayıp %12'ye kadar azalır.",
+        "id": "Pasif: daya tahan rompi berkurang lebih lambat saat terkena tembakan, hingga 12% lebih sedikit di level maksimal.",
+        "es": "Pasiva: tu chaleco pierde durabilidad más despacio al recibir daño, hasta un 12% menos al nivel máximo.",
+        "pt": "Passiva: seu colete perde durabilidade mais devagar ao levar dano, até 12% a menos no nível máximo."
+      }
     },
     {
       "n": "Antonio",
@@ -41,7 +65,15 @@
         "armor",
         "cs"
       ],
-      "tier": null
+      "tier": null,
+      "skill": "Gangster's Spirit",
+      "sd": {
+        "en": "Passive: start each match with 20 extra Shield Points, and recover those Shield Points after you survive a fight.",
+        "tr": "Pasif: Her maça 20 ekstra Kalkan Puanı ile başlarsın ve bir çatışmadan sağ çıktığında bu kalkan puanlarını geri kazanırsın.",
+        "id": "Pasif: mulai setiap match dengan 20 Shield Point tambahan, dan Shield Point itu pulih lagi setelah kamu selamat dari pertarungan.",
+        "es": "Pasiva: empiezas cada partida con 20 Puntos de Escudo extra y los recuperas después de sobrevivir a un combate.",
+        "pt": "Passiva: começa cada partida com 20 Pontos de Escudo extras e recupera esses pontos depois de sobreviver a um combate."
+      }
     },
     {
       "n": "Caroline",
@@ -50,7 +82,15 @@
         "rush",
         "mobility"
       ],
-      "tier": "C"
+      "tier": "C",
+      "skill": "Agility",
+      "sd": {
+        "en": "Passive: you move faster while holding a shotgun, great for rushing in close-range fights.",
+        "tr": "Pasif: Elinde pompalı (shotgun) varken daha hızlı hareket edersin; yakın mesafe rush için ideal.",
+        "id": "Pasif: kamu bergerak lebih cepat saat memegang shotgun, cocok untuk rush jarak dekat.",
+        "es": "Pasiva: te mueves más rápido mientras llevas una escopeta en la mano, ideal para rushear de cerca.",
+        "pt": "Passiva: você corre mais rápido segurando uma escopeta, ótima para rushar de perto."
+      }
     },
     {
       "n": "Chrono",
@@ -62,7 +102,15 @@
         "antisniper",
         "armor"
       ],
-      "tier": null
+      "tier": null,
+      "skill": "Time Turner",
+      "sd": {
+        "en": "Active: creates a force field that blocks 1000 damage; you can't shoot enemies outside it from inside. Effects last 10s, cooldown 45s.",
+        "tr": "Aktif: 1000 hasarı engelleyen bir güç alanı oluşturur; içerideyken dışarıdaki düşmanlara ateş edemezsin. Etkiler 10 sn sürer, bekleme süresi 45 sn.",
+        "id": "Aktif: membuat force field yang menahan 1000 damage; dari dalam kamu tidak bisa menembak musuh di luar. Efek 10 detik, cooldown 45 detik.",
+        "es": "Activa: crea un campo de fuerza que bloquea 1000 de daño; desde dentro no puedes disparar a enemigos de fuera. Dura 10 s, enfriamiento de 45 s.",
+        "pt": "Ativa: cria um campo de força que bloqueia 1000 de dano; de dentro dele você não acerta inimigos lá fora. Dura 10s, recarga de 45s."
+      }
     },
     {
       "n": "Clu",
@@ -72,7 +120,15 @@
         "sniper",
         "br"
       ],
-      "tier": null
+      "tier": null,
+      "skill": "Tracing Steps",
+      "sd": {
+        "en": "Active: reveals the positions of nearby enemies who are not crouching or prone, and shares them with your squad.",
+        "tr": "Aktif: Yakındaki çömelmemiş veya yere yatmamış düşmanların yerini gösterir ve takımınla paylaşır.",
+        "id": "Aktif: menunjukkan posisi musuh di sekitar yang tidak sedang jongkok atau tiarap, dan dibagikan ke tim.",
+        "es": "Activa: revela la posición de los enemigos cercanos que no estén agachados ni tumbados y la comparte con tu escuadra.",
+        "pt": "Ativa: revela a posição de inimigos próximos que não estão agachados nem deitados e compartilha com o squad."
+      }
     },
     {
       "n": "Dasha",
@@ -81,7 +137,15 @@
         "rush",
         "br"
       ],
-      "tier": null
+      "tier": null,
+      "skill": "Partying On",
+      "sd": {
+        "en": "Passive: reduces fall damage and the recovery time after falls, and lowers how fast recoil builds up and its maximum.",
+        "tr": "Pasif: Düşme hasarını ve düştükten sonra toparlanma süresini azaltır; ayrıca sekmenin (recoil) artış hızını ve üst sınırını düşürür.",
+        "id": "Pasif: mengurangi damage jatuh dan waktu pemulihan setelah jatuh, serta menurunkan laju dan batas maksimal recoil.",
+        "es": "Pasiva: reduce el daño por caída y el tiempo de recuperación tras caer, y baja la acumulación y el máximo del retroceso.",
+        "pt": "Passiva: reduz o dano de queda e o tempo para se recuperar dela, além de diminuir o acúmulo e o máximo do recuo."
+      }
     },
     {
       "n": "Dimitri",
@@ -91,7 +155,15 @@
         "support",
         "br"
       ],
-      "tier": null
+      "tier": null,
+      "skill": "Healing Heartbeat",
+      "sd": {
+        "en": "Active: creates a healing zone where you and allies recover HP; downed players inside it can get themselves back up.",
+        "tr": "Aktif: İçinde sen ve takım arkadaşlarının HP yenilediği bir iyileşme alanı kurar; alanda yere düşenler kendi kendine kalkabilir.",
+        "id": "Aktif: membuat zona heal tempat kamu dan rekan memulihkan HP; yang knock di dalam zona bisa bangun sendiri.",
+        "es": "Activa: crea una zona de curación donde tú y tus aliados recuperáis HP; quien caiga dentro puede levantarse solo.",
+        "pt": "Ativa: cria uma zona de cura onde você e aliados recuperam HP; quem for derrubado dentro dela consegue se levantar sozinho."
+      }
     },
     {
       "n": "Ford",
@@ -99,7 +171,15 @@
       "tags": [
         "br"
       ],
-      "tier": "C"
+      "tier": "C",
+      "skill": "Iron Will",
+      "sd": {
+        "en": "Passive: you take less damage while outside the safe zone, making rotations through the storm safer.",
+        "tr": "Pasif: Güvenli bölgenin dışındayken daha az hasar alırsın; bölge dışından rotasyon yapmak kolaylaşır.",
+        "id": "Pasif: damage yang kamu terima saat berada di luar zona aman berkurang, rotasi lewat zona jadi lebih aman.",
+        "es": "Pasiva: recibes menos daño fuera de la zona segura, así rotar por fuera es menos arriesgado.",
+        "pt": "Passiva: você toma menos dano fora da zona segura, deixando as rotações por fora da safe mais tranquilas."
+      }
     },
     {
       "n": "Hayato",
@@ -109,7 +189,15 @@
         "sniper",
         "cs"
       ],
-      "tier": "B"
+      "tier": "B",
+      "skill": "Bushido",
+      "sd": {
+        "en": "Passive: the lower your HP gets, the more armor penetration your shots gain.",
+        "tr": "Pasif: HP'n azaldıkça atışlarının zırh delme (penetrasyon) oranı artar.",
+        "id": "Pasif: semakin rendah HP kamu, semakin besar penetrasi armor dari tembakanmu.",
+        "es": "Pasiva: cuanto menos HP te queda, más penetración de armadura ganan tus disparos.",
+        "pt": "Passiva: quanto menor seu HP, maior a penetração de armadura dos seus tiros."
+      }
     },
     {
       "n": "Homer",
@@ -118,7 +206,15 @@
         "rush",
         "cs"
       ],
-      "tier": null
+      "tier": null,
+      "skill": "Senses Shockwave",
+      "sd": {
+        "en": "Active: launches a drone at the nearest enemy in front of you; it explodes in a 5 m-diameter pulse that damages and slows their movement and firing speed.",
+        "tr": "Aktif: Önündeki en yakın düşmana bir drone fırlatır; 5 m çaplı bir darbeyle patlayıp hasar verir, hareket ve atış hızını yavaşlatır.",
+        "id": "Aktif: meluncurkan drone ke musuh terdekat di depan; meledak dengan pulsa berdiameter 5 m yang memberi damage dan memperlambat gerak serta laju tembak.",
+        "es": "Activa: lanza un dron hacia el enemigo más cercano frente a ti; estalla en un pulso de 5 m de diámetro que daña y ralentiza su movimiento y cadencia.",
+        "pt": "Ativa: lança um drone no inimigo mais próximo à frente; ele explode num pulso de 5 m de diâmetro que causa dano e reduz a velocidade e a cadência do alvo."
+      }
     },
     {
       "n": "Ignis",
@@ -127,7 +223,15 @@
         "rush",
         "antigloo"
       ],
-      "tier": "A"
+      "tier": "A",
+      "skill": "Flame Mirage",
+      "sd": {
+        "en": "Active: releases a moving wall of fire; enemies and Gloo Walls it touches take burn damage. Skill uses can be stored.",
+        "tr": "Aktif: İleri doğru ilerleyen bir ateş perdesi salar; değdiği düşmanlar ve Gloo Wall'lar yanma hasarı alır. Kullanım hakları biriktirilebilir.",
+        "id": "Aktif: melepaskan dinding api yang bergerak maju; musuh dan Gloo Wall yang tersentuh terkena damage terbakar. Penggunaan skill bisa disimpan.",
+        "es": "Activa: lanza una pantalla de fuego que avanza; enemigos y Gloo Walls que toca reciben daño por quemadura. Puedes acumular usos.",
+        "pt": "Ativa: solta uma parede de fogo que avança; inimigos e Paredes de Gel atingidos levam dano de queimadura. Os usos podem ser acumulados."
+      }
     },
     {
       "n": "Iris",
@@ -137,7 +241,15 @@
         "rush",
         "cs"
       ],
-      "tier": null
+      "tier": null,
+      "skill": "Wall Brawl",
+      "sd": {
+        "en": "Active: after activating, hit a Gloo Wall to mark enemies near it; you can then shoot through that wall to damage them, at reduced damage.",
+        "tr": "Aktif: Etkinleştirdikten sonra bir Gloo Wall'a vurarak yakınındaki düşmanları işaretlersin; ardından duvarın içinden azaltılmış hasarla onları vurabilirsin.",
+        "id": "Aktif: setelah aktif, tembak Gloo Wall untuk menandai musuh di dekatnya; lalu kamu bisa menembus wall itu untuk memberi damage (lebih kecil dari normal).",
+        "es": "Activa: tras activarla, golpea una Gloo Wall para marcar a los enemigos cercanos; luego puedes atravesarla con tus disparos, aunque con menos daño.",
+        "pt": "Ativa: depois de ativar, acerte uma Parede de Gel para marcar inimigos próximos; aí seus tiros atravessam essa parede e causam dano, só que reduzido."
+      }
     },
     {
       "n": "Joseph",
@@ -147,7 +259,15 @@
         "antirush",
         "antisniper"
       ],
-      "tier": null
+      "tier": null,
+      "skill": "Silver Spoon",
+      "sd": {
+        "en": "Makes you immune to disruptive effects such as slowdown, marking and skill silencing, and gives a movement speed boost.",
+        "tr": "Yavaşlatma, işaretlenme ve yetenek susturma gibi engelleyici etkilere karşı bağışıklık kazandırır ve hareket hızını artırır.",
+        "id": "Membuatmu kebal terhadap efek gangguan seperti slow, tanda (mark) dan pembungkaman skill, serta menambah kecepatan gerak.",
+        "es": "Te vuelve inmune a efectos molestos como ralentización, marcado o silencio de habilidades, y te da un extra de velocidad.",
+        "pt": "Deixa você imune a efeitos de controle como lentidão, marcação e silenciamento de habilidade, além de dar um bônus de velocidade."
+      }
     },
     {
       "n": "Jota",
@@ -157,7 +277,15 @@
         "rush",
         "cs"
       ],
-      "tier": "B"
+      "tier": "B",
+      "skill": "Sustained Raids",
+      "sd": {
+        "en": "Passive: every gun hit on an enemy restores a bit of your HP, helping you win close, drawn-out fights.",
+        "tr": "Pasif: Silahla düşmana isabet ettirdiğin her atış HP'nin bir kısmını geri getirir; uzun yakın çatışmalarda ayakta kalmanı sağlar.",
+        "id": "Pasif: setiap tembakan senjata yang kena musuh memulihkan sedikit HP-mu, membantu bertahan di duel jarak dekat.",
+        "es": "Pasiva: cada impacto con arma a un enemigo te devuelve algo de HP, ideal para aguantar peleas cercanas.",
+        "pt": "Passiva: cada tiro que acerta um inimigo recupera um pouco do seu HP, ajudando a segurar trocações de perto."
+      }
     },
     {
       "n": "K",
@@ -168,7 +296,15 @@
         "br",
         "cs"
       ],
-      "tier": null
+      "tier": null,
+      "skill": "Master of All",
+      "sd": {
+        "en": "Active: raises max EP and switches modes. Jiujitsu Mode boosts nearby allies' EP conversion rate; Psychology Mode recovers your EP.",
+        "tr": "Aktif: Maksimum EP'yi artırır ve mod değiştirir. Jiujitsu Modu yakındaki takım arkadaşlarının EP dönüşüm hızını artırır; Psikoloji Modu EP yeniler.",
+        "id": "Aktif: menambah EP maksimal dan bisa ganti mode. Mode Jiujitsu menaikkan laju konversi EP rekan di dekatmu; Mode Psikologi memulihkan EP.",
+        "es": "Activa: aumenta el EP máximo y alterna modos. Modo Jiujitsu sube la conversión de EP de aliados cercanos; Modo Psicología te recupera EP.",
+        "pt": "Ativa: aumenta o EP máximo e alterna modos. Modo Jiu-jitsu acelera a conversão de EP dos aliados próximos; Modo Psicologia recupera seu EP."
+      }
     },
     {
       "n": "Kairos",
@@ -177,7 +313,15 @@
         "rush",
         "antigloo"
       ],
-      "tier": "A"
+      "tier": "A",
+      "skill": "Defense Breaker",
+      "sd": {
+        "en": "Passive: Defense Mode refills EP automatically; once EP is full, Breaker Mode spends it to deal extra damage to enemy Shield Points and armor durability.",
+        "tr": "Pasif: Savunma Modu EP'yi otomatik doldurur; EP dolunca Kırıcı Mod bu EP'yi harcayarak düşman kalkanına ve zırh dayanıklılığına ekstra hasar verir.",
+        "id": "Pasif: Mode Defense mengisi EP otomatis; saat EP penuh, Mode Breaker memakai EP untuk memberi damage ekstra ke Shield Point dan daya tahan armor musuh.",
+        "es": "Pasiva: el Modo Defensa recarga EP solo; con el EP lleno, el Modo Ruptura lo gasta para hacer daño extra a escudos y durabilidad de armadura enemiga.",
+        "pt": "Passiva: o Modo Defesa recarrega EP sozinho; com EP cheio, o Modo Quebra gasta esse EP para causar dano extra em escudos e na durabilidade do colete inimigo."
+      }
     },
     {
       "n": "Kapella",
@@ -186,7 +330,15 @@
         "heal",
         "support"
       ],
-      "tier": null
+      "tier": null,
+      "skill": "Remedy Rounds",
+      "sd": {
+        "en": "Lets you heal teammates by shooting them with ammo, and heals even more when you use a Heal Pistol.",
+        "tr": "Takım arkadaşlarını mermiyle vurarak iyileştirmeni sağlar; Heal Pistol kullandığında iyileştirme daha da artar.",
+        "id": "Memungkinkan kamu heal rekan setim dengan menembakkan amunisi, dan heal-nya lebih besar kalau pakai Heal Pistol.",
+        "es": "Te permite curar a tus compañeros disparándoles munición, y cura todavía más si usas la Heal Pistol.",
+        "pt": "Permite curar os aliados atirando neles com munição, e a cura fica ainda maior com a Pistola de Cura."
+      }
     },
     {
       "n": "Kassie",
@@ -196,7 +348,15 @@
         "support",
         "br"
       ],
-      "tier": "S"
+      "tier": "S",
+      "skill": "Electro Therapy",
+      "sd": {
+        "en": "Active: links you to a teammate with a healing bond that slowly restores HP to both; use it again to give the teammate a big heal.",
+        "tr": "Aktif: Bir takım arkadaşınla iyileştirici bağ kurar ve ikinizin de HP'sini yavaşça yeniler; tekrar kullanınca arkadaşına büyük bir iyileşme verir.",
+        "id": "Aktif: membuat ikatan heal dengan rekan setim yang memulihkan HP kalian berdua perlahan; pakai lagi untuk memberi heal besar ke rekan.",
+        "es": "Activa: crea un vínculo curativo con un compañero que os cura HP poco a poco a los dos; úsala otra vez para darle una gran curación.",
+        "pt": "Ativa: cria um vínculo de cura com um aliado que recupera HP de vocês dois aos poucos; usando de novo, dá uma cura grande no aliado."
+      }
     },
     {
       "n": "Kelly",
@@ -206,7 +366,15 @@
         "rush",
         "br"
       ],
-      "tier": null
+      "tier": null,
+      "skill": "Dash",
+      "sd": {
+        "en": "Passive: increases your sprinting speed, by up to 6% at max level.",
+        "tr": "Pasif: Koşu hızını artırır; maksimum seviyede %6'ya kadar.",
+        "id": "Pasif: menambah kecepatan sprint, hingga 6% di level maksimal.",
+        "es": "Pasiva: aumenta tu velocidad al esprintar, hasta un 6% al nivel máximo.",
+        "pt": "Passiva: aumenta sua velocidade de corrida, até 6% no nível máximo."
+      }
     },
     {
       "n": "Kenta",
@@ -217,7 +385,15 @@
         "antisniper",
         "cs"
       ],
-      "tier": "S"
+      "tier": "S",
+      "skill": "Tempest Raid",
+      "sd": {
+        "en": "Active: fires a fast tempest that lasts 8s and deals 25 damage; tap again to teleport to it and gain a 5s shield with 20% damage reduction. Cooldown 45s.",
+        "tr": "Aktif: 8 sn süren ve 25 hasar veren hızlı bir kasırga gönderir; tekrar basınca kasırgaya ışınlanır, 5 sn %20 hasar azaltan kalkan alırsın. Bekleme 45 sn.",
+        "id": "Aktif: melepas badai cepat selama 8 detik yang memberi 25 damage; tekan lagi untuk teleport ke badai dan dapat shield 5 detik dengan reduksi damage 20%. Cooldown 45 detik.",
+        "es": "Activa: lanza un vendaval rápido que dura 8 s y hace 25 de daño; pulsa otra vez para teletransportarte a él y ganar un escudo de 5 s con 20% menos daño. Enfriamiento 45 s.",
+        "pt": "Ativa: solta um tornado rápido que dura 8s e causa 25 de dano; toque de novo para se teleportar até ele e ganhar escudo de 5s com 20% de redução de dano. Recarga 45s."
+      }
     },
     {
       "n": "Koda",
@@ -226,7 +402,15 @@
         "intel",
         "br"
       ],
-      "tier": "S"
+      "tier": "S",
+      "skill": "Aurora Vision",
+      "sd": {
+        "en": "Active: for 8s gives +15% movement speed and reveals enemies behind cover within 50 m every second (not crouched or prone ones). Cooldown 45s.",
+        "tr": "Aktif: 8 sn boyunca +%15 hareket hızı verir ve her saniye 50 m içindeki siper arkası düşmanları gösterir (çömelen/yatanlar hariç). Bekleme 45 sn.",
+        "id": "Aktif: selama 8 detik memberi +15% kecepatan gerak dan tiap detik menampilkan musuh di balik cover dalam 50 m (kecuali jongkok/tiarap). Cooldown 45 detik.",
+        "es": "Activa: durante 8 s da +15% de velocidad y cada segundo revela enemigos tras coberturas a 50 m (no los agachados ni tumbados). Enfriamiento 45 s.",
+        "pt": "Ativa: por 8s dá +15% de velocidade e, a cada segundo, revela inimigos atrás de cobertura em até 50 m (exceto agachados ou deitados). Recarga 45s."
+      }
     },
     {
       "n": "Laura",
@@ -234,7 +418,15 @@
       "tags": [
         "sniper"
       ],
-      "tier": null
+      "tier": null,
+      "skill": "Sharp Shooter",
+      "sd": {
+        "en": "Passive: your accuracy increases while you are scoped in.",
+        "tr": "Pasif: Dürbünle nişan alırken isabet oranın artar.",
+        "id": "Pasif: akurasi tembakan meningkat saat kamu memakai scope.",
+        "es": "Pasiva: aumenta tu precisión mientras apuntas con la mira.",
+        "pt": "Passiva: aumenta sua precisão enquanto você mira com a luneta."
+      }
     },
     {
       "n": "Leon",
@@ -244,7 +436,15 @@
         "br",
         "cs"
       ],
-      "tier": null
+      "tier": null,
+      "skill": "Buzzer Beater",
+      "sd": {
+        "en": "Passive: you recover HP after surviving a combat engagement.",
+        "tr": "Pasif: Bir çatışmadan sağ çıktıktan sonra HP yenilersin.",
+        "id": "Pasif: kamu memulihkan HP setelah selamat dari pertarungan.",
+        "es": "Pasiva: recuperas HP después de salir con vida de un combate.",
+        "pt": "Passiva: você recupera HP depois de sobreviver a um combate."
+      }
     },
     {
       "n": "Lila",
@@ -253,7 +453,15 @@
         "antirush",
         "cs"
       ],
-      "tier": "B"
+      "tier": "B",
+      "skill": "Gloo Strike",
+      "sd": {
+        "en": "Passive: rifle hits slow enemies and vehicles; enemies knocked down while slowed get frozen and you gain an extra Gloo Wall.",
+        "tr": "Pasif: Tüfek isabetleri düşmanları ve araçları yavaşlatır; yavaşken yere düşürülen düşmanlar donar ve sana ekstra bir Gloo Wall verilir.",
+        "id": "Pasif: tembakan rifle memperlambat musuh dan kendaraan; musuh yang di-knock saat melambat akan membeku dan kamu dapat Gloo Wall tambahan.",
+        "es": "Pasiva: los impactos con rifle ralentizan a enemigos y vehículos; si derribas a uno ralentizado, queda congelado y ganas una Gloo Wall extra.",
+        "pt": "Passiva: tiros de rifle deixam inimigos e veículos lentos; quem é derrubado enquanto lento fica congelado e você ganha uma Parede de Gel extra."
+      }
     },
     {
       "n": "Luna",
@@ -262,7 +470,15 @@
         "rush",
         "cs"
       ],
-      "tier": "A"
+      "tier": "A",
+      "skill": "Fight-or-Flight",
+      "sd": {
+        "en": "Passive: +5% fire rate; when you hit enemies, up to 10% of fire rate converts into movement speed. Resets after you survive the fight.",
+        "tr": "Pasif: +%5 atış hızı; düşmana isabet ettikçe atış hızının %10'a kadarı hareket hızına dönüşür. Çatışmadan sağ çıkınca sıfırlanır.",
+        "id": "Pasif: +5% fire rate; saat tembakan kena musuh, hingga 10% fire rate diubah jadi kecepatan gerak. Reset setelah kamu selamat dari pertarungan.",
+        "es": "Pasiva: +5% de cadencia; al impactar enemigos, hasta un 10% de cadencia se convierte en velocidad de movimiento. Se reinicia al sobrevivir al combate.",
+        "pt": "Passiva: +5% de cadência; ao acertar inimigos, até 10% da cadência vira velocidade de movimento. Reinicia quando você sobrevive ao combate."
+      }
     },
     {
       "n": "Luqueta",
@@ -272,7 +488,15 @@
         "br",
         "armor"
       ],
-      "tier": null
+      "tier": null,
+      "skill": "Hat Trick",
+      "sd": {
+        "en": "Passive: each elimination permanently raises your max Shield Points by 15, up to +45. Resets when you are eliminated or the round restarts.",
+        "tr": "Pasif: Her eleme maksimum Kalkan Puanını kalıcı olarak 15 artırır, en fazla +45. Elendiğinde veya raund sıfırlandığında etki kaybolur.",
+        "id": "Pasif: setiap eliminasi menambah Shield Point maksimal secara permanen sebesar 15, hingga +45. Hilang jika kamu tereliminasi atau ronde di-reset.",
+        "es": "Pasiva: cada eliminación sube permanentemente tus Puntos de Escudo máximos en 15, hasta +45. Se pierde si te eliminan o se reinicia la ronda.",
+        "pt": "Passiva: cada abate aumenta permanentemente seus Pontos de Escudo máximos em 15, até +45. Zera se você for eliminado ou a rodada reiniciar."
+      }
     },
     {
       "n": "Maxim",
@@ -281,7 +505,15 @@
         "heal",
         "br"
       ],
-      "tier": "C"
+      "tier": "C",
+      "skill": "Gluttony",
+      "sd": {
+        "en": "Passive: reduces the time needed to eat mushrooms and use Med Kits.",
+        "tr": "Pasif: Mantar yeme ve Med Kit kullanma süresini kısaltır.",
+        "id": "Pasif: mempercepat waktu makan jamur dan memakai Med Kit.",
+        "es": "Pasiva: reduce el tiempo para comer hongos y usar botiquines (Med Kit).",
+        "pt": "Passiva: reduz o tempo para comer cogumelos e usar kits médicos."
+      }
     },
     {
       "n": "Miguel",
@@ -290,7 +522,15 @@
         "rush",
         "br"
       ],
-      "tier": null
+      "tier": null,
+      "skill": "Crazy Slayer",
+      "sd": {
+        "en": "Passive: you gain EP for every kill.",
+        "tr": "Pasif: Her öldürmede EP kazanırsın.",
+        "id": "Pasif: kamu mendapat EP setiap kali membunuh musuh.",
+        "es": "Pasiva: obtienes EP con cada baja.",
+        "pt": "Passiva: você ganha EP a cada abate."
+      }
     },
     {
       "n": "Moco",
@@ -302,7 +542,15 @@
         "br",
         "cs"
       ],
-      "tier": "B"
+      "tier": "B",
+      "skill": "Hacker's Eye",
+      "sd": {
+        "en": "Passive: enemies you shoot are tagged for a few seconds, and their location is shared with your teammates.",
+        "tr": "Pasif: Vurduğun düşmanlar birkaç saniyeliğine işaretlenir ve konumları takım arkadaşlarınla paylaşılır.",
+        "id": "Pasif: musuh yang kamu tembak ditandai selama beberapa detik, dan lokasinya dibagikan ke rekan setim.",
+        "es": "Pasiva: los enemigos a los que disparas quedan marcados unos segundos y su posición se comparte con tu equipo.",
+        "pt": "Passiva: inimigos que você acerta ficam marcados por alguns segundos e a posição deles é compartilhada com o squad."
+      }
     },
     {
       "n": "Morse",
@@ -311,7 +559,15 @@
         "mobility",
         "br"
       ],
-      "tier": "A"
+      "tier": "A",
+      "skill": "Stealth Bytes",
+      "sd": {
+        "en": "Active: go stealth for up to 13s with +20% speed and 25 temporary Shield Points; enemies over 12 m away struggle to see you. You can't shoot while stealthed. Cooldown 45s.",
+        "tr": "Aktif: 13 sn'ye kadar gizlenirsin; +%20 hız ve 25 geçici Kalkan Puanı kazanırsın, 12 m'den uzaktaki düşmanlar seni zor görür. Gizliyken ateş edemezsin. Bekleme 45 sn.",
+        "id": "Aktif: masuk mode stealth hingga 13 detik dengan +20% kecepatan dan 25 Shield Point sementara; musuh di atas 12 m sulit melihatmu. Tidak bisa menembak saat stealth. Cooldown 45 detik.",
+        "es": "Activa: entras en sigilo hasta 13 s con +20% de velocidad y 25 Puntos de Escudo temporales; a más de 12 m cuesta verte. No puedes disparar en sigilo. Enfriamiento 45 s.",
+        "pt": "Ativa: entra em modo furtivo por até 13s com +20% de velocidade e 25 Pontos de Escudo temporários; a mais de 12 m fica difícil te ver. Não dá para atirar. Recarga 45s."
+      }
     },
     {
       "n": "Nairi",
@@ -321,7 +577,15 @@
         "support",
         "antisniper"
       ],
-      "tier": null
+      "tier": null,
+      "skill": "Ice Iron",
+      "sd": {
+        "en": "Passive: your deployed Gloo Walls automatically restore their durability and heal HP for teammates standing nearby.",
+        "tr": "Pasif: Koyduğun Gloo Wall'lar dayanıklılıklarını otomatik olarak yeniler ve yakınındaki takım arkadaşlarına HP iyileştirmesi sağlar.",
+        "id": "Pasif: Gloo Wall yang kamu pasang otomatis memulihkan daya tahannya dan memberi heal HP ke rekan di dekatnya.",
+        "es": "Pasiva: tus Gloo Walls recuperan su durabilidad solas y curan HP a los compañeros que estén cerca.",
+        "pt": "Passiva: suas Paredes de Gel regeneram a própria durabilidade e curam o HP dos aliados que estiverem por perto."
+      }
     },
     {
       "n": "Nero",
@@ -331,7 +595,15 @@
         "antirush",
         "cs"
       ],
-      "tier": "S"
+      "tier": "S",
+      "skill": "Cryo Mind",
+      "sd": {
+        "en": "Active: throws a homing plushie that bursts into an 8 m dream zone where nobody can place Gloo Walls and enemies lose 6 HP/s. Lasts 12s, cooldown 45s.",
+        "tr": "Aktif: Hedef takip eden bir peluş fırlatır; 8 m'lik bir rüya alanında patlar, burada Gloo Wall konulamaz ve düşmanlar saniyede 6 HP kaybeder. 12 sn sürer, bekleme 45 sn.",
+        "id": "Aktif: melempar boneka pelacak yang meledak jadi zona mimpi 8 m; di dalamnya Gloo Wall tidak bisa dipasang dan musuh kehilangan 6 HP/detik. Bertahan 12 detik, cooldown 45 detik.",
+        "es": "Activa: lanza un peluche teledirigido que estalla en una zona de sueño de 8 m donde no se pueden poner Gloo Walls y los enemigos pierden 6 HP/s. Dura 12 s, enfriamiento 45 s.",
+        "pt": "Ativa: arremessa um pelúcia teleguiado que vira uma zona de sonho de 8 m onde ninguém põe Parede de Gel e inimigos perdem 6 HP/s. Dura 12s, recarga 45s."
+      }
     },
     {
       "n": "Olivia",
@@ -340,7 +612,15 @@
         "support",
         "heal"
       ],
-      "tier": null
+      "tier": null,
+      "skill": "Healing Touch",
+      "sd": {
+        "en": "Boosts your healing effects by 30% and shares 90% of your single-target healing with teammates within 20 m.",
+        "tr": "İyileştirme etkilerini %30 artırır ve tek hedefli iyileştirmenin %90'ını 20 m içindeki takım arkadaşlarına da yayar.",
+        "id": "Meningkatkan efek heal sebesar 30% dan membagikan 90% heal target tunggal ke rekan setim dalam radius 20 m.",
+        "es": "Aumenta tus efectos de curación un 30% y reparte el 90% de tu curación individual a compañeros a 20 m.",
+        "pt": "Aumenta seus efeitos de cura em 30% e espalha 90% da sua cura de alvo único para aliados a até 20 m."
+      }
     },
     {
       "n": "Orion",
@@ -350,7 +630,15 @@
         "armor",
         "cs"
       ],
-      "tier": "A"
+      "tier": "A",
+      "skill": "Crimson Crush",
+      "sd": {
+        "en": "Active: increases your max EP; spend EP to become immune to damage and drain HP from nearby enemies for a short time.",
+        "tr": "Aktif: Maksimum EP'ni artırır; EP harcayarak kısa süre hasara karşı bağışık olur ve yakındaki düşmanlardan HP emersin.",
+        "id": "Aktif: menambah EP maksimal; pakai EP untuk kebal damage dan menyerap HP musuh di sekitar dalam waktu singkat.",
+        "es": "Activa: aumenta tu EP máximo; gasta EP para ser inmune al daño y absorber HP de enemigos cercanos durante un rato.",
+        "pt": "Ativa: aumenta seu EP máximo; gaste EP para ficar imune a dano e drenar HP de inimigos próximos por pouco tempo."
+      }
     },
     {
       "n": "Oscar",
@@ -361,7 +649,15 @@
         "mobility",
         "cs"
       ],
-      "tier": "S"
+      "tier": "S",
+      "skill": "Valiant Dash",
+      "sd": {
+        "en": "Active: dash forward, blowing up the first 3 Gloo Walls in your path for 25 damage and hitting enemies for 25 damage with knockback. Cooldown 60s.",
+        "tr": "Aktif: İleri atılır; yolundaki ilk 3 Gloo Wall'u 25 hasarla patlatır, çarptığın düşmanlara 25 hasar verip geri iter. Bekleme 60 sn.",
+        "id": "Aktif: dash ke depan, meledakkan 3 Gloo Wall pertama di jalurmu dengan 25 damage dan memberi 25 damage plus knockback ke musuh. Cooldown 60 detik.",
+        "es": "Activa: embiste hacia delante, revienta las 3 primeras Gloo Walls a tu paso con 25 de daño y golpea a enemigos con 25 de daño y empuje. Enfriamiento 60 s.",
+        "pt": "Ativa: avança em disparada, explode as 3 primeiras Paredes de Gel no caminho com 25 de dano e acerta inimigos com 25 de dano e empurrão. Recarga 60s."
+      }
     },
     {
       "n": "Otho",
@@ -370,7 +666,15 @@
         "intel",
         "br"
       ],
-      "tier": null
+      "tier": null,
+      "skill": "Memory Mist",
+      "sd": {
+        "en": "Passive: when you eliminate an enemy, a memory mist forms that reveals the positions of other enemies nearby.",
+        "tr": "Pasif: Bir düşmanı elediğinde, yakındaki diğer düşmanların yerini gösteren bir hafıza sisi oluşur.",
+        "id": "Pasif: saat kamu mengeliminasi musuh, muncul kabut memori yang menunjukkan posisi musuh lain di dekatnya.",
+        "es": "Pasiva: al eliminar a un enemigo se forma una niebla de memoria que revela la posición de otros enemigos cercanos.",
+        "pt": "Passiva: ao eliminar um inimigo, surge uma névoa de memória que revela a posição de outros inimigos próximos."
+      }
     },
     {
       "n": "Paloma",
@@ -378,7 +682,15 @@
       "tags": [
         "rush"
       ],
-      "tier": "C"
+      "tier": "C",
+      "skill": "Shatterburst",
+      "sd": {
+        "en": "Passive: your accuracy increases after you destroy a Gloo Wall.",
+        "tr": "Pasif: Bir Gloo Wall'u yok ettikten sonra isabet oranın artar.",
+        "id": "Pasif: akurasimu meningkat setelah kamu menghancurkan Gloo Wall.",
+        "es": "Pasiva: tu precisión aumenta después de destruir una Gloo Wall.",
+        "pt": "Passiva: sua precisão aumenta depois que você destrói uma Parede de Gel."
+      }
     },
     {
       "n": "Rafael",
@@ -387,7 +699,15 @@
         "sniper",
         "br"
       ],
-      "tier": null
+      "tier": null,
+      "skill": "Dead Silent",
+      "sd": {
+        "en": "Passive: silences your shots with snipers and marksman rifles, and enemies you hit and knock down bleed out faster.",
+        "tr": "Pasif: Keskin nişancı ve marksman tüfeklerinde atışların susturucu etkisi kazanır; vurup yere düşürdüğün düşmanlar daha hızlı HP kaybeder.",
+        "id": "Pasif: tembakan sniper dan marksman rifle jadi senyap, dan musuh yang kamu tembak lalu knock kehilangan HP lebih cepat.",
+        "es": "Pasiva: tus disparos con francotiradores y rifles de tirador son silenciosos, y los enemigos que derribas se desangran más rápido.",
+        "pt": "Passiva: seus tiros de sniper e rifle de precisão ficam silenciados, e inimigos derrubados por você perdem HP mais rápido."
+      }
     },
     {
       "n": "Ray",
@@ -397,7 +717,15 @@
         "rush",
         "cs"
       ],
-      "tier": "A"
+      "tier": "A",
+      "skill": "Bond of Eclipse",
+      "sd": {
+        "en": "Active: tags the first enemy hit in a 30 m cone for 10s; drop them to 30 HP or less and they're knocked instantly. Knocking the target resets the skill and heals you. Cooldown 45s.",
+        "tr": "Aktif: 30 m'lik koni içinde ilk vurulan düşmanı 10 sn işaretler; HP'si 30 ve altına inerse anında yere düşer. Hedefi düşürmek yeteneği sıfırlar ve seni iyileştirir. Bekleme 45 sn.",
+        "id": "Aktif: menandai musuh pertama yang kena dalam kerucut 30 m selama 10 detik; jika HP-nya 30 atau kurang, langsung knock. Knock target me-reset skill dan memulihkan HP-mu. Cooldown 45 detik.",
+        "es": "Activa: marca 10 s al primer enemigo alcanzado en un cono de 30 m; si lo dejas en 30 HP o menos, cae al instante. Derribarlo reinicia la habilidad y te cura. Enfriamiento 45 s.",
+        "pt": "Ativa: marca por 10s o primeiro inimigo atingido num cone de 30 m; se ele cair para 30 HP ou menos, é derrubado na hora. Derrubar o alvo reseta a habilidade e te cura. Recarga 45s."
+      }
     },
     {
       "n": "Rin",
@@ -405,7 +733,15 @@
       "tags": [
         "antigloo"
       ],
-      "tier": "B"
+      "tier": "B",
+      "skill": "Gale of Kunai",
+      "sd": {
+        "en": "Passive: summons a kunai every 8s (up to 3); they auto-strike enemies or Gloo Walls you hit for up to 12 damage, more at longer range, and wreck Gloo Walls.",
+        "tr": "Pasif: Her 8 sn'de bir kunai çağırır (en fazla 3); vurduğun düşmana veya Gloo Wall'a otomatik saldırıp 12'ye kadar hasar verir, mesafe arttıkça hasar artar.",
+        "id": "Pasif: memanggil kunai tiap 8 detik (maks 3); kunai otomatis menyerang musuh atau Gloo Wall yang kamu tembak hingga 12 damage, makin jauh makin sakit.",
+        "es": "Pasiva: invoca un kunai cada 8 s (hasta 3); atacan solos al enemigo o Gloo Wall que golpees con hasta 12 de daño, más a mayor distancia, y destrozan Gloo Walls.",
+        "pt": "Passiva: invoca uma kunai a cada 8s (até 3); elas atacam sozinhas o inimigo ou a Parede de Gel que você acertar, com até 12 de dano, mais forte à distância."
+      }
     },
     {
       "n": "Santino",
@@ -414,7 +750,15 @@
         "mobility",
         "br"
       ],
-      "tier": "B"
+      "tier": "B",
+      "skill": "Shape Splitter",
+      "sd": {
+        "en": "Active: spawns a mannequin in front of you; use the skill again to teleport to the mannequin's position.",
+        "tr": "Aktif: Önüne bir manken çıkarır; yeteneği tekrar kullanınca mankenin olduğu yere ışınlanırsın.",
+        "id": "Aktif: memunculkan manekin di depanmu; pakai skill lagi untuk teleport ke posisi manekin.",
+        "es": "Activa: crea un maniquí delante de ti; vuelve a usar la habilidad para teletransportarte a su posición.",
+        "pt": "Ativa: cria um manequim à sua frente; use a habilidade de novo para se teleportar até ele."
+      }
     },
     {
       "n": "Shani",
@@ -423,7 +767,15 @@
         "armor",
         "cs"
       ],
-      "tier": null
+      "tier": null,
+      "skill": "Gear Recycle",
+      "sd": {
+        "en": "Passive: using an active skill grants 30 Shield Points to you and teammates within 10 m; they fade after 5s. 10s cooldown.",
+        "tr": "Pasif: Aktif bir yetenek kullandığında sana ve 10 m içindeki takım arkadaşlarına 30 Kalkan Puanı verir; 5 sn sonra kaybolur. Bekleme 10 sn.",
+        "id": "Pasif: memakai skill aktif memberi 30 Shield Point untukmu dan rekan dalam 10 m; hilang setelah 5 detik. Cooldown 10 detik.",
+        "es": "Pasiva: al usar una habilidad activa, tú y tus compañeros a 10 m ganáis 30 Puntos de Escudo que se desvanecen a los 5 s. Enfriamiento 10 s.",
+        "pt": "Passiva: ao usar uma habilidade ativa, você e aliados a até 10 m ganham 30 Pontos de Escudo, que somem após 5s. Recarga de 10s."
+      }
     },
     {
       "n": "Shirou",
@@ -433,7 +785,15 @@
         "rush",
         "cs"
       ],
-      "tier": null
+      "tier": null,
+      "skill": "Damage Delivered",
+      "sd": {
+        "en": "Passive: enemies that hit you get marked (visible only to you), and your first shot on a marked enemy gets extra armor penetration.",
+        "tr": "Pasif: Seni vuran düşman işaretlenir (sadece sen görürsün); işaretli düşmana yaptığın ilk atış ekstra zırh delme kazanır.",
+        "id": "Pasif: musuh yang menembakmu akan ditandai (hanya terlihat olehmu), dan tembakan pertamamu ke musuh itu dapat penetrasi armor ekstra.",
+        "es": "Pasiva: quien te dispara queda marcado (solo lo ves tú) y tu primer disparo contra él tiene penetración de armadura extra.",
+        "pt": "Passiva: quem te acerta fica marcado (só você vê), e seu primeiro tiro nesse inimigo ganha penetração de armadura extra."
+      }
     },
     {
       "n": "Skyler",
@@ -443,7 +803,15 @@
         "rush",
         "cs"
       ],
-      "tier": "B"
+      "tier": "B",
+      "skill": "Riptide Rhythm",
+      "sd": {
+        "en": "Active: unleashes a sonic wave forward that damages Gloo Walls; you also recover HP for each Gloo Wall you deploy (doesn't stack).",
+        "tr": "Aktif: İleri doğru Gloo Wall'lara hasar veren bir ses dalgası gönderir; ayrıca koyduğun her Gloo Wall için HP yenilersin (birikmez).",
+        "id": "Aktif: melepaskan gelombang suara ke depan yang merusak Gloo Wall; kamu juga memulihkan HP setiap memasang Gloo Wall (tidak menumpuk).",
+        "es": "Activa: lanza una onda sónica que daña Gloo Walls; además recuperas HP por cada Gloo Wall que colocas (no se acumula).",
+        "pt": "Ativa: solta uma onda sônica para frente que danifica Paredes de Gel; além disso, cada Parede de Gel que você coloca recupera HP (não acumula)."
+      }
     },
     {
       "n": "Sonia",
@@ -452,7 +820,15 @@
         "armor",
         "cs"
       ],
-      "tier": "B"
+      "tier": "B",
+      "skill": "Nano Lifeshield",
+      "sd": {
+        "en": "When you take fatal damage, a nanotech shield deploys; knock down an enemy while it's up and you recover HP equal to the shield.",
+        "tr": "Ölümcül hasar aldığında nanoteknoloji kalkanı devreye girer; kalkan aktifken bir düşmanı yere düşürürsen kalkan kadar HP geri kazanırsın.",
+        "id": "Saat menerima damage fatal, perisai nanotek muncul; jika kamu knock musuh selama perisai aktif, HP-mu pulih sebesar perisai itu.",
+        "es": "Al recibir daño letal se despliega un escudo nanotecnológico; si derribas a un enemigo mientras dura, recuperas tanto HP como el escudo.",
+        "pt": "Ao levar dano fatal, um escudo de nanotecnologia é ativado; se você derrubar um inimigo enquanto ele dura, recupera HP igual ao escudo."
+      }
     },
     {
       "n": "Steffie",
@@ -462,7 +838,15 @@
         "support",
         "antirush"
       ],
-      "tier": null
+      "tier": null,
+      "skill": "Graffiti's Blessing",
+      "sd": {
+        "en": "Active: creates an area that blocks throwables; allies inside restore armor durability every second and take less bullet damage.",
+        "tr": "Aktif: Atılabilirleri (bomba vb.) engelleyen bir alan oluşturur; içerideki takım arkadaşları her saniye zırh dayanıklılığı kazanır ve daha az mermi hasarı alır.",
+        "id": "Aktif: membuat area yang menahan throwable; rekan di dalamnya memulihkan daya tahan armor tiap detik dan menerima damage peluru lebih kecil.",
+        "es": "Activa: crea una zona que bloquea arrojadizos; los aliados dentro recuperan durabilidad de armadura cada segundo y reciben menos daño de balas.",
+        "pt": "Ativa: cria uma área que bloqueia arremessáveis; aliados dentro dela recuperam durabilidade do colete a cada segundo e tomam menos dano de tiro."
+      }
     },
     {
       "n": "Tatsuya",
@@ -472,7 +856,15 @@
         "mobility",
         "cs"
       ],
-      "tier": "A"
+      "tier": "A",
+      "skill": "Rebel Rush",
+      "sd": {
+        "en": "Active: rush forward quickly for 0.3s; knocking down an enemy within 10s after using it resets the cooldown. Cooldown 90s.",
+        "tr": "Aktif: 0,3 sn boyunca hızla ileri atılırsın; kullandıktan sonraki 10 sn içinde bir düşmanı düşürürsen bekleme süresi sıfırlanır. Bekleme 90 sn.",
+        "id": "Aktif: melesat cepat ke depan selama 0,3 detik; knock musuh dalam 10 detik setelahnya akan me-reset cooldown. Cooldown 90 detik.",
+        "es": "Activa: avanzas a toda velocidad durante 0,3 s; si derribas a un enemigo en los 10 s siguientes, se reinicia el enfriamiento. Enfriamiento 90 s.",
+        "pt": "Ativa: dá uma arrancada rápida por 0,3s; derrubar um inimigo em até 10s depois zera a recarga. Recarga de 90s."
+      }
     },
     {
       "n": "Thiva",
@@ -481,7 +873,15 @@
         "support",
         "br"
       ],
-      "tier": null
+      "tier": null,
+      "skill": "Vital Vibes",
+      "sd": {
+        "en": "Lets you revive (help up) teammates faster, and you recover HP after each successful revive.",
+        "tr": "Takım arkadaşlarını daha hızlı kaldırırsın ve her başarılı kaldırmadan sonra HP yenilersin.",
+        "id": "Membuatmu lebih cepat membangkitkan (revive) rekan, dan kamu memulihkan HP setiap berhasil revive.",
+        "es": "Levantas a tus compañeros más rápido y recuperas HP cada vez que consigues revivir a uno.",
+        "pt": "Você levanta os aliados mais rápido e recupera HP a cada vez que consegue levantar alguém."
+      }
     },
     {
       "n": "Wukong",
@@ -491,7 +891,15 @@
         "mobility",
         "antisniper"
       ],
-      "tier": "A"
+      "tier": "A",
+      "skill": "Camouflage",
+      "sd": {
+        "en": "Active: turn into a bush for 10s with 10% less movement speed; attacking ends it. A kill within 10s of casting resets the cooldown. Cooldown 75s.",
+        "tr": "Aktif: 10 sn boyunca çalıya dönüşürsün, hareket hızın %10 düşer; saldırınca biter. Kullandıktan sonra 10 sn içinde eleme yaparsan bekleme sıfırlanır. Bekleme 75 sn.",
+        "id": "Aktif: berubah jadi semak selama 10 detik dengan kecepatan gerak -10%; menyerang akan membatalkannya. Kill dalam 10 detik me-reset cooldown. Cooldown 75 detik.",
+        "es": "Activa: te conviertes en arbusto 10 s con un 10% menos de velocidad; atacar lo cancela. Una baja en los 10 s siguientes reinicia el enfriamiento. Enfriamiento 75 s.",
+        "pt": "Ativa: vira um arbusto por 10s com 10% menos velocidade; atacar desfaz o disfarce. Um abate em até 10s zera a recarga. Recarga de 75s."
+      }
     },
     {
       "n": "Xayne",
@@ -502,7 +910,15 @@
         "armor",
         "cs"
       ],
-      "tier": null
+      "tier": null,
+      "skill": "Xtreme Encounter",
+      "sd": {
+        "en": "Active: enter the Xtreme state with 70 temporary Shield Points for 15s; each knockdown refills them to 70 and resets the 15s timer. Cooldown 75s.",
+        "tr": "Aktif: Xtreme durumuna geçip 15 sn boyunca 70 geçici Kalkan Puanı alırsın; her yere düşürme kalkanı 70'e tamamlar ve süreyi 15 sn'ye sıfırlar. Bekleme 75 sn.",
+        "id": "Aktif: masuk kondisi Xtreme dengan 70 Shield Point sementara selama 15 detik; tiap knock mengisi ulang ke 70 dan me-reset durasi 15 detik. Cooldown 75 detik.",
+        "es": "Activa: entras en estado Xtreme con 70 Puntos de Escudo temporales durante 15 s; cada derribo los rellena a 70 y reinicia los 15 s. Enfriamiento 75 s.",
+        "pt": "Ativa: entra no estado Xtreme com 70 Pontos de Escudo temporários por 15s; cada derrubada recarrega para 70 e reinicia os 15s. Recarga de 75s."
+      }
     }
   ],
   "tierList": {
