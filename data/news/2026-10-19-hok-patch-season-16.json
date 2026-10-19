@@ -1,0 +1,131 @@
+{
+  "type": "patch",
+  "slug": "hok-patch-season-16",
+  "date": "2026-10-19",
+  "game": "hok",
+  "sources": [
+    "Honor of Kings international patch notes, September 23 and September 10, 2026 (via HoKStats.gg)",
+    "GamsGo S16 tier list with HoK Camp ranked data (October 13, 2026)"
+  ],
+  "title": {
+    "tr": "Honor of Kings Sezon 16 denge değişiklikleri: Chano ve Ukyo güçlendi, Flowborn ve Umbrosa yenilendi",
+    "en": "Honor of Kings Season 16 balance changes: Chano and Ukyo buffed, Flowborn and Umbrosa reworked",
+    "id": "Perubahan balance Honor of Kings Season 16: Chano dan Ukyo di-buff, Flowborn dan Umbrosa dirombak",
+    "es": "Cambios de equilibrio de la Temporada 16 de Honor of Kings: suben Chano y Ukyo, se renuevan Flowborn y Umbrosa",
+    "pt": "Mudanças de balanceamento da Temporada 16 de Honor of Kings: Chano e Ukyo sobem, Flowborn e Umbrosa reformulados"
+  },
+  "summary": {
+    "tr": "23 Eylül'de başlayan Sezon 16 ile Chano, Da Qiao ve Ukyo Tachibana güçlendi, Florentino zayıfladı; Flowborn'un büyücü formu ve Umbrosa'nın becerileri değişti.",
+    "en": "Season 16 started on September 23 with buffs for Chano, Da Qiao and Ukyo Tachibana, a Florentino nerf, and changes to Flowborn's mage form and Umbrosa's kit.",
+    "id": "Season 16 dimulai 23 September dengan buff untuk Chano, Da Qiao, dan Ukyo Tachibana, nerf Florentino, serta perubahan pada wujud mage Flowborn dan kit Umbrosa.",
+    "es": "La Temporada 16 arrancó el 23 de septiembre con mejoras para Chano, Da Qiao y Ukyo Tachibana, un nerf a Florentino y cambios en la forma de mago de Flowborn y en Umbrosa.",
+    "pt": "A Temporada 16 começou em 23 de setembro com buffs para Chano, Da Qiao e Ukyo Tachibana, nerf no Florentino e mudanças na forma de mago do Flowborn e no Umbrosa."
+  },
+  "body": {
+    "tr": [
+      {"p": "Honor of Kings'in uluslararası sunucusunda Sezon 16 (\"Flow As One\") 23 Eylül 2026'da başladı ve yedi kahramanı etkileyen bir denge yaması getirdi. Bu, sitemizdeki ilk Honor of Kings yama yazısı olduğu için aşağıda sezon başlangıcındaki değişiklikleri ve öncesindeki 10 Eylül ayarlarını kısaca topladık."},
+      {"h": "Güçlenenler (23 Eylül)"},
+      {"ul": [
+        "Chano: Soaring Signal'ın taban hasarı 230'dan 300'e, ölçeklemesi %140'tan %160 fiziksel saldırıya çıktı. Lupine Trap de daha fazla vuruyor (380'den 400'e, %90'dan %100 ek fiziksel saldırıya).",
+        "Da Qiao: Leaping Koi Tide ve Severing Surge'ün zamanla verdiği hasar 75'ten 90'a (seviye başı 25'ten 30'a) yükseldi.",
+        "Ukyo Tachibana: Concealed Sabre Heavenly Hack 580'den 600'e (%190'dan %200 ek fiziksel saldırıya), Snowfall Slash 210'dan 240'a (%65'ten %75'e) çıktı."
+      ]},
+      {"h": "Zayıflayan"},
+      {"p": "Florentino: Triple Threat'in taban ve gerçek hasarı 130'dan 120'ye, ölçeklemesi %40'tan %35 ek fiziksel saldırıya düştü."},
+      {"h": "Yeniden düzenlenenler"},
+      {"ul": [
+        "Flowborn (büyücü formu): Hareket hızı bonusu ve güçlendirilmiş saldırının ek hasarı (60-120'den 120-240'a) belirgin şekilde arttı. Starflow Cascade artık hareket ederken kullanılabiliyor. Arcane Arts'ın doğrudan hasarı azaldı ama emilen ışın hasarı arttı ve 0,75 saniyelik %25 yavaşlatma eklendi.",
+        "Umbrosa: Feverish Dance artık dairesel alan hasarı yerine işaret bırakan altı tüy bıçağı fırlatıyor ve yavaşlatma etkisi kaldırıldı. Feathered Tempest saldırı hızıyla ölçekleniyor; Final Frenzy'nin hareket hızı değerleri değişti.",
+        "Luara: Birinci becerinin duvar aşma inişi iyileştirildi ve inişte yeni bir işaret etkisi var."
+      ]},
+      {"h": "Bir önceki ayar (10 Eylül)"},
+      {"p": "Sezondan iki hafta önce Gao Changgong, Luara ve Mulan güçlendirilmiş; Flowborn'un nişancı formu, Lapulapu ve Ying zayıflatılmıştı. Luara bu paketin en büyük kazananıydı: ikinci beceri 8 saniyede bir gelip 450 (+%140 ek fiziksel saldırı) vuruyor, ultisinin bekleme süresi 60'tan 50 saniyeye indi."},
+      {"h": "Bizim yorumumuz"},
+      {"p": "GamsGo'nun HoK Camp verileriyle hazırladığı 13 Ekim listesinde Luara farm koridorunda Garo ile birlikte S kademede; iki güçlendirme peş peşe gelince yeni sezonun güvenli nişancısı oldu. Umbrosa'nın değişikliği de işe yaramış görünüyor, clash koridorunda S kademede. Chano'nun güçlenmesi onu farm koridorunda A kademeye taşıdı. Florentino ise hafif zayıflamaya rağmen A kademede kalıyor. Kademe listemizi ve eksik kahramanları (Luara, Umbrosa, Xuance, Wang Wei ve diğerleri) bu sezona göre ekledik."}
+    ],
+    "en": [
+      {"p": "Season 16 (\"Flow As One\") started on the Honor of Kings international server on September 23, 2026, with a balance patch touching seven heroes. As this is our first Honor of Kings patch article, below we cover the season-start changes and briefly recap the September 10 adjustments before them."},
+      {"h": "Buffs (September 23)"},
+      {"ul": [
+        "Chano: Soaring Signal base damage goes from 230 to 300, and its ratio from 140% to 160% physical attack. Lupine Trap also hits harder (380 to 400, and 90% to 100% extra physical attack).",
+        "Da Qiao: The damage over time on Leaping Koi Tide and Severing Surge rises from 75 to 90 (and per-level growth from 25 to 30).",
+        "Ukyo Tachibana: Concealed Sabre Heavenly Hack goes from 580 to 600 (190% to 200% extra physical attack), and Snowfall Slash from 210 to 240 (65% to 75%)."
+      ]},
+      {"h": "Nerf"},
+      {"p": "Florentino: Triple Threat's base and true damage drop from 130 to 120, and its ratio from 40% to 35% extra physical attack."},
+      {"h": "Reworks and upgrades"},
+      {"ul": [
+        "Flowborn (mage form): The movement speed bonus and the enhanced basic attack's extra damage (60-120 up to 120-240) both rise sharply. Starflow Cascade can now be cast while moving. Arcane Arts deals less direct damage but more absorbed beam damage, and now slows by 25% for 0.75 seconds.",
+        "Umbrosa: Feverish Dance now throws six marking featherblades instead of dealing circular area damage, and its slow is gone. Feathered Tempest now scales with attack speed, and Final Frenzy's movement speed values changed.",
+        "Luara: Skill 1's wall-crossing landing is smoother and adds a new mark on landing."
+      ]},
+      {"h": "The previous adjustment (September 10)"},
+      {"p": "Two weeks before the season, Gao Changgong, Luara and Mulan were buffed, while Flowborn's marksman form, Lapulapu and Ying were nerfed. Luara gained the most: her Skill 2 now comes up every 8 seconds and hits for 450 (+140% extra physical attack), and her ultimate cooldown dropped from 60 to 50 seconds."},
+      {"h": "Our take"},
+      {"p": "In GamsGo's October 13 list, built on HoK Camp ranked data, Luara sits in S tier in the farm lane next to Garo; two buffs in a row made her the safe marksman of the new season. Umbrosa's rework looks like a success too, with an S rank in the clash lane. Chano's buffs lifted him to A tier in the farm lane, and Florentino stays in A tier despite the small nerf. We updated our tier list and added the heroes the site was missing (Luara, Umbrosa, Xuance, Wang Wei and others) for this season."}
+    ],
+    "id": [
+      {"p": "Season 16 (\"Flow As One\") dimulai di server internasional Honor of Kings pada 23 September 2026, dengan patch balance yang mengubah tujuh hero. Karena ini artikel patch Honor of Kings pertama kami, di bawah ini kami bahas perubahan awal season dan merangkum singkat penyesuaian 10 September sebelumnya."},
+      {"h": "Buff (23 September)"},
+      {"ul": [
+        "Chano: Base damage Soaring Signal naik dari 230 ke 300, dan rasionya dari 140% ke 160% physical attack. Lupine Trap juga lebih sakit (380 ke 400, dan 90% ke 100% extra physical attack).",
+        "Da Qiao: Damage over time Leaping Koi Tide dan Severing Surge naik dari 75 ke 90 (pertumbuhan per level dari 25 ke 30).",
+        "Ukyo Tachibana: Concealed Sabre Heavenly Hack naik dari 580 ke 600 (190% ke 200% extra physical attack), dan Snowfall Slash dari 210 ke 240 (65% ke 75%)."
+      ]},
+      {"h": "Nerf"},
+      {"p": "Florentino: Base damage dan true damage Triple Threat turun dari 130 ke 120, dan rasionya dari 40% ke 35% extra physical attack."},
+      {"h": "Rombakan dan peningkatan"},
+      {"ul": [
+        "Flowborn (wujud mage): Bonus movement speed dan extra damage basic attack yang diperkuat (60-120 menjadi 120-240) naik tajam. Starflow Cascade kini bisa dipakai sambil bergerak. Arcane Arts memberi damage langsung lebih kecil tetapi damage beam yang diserap lebih besar, dan kini memberi slow 25% selama 0,75 detik.",
+        "Umbrosa: Feverish Dance kini melempar enam featherblade yang memberi tanda, bukan damage area melingkar, dan efek slow-nya dihapus. Feathered Tempest kini scaling dengan attack speed, dan nilai movement speed Final Frenzy berubah.",
+        "Luara: Pendaratan Skill 1 saat melewati tembok lebih mulus dan kini memberi tanda baru."
+      ]},
+      {"h": "Penyesuaian sebelumnya (10 September)"},
+      {"p": "Dua minggu sebelum season, Gao Changgong, Luara, dan Mulan di-buff, sementara wujud marksman Flowborn, Lapulapu, dan Ying di-nerf. Luara paling diuntungkan: Skill 2 kini siap setiap 8 detik dengan damage 450 (+140% extra physical attack), dan cooldown ultimate turun dari 60 ke 50 detik."},
+      {"h": "Pendapat kami"},
+      {"p": "Di daftar GamsGo per 13 Oktober yang memakai data ranked HoK Camp, Luara berada di tier S farm lane bersama Garo; dua buff beruntun menjadikannya marksman paling aman di season baru. Rombakan Umbrosa juga tampak berhasil, dengan tier S di clash lane. Buff Chano mengangkatnya ke tier A farm lane, dan Florentino tetap di tier A meski sedikit di-nerf. Kami memperbarui tier list dan menambahkan hero yang belum ada di situs (Luara, Umbrosa, Xuance, Wang Wei, dan lainnya)."}
+    ],
+    "es": [
+      {"p": "La Temporada 16 (\"Flow As One\") empezó en el servidor internacional de Honor of Kings el 23 de septiembre de 2026, con un parche que tocó a siete héroes. Como es nuestro primer artículo de parche de Honor of Kings, repasamos los cambios del inicio de temporada y, brevemente, los ajustes del 10 de septiembre."},
+      {"h": "Mejoras (23 de septiembre)"},
+      {"ul": [
+        "Chano: El daño base de Soaring Signal pasa de 230 a 300 y su escalado del 140% al 160% del ataque físico. Lupine Trap también pega más (de 380 a 400, y del 90% al 100% de ataque físico adicional).",
+        "Da Qiao: El daño en el tiempo de Leaping Koi Tide y Severing Surge sube de 75 a 90 (y su crecimiento por nivel de 25 a 30).",
+        "Ukyo Tachibana: Concealed Sabre Heavenly Hack pasa de 580 a 600 (del 190% al 200% de ataque físico adicional) y Snowfall Slash de 210 a 240 (del 65% al 75%)."
+      ]},
+      {"h": "Debilitamiento"},
+      {"p": "Florentino: El daño base y verdadero de Triple Threat baja de 130 a 120 y su escalado del 40% al 35% de ataque físico adicional."},
+      {"h": "Renovaciones y mejoras de mecánicas"},
+      {"ul": [
+        "Flowborn (forma de mago): La bonificación de velocidad y el daño extra del ataque básico potenciado (de 60-120 a 120-240) suben mucho. Starflow Cascade ya se puede lanzar en movimiento. Arcane Arts hace menos daño directo pero más daño absorbido del rayo, y ahora ralentiza un 25% durante 0,75 segundos.",
+        "Umbrosa: Feverish Dance lanza ahora seis plumas que marcan en lugar de daño en área circular, y pierde la ralentización. Feathered Tempest escala con velocidad de ataque y cambian los valores de velocidad de Final Frenzy.",
+        "Luara: El aterrizaje de la habilidad 1 al cruzar muros es más fluido y deja una nueva marca."
+      ]},
+      {"h": "El ajuste anterior (10 de septiembre)"},
+      {"p": "Dos semanas antes de la temporada, Gao Changgong, Luara y Mulan recibieron mejoras, mientras que la forma de tirador de Flowborn, Lapulapu y Ying fueron debilitados. Luara fue la gran beneficiada: su habilidad 2 está lista cada 8 segundos y golpea por 450 (+140% de ataque físico adicional), y su definitiva baja de 60 a 50 segundos de enfriamiento."},
+      {"h": "Nuestra opinión"},
+      {"p": "En la lista de GamsGo del 13 de octubre, basada en datos clasificatorios de HoK Camp, Luara está en el tier S de la línea de farm junto a Garo; dos mejoras seguidas la convierten en la tiradora segura de la temporada. La renovación de Umbrosa también parece funcionar, con tier S en la línea clash. Las mejoras de Chano lo suben al tier A de farm, y Florentino sigue en A pese al pequeño nerf. Actualizamos nuestra tier list y añadimos los héroes que faltaban en el sitio (Luara, Umbrosa, Xuance, Wang Wei y otros)."}
+    ],
+    "pt": [
+      {"p": "A Temporada 16 (\"Flow As One\") começou no servidor internacional de Honor of Kings em 23 de setembro de 2026, com um patch que mexeu em sete heróis. Como este é o nosso primeiro artigo de patch de Honor of Kings, cobrimos as mudanças do início da temporada e resumimos os ajustes de 10 de setembro."},
+      {"h": "Buffs (23 de setembro)"},
+      {"ul": [
+        "Chano: O dano base de Soaring Signal vai de 230 para 300 e a escala de 140% para 160% do ataque físico. Lupine Trap também bate mais (de 380 para 400, e de 90% para 100% de ataque físico extra).",
+        "Da Qiao: O dano ao longo do tempo de Leaping Koi Tide e Severing Surge sobe de 75 para 90 (e o ganho por nível de 25 para 30).",
+        "Ukyo Tachibana: Concealed Sabre Heavenly Hack vai de 580 para 600 (de 190% para 200% de ataque físico extra), e Snowfall Slash de 210 para 240 (de 65% para 75%)."
+      ]},
+      {"h": "Nerf"},
+      {"p": "Florentino: O dano base e verdadeiro de Triple Threat cai de 130 para 120, e a escala de 40% para 35% de ataque físico extra."},
+      {"h": "Reformulações e melhorias"},
+      {"ul": [
+        "Flowborn (forma de mago): O bônus de velocidade e o dano extra do ataque básico fortalecido (de 60-120 para 120-240) sobem bastante. Starflow Cascade agora pode ser usado em movimento. Arcane Arts causa menos dano direto e mais dano absorvido do feixe, e agora deixa 25% de lentidão por 0,75 segundo.",
+        "Umbrosa: Feverish Dance agora lança seis lâminas de pena que marcam em vez de dano em área circular, e perdeu a lentidão. Feathered Tempest passa a escalar com velocidade de ataque, e os valores de velocidade de Final Frenzy mudaram.",
+        "Luara: O pouso da habilidade 1 ao atravessar paredes ficou mais suave e ganhou uma nova marca."
+      ]},
+      {"h": "O ajuste anterior (10 de setembro)"},
+      {"p": "Duas semanas antes da temporada, Gao Changgong, Luara e Mulan ganharam buffs, enquanto a forma de atirador do Flowborn, Lapulapu e Ying foram enfraquecidos. Luara foi quem mais ganhou: a habilidade 2 fica pronta a cada 8 segundos e causa 450 (+140% de ataque físico extra), e a recarga da ultimate caiu de 60 para 50 segundos."},
+      {"h": "Nossa análise"},
+      {"p": "Na lista da GamsGo de 13 de outubro, feita com dados ranqueados do HoK Camp, Luara está no tier S da rota farm ao lado de Garo; dois buffs seguidos fizeram dela a atiradora segura da temporada. A reformulação do Umbrosa também parece ter dado certo, com tier S na rota clash. Os buffs do Chano levaram ele ao tier A na farm, e Florentino segue no A apesar do pequeno nerf. Atualizamos nossa tier list e adicionamos os heróis que faltavam no site (Luara, Umbrosa, Xuance, Wang Wei e outros)."}
+    ]
+  }
+}

@@ -1,7 +1,7 @@
 {
   "game": "mlbb",
-  "patch": "2.2.16",
-  "updated": "2026-10-14",
+  "patch": "2.2.16a",
+  "updated": "2026-10-19",
   "notes": "r=role, d=damage type (P/M), t=traits (h heal/sustain, c crowd control, b burst, d dash/mobility), s=strengths, b=build archetype, tier=S/A/B/C or null (set by weekly updater from patch notes/meta). build/spell override archetype defaults. wr = public ranked win rate (%) from data.wrSource; set only from a named public source, never estimated. lanes = lanes the hero is commonly played in.",
   "archetypes": {
     "fP": {
@@ -336,7 +336,7 @@
       "n": "Aulus",
       "r": "fighter",
       "d": "P",
-      "t": "",
+      "t": "hcd",
       "s": [
         "antitank"
       ],
@@ -344,17 +344,24 @@
       "build": [
         "Tough Boots",
         "War Axe",
-        "Corrosion Scythe",
-        "Malefic Roar",
+        "Brute Force Breastplate",
+        "Rose Gold Meteor",
         "Queen's Wings",
-        "Immortality"
+        "Malefic Roar"
       ],
       "tier": "S",
       "wr": 60.0,
       "lanes": [
-        "exp",
-        "jungle"
-      ]
+        "jungle",
+        "exp"
+      ],
+      "spell": "Retribution",
+      "emblem": {
+        "set": "Fighter",
+        "t1": "Firmness",
+        "t2": "Seasoned Hunter",
+        "core": "War Cry"
+      }
     },
     {
       "n": "Aurora",
@@ -404,6 +411,19 @@
         "jungle",
         "exp"
       ]
+    },
+    {
+      "n": "Bane",
+      "r": "fighter",
+      "d": "P",
+      "t": "hcd",
+      "s": [],
+      "b": "fP",
+      "lanes": [
+        "exp",
+        "jungle"
+      ],
+      "tier": "B"
     },
     {
       "n": "Barats",
@@ -995,6 +1015,18 @@
       ]
     },
     {
+      "n": "Hirara",
+      "r": "assassin",
+      "d": "P",
+      "t": "cdb",
+      "s": [],
+      "b": "assP",
+      "lanes": [
+        "jungle"
+      ],
+      "tier": "A"
+    },
+    {
       "n": "Hylos",
       "r": "tank",
       "d": "M",
@@ -1131,6 +1163,18 @@
       "lanes": [
         "roam"
       ]
+    },
+    {
+      "n": "Kalea",
+      "r": "support",
+      "d": "P",
+      "t": "hcd",
+      "s": [],
+      "b": "support",
+      "lanes": [
+        "roam"
+      ],
+      "tier": "D"
     },
     {
       "n": "Karina",
@@ -1345,6 +1389,18 @@
       ]
     },
     {
+      "n": "Marcel",
+      "r": "support",
+      "d": "P",
+      "t": "cd",
+      "s": [],
+      "b": "support",
+      "lanes": [
+        "roam"
+      ],
+      "tier": "S"
+    },
+    {
       "n": "Martis",
       "r": "fighter",
       "d": "P",
@@ -1518,6 +1574,18 @@
       "lanes": [
         "mid"
       ]
+    },
+    {
+      "n": "Obsidia",
+      "r": "marksman",
+      "d": "P",
+      "t": "cd",
+      "s": [],
+      "b": "mmA",
+      "lanes": [
+        "gold"
+      ],
+      "tier": "S"
     },
     {
       "n": "Odette",
@@ -1904,6 +1972,18 @@
       "lanes": [
         "mid"
       ]
+    },
+    {
+      "n": "Zetian",
+      "r": "mage",
+      "d": "M",
+      "t": "hc",
+      "s": [],
+      "b": "mage",
+      "lanes": [
+        "mid"
+      ],
+      "tier": "A"
     },
     {
       "n": "Zhask",

@@ -1,0 +1,163 @@
+{
+  "type": "guide",
+  "slug": "mlbb-guide-aulus",
+  "date": "2026-10-19",
+  "game": "mlbb",
+  "hero": "Aulus",
+  "sources": [
+    "mlbbhub.com Aulus build, emblem and matchup data (patch 2.2.16a, ranked data October 18, 2026)",
+    "Moonton patch notes 2.2.16 and 2.2.16a via Liquipedia",
+    "timesaver.gg Aulus Season 42 guide and 2.2.16a analysis"
+  ],
+  "title": {
+    "tr": "Aulus rehberi (2.2.16a): orman dizilimi, amblem, kombo ve karşı seçimler",
+    "en": "Aulus guide (2.2.16a): jungle build, emblem, combo and counters",
+    "id": "Panduan Aulus (2.2.16a): build jungle, emblem, combo, dan counter",
+    "es": "Guía de Aulus (2.2.16a): build de jungla, emblema, combo y counters",
+    "pt": "Guia de Aulus (2.2.16a): build de selva, emblema, combo e counters"
+  },
+  "summary": {
+    "tr": "Ara yamadan sonra Aulus erken ve orta oyunda güçlü, geç oyunda daha zayıf. Güncel dizilim, Dövüşçü amblemi, doğru beceri sırası ve ona karşı ne seçmen gerektiği.",
+    "en": "After the hotfix Aulus is strong early and mid game but weaker late. Here is the current build, Fighter emblem, the right skill order and what to pick against him.",
+    "id": "Setelah hotfix, Aulus kuat di early dan mid game tetapi lebih lemah di late. Build terbaru, emblem Fighter, urutan skill yang tepat, dan pick untuk melawannya.",
+    "es": "Tras el ajuste, Aulus es fuerte al inicio y a mitad de partida, pero más débil al final. Build actual, emblema de Luchador, orden de habilidades y qué elegir contra él.",
+    "pt": "Depois do hotfix, Aulus é forte no início e no meio do jogo, mas mais fraco no fim. Build atual, emblema de Lutador, ordem de habilidades e o que escolher contra ele."
+  },
+  "body": {
+    "tr": [
+      {"h": "Rol ve oyun tarzı"},
+      {"p": "Aulus, Sezon 42'de güçlendirildikten sonra orman ve EXP koridorunda en çok yasaklanan dövüşçülerden biri oldu; mlbbhub'ın 18 Ekim verilerinde Mythical Glory ve üstünde yasaklanma oranı %80'i aşıyor. 14 Ekim'deki 2.2.16a ara yaması onu yeniden şekillendirdi: güçlendirilmiş saldırıları artık seviyeyle büyümüyor ve daha az can yeniliyor, buna karşılık erken seviyelerdeki ulti hasarı arttı. Sonuç: Aulus artık erken çatışmalarda ve kısa, kesin takım savaşlarında parlayan bir orman kahramanı."},
+      {"h": "Önerilen dizilim ve amblem"},
+      {"ul": [
+        "Eşyalar: Tough Boots (Dayanıklı Botlar), War Axe (Savaş Baltası), Brute Force Breastplate, Rose Gold Meteor, Queen's Wings (Kraliçe Kanatları), Malefic Roar (Korkunç Kükreme).",
+        "Esnek değişimler: Son Lord savaşları için Malefic Roar yerine Immortality; kalkanlı veya çok canlı dövüşçülere karşı Sea Halberd; kontrolü az, fiziksel ağırlıklı rakiplere karşı Warrior Boots.",
+        "Amblem: Dövüşçü (Fighter) seti, Firmness, Seasoned Hunter ve War Cry.",
+        "Büyü: Ormanda Retribution (Retri). EXP koridorunda oynuyorsan Flicker."
+      ]},
+      {"h": "Beceri kombosu ve önemli ipuçları"},
+      {"ul": [
+        "Savaştan önce bir canavara veya miniyona beceri vur: güçlendirilmiş saldırı penceresi açık şekilde savaşa girersin.",
+        "Sıra: birinci beceriyle (Aulus, Charge!) hız ve kontrol bağışıklığı kazanıp gir, ikinci becerinin (The Power of Axe) ilk kullanımıyla sersemlet, tekrar kullanımıyla asıl hedefe atıl, temas kurunca ultiyi (Undying Fury) aç ve güçlendirilmiş saldırılarla bitir.",
+        "Birinci becerinin bekleme süresi artık her seviyede 15 saniye. Bu yeteneği kaçmak için harcarsan bir sonraki savaşa girişin olmaz; giriş için sakla.",
+        "Yaklaşık 300 fiziksel saldırıya ulaşmadan uzun savaşlara girme. timesaver'ın hesabına göre can yenilemesi bu noktanın altında eskisinden zayıf, üstünde ise yaklaşık eski seviyede.",
+        "Oyunu 15. dakika civarında kapatmayı hedefle; geç oyunda saldırı hızı tavanı düştüğü için uzak mesafeden vuran nişancılar onu geçebiliyor."
+      ]},
+      {"h": "Karşı seçimler"},
+      {"ul": [
+        "Aulus'a karşı iyi olanlar: atılmasını ve dalışını kesen kontrol kahramanları. Sitemizin motoru Minsitthar, Kaja, Chou ve Phoveus'u öne çıkarıyor; mlbbhub istatistiklerinde ise Alice, Yve ve Zhuxin gibi alan kontrolü yapan büyücüler ona karşı en yüksek kazanma farkına sahip.",
+        "Aulus'un iyi olduğu rakipler: tanklar ve yavaş ön sıra kahramanları. mlbbhub verisinde Gloo, Tigreal ve Natalia'ya karşı belirgin bir avantajı var; motorumuz da tanklara karşı güçlü olduğunu gösteriyor.",
+        "Eşya olarak: Aulus'un can yenilemesi azaldı ama hâlâ önemli. Ona karşı fiziksel taşıyıcılar Sea Halberd, büyücüler Necklace of Durance ile iyileşmesini düşürebilir."
+      ]},
+      {"h": "Son değişiklikler"},
+      {"p": "2.2.16'da (16 Eylül) becerileri normal saldırı etkisini tetiklemeye ve her vuruşta can kazandırmaya başladı, ikinci becerinin ilk kullanımı sersemletme kazandı. 2.2.16a'da (14 Ekim) pasif saldırı hızı sabit %20'ye, güçlendirilmiş saldırı hasarı 135'ten 120'ye indi, birinci beceri her seviyede 15 saniye bekliyor; ultinin erken seviye hasarı ise arttı. Ayrıntılar için 2.2.16a yama yazımıza bakabilirsin."}
+    ],
+    "en": [
+      {"h": "Role and playstyle"},
+      {"p": "After his Season 42 buffs, Aulus became one of the most banned fighters in the jungle and EXP lane; in mlbbhub's October 18 data his ban rate passes 80% in Mythical Glory and above. The 2.2.16a hotfix on October 14 reshaped him: his enhanced attacks no longer scale with level and heal less, while his low-rank ultimate damage went up. The result is a jungler who shines in early skirmishes and in short, decisive team fights."},
+      {"h": "Recommended build and emblem"},
+      {"ul": [
+        "Items: Tough Boots, War Axe, Brute Force Breastplate, Rose Gold Meteor, Queen's Wings, Malefic Roar.",
+        "Flex swaps: Immortality over Malefic Roar for late Lord fights; Sea Halberd against shields or high-HP fighters; Warrior Boots against physical-heavy teams with little crowd control.",
+        "Emblem: Fighter set with Firmness, Seasoned Hunter and War Cry.",
+        "Battle spell: Retribution in the jungle. Flicker if you play him in the EXP lane."
+      ]},
+      {"h": "Skill combo and key tips"},
+      {"ul": [
+        "Hit a monster or minion with a skill before a fight so you enter with the enhanced attack window already open.",
+        "Order: enter with Skill 1 (Aulus, Charge!) for speed and control immunity, stun with the first cast of Skill 2 (The Power of Axe), use the recast to jump onto your main target, open Undying Fury once you have contact and finish with enhanced attacks.",
+        "Skill 1 now has a 15-second cooldown at every level. If you spend it to run away, you will have no way into the next fight, so save it for the engage.",
+        "Avoid long fights before you reach roughly 300 physical attack. By timesaver's math, his healing is weaker than before below that point and about the same above it.",
+        "Aim to close the game around the 15-minute mark: with a lower attack speed ceiling, ranged marksmen can outscale him late."
+      ]},
+      {"h": "Counters"},
+      {"ul": [
+        "Good against Aulus: control heroes that stop his dash and dive. Our engine highlights Minsitthar, Kaja, Chou and Phoveus, and in mlbbhub's statistics zone-control mages such as Alice, Yve and Zhuxin have the biggest win rate edge against him.",
+        "Aulus is good against: tanks and slow frontliners. mlbbhub's data shows a clear edge against Gloo, Tigreal and Natalia, and our engine also marks him as strong against tanks.",
+        "Items: his healing is lower now but still matters. Physical carries can cut it with Sea Halberd, mages with Necklace of Durance."
+      ]},
+      {"h": "What changed recently"},
+      {"p": "In 2.2.16 (September 16) his skills started to trigger his basic attack effect and heal him on every hit, and the first cast of Skill 2 gained a stun. In 2.2.16a (October 14) his passive attack speed became a flat 20%, enhanced attack damage fell from 135 to 120, Skill 1 now waits 15 seconds at every level, and his low-rank ultimate damage rose. See our 2.2.16a patch article for the details."}
+    ],
+    "id": [
+      {"h": "Role dan gaya bermain"},
+      {"p": "Setelah di-buff di Season 42, Aulus menjadi salah satu fighter yang paling sering di-ban di jungle dan EXP lane; di data mlbbhub per 18 Oktober, ban rate-nya lebih dari 80% di Mythical Glory ke atas. Hotfix 2.2.16a pada 14 Oktober mengubahnya: basic attack yang diperkuat tidak lagi scaling dengan level dan heal-nya lebih kecil, sementara damage ultimate di level rendah naik. Hasilnya, Aulus kini jungler yang bersinar di skirmish awal dan team fight yang singkat dan tegas."},
+      {"h": "Build dan emblem yang disarankan"},
+      {"ul": [
+        "Item: Tough Boots, War Axe, Brute Force Breastplate, Rose Gold Meteor, Queen's Wings, Malefic Roar.",
+        "Alternatif: Immortality menggantikan Malefic Roar untuk perebutan Lord di late game; Sea Halberd melawan shield atau fighter ber-HP tinggi; Warrior Boots melawan tim yang dominan physical dan minim crowd control.",
+        "Emblem: Fighter dengan Firmness, Seasoned Hunter, dan War Cry.",
+        "Battle spell: Retribution di jungle. Flicker jika dimainkan di EXP lane."
+      ]},
+      {"h": "Combo skill dan tips penting"},
+      {"ul": [
+        "Pukul monster atau minion dengan skill sebelum fight agar masuk dengan jendela serangan yang diperkuat sudah aktif.",
+        "Urutan: masuk dengan Skill 1 (Aulus, Charge!) untuk kecepatan dan kebal kontrol, stun dengan cast pertama Skill 2 (The Power of Axe), pakai recast untuk melompat ke target utama, aktifkan Undying Fury setelah menempel, lalu habisi dengan serangan yang diperkuat.",
+        "Cooldown Skill 1 kini 15 detik di semua level. Kalau kamu memakainya untuk kabur, kamu tidak punya cara masuk ke fight berikutnya, jadi simpan untuk inisiasi.",
+        "Hindari fight panjang sebelum mencapai sekitar 300 physical attack. Menurut hitungan timesaver, heal-nya lebih lemah dari sebelumnya di bawah angka itu dan kurang lebih sama di atasnya.",
+        "Targetkan menutup game sekitar menit ke-15: karena batas attack speed-nya turun, marksman jarak jauh bisa melampauinya di late game."
+      ]},
+      {"h": "Counter"},
+      {"ul": [
+        "Kuat melawan Aulus: hero kontrol yang menghentikan dash dan dive-nya. Mesin kami menyorot Minsitthar, Kaja, Chou, dan Phoveus, dan di statistik mlbbhub mage pengontrol area seperti Alice, Yve, dan Zhuxin punya keunggulan win rate terbesar melawannya.",
+        "Aulus kuat melawan: tank dan frontliner yang lambat. Data mlbbhub menunjukkan keunggulan jelas melawan Gloo, Tigreal, dan Natalia, dan mesin kami juga menandainya kuat melawan tank.",
+        "Item: heal-nya kini lebih kecil tetapi masih penting. Carry physical bisa memotongnya dengan Sea Halberd, mage dengan Necklace of Durance."
+      ]},
+      {"h": "Perubahan terbaru"},
+      {"p": "Di 2.2.16 (16 September) skill-nya mulai memicu efek basic attack dan memberi heal di setiap serangan, dan cast pertama Skill 2 mendapat stun. Di 2.2.16a (14 Oktober) attack speed pasifnya menjadi tetap 20%, damage serangan yang diperkuat turun dari 135 ke 120, Skill 1 kini 15 detik di semua level, dan damage ultimate di level rendah naik. Detailnya ada di artikel patch 2.2.16a kami."}
+    ],
+    "es": [
+      {"h": "Rol y estilo de juego"},
+      {"p": "Tras sus mejoras de la Temporada 42, Aulus se convirtió en uno de los luchadores más baneados en jungla y en la línea EXP; en los datos de mlbbhub del 18 de octubre su tasa de baneo supera el 80% en Mythical Glory o más. El ajuste 2.2.16a del 14 de octubre lo cambió: sus ataques potenciados ya no escalan con el nivel y curan menos, mientras que el daño de su definitiva en rangos bajos subió. El resultado es un jungla que brilla en las escaramuzas tempranas y en peleas cortas y decisivas."},
+      {"h": "Build y emblema recomendados"},
+      {"ul": [
+        "Objetos: Tough Boots, War Axe, Brute Force Breastplate, Rose Gold Meteor, Queen's Wings, Malefic Roar.",
+        "Cambios opcionales: Immortality en lugar de Malefic Roar para las últimas peleas por el Lord; Sea Halberd contra escudos o luchadores con mucha vida; Warrior Boots contra equipos muy físicos y con poco control.",
+        "Emblema: Luchador (Fighter) con Firmness, Seasoned Hunter y War Cry.",
+        "Hechizo: Retribution en la jungla. Flicker si lo juegas en la línea EXP."
+      ]},
+      {"h": "Combo y consejos clave"},
+      {"ul": [
+        "Golpea a un monstruo o a un súbdito con una habilidad antes de pelear para entrar con la ventana de ataque potenciado ya abierta.",
+        "Orden: entra con la habilidad 1 (Aulus, Charge!) para ganar velocidad e inmunidad al control, aturde con el primer uso de la habilidad 2 (The Power of Axe), usa la reactivación para saltar al objetivo principal, activa Undying Fury al hacer contacto y remata con ataques potenciados.",
+        "La habilidad 1 tiene ahora 15 segundos de enfriamiento en todos los niveles. Si la gastas para huir, no tendrás forma de entrar en la siguiente pelea, así que guárdala para iniciar.",
+        "Evita peleas largas antes de llegar a unos 300 de ataque físico. Según los cálculos de timesaver, su curación es peor que antes por debajo de ese punto y similar por encima.",
+        "Intenta cerrar la partida hacia el minuto 15: con un techo de velocidad de ataque más bajo, los tiradores a distancia pueden superarlo al final."
+      ]},
+      {"h": "Counters"},
+      {"ul": [
+        "Buenos contra Aulus: héroes de control que cortan su salto y su entrada. Nuestro motor destaca a Minsitthar, Kaja, Chou y Phoveus, y en las estadísticas de mlbbhub los magos de control de zona como Alice, Yve y Zhuxin tienen la mayor ventaja de victorias contra él.",
+        "Aulus es bueno contra: tanques y primeras líneas lentas. Los datos de mlbbhub muestran una ventaja clara contra Gloo, Tigreal y Natalia, y nuestro motor también lo marca como fuerte contra tanques.",
+        "Objetos: su curación es menor pero sigue importando. Los carries físicos pueden reducirla con Sea Halberd y los magos con Necklace of Durance."
+      ]},
+      {"h": "Cambios recientes"},
+      {"p": "En el 2.2.16 (16 de septiembre) sus habilidades empezaron a activar el efecto de su ataque básico y a curarlo en cada golpe, y el primer uso de la habilidad 2 ganó un aturdimiento. En el 2.2.16a (14 de octubre) su velocidad de ataque pasiva quedó fija en 20%, el daño de los ataques potenciados bajó de 135 a 120, la habilidad 1 espera 15 segundos en todos los niveles y el daño de su definitiva en rangos bajos subió. Los detalles están en nuestro artículo del parche 2.2.16a."}
+    ],
+    "pt": [
+      {"h": "Função e estilo de jogo"},
+      {"p": "Depois dos buffs da Temporada 42, Aulus virou um dos lutadores mais banidos na selva e na rota EXP; nos dados do mlbbhub de 18 de outubro, a taxa de banimento passa de 80% no Mythical Glory ou acima. O hotfix 2.2.16a de 14 de outubro mudou o herói: os ataques fortalecidos não escalam mais com o nível e curam menos, enquanto o dano da ultimate nos ranks baixos aumentou. O resultado é um caçador que brilha nas escaramuças do começo e em lutas curtas e decisivas."},
+      {"h": "Build e emblema recomendados"},
+      {"ul": [
+        "Itens: Tough Boots, War Axe, Brute Force Breastplate, Rose Gold Meteor, Queen's Wings, Malefic Roar.",
+        "Trocas: Immortality no lugar de Malefic Roar para as lutas de Lord no fim; Sea Halberd contra escudos ou lutadores com muita vida; Warrior Boots contra times físicos com pouco controle.",
+        "Emblema: Lutador (Fighter) com Firmness, Seasoned Hunter e War Cry.",
+        "Feitiço: Retribution na selva. Flicker se jogar na rota EXP."
+      ]},
+      {"h": "Combo e dicas principais"},
+      {"ul": [
+        "Acerte um monstro ou tropa com uma habilidade antes da luta para entrar com a janela de ataque fortalecido já aberta.",
+        "Ordem: entre com a habilidade 1 (Aulus, Charge!) para ganhar velocidade e imunidade a controle, atordoe com o primeiro uso da habilidade 2 (The Power of Axe), use a reativação para pular no alvo principal, ative Undying Fury quando fizer contato e finalize com ataques fortalecidos.",
+        "A habilidade 1 agora tem recarga de 15 segundos em todos os níveis. Se você usar para fugir, fica sem entrada para a próxima luta, então guarde para o engage.",
+        "Evite lutas longas antes de chegar a uns 300 de ataque físico. Pelas contas do timesaver, a cura dele fica pior que antes abaixo desse ponto e parecida acima.",
+        "Tente fechar o jogo por volta dos 15 minutos: com o teto de velocidade de ataque menor, atiradores à distância podem superá-lo no fim."
+      ]},
+      {"h": "Counters"},
+      {"ul": [
+        "Bons contra Aulus: heróis de controle que cortam o avanço e o mergulho dele. Nosso motor destaca Minsitthar, Kaja, Chou e Phoveus, e nas estatísticas do mlbbhub magos de controle de área como Alice, Yve e Zhuxin têm a maior vantagem de vitórias contra ele.",
+        "Aulus é bom contra: tanques e linhas de frente lentas. Os dados do mlbbhub mostram vantagem clara contra Gloo, Tigreal e Natalia, e nosso motor também marca ele como forte contra tanques.",
+        "Itens: a cura dele caiu, mas ainda importa. Carregadores físicos podem cortá-la com Sea Halberd e magos com Necklace of Durance."
+      ]},
+      {"h": "O que mudou recentemente"},
+      {"p": "No 2.2.16 (16 de setembro) as habilidades passaram a ativar o efeito do ataque básico e curar a cada golpe, e o primeiro uso da habilidade 2 ganhou atordoamento. No 2.2.16a (14 de outubro) a velocidade de ataque passiva virou 20% fixo, o dano dos ataques fortalecidos caiu de 135 para 120, a habilidade 1 espera 15 segundos em todos os níveis e o dano da ultimate nos ranks baixos subiu. Os detalhes estão no nosso artigo do patch 2.2.16a."}
+    ]
+  }
+}

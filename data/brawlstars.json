@@ -1,6 +1,6 @@
 {
   "game": "brawlstars",
-  "updated": "2026-10-14",
+  "updated": "2026-10-19",
   "notes": "c=class (tank, assassin, marksman, artillery, controller, support, damage), s=strengths (antitank, antiassassin, heal, wallbreak), tier=S/A/B/C or null (set by weekly updater). Class matchups and mode weights live in build logic (src/app.js). gears = suggested gear pair per class.",
   "brawlers": [
     {
@@ -180,6 +180,12 @@
         "antitank"
       ],
       "tier": "C"
+    },
+    {
+      "n": "Cosmo",
+      "c": "controller",
+      "s": [],
+      "tier": "S"
     },
     {
       "n": "Crow",
@@ -681,6 +687,12 @@
       "c": "tank",
       "s": [],
       "tier": "D"
+    },
+    {
+      "n": "Vince",
+      "c": "damage",
+      "s": [],
+      "tier": null
     },
     {
       "n": "Wendy",

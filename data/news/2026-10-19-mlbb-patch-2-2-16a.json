@@ -1,0 +1,132 @@
+{
+  "type": "patch",
+  "slug": "mlbb-patch-2-2-16a",
+  "date": "2026-10-19",
+  "game": "mlbb",
+  "sources": [
+    "Moonton patch notes 2.2.16a via Liquipedia (Patch 2.2.16a)",
+    "mlbbhub.com patch notes and ranked statistics (October 18, 2026)",
+    "timesaver.gg patch 2.2.16a analysis"
+  ],
+  "title": {
+    "tr": "Mobile Legends 2.2.16a ara yaması: Aulus, Rafaela, Hirara ve Eudora zayıfladı, Kalea güçlendi",
+    "en": "Mobile Legends hotfix 2.2.16a: Aulus, Rafaela, Hirara and Eudora nerfed, Kalea buffed",
+    "id": "Hotfix Mobile Legends 2.2.16a: Aulus, Rafaela, Hirara, dan Eudora di-nerf, Kalea di-buff",
+    "es": "Parche 2.2.16a de Mobile Legends: bajan Aulus, Rafaela, Hirara y Eudora, sube Kalea",
+    "pt": "Hotfix 2.2.16a de Mobile Legends: Aulus, Rafaela, Hirara e Eudora levam nerf, Kalea ganha buff"
+  },
+  "summary": {
+    "tr": "14 Ekim'deki ara yama sadece kahramanlara dokundu: Aulus'un uzun dövüş gücü kırpıldı, Rafaela'nın bekleme süreleri uzadı, Eudora'nın ultisi yaklaşık %10 zayıfladı.",
+    "en": "The October 14 hotfix only touches heroes: Aulus loses long-fight power, Rafaela gets longer cooldowns and Eudora's ultimate drops about 10%.",
+    "id": "Hotfix 14 Oktober hanya menyentuh hero: Aulus kehilangan kekuatan di fight panjang, cooldown Rafaela lebih lama, dan ultimate Eudora turun sekitar 10%.",
+    "es": "El ajuste del 14 de octubre solo toca héroes: Aulus pierde fuerza en peleas largas, Rafaela tiene enfriamientos más largos y la definitiva de Eudora baja un 10%.",
+    "pt": "O hotfix de 14 de outubro só mexe em heróis: Aulus perde força em lutas longas, Rafaela tem recargas maiores e a ultimate de Eudora cai cerca de 10%."
+  },
+  "body": {
+    "tr": [
+      {"p": "Moonton, Sezon 42'nin ilk ara yaması 2.2.16a'yı 14 Ekim 2026'da yayınladı. Eşya veya harita değişikliği yok; beş kahramanın değerleri değişti. 2.2.16'nın genel özetini önceki yazımızda bulabilirsin, burada sadece yeni ayarlar var."},
+      {"h": "Aulus: erken güçlü, geç daha zayıf"},
+      {"ul": [
+        "Pasifteki güçlendirilmiş saldırılar artık seviyeyle artmayan sabit %20 saldırı hızı veriyor (önceden her seviyede +%2 artıyordu).",
+        "Güçlendirilmiş saldırı hasarı 135'ten 120'ye, seviye başı artış 15'ten 12'ye düştü. Bu saldırılardan gelen can yenilemesi 30 + %15 toplam fiziksel saldırıdan 15 + %20'ye değişti.",
+        "Birinci becerinin bekleme süresi her seviyede 15 saniye (önceden 14-12 sn).",
+        "Ulti erken seviyelerde güçlendi: ilk dört vuruş 110-270 yerine 150-230, son kesme 330-810 yerine 450-690 taban hasar vuruyor. Son vuruşun hazırlık süresi kısaldı."
+      ]},
+      {"h": "Diğer değişiklikler"},
+      {"ul": [
+        "Rafaela: Birinci becerinin bekleme süresi her seviyede 5 saniye (önceden en üst seviyede 3 sn). İkinci beceri en üst seviyede 8,5 yerine 9,5 saniye bekliyor.",
+        "Hirara: Birinci beceri (Meisen-e) 9-5,5 yerine 10-6,5 saniye bekliyor. Karşılığında ikinci beceri biraz daha fazla taban hasar ve geç oyunda daha yüksek ölçekleme (%42-70 ek fiziksel saldırı) aldı.",
+        "Eudora: Ultinin merkez, dış alan ve gecikmeli hasarı yaklaşık %10 azaldı; örneğin merkez hasar 600-1000 yerine 540-900.",
+        "Kalea: Pasifteki güçlendirilmiş üçüncü saldırı 70 yerine 120 (+12/seviye) vuruyor, Su Alanı'nı emince 1 saniyeliğine %60 hareket hızı kazanıyor. Tidal Strike'ın hasar bonusu azami canın %8'inden %14'üne çıktı."
+      ]},
+      {"h": "İlk veriler"},
+      {"p": "mlbbhub'ın 18 Ekim tarihli dereceli verilerine göre Aulus (%58,5 kazanma, %43,6 yasaklanma) ve Rafaela (%57,9) hâlâ S kademede. Bu tablo yama öncesi maçları da içerdiği için düşüşün tam etkisi önümüzdeki haftalarda görülecek. Hirara %68,7 ile en çok yasaklanan kahramanlardan biri olmaya devam ediyor. Kalea ise %0,2 seçilme oranıyla hâlâ nadir bir tercih."},
+      {"h": "Bizim yorumumuz"},
+      {"p": "Aulus ile artık oyunu uzatmak yerine ilk 12-15 dakikada sonuç almayı hedefle: erken ulti hasarı arttı ama geç oyundaki saldırı hızı ve can yenilemesi azaldı. Rafaela hâlâ güvenli bir destek, fakat uzun takım savaşlarında eskisi kadar sık yavaşlatma ve iyileştirme yapamıyor. Eudora orta koridorda güçlü kalıyor; tek savunma eşyasıyla rakibi tek kombo ile indirme ihtimali biraz düştü."}
+    ],
+    "en": [
+      {"p": "Moonton released 2.2.16a, the first hotfix of Season 42, on October 14, 2026. There are no item or map changes, only five hero adjustments. Our earlier article covers the full 2.2.16 patch; this one is only about the new tweaks."},
+      {"h": "Aulus: stronger early, weaker late"},
+      {"ul": [
+        "Enhanced basic attacks from his passive now give a flat 20% attack speed that no longer grows by 2% per level.",
+        "Enhanced basic attack damage drops from 135 to 120, with per-level growth down from 15 to 12. The HP regen from these attacks changes from 30 + 15% total physical attack to 15 + 20%.",
+        "Skill 1 now has a 15-second cooldown at every level (was 14 to 12 seconds).",
+        "His ultimate is stronger at low ranks: the first four strikes deal 150-230 base damage instead of 110-270, and the last slash 450-690 instead of 330-810. The final hit also winds up faster."
+      ]},
+      {"h": "Other changes"},
+      {"ul": [
+        "Rafaela: Skill 1 now has a 5-second cooldown at every rank (it used to drop to 3 seconds). Skill 2 at max rank goes from 8.5 to 9.5 seconds.",
+        "Hirara: Skill 1 (Meisen-e) cooldown goes from 9-5.5 to 10-6.5 seconds. In return, Skill 2 gets slightly more base damage and higher late-game scaling (42% to 70% extra physical attack).",
+        "Eudora: The center, outer and delayed damage of her ultimate all drop by about 10%; for example, center damage goes from 600-1000 to 540-900.",
+        "Kalea: Her enhanced third basic attack deals 120 (+12 per level) instead of 70, and absorbing a Water Zone now gives 60% movement speed for 1 second. Tidal Strike's bonus goes from 8% to 14% of max HP."
+      ]},
+      {"h": "Early numbers"},
+      {"p": "In mlbbhub's ranked data from October 18, Aulus (58.5% win rate, 43.6% ban rate) and Rafaela (57.9%) are still S tier. That window still includes pre-patch games, so the full effect will show over the next weeks. Hirara remains one of the most banned heroes at 68.7%. Kalea is still a rare pick at a 0.2% pick rate."},
+      {"h": "Our take"},
+      {"p": "On Aulus, aim to win in the first 12 to 15 minutes rather than dragging the game out: his early ultimate hits harder, but his late attack speed and sustain are lower. Rafaela is still a safe support, but she can no longer slow and heal as often in long team fights. Eudora stays strong in mid lane; she is just a little less likely to one-shot a target that has one defensive item."}
+    ],
+    "id": [
+      {"p": "Moonton merilis 2.2.16a, hotfix pertama Season 42, pada 14 Oktober 2026. Tidak ada perubahan item atau map, hanya lima penyesuaian hero. Ringkasan lengkap patch 2.2.16 ada di artikel kami sebelumnya; di sini hanya perubahan barunya."},
+      {"h": "Aulus: kuat di awal, lebih lemah di akhir"},
+      {"ul": [
+        "Basic attack yang diperkuat dari pasifnya kini memberi attack speed tetap 20% yang tidak lagi bertambah 2% per level.",
+        "Damage basic attack yang diperkuat turun dari 135 ke 120, dengan pertumbuhan per level turun dari 15 ke 12. HP regen dari serangan ini berubah dari 30 + 15% total physical attack menjadi 15 + 20%.",
+        "Cooldown Skill 1 kini 15 detik di semua level (sebelumnya 14 sampai 12 detik).",
+        "Ultimate-nya lebih kuat di level rendah: empat serangan pertama memberi 150-230 base damage, bukan 110-270, dan tebasan terakhir 450-690, bukan 330-810. Ancang-ancang serangan terakhir juga lebih cepat."
+      ]},
+      {"h": "Perubahan lain"},
+      {"ul": [
+        "Rafaela: Cooldown Skill 1 kini 5 detik di semua level (sebelumnya turun sampai 3 detik). Skill 2 di level maksimal naik dari 8,5 ke 9,5 detik.",
+        "Hirara: Cooldown Skill 1 (Meisen-e) naik dari 9-5,5 ke 10-6,5 detik. Sebagai gantinya Skill 2 mendapat sedikit tambahan base damage dan scaling late game lebih tinggi (42% sampai 70% extra physical attack).",
+        "Eudora: Damage tengah, luar, dan tertunda dari ultimate-nya turun sekitar 10%; misalnya damage tengah dari 600-1000 menjadi 540-900.",
+        "Kalea: Basic attack ketiga yang diperkuat kini memberi 120 (+12 per level), bukan 70, dan menyerap Water Zone memberi 60% movement speed selama 1 detik. Bonus Tidal Strike naik dari 8% ke 14% max HP."
+      ]},
+      {"h": "Data awal"},
+      {"p": "Menurut data ranked mlbbhub per 18 Oktober, Aulus (win rate 58,5%, ban rate 43,6%) dan Rafaela (57,9%) masih di tier S. Data itu masih memuat match sebelum patch, jadi efek penuhnya baru terlihat beberapa minggu ke depan. Hirara tetap salah satu hero paling sering di-ban dengan 68,7%. Kalea masih jarang dipilih dengan pick rate 0,2%."},
+      {"h": "Pendapat kami"},
+      {"p": "Dengan Aulus, targetkan kemenangan di menit 12 sampai 15 daripada memperpanjang game: ultimate awalnya lebih sakit, tetapi attack speed dan sustain di late game berkurang. Rafaela tetap support yang aman, tetapi tidak bisa memberi slow dan heal sesering dulu di team fight panjang. Eudora tetap kuat di mid lane, hanya sedikit lebih sulit membunuh target yang punya satu item defense dengan satu combo."}
+    ],
+    "es": [
+      {"p": "Moonton publicó el 2.2.16a, el primer ajuste de la Temporada 42, el 14 de octubre de 2026. No hay cambios de objetos ni de mapa, solo cinco héroes ajustados. El resumen completo del 2.2.16 está en nuestro artículo anterior; aquí solo van los retoques nuevos."},
+      {"h": "Aulus: más fuerte al inicio, más débil al final"},
+      {"ul": [
+        "Los ataques básicos potenciados de su pasiva dan ahora un 20% fijo de velocidad de ataque que ya no crece un 2% por nivel.",
+        "El daño de esos ataques baja de 135 a 120 y su crecimiento por nivel de 15 a 12. La regeneración de vida que dan pasa de 30 + 15% del ataque físico total a 15 + 20%.",
+        "La habilidad 1 tiene ahora 15 segundos de enfriamiento en todos los niveles (antes de 14 a 12).",
+        "Su definitiva pega más en rangos bajos: los cuatro primeros golpes hacen 150-230 de daño base en lugar de 110-270, y el corte final 450-690 en lugar de 330-810. El último golpe también sale más rápido."
+      ]},
+      {"h": "Otros cambios"},
+      {"ul": [
+        "Rafaela: La habilidad 1 tiene 5 segundos de enfriamiento en todos los rangos (antes bajaba a 3). La habilidad 2 en rango máximo pasa de 8,5 a 9,5 segundos.",
+        "Hirara: El enfriamiento de la habilidad 1 (Meisen-e) pasa de 9-5,5 a 10-6,5 segundos. A cambio, la habilidad 2 gana algo de daño base y más escalado al final (42% a 70% de ataque físico adicional).",
+        "Eudora: El daño central, exterior y retardado de su definitiva baja cerca de un 10%; por ejemplo, el central pasa de 600-1000 a 540-900.",
+        "Kalea: Su tercer ataque potenciado hace 120 (+12 por nivel) en lugar de 70, y absorber una Zona de Agua le da un 60% de velocidad durante 1 segundo. La bonificación de Tidal Strike sube del 8% al 14% de la vida máxima."
+      ]},
+      {"h": "Primeros datos"},
+      {"p": "Según los datos clasificatorios de mlbbhub del 18 de octubre, Aulus (58,5% de victorias, 43,6% de baneos) y Rafaela (57,9%) siguen en el tier S. Ese periodo aún incluye partidas previas al parche, así que el efecto completo se verá en las próximas semanas. Hirara sigue entre los más baneados con un 68,7%. Kalea continúa siendo una elección rara, con un 0,2% de selección."},
+      {"h": "Nuestra opinión"},
+      {"p": "Con Aulus, busca cerrar la partida en los primeros 12 a 15 minutos en lugar de alargarla: su definitiva temprana pega más, pero su velocidad de ataque y su sustento al final son menores. Rafaela sigue siendo un soporte seguro, aunque ya no ralentiza ni cura tan seguido en peleas largas. Eudora sigue fuerte en medio; solo le cuesta un poco más matar de un combo a quien lleva un objeto defensivo."}
+    ],
+    "pt": [
+      {"p": "A Moonton lançou o 2.2.16a, o primeiro hotfix da Temporada 42, em 14 de outubro de 2026. Não há mudanças de itens nem de mapa, apenas cinco heróis ajustados. O resumo completo do 2.2.16 está no nosso artigo anterior; aqui ficam só os ajustes novos."},
+      {"h": "Aulus: mais forte no começo, mais fraco no fim"},
+      {"ul": [
+        "Os ataques básicos fortalecidos da passiva agora dão 20% fixo de velocidade de ataque, sem o ganho de 2% por nível.",
+        "O dano desses ataques cai de 135 para 120, e o ganho por nível de 15 para 12. A regeneração de vida deles muda de 30 + 15% do ataque físico total para 15 + 20%.",
+        "A habilidade 1 tem recarga de 15 segundos em todos os níveis (antes 14 a 12).",
+        "A ultimate ficou mais forte nos ranks baixos: os quatro primeiros golpes causam 150-230 de dano base em vez de 110-270, e o corte final 450-690 em vez de 330-810. O último golpe também sai mais rápido."
+      ]},
+      {"h": "Outras mudanças"},
+      {"ul": [
+        "Rafaela: A habilidade 1 tem recarga de 5 segundos em todos os ranks (antes caía para 3). A habilidade 2 no rank máximo vai de 8,5 para 9,5 segundos.",
+        "Hirara: A recarga da habilidade 1 (Meisen-e) vai de 9-5,5 para 10-6,5 segundos. Em troca, a habilidade 2 ganha um pouco de dano base e mais escala no fim do jogo (42% a 70% de ataque físico extra).",
+        "Eudora: O dano central, externo e atrasado da ultimate cai cerca de 10%; o dano central, por exemplo, vai de 600-1000 para 540-900.",
+        "Kalea: O terceiro ataque fortalecido causa 120 (+12 por nível) em vez de 70, e absorver uma Zona de Água dá 60% de velocidade por 1 segundo. O bônus de Tidal Strike sobe de 8% para 14% da vida máxima."
+      ]},
+      {"h": "Primeiros números"},
+      {"p": "Nos dados ranqueados do mlbbhub de 18 de outubro, Aulus (58,5% de vitórias, 43,6% de banimentos) e Rafaela (57,9%) continuam no tier S. Esse período ainda inclui partidas de antes do patch, então o efeito completo aparece nas próximas semanas. Hirara segue entre os mais banidos, com 68,7%. Kalea continua rara, com 0,2% de escolha."},
+      {"h": "Nossa análise"},
+      {"p": "Com Aulus, tente decidir a partida nos primeiros 12 a 15 minutos em vez de esticar o jogo: a ultimate inicial bate mais forte, mas a velocidade de ataque e a sustentação no fim caíram. Rafaela continua uma suporte segura, só que não consegue mais lentificar e curar com tanta frequência em lutas longas. Eudora segue forte no meio; apenas ficou um pouco mais difícil matar com um combo quem tem um item defensivo."}
+    ]
+  }
+}

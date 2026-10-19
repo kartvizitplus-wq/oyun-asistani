@@ -1,7 +1,7 @@
 {
   "game": "wildrift",
-  "patch": "",
-  "updated": "2026-10-14",
+  "patch": "7.3b",
+  "updated": "2026-10-19",
   "notes": "Same schema as mlbb.json. tier=S/A/B/C or null (weekly updater). Item names starting with # are category keys translated in src/i18n.json.",
   "archetypes": {
     "fP": {
@@ -205,6 +205,19 @@
   },
   "heroes": [
     {
+      "n": "Aatrox",
+      "r": "fighter",
+      "d": "P",
+      "t": "hcd",
+      "s": [],
+      "b": "fP",
+      "lanes": [
+        "baron",
+        "jungle"
+      ],
+      "tier": "A"
+    },
+    {
       "n": "Ahri",
       "r": "mage",
       "d": "M",
@@ -213,7 +226,7 @@
         "antisquishy"
       ],
       "b": "mage",
-      "tier": "A",
+      "tier": "S",
       "lanes": [
         "mid"
       ]
@@ -227,7 +240,7 @@
         "antisquishy"
       ],
       "b": "assM",
-      "tier": "C",
+      "tier": "B",
       "lanes": [
         "baron",
         "mid"
@@ -254,10 +267,23 @@
         "antidash"
       ],
       "b": "support",
-      "tier": "A",
+      "tier": "B",
       "lanes": [
         "support"
       ]
+    },
+    {
+      "n": "Ambessa",
+      "r": "fighter",
+      "d": "P",
+      "t": "cd",
+      "s": [],
+      "b": "fP",
+      "lanes": [
+        "baron",
+        "jungle"
+      ],
+      "tier": "S"
     },
     {
       "n": "Amumu",
@@ -266,7 +292,7 @@
       "t": "c",
       "s": [],
       "b": "tank",
-      "tier": "B",
+      "tier": "S",
       "lanes": [
         "jungle"
       ]
@@ -280,7 +306,7 @@
         "antisquishy"
       ],
       "b": "mage",
-      "tier": "A",
+      "tier": "S",
       "lanes": [
         "mid"
       ]
@@ -292,7 +318,7 @@
       "t": "c",
       "s": [],
       "b": "mmA",
-      "tier": "B",
+      "tier": "S",
       "lanes": [
         "dragon",
         "support"
@@ -311,6 +337,32 @@
       ]
     },
     {
+      "n": "Aurora",
+      "r": "mage",
+      "d": "M",
+      "t": "bcd",
+      "s": [
+        "antisquishy"
+      ],
+      "b": "mage",
+      "lanes": [
+        "mid"
+      ],
+      "tier": "A"
+    },
+    {
+      "n": "Bard",
+      "r": "support",
+      "d": "M",
+      "t": "cd",
+      "s": [],
+      "b": "support",
+      "lanes": [
+        "support"
+      ],
+      "tier": "B"
+    },
+    {
       "n": "Blitzcrank",
       "r": "support",
       "d": "M",
@@ -319,7 +371,7 @@
         "antimm"
       ],
       "b": "support",
-      "tier": "A",
+      "tier": "B",
       "lanes": [
         "support"
       ]
@@ -360,7 +412,7 @@
       "t": "",
       "s": [],
       "b": "mmC",
-      "tier": "A",
+      "tier": "S",
       "lanes": [
         "dragon"
       ]
@@ -374,10 +426,27 @@
         "antisquishy"
       ],
       "b": "fP",
-      "tier": "A",
+      "tier": "B",
       "lanes": [
         "baron"
       ]
+    },
+    {
+      "n": "Cho'Gath",
+      "r": "tank",
+      "d": "M",
+      "t": "hc",
+      "s": [
+        "antitank"
+      ],
+      "b": "tank",
+      "lanes": [
+        "baron",
+        "jungle",
+        "mid",
+        "support"
+      ],
+      "tier": "S"
     },
     {
       "n": "Corki",
@@ -400,7 +469,7 @@
         "antitank"
       ],
       "b": "fP",
-      "tier": "A",
+      "tier": "S",
       "lanes": [
         "baron",
         "jungle"
@@ -440,7 +509,7 @@
       "t": "b",
       "s": [],
       "b": "mmC",
-      "tier": "B",
+      "tier": "C",
       "lanes": [
         "dragon"
       ]
@@ -454,7 +523,7 @@
         "antisquishy"
       ],
       "b": "assM",
-      "tier": "A",
+      "tier": "S",
       "lanes": [
         "jungle",
         "mid"
@@ -469,7 +538,7 @@
         "antisquishy"
       ],
       "b": "assM",
-      "tier": "A",
+      "tier": "B",
       "lanes": [
         "jungle"
       ]
@@ -481,11 +550,23 @@
       "t": "d",
       "s": [],
       "b": "mmB",
-      "tier": "S",
+      "tier": "A",
       "lanes": [
         "mid",
         "dragon"
       ]
+    },
+    {
+      "n": "Fiddlesticks",
+      "r": "mage",
+      "d": "M",
+      "t": "cb",
+      "s": [],
+      "b": "mage",
+      "lanes": [
+        "jungle"
+      ],
+      "tier": "A"
     },
     {
       "n": "Fiora",
@@ -496,7 +577,7 @@
         "antitank"
       ],
       "b": "fP",
-      "tier": "A",
+      "tier": "B",
       "lanes": [
         "baron"
       ]
@@ -510,7 +591,7 @@
         "antisquishy"
       ],
       "b": "assM",
-      "tier": "A",
+      "tier": "B",
       "lanes": [
         "jungle",
         "mid"
@@ -525,7 +606,7 @@
         "antiburst"
       ],
       "b": "tank",
-      "tier": "B",
+      "tier": "S",
       "lanes": [
         "mid",
         "support"
@@ -538,10 +619,22 @@
       "t": "h",
       "s": [],
       "b": "fP",
-      "tier": "A",
+      "tier": "B",
       "lanes": [
         "baron"
       ]
+    },
+    {
+      "n": "Gnar",
+      "r": "fighter",
+      "d": "P",
+      "t": "cd",
+      "s": [],
+      "b": "fP",
+      "lanes": [
+        "baron"
+      ],
+      "tier": "A"
     },
     {
       "n": "Gragas",
@@ -550,7 +643,7 @@
       "t": "cd",
       "s": [],
       "b": "tank",
-      "tier": "C",
+      "tier": "B",
       "lanes": [
         "baron"
       ]
@@ -562,7 +655,7 @@
       "t": "b",
       "s": [],
       "b": "assP",
-      "tier": "A",
+      "tier": "C",
       "lanes": [
         "baron",
         "jungle"
@@ -577,11 +670,60 @@
         "antitank"
       ],
       "b": "fM",
-      "tier": "B",
+      "tier": "S",
       "lanes": [
         "baron",
         "jungle"
       ]
+    },
+    {
+      "n": "Hecarim",
+      "r": "fighter",
+      "d": "P",
+      "t": "cd",
+      "s": [],
+      "b": "fP",
+      "lanes": [
+        "jungle"
+      ],
+      "tier": "A"
+    },
+    {
+      "n": "Heimerdinger",
+      "r": "mage",
+      "d": "M",
+      "t": "c",
+      "s": [],
+      "b": "mage",
+      "lanes": [
+        "mid"
+      ],
+      "tier": "B"
+    },
+    {
+      "n": "Hwei",
+      "r": "mage",
+      "d": "M",
+      "t": "cb",
+      "s": [],
+      "b": "mage",
+      "lanes": [
+        "mid",
+        "support"
+      ],
+      "tier": "S",
+      "build": [
+        "Spellslinger's Shoes",
+        "Blackfire Torch",
+        "Infinity Orb",
+        "Rabadon's Deathcap",
+        "Zhonya's Hourglass",
+        "Void Staff"
+      ],
+      "spell": "Flash + Ghost",
+      "emblem": {
+        "core": "Arcane Comet"
+      }
     },
     {
       "n": "Irelia",
@@ -590,7 +732,7 @@
       "t": "hd",
       "s": [],
       "b": "fP",
-      "tier": "A",
+      "tier": "B",
       "lanes": [
         "baron",
         "mid"
@@ -618,7 +760,7 @@
       "t": "cd",
       "s": [],
       "b": "fP",
-      "tier": "A",
+      "tier": "S",
       "lanes": [
         "jungle"
       ]
@@ -632,7 +774,7 @@
         "antimm"
       ],
       "b": "fP",
-      "tier": "A",
+      "tier": "S",
       "lanes": [
         "baron",
         "jungle"
@@ -645,7 +787,7 @@
       "t": "b",
       "s": [],
       "b": "mmB",
-      "tier": "B",
+      "tier": "A",
       "lanes": [
         "baron",
         "jungle",
@@ -659,7 +801,7 @@
       "t": "b",
       "s": [],
       "b": "mmC",
-      "tier": "A",
+      "tier": "B",
       "lanes": [
         "dragon"
       ]
@@ -671,10 +813,22 @@
       "t": "",
       "s": [],
       "b": "mmC",
-      "tier": "S",
+      "tier": "A",
       "lanes": [
         "dragon"
       ]
+    },
+    {
+      "n": "K'Sante",
+      "r": "tank",
+      "d": "P",
+      "t": "cd",
+      "s": [],
+      "b": "tank",
+      "lanes": [
+        "baron"
+      ],
+      "tier": "S"
     },
     {
       "n": "Kai'Sa",
@@ -683,10 +837,49 @@
       "t": "d",
       "s": [],
       "b": "mmA",
-      "tier": "B",
+      "tier": "A",
       "lanes": [
         "dragon"
       ]
+    },
+    {
+      "n": "Kalista",
+      "r": "marksman",
+      "d": "P",
+      "t": "d",
+      "s": [],
+      "b": "mmA",
+      "lanes": [
+        "dragon",
+        "baron"
+      ],
+      "tier": "S"
+    },
+    {
+      "n": "Karma",
+      "r": "support",
+      "d": "M",
+      "t": "c",
+      "s": [],
+      "b": "support",
+      "lanes": [
+        "support"
+      ],
+      "tier": "A"
+    },
+    {
+      "n": "Kassadin",
+      "r": "assassin",
+      "d": "M",
+      "t": "bd",
+      "s": [
+        "antisquishy"
+      ],
+      "b": "assM",
+      "lanes": [
+        "mid"
+      ],
+      "tier": "A"
     },
     {
       "n": "Katarina",
@@ -697,7 +890,7 @@
         "antisquishy"
       ],
       "b": "assM",
-      "tier": "C",
+      "tier": "B",
       "lanes": [
         "mid"
       ]
@@ -716,13 +909,27 @@
       ]
     },
     {
+      "n": "Kayn",
+      "r": "assassin",
+      "d": "P",
+      "t": "bdh",
+      "s": [
+        "antisquishy"
+      ],
+      "b": "assP",
+      "lanes": [
+        "jungle"
+      ],
+      "tier": "S"
+    },
+    {
       "n": "Kennen",
       "r": "mage",
       "d": "M",
       "t": "c",
       "s": [],
       "b": "mage",
-      "tier": "S",
+      "tier": "A",
       "lanes": [
         "baron",
         "mid"
@@ -737,10 +944,37 @@
         "antisquishy"
       ],
       "b": "assP",
-      "tier": "C",
+      "tier": "A",
       "lanes": [
         "jungle"
       ]
+    },
+    {
+      "n": "Kindred",
+      "r": "marksman",
+      "d": "P",
+      "t": "d",
+      "s": [],
+      "b": "mmC",
+      "lanes": [
+        "jungle"
+      ],
+      "tier": "A"
+    },
+    {
+      "n": "Kog'Maw",
+      "r": "marksman",
+      "d": "P",
+      "t": "",
+      "s": [
+        "antitank"
+      ],
+      "b": "mmA",
+      "lanes": [
+        "dragon",
+        "mid"
+      ],
+      "tier": "S"
     },
     {
       "n": "Lee Sin",
@@ -761,7 +995,7 @@
       "t": "c",
       "s": [],
       "b": "tank",
-      "tier": "B",
+      "tier": "S",
       "lanes": [
         "support"
       ]
@@ -773,10 +1007,24 @@
       "t": "d",
       "s": [],
       "b": "mage",
-      "tier": "A",
+      "tier": "S",
       "lanes": [
         "jungle"
       ]
+    },
+    {
+      "n": "Lissandra",
+      "r": "mage",
+      "d": "M",
+      "t": "cb",
+      "s": [
+        "antidash"
+      ],
+      "b": "mage",
+      "lanes": [
+        "mid"
+      ],
+      "tier": "A"
     },
     {
       "n": "Lucian",
@@ -801,7 +1049,7 @@
         "antidash"
       ],
       "b": "support",
-      "tier": "A",
+      "tier": "B",
       "lanes": [
         "support"
       ]
@@ -813,7 +1061,7 @@
       "t": "bc",
       "s": [],
       "b": "mage",
-      "tier": "S",
+      "tier": "B",
       "lanes": [
         "mid",
         "support"
@@ -828,12 +1076,25 @@
         "antimm"
       ],
       "b": "tank",
-      "tier": "C",
+      "tier": "S",
       "lanes": [
         "baron",
         "mid",
         "support"
       ]
+    },
+    {
+      "n": "Maokai",
+      "r": "tank",
+      "d": "M",
+      "t": "hc",
+      "s": [],
+      "b": "tank",
+      "lanes": [
+        "support",
+        "jungle"
+      ],
+      "tier": "A"
     },
     {
       "n": "Master Yi",
@@ -850,6 +1111,32 @@
       ]
     },
     {
+      "n": "Mel",
+      "r": "mage",
+      "d": "M",
+      "t": "cb",
+      "s": [],
+      "b": "mage",
+      "lanes": [
+        "mid"
+      ],
+      "tier": "C"
+    },
+    {
+      "n": "Milio",
+      "r": "support",
+      "d": "M",
+      "t": "h",
+      "s": [
+        "anticc"
+      ],
+      "b": "support",
+      "lanes": [
+        "support"
+      ],
+      "tier": "B"
+    },
+    {
       "n": "Miss Fortune",
       "r": "marksman",
       "d": "P",
@@ -862,6 +1149,21 @@
         "dragon",
         "support"
       ]
+    },
+    {
+      "n": "Mordekaiser",
+      "r": "fighter",
+      "d": "M",
+      "t": "h",
+      "s": [
+        "antitank"
+      ],
+      "b": "fM",
+      "lanes": [
+        "baron",
+        "jungle"
+      ],
+      "tier": "S"
     },
     {
       "n": "Morgana",
@@ -888,7 +1190,7 @@
         "antiburst"
       ],
       "b": "support",
-      "tier": "B",
+      "tier": "A",
       "lanes": [
         "support"
       ]
@@ -900,7 +1202,7 @@
       "t": "h",
       "s": [],
       "b": "fP",
-      "tier": "A",
+      "tier": "B",
       "lanes": [
         "baron"
       ]
@@ -912,12 +1214,77 @@
       "t": "c",
       "s": [],
       "b": "tank",
-      "tier": "A",
+      "tier": "B",
       "lanes": [
         "baron",
         "jungle",
         "support"
       ]
+    },
+    {
+      "n": "Nidalee",
+      "r": "assassin",
+      "d": "M",
+      "t": "bd",
+      "s": [
+        "antisquishy"
+      ],
+      "b": "assM",
+      "lanes": [
+        "jungle"
+      ],
+      "tier": "S"
+    },
+    {
+      "n": "Nilah",
+      "r": "marksman",
+      "d": "P",
+      "t": "hd",
+      "s": [],
+      "b": "mmC",
+      "lanes": [
+        "dragon",
+        "jungle"
+      ],
+      "tier": "A"
+    },
+    {
+      "n": "Nocturne",
+      "r": "assassin",
+      "d": "P",
+      "t": "bd",
+      "s": [
+        "antisquishy"
+      ],
+      "b": "assP",
+      "lanes": [
+        "jungle"
+      ],
+      "tier": "S"
+    },
+    {
+      "n": "Norra",
+      "r": "mage",
+      "d": "M",
+      "t": "cd",
+      "s": [],
+      "b": "mage",
+      "lanes": [
+        "mid"
+      ],
+      "tier": "A"
+    },
+    {
+      "n": "Nunu & Willump",
+      "r": "tank",
+      "d": "M",
+      "t": "hc",
+      "s": [],
+      "b": "tank",
+      "lanes": [
+        "jungle"
+      ],
+      "tier": "A"
     },
     {
       "n": "Olaf",
@@ -946,6 +1313,19 @@
       ]
     },
     {
+      "n": "Ornn",
+      "r": "tank",
+      "d": "P",
+      "t": "c",
+      "s": [],
+      "b": "tank",
+      "lanes": [
+        "baron",
+        "support"
+      ],
+      "tier": "S"
+    },
+    {
       "n": "Pantheon",
       "r": "fighter",
       "d": "P",
@@ -960,6 +1340,35 @@
         "jungle",
         "mid"
       ]
+    },
+    {
+      "n": "Poppy",
+      "r": "tank",
+      "d": "P",
+      "t": "cd",
+      "s": [
+        "antidash"
+      ],
+      "b": "tank",
+      "lanes": [
+        "baron",
+        "jungle"
+      ],
+      "tier": "A"
+    },
+    {
+      "n": "Pyke",
+      "r": "support",
+      "d": "P",
+      "t": "bcd",
+      "s": [
+        "antisquishy"
+      ],
+      "b": "assP",
+      "lanes": [
+        "support"
+      ],
+      "tier": "A"
     },
     {
       "n": "Rakan",
@@ -988,13 +1397,25 @@
       ]
     },
     {
+      "n": "Rell",
+      "r": "tank",
+      "d": "M",
+      "t": "c",
+      "s": [],
+      "b": "tank",
+      "lanes": [
+        "support"
+      ],
+      "tier": "A"
+    },
+    {
       "n": "Renekton",
       "r": "fighter",
       "d": "P",
       "t": "h",
       "s": [],
       "b": "fP",
-      "tier": "B",
+      "tier": "C",
       "lanes": [
         "baron"
       ]
@@ -1021,10 +1442,47 @@
       "t": "bd",
       "s": [],
       "b": "fP",
-      "tier": "B",
+      "tier": "A",
       "lanes": [
         "baron"
       ]
+    },
+    {
+      "n": "Rumble",
+      "r": "fighter",
+      "d": "M",
+      "t": "c",
+      "s": [],
+      "b": "fM",
+      "lanes": [
+        "baron"
+      ],
+      "tier": "C"
+    },
+    {
+      "n": "Ryze",
+      "r": "mage",
+      "d": "M",
+      "t": "cd",
+      "s": [],
+      "b": "mage",
+      "lanes": [
+        "mid",
+        "baron"
+      ],
+      "tier": "A"
+    },
+    {
+      "n": "Samira",
+      "r": "marksman",
+      "d": "P",
+      "t": "bd",
+      "s": [],
+      "b": "mmC",
+      "lanes": [
+        "dragon"
+      ],
+      "tier": "S"
     },
     {
       "n": "Senna",
@@ -1033,7 +1491,7 @@
       "t": "h",
       "s": [],
       "b": "mmC",
-      "tier": "B",
+      "tier": "S",
       "lanes": [
         "support"
       ]
@@ -1045,7 +1503,7 @@
       "t": "hc",
       "s": [],
       "b": "mage",
-      "tier": "S",
+      "tier": "A",
       "lanes": [
         "mid",
         "support"
@@ -1060,11 +1518,24 @@
         "antitank"
       ],
       "b": "fP",
-      "tier": "S",
+      "tier": "A",
       "lanes": [
         "baron",
         "support"
       ]
+    },
+    {
+      "n": "Shen",
+      "r": "tank",
+      "d": "P",
+      "t": "cd",
+      "s": [],
+      "b": "tank",
+      "lanes": [
+        "baron",
+        "jungle"
+      ],
+      "tier": "S"
     },
     {
       "n": "Shyvana",
@@ -1073,7 +1544,7 @@
       "t": "",
       "s": [],
       "b": "fM",
-      "tier": "A",
+      "tier": "C",
       "lanes": [
         "jungle"
       ]
@@ -1085,10 +1556,60 @@
       "t": "h",
       "s": [],
       "b": "tank",
-      "tier": "A",
+      "tier": "S",
       "lanes": [
         "baron"
       ]
+    },
+    {
+      "n": "Sion",
+      "r": "tank",
+      "d": "P",
+      "t": "c",
+      "s": [],
+      "b": "tank",
+      "lanes": [
+        "baron"
+      ],
+      "tier": "A"
+    },
+    {
+      "n": "Sivir",
+      "r": "marksman",
+      "d": "P",
+      "t": "",
+      "s": [
+        "anticc"
+      ],
+      "b": "mmC",
+      "lanes": [
+        "dragon"
+      ],
+      "tier": "C"
+    },
+    {
+      "n": "Skarner",
+      "r": "tank",
+      "d": "P",
+      "t": "cd",
+      "s": [],
+      "b": "tank",
+      "lanes": [
+        "jungle"
+      ],
+      "tier": "S"
+    },
+    {
+      "n": "Smolder",
+      "r": "marksman",
+      "d": "P",
+      "t": "",
+      "s": [],
+      "b": "mmC",
+      "lanes": [
+        "dragon"
+      ],
+      "tier": "S"
     },
     {
       "n": "Sona",
@@ -1113,10 +1634,65 @@
         "antiburst"
       ],
       "b": "support",
-      "tier": "A",
+      "tier": "S",
       "lanes": [
         "support"
       ]
+    },
+    {
+      "n": "Swain",
+      "r": "mage",
+      "d": "M",
+      "t": "hc",
+      "s": [],
+      "b": "mage",
+      "lanes": [
+        "mid",
+        "support"
+      ],
+      "tier": "B"
+    },
+    {
+      "n": "Syndra",
+      "r": "mage",
+      "d": "M",
+      "t": "bc",
+      "s": [
+        "antisquishy"
+      ],
+      "b": "mage",
+      "lanes": [
+        "mid"
+      ],
+      "tier": "S"
+    },
+    {
+      "n": "Taliyah",
+      "r": "mage",
+      "d": "M",
+      "t": "cd",
+      "s": [],
+      "b": "mage",
+      "lanes": [
+        "mid",
+        "jungle"
+      ],
+      "tier": "S"
+    },
+    {
+      "n": "Talon",
+      "r": "assassin",
+      "d": "P",
+      "t": "bd",
+      "s": [
+        "antisquishy"
+      ],
+      "b": "assP",
+      "lanes": [
+        "mid",
+        "jungle"
+      ],
+      "tier": "A"
     },
     {
       "n": "Teemo",
@@ -1138,7 +1714,7 @@
       "t": "c",
       "s": [],
       "b": "support",
-      "tier": "C",
+      "tier": "S",
       "lanes": [
         "support"
       ]
@@ -1150,12 +1726,25 @@
       "t": "d",
       "s": [],
       "b": "mmC",
-      "tier": "A",
+      "tier": "B",
       "lanes": [
         "baron",
         "mid",
         "dragon"
       ]
+    },
+    {
+      "n": "Tryndamere",
+      "r": "fighter",
+      "d": "P",
+      "t": "hd",
+      "s": [],
+      "b": "fP",
+      "lanes": [
+        "baron",
+        "jungle"
+      ],
+      "tier": "B"
     },
     {
       "n": "Twisted Fate",
@@ -1164,10 +1753,36 @@
       "t": "c",
       "s": [],
       "b": "mage",
-      "tier": "S",
+      "tier": "A",
       "lanes": [
         "mid"
       ]
+    },
+    {
+      "n": "Twitch",
+      "r": "marksman",
+      "d": "P",
+      "t": "b",
+      "s": [],
+      "b": "mmC",
+      "lanes": [
+        "dragon"
+      ],
+      "tier": "A"
+    },
+    {
+      "n": "Urgot",
+      "r": "fighter",
+      "d": "P",
+      "t": "c",
+      "s": [
+        "antitank"
+      ],
+      "b": "fP",
+      "lanes": [
+        "baron"
+      ],
+      "tier": "B"
     },
     {
       "n": "Varus",
@@ -1178,7 +1793,7 @@
         "antiheal"
       ],
       "b": "mmA",
-      "tier": "A",
+      "tier": "S",
       "lanes": [
         "dragon"
       ]
@@ -1205,11 +1820,26 @@
       "t": "bc",
       "s": [],
       "b": "mage",
-      "tier": "A",
+      "tier": "B",
       "lanes": [
         "mid",
         "support"
       ]
+    },
+    {
+      "n": "Vel'Koz",
+      "r": "mage",
+      "d": "M",
+      "t": "c",
+      "s": [
+        "antitank"
+      ],
+      "b": "mage",
+      "lanes": [
+        "mid",
+        "support"
+      ],
+      "tier": "A"
     },
     {
       "n": "Vex",
@@ -1238,13 +1868,75 @@
       ]
     },
     {
+      "n": "Viego",
+      "r": "assassin",
+      "d": "P",
+      "t": "hd",
+      "s": [],
+      "b": "assP",
+      "lanes": [
+        "jungle"
+      ],
+      "tier": "C"
+    },
+    {
+      "n": "Viktor",
+      "r": "mage",
+      "d": "M",
+      "t": "c",
+      "s": [],
+      "b": "mage",
+      "lanes": [
+        "mid"
+      ],
+      "tier": "B"
+    },
+    {
+      "n": "Vladimir",
+      "r": "mage",
+      "d": "M",
+      "t": "hd",
+      "s": [],
+      "b": "mage",
+      "lanes": [
+        "mid",
+        "baron"
+      ],
+      "tier": "A"
+    },
+    {
+      "n": "Volibear",
+      "r": "fighter",
+      "d": "P",
+      "t": "hc",
+      "s": [],
+      "b": "fP",
+      "lanes": [
+        "baron",
+        "jungle"
+      ],
+      "tier": "B"
+    },
+    {
+      "n": "Warwick",
+      "r": "fighter",
+      "d": "P",
+      "t": "hc",
+      "s": [],
+      "b": "fP",
+      "lanes": [
+        "jungle"
+      ],
+      "tier": "A"
+    },
+    {
       "n": "Wukong",
       "r": "fighter",
       "d": "P",
       "t": "cd",
       "s": [],
       "b": "fP",
-      "tier": "B",
+      "tier": "A",
       "lanes": [
         "baron",
         "jungle"
@@ -1269,7 +1961,7 @@
       "t": "hd",
       "s": [],
       "b": "fP",
-      "tier": "C",
+      "tier": "A",
       "lanes": [
         "jungle"
       ]
@@ -1283,7 +1975,7 @@
         "antimm"
       ],
       "b": "fP",
-      "tier": "A",
+      "tier": "C",
       "lanes": [
         "mid"
       ]
@@ -1301,6 +1993,30 @@
         "jungle",
         "mid"
       ]
+    },
+    {
+      "n": "Yunara",
+      "r": "marksman",
+      "d": "P",
+      "t": "d",
+      "s": [],
+      "b": "mmC",
+      "lanes": [
+        "dragon"
+      ],
+      "tier": "S"
+    },
+    {
+      "n": "Yuumi",
+      "r": "support",
+      "d": "M",
+      "t": "h",
+      "s": [],
+      "b": "support",
+      "lanes": [
+        "support"
+      ],
+      "tier": "B"
     },
     {
       "n": "Zed",
@@ -1324,7 +2040,7 @@
       "t": "d",
       "s": [],
       "b": "mmA",
-      "tier": "S",
+      "tier": "B",
       "lanes": [
         "dragon"
       ]
@@ -1336,10 +2052,37 @@
       "t": "b",
       "s": [],
       "b": "mage",
-      "tier": "B",
+      "tier": "C",
       "lanes": [
         "mid"
       ]
+    },
+    {
+      "n": "Zilean",
+      "r": "support",
+      "d": "M",
+      "t": "c",
+      "s": [],
+      "b": "support",
+      "lanes": [
+        "support",
+        "mid"
+      ],
+      "tier": "A"
+    },
+    {
+      "n": "Zoe",
+      "r": "mage",
+      "d": "M",
+      "t": "bc",
+      "s": [
+        "antisquishy"
+      ],
+      "b": "mage",
+      "lanes": [
+        "mid"
+      ],
+      "tier": "A"
     },
     {
       "n": "Zyra",
@@ -1348,7 +2091,7 @@
       "t": "c",
       "s": [],
       "b": "mage",
-      "tier": "C",
+      "tier": "S",
       "lanes": [
         "support"
       ]
@@ -1372,263 +2115,267 @@
     ]
   },
   "tierSource": {
-    "name": "Pocket Gamer",
-    "url": "https://www.pocketgamer.com/wild-rift/tier-list/",
-    "date": "2026-10-05",
-    "patch": "7.3a"
+    "name": "WildRiftCore",
+    "url": "https://wildriftcore.com/en/tierlist/",
+    "date": "2026-10-18",
+    "patch": "7.3b"
   },
   "tierList": {
     "baron": {
       "S": [
-        "K'Sante",
-        "Gnar",
-        "Teemo",
-        "Kennen",
-        "Sett",
+        "Malphite",
         "Shen",
+        "Mordekaiser",
+        "Teemo",
+        "Cho'Gath",
+        "K'Sante",
+        "Ambessa",
+        "Darius",
+        "Kalista",
+        "Gwen",
         "Ornn",
-        "Vladimir",
-        "Rumble",
-        "Ambessa"
+        "Jax"
       ],
       "A": [
-        "Maokai",
-        "Poppy",
-        "Kayle",
-        "Nasus",
-        "Nautilus",
-        "Dr. Mundo",
-        "Tristana",
-        "Vayne",
-        "Camille",
-        "Jax",
+        "Yone",
         "Singed",
-        "Garen",
-        "Fiora",
-        "Irelia",
-        "Darius"
+        "Vayne",
+        "Aatrox",
+        "Gnar",
+        "Sett",
+        "Riven",
+        "Poppy",
+        "Sion",
+        "Kennen",
+        "Wukong",
+        "Dr. Mundo",
+        "Ryze"
       ],
       "B": [
-        "Ryze",
-        "Urgot",
+        "Nautilus",
+        "Fiora",
         "Volibear",
-        "Mordekaiser",
-        "Rengar",
-        "Renekton",
-        "Wukong",
-        "Aatrox",
-        "Riven"
+        "Garen",
+        "Jayce",
+        "Smolder",
+        "Camille",
+        "Irelia",
+        "Kayle",
+        "Urgot",
+        "Gragas",
+        "Olaf",
+        "Pantheon"
       ],
       "C": [
+        "Rumble",
+        "Renekton",
         "Tryndamere",
-        "Pantheon",
-        "Gwen",
-        "Sion",
-        "Malphite",
-        "Yone",
-        "Gragas"
-      ],
-      "D": [
-        "Akali",
-        "Graves",
-        "Jayce"
+        "Yasuo",
+        "Nasus",
+        "Skarner",
+        "Vladimir"
       ]
     },
     "jungle": {
       "S": [
-        "Fiddlesticks",
         "Rammus",
-        "Nilah",
-        "Morgana",
-        "Viego"
+        "Nocturne",
+        "Ekko",
+        "Amumu",
+        "Jarvan IV",
+        "Lillia",
+        "Gwen",
+        "Skarner",
+        "Shen",
+        "Kayn",
+        "Ambessa",
+        "Nidalee",
+        "Cho'Gath"
       ],
       "A": [
-        "Maokai",
-        "Fizz",
-        "Nidalee",
-        "Shyvana",
-        "Lillia",
-        "Warwick",
-        "Evelynn",
-        "Diana",
-        "Skarner",
-        "Jarvan IV",
-        "Tryndamere",
-        "Aatrox",
-        "Graves",
-        "Vi",
-        "Ekko",
-        "Kayn",
-        "Darius",
-        "Olaf",
+        "Xin Zhao",
         "Pantheon",
         "Nunu & Willump",
-        "Yone",
         "Zed",
+        "Hecarim",
+        "Olaf",
+        "Fiddlesticks",
+        "Kindred",
+        "Darius",
         "Talon",
-        "Kindred"
+        "Kha'Zix",
+        "Warwick",
+        "Diana",
+        "Vi",
+        "Dr. Mundo",
+        "Nilah",
+        "Malphite",
+        "Jayce",
+        "Poppy",
+        "Mordekaiser"
       ],
       "B": [
-        "Poppy",
-        "Nocturne",
-        "Hecarim",
-        "Jayce",
-        "Amumu",
-        "Volibear",
+        "Wukong",
         "Rengar",
+        "Riven",
+        "Yone",
+        "Aatrox",
+        "Evelynn",
+        "Jax",
         "Master Yi",
-        "Gwen",
-        "Wukong"
+        "Tryndamere",
+        "Fizz",
+        "Camille",
+        "Taliyah"
       ],
       "C": [
-        "Nautilus",
-        "Kha'Zix",
-        "Xin Zhao",
-        "Lee Sin"
-      ],
-      "D": [
-        "Jax"
+        "Lee Sin",
+        "Volibear",
+        "Twitch",
+        "Graves",
+        "Shyvana",
+        "Viego",
+        "Nautilus"
       ]
     },
     "mid": {
       "S": [
-        "Taliyah",
-        "Mel",
+        "Hwei",
+        "Morgana",
         "Syndra",
-        "Kennen",
-        "Teemo",
-        "Aurelion Sol",
-        "Viktor",
         "Brand",
-        "Aurora",
-        "Vladimir",
+        "Galio",
         "Orianna",
-        "Twisted Fate",
-        "Seraphine",
-        "Sivir",
-        "Lux",
-        "Hwei"
+        "Aurelion Sol",
+        "Ahri",
+        "Annie",
+        "Teemo",
+        "Zyra",
+        "Taliyah",
+        "Singed",
+        "Kog'Maw"
       ],
       "A": [
-        "Corki",
-        "Ahri",
-        "Talon",
-        "Zoe",
         "Lissandra",
-        "Annie",
-        "Veigar",
-        "Kayle",
         "Kassadin",
-        "Yasuo",
-        "Fizz",
-        "Tristana",
-        "Karma",
-        "Ezreal",
-        "Ryze"
+        "Vladimir",
+        "Twisted Fate",
+        "Kennen",
+        "Ekko",
+        "Zed",
+        "Yone",
+        "Aurora",
+        "Vel'Koz",
+        "Jayce",
+        "Norra",
+        "Malphite",
+        "Zoe",
+        "Kayle",
+        "Cho'Gath",
+        "Corki",
+        "Seraphine",
+        "Talon"
       ],
       "B": [
-        "Kog'Maw",
-        "Zilean",
-        "Galio",
-        "Swain",
         "Heimerdinger",
-        "Ziggs",
         "Vex",
-        "Morgana",
-        "Diana",
+        "Swain",
+        "Viktor",
+        "Katarina",
+        "Veigar",
+        "Nasus",
+        "Lux",
+        "Tristana",
+        "Akali",
         "Akshan"
       ],
       "C": [
-        "Ekko",
-        "Irelia",
-        "Katarina",
-        "Akali",
-        "Zed",
-        "Miss Fortune"
-      ],
-      "D": [
-        "Malphite",
-        "Pantheon",
-        "Lucian",
-        "Yone",
-        "Jayce"
+        "Ryze",
+        "Fizz",
+        "Diana",
+        "Ziggs",
+        "Yasuo",
+        "Mel"
       ]
     },
     "dragon": {
       "S": [
-        "Sivir",
-        "Twitch",
-        "Ezreal",
-        "Zeri",
-        "Jinx",
-        "Kalista",
-        "Yunara"
+        "Ashe",
+        "Senna",
+        "Smolder",
+        "Samira",
+        "Varus",
+        "Yunara",
+        "Caitlyn"
       ],
       "A": [
+        "Jinx",
         "Kog'Maw",
-        "Jhin",
-        "Caitlyn",
+        "Ezreal",
         "Xayah",
-        "Varus"
+        "Kai'Sa",
+        "Kalista",
+        "Twitch",
+        "Corki"
       ],
       "B": [
-        "Tristana",
-        "Vayne",
-        "Ashe",
+        "Jhin",
         "Miss Fortune",
-        "Draven",
-        "Kai'Sa",
-        "Nilah"
+        "Zeri",
+        "Vayne"
       ],
       "C": [
+        "Tristana",
         "Lucian",
-        "Samira"
+        "Sivir",
+        "Draven"
       ]
     },
     "support": {
       "S": [
-        "Bard",
-        "Janna",
-        "Rell",
-        "Sona",
+        "Malphite",
         "Braum",
-        "Brand",
-        "Lux"
+        "Sona",
+        "Leona",
+        "Thresh",
+        "Hwei",
+        "Soraka",
+        "Morgana",
+        "Janna"
       ],
       "A": [
+        "Brand",
+        "Rell",
+        "Senna",
+        "Zyra",
+        "Nami",
         "Zilean",
-        "Karma",
-        "Blitzcrank",
-        "Alistar",
-        "Lulu",
-        "Soraka",
+        "Galio",
+        "Pyke",
+        "Ornn",
         "Rakan",
-        "Nautilus",
-        "Milio"
+        "Maokai",
+        "Karma"
       ],
       "B": [
-        "Yuumi",
-        "Swain",
+        "Nautilus",
         "Seraphine",
-        "Leona",
-        "Nami",
-        "Senna",
+        "Vel'Koz",
+        "Blitzcrank",
+        "Lulu",
+        "Alistar",
+        "Milio",
+        "Yuumi",
         "Sett",
-        "Poppy"
+        "Bard",
+        "Cho'Gath",
+        "Mordekaiser",
+        "Skarner"
       ],
       "C": [
-        "Galio",
-        "Thresh",
-        "Zyra"
-      ],
-      "D": [
-        "Maokai",
-        "Morgana",
-        "Pyke",
-        "Malphite",
+        "Lux",
         "Veigar",
-        "Miss Fortune",
-        "Ashe"
+        "Swain"
       ]
     }
   },

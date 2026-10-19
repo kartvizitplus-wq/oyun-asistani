@@ -1,0 +1,117 @@
+{
+  "type": "meta",
+  "slug": "wildrift-meta-2026-10-19",
+  "date": "2026-10-19",
+  "game": "wildrift",
+  "sources": [
+    "WildRiftCore tier list and tier history, patch 7.3b (October 18, 2026)",
+    "WildRiftGuides tier list, patch 7.3b (October 15, 2026)",
+    "Riot Games Wild Rift patch notes 7.3b"
+  ],
+  "title": {
+    "tr": "Wild Rift meta raporu (7.3b, 19 Ekim 2026): her koridorun en güçlü seçimleri",
+    "en": "Wild Rift meta report (7.3b, October 19, 2026): the strongest picks in every lane",
+    "id": "Laporan meta Wild Rift (7.3b, 19 Oktober 2026): pick terkuat di setiap lane",
+    "es": "Informe de meta de Wild Rift (7.3b, 19 de octubre de 2026): los mejores picks por línea",
+    "pt": "Relatório de meta de Wild Rift (7.3b, 19 de outubro de 2026): os melhores picks de cada rota"
+  },
+  "summary": {
+    "tr": "7.3b sonrası Baron'da Malphite ve Shen, ormanda Rammus ve Nocturne, ortada Hwei, ejderhada Ashe ve Senna, destekte Braum ve Sona öne çıkıyor.",
+    "en": "After 7.3b, Malphite and Shen lead Baron, Rammus and Nocturne the jungle, Hwei the mid lane, Ashe and Senna the Dragon lane, and Braum and Sona the support role.",
+    "id": "Setelah 7.3b, Malphite dan Shen memimpin Baron, Rammus dan Nocturne di jungle, Hwei di mid, Ashe dan Senna di Dragon, serta Braum dan Sona di support.",
+    "es": "Tras el 7.3b, Malphite y Shen dominan Barón, Rammus y Nocturne la jungla, Hwei el medio, Ashe y Senna la línea del Dragón, y Braum y Sona el soporte.",
+    "pt": "Depois do 7.3b, Malphite e Shen lideram o Barão, Rammus e Nocturne a selva, Hwei o meio, Ashe e Senna a rota do Dragão, e Braum e Sona o suporte."
+  },
+  "body": {
+    "tr": [
+      {"p": "Bu rapor, 18 Ekim'de güncellenen WildRiftCore kademe listesine ve 15 Ekim tarihli WildRiftGuides listesine dayanıyor. Hwei ve Senna 7.3b'de zayıflatılmış olsa da ikisi de hâlâ üst sıralarda; asıl değişim tank ve büyü direnci odaklı seçimlerin yükselmesi."},
+      {"h": "Koridor koridor en güçlüler"},
+      {"ul": [
+        "Baron: Malphite ve Shen. Malphite'ın zırhla büyüyen hasarı ve tek tuşla başlattığı takım savaşı, nişancıların güçlendiği bu yamada çok değerli; Shen ise ultisiyle başka koridorlara anında yardım edebiliyor. Mordekaiser ve Teemo da en üst kademede.",
+        "Orman: Rammus ve Nocturne. Rammus kritik vuruşlu nişancılara karşı doğal bir cevap; Nocturne 7.3b'de can ve ulti bekleme süresi kaybetse de hâlâ S+ kademede. Ekko ve Amumu da öne çıkıyor.",
+        "Orta: Hwei. İki zayıflatmaya rağmen geniş menzilli kontrolü onu ilk sıraya koyuyor. Syndra, Morgana ve Brand onu yakından takip ediyor.",
+        "Ejderha: Ashe ve Senna. Ashe 17 Ekim'de A'dan S+'ya yükseldi; yavaşlatması ve uzun menzilli ultisi takım savaşı başlatıyor. Senna kırpılmasına rağmen hem nişancı hem destek olarak oynanabildiği için en üstte kaldı.",
+        "Destek: Braum ve Sona. Braum'un mermileri durduran kalkanı ve sersemleten pasifi saldırı hızlı nişancılara karşı çok etkili; Sona, Senna zayıfladıkça daha çok seçilen bir büyü destekçisi."
+      ]},
+      {"h": "Yükselenler ve düşenler"},
+      {"ul": [
+        "Yükselenler: WildRiftCore'un 30 günlük kazanma oranı verisinde Twitch (+4,1 puan), Kog'Maw (+3,9) ve Akali (+3,8) en çok artanlar. Kademe olarak Samira (B'den S'ye), Cho'Gath ormanda (B'den S'ye), Shen Baron'da (A'dan S+'ya) ve Ashe (A'dan S+'ya) yükseldi.",
+        "Düşenler: Shyvana (-4,3), Tryndamere (-3,3) ve Yunara (-2,6) kazanma oranında en çok kaybedenler. Volibear ve Miss Fortune 3 Ekim'de S+'dan B'ye indi; Olaf, Nautilus ve Yone de son hafta geriledi."
+      ]},
+      {"h": "Draft ipucu"},
+      {"p": "Rakip Ashe, Samira veya Twitch gibi kritik/saldırı hızlı bir nişancı seçtiyse cevabı ön sırada ver: Malphite Baron'da ya da Rammus ormanda, nişancının bütün değerini düşürür. Hwei ve Senna hâlâ en çok yasaklanmaya değer iki isim; ikisinden birini açık bırakacaksan, Hwei'ye karşı orta koridorda ona hızla yapışabilen bir suikastçı (Kassadin veya Zed) seç."}
+    ],
+    "en": [
+      {"p": "This report is based on WildRiftCore's tier list updated on October 18 and the WildRiftGuides list from October 15. Hwei and Senna were both nerfed in 7.3b and are still near the top; the real shift is the rise of tanks and armor-scaling picks."},
+      {"h": "Strongest picks per lane"},
+      {"ul": [
+        "Baron: Malphite and Shen. Malphite's armor-scaling damage and one-button team fight start are worth a lot in a patch where marksmen are strong, and Shen's ultimate lets him help other lanes instantly. Mordekaiser and Teemo are also in the top tier.",
+        "Jungle: Rammus and Nocturne. Rammus is a natural answer to crit marksmen, and Nocturne is still S+ even after losing health and ultimate cooldown in 7.3b. Ekko and Amumu also stand out.",
+        "Mid: Hwei. Despite two nerfs, his long-range control keeps him first, with Syndra, Morgana and Brand right behind.",
+        "Dragon: Ashe and Senna. Ashe jumped from A to S+ on October 17; her slows and long-range ultimate start fights. Senna stays on top despite the cuts because she works as both a marksman and a support.",
+        "Support: Braum and Sona. Braum's projectile-blocking shield and stunning passive are very effective against attack-speed marksmen, and Sona is the enchanter people pick more as Senna weakens."
+      ]},
+      {"h": "Risers and fallers"},
+      {"ul": [
+        "Rising: In WildRiftCore's 30-day win rate data, Twitch (+4.1 points), Kog'Maw (+3.9) and Akali (+3.8) gained the most. In tiers, Samira (B to S), Cho'Gath in the jungle (B to S), Shen in Baron (A to S+) and Ashe (A to S+) moved up.",
+        "Falling: Shyvana (-4.3), Tryndamere (-3.3) and Yunara (-2.6) lost the most win rate. Volibear and Miss Fortune dropped from S+ to B on October 3, and Olaf, Nautilus and Yone also slid in the last week."
+      ]},
+      {"h": "Draft tip"},
+      {"p": "If the enemy picks a crit or attack-speed marksman like Ashe, Samira or Twitch, answer from the front line: Malphite in Baron or Rammus in the jungle cut that marksman's value a lot. Hwei and Senna are still the two names most worth banning; if you leave Hwei open, take a mid laner who can get on him fast, such as Kassadin or Zed."}
+    ],
+    "id": [
+      {"p": "Laporan ini berdasarkan tier list WildRiftCore yang diperbarui 18 Oktober dan daftar WildRiftGuides per 15 Oktober. Hwei dan Senna sama-sama di-nerf di 7.3b tetapi masih di papan atas; perubahan utamanya adalah naiknya tank dan pick yang scaling dengan armor."},
+      {"h": "Pick terkuat per lane"},
+      {"ul": [
+        "Baron: Malphite dan Shen. Damage Malphite yang naik bersama armor dan inisiasinya yang mudah sangat berharga saat marksman sedang kuat, sementara ultimate Shen bisa langsung membantu lane lain. Mordekaiser dan Teemo juga di tier teratas.",
+        "Jungle: Rammus dan Nocturne. Rammus adalah jawaban alami untuk marksman crit, dan Nocturne tetap S+ meski kehilangan HP dan cooldown ultimate di 7.3b. Ekko dan Amumu juga menonjol.",
+        "Mid: Hwei. Meski dua kali di-nerf, kontrol jarak jauhnya tetap membuatnya nomor satu, diikuti Syndra, Morgana, dan Brand.",
+        "Dragon: Ashe dan Senna. Ashe naik dari A ke S+ pada 17 Oktober; slow dan ultimate jarak jauhnya membuka team fight. Senna tetap di atas meski dipangkas karena bisa dimainkan sebagai marksman maupun support.",
+        "Support: Braum dan Sona. Shield Braum yang menahan proyektil dan pasif stun-nya sangat efektif melawan marksman attack speed, dan Sona makin sering dipilih saat Senna melemah."
+      ]},
+      {"h": "Yang naik dan turun"},
+      {"ul": [
+        "Naik: Di data win rate 30 hari WildRiftCore, Twitch (+4,1 poin), Kog'Maw (+3,9), dan Akali (+3,8) naik paling banyak. Dari sisi tier, Samira (B ke S), Cho'Gath di jungle (B ke S), Shen di Baron (A ke S+), dan Ashe (A ke S+) naik.",
+        "Turun: Shyvana (-4,3), Tryndamere (-3,3), dan Yunara (-2,6) kehilangan win rate terbanyak. Volibear dan Miss Fortune turun dari S+ ke B pada 3 Oktober, dan Olaf, Nautilus, serta Yone juga turun minggu lalu."
+      ]},
+      {"h": "Tips draft"},
+      {"p": "Jika musuh memilih marksman crit atau attack speed seperti Ashe, Samira, atau Twitch, jawab dari garis depan: Malphite di Baron atau Rammus di jungle sangat menurunkan nilai marksman itu. Hwei dan Senna masih dua nama yang paling layak di-ban; kalau Hwei dibiarkan terbuka, ambil mid laner yang bisa cepat menempelnya, seperti Kassadin atau Zed."}
+    ],
+    "es": [
+      {"p": "Este informe se basa en la tier list de WildRiftCore actualizada el 18 de octubre y en la de WildRiftGuides del 15 de octubre. Hwei y Senna recibieron nerfs en el 7.3b y siguen arriba; el cambio real es la subida de tanques y picks que escalan con armadura."},
+      {"h": "Mejores picks por línea"},
+      {"ul": [
+        "Barón: Malphite y Shen. El daño de Malphite que crece con la armadura y su inicio de pelea con un botón valen mucho en un parche de tiradores fuertes, y la definitiva de Shen le permite ayudar a otras líneas al instante. Mordekaiser y Teemo también están en el tier más alto.",
+        "Jungla: Rammus y Nocturne. Rammus es la respuesta natural a los tiradores de crítico, y Nocturne sigue en S+ pese a perder vida y enfriamiento de definitiva en el 7.3b. Ekko y Amumu también destacan.",
+        "Medio: Hwei. A pesar de dos nerfs, su control a larga distancia lo mantiene primero, con Syndra, Morgana y Brand justo detrás.",
+        "Dragón: Ashe y Senna. Ashe saltó de A a S+ el 17 de octubre; sus ralentizaciones y su definitiva de largo alcance abren peleas. Senna sigue arriba pese a los recortes porque funciona como tiradora y como soporte.",
+        "Soporte: Braum y Sona. El escudo de Braum que bloquea proyectiles y su pasiva aturdidora son muy eficaces contra tiradores de velocidad de ataque, y Sona es la encantadora que más se elige a medida que Senna se debilita."
+      ]},
+      {"h": "Quién sube y quién baja"},
+      {"ul": [
+        "Suben: En los datos de tasa de victoria a 30 días de WildRiftCore, Twitch (+4,1 puntos), Kog'Maw (+3,9) y Akali (+3,8) son los que más ganan. En tiers, subieron Samira (de B a S), Cho'Gath en jungla (de B a S), Shen en Barón (de A a S+) y Ashe (de A a S+).",
+        "Bajan: Shyvana (-4,3), Tryndamere (-3,3) y Yunara (-2,6) son los que más pierden. Volibear y Miss Fortune cayeron de S+ a B el 3 de octubre, y Olaf, Nautilus y Yone también bajaron la última semana."
+      ]},
+      {"h": "Consejo de draft"},
+      {"p": "Si el rival elige un tirador de crítico o velocidad de ataque como Ashe, Samira o Twitch, responde desde la primera línea: Malphite en Barón o Rammus en jungla reducen mucho su valor. Hwei y Senna siguen siendo los dos nombres que más vale la pena banear; si dejas libre a Hwei, elige en medio a alguien que llegue rápido a él, como Kassadin o Zed."}
+    ],
+    "pt": [
+      {"p": "Este relatório se baseia na tier list do WildRiftCore atualizada em 18 de outubro e na lista do WildRiftGuides de 15 de outubro. Hwei e Senna levaram nerf no 7.3b e continuam no topo; a mudança de verdade é a subida de tanques e picks que escalam com armadura."},
+      {"h": "Melhores picks por rota"},
+      {"ul": [
+        "Barão: Malphite e Shen. O dano do Malphite que cresce com armadura e o início de luta com um botão valem muito num patch de atiradores fortes, e a ultimate do Shen ajuda outras rotas na hora. Mordekaiser e Teemo também estão no tier mais alto.",
+        "Selva: Rammus e Nocturne. Rammus é a resposta natural aos atiradores de crítico, e Nocturne continua S+ mesmo perdendo vida e recarga da ultimate no 7.3b. Ekko e Amumu também se destacam.",
+        "Meio: Hwei. Mesmo com dois nerfs, o controle de longo alcance mantém ele em primeiro, com Syndra, Morgana e Brand logo atrás.",
+        "Dragão: Ashe e Senna. Ashe subiu de A para S+ em 17 de outubro; as lentidões e a ultimate de longo alcance abrem lutas. Senna segue no topo apesar dos cortes, porque funciona como atiradora e como suporte.",
+        "Suporte: Braum e Sona. O escudo do Braum que bloqueia projéteis e a passiva de atordoamento são muito eficazes contra atiradores de velocidade de ataque, e Sona é a encantadora mais escolhida conforme a Senna enfraquece."
+      ]},
+      {"h": "Quem sobe e quem cai"},
+      {"ul": [
+        "Sobem: Nos dados de taxa de vitória de 30 dias do WildRiftCore, Twitch (+4,1 pontos), Kog'Maw (+3,9) e Akali (+3,8) foram os que mais ganharam. Nos tiers, subiram Samira (de B para S), Cho'Gath na selva (de B para S), Shen no Barão (de A para S+) e Ashe (de A para S+).",
+        "Caem: Shyvana (-4,3), Tryndamere (-3,3) e Yunara (-2,6) foram os que mais perderam. Volibear e Miss Fortune caíram de S+ para B em 3 de outubro, e Olaf, Nautilus e Yone também caíram na última semana."
+      ]},
+      {"h": "Dica de draft"},
+      {"p": "Se o inimigo escolher um atirador de crítico ou velocidade de ataque como Ashe, Samira ou Twitch, responda pela linha de frente: Malphite no Barão ou Rammus na selva derrubam muito o valor dele. Hwei e Senna continuam sendo os dois nomes que mais valem banimento; se deixar o Hwei livre, pegue no meio alguém que chegue rápido nele, como Kassadin ou Zed."}
+    ]
+  }
+}

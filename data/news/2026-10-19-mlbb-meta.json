@@ -1,0 +1,122 @@
+{
+  "type": "meta",
+  "slug": "mlbb-meta-2026-10-19",
+  "date": "2026-10-19",
+  "game": "mlbb",
+  "sources": [
+    "timesaver.gg Season 42 tier list with mlbbhub ranked data (October 18, 2026)",
+    "mlbbhub.com tier list (patch 2.2.16a)",
+    "Moonton patch notes 2.2.16a via Liquipedia"
+  ],
+  "title": {
+    "tr": "Mobile Legends meta raporu (Sezon 42, 2.2.16a): rol rol en güçlü kahramanlar",
+    "en": "Mobile Legends meta report (Season 42, 2.2.16a): the strongest heroes by role",
+    "id": "Laporan meta Mobile Legends (Season 42, 2.2.16a): hero terkuat per role",
+    "es": "Informe de meta de Mobile Legends (Temporada 42, 2.2.16a): los héroes más fuertes por rol",
+    "pt": "Relatório de meta de Mobile Legends (Temporada 42, 2.2.16a): os heróis mais fortes por função"
+  },
+  "summary": {
+    "tr": "Masha %60'ı aşan kazanma oranıyla EXP'de zirvede; ormanda Aulus, ortada Valir, Gold'da Obsidia, roam'da Marcel ve Rafaela öne çıkıyor. Melissa ve Miya geriledi.",
+    "en": "Masha tops the EXP lane at over 60% win rate; Aulus leads the jungle, Valir the mid lane, Obsidia the gold lane, and Marcel and Rafaela the roam role. Melissa and Miya dropped.",
+    "id": "Masha memimpin EXP lane dengan win rate di atas 60%; Aulus di jungle, Valir di mid, Obsidia di gold, serta Marcel dan Rafaela di roam. Melissa dan Miya turun.",
+    "es": "Masha lidera la línea EXP con más del 60% de victorias; Aulus manda en la jungla, Valir en medio, Obsidia en oro y Marcel y Rafaela en roam. Melissa y Miya caen.",
+    "pt": "Masha lidera a rota EXP com mais de 60% de vitórias; Aulus manda na selva, Valir no meio, Obsidia no ouro e Marcel e Rafaela no roam. Melissa e Miya caíram."
+  },
+  "body": {
+    "tr": [
+      {"p": "Bu rapor, mlbbhub'ın dereceli verileriyle hazırlanan ve 18 Ekim'de güncellenen Sezon 42 kademe listesine dayanıyor. 14 Ekim'deki 2.2.16a ara yaması dört güçlü kahramanı kırptı, ancak veri penceresi yama öncesi maçları da içerdiği için tam etkisi henüz görünmüyor."},
+      {"h": "Rol rol en güçlüler"},
+      {"ul": [
+        "EXP: Masha (%60,4 kazanma). Yenilenen kiti oyuncular tarafından öğrenildikçe sezonun en başarılı kahramanı oldu. Argus (%56,1) ise neredeyse hiç yasaklanmadığı (%1,1) için kolayca alınabilen güçlü bir alternatif.",
+        "Orman: Aulus (%57,7). Ara yamadan sonra da en üstte, ama yaklaşık %44 yasaklanıyor. Açık kalırsa Popol and Kupa (%54,7) iyi bir yedek.",
+        "Orta: Valir (%54,0). Yavaşlatma ve itme becerileri dalış yapan dövüşçüleri durduruyor ve sadece %2,2 yasaklanıyor.",
+        "Gold: Obsidia (%53,6). Ultisiyle rakibi sersemletip ona bağlanması, kaçan hedefleri bile kovalamasını sağlıyor. Yüksek seçilme oranına rağmen istikrarlı.",
+        "Roam: Marcel (%58,2) ve Rafaela (%57,4). Marcel geniş alanlı dondurmasıyla takım savaşı başlatıyor; Rafaela 2.2.16a'da kırpıldı ama hâlâ çok güvenli."
+      ]},
+      {"h": "Yükselenler ve düşenler"},
+      {"ul": [
+        "Yükselen: Masha, 16 Eylül listesindeki yaklaşık %56'dan %60,4'e çıktı. Bruno da yenilemesinden sonra Gold'da A kademede (%53,2).",
+        "Düşen: Melissa, 2.2.16'daki zayıflatmalardan sonra S'den C kademeye (%48,6) indi. Miya B kademeye (%49,4) geriledi.",
+        "İzlenecek: Aulus, Rafaela, Hirara ve Eudora 2.2.16a ile zayıfladı; önümüzdeki haftalarda gerilemeleri bekleniyor. Kalea güçlendirildi ama hâlâ çok az oynanıyor."
+      ]},
+      {"h": "Draft ipucu"},
+      {"p": "Hirara (%68,6) ve Aulus (%44) en çok yasaklanan iki orman kahramanı. İlk yasakları bunlara harcarsan, Masha'yı ilk seçim olarak almayı düşün: hem çok yüksek kazanıyor hem de daha az yasaklanıyor. Rakip Masha'yı aldıysa ona karşı uzun süreli kontrol (örneğin Valir'in itme ve yavaşlatmaları) taşıyan bir orta koridor seç."}
+    ],
+    "en": [
+      {"p": "This report is based on the Season 42 tier list built on mlbbhub ranked data and updated on October 18. The 2.2.16a hotfix on October 14 trimmed four strong heroes, but the data window still includes pre-patch games, so its full effect is not visible yet."},
+      {"h": "Strongest heroes by role"},
+      {"ul": [
+        "EXP: Masha (60.4% win rate). As players learn her reworked kit she has become the most successful hero of the season. Argus (56.1%) is a strong alternative that is almost never banned (1.1%).",
+        "Jungle: Aulus (57.7%). Still on top after the hotfix, but banned about 44% of the time. If he is gone, Popol and Kupa (54.7%) is a good backup.",
+        "Mid: Valir (54.0%). His slows and knockbacks stop diving fighters, and he is banned only 2.2% of the time.",
+        "Gold: Obsidia (53.6%). Her ultimate stuns and tethers her to the target, so she can chase down even fleeing enemies. She stays steady despite a high pick rate.",
+        "Roam: Marcel (58.2%) and Rafaela (57.4%). Marcel starts team fights with his wide freeze; Rafaela was trimmed in 2.2.16a but is still very safe."
+      ]},
+      {"h": "Risers and fallers"},
+      {"ul": [
+        "Rising: Masha went from about 56% on the September 16 list to 60.4%. Bruno also sits in A tier in the gold lane (53.2%) after his rework.",
+        "Falling: Melissa dropped from S to C tier (48.6%) after the 2.2.16 nerfs, and Miya slipped to B tier (49.4%).",
+        "Watch list: Aulus, Rafaela, Hirara and Eudora were nerfed in 2.2.16a and are expected to drop over the next weeks. Kalea was buffed but is still rarely played."
+      ]},
+      {"h": "Draft tip"},
+      {"p": "Hirara (68.6%) and Aulus (44%) are the two most banned junglers. If your first bans go to them, consider first-picking Masha: she wins more than anyone and is banned less. If the enemy takes Masha, pick a mid laner with lasting control, such as Valir with his knockbacks and slows."}
+    ],
+    "id": [
+      {"p": "Laporan ini berdasarkan tier list Season 42 yang memakai data ranked mlbbhub dan diperbarui 18 Oktober. Hotfix 2.2.16a pada 14 Oktober memangkas empat hero kuat, tetapi rentang datanya masih memuat match sebelum patch, jadi efek penuhnya belum terlihat."},
+      {"h": "Hero terkuat per role"},
+      {"ul": [
+        "EXP: Masha (win rate 60,4%). Seiring pemain menguasai kit barunya, dia jadi hero paling sukses season ini. Argus (56,1%) adalah alternatif kuat yang hampir tidak pernah di-ban (1,1%).",
+        "Jungle: Aulus (57,7%). Tetap teratas setelah hotfix, tetapi di-ban sekitar 44%. Kalau dia tidak tersedia, Popol and Kupa (54,7%) adalah cadangan yang bagus.",
+        "Mid: Valir (54,0%). Slow dan knockback-nya menghentikan fighter yang menyelam, dan dia hanya di-ban 2,2%.",
+        "Gold: Obsidia (53,6%). Ultimate-nya men-stun dan menautkan dia ke target, jadi dia bisa mengejar musuh yang kabur. Tetap stabil meski pick rate-nya tinggi.",
+        "Roam: Marcel (58,2%) dan Rafaela (57,4%). Marcel membuka team fight dengan freeze area luas; Rafaela dipangkas di 2.2.16a tetapi masih sangat aman."
+      ]},
+      {"h": "Yang naik dan turun"},
+      {"ul": [
+        "Naik: Masha naik dari sekitar 56% di daftar 16 September menjadi 60,4%. Bruno juga berada di tier A gold lane (53,2%) setelah dirombak.",
+        "Turun: Melissa turun dari tier S ke C (48,6%) setelah nerf 2.2.16, dan Miya turun ke tier B (49,4%).",
+        "Perlu dipantau: Aulus, Rafaela, Hirara, dan Eudora di-nerf di 2.2.16a dan diperkirakan turun dalam beberapa minggu. Kalea di-buff tetapi masih jarang dimainkan."
+      ]},
+      {"h": "Tips draft"},
+      {"p": "Hirara (68,6%) dan Aulus (44%) adalah dua jungler yang paling sering di-ban. Jika ban pertama dipakai untuk mereka, pertimbangkan first pick Masha: win rate-nya tertinggi dan lebih jarang di-ban. Kalau musuh mengambil Masha, pilih mid laner dengan kontrol panjang, misalnya Valir dengan knockback dan slow-nya."}
+    ],
+    "es": [
+      {"p": "Este informe se basa en la tier list de la Temporada 42 elaborada con datos clasificatorios de mlbbhub y actualizada el 18 de octubre. El ajuste 2.2.16a del 14 de octubre recortó a cuatro héroes fuertes, pero el periodo de datos aún incluye partidas previas, así que su efecto completo todavía no se ve."},
+      {"h": "Los más fuertes por rol"},
+      {"ul": [
+        "EXP: Masha (60,4% de victorias). A medida que los jugadores dominan su kit renovado, se ha convertido en la heroína más exitosa de la temporada. Argus (56,1%) es una alternativa fuerte que casi nunca se banea (1,1%).",
+        "Jungla: Aulus (57,7%). Sigue arriba tras el ajuste, pero se banea cerca del 44% de las veces. Si no está, Popol and Kupa (54,7%) es un buen plan B.",
+        "Medio: Valir (54,0%). Sus ralentizaciones y empujes frenan a los luchadores que se lanzan, y solo se banea un 2,2%.",
+        "Oro: Obsidia (53,6%). Su definitiva aturde y la une al objetivo, así que puede perseguir incluso a quien huye. Se mantiene estable pese a su alta tasa de selección.",
+        "Roam: Marcel (58,2%) y Rafaela (57,4%). Marcel abre peleas con su congelación en área amplia; Rafaela fue recortada en el 2.2.16a pero sigue siendo muy segura."
+      ]},
+      {"h": "Quién sube y quién baja"},
+      {"ul": [
+        "Sube: Masha pasó de cerca del 56% en la lista del 16 de septiembre al 60,4%. Bruno también está en el tier A de oro (53,2%) tras su renovación.",
+        "Baja: Melissa cayó de S a C (48,6%) tras los nerfs del 2.2.16, y Miya bajó al tier B (49,4%).",
+        "A vigilar: Aulus, Rafaela, Hirara y Eudora recibieron nerfs en el 2.2.16a y se espera que bajen en las próximas semanas. Kalea recibió mejoras pero sigue jugándose poco."
+      ]},
+      {"h": "Consejo de draft"},
+      {"p": "Hirara (68,6%) y Aulus (44%) son los dos junglas más baneados. Si gastas en ellos tus primeros baneos, plantéate elegir primero a Masha: es quien más gana y la banean menos. Si el rival se queda con Masha, elige en medio a alguien con control prolongado, como Valir y sus empujes y ralentizaciones."}
+    ],
+    "pt": [
+      {"p": "Este relatório se baseia na tier list da Temporada 42 feita com dados ranqueados do mlbbhub e atualizada em 18 de outubro. O hotfix 2.2.16a de 14 de outubro cortou quatro heróis fortes, mas o período dos dados ainda inclui partidas de antes do patch, então o efeito completo ainda não aparece."},
+      {"h": "Os mais fortes por função"},
+      {"ul": [
+        "EXP: Masha (60,4% de vitórias). Conforme os jogadores aprendem o kit reformulado, ela virou a heroína de maior sucesso da temporada. Argus (56,1%) é uma alternativa forte e quase nunca banida (1,1%).",
+        "Selva: Aulus (57,7%). Segue no topo depois do hotfix, mas é banido em cerca de 44% das partidas. Se ele não estiver disponível, Popol and Kupa (54,7%) é um bom plano B.",
+        "Meio: Valir (54,0%). As lentidões e empurrões param lutadores que mergulham, e ele é banido só 2,2% das vezes.",
+        "Ouro: Obsidia (53,6%). A ultimate atordoa e prende ela ao alvo, então ela persegue até quem está fugindo. Continua estável mesmo com taxa de escolha alta.",
+        "Roam: Marcel (58,2%) e Rafaela (57,4%). Marcel abre lutas com o congelamento em área ampla; Rafaela foi cortada no 2.2.16a, mas continua muito segura."
+      ]},
+      {"h": "Quem sobe e quem cai"},
+      {"ul": [
+        "Sobe: Masha foi de cerca de 56% na lista de 16 de setembro para 60,4%. Bruno também está no tier A do ouro (53,2%) depois da reformulação.",
+        "Cai: Melissa caiu do tier S para o C (48,6%) após os nerfs do 2.2.16, e Miya caiu para o B (49,4%).",
+        "De olho: Aulus, Rafaela, Hirara e Eudora levaram nerf no 2.2.16a e devem cair nas próximas semanas. Kalea ganhou buff, mas ainda é pouco jogada."
+      ]},
+      {"h": "Dica de draft"},
+      {"p": "Hirara (68,6%) e Aulus (44%) são os dois caçadores mais banidos. Se os seus primeiros banimentos forem para eles, pense em escolher Masha primeiro: ela é quem mais vence e é menos banida. Se o inimigo pegar a Masha, escolha no meio alguém com controle prolongado, como Valir com seus empurrões e lentidões."}
+    ]
+  }
+}

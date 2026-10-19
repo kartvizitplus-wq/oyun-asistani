@@ -1,6 +1,6 @@
 {
   "game": "freefire",
-  "updated": "2026-10-14",
+  "updated": "2026-10-19",
   "notes": "type a=active skill, p=passive skill. tags: rush, sniper, support, heal, mobility, armor, intel, antigloo, antirush, antisniper, br (Battle Royale), cs (Clash Squad). tier=S/A/B/C or null (weekly updater). A combo is 1 active + 3 passives.",
   "characters": [
     {
@@ -50,7 +50,7 @@
         "rush",
         "mobility"
       ],
-      "tier": null
+      "tier": "C"
     },
     {
       "n": "Chrono",
@@ -62,7 +62,7 @@
         "antisniper",
         "armor"
       ],
-      "tier": "S"
+      "tier": null
     },
     {
       "n": "Clu",
@@ -72,7 +72,7 @@
         "sniper",
         "br"
       ],
-      "tier": "C"
+      "tier": null
     },
     {
       "n": "Dasha",
@@ -81,7 +81,7 @@
         "rush",
         "br"
       ],
-      "tier": "S"
+      "tier": null
     },
     {
       "n": "Dimitri",
@@ -91,7 +91,7 @@
         "support",
         "br"
       ],
-      "tier": "A"
+      "tier": null
     },
     {
       "n": "Ford",
@@ -121,6 +121,15 @@
       "tier": null
     },
     {
+      "n": "Ignis",
+      "type": "a",
+      "tags": [
+        "rush",
+        "antigloo"
+      ],
+      "tier": "A"
+    },
+    {
       "n": "Iris",
       "type": "a",
       "tags": [
@@ -148,7 +157,7 @@
         "rush",
         "cs"
       ],
-      "tier": "A"
+      "tier": "B"
     },
     {
       "n": "K",
@@ -158,6 +167,15 @@
         "sniper",
         "br",
         "cs"
+      ],
+      "tier": null
+    },
+    {
+      "n": "Kairos",
+      "type": "p",
+      "tags": [
+        "rush",
+        "antigloo"
       ],
       "tier": "A"
     },
@@ -171,6 +189,16 @@
       "tier": null
     },
     {
+      "n": "Kassie",
+      "type": "a",
+      "tags": [
+        "heal",
+        "support",
+        "br"
+      ],
+      "tier": "S"
+    },
+    {
       "n": "Kelly",
       "type": "p",
       "tags": [
@@ -178,7 +206,7 @@
         "rush",
         "br"
       ],
-      "tier": "B"
+      "tier": null
     },
     {
       "n": "Kenta",
@@ -189,7 +217,7 @@
         "antisniper",
         "cs"
       ],
-      "tier": null
+      "tier": "S"
     },
     {
       "n": "Koda",
@@ -198,7 +226,7 @@
         "intel",
         "br"
       ],
-      "tier": "B"
+      "tier": "S"
     },
     {
       "n": "Laura",
@@ -219,13 +247,22 @@
       "tier": null
     },
     {
+      "n": "Lila",
+      "type": "p",
+      "tags": [
+        "antirush",
+        "cs"
+      ],
+      "tier": "B"
+    },
+    {
       "n": "Luna",
       "type": "p",
       "tags": [
         "rush",
         "cs"
       ],
-      "tier": "B"
+      "tier": "A"
     },
     {
       "n": "Luqueta",
@@ -244,7 +281,7 @@
         "heal",
         "br"
       ],
-      "tier": null
+      "tier": "C"
     },
     {
       "n": "Miguel",
@@ -268,6 +305,15 @@
       "tier": "B"
     },
     {
+      "n": "Morse",
+      "type": "a",
+      "tags": [
+        "mobility",
+        "br"
+      ],
+      "tier": "A"
+    },
+    {
       "n": "Nairi",
       "type": "a",
       "tags": [
@@ -275,7 +321,17 @@
         "support",
         "antisniper"
       ],
-      "tier": "A"
+      "tier": null
+    },
+    {
+      "n": "Nero",
+      "type": "a",
+      "tags": [
+        "antigloo",
+        "antirush",
+        "cs"
+      ],
+      "tier": "S"
     },
     {
       "n": "Olivia",
@@ -294,7 +350,18 @@
         "armor",
         "cs"
       ],
-      "tier": null
+      "tier": "A"
+    },
+    {
+      "n": "Oscar",
+      "type": "a",
+      "tags": [
+        "rush",
+        "antigloo",
+        "mobility",
+        "cs"
+      ],
+      "tier": "S"
     },
     {
       "n": "Otho",
@@ -302,6 +369,14 @@
       "tags": [
         "intel",
         "br"
+      ],
+      "tier": null
+    },
+    {
+      "n": "Paloma",
+      "type": "p",
+      "tags": [
+        "rush"
       ],
       "tier": "C"
     },
@@ -322,7 +397,24 @@
         "rush",
         "cs"
       ],
-      "tier": "S"
+      "tier": "A"
+    },
+    {
+      "n": "Rin",
+      "type": "p",
+      "tags": [
+        "antigloo"
+      ],
+      "tier": "B"
+    },
+    {
+      "n": "Santino",
+      "type": "a",
+      "tags": [
+        "mobility",
+        "br"
+      ],
+      "tier": "B"
     },
     {
       "n": "Shani",
@@ -331,7 +423,7 @@
         "armor",
         "cs"
       ],
-      "tier": "A"
+      "tier": null
     },
     {
       "n": "Shirou",
@@ -341,7 +433,7 @@
         "rush",
         "cs"
       ],
-      "tier": "C"
+      "tier": null
     },
     {
       "n": "Skyler",
@@ -351,7 +443,7 @@
         "rush",
         "cs"
       ],
-      "tier": "S"
+      "tier": "B"
     },
     {
       "n": "Sonia",
@@ -410,47 +502,49 @@
         "armor",
         "cs"
       ],
-      "tier": "A"
+      "tier": null
     }
   ],
   "tierList": {
     "S": [
+      "Kenta",
       "Alok",
-      "Ray",
-      "Chrono",
-      "Dasha",
-      "Skyler"
+      "Oscar",
+      "Kassie",
+      "Koda",
+      "Nero"
     ],
     "A": [
-      "Jota",
-      "K",
+      "Ray",
       "Tatsuya",
       "Wukong",
-      "Dimitri",
-      "Xayne",
-      "Shani",
-      "Nairi"
+      "Luna",
+      "Ignis",
+      "Kairos",
+      "Orion",
+      "Morse"
     ],
     "B": [
-      "Kelly",
-      "Hayato",
-      "Moco",
-      "Koda",
       "Sonia",
-      "Kassie",
-      "Luna"
+      "Lila",
+      "Rin",
+      "Santino",
+      "Skyler",
+      "Jota",
+      "Hayato",
+      "Moco"
     ],
     "C": [
+      "Caroline",
       "Ford",
-      "Clu",
-      "Shirou",
-      "Otho"
+      "Paloma",
+      "Maxim"
     ]
   },
   "tierSource": {
-    "name": "Joytify (OB53)",
-    "url": "https://www.joytify.com/blog/en-my/fps-free-fire-character-tier-list/",
-    "date": "2026-05-08",
-    "patch": "OB53"
+    "name": "Game Overdrive (OB55)",
+    "url": "https://gameoverdrive.com.br/melhores-personagens-free-fire-tier-list-ob55-2026/",
+    "date": "2026-09-30",
+    "patch": "OB55"
   }
 }

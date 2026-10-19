@@ -1,0 +1,168 @@
+{
+  "type": "guide",
+  "slug": "wildrift-guide-hwei",
+  "date": "2026-10-19",
+  "game": "wildrift",
+  "hero": "Hwei",
+  "sources": [
+    "Riot Games Wild Rift patch notes 7.3 and 7.3b",
+    "wr-meta.com Hwei build page (patch 7.3a)",
+    "WildRiftCore tier list (patch 7.3b, October 18, 2026)"
+  ],
+  "title": {
+    "tr": "Wild Rift Hwei rehberi (7.3b): rünler, eşyalar, büyü kombinasyonları ve karşı seçimler",
+    "en": "Wild Rift Hwei guide (7.3b): runes, items, spell combos and counters",
+    "id": "Panduan Hwei Wild Rift (7.3b): rune, item, combo spell, dan counter",
+    "es": "Guía de Hwei en Wild Rift (7.3b): runas, objetos, combos de hechizos y counters",
+    "pt": "Guia de Hwei no Wild Rift (7.3b): runas, itens, combos de feitiços e counters"
+  },
+  "summary": {
+    "tr": "7.3 ile gelen Hwei, iki zayıflatmaya rağmen orta koridorun en güçlüsü. Arcane Comet rünü, Blackfire Torch dizilimi, en etkili üç kombo ve ona karşı ne seçmeli.",
+    "en": "Added in 7.3, Hwei is still the strongest mid laner after two nerfs. Arcane Comet, the Blackfire Torch build, his three most useful combos and what to pick against him.",
+    "id": "Hadir di 7.3, Hwei tetap mid laner terkuat meski dua kali di-nerf. Arcane Comet, build Blackfire Torch, tiga combo paling berguna, dan pick untuk melawannya.",
+    "es": "Llegado en el 7.3, Hwei sigue siendo el mejor medio tras dos nerfs. Arcane Comet, la build de Blackfire Torch, sus tres combos más útiles y qué elegir contra él.",
+    "pt": "Chegou no 7.3 e, mesmo com dois nerfs, Hwei segue como o melhor meio. Arcane Comet, a build de Blackfire Torch, os três combos mais úteis e o que escolher contra ele."
+  },
+  "body": {
+    "tr": [
+      {"h": "Rol ve oyun tarzı"},
+      {"p": "Hwei, 21 Eylül'deki 7.3 yamasıyla Wild Rift'e gelen ressam büyücü. Üç temel beceri tuşunun her biri üç farklı büyü açıyor: Disaster (Q) hasar, Serenity (W) destek ve hız, Torment (E) kontrol büyüleri veriyor. 7.3a ve 7.3b'de iki kez zayıflatılmasına rağmen WildRiftCore'un 18 Ekim listesinde orta koridorda S+ kademede ve destek olarak da oynanıyor. Uzak mesafeden alan kontrolü yapan, hareket yeteneği olmayan bir büyücü olduğu için konum alması her şey."},
+      {"h": "Önerilen rünler ve eşyalar"},
+      {"ul": [
+        "Ana rün: Arcane Comet. Yan rünler için wr-meta Manaflow Band, Transcendence, Scorch ve Bone Plating öneriyor.",
+        "Büyüler: Flash ve Ghost. Hwei kaçma becerisi olmadığı için Ghost hem kaçış hem kovalama sağlıyor.",
+        "Eşyalar: Spellslinger's Shoes (Boots of Mana'dan yükselt), Blackfire Torch, Infinity Orb, Rabadon's Deathcap, Zhonya's Hourglass, Void Staff.",
+        "Duruma göre: Rakip suikastçılar ağırsa Banshee's Veil, çok iyileşen takımlara karşı Morellonomicon, büyü direnci toplanınca Void Staff'ı öne al.",
+        "Destek oynarken Spectral Sickle ile başla, sonra Blackfire Torch ile büyü gücü dizilimine geç."
+      ]},
+      {"h": "Kombo ve önemli ipuçları"},
+      {"ul": [
+        "Pasif: İşaretlediğin rakibe ikinci bir hasar büyüsü değdiğinde patlama tetiklenir. Kombolarını hep iki farklı hasar büyüsüyle bitir.",
+        "Gaze of the Abyss (E+W) ilk vurduğu rakibi kökler ve görünür yapar; ardından Severing Bolt (Q+W) at. Bu büyü hareket edemeyen hedeflere daha fazla vurur.",
+        "Grim Visage (E+Q) ilk vurduğu rakibi korkutur; korku süresince Q büyülerinle hasar ver.",
+        "Crushing Maw 7.3b'de 7,5'ten 7 menzile indi: artık biraz daha yakından kullanman gerekiyor, bu yüzden önce kökleme ya da korkutma ile hedefi sabitle.",
+        "Beceri sırası: Önce Q, sonra E, en son W yükselt."
+      ]},
+      {"h": "Karşı seçimler"},
+      {"ul": [
+        "Hwei'ye karşı iyi olanlar: atılma yeteneği olan suikastçılar. Sitemizin motoru Kassadin, Zed, Talon, Akali, Katarina ve Fizz'i en iyi cevaplar arasında gösteriyor; ormanda Nocturne, Kha'Zix ve Evelynn de onu yakalayabiliyor.",
+        "Hwei'nin iyi olduğu rakipler: yavaş, yakın dövüş kahramanları. Darius, Garen ve Aatrox gibi dövüşçüleri uzaktan oyalayıp kontrol edebiliyor.",
+        "Ona karşı eşya: Büyü direnci (Force of Nature, Mercury's Treads) ve Quicksilver Sash ya da Banshee's Veil ile kontrolünü kırmak işe yarar."
+      ]},
+      {"h": "Son değişiklikler"},
+      {"p": "7.3b'de (14 Ekim) pasif patlama hasarı 40-285 + %30 büyü gücünden 30-280 + %25'e indi. Pool of Reflection kalkanları ve Stirring Lights'ın ek hasarı azaldı; Crushing Maw'ın hasarı 70-220 + %70'ten 60-210 + %60'a, menzili 7'ye düştü. Bu kayıplara rağmen yasaklanma oranı yüksek kalmaya devam ediyor; wr-meta 7.3a döneminde onu %57,7 yasaklanma oranıyla gösteriyordu."}
+    ],
+    "en": [
+      {"h": "Role and playstyle"},
+      {"p": "Hwei is the painter mage who arrived in Wild Rift with patch 7.3 on September 21. Each of his three basic ability buttons opens three different spells: Disaster (Q) holds his damage spells, Serenity (W) his utility and speed, and Torment (E) his crowd control. Despite two nerfs in 7.3a and 7.3b, he is S+ in the mid lane on WildRiftCore's October 18 list and also sees play as a support. He is a long-range zone controller with no mobility, so positioning is everything."},
+      {"h": "Recommended runes and items"},
+      {"ul": [
+        "Keystone: Arcane Comet. For the other runes, wr-meta suggests Manaflow Band, Transcendence, Scorch and Bone Plating.",
+        "Summoner spells: Flash and Ghost. Hwei has no dash, so Ghost helps both to escape and to chase.",
+        "Items: Spellslinger's Shoes (upgraded from Boots of Mana), Blackfire Torch, Infinity Orb, Rabadon's Deathcap, Zhonya's Hourglass, Void Staff.",
+        "Situational: Banshee's Veil against heavy assassin teams, Morellonomicon against strong healing, and Void Staff earlier once the enemy stacks magic resist.",
+        "As a support, start with Spectral Sickle and then move into the ability power build with Blackfire Torch."
+      ]},
+      {"h": "Combos and key tips"},
+      {"ul": [
+        "Passive: hitting a marked enemy with a second damaging spell triggers an explosion. Always finish combos with two different damage spells.",
+        "Gaze of the Abyss (E then W) roots and reveals the first enemy hit; follow with Severing Bolt (Q then W), which deals more damage to immobilized targets.",
+        "Grim Visage (E then Q) fears the first enemy hit; use your Q spells while the fear lasts.",
+        "Crushing Maw's range dropped from 7.5 to 7 in 7.3b, so you need to be a little closer. Lock the target with the root or the fear first.",
+        "Skill order: max Q first, then E, then W."
+      ]},
+      {"h": "Counters"},
+      {"ul": [
+        "Good against Hwei: assassins with dashes. Our engine lists Kassadin, Zed, Talon, Akali, Katarina and Fizz among the best answers, and in the jungle Nocturne, Kha'Zix and Evelynn can catch him too.",
+        "Hwei is good against: slow melee champions. He can kite and control fighters such as Darius, Garen and Aatrox from range.",
+        "Items against him: magic resist (Force of Nature, Mercury's Treads) plus Quicksilver Sash or Banshee's Veil to break or block his control."
+      ]},
+      {"h": "What changed recently"},
+      {"p": "In 7.3b (October 14) his passive explosion went from 40-285 + 30% AP to 30-280 + 25% AP. The Pool of Reflection shields and the bonus damage on Stirring Lights went down, and Crushing Maw's damage dropped from 70-220 + 70% AP to 60-210 + 60% AP, with its range now 7. Even so, his ban rate stays high; wr-meta showed him at a 57.7% ban rate during 7.3a."}
+    ],
+    "id": [
+      {"h": "Role dan gaya bermain"},
+      {"p": "Hwei adalah mage pelukis yang hadir di Wild Rift lewat patch 7.3 pada 21 September. Setiap tombol skill dasarnya membuka tiga spell berbeda: Disaster (Q) berisi spell damage, Serenity (W) utilitas dan kecepatan, dan Torment (E) crowd control. Meski di-nerf dua kali di 7.3a dan 7.3b, dia berada di tier S+ mid lane di daftar WildRiftCore per 18 Oktober dan juga dimainkan sebagai support. Dia pengontrol area jarak jauh tanpa mobilitas, jadi posisi adalah segalanya."},
+      {"h": "Rune dan item yang disarankan"},
+      {"ul": [
+        "Keystone: Arcane Comet. Untuk rune lain, wr-meta menyarankan Manaflow Band, Transcendence, Scorch, dan Bone Plating.",
+        "Summoner spell: Flash dan Ghost. Hwei tidak punya dash, jadi Ghost membantu untuk kabur maupun mengejar.",
+        "Item: Spellslinger's Shoes (upgrade dari Boots of Mana), Blackfire Torch, Infinity Orb, Rabadon's Deathcap, Zhonya's Hourglass, Void Staff.",
+        "Situasional: Banshee's Veil melawan tim penuh assassin, Morellonomicon melawan heal besar, dan Void Staff lebih awal saat musuh menumpuk magic resist.",
+        "Sebagai support, mulai dengan Spectral Sickle lalu beralih ke build ability power dengan Blackfire Torch."
+      ]},
+      {"h": "Combo dan tips penting"},
+      {"ul": [
+        "Pasif: mengenai musuh bertanda dengan spell damage kedua memicu ledakan. Selalu tutup combo dengan dua spell damage yang berbeda.",
+        "Gaze of the Abyss (E lalu W) me-root dan menampakkan musuh pertama yang terkena; lanjutkan dengan Severing Bolt (Q lalu W) yang memberi damage lebih besar ke target yang tidak bisa bergerak.",
+        "Grim Visage (E lalu Q) memberi fear ke musuh pertama yang terkena; gunakan spell Q selama fear berlangsung.",
+        "Jangkauan Crushing Maw turun dari 7,5 ke 7 di 7.3b, jadi kamu perlu sedikit lebih dekat. Kunci target dulu dengan root atau fear.",
+        "Urutan skill: maksimalkan Q dulu, lalu E, lalu W."
+      ]},
+      {"h": "Counter"},
+      {"ul": [
+        "Kuat melawan Hwei: assassin dengan dash. Mesin kami menempatkan Kassadin, Zed, Talon, Akali, Katarina, dan Fizz di antara jawaban terbaik, dan di jungle Nocturne, Kha'Zix, serta Evelynn juga bisa menangkapnya.",
+        "Hwei kuat melawan: champion melee yang lambat. Dia bisa menahan dan mengontrol fighter seperti Darius, Garen, dan Aatrox dari jauh.",
+        "Item untuk melawannya: magic resist (Force of Nature, Mercury's Treads) ditambah Quicksilver Sash atau Banshee's Veil untuk mematahkan atau menahan kontrolnya."
+      ]},
+      {"h": "Perubahan terbaru"},
+      {"p": "Di 7.3b (14 Oktober) ledakan pasifnya turun dari 40-285 + 30% AP menjadi 30-280 + 25% AP. Shield Pool of Reflection dan bonus damage Stirring Lights turun, dan damage Crushing Maw turun dari 70-220 + 70% AP menjadi 60-210 + 60% AP dengan jangkauan kini 7. Meski begitu, ban rate-nya tetap tinggi; wr-meta mencatat ban rate 57,7% saat 7.3a."}
+    ],
+    "es": [
+      {"h": "Rol y estilo de juego"},
+      {"p": "Hwei es el mago pintor que llegó a Wild Rift con el parche 7.3 el 21 de septiembre. Cada uno de sus tres botones básicos abre tres hechizos distintos: Disaster (Q) contiene sus hechizos de daño, Serenity (W) su utilidad y velocidad, y Torment (E) su control de masas. Pese a dos nerfs en el 7.3a y el 7.3b, está en S+ en medio en la lista de WildRiftCore del 18 de octubre y también se juega de soporte. Es un controlador de zona a larga distancia sin movilidad, así que el posicionamiento lo es todo."},
+      {"h": "Runas y objetos recomendados"},
+      {"ul": [
+        "Runa principal: Arcane Comet. Para el resto, wr-meta sugiere Manaflow Band, Transcendence, Scorch y Bone Plating.",
+        "Hechizos: Flash y Ghost. Hwei no tiene desplazamiento, así que Ghost sirve tanto para escapar como para perseguir.",
+        "Objetos: Spellslinger's Shoes (mejora de Boots of Mana), Blackfire Torch, Infinity Orb, Rabadon's Deathcap, Zhonya's Hourglass, Void Staff.",
+        "Situacionales: Banshee's Veil contra equipos con muchos asesinos, Morellonomicon contra curación fuerte, y Void Staff antes si el rival acumula resistencia mágica.",
+        "Como soporte, empieza con Spectral Sickle y luego pasa a la build de poder de habilidad con Blackfire Torch."
+      ]},
+      {"h": "Combos y consejos clave"},
+      {"ul": [
+        "Pasiva: golpear a un enemigo marcado con un segundo hechizo de daño provoca una explosión. Termina siempre los combos con dos hechizos de daño distintos.",
+        "Gaze of the Abyss (E y luego W) inmoviliza y revela al primer enemigo alcanzado; sigue con Severing Bolt (Q y luego W), que hace más daño a objetivos inmovilizados.",
+        "Grim Visage (E y luego Q) aterroriza al primer enemigo alcanzado; usa tus hechizos de Q mientras dure el miedo.",
+        "El alcance de Crushing Maw bajó de 7,5 a 7 en el 7.3b, así que tienes que estar algo más cerca. Fija al objetivo primero con el enraizamiento o el miedo.",
+        "Orden de habilidades: sube primero la Q, luego la E y por último la W."
+      ]},
+      {"h": "Counters"},
+      {"ul": [
+        "Buenos contra Hwei: asesinos con desplazamientos. Nuestro motor sitúa a Kassadin, Zed, Talon, Akali, Katarina y Fizz entre las mejores respuestas, y en la jungla Nocturne, Kha'Zix y Evelynn también pueden atraparlo.",
+        "Hwei es bueno contra: campeones cuerpo a cuerpo lentos. Puede frenar y controlar a distancia a luchadores como Darius, Garen y Aatrox.",
+        "Objetos contra él: resistencia mágica (Force of Nature, Mercury's Treads) más Quicksilver Sash o Banshee's Veil para romper o bloquear su control."
+      ]},
+      {"h": "Cambios recientes"},
+      {"p": "En el 7.3b (14 de octubre) la explosión de su pasiva pasó de 40-285 + 30% de poder de habilidad a 30-280 + 25%. Bajaron los escudos de Pool of Reflection y el daño extra de Stirring Lights, y el daño de Crushing Maw cayó de 70-220 + 70% a 60-210 + 60%, con alcance 7. Aun así, su tasa de baneo sigue alta; wr-meta lo mostraba con un 57,7% de baneos durante el 7.3a."}
+    ],
+    "pt": [
+      {"h": "Função e estilo de jogo"},
+      {"p": "Hwei é o mago pintor que chegou ao Wild Rift com o patch 7.3, em 21 de setembro. Cada um dos três botões básicos abre três feitiços diferentes: Disaster (Q) tem os feitiços de dano, Serenity (W) a utilidade e velocidade, e Torment (E) o controle de grupo. Mesmo com dois nerfs no 7.3a e no 7.3b, ele está no S+ do meio na lista do WildRiftCore de 18 de outubro e também é jogado como suporte. É um controlador de área de longo alcance sem mobilidade, então posicionamento é tudo."},
+      {"h": "Runas e itens recomendados"},
+      {"ul": [
+        "Runa principal: Arcane Comet. Para as demais, o wr-meta sugere Manaflow Band, Transcendence, Scorch e Bone Plating.",
+        "Feitiços: Flash e Ghost. Hwei não tem avanço, então o Ghost ajuda tanto a fugir quanto a perseguir.",
+        "Itens: Spellslinger's Shoes (evolução de Boots of Mana), Blackfire Torch, Infinity Orb, Rabadon's Deathcap, Zhonya's Hourglass, Void Staff.",
+        "Situacionais: Banshee's Veil contra times cheios de assassinos, Morellonomicon contra cura forte e Void Staff mais cedo quando o inimigo acumula resistência mágica.",
+        "Como suporte, comece com Spectral Sickle e depois passe para a build de poder de habilidade com Blackfire Torch."
+      ]},
+      {"h": "Combos e dicas principais"},
+      {"ul": [
+        "Passiva: acertar um inimigo marcado com um segundo feitiço de dano causa uma explosão. Sempre termine os combos com dois feitiços de dano diferentes.",
+        "Gaze of the Abyss (E e depois W) enraíza e revela o primeiro inimigo atingido; siga com Severing Bolt (Q e depois W), que causa mais dano em alvos imobilizados.",
+        "Grim Visage (E e depois Q) aterroriza o primeiro inimigo atingido; use os feitiços de Q enquanto o medo durar.",
+        "O alcance de Crushing Maw caiu de 7,5 para 7 no 7.3b, então você precisa ficar um pouco mais perto. Prenda o alvo antes com a raiz ou o medo.",
+        "Ordem de habilidades: maximize Q primeiro, depois E e por último W."
+      ]},
+      {"h": "Counters"},
+      {"ul": [
+        "Bons contra Hwei: assassinos com avanço. Nosso motor coloca Kassadin, Zed, Talon, Akali, Katarina e Fizz entre as melhores respostas, e na selva Nocturne, Kha'Zix e Evelynn também conseguem pegá-lo.",
+        "Hwei é bom contra: campeões corpo a corpo lentos. Ele segura e controla lutadores como Darius, Garen e Aatrox à distância.",
+        "Itens contra ele: resistência mágica (Force of Nature, Mercury's Treads) e Quicksilver Sash ou Banshee's Veil para quebrar ou bloquear o controle."
+      ]},
+      {"h": "O que mudou recentemente"},
+      {"p": "No 7.3b (14 de outubro) a explosão da passiva foi de 40-285 + 30% de poder de habilidade para 30-280 + 25%. Os escudos de Pool of Reflection e o dano extra de Stirring Lights caíram, e o dano de Crushing Maw foi de 70-220 + 70% para 60-210 + 60%, com alcance 7. Mesmo assim, a taxa de banimento segue alta; o wr-meta mostrava 57,7% de banimentos durante o 7.3a."}
+    ]
+  }
+}

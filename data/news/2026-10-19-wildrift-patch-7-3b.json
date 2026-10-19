@@ -1,0 +1,177 @@
+{
+  "type": "patch",
+  "slug": "wildrift-patch-7-3b",
+  "date": "2026-10-19",
+  "game": "wildrift",
+  "sources": [
+    "Riot Games official Wild Rift patch notes 7.3b (October 14, 2026)",
+    "riftpatchnotes.com 7.3b summary",
+    "WildRiftCore tier list and 30-day win rate trends (October 18, 2026)"
+  ],
+  "title": {
+    "tr": "Wild Rift 7.3b yaması: Hwei ve Senna yine zayıfladı, Jhin ve Yasuo güçlendi",
+    "en": "Wild Rift patch 7.3b: Hwei and Senna nerfed again, Jhin and Yasuo buffed",
+    "id": "Patch Wild Rift 7.3b: Hwei dan Senna kena nerf lagi, Jhin dan Yasuo di-buff",
+    "es": "Parche 7.3b de Wild Rift: Hwei y Senna vuelven a bajar, Jhin y Yasuo suben",
+    "pt": "Patch 7.3b de Wild Rift: Hwei e Senna levam outro nerf, Jhin e Yasuo ganham buff"
+  },
+  "summary": {
+    "tr": "14 Ekim'de gelen 7.3b; Hwei, Nocturne, Senna ve Yunara'yı zayıflattı, Jhin, Volibear ve Yasuo'yu güçlendirdi. Statikk Shiv ve Locket ucuzladı, Warmog's zorlaştı.",
+    "en": "Released October 14, patch 7.3b nerfs Hwei, Nocturne, Senna and Yunara, buffs Jhin, Volibear and Yasuo, makes Statikk Shiv and Locket cheaper and Warmog's harder to trigger.",
+    "id": "Rilis 14 Oktober, patch 7.3b me-nerf Hwei, Nocturne, Senna, dan Yunara, mem-buff Jhin, Volibear, dan Yasuo, serta memurahkan Statikk Shiv dan Locket.",
+    "es": "Publicado el 14 de octubre, el 7.3b debilita a Hwei, Nocturne, Senna y Yunara, mejora a Jhin, Volibear y Yasuo y abarata Statikk Shiv y el Medallón.",
+    "pt": "Lançado em 14 de outubro, o 7.3b enfraquece Hwei, Nocturne, Senna e Yunara, fortalece Jhin, Volibear e Yasuo e deixa Statikk Shiv e Locket mais baratos."
+  },
+  "body": {
+    "tr": [
+      {"p": "Riot, 7.3 güncellemesinin ikinci ara yaması 7.3b'yi 14 Ekim 2026'da yayınladı. Bu yama yeni sistem getirmiyor; 7.3'teki nişancı yenilemesinden sonra öne fırlayan birkaç şampiyonu törpülüyor, zayıf kalan kritik vuruşlu karakterlere de nefes aldırıyor."},
+      {"h": "Güçlenenler"},
+      {"ul": [
+        "Jhin: Pasifinin kritik hasarı %80'den %85'e çıktı. Eksik cana göre gelen bonus artık 15. seviye yerine 10. seviyede tam değerine ulaşıyor, yani orta oyunda daha erken sertleşiyor.",
+        "Yasuo: Kritik hasarı %90'dan %95'e yükseldi, pasif kalkanın üst sınırı da yaklaşık 529'dan 630'a çıktı.",
+        "Volibear: Frenzied Maul (W) daha fazla fiziksel saldırı oranı aldı. Güçlendirilmiş vuruşun eksik cana göre iyileştirmesi en üst seviyede %8'den %14'e çıktı."
+      ]},
+      {"h": "Zayıflayanlar"},
+      {"ul": [
+        "Hwei: Pasif patlaması, Serenity kalkanları ve Crushing Maw (çene büyüsü) daha az vuruyor; Crushing Maw'ın menzili de 7,5'ten 7'ye düştü. Üst üste ikinci kez zayıflatıldı.",
+        "Senna: Kara Sis yükü başına aldığı saldırı gücü 1,25'ten 0,9'a, kritik hasarı %90'dan %80'e indi. Piercing Darkness'ın taban hasarı her seviyede 20 azaldı.",
+        "Nocturne: Seviye başına can 134'ten 128'e düştü, ultisinin bekleme süresi her seviyede 10 saniye uzadı.",
+        "Yunara: Pasif ve aktif hasarı her seviyede 5 azaldı, ultisinin bekleme süresi 2. ve 3. seviyede 60 ve 50 saniyeden 65 ve 60 saniyeye çıktı."
+      ]},
+      {"h": "Tryndamere ayarı"},
+      {"p": "Tryndamere'in her Öfke puanı başına kritik şansı artık seviyeden bağımsız olarak %0,5. Spinning Slash (E) daha yüksek taban hasar ve %110 bonus saldırı gücü oranı aldı. Erken seviyelerde biraz daha tehlikeli olacak."},
+      {"h": "Eşya ve rün değişiklikleri"},
+      {"ul": [
+        "Statikk Shiv 2900 altına düştü ve saldırı başına 5 yerine 7 yük topluyor.",
+        "Locket of the Iron Solari 2500 altın oldu ve 300 can veriyor (önceden 200).",
+        "Youmuu's Ghostblade ile Yun Tal Wildarrows 100'er altın ucuzladı.",
+        "Thornmail 2850 altına çıktı. Warmog's Armor'ın pasifi için artık 1250 bonus can gerekiyor (önceden 900).",
+        "Electrocute'un en düşük hasarı 40'tan 60'a çıktı; Aery kalkanı ve Grasp of the Undying'in hasarı ile can artışı azaldı."
+      ]},
+      {"h": "Orman"},
+      {"p": "Kızıl Kuş ve küçük Kuş kampları daha fazla cana sahip. Bu küçük değişiklik, kampı tek başına hızlı temizleyen ormancıların ritmini biraz yavaşlatıyor."},
+      {"h": "Bizim yorumumuz"},
+      {"p": "Hwei iki yamadır zayıflatılmasına rağmen WildRiftCore listesinde orta koridorda hâlâ en üstte; yasaklama listende tutmaya devam et. Senna'daki yük ölçeklemesi kaybı uzun maçlarda belirgin olacak, bu yüzden destek koridorunda Sona ve Braum gibi seçenekler daha cazip. Ucuzlayan Statikk Shiv ise Twitch ve Kog'Maw gibi nişancıları destekliyor; ikisi de son 30 günde kazanma oranı en çok yükselenler arasında. Draft asistanımızı ve kademe listemizi bu yamaya göre güncelledik."}
+    ],
+    "en": [
+      {"p": "Riot released 7.3b, the second follow-up to patch 7.3, on October 14, 2026. There are no new systems here: the patch trims a few champions that took off after the 7.3 marksman overhaul and gives some crit users that were left behind a bit of help."},
+      {"h": "Buffs"},
+      {"ul": [
+        "Jhin: Passive crit damage goes from 80% to 85%, and his missing-health bonus now reaches full value at level 10 instead of 15, so his mid game spike comes sooner.",
+        "Yasuo: Crit damage rises from 90% to 95%, and the cap on his passive shield goes from about 529 to 630.",
+        "Volibear: Frenzied Maul (W) gets higher AD ratios, and the missing-health healing on the empowered hit goes from 8% to 14% at max rank."
+      ]},
+      {"h": "Nerfs"},
+      {"ul": [
+        "Hwei: His passive explosion, the Serenity shields and Crushing Maw all deal or give less, and Crushing Maw's cast range drops from 7.5 to 7. That is his second nerf in a row.",
+        "Senna: AD per Black Mist stack drops from 1.25 to 0.9 and her crit damage from 90% to 80%. Piercing Darkness loses 20 base damage at every rank.",
+        "Nocturne: Health per level drops from 134 to 128 and his ultimate cooldown goes up by 10 seconds at every rank.",
+        "Yunara: Her passive and active damage lose 5 at every rank, and her ultimate cooldown at ranks 2 and 3 goes from 60 and 50 seconds to 65 and 60."
+      ]},
+      {"h": "Tryndamere adjustment"},
+      {"p": "Tryndamere now gets a flat 0.5% crit chance per point of Fury regardless of level, and Spinning Slash (E) has higher base damage and a 110% bonus AD ratio. Expect him to hit harder in the early levels."},
+      {"h": "Items and runes"},
+      {"ul": [
+        "Statikk Shiv costs 2900 gold and builds 7 charges per attack instead of 5.",
+        "Locket of the Iron Solari now costs 2500 gold and gives 300 health (was 200).",
+        "Youmuu's Ghostblade and Yun Tal Wildarrows are 100 gold cheaper.",
+        "Thornmail goes up to 2850 gold. Warmog's Armor now needs 1250 bonus health for its passive (was 900).",
+        "Electrocute's minimum damage rises from 40 to 60, while Aery's shield and Grasp of the Undying's damage and health growth go down."
+      ]},
+      {"h": "Jungle"},
+      {"p": "The Crimson Raptor and the small Raptors have more health. It is a small change, but it slows down junglers who rely on clearing that camp very quickly."},
+      {"h": "Our take"},
+      {"p": "Even after two nerfs, Hwei is still at the top of WildRiftCore's mid lane list, so keep him on your ban list. Senna's lower stack scaling will show most in long games, which makes enchanters like Sona and tanky picks like Braum more attractive in the support role. The cheaper Statikk Shiv helps marksmen like Twitch and Kog'Maw, two of the biggest 30-day win rate risers. Our draft assistant and tier list now reflect this patch."}
+    ],
+    "id": [
+      {"p": "Riot merilis 7.3b, patch lanjutan kedua dari 7.3, pada 14 Oktober 2026. Tidak ada sistem baru di sini. Patch ini memangkas beberapa champion yang melonjak setelah perombakan marksman di 7.3, sekaligus membantu beberapa pengguna crit yang tertinggal."},
+      {"h": "Buff"},
+      {"ul": [
+        "Jhin: Crit damage pasifnya naik dari 80% ke 85%, dan bonus berdasarkan HP yang hilang kini mencapai nilai penuh di level 10, bukan 15. Power spike mid game-nya datang lebih cepat.",
+        "Yasuo: Crit damage naik dari 90% ke 95%, dan batas shield pasifnya naik dari sekitar 529 ke 630.",
+        "Volibear: Frenzied Maul (W) mendapat rasio AD lebih tinggi, dan heal dari serangan yang diperkuat naik dari 8% ke 14% HP yang hilang di rank maksimal."
+      ]},
+      {"h": "Nerf"},
+      {"ul": [
+        "Hwei: Ledakan pasif, shield Serenity, dan Crushing Maw semuanya lebih lemah, dan jangkauan Crushing Maw turun dari 7,5 ke 7. Ini nerf keduanya berturut-turut.",
+        "Senna: AD per stack Black Mist turun dari 1,25 ke 0,9, crit damage turun dari 90% ke 80%. Piercing Darkness kehilangan 20 base damage di setiap rank.",
+        "Nocturne: HP per level turun dari 134 ke 128, dan cooldown ultimate-nya bertambah 10 detik di setiap rank.",
+        "Yunara: Damage pasif dan aktifnya berkurang 5 di setiap rank, dan cooldown ultimate di rank 2 dan 3 naik dari 60 dan 50 detik menjadi 65 dan 60 detik."
+      ]},
+      {"h": "Penyesuaian Tryndamere"},
+      {"p": "Crit chance Tryndamere per poin Fury kini tetap 0,5% di semua level, dan Spinning Slash (E) mendapat base damage lebih tinggi serta rasio 110% bonus AD. Dia akan lebih berbahaya di level awal."},
+      {"h": "Item dan rune"},
+      {"ul": [
+        "Statikk Shiv kini 2900 gold dan mengumpulkan 7 charge per serangan, bukan 5.",
+        "Locket of the Iron Solari kini 2500 gold dan memberi 300 HP (sebelumnya 200).",
+        "Youmuu's Ghostblade dan Yun Tal Wildarrows 100 gold lebih murah.",
+        "Thornmail naik ke 2850 gold. Pasif Warmog's Armor kini butuh 1250 bonus HP (sebelumnya 900).",
+        "Damage minimum Electrocute naik dari 40 ke 60, sementara shield Aery serta damage dan pertumbuhan HP Grasp of the Undying diturunkan."
+      ]},
+      {"h": "Jungle"},
+      {"p": "Crimson Raptor dan Raptor kecil kini punya HP lebih banyak. Perubahan kecil, tetapi cukup memperlambat jungler yang mengandalkan clear camp itu dengan sangat cepat."},
+      {"h": "Pendapat kami"},
+      {"p": "Meski sudah dua kali di-nerf, Hwei masih berada di puncak daftar mid lane WildRiftCore, jadi tetap simpan dia di daftar ban. Penurunan scaling stack Senna paling terasa di game panjang, sehingga enchanter seperti Sona dan support tebal seperti Braum jadi lebih menarik. Statikk Shiv yang lebih murah membantu marksman seperti Twitch dan Kog'Maw, dua champion dengan kenaikan win rate 30 hari terbesar. Draft assistant dan tier list kami sudah mengikuti patch ini."}
+    ],
+    "es": [
+      {"p": "Riot publicó el 7.3b, el segundo ajuste del parche 7.3, el 14 de octubre de 2026. No trae sistemas nuevos: recorta a varios campeones que se dispararon tras la renovación de tiradores del 7.3 y da un empujón a algunos usuarios de crítico que se habían quedado atrás."},
+      {"h": "Mejoras"},
+      {"ul": [
+        "Jhin: El daño crítico de su pasiva pasa del 80% al 85%, y la bonificación por vida faltante llega a su valor máximo en el nivel 10 en lugar del 15, así que su pico de mitad de partida llega antes.",
+        "Yasuo: Su daño crítico sube del 90% al 95% y el tope de su escudo pasivo pasa de unos 529 a 630.",
+        "Volibear: Frenzied Maul (W) recibe más escalado de daño de ataque, y la curación por vida faltante del golpe potenciado sube del 8% al 14% en el rango máximo."
+      ]},
+      {"h": "Debilitamientos"},
+      {"ul": [
+        "Hwei: La explosión de su pasiva, los escudos de Serenity y Crushing Maw pegan o protegen menos, y el alcance de Crushing Maw baja de 7,5 a 7. Es su segundo nerf seguido.",
+        "Senna: El daño de ataque por carga de Niebla Negra baja de 1,25 a 0,9 y su daño crítico del 90% al 80%. Piercing Darkness pierde 20 de daño base en todos los rangos.",
+        "Nocturne: La vida por nivel baja de 134 a 128 y el enfriamiento de su definitiva sube 10 segundos en cada rango.",
+        "Yunara: Su daño pasivo y activo pierde 5 en cada rango, y el enfriamiento de su definitiva en los rangos 2 y 3 pasa de 60 y 50 segundos a 65 y 60."
+      ]},
+      {"h": "Ajuste a Tryndamere"},
+      {"p": "Tryndamere obtiene ahora un 0,5% fijo de probabilidad de crítico por punto de Furia en cualquier nivel, y Spinning Slash (E) tiene más daño base y un 110% de escalado con daño de ataque adicional. Será más peligroso en los primeros niveles."},
+      {"h": "Objetos y runas"},
+      {"ul": [
+        "Statikk Shiv cuesta 2900 de oro y acumula 7 cargas por ataque en lugar de 5.",
+        "El Medallón de los Solari de Hierro cuesta 2500 de oro y da 300 de vida (antes 200).",
+        "Youmuu's Ghostblade y Yun Tal Wildarrows bajan 100 de oro.",
+        "Thornmail sube a 2850 de oro. La pasiva de Warmog's Armor ahora pide 1250 de vida adicional (antes 900).",
+        "El daño mínimo de Electrocutar sube de 40 a 60, mientras que el escudo de Aery y el daño y crecimiento de vida de Garras del Inmortal bajan."
+      ]},
+      {"h": "Jungla"},
+      {"p": "La Raptor Carmesí y las Raptores pequeñas tienen más vida. Es un cambio menor, pero frena un poco a los junglas que dependen de limpiar ese campamento muy rápido."},
+      {"h": "Nuestra opinión"},
+      {"p": "Incluso tras dos nerfs, Hwei sigue arriba en la lista de medio de WildRiftCore, así que mantenlo entre tus baneos. La pérdida de escalado de Senna se notará sobre todo en partidas largas, lo que hace más atractivos a encantadores como Sona y a soportes resistentes como Braum. El Statikk Shiv más barato ayuda a tiradores como Twitch y Kog'Maw, dos de los que más tasa de victoria ganaron en los últimos 30 días. El asistente de draft y la tier list ya reflejan este parche."}
+    ],
+    "pt": [
+      {"p": "A Riot lançou o 7.3b, o segundo ajuste do patch 7.3, em 14 de outubro de 2026. Não há sistemas novos: o patch corta alguns campeões que dispararam depois da reformulação dos atiradores no 7.3 e dá uma força a usuários de crítico que tinham ficado para trás."},
+      {"h": "Buffs"},
+      {"ul": [
+        "Jhin: O dano crítico da passiva vai de 80% para 85%, e o bônus por vida perdida chega ao valor máximo no nível 10, não mais no 15. O pico de meio de jogo chega antes.",
+        "Yasuo: O dano crítico sobe de 90% para 95% e o limite do escudo passivo vai de cerca de 529 para 630.",
+        "Volibear: Frenzied Maul (W) ganha mais escala de dano de ataque, e a cura por vida perdida do golpe fortalecido sobe de 8% para 14% no rank máximo."
+      ]},
+      {"h": "Nerfs"},
+      {"ul": [
+        "Hwei: A explosão da passiva, os escudos de Serenity e Crushing Maw causam ou dão menos, e o alcance de Crushing Maw cai de 7,5 para 7. É o segundo nerf seguido.",
+        "Senna: O dano de ataque por acúmulo de Névoa Negra cai de 1,25 para 0,9 e o dano crítico de 90% para 80%. Piercing Darkness perde 20 de dano base em todos os ranks.",
+        "Nocturne: A vida por nível cai de 134 para 128 e a recarga da ultimate aumenta 10 segundos em cada rank.",
+        "Yunara: O dano passivo e ativo perde 5 em cada rank, e a recarga da ultimate nos ranks 2 e 3 vai de 60 e 50 segundos para 65 e 60."
+      ]},
+      {"h": "Ajuste no Tryndamere"},
+      {"p": "Tryndamere agora recebe 0,5% fixo de chance de crítico por ponto de Fúria em qualquer nível, e Spinning Slash (E) tem mais dano base e 110% de escala com dano de ataque adicional. Ele fica mais perigoso nos primeiros níveis."},
+      {"h": "Itens e runas"},
+      {"ul": [
+        "Statikk Shiv custa 2900 de ouro e acumula 7 cargas por ataque em vez de 5.",
+        "Medalhão dos Solari de Ferro custa 2500 de ouro e dá 300 de vida (antes 200).",
+        "Youmuu's Ghostblade e Yun Tal Wildarrows ficaram 100 de ouro mais baratos.",
+        "Thornmail sobe para 2850 de ouro. A passiva de Warmog's Armor agora exige 1250 de vida adicional (antes 900).",
+        "O dano mínimo de Eletrocutar sobe de 40 para 60, enquanto o escudo de Aery e o dano e o ganho de vida de Aperto dos Mortos-Vivos diminuem."
+      ]},
+      {"h": "Selva"},
+      {"p": "O Raptor Carmesim e os Raptores pequenos têm mais vida. É uma mudança pequena, mas deixa um pouco mais lentos os caçadores que dependem de limpar esse acampamento muito rápido."},
+      {"h": "Nossa análise"},
+      {"p": "Mesmo depois de dois nerfs, Hwei continua no topo da lista de meio do WildRiftCore, então mantenha ele na sua lista de banimentos. A perda de escala da Senna pesa mais em partidas longas, o que deixa encantadoras como Sona e suportes resistentes como Braum mais atraentes. O Statikk Shiv mais barato ajuda atiradores como Twitch e Kog'Maw, dois dos que mais subiram em taxa de vitória nos últimos 30 dias. Nosso assistente de draft e a tier list já seguem este patch."}
+    ]
+  }
+}

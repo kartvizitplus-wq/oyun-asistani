@@ -1,0 +1,161 @@
+{
+  "type": "patch",
+  "slug": "freefire-patch-ob55",
+  "date": "2026-10-19",
+  "game": "freefire",
+  "sources": [
+    "Garena OB55 patch notes (summaries: MMO Culture, ar-pay.com)",
+    "Game Overdrive OB55 character tier list (September 30, 2026)"
+  ],
+  "title": {
+    "tr": "Free Fire OB55: Kenta yeniden tasarlandı, Morse ve Luna zayıfladı, dört yeni silah geldi",
+    "en": "Free Fire OB55: Kenta reworked, Morse and Luna nerfed, four new guns added",
+    "id": "Free Fire OB55: Kenta dirombak, Morse dan Luna di-nerf, empat senjata baru hadir",
+    "es": "Free Fire OB55: Kenta renovado, Morse y Luna debilitados y cuatro armas nuevas",
+    "pt": "Free Fire OB55: Kenta reformulado, Morse e Luna enfraquecidos e quatro armas novas"
+  },
+  "summary": {
+    "tr": "OB55 ile Kenta Gloo duvarlarını delen bir fırtına yeteneği aldı, Wukong'un bekleme süresi kısaldı. 1 Ekim'de M7, Skorp, RPK ve Hawk geldi, silah dengesi değişti.",
+    "en": "OB55 gives Kenta a tempest that goes through Gloo Walls and shortens Wukong's cooldown. On October 1 the M7, Skorp, RPK and Hawk arrived with a broad weapon rebalance.",
+    "id": "OB55 memberi Kenta skill badai yang menembus Gloo Wall dan memangkas cooldown Wukong. Pada 1 Oktober hadir M7, Skorp, RPK, dan Hawk beserta penyeimbangan senjata.",
+    "es": "La OB55 da a Kenta una tempestad que atraviesa los Gloo Walls y acorta el enfriamiento de Wukong. El 1 de octubre llegaron M7, Skorp, RPK y Hawk con un gran ajuste de armas.",
+    "pt": "A OB55 dá ao Kenta uma tempestade que atravessa Gel Walls e reduz a recarga do Wukong. Em 1º de outubro chegaram M7, Skorp, RPK e Hawk com um grande ajuste de armas."
+  },
+  "body": {
+    "tr": [
+      {"p": "Garena'nın OB55 güncellemesi eylül ortasında yayınlandı. Silah tarafındaki değişiklikler ise yeni Clash Squad sezonuyla birlikte 1 Ekim'de devreye girdi. Bu yazıda karakter, silah ve mod değişikliklerini topladık."},
+      {"h": "Karakterler"},
+      {"ul": [
+        "Kenta (yeniden tasarım): Eski savunma yeteneği yerine ileri doğru 8 saniye ilerleyen bir fırtına gönderiyor. Fırtına Gloo duvarlarından geçiyor ve çarptığı rakibe 25 hasar veriyor. Yeteneği tekrar kullanınca Kenta fırtınanın olduğu yere ışınlanıyor ve 5 saniye boyunca %20 hasar azaltma kazanıyor. Bekleme süresi 45 saniye.",
+        "Wukong (güçlendirme): Dönüşüm bekleme süresi 90'dan 75 saniyeye indi.",
+        "Morse (zayıflatma): Azami görünmezlik süresi 15'ten 13 saniyeye düştü; görünmezken nişan yardımı onu 12 metreden algılayabiliyor (önceden 4 metre).",
+        "Luna (zayıflatma): Ateş hızı bonusu %8'den %5'e indi. Rakibe isabetten sonra hareket hızına dönüşme özelliği duruyor.",
+        "Super Bonfire eşyasının EP yenilemesi saniyede 20'den 10'a, ateş arası kısaltması %15'ten %8'e düştü. Jammer'ın algılama engelleme gücü arttı."
+      ]},
+      {"h": "Yeni silahlar ve silah dengesi (1 Ekim)"},
+      {"ul": [
+        "Yeni silahlar: M7 (taarruz tüfeği), Skorp (hafif makineli), RPK (hafif makineli tüfek) ve Hawk (keskin nişancı). Battle Royale'de yerden veya silah raflarından çıkıyorlar, Clash Squad mağazasında 1.500-1.700 CS parasına satılıyorlar.",
+        "Hafif makineliler (MP5, MAC10, MP40, P90, UMP, Vector) ateş ederken daha hızlı hareket ediyor ama etkili menzilleri kısaldı.",
+        "M1887 menzil ve şarjör değiştirme hızı kazandı; M590 menzil kaybetti ama en düşük hasarı arttı.",
+        "Taarruz tüfekleri isabet, zırh delme veya menzil tarafında güçlendi. GROZA ateş ederken %50 daha hızlı hareket ediyor.",
+        "Keskin nişancı ve nişancı tüfekleriyle hareket hızı düştü.",
+        "Makineli tüfekler hareket ve şarjör hızı kaybetti; buna karşın M249 %30 hasar, M60 %25 ateş hızı kazandı, Kord'un şarjörü 50'den 60 mermiye çıktı."
+      ]},
+      {"h": "Mod değişiklikleri"},
+      {"ul": [
+        "Battle Royale: Dört normal havadan ikmal maçın yaklaşık 160. saniyesinde başlıyor; yaklaşık 410. saniyede iki Savunma ikmali ve bir Ultra ikmal düşüyor. Uyarılar ve harita işaretleri daha belirgin.",
+        "Clash Squad: Yanan alan bırakıp Gloo duvarlarına da hasar veren Alev Bombası ve 10 metre içindeki rakipleri 3 saniye gösteren Sonar Bombası eklendi."
+      ]},
+      {"h": "Bizim yorumumuz"},
+      {"p": "Kenta artık savunmadan çok baskı karakteri: Gloo duvarının arkasındaki rakibe hasar verip ardından yanına ışınlanabildiği için Clash Squad'da duvar savaşlarını açmak için çok uygun. Game Overdrive'ın OB55 listesinde de S kademede. Morse'u seçiyorsan görünmezliği daha kısa ve yakın mesafede fark edilebildiğini unutma. Silah tarafında hafif makinelilerin menzil kaybı yakın dövüş dışında tüfekleri öne çıkarıyor; uzun mesafede GROZA veya M4A1 ile oynamak daha mantıklı. Free Fire kombinasyon aracımızı bu yamaya göre güncelledik."}
+    ],
+    "en": [
+      {"p": "Garena's OB55 update went live in mid-September, and its weapon changes kicked in on October 1 with the new Clash Squad season. Here is a roundup of the character, weapon and mode changes."},
+      {"h": "Characters"},
+      {"ul": [
+        "Kenta (rework): His old defensive skill is replaced by a tempest that travels forward for 8 seconds, passes through Gloo Walls and deals 25 damage to enemies it hits. Recasting teleports Kenta to the tempest and gives him 20% damage reduction for 5 seconds. Cooldown is 45 seconds.",
+        "Wukong (buff): Transformation cooldown drops from 90 to 75 seconds.",
+        "Morse (nerf): Maximum stealth time drops from 15 to 13 seconds, and aim assist can now pick him up from 12 meters while stealthed (was 4 meters).",
+        "Luna (nerf): Rate-of-fire bonus drops from 8% to 5%. Turning that bonus into movement speed after hitting an enemy still works.",
+        "Super Bonfire now restores 10 EP per second instead of 20, and its firing-interval reduction drops from 15% to 8%. The Jammer blocks detection more reliably."
+      ]},
+      {"h": "New guns and weapon balance (October 1)"},
+      {"ul": [
+        "New guns: M7 (assault rifle), Skorp (SMG), RPK (light machine gun) and Hawk (sniper rifle). They spawn as ground loot or in Weapon Racks in Battle Royale and cost 1,500-1,700 CS Cash in the Clash Squad store.",
+        "SMGs (MP5, MAC10, MP40, P90, UMP, Vector) move faster while firing but have a shorter effective range.",
+        "The M1887 gains range and reload speed; the M590 loses range but has a higher minimum damage.",
+        "Assault rifles get better accuracy, armor penetration or range. The GROZA moves 50% faster while firing.",
+        "Sniper and marksman rifles slow you down more.",
+        "Machine guns lose some movement and reload speed, but the M249 gains 30% damage, the M60 25% rate of fire, and the Kord's magazine grows from 50 to 60 rounds."
+      ]},
+      {"h": "Mode changes"},
+      {"ul": [
+        "Battle Royale: Four regular airdrops start around 160 seconds into the match, then two Defense Airdrops and one Ultra Airdrop arrive around 410 seconds, with clearer warnings and map markers.",
+        "Clash Squad: New Flame Grenades leave a burning area that also damages Gloo Walls, and Sonar Grenades reveal enemies within 10 meters for 3 seconds."
+      ]},
+      {"h": "Our take"},
+      {"p": "Kenta is now a pressure pick rather than a defensive one: he can hit an enemy behind a Gloo Wall and then teleport next to them, which makes him great for breaking wall fights in Clash Squad. Game Overdrive's OB55 list has him in S tier. If you play Morse, remember his stealth is shorter and easier to spot up close. On the weapon side, the SMG range loss pushes rifles forward for anything beyond close range, so the GROZA or M4A1 are safer choices at mid distance. Our Free Fire combo tool has been updated for this patch."}
+    ],
+    "id": [
+      {"p": "Update OB55 dari Garena rilis pertengahan September, dan perubahan senjatanya mulai berlaku 1 Oktober bersama season Clash Squad baru. Berikut rangkuman perubahan karakter, senjata, dan mode."},
+      {"h": "Karakter"},
+      {"ul": [
+        "Kenta (rombak): Skill bertahan lamanya diganti badai yang bergerak maju selama 8 detik, menembus Gloo Wall, dan memberi 25 damage ke musuh yang terkena. Jika diaktifkan lagi, Kenta teleport ke badai dan mendapat pengurangan damage 20% selama 5 detik. Cooldown 45 detik.",
+        "Wukong (buff): Cooldown transformasi turun dari 90 ke 75 detik.",
+        "Morse (nerf): Durasi stealth maksimal turun dari 15 ke 13 detik, dan aim assist kini bisa mendeteksinya dari 12 meter saat stealth (sebelumnya 4 meter).",
+        "Luna (nerf): Bonus rate of fire turun dari 8% ke 5%. Bonus itu tetap berubah jadi movement speed setelah mengenai musuh.",
+        "Super Bonfire kini memulihkan 10 EP per detik, bukan 20, dan pengurangan jeda tembaknya turun dari 15% ke 8%. Jammer lebih efektif memblokir deteksi."
+      ]},
+      {"h": "Senjata baru dan penyeimbangan senjata (1 Oktober)"},
+      {"ul": [
+        "Senjata baru: M7 (assault rifle), Skorp (SMG), RPK (light machine gun), dan Hawk (sniper). Muncul sebagai loot tanah atau di Weapon Rack di Battle Royale, dan dijual 1.500-1.700 CS Cash di toko Clash Squad.",
+        "SMG (MP5, MAC10, MP40, P90, UMP, Vector) bergerak lebih cepat saat menembak, tetapi jarak efektifnya lebih pendek.",
+        "M1887 mendapat tambahan jarak dan kecepatan reload; M590 kehilangan jarak tetapi damage minimumnya naik.",
+        "Assault rifle mendapat peningkatan akurasi, armor penetration, atau jarak. GROZA bergerak 50% lebih cepat saat menembak.",
+        "Sniper dan marksman rifle membuat gerakan lebih lambat.",
+        "Machine gun kehilangan sedikit kecepatan gerak dan reload, tetapi M249 mendapat 30% damage, M60 25% rate of fire, dan magasin Kord naik dari 50 ke 60 peluru."
+      ]},
+      {"h": "Perubahan mode"},
+      {"ul": [
+        "Battle Royale: Empat airdrop biasa mulai sekitar detik ke-160, lalu dua Defense Airdrop dan satu Ultra Airdrop datang sekitar detik ke-410, dengan peringatan dan penanda peta yang lebih jelas.",
+        "Clash Squad: Flame Grenade meninggalkan area terbakar yang juga merusak Gloo Wall, dan Sonar Grenade menampilkan musuh dalam radius 10 meter selama 3 detik."
+      ]},
+      {"h": "Pendapat kami"},
+      {"p": "Kenta kini karakter penekan, bukan bertahan: dia bisa melukai musuh di balik Gloo Wall lalu teleport ke dekatnya, sangat cocok untuk membongkar duel tembok di Clash Squad. Daftar OB55 dari Game Overdrive menaruhnya di tier S. Kalau main Morse, ingat stealth-nya lebih singkat dan lebih mudah ketahuan dari dekat. Dari sisi senjata, berkurangnya jarak SMG membuat rifle lebih unggul di luar jarak dekat, jadi GROZA atau M4A1 lebih aman di jarak menengah. Alat kombinasi Free Fire kami sudah diperbarui untuk patch ini."}
+    ],
+    "es": [
+      {"p": "La actualización OB55 de Garena salió a mediados de septiembre y sus cambios de armas entraron el 1 de octubre con la nueva temporada de Clash Squad. Aquí tienes el resumen de personajes, armas y modos."},
+      {"h": "Personajes"},
+      {"ul": [
+        "Kenta (renovación): Su antigua habilidad defensiva se sustituye por una tempestad que avanza durante 8 segundos, atraviesa los Gloo Walls y hace 25 de daño a los enemigos que toca. Al reactivarla, Kenta se teletransporta a la tempestad y obtiene un 20% de reducción de daño durante 5 segundos. Enfriamiento de 45 segundos.",
+        "Wukong (mejora): El enfriamiento de su transformación baja de 90 a 75 segundos.",
+        "Morse (debilitamiento): Su sigilo máximo baja de 15 a 13 segundos, y la asistencia de apuntado lo detecta desde 12 metros mientras está oculto (antes 4).",
+        "Luna (debilitamiento): Su bonificación de cadencia baja del 8% al 5%. Sigue convirtiéndose en velocidad de movimiento tras impactar a un enemigo.",
+        "El Super Bonfire recupera 10 EP por segundo en lugar de 20 y su reducción del intervalo de disparo baja del 15% al 8%. El Jammer bloquea mejor la detección."
+      ]},
+      {"h": "Armas nuevas y equilibrio (1 de octubre)"},
+      {"ul": [
+        "Armas nuevas: M7 (fusil de asalto), Skorp (subfusil), RPK (ametralladora ligera) y Hawk (francotirador). Aparecen en el suelo o en los Weapon Racks de Battle Royale y cuestan 1.500-1.700 CS Cash en la tienda de Clash Squad.",
+        "Los subfusiles (MP5, MAC10, MP40, P90, UMP, Vector) se mueven más rápido al disparar, pero su alcance efectivo es menor.",
+        "La M1887 gana alcance y velocidad de recarga; la M590 pierde alcance pero sube su daño mínimo.",
+        "Los fusiles de asalto mejoran en precisión, penetración de armadura o alcance. La GROZA se mueve un 50% más rápido al disparar.",
+        "Los rifles de francotirador y de tirador ralentizan más al jugador.",
+        "Las ametralladoras pierden algo de movilidad y recarga, pero la M249 gana un 30% de daño, la M60 un 25% de cadencia y el cargador de la Kord pasa de 50 a 60 balas."
+      ]},
+      {"h": "Cambios de modos"},
+      {"ul": [
+        "Battle Royale: Cuatro suministros aéreos normales empiezan hacia el segundo 160 de la partida; hacia el 410 llegan dos de Defensa y uno Ultra, con avisos y marcas de mapa más claros.",
+        "Clash Squad: Las Granadas de Fuego dejan una zona en llamas que también daña los Gloo Walls, y las Granadas Sonar revelan enemigos a 10 metros durante 3 segundos."
+      ]},
+      {"h": "Nuestra opinión"},
+      {"p": "Kenta pasa de defensivo a personaje de presión: puede dañar a un rival tras un Gloo Wall y aparecer a su lado, lo que lo hace ideal para romper peleas de muros en Clash Squad. La lista OB55 de Game Overdrive lo coloca en el tier S. Si juegas con Morse, recuerda que su sigilo dura menos y se detecta antes de cerca. En armas, la pérdida de alcance de los subfusiles favorece a los fusiles fuera del cuerpo a cuerpo, así que la GROZA o el M4A1 son más seguros a media distancia. Nuestra herramienta de combinaciones de Free Fire ya está actualizada."}
+    ],
+    "pt": [
+      {"p": "A atualização OB55 da Garena saiu em meados de setembro, e as mudanças de armas entraram em 1º de outubro com a nova temporada do Contra Squad. Veja o resumo de personagens, armas e modos."},
+      {"h": "Personagens"},
+      {"ul": [
+        "Kenta (reformulação): A antiga habilidade defensiva vira uma tempestade que avança por 8 segundos, atravessa Gel Walls e causa 25 de dano em quem atinge. Ao reativar, Kenta se teletransporta para a tempestade e ganha 20% de redução de dano por 5 segundos. Recarga de 45 segundos.",
+        "Wukong (buff): A recarga da transformação cai de 90 para 75 segundos.",
+        "Morse (nerf): A furtividade máxima cai de 15 para 13 segundos, e a mira assistida passa a detectá-lo a 12 metros enquanto está furtivo (antes 4).",
+        "Luna (nerf): O bônus de cadência cai de 8% para 5%. Ele continua virando velocidade de movimento depois de acertar um inimigo.",
+        "O Super Bonfire recupera 10 EP por segundo em vez de 20, e a redução do intervalo de disparo cai de 15% para 8%. O Jammer bloqueia a detecção com mais eficiência."
+      ]},
+      {"h": "Armas novas e balanceamento (1º de outubro)"},
+      {"ul": [
+        "Armas novas: M7 (fuzil de assalto), Skorp (submetralhadora), RPK (metralhadora leve) e Hawk (rifle de precisão). Aparecem no chão ou nos Weapon Racks do Battle Royale e custam 1.500-1.700 CS Cash na loja do Contra Squad.",
+        "Submetralhadoras (MP5, MAC10, MP40, P90, UMP, Vector) andam mais rápido atirando, mas têm alcance efetivo menor.",
+        "A M1887 ganha alcance e velocidade de recarga; a M590 perde alcance, mas o dano mínimo sobe.",
+        "Fuzis de assalto melhoram em precisão, penetração de armadura ou alcance. A GROZA anda 50% mais rápido atirando.",
+        "Rifles de precisão e de atirador deixam o jogador mais lento.",
+        "Metralhadoras perdem um pouco de movimento e recarga, mas a M249 ganha 30% de dano, a M60 25% de cadência e o pente da Kord vai de 50 para 60 balas."
+      ]},
+      {"h": "Mudanças nos modos"},
+      {"ul": [
+        "Battle Royale: Quatro suprimentos aéreos normais começam por volta dos 160 segundos de partida; perto dos 410 segundos chegam dois de Defesa e um Ultra, com avisos e marcações mais claros.",
+        "Contra Squad: Granadas de Fogo deixam uma área em chamas que também danifica Gel Walls, e Granadas Sonar revelam inimigos a 10 metros por 3 segundos."
+      ]},
+      {"h": "Nossa análise"},
+      {"p": "Kenta deixou de ser defensivo e virou personagem de pressão: ele atinge quem está atrás de uma Gel Wall e depois aparece ao lado, ótimo para quebrar trocas de parede no Contra Squad. A lista OB55 da Game Overdrive coloca ele no tier S. Se você joga de Morse, lembre que a furtividade dura menos e é percebida mais cedo de perto. Nas armas, a perda de alcance das submetralhadoras favorece os fuzis fora do corpo a corpo, então GROZA ou M4A1 são escolhas mais seguras na média distância. Nossa ferramenta de combinações de Free Fire já foi atualizada."}
+    ]
+  }
+}
