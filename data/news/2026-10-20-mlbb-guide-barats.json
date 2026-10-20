@@ -1,0 +1,162 @@
+{
+  "type": "guide",
+  "slug": "mlbb-guide-barats",
+  "date": "2026-10-20",
+  "game": "mlbb",
+  "hero": "Barats",
+  "sources": [
+    "mlbbhub.com Barats build and matchup data (patch 2.2.16a, rank stats October 19, 2026)",
+    "mlbb.io Barats community builds (August 1 to October 13, 2026)"
+  ],
+  "title": {
+    "tr": "Barats rehberi ve counter (2.2.16a): orman dizilimi, amblem ve karşı seçimler",
+    "en": "Barats guide and counters (2.2.16a): jungle build, emblem and matchups",
+    "id": "Panduan dan counter Barats (2.2.16a): build jungle, emblem, dan matchup",
+    "es": "Guía y counters de Barats (2.2.16a): build de jungla, emblema y enfrentamientos",
+    "pt": "Guia e counters de Barats (2.2.16a): build de selva, emblema e confrontos"
+  },
+  "summary": {
+    "tr": "Barats yük topladıkça büyüyen bir tank-dövüşçü. Thunder Belt'li orman dizilimi, duvara çekme kombosu, ona karşı X.Borg ve Yve gibi seçimler ve onun iyi olduğu rakipler.",
+    "en": "Barats is a tank-fighter who grows as he stacks. The Thunder Belt jungle build, the wall-pull combo, picks like X.Borg and Yve against him, and the matchups he wins.",
+    "id": "Barats adalah tank-fighter yang membesar seiring stack-nya. Build jungle Thunder Belt, combo tarik ke dinding, pick seperti X.Borg dan Yve, serta matchup yang dia menangkan.",
+    "es": "Barats es un tanque-luchador que crece al acumular cargas. La build de jungla con Thunder Belt, el combo contra la pared, counters como X.Borg e Yve y a quién gana.",
+    "pt": "Barats é um tanque-lutador que cresce ao acumular cargas. A build de selva com Thunder Belt, o combo na parede, counters como X.Borg e Yve e contra quem ele vence."
+  },
+  "body": {
+    "tr": [
+      {"h": "Rol ve oyun tarzı"},
+      {"p": "Barats, dinozoru Detona'nın sırtında savaşan bir tank-dövüşçü; ormanda ve EXP koridorunda oynanıyor. Pasifi Big Guy, becerileriyle yük topladıkça onu büyütüp daha dayanıklı hale getiriyor. mlbbhub'ın 19 Ekim verisinde %51,9 kazanma, %0,7 seçilme ve yalnızca %4,2 yasaklanma oranıyla A kademede; yani çoğu maçta rahatça alınabiliyor."},
+      {"h": "Önerilen dizilim ve amblem"},
+      {"ul": [
+        "Eşyalar (orman): Tough Boots (Dayanıklı Botlar), War Axe (Savaş Baltası), Thunder Belt, Brute Force Breastplate, Guardian Helmet, Immortality (Ölümsüzlük). mlbb.io'daki ağustos-ekim topluluk dizilimlerinde de Tough Boots, War Axe, Thunder Belt ve Brute Force Breastplate en çok seçilenler.",
+        "Esnek değişimler: Saldırı hızlı taşıyıcılara, iyileştiricilere veya kalkanlı ön sıraya karşı Immortality yerine Dominance Ice (Hakimiyet Buzu); onu erkenden indirebilecek bir büyücüye karşı Athena's Shield; ilk iki hasar kaynağı fizikselse Warrior Boots.",
+        "Amblem: Ortak (Common) set, Thrill, Seasoned Hunter ve War Cry.",
+        "Büyü: Ormanda Retribution (Retri). EXP koridorunda oyuncular çoğunlukla Flicker alıyor."
+      ]},
+      {"h": "Kombo ve önemli ipuçları"},
+      {"ul": [
+        "Birinci beceri (So-Called Teamwork) ile yükleri koru ve yaklaş, ikinci beceri (Missile Expert) ile rakipleri kendine çek, ulti (Detona's Welcome) ile kaçışlarını kes ve normal saldırılarla bitir.",
+        "Missile Expert rakibi sana doğru çektiği için hedefi duvara ya da başka bir kahramana doğru sürükle; ulti hedef bir engele çarptığında en verimli hâlini alıyor, boş alana kullanma.",
+        "Purify kullanan rakiplere ultiyi hemen atma: önce Missile Expert veya takım arkadaşının kontrolüyle Purify'ı harcat.",
+        "Yük sayın yüksekken Barats'ın boyutu Lord çukurunun girişini, güçlendirme kamplarının ağzını ve üs kapılarını tıkayabilir."
+      ]},
+      {"h": "Barats'a karşı ne seçmeli?"},
+      {"ul": [
+        "mlbbhub istatistiklerinde en iyi cevaplar X.Borg (+5,4 puan), Yve (+4,3), Gord (+3,6), Alice (+3,5) ve Valir (+3,0). Sitemizin motoru da X.Borg'u en iyi seçimler arasında gösteriyor.",
+        "Ortak nokta: Barats'ı uzaktan oyalayan büyücüler ve tanklara karşı yüzdelik hasar veren dövüşçüler. Eşya olarak fiziksel saldırılarına karşı Antique Cuirass, ön sıradaki dayanıklılığını kırmak için Malefic Roar veya Divine Glaive işe yarar."
+      ]},
+      {"h": "Barats kimlere karşı iyi?"},
+      {"p": "mlbbhub verisine göre Silvanna (+3,4), Alucard (+3,2), Phoveus (+3,2), Argus (+3,0), Lolita, Brody ve Eudora'ya karşı avantajlı. Özellikle Silvanna, Alucard ve Phoveus gibi yakın dövüşe girmek zorunda olan kahramanlar, onun çekme ve duvara sıkıştırma kombosuna karşı zorlanıyor."},
+      {"h": "Son durum"},
+      {"p": "2.2.16 ve 2.2.16a yamalarında Barats'a doğrudan bir değişiklik gelmedi. Son 40 günde kazanma oranı 0,8 puan geriledi ama rütbeler arasında %51-52 bandında istikrarlı. Az yasaklandığı için ormanda Aulus veya Hirara yasaklıyken güvenilir bir seçenek."}
+    ],
+    "en": [
+      {"h": "Role and playstyle"},
+      {"p": "Barats is a tank-fighter who rides his dinosaur Detona, played in the jungle and the EXP lane. His passive, Big Guy, makes him bigger and tougher as his skills build stacks. In mlbbhub's October 19 data he is A tier with a 51.9% win rate, a 0.7% pick rate and only a 4.2% ban rate, so he is usually free to pick."},
+      {"h": "Recommended build and emblem"},
+      {"ul": [
+        "Items (jungle): Tough Boots, War Axe, Thunder Belt, Brute Force Breastplate, Guardian Helmet, Immortality. Community builds on mlbb.io from August to October also favor Tough Boots, War Axe, Thunder Belt and Brute Force Breastplate.",
+        "Flex swaps: Dominance Ice over Immortality against attack-speed carries, healers or shield-heavy front lines; Athena's Shield against a mage who can remove him early; Warrior Boots when the first two damage sources are physical.",
+        "Emblem: Common set with Thrill, Seasoned Hunter and War Cry.",
+        "Battle spell: Retribution in the jungle. In the EXP lane most players take Flicker."
+      ]},
+      {"h": "Combo and key tips"},
+      {"ul": [
+        "Keep stacks up and close in with Skill 1 (So-Called Teamwork), pull enemies to you with Skill 2 (Missile Expert), cut off their escape with the ultimate (Detona's Welcome) and finish with basic attacks.",
+        "Missile Expert drags targets toward you, so pull them into a wall or another hero; the ultimate is at its best when the target hits terrain, so never cast it into open space.",
+        "Against Purify users, hold the ultimate: force Purify out first with Missile Expert or an ally's crowd control.",
+        "At high stacks Barats is big enough to block the Lord pit, buff camp entrances and base gates."
+      ]},
+      {"h": "What to pick against Barats"},
+      {"ul": [
+        "In mlbbhub's statistics the best answers are X.Borg (+5.4 points), Yve (+4.3), Gord (+3.6), Alice (+3.5) and Valir (+3.0). Our engine also lists X.Borg among the top picks.",
+        "The common thread: mages who kite him from range and fighters with percentage damage against tanks. For items, Antique Cuirass against his physical damage, and Malefic Roar or Divine Glaive to break through his bulk."
+      ]},
+      {"h": "Who Barats is good against"},
+      {"p": "According to mlbbhub he has the edge against Silvanna (+3.4), Alucard (+3.2), Phoveus (+3.2), Argus (+3.0), Lolita, Brody and Eudora. Melee heroes such as Silvanna, Alucard and Phoveus struggle most against his pull-into-the-wall combo."},
+      {"h": "Current state"},
+      {"p": "Barats had no direct changes in 2.2.16 or 2.2.16a. His win rate slipped 0.8 points over the last 40 days but stays steady at 51-52% across ranks. Because he is rarely banned, he is a reliable jungle option when Aulus or Hirara are banned."}
+    ],
+    "id": [
+      {"h": "Role dan gaya bermain"},
+      {"p": "Barats adalah tank-fighter yang menunggangi dinosaurusnya, Detona, dan dimainkan di jungle serta EXP lane. Pasifnya, Big Guy, membuatnya makin besar dan tebal seiring skill-nya mengumpulkan stack. Di data mlbbhub per 19 Oktober, dia berada di tier A dengan win rate 51,9%, pick rate 0,7%, dan ban rate hanya 4,2%, jadi biasanya bebas dipilih."},
+      {"h": "Build dan emblem yang disarankan"},
+      {"ul": [
+        "Item (jungle): Tough Boots, War Axe, Thunder Belt, Brute Force Breastplate, Guardian Helmet, Immortality. Build komunitas di mlbb.io dari Agustus sampai Oktober juga paling sering memakai Tough Boots, War Axe, Thunder Belt, dan Brute Force Breastplate.",
+        "Alternatif: Dominance Ice menggantikan Immortality melawan carry attack speed, healer, atau frontline penuh shield; Athena's Shield melawan mage yang bisa menghapusnya lebih awal; Warrior Boots jika dua sumber damage utama musuh physical.",
+        "Emblem: Common dengan Thrill, Seasoned Hunter, dan War Cry.",
+        "Battle spell: Retribution di jungle. Di EXP lane kebanyakan pemain memakai Flicker."
+      ]},
+      {"h": "Combo dan tips penting"},
+      {"ul": [
+        "Jaga stack dan dekati musuh dengan Skill 1 (So-Called Teamwork), tarik musuh dengan Skill 2 (Missile Expert), tutup jalan kaburnya dengan ultimate (Detona's Welcome), lalu habisi dengan basic attack.",
+        "Missile Expert menarik target ke arahmu, jadi tarik mereka ke dinding atau hero lain; ultimate paling efektif saat target menabrak terrain, jangan dipakai di ruang terbuka.",
+        "Melawan pengguna Purify, tahan ultimate: paksa Purify keluar dulu dengan Missile Expert atau crowd control rekan.",
+        "Saat stack tinggi, ukuran Barats bisa menutup pintu pit Lord, jalan masuk camp buff, dan gerbang base."
+      ]},
+      {"h": "Pick untuk melawan Barats"},
+      {"ul": [
+        "Di statistik mlbbhub, jawaban terbaik adalah X.Borg (+5,4 poin), Yve (+4,3), Gord (+3,6), Alice (+3,5), dan Valir (+3,0). Mesin kami juga menempatkan X.Borg di antara pick teratas.",
+        "Kesamaannya: mage yang menahannya dari jauh dan fighter dengan damage persentase melawan tank. Untuk item, Antique Cuirass melawan damage physical-nya, dan Malefic Roar atau Divine Glaive untuk menembus ketebalannya."
+      ]},
+      {"h": "Barats kuat melawan siapa"},
+      {"p": "Menurut mlbbhub, dia unggul melawan Silvanna (+3,4), Alucard (+3,2), Phoveus (+3,2), Argus (+3,0), Lolita, Brody, dan Eudora. Hero jarak dekat seperti Silvanna, Alucard, dan Phoveus paling kesulitan melawan combo tarik ke dindingnya."},
+      {"h": "Kondisi saat ini"},
+      {"p": "Barats tidak mendapat perubahan langsung di 2.2.16 maupun 2.2.16a. Win rate-nya turun 0,8 poin dalam 40 hari terakhir tetapi stabil di 51-52% di semua rank. Karena jarang di-ban, dia pilihan jungle yang andal saat Aulus atau Hirara di-ban."}
+    ],
+    "es": [
+      {"h": "Rol y estilo de juego"},
+      {"p": "Barats es un tanque-luchador que monta a su dinosaurio Detona y se juega en la jungla y en la línea EXP. Su pasiva, Big Guy, lo hace más grande y resistente a medida que sus habilidades acumulan cargas. En los datos de mlbbhub del 19 de octubre está en tier A con un 51,9% de victorias, un 0,7% de selección y solo un 4,2% de baneos, así que casi siempre está disponible."},
+      {"h": "Build y emblema recomendados"},
+      {"ul": [
+        "Objetos (jungla): Tough Boots, War Axe, Thunder Belt, Brute Force Breastplate, Guardian Helmet, Immortality. Las builds de la comunidad en mlbb.io de agosto a octubre también priorizan Tough Boots, War Axe, Thunder Belt y Brute Force Breastplate.",
+        "Cambios opcionales: Dominance Ice en lugar de Immortality contra tiradores de velocidad de ataque, curadores o primeras líneas con escudos; Athena's Shield contra un mago capaz de eliminarlo pronto; Warrior Boots si las dos primeras fuentes de daño son físicas.",
+        "Emblema: Común con Thrill, Seasoned Hunter y War Cry.",
+        "Hechizo: Retribution en la jungla. En la línea EXP la mayoría lleva Flicker."
+      ]},
+      {"h": "Combo y consejos clave"},
+      {"ul": [
+        "Mantén las cargas y acércate con la habilidad 1 (So-Called Teamwork), atrae a los enemigos con la 2 (Missile Expert), corta su huida con la definitiva (Detona's Welcome) y remata con ataques básicos.",
+        "Missile Expert arrastra al objetivo hacia ti, así que llévalo contra una pared u otro héroe; la definitiva rinde más cuando el objetivo choca con el terreno, nunca la lances al vacío.",
+        "Contra rivales con Purify, guarda la definitiva: haz que gasten Purify antes con Missile Expert o el control de un aliado.",
+        "Con muchas cargas, el tamaño de Barats bloquea la entrada del foso del Lord, los campamentos de bufos y las puertas de la base."
+      ]},
+      {"h": "Qué elegir contra Barats"},
+      {"ul": [
+        "En las estadísticas de mlbbhub, las mejores respuestas son X.Borg (+5,4 puntos), Yve (+4,3), Gord (+3,6), Alice (+3,5) y Valir (+3,0). Nuestro motor también incluye a X.Borg entre los mejores picks.",
+        "Lo que tienen en común: magos que lo frenan a distancia y luchadores con daño porcentual contra tanques. En objetos, Antique Cuirass contra su daño físico, y Malefic Roar o Divine Glaive para atravesar su resistencia."
+      ]},
+      {"h": "Contra quién es bueno Barats"},
+      {"p": "Según mlbbhub tiene ventaja contra Silvanna (+3,4), Alucard (+3,2), Phoveus (+3,2), Argus (+3,0), Lolita, Brody y Eudora. Los héroes cuerpo a cuerpo como Silvanna, Alucard y Phoveus son los que más sufren su combo de atraer y estampar contra la pared."},
+      {"h": "Situación actual"},
+      {"p": "Barats no tuvo cambios directos en el 2.2.16 ni en el 2.2.16a. Su tasa de victorias bajó 0,8 puntos en los últimos 40 días, pero se mantiene estable en el 51-52% en todos los rangos. Como casi no se banea, es una opción fiable en la jungla cuando Aulus o Hirara están baneados."}
+    ],
+    "pt": [
+      {"h": "Função e estilo de jogo"},
+      {"p": "Barats é um tanque-lutador que monta o dinossauro Detona e é jogado na selva e na rota EXP. A passiva, Big Guy, deixa ele maior e mais resistente conforme as habilidades acumulam cargas. Nos dados do mlbbhub de 19 de outubro, ele está no tier A com 51,9% de vitórias, 0,7% de escolha e só 4,2% de banimentos, então quase sempre está livre."},
+      {"h": "Build e emblema recomendados"},
+      {"ul": [
+        "Itens (selva): Tough Boots, War Axe, Thunder Belt, Brute Force Breastplate, Guardian Helmet, Immortality. As builds da comunidade no mlbb.io de agosto a outubro também priorizam Tough Boots, War Axe, Thunder Belt e Brute Force Breastplate.",
+        "Trocas: Dominance Ice no lugar de Immortality contra atiradores de velocidade de ataque, curadores ou linhas de frente com escudo; Athena's Shield contra um mago que pode eliminá-lo cedo; Warrior Boots quando as duas primeiras fontes de dano forem físicas.",
+        "Emblema: Comum com Thrill, Seasoned Hunter e War Cry.",
+        "Feitiço: Retribution na selva. Na rota EXP a maioria usa Flicker."
+      ]},
+      {"h": "Combo e dicas principais"},
+      {"ul": [
+        "Mantenha as cargas e chegue perto com a habilidade 1 (So-Called Teamwork), puxe os inimigos com a 2 (Missile Expert), corte a fuga com a ultimate (Detona's Welcome) e finalize com ataques básicos.",
+        "Missile Expert puxa o alvo até você, então arraste ele contra uma parede ou outro herói; a ultimate rende mais quando o alvo bate no terreno, nunca use em espaço aberto.",
+        "Contra quem tem Purify, segure a ultimate: faça o rival gastar Purify antes com Missile Expert ou o controle de um aliado.",
+        "Com muitas cargas, o tamanho do Barats bloqueia a entrada do Lord, dos acampamentos de buff e os portões da base."
+      ]},
+      {"h": "O que escolher contra Barats"},
+      {"ul": [
+        "Nas estatísticas do mlbbhub, as melhores respostas são X.Borg (+5,4 pontos), Yve (+4,3), Gord (+3,6), Alice (+3,5) e Valir (+3,0). Nosso motor também coloca X.Borg entre os melhores picks.",
+        "O ponto em comum: magos que seguram ele à distância e lutadores com dano percentual contra tanques. Nos itens, Antique Cuirass contra o dano físico, e Malefic Roar ou Divine Glaive para atravessar a resistência dele."
+      ]},
+      {"h": "Contra quem Barats é bom"},
+      {"p": "Segundo o mlbbhub, ele leva vantagem contra Silvanna (+3,4), Alucard (+3,2), Phoveus (+3,2), Argus (+3,0), Lolita, Brody e Eudora. Heróis corpo a corpo como Silvanna, Alucard e Phoveus são os que mais sofrem com o combo de puxar e prensar na parede."},
+      {"h": "Situação atual"},
+      {"p": "Barats não teve mudanças diretas no 2.2.16 nem no 2.2.16a. A taxa de vitória caiu 0,8 ponto nos últimos 40 dias, mas segue estável em 51-52% em todos os ranks. Como quase não é banido, é uma opção confiável na selva quando Aulus ou Hirara estão banidos."}
+    ]
+  }
+}

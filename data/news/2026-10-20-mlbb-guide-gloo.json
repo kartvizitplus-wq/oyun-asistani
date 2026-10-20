@@ -1,0 +1,168 @@
+{
+  "type": "guide",
+  "slug": "mlbb-guide-gloo",
+  "date": "2026-10-20",
+  "game": "mlbb",
+  "hero": "Gloo",
+  "sources": [
+    "mlbbhub.com Gloo build and matchup data (patch 2.2.16a, rank stats October 20, 2026)",
+    "esports.gg Gloo build guide",
+    "mlbbhub.com tier list (October 16, 2026)"
+  ],
+  "title": {
+    "tr": "Gloo rehberi ve counter (2.2.16a): dizilim, amblem, kombo ve karşı seçimler",
+    "en": "Gloo guide and counters (2.2.16a): build, emblem, combo and matchups",
+    "id": "Panduan dan counter Gloo (2.2.16a): build, emblem, combo, dan matchup",
+    "es": "Guía y counters de Gloo (2.2.16a): build, emblema, combo y enfrentamientos",
+    "pt": "Guia e counters de Gloo (2.2.16a): build, emblema, combo e confrontos"
+  },
+  "summary": {
+    "tr": "Gloo S kademede ve yüksek rütbelerde sık yasaklanıyor. Güncel tank dizilimi, Ortak amblem, yapışma kombosu, ona karşı en iyi seçimler ve onun ezdiği kahramanlar.",
+    "en": "Gloo is S tier and a frequent ban in high ranks. The current tank build, Common emblem, the attach combo, the best picks against him and the heroes he beats.",
+    "id": "Gloo ada di tier S dan sering di-ban di rank tinggi. Build tank terbaru, emblem Common, combo attach, pick terbaik melawannya, dan hero yang dia kalahkan.",
+    "es": "Gloo está en tier S y se banea mucho en rangos altos. La build de tanque actual, el emblema Común, el combo de adherirse, los mejores counters y a quién vence.",
+    "pt": "Gloo está no tier S e é muito banido nos ranks altos. A build de tanque atual, o emblema Comum, o combo de grudar, os melhores counters e quem ele vence."
+  },
+  "body": {
+    "tr": [
+      {"h": "Rol ve oyun tarzı"},
+      {"p": "Gloo, roam ve EXP koridorunda oynanan bir tank. Becerileriyle rakiplere yapışkanlık yükü bırakır; bu yükler rakibi yavaşlatır ve Gloo'ya verdikleri hasarı azaltır. Ultisiyle bir rakibin üstüne yapışır ve aldığı hasarın bir kısmını ona aktarır. mlbbhub'ın 20 Ekim verisine göre %54,1 kazanma ve %38,2 yasaklanma oranıyla S kademede; Legend ve Mythic'te yasaklanma oranı %40-50 arasında."},
+      {"h": "Önerilen dizilim ve amblem"},
+      {"ul": [
+        "Eşyalar: Tough Boots (Dayanıklı Botlar), Cursed Helmet (Lanetli Miğfer), Glowing Wand, Oracle (Kahin), Antique Cuirass (Antik Zırh), Immortality (Ölümsüzlük).",
+        "Esnek değişimler: Patlayıcı büyücüye karşı Antique Cuirass yerine Athena's Shield; sürekli büyü hasarına karşı Radiant Armor; kontrolü az, fiziksel ağırlıklı EXP rakiplerine karşı Warrior Boots. Takımında iyileştirici yoksa Glowing Wand yerine Concentrated Energy düşünülebilir.",
+        "Amblem: Ortak (Common) set, Agility, Wilderness Blessing ve Impure Rage.",
+        "Büyü: Flicker."
+      ]},
+      {"h": "Kombo ve önemli ipuçları"},
+      {"ul": [
+        "Birinci (Slam, Slam) ve ikinci (Spread-Spread) beceriyle yaklaşıp rakipleri kısa süre sabitle; becerilerin her isabeti yapışkanlık yükü ekler.",
+        "Ultiyi en çok yük taşıyan rakibe kullan: yapıştıktan sonra onu takımına doğru sürükle, birinci beceri yenilenince tekrar kullan.",
+        "Yapıştığın rakip ölürse ultinin bekleme süresi ciddi şekilde kısalır; aynı savaşta ikinci kez yapışabilirsin.",
+        "İkinci becerinin atılmasını Franco'nun kancası veya Saber ve Lolita'nın ultileri gibi hedefe kilitlenen girişlerden kaçmak için zamanla.",
+        "Birinci becerinin bıraktığı balçığı Kaplumbağa çukuru yakınındaki çalılara atarak ucuz görüş elde edebilirsin."
+      ]},
+      {"h": "Gloo'ya karşı ne seçmeli?"},
+      {"ul": [
+        "mlbbhub istatistiklerinde ona karşı en yüksek kazanma farkı Faramis (+7,0 puan), Moskov (+4,5), Natan, Alice, Lunox ve Masha'da. Sitemizin motoru da Masha, Aulus ve X.Borg'u öne çıkarıyor; Masha ve Aulus iki listede de var.",
+        "Eşya olarak: Gloo'nun iyileşmesini düşürmek için fiziksel kahramanlarda Sea Halberd, büyücülerde Glowing Wand, tanklarda Dominance Ice işe yarar."
+      ]},
+      {"h": "Gloo kimlere karşı iyi?"},
+      {"p": "mlbbhub verisinde Aamon (+4,4), Jawhead (+3,7), Johnson, Lesley ve Karina'ya karşı belirgin avantajı var. Yavaşlatma ve sabitleme becerileri, atılmayla giren suikastçıları ve dalış yapan kahramanları cezalandırıyor; motorumuz da onu hareketli kahramanlara karşı güçlü gösteriyor."},
+      {"h": "Son değişiklikler"},
+      {"p": "2.2.16a'da Gloo'ya dokunulmadı. Daha önce 2.1.61'de yük başına hasar azaltması, 2.1.88'de birinci becerinin hasarı ve yapışıkken aldığı iyileştirme kırpılmıştı. Buna rağmen kazanma oranı Mythical Glory ve üstünde bile %52'nin üzerinde."}
+    ],
+    "en": [
+      {"h": "Role and playstyle"},
+      {"p": "Gloo is a tank played in the roam role and the EXP lane. His skills leave Sticky stacks on enemies, which slow them and reduce the damage they deal to him. His ultimate attaches him to an enemy and shares part of the damage he takes with that target. In mlbbhub's October 20 data he is S tier with a 54.1% win rate and a 38.2% ban rate, rising to 40-50% bans in Legend and Mythic."},
+      {"h": "Recommended build and emblem"},
+      {"ul": [
+        "Items: Tough Boots, Cursed Helmet, Glowing Wand, Oracle, Antique Cuirass, Immortality.",
+        "Flex swaps: Athena's Shield over Antique Cuirass against a burst mage; Radiant Armor against steady magic damage; Warrior Boots against physical EXP laners with little crowd control. Without a healer on your team, Concentrated Energy can replace Glowing Wand.",
+        "Emblem: Common set with Agility, Wilderness Blessing and Impure Rage.",
+        "Battle spell: Flicker."
+      ]},
+      {"h": "Combo and key tips"},
+      {"ul": [
+        "Close in with Skill 1 (Slam, Slam) and Skill 2 (Spread-Spread) to briefly lock enemies down; every skill hit adds a Sticky stack.",
+        "Ult the enemy with the most stacks, drag them toward your team, and use Skill 1 again as soon as it refreshes.",
+        "If the enemy you are attached to dies, your ultimate cooldown drops sharply, so you can attach a second time in the same fight.",
+        "Time Skill 2's dash to dodge lock-on engages such as Franco's hook or the Saber and Lolita ultimates.",
+        "Drop Skill 1's goo in the brush near the Turtle pit for cheap vision."
+      ]},
+      {"h": "What to pick against Gloo"},
+      {"ul": [
+        "In mlbbhub's statistics the biggest win rate edges against him belong to Faramis (+7.0 points), Moskov (+4.5), Natan, Alice, Lunox and Masha. Our engine highlights Masha, Aulus and X.Borg; Masha and Aulus appear on both lists.",
+        "Items: cut his healing with Sea Halberd on physical heroes, Glowing Wand on mages and Dominance Ice on tanks."
+      ]},
+      {"h": "Who Gloo is good against"},
+      {"p": "mlbbhub's data shows a clear edge against Aamon (+4.4), Jawhead (+3.7), Johnson, Lesley and Karina. His slows and immobilizes punish assassins and divers that rely on dashes, and our engine also marks him as strong against mobile heroes."},
+      {"h": "What changed recently"},
+      {"p": "Gloo was not touched in 2.2.16a. Earlier, patch 2.1.61 trimmed his damage reduction per stack, and 2.1.88 cut Skill 1's damage and the healing he gets while attached. Even so, his win rate stays above 52% in Mythical Glory and above."}
+    ],
+    "id": [
+      {"h": "Role dan gaya bermain"},
+      {"p": "Gloo adalah tank yang dimainkan di roam dan EXP lane. Skill-nya memberi stack Sticky ke musuh, yang memperlambat mereka dan mengurangi damage yang mereka berikan ke Gloo. Ultimate-nya menempelkan Gloo ke musuh dan membagi sebagian damage yang dia terima ke target itu. Di data mlbbhub per 20 Oktober, dia berada di tier S dengan win rate 54,1% dan ban rate 38,2%, naik ke 40-50% di Legend dan Mythic."},
+      {"h": "Build dan emblem yang disarankan"},
+      {"ul": [
+        "Item: Tough Boots, Cursed Helmet, Glowing Wand, Oracle, Antique Cuirass, Immortality.",
+        "Alternatif: Athena's Shield menggantikan Antique Cuirass melawan mage burst; Radiant Armor melawan damage magic terus-menerus; Warrior Boots melawan EXP laner physical yang minim crowd control. Kalau timmu tidak punya healer, Concentrated Energy bisa menggantikan Glowing Wand.",
+        "Emblem: Common dengan Agility, Wilderness Blessing, dan Impure Rage.",
+        "Battle spell: Flicker."
+      ]},
+      {"h": "Combo dan tips penting"},
+      {"ul": [
+        "Dekati musuh dengan Skill 1 (Slam, Slam) dan Skill 2 (Spread-Spread) untuk mengunci mereka sebentar; setiap skill yang kena menambah stack Sticky.",
+        "Gunakan ultimate ke musuh dengan stack terbanyak, seret dia ke arah timmu, lalu pakai Skill 1 lagi begitu siap.",
+        "Kalau musuh yang kamu tempeli mati, cooldown ultimate turun drastis, jadi kamu bisa menempel lagi di fight yang sama.",
+        "Pakai dash Skill 2 untuk menghindari inisiasi yang mengunci target, seperti hook Franco atau ultimate Saber dan Lolita.",
+        "Lempar goo Skill 1 ke semak dekat pit Turtle untuk vision murah."
+      ]},
+      {"h": "Pick untuk melawan Gloo"},
+      {"ul": [
+        "Di statistik mlbbhub, keunggulan win rate terbesar melawannya dimiliki Faramis (+7,0 poin), Moskov (+4,5), Natan, Alice, Lunox, dan Masha. Mesin kami menyorot Masha, Aulus, dan X.Borg; Masha dan Aulus ada di kedua daftar.",
+        "Item: kurangi heal-nya dengan Sea Halberd untuk hero physical, Glowing Wand untuk mage, dan Dominance Ice untuk tank."
+      ]},
+      {"h": "Gloo kuat melawan siapa"},
+      {"p": "Data mlbbhub menunjukkan keunggulan jelas melawan Aamon (+4,4), Jawhead (+3,7), Johnson, Lesley, dan Karina. Slow dan immobilize-nya menghukum assassin dan diver yang mengandalkan dash, dan mesin kami juga menandainya kuat melawan hero lincah."},
+      {"h": "Perubahan terbaru"},
+      {"p": "Gloo tidak diubah di 2.2.16a. Sebelumnya, patch 2.1.61 memangkas pengurangan damage per stack, dan 2.1.88 memotong damage Skill 1 serta heal saat menempel. Meski begitu, win rate-nya tetap di atas 52% di Mythical Glory ke atas."}
+    ],
+    "es": [
+      {"h": "Rol y estilo de juego"},
+      {"p": "Gloo es un tanque que se juega de roam y en la línea EXP. Sus habilidades dejan cargas Sticky en los enemigos, que los ralentizan y reducen el daño que le hacen. Su definitiva lo pega a un enemigo y le pasa parte del daño que recibe. En los datos de mlbbhub del 20 de octubre está en tier S con un 54,1% de victorias y un 38,2% de baneos, que sube al 40-50% en Legend y Mythic."},
+      {"h": "Build y emblema recomendados"},
+      {"ul": [
+        "Objetos: Tough Boots, Cursed Helmet, Glowing Wand, Oracle, Antique Cuirass, Immortality.",
+        "Cambios opcionales: Athena's Shield en lugar de Antique Cuirass contra un mago de ráfaga; Radiant Armor contra daño mágico constante; Warrior Boots contra rivales físicos de EXP con poco control. Si tu equipo no tiene curador, Concentrated Energy puede sustituir a Glowing Wand.",
+        "Emblema: Común con Agility, Wilderness Blessing e Impure Rage.",
+        "Hechizo: Flicker."
+      ]},
+      {"h": "Combo y consejos clave"},
+      {"ul": [
+        "Acércate con la habilidad 1 (Slam, Slam) y la 2 (Spread-Spread) para inmovilizar un instante; cada impacto suma una carga Sticky.",
+        "Usa la definitiva sobre el enemigo con más cargas, arrástralo hacia tu equipo y repite la habilidad 1 en cuanto vuelva.",
+        "Si muere el enemigo al que estás pegado, el enfriamiento de la definitiva baja muchísimo y puedes volver a pegarte en la misma pelea.",
+        "Usa el desplazamiento de la habilidad 2 para esquivar entradas fijadas como el gancho de Franco o las definitivas de Saber y Lolita.",
+        "Deja el goo de la habilidad 1 en los arbustos cerca de la Tortuga para tener visión barata."
+      ]},
+      {"h": "Qué elegir contra Gloo"},
+      {"ul": [
+        "En las estadísticas de mlbbhub, las mayores ventajas de victorias contra él son de Faramis (+7,0 puntos), Moskov (+4,5), Natan, Alice, Lunox y Masha. Nuestro motor destaca a Masha, Aulus y X.Borg; Masha y Aulus aparecen en ambas listas.",
+        "Objetos: reduce su curación con Sea Halberd en héroes físicos, Glowing Wand en magos y Dominance Ice en tanques."
+      ]},
+      {"h": "Contra quién es bueno Gloo"},
+      {"p": "Los datos de mlbbhub muestran una ventaja clara contra Aamon (+4,4), Jawhead (+3,7), Johnson, Lesley y Karina. Sus ralentizaciones e inmovilizaciones castigan a asesinos y héroes que entran con desplazamientos, y nuestro motor también lo marca como fuerte contra héroes móviles."},
+      {"h": "Cambios recientes"},
+      {"p": "Gloo no recibió cambios en el 2.2.16a. Antes, el parche 2.1.61 recortó su reducción de daño por carga y el 2.1.88 bajó el daño de la habilidad 1 y la curación mientras está pegado. Aun así, su tasa de victorias sigue por encima del 52% en Mythical Glory o más."}
+    ],
+    "pt": [
+      {"h": "Função e estilo de jogo"},
+      {"p": "Gloo é um tanque jogado no roam e na rota EXP. As habilidades deixam acúmulos Sticky nos inimigos, que deixam eles lentos e reduzem o dano que causam nele. A ultimate gruda Gloo em um inimigo e divide parte do dano recebido com esse alvo. Nos dados do mlbbhub de 20 de outubro, ele está no tier S com 54,1% de vitórias e 38,2% de banimentos, chegando a 40-50% no Legend e no Mythic."},
+      {"h": "Build e emblema recomendados"},
+      {"ul": [
+        "Itens: Tough Boots, Cursed Helmet, Glowing Wand, Oracle, Antique Cuirass, Immortality.",
+        "Trocas: Athena's Shield no lugar de Antique Cuirass contra mago de explosão; Radiant Armor contra dano mágico constante; Warrior Boots contra rivais físicos da EXP com pouco controle. Sem curador no time, Concentrated Energy pode substituir Glowing Wand.",
+        "Emblema: Comum com Agility, Wilderness Blessing e Impure Rage.",
+        "Feitiço: Flicker."
+      ]},
+      {"h": "Combo e dicas principais"},
+      {"ul": [
+        "Chegue perto com a habilidade 1 (Slam, Slam) e a 2 (Spread-Spread) para imobilizar por um instante; cada acerto soma um acúmulo Sticky.",
+        "Use a ultimate no inimigo com mais acúmulos, arraste ele até o seu time e repita a habilidade 1 assim que voltar.",
+        "Se o inimigo em que você está grudado morrer, a recarga da ultimate cai muito e dá para grudar de novo na mesma luta.",
+        "Use o avanço da habilidade 2 para desviar de entradas travadas no alvo, como o gancho do Franco ou as ultimates de Saber e Lolita.",
+        "Jogue o goo da habilidade 1 no mato perto da Tartaruga para ter visão barata."
+      ]},
+      {"h": "O que escolher contra Gloo"},
+      {"ul": [
+        "Nas estatísticas do mlbbhub, as maiores vantagens contra ele são de Faramis (+7,0 pontos), Moskov (+4,5), Natan, Alice, Lunox e Masha. Nosso motor destaca Masha, Aulus e X.Borg; Masha e Aulus aparecem nas duas listas.",
+        "Itens: corte a cura dele com Sea Halberd em heróis físicos, Glowing Wand em magos e Dominance Ice em tanques."
+      ]},
+      {"h": "Contra quem Gloo é bom"},
+      {"p": "Os dados do mlbbhub mostram vantagem clara contra Aamon (+4,4), Jawhead (+3,7), Johnson, Lesley e Karina. As lentidões e imobilizações punem assassinos e heróis que entram com avanço, e nosso motor também marca ele como forte contra heróis móveis."},
+      {"h": "O que mudou recentemente"},
+      {"p": "Gloo não foi alterado no 2.2.16a. Antes, o patch 2.1.61 cortou a redução de dano por acúmulo, e o 2.1.88 reduziu o dano da habilidade 1 e a cura enquanto está grudado. Mesmo assim, a taxa de vitória segue acima de 52% no Mythical Glory ou acima."}
+    ]
+  }
+}

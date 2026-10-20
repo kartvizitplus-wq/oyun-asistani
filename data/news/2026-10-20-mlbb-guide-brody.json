@@ -1,0 +1,168 @@
+{
+  "type": "guide",
+  "slug": "mlbb-guide-brody",
+  "date": "2026-10-20",
+  "game": "mlbb",
+  "hero": "Brody",
+  "sources": [
+    "mlbbhub.com Brody build and matchup data (patch 2.2.16a, rank stats October 15, 2026)",
+    "1v9.gg Brody guide (skills and combo)",
+    "mlbbhub.com tier list (October 16, 2026)"
+  ],
+  "title": {
+    "tr": "Brody rehberi ve counter (2.2.16a): Gold koridoru dizilimi, iz kombosu ve karşı seçimler",
+    "en": "Brody guide and counters (2.2.16a): gold lane build, mark combo and matchups",
+    "id": "Panduan dan counter Brody (2.2.16a): build gold lane, combo mark, dan matchup",
+    "es": "Guía y counters de Brody (2.2.16a): build de línea de oro, combo de marcas y enfrentamientos",
+    "pt": "Guia e counters de Brody (2.2.16a): build da rota do ouro, combo de marcas e confrontos"
+  },
+  "summary": {
+    "tr": "Brody yavaş ama ağır vuran bir nişancı. Endless Battle'lı güncel dizilim, Abyss izlerini doğru biriktirme kombosu, ona karşı Masha ve Barats gibi seçimler ve kolay rakipleri.",
+    "en": "Brody is a slow but hard-hitting marksman. The current Endless Battle build, the Abyss mark combo, picks like Masha and Barats against him, and the matchups he wins.",
+    "id": "Brody adalah marksman lambat tetapi sakit. Build Endless Battle terbaru, combo Abyss mark, pick seperti Masha dan Barats untuk melawannya, serta matchup yang dia menangkan.",
+    "es": "Brody es un tirador lento pero que pega muy fuerte. La build actual con Endless Battle, el combo de marcas del Abismo, counters como Masha y Barats y a quién gana.",
+    "pt": "Brody é um atirador lento, mas que bate muito forte. A build atual com Endless Battle, o combo de marcas do Abismo, counters como Masha e Barats e contra quem ele vence."
+  },
+  "body": {
+    "tr": [
+      {"h": "Rol ve oyun tarzı"},
+      {"p": "Brody, Gold koridorunda oynanan, yavaş ama her vuruşu ağır olan bir nişancı. Normal saldırıları rakipte Abyss izleri biriktirir; dört ize ulaşan hedefe karşı ciddi hareket hızı kazanır ve ultisi izli bütün rakiplere ekstra hasar verir. Kritik vuruş yapamaz, bu yüzden dizilimi saf hasar ve zırh delme üzerine kurulur. mlbbhub'a göre %50,7 kazanma, %1,1 seçilme ve %2,5 yasaklanma oranıyla B kademede: güçlü değil ama istikrarlı ve neredeyse hiç yasaklanmıyor."},
+      {"h": "Önerilen dizilim ve amblem"},
+      {"ul": [
+        "Eşyalar: Swift Boots, Endless Battle (Sonsuz Savaş), Blade of Despair (Umutsuzluk Kılıcı), Malefic Roar (Korkunç Kükreme), Brute Force Breastplate, Immortality (Ölümsüzlük).",
+        "Esnek değişimler: İki veya daha fazla fiziksel dalışçıya karşı Brute Force Breastplate yerine Wind of Nature; iyileştirici veya kalkan destekçisine karşı Sea Halberd; patlayıcı büyücüye karşı Immortality yerine Rose Gold Meteor.",
+        "Amblem: Suikastçı (Assassin) set, Rupture, Master Assassin ve Killing Spree.",
+        "Büyü: Flicker. Rakipte çok sert kontrol varsa Purify de kullanılıyor."
+      ]},
+      {"h": "Kombo ve önemli ipuçları"},
+      {"ul": [
+        "Önce birinci beceri (Abyss Impact) ve normal saldırıyla izleri biriktir, sonra ulti (Torn-Apart Memory) ve normal saldırıyla ağır hasarı vur, kaçan hedefi ikinci beceri (Corrosive Strike) ve normal saldırıyla kovala.",
+        "Ulti sadece saldırdığın hedefe değil, menzildeki izli bütün rakiplere vurur. Takım savaşında birden fazla rakibe iz bırakmaya çalış.",
+        "Abyss Impact'in hasarı hedefteki iz sayısıyla artıyor; tam izli hedefe atınca çok daha fazla vurur.",
+        "Corrosive Strike hedefi kısa süre sersemletir ve ardından ikinci bir atılma sağlar. Bunu kaçış için sakla, çünkü Brody'nin hareket hızı düşük."
+      ]},
+      {"h": "Brody'ye karşı ne seçmeli?"},
+      {"ul": [
+        "mlbbhub istatistiklerinde ona karşı en iyi seçimler Masha (+2,1 puan), Barats (+2,0), Khufra (+1,9), Saber (+1,9) ve Kadita (+1,6). Sitemizin motoru da Saber gibi hızlı girip onu tek kombo ile indirebilen suikastçıları öne çıkarıyor.",
+        "Mantık: Brody'nin kaçış becerisi sınırlı ve yavaş. Üstüne atlayan suikastçılar ve onu sabitleyen tanklar onu oyun dışında bırakır.",
+        "Eşya olarak: Patlayıcı hasarına karşı Immortality veya Blade Armor, fiziksel hasarına karşı Antique Cuirass ya da Wind of Nature."
+      ]},
+      {"h": "Brody kimlere karşı iyi?"},
+      {"p": "mlbbhub verisine göre Karina (+4,3), Belerick (+3,2), Irithel (+2,8) ve Joy'a (+2,2) karşı avantajlı. Yakın mesafede uzun süre kalmak zorunda olan kahramanlar, izleri biriktikçe Brody'nin artan hasarından kaçamıyor."},
+      {"h": "Son değişiklikler"},
+      {"p": "2.2.16 ve 2.2.16a'da Brody'ye dokunulmadı. Son büyük ayar 2.1.67'deydi: Abyss Impact'in hasarı iz sayısına bağlandı, ultinin eksik cana bağlı hasarı en üst seviyede %10'a çıktı, buna karşılık taban canı ve hareket hızı düşürüldü."}
+    ],
+    "en": [
+      {"h": "Role and playstyle"},
+      {"p": "Brody is a gold lane marksman who is slow but hits very hard with each shot. His basic attacks stack Abyss Marks on the target; at four marks he gains a big movement speed boost against that target, and his ultimate deals extra damage to every marked enemy. He cannot crit, so his build is about raw damage and penetration. On mlbbhub he is B tier with a 50.7% win rate, a 1.1% pick rate and a 2.5% ban rate: not dominant, but steady and almost never banned."},
+      {"h": "Recommended build and emblem"},
+      {"ul": [
+        "Items: Swift Boots, Endless Battle, Blade of Despair, Malefic Roar, Brute Force Breastplate, Immortality.",
+        "Flex swaps: Wind of Nature over Brute Force Breastplate against two or more physical divers; Sea Halberd against a healer or shield support; Rose Gold Meteor over Immortality against a burst mage.",
+        "Emblem: Assassin set with Rupture, Master Assassin and Killing Spree.",
+        "Battle spell: Flicker. Purify is also used against very hard crowd control."
+      ]},
+      {"h": "Combo and key tips"},
+      {"ul": [
+        "Build marks with Skill 1 (Abyss Impact) and a basic attack, then land the heavy damage with the ultimate (Torn-Apart Memory) and a basic attack, and chase a fleeing target with Skill 2 (Corrosive Strike) and a basic attack.",
+        "The ultimate hits every marked enemy in range, not only your current target, so try to mark several enemies in team fights.",
+        "Abyss Impact's damage scales with the marks on the target, so it hits much harder on a fully marked enemy.",
+        "Corrosive Strike briefly stuns the target and then gives a second dash. Save it to escape, because Brody's movement speed is low."
+      ]},
+      {"h": "What to pick against Brody"},
+      {"ul": [
+        "In mlbbhub's statistics the best picks against him are Masha (+2.1 points), Barats (+2.0), Khufra (+1.9), Saber (+1.9) and Kadita (+1.6). Our engine also highlights assassins like Saber who can jump in and delete him in one combo.",
+        "The logic: Brody is slow and has limited escapes. Assassins who dive him and tanks who lock him down take him out of the fight.",
+        "Items: Immortality or Blade Armor against his burst, Antique Cuirass or Wind of Nature against his physical damage."
+      ]},
+      {"h": "Who Brody is good against"},
+      {"p": "According to mlbbhub he has the edge against Karina (+4.3), Belerick (+3.2), Irithel (+2.8) and Joy (+2.2). Heroes who have to stay in close range for long can't escape his damage as the marks build up."},
+      {"h": "What changed recently"},
+      {"p": "Brody was not touched in 2.2.16 or 2.2.16a. His last big adjustment came in 2.1.67: Abyss Impact's damage was tied to the number of marks, the missing-HP part of his ultimate rose to 10% at max rank, and in return his base HP and movement speed were lowered."}
+    ],
+    "id": [
+      {"h": "Role dan gaya bermain"},
+      {"p": "Brody adalah marksman gold lane yang lambat tetapi setiap tembakannya sangat sakit. Basic attack-nya memberi Abyss Mark ke target; di empat mark dia mendapat bonus movement speed besar terhadap target itu, dan ultimate-nya memberi damage ekstra ke semua musuh yang bertanda. Dia tidak bisa crit, jadi build-nya fokus pada damage murni dan penetrasi. Di mlbbhub dia berada di tier B dengan win rate 50,7%, pick rate 1,1%, dan ban rate 2,5%: tidak dominan, tetapi stabil dan hampir tidak pernah di-ban."},
+      {"h": "Build dan emblem yang disarankan"},
+      {"ul": [
+        "Item: Swift Boots, Endless Battle, Blade of Despair, Malefic Roar, Brute Force Breastplate, Immortality.",
+        "Alternatif: Wind of Nature menggantikan Brute Force Breastplate melawan dua diver physical atau lebih; Sea Halberd melawan healer atau support shield; Rose Gold Meteor menggantikan Immortality melawan mage burst.",
+        "Emblem: Assassin dengan Rupture, Master Assassin, dan Killing Spree.",
+        "Battle spell: Flicker. Purify juga dipakai melawan crowd control yang sangat keras."
+      ]},
+      {"h": "Combo dan tips penting"},
+      {"ul": [
+        "Kumpulkan mark dengan Skill 1 (Abyss Impact) dan basic attack, lalu beri damage besar dengan ultimate (Torn-Apart Memory) dan basic attack, kemudian kejar target yang kabur dengan Skill 2 (Corrosive Strike) dan basic attack.",
+        "Ultimate mengenai semua musuh bertanda dalam jangkauan, bukan hanya target saat ini, jadi usahakan menandai beberapa musuh saat team fight.",
+        "Damage Abyss Impact naik sesuai jumlah mark di target, jadi jauh lebih sakit ke musuh yang mark-nya penuh.",
+        "Corrosive Strike men-stun target sebentar lalu memberi dash kedua. Simpan untuk kabur, karena movement speed Brody rendah."
+      ]},
+      {"h": "Pick untuk melawan Brody"},
+      {"ul": [
+        "Di statistik mlbbhub, pick terbaik melawannya adalah Masha (+2,1 poin), Barats (+2,0), Khufra (+1,9), Saber (+1,9), dan Kadita (+1,6). Mesin kami juga menyorot assassin seperti Saber yang bisa masuk dan menghapusnya dengan satu combo.",
+        "Logikanya: Brody lambat dan skill kaburnya terbatas. Assassin yang menyelam dan tank yang menguncinya membuat dia tidak berguna di fight.",
+        "Item: Immortality atau Blade Armor melawan burst-nya, Antique Cuirass atau Wind of Nature melawan damage physical-nya."
+      ]},
+      {"h": "Brody kuat melawan siapa"},
+      {"p": "Menurut mlbbhub, dia unggul melawan Karina (+4,3), Belerick (+3,2), Irithel (+2,8), dan Joy (+2,2). Hero yang harus lama berada di jarak dekat tidak bisa lolos dari damage-nya saat mark menumpuk."},
+      {"h": "Perubahan terbaru"},
+      {"p": "Brody tidak diubah di 2.2.16 maupun 2.2.16a. Penyesuaian besar terakhirnya ada di 2.1.67: damage Abyss Impact dikaitkan dengan jumlah mark, bagian damage berdasarkan HP yang hilang di ultimate naik ke 10% di level maksimal, dan sebagai gantinya base HP serta movement speed-nya diturunkan."}
+    ],
+    "es": [
+      {"h": "Rol y estilo de juego"},
+      {"p": "Brody es un tirador de la línea de oro lento pero que pega muy fuerte en cada disparo. Sus ataques básicos acumulan Marcas del Abismo; con cuatro marcas gana mucha velocidad de movimiento contra ese objetivo, y su definitiva hace daño extra a todos los enemigos marcados. No puede hacer críticos, así que su build se basa en daño puro y penetración. En mlbbhub está en tier B con un 50,7% de victorias, un 1,1% de selección y un 2,5% de baneos: no domina, pero es estable y casi nunca se banea."},
+      {"h": "Build y emblema recomendados"},
+      {"ul": [
+        "Objetos: Swift Boots, Endless Battle, Blade of Despair, Malefic Roar, Brute Force Breastplate, Immortality.",
+        "Cambios opcionales: Wind of Nature en lugar de Brute Force Breastplate contra dos o más luchadores físicos que entran; Sea Halberd contra un curador o soporte de escudos; Rose Gold Meteor en lugar de Immortality contra un mago de ráfaga.",
+        "Emblema: Asesino con Rupture, Master Assassin y Killing Spree.",
+        "Hechizo: Flicker. Purify también se usa contra mucho control duro."
+      ]},
+      {"h": "Combo y consejos clave"},
+      {"ul": [
+        "Acumula marcas con la habilidad 1 (Abyss Impact) y un ataque básico, luego mete el daño fuerte con la definitiva (Torn-Apart Memory) y un básico, y persigue a quien huya con la habilidad 2 (Corrosive Strike) y un básico.",
+        "La definitiva golpea a todos los enemigos marcados en rango, no solo a tu objetivo, así que intenta marcar a varios en las peleas de equipo.",
+        "El daño de Abyss Impact sube con las marcas del objetivo, así que pega mucho más a un enemigo con todas las marcas.",
+        "Corrosive Strike aturde un instante y luego da un segundo desplazamiento. Guárdalo para escapar, porque Brody es lento."
+      ]},
+      {"h": "Qué elegir contra Brody"},
+      {"ul": [
+        "En las estadísticas de mlbbhub, los mejores picks contra él son Masha (+2,1 puntos), Barats (+2,0), Khufra (+1,9), Saber (+1,9) y Kadita (+1,6). Nuestro motor también destaca a asesinos como Saber, capaces de entrar y eliminarlo con un combo.",
+        "La lógica: Brody es lento y tiene pocas formas de escapar. Los asesinos que se lanzan sobre él y los tanques que lo inmovilizan lo sacan de la pelea.",
+        "Objetos: Immortality o Blade Armor contra su ráfaga, y Antique Cuirass o Wind of Nature contra su daño físico."
+      ]},
+      {"h": "Contra quién es bueno Brody"},
+      {"p": "Según mlbbhub tiene ventaja contra Karina (+4,3), Belerick (+3,2), Irithel (+2,8) y Joy (+2,2). Los héroes que deben quedarse mucho tiempo a corta distancia no pueden escapar de su daño cuando se acumulan las marcas."},
+      {"h": "Cambios recientes"},
+      {"p": "Brody no cambió en el 2.2.16 ni en el 2.2.16a. Su último gran ajuste fue en el 2.1.67: el daño de Abyss Impact pasó a depender del número de marcas, la parte de su definitiva basada en vida perdida subió al 10% en rango máximo y, a cambio, bajaron su vida base y su velocidad de movimiento."}
+    ],
+    "pt": [
+      {"h": "Função e estilo de jogo"},
+      {"p": "Brody é um atirador da rota do ouro, lento, mas que bate muito forte a cada tiro. Os ataques básicos acumulam Marcas do Abismo; com quatro marcas ele ganha muita velocidade de movimento contra aquele alvo, e a ultimate causa dano extra em todos os inimigos marcados. Ele não acerta críticos, então a build gira em torno de dano puro e penetração. No mlbbhub ele está no tier B com 50,7% de vitórias, 1,1% de escolha e 2,5% de banimentos: não domina, mas é estável e quase nunca é banido."},
+      {"h": "Build e emblema recomendados"},
+      {"ul": [
+        "Itens: Swift Boots, Endless Battle, Blade of Despair, Malefic Roar, Brute Force Breastplate, Immortality.",
+        "Trocas: Wind of Nature no lugar de Brute Force Breastplate contra dois ou mais lutadores físicos que mergulham; Sea Halberd contra curador ou suporte de escudo; Rose Gold Meteor no lugar de Immortality contra mago de explosão.",
+        "Emblema: Assassino com Rupture, Master Assassin e Killing Spree.",
+        "Feitiço: Flicker. Purify também é usado contra controle muito pesado."
+      ]},
+      {"h": "Combo e dicas principais"},
+      {"ul": [
+        "Acumule marcas com a habilidade 1 (Abyss Impact) e um ataque básico, depois aplique o dano pesado com a ultimate (Torn-Apart Memory) e um básico, e persiga quem fugir com a habilidade 2 (Corrosive Strike) e um básico.",
+        "A ultimate acerta todos os inimigos marcados no alcance, não só o alvo atual, então tente marcar vários inimigos nas lutas em equipe.",
+        "O dano de Abyss Impact aumenta com as marcas no alvo, então ele bate muito mais em um inimigo com todas as marcas.",
+        "Corrosive Strike atordoa por um instante e depois dá um segundo avanço. Guarde para fugir, porque o Brody é lento."
+      ]},
+      {"h": "O que escolher contra Brody"},
+      {"ul": [
+        "Nas estatísticas do mlbbhub, os melhores picks contra ele são Masha (+2,1 pontos), Barats (+2,0), Khufra (+1,9), Saber (+1,9) e Kadita (+1,6). Nosso motor também destaca assassinos como Saber, que entram e eliminam ele com um combo.",
+        "A lógica: Brody é lento e tem poucas fugas. Assassinos que mergulham nele e tanques que o prendem tiram ele da luta.",
+        "Itens: Immortality ou Blade Armor contra a explosão de dano, e Antique Cuirass ou Wind of Nature contra o dano físico."
+      ]},
+      {"h": "Contra quem Brody é bom"},
+      {"p": "Segundo o mlbbhub, ele leva vantagem contra Karina (+4,3), Belerick (+3,2), Irithel (+2,8) e Joy (+2,2). Heróis que precisam ficar muito tempo de perto não conseguem escapar do dano dele conforme as marcas acumulam."},
+      {"h": "O que mudou recentemente"},
+      {"p": "Brody não foi alterado no 2.2.16 nem no 2.2.16a. O último grande ajuste foi no 2.1.67: o dano de Abyss Impact passou a depender do número de marcas, a parte da ultimate baseada na vida perdida subiu para 10% no rank máximo e, em troca, a vida base e a velocidade de movimento foram reduzidas."}
+    ]
+  }
+}

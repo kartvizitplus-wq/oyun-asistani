@@ -436,7 +436,22 @@
       "lanes": [
         "jungle",
         "exp"
-      ]
+      ],
+      "build": [
+        "Tough Boots",
+        "War Axe",
+        "Thunder Belt",
+        "Brute Force Breastplate",
+        "Guardian Helmet",
+        "Immortality"
+      ],
+      "spell": "Retribution",
+      "emblem": {
+        "set": "Common",
+        "t1": "Thrill",
+        "t2": "Seasoned Hunter",
+        "core": "War Cry"
+      }
     },
     {
       "n": "Baxia",
@@ -510,7 +525,22 @@
       "tier": "B",
       "lanes": [
         "gold"
-      ]
+      ],
+      "build": [
+        "Swift Boots",
+        "Endless Battle",
+        "Blade of Despair",
+        "Malefic Roar",
+        "Brute Force Breastplate",
+        "Immortality"
+      ],
+      "spell": "Flicker",
+      "emblem": {
+        "set": "Assassin",
+        "t1": "Rupture",
+        "t2": "Master Assassin",
+        "core": "Killing Spree"
+      }
     },
     {
       "n": "Bruno",
@@ -833,13 +863,30 @@
       "r": "tank",
       "d": "M",
       "t": "c",
-      "s": [],
+      "s": [
+        "antidash"
+      ],
       "b": "tank",
       "tier": "S",
       "lanes": [
-        "exp",
-        "roam"
-      ]
+        "roam",
+        "exp"
+      ],
+      "build": [
+        "Tough Boots",
+        "Cursed Helmet",
+        "Glowing Wand",
+        "Oracle",
+        "Antique Cuirass",
+        "Immortality"
+      ],
+      "spell": "Flicker",
+      "emblem": {
+        "set": "Common",
+        "t1": "Agility",
+        "t2": "Wilderness Blessing",
+        "core": "Impure Rage"
+      }
     },
     {
       "n": "Gord",
@@ -1756,14 +1803,30 @@
       "n": "Sun",
       "r": "fighter",
       "d": "P",
-      "t": "h",
+      "t": "hd",
       "s": [],
       "b": "fP",
       "tier": "A",
       "wr": 52.5,
       "lanes": [
-        "exp"
-      ]
+        "exp",
+        "jungle"
+      ],
+      "build": [
+        "Swift Boots",
+        "Corrosion Scythe",
+        "Demon Hunter Sword",
+        "Golden Staff",
+        "Sea Halberd",
+        "Windtalker"
+      ],
+      "spell": "Flicker",
+      "emblem": {
+        "set": "Assassin",
+        "t1": "Rupture",
+        "t2": "Master Assassin",
+        "core": "Killing Spree"
+      }
     },
     {
       "n": "Suyou",

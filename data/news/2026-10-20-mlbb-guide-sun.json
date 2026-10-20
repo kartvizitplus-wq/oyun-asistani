@@ -1,0 +1,183 @@
+{
+  "type": "guide",
+  "slug": "mlbb-guide-sun",
+  "date": "2026-10-20",
+  "game": "mlbb",
+  "hero": "Sun",
+  "sources": [
+    "mlbbhub.com Sun build and matchup data (patch 2.2.16a, rank stats October 18, 2026)",
+    "TopUpLive Sun build guide 2026 (August 19, 2026)",
+    "Moonton patch notes 2.2.16 (summary on mlbbhub.com)"
+  ],
+  "title": {
+    "tr": "Sun rehberi ve counter (2.2.16a): saldırı hızı dizilimi, klon taktikleri ve karşı seçimler",
+    "en": "Sun guide and counters (2.2.16a): attack speed build, clone tactics and matchups",
+    "id": "Panduan dan counter Sun (2.2.16a): build attack speed, taktik klon, dan matchup",
+    "es": "Guía y counters de Sun (2.2.16a): build de velocidad de ataque, clones y enfrentamientos",
+    "pt": "Guia e counters de Sun (2.2.16a): build de velocidade de ataque, clones e confrontos"
+  },
+  "summary": {
+    "tr": "Sun, klonlarıyla zırh eriten bir dövüşçü. Güncel saldırı hızı dizilimi, Suikastçı amblemi, klonları doğru kullanma ve ona karşı alan kontrolü yapan tanklar ile patlayıcı büyücüler.",
+    "en": "Sun is a fighter who melts armor with his clones. The current attack speed build, Assassin emblem, how to use clones well, and why area-control tanks and burst mages beat him.",
+    "id": "Sun adalah fighter yang menghancurkan armor lewat klonnya. Build attack speed terbaru, emblem Assassin, cara memakai klon, dan kenapa tank area control serta mage burst mengalahkannya.",
+    "es": "Sun es un luchador que derrite armaduras con sus clones. La build actual de velocidad de ataque, el emblema de Asesino, cómo usar los clones y por qué lo vencen tanques de control y magos de ráfaga.",
+    "pt": "Sun é um lutador que derrete armadura com os clones. A build atual de velocidade de ataque, o emblema de Assassino, como usar os clones e por que tanques de controle e magos de explosão vencem ele."
+  },
+  "body": {
+    "tr": [
+      {"h": "Rol ve oyun tarzı"},
+      {"p": "Sun, EXP koridorunda ve ormanda oynanan, klonlarla savaşan bir dövüşçü. Her vuruşu rakibin zırhını düşürüyor ve klonları onun istatistiklerinin bir kısmını kopyalıyor; bu yüzden tankları ve kuleleri hızla eritiyor. mlbbhub'ın 18 Ekim verisinde %52,4 kazanma, %1,6 seçilme ve %21,4 yasaklanma oranıyla A kademede. İlginç bir ayrıntı: Epic'te %55,6 kazanırken Mythical Glory ve üstünde %48,8'e iniyor. Klonlarına karşı nasıl oynanacağını bilen rakiplere karşı zorlanıyor."},
+      {"h": "Önerilen dizilim ve amblem"},
+      {"ul": [
+        "Eşyalar: Swift Boots, Corrosion Scythe, Demon Hunter Sword (Canavar Avcısı Kılıcı), Golden Staff, Sea Halberd (Deniz Teberi), Windtalker. mlbbhub ve TopUpLive aynı altı eşyayı öneriyor.",
+        "Bot seçimi: Zincirleme kontrole karşı Tough Boots, fiziksel ağırlıklı koridorlara karşı Warrior Boots.",
+        "Esnek değişimler: Patlayıcı büyücülere karşı Windtalker yerine Rose Gold Meteor; dayanıklılık gerekiyorsa Thunder Belt; öndeysen ve rakipte iyileşme yoksa Sea Halberd yerine Blade of Despair.",
+        "Amblem: Suikastçı (Assassin) set, Rupture, Master Assassin ve Killing Spree.",
+        "Büyü: Flicker."
+      ]},
+      {"h": "Klon taktikleri ve ipuçları"},
+      {"ul": [
+        "Klon bırakan beceriyi çalılara atarak güvenle keşif yap ya da kule atışlarını klona çektir.",
+        "Swift Exchange ile mesafeyi kapat, kaç veya duvarın arkasına geç; Sun ve klonu birlikte atılıyor.",
+        "Ultinin kısa dokunulmazlık anını rakibin kontrolünü, kule atışını ya da patlayıcı hasarını boşa çıkarmak için kullan.",
+        "Zırh azaltma yüklerini klon vuruşlarıyla hızla doldur; böylece tanklar ve Lord/Kaplumbağa gibi hedefler çok daha hızlı erir.",
+        "Kendi koridorunda kule yıkmaya odaklan; 2.2.16'dan beri roam dizilimi takım kaynağını fazla tükettiği için kırpıldı."
+      ]},
+      {"h": "Sun'a karşı ne seçmeli?"},
+      {"ul": [
+        "Alan kontrolü yapan tanklar: Klonlar da kontrol yediği için Minotaur, Tigreal, Gloo ve Khufra gibi tanklar ona karşı etkili. Sitemizin motoru Gloo ve Khufra'yı en iyi seçimler arasında gösteriyor.",
+        "Patlayıcı büyücüler: Pharsa, Vale ve Eudora gibi alan hasarı veren büyücüler klonları saniyeler içinde temizliyor.",
+        "mlbbhub istatistikleri: Ona karşı en yüksek kazanma farkı Natan (+5,3 puan), Joy (+4,7), Marcel (+3,9), Ruby ve Faramis'te.",
+        "Eşya olarak: İyileşmesini kesmek için Sea Halberd veya Necklace of Durance, fiziksel hasarına karşı Antique Cuirass ya da Wind of Nature."
+      ]},
+      {"h": "Sun kimlere karşı iyi?"},
+      {"p": "mlbbhub verisinde Jawhead (+4,2), Harley (+3,1) ve Layla'ya (+3,0) karşı avantajlı; TopUpLive da Layla ve Miya gibi kaçış becerisi olmayan nişancıları kolay hedef olarak gösteriyor."},
+      {"h": "Son değişiklikler"},
+      {"p": "2.2.16'da Moonton, Sun'ın roam dizilimini takım arkadaşlarından fazla kaynak aldığı için kırptı. Pasifin klon vuruşu başına iyileştirmesi azaldı, klonu öldüren rakibin kazandığı altın düştü ve klon bırakan becerinin bekleme süresi kısaldı. 2.2.16a'da Sun'a dokunulmadı."}
+    ],
+    "en": [
+      {"h": "Role and playstyle"},
+      {"p": "Sun is a clone-based fighter played in the EXP lane and the jungle. Each hit lowers the target's armor, and his clones copy part of his stats, so he melts tanks and turrets quickly. In mlbbhub's October 18 data he is A tier with a 52.4% win rate, a 1.6% pick rate and a 21.4% ban rate. One detail stands out: he wins 55.6% in Epic but only 48.8% in Mythical Glory and above, because experienced players know how to handle his clones."},
+      {"h": "Recommended build and emblem"},
+      {"ul": [
+        "Items: Swift Boots, Corrosion Scythe, Demon Hunter Sword, Golden Staff, Sea Halberd, Windtalker. mlbbhub and TopUpLive recommend the same six items.",
+        "Boots: Tough Boots against chain crowd control, Warrior Boots against physical-heavy lanes.",
+        "Flex swaps: Rose Gold Meteor over Windtalker against burst mages; Thunder Belt when you need to be sturdier; Blade of Despair over Sea Halberd when you are ahead and the enemy has no healing.",
+        "Emblem: Assassin set with Rupture, Master Assassin and Killing Spree.",
+        "Battle spell: Flicker."
+      ]},
+      {"h": "Clone tactics and tips"},
+      {"ul": [
+        "Send the clone-creating skill into a bush to scout safely, or let a clone tank turret shots.",
+        "Use Swift Exchange to close distance, escape or cross a wall; Sun and his clone dash together.",
+        "Use the brief invulnerability window of his ultimate to waste the enemy's crowd control, turret shots or burst.",
+        "Stack the armor reduction quickly with clone hits so tanks and objectives like the Lord and Turtle melt much faster.",
+        "Focus on pushing towers in your own lane; since 2.2.16 his roaming build was trimmed because it took too many team resources."
+      ]},
+      {"h": "What to pick against Sun"},
+      {"ul": [
+        "Area-control tanks: clones get crowd-controlled too, so tanks like Minotaur, Tigreal, Gloo and Khufra work well. Our engine lists Gloo and Khufra among the top picks.",
+        "Burst mages: area mages such as Pharsa, Vale and Eudora clear his clones within seconds.",
+        "mlbbhub statistics: the biggest win rate edges against him belong to Natan (+5.3 points), Joy (+4.7), Marcel (+3.9), Ruby and Faramis.",
+        "Items: Sea Halberd or Necklace of Durance to cut his healing, and Antique Cuirass or Wind of Nature against his physical damage."
+      ]},
+      {"h": "Who Sun is good against"},
+      {"p": "mlbbhub's data shows an edge against Jawhead (+4.2), Harley (+3.1) and Layla (+3.0), and TopUpLive also points to marksmen without escapes, like Layla and Miya, as easy targets."},
+      {"h": "What changed recently"},
+      {"p": "In 2.2.16 Moonton trimmed Sun's roaming build because it took too many resources from teammates. His passive heals less per clone hit, enemies who kill a clone get less gold, and his clone skill has a shorter cooldown. Sun was not touched in 2.2.16a."}
+    ],
+    "id": [
+      {"h": "Role dan gaya bermain"},
+      {"p": "Sun adalah fighter berbasis klon yang dimainkan di EXP lane dan jungle. Setiap serangannya menurunkan armor target, dan klonnya menyalin sebagian statnya, jadi dia cepat menghancurkan tank dan turret. Di data mlbbhub per 18 Oktober, dia berada di tier A dengan win rate 52,4%, pick rate 1,6%, dan ban rate 21,4%. Satu hal menarik: win rate-nya 55,6% di Epic tetapi hanya 48,8% di Mythical Glory ke atas, karena pemain berpengalaman tahu cara menghadapi klonnya."},
+      {"h": "Build dan emblem yang disarankan"},
+      {"ul": [
+        "Item: Swift Boots, Corrosion Scythe, Demon Hunter Sword, Golden Staff, Sea Halberd, Windtalker. mlbbhub dan TopUpLive menyarankan enam item yang sama.",
+        "Sepatu: Tough Boots melawan crowd control beruntun, Warrior Boots melawan lane yang dominan physical.",
+        "Alternatif: Rose Gold Meteor menggantikan Windtalker melawan mage burst; Thunder Belt kalau butuh lebih tebal; Blade of Despair menggantikan Sea Halberd saat unggul dan musuh tidak punya heal.",
+        "Emblem: Assassin dengan Rupture, Master Assassin, dan Killing Spree.",
+        "Battle spell: Flicker."
+      ]},
+      {"h": "Taktik klon dan tips"},
+      {"ul": [
+        "Lempar skill pembuat klon ke semak untuk scouting aman, atau biarkan klon menahan tembakan turret.",
+        "Pakai Swift Exchange untuk mendekat, kabur, atau melewati dinding; Sun dan klonnya dash bersamaan.",
+        "Gunakan jendela kebal singkat dari ultimate untuk membuang crowd control, tembakan turret, atau burst musuh.",
+        "Kumpulkan stack pengurangan armor dengan cepat lewat serangan klon agar tank serta objektif seperti Lord dan Turtle cepat hancur.",
+        "Fokus push turret di lane sendiri; sejak 2.2.16 build roam-nya dipangkas karena terlalu menghabiskan resource tim."
+      ]},
+      {"h": "Pick untuk melawan Sun"},
+      {"ul": [
+        "Tank area control: klon juga terkena crowd control, jadi tank seperti Minotaur, Tigreal, Gloo, dan Khufra sangat efektif. Mesin kami menempatkan Gloo dan Khufra di antara pick teratas.",
+        "Mage burst: mage area seperti Pharsa, Vale, dan Eudora membersihkan klonnya dalam hitungan detik.",
+        "Statistik mlbbhub: keunggulan win rate terbesar melawannya dimiliki Natan (+5,3 poin), Joy (+4,7), Marcel (+3,9), Ruby, dan Faramis.",
+        "Item: Sea Halberd atau Necklace of Durance untuk memotong heal-nya, serta Antique Cuirass atau Wind of Nature melawan damage physical-nya."
+      ]},
+      {"h": "Sun kuat melawan siapa"},
+      {"p": "Data mlbbhub menunjukkan keunggulan melawan Jawhead (+4,2), Harley (+3,1), dan Layla (+3,0), dan TopUpLive juga menyebut marksman tanpa skill kabur, seperti Layla dan Miya, sebagai target mudah."},
+      {"h": "Perubahan terbaru"},
+      {"p": "Di 2.2.16 Moonton memangkas build roam Sun karena terlalu banyak mengambil resource rekan setim. Heal pasif per serangan klon berkurang, musuh yang membunuh klon mendapat gold lebih sedikit, dan cooldown skill klonnya lebih pendek. Sun tidak diubah di 2.2.16a."}
+    ],
+    "es": [
+      {"h": "Rol y estilo de juego"},
+      {"p": "Sun es un luchador basado en clones que se juega en la línea EXP y en la jungla. Cada golpe reduce la armadura del objetivo y sus clones copian parte de sus estadísticas, así que derrite tanques y torres rápido. En los datos de mlbbhub del 18 de octubre está en tier A con un 52,4% de victorias, un 1,6% de selección y un 21,4% de baneos. Un dato llamativo: gana el 55,6% en Epic pero solo el 48,8% en Mythical Glory o más, porque los jugadores con experiencia saben cómo lidiar con sus clones."},
+      {"h": "Build y emblema recomendados"},
+      {"ul": [
+        "Objetos: Swift Boots, Corrosion Scythe, Demon Hunter Sword, Golden Staff, Sea Halberd, Windtalker. mlbbhub y TopUpLive recomiendan los mismos seis.",
+        "Botas: Tough Boots contra control encadenado, Warrior Boots contra líneas muy físicas.",
+        "Cambios opcionales: Rose Gold Meteor en lugar de Windtalker contra magos de ráfaga; Thunder Belt si necesitas aguantar más; Blade of Despair en lugar de Sea Halberd si vas por delante y el rival no tiene curación.",
+        "Emblema: Asesino con Rupture, Master Assassin y Killing Spree.",
+        "Hechizo: Flicker."
+      ]},
+      {"h": "Tácticas con clones y consejos"},
+      {"ul": [
+        "Lanza la habilidad que crea un clon a un arbusto para explorar sin riesgo, o deja que un clon reciba los disparos de la torre.",
+        "Usa Swift Exchange para acercarte, escapar o cruzar un muro; Sun y su clon se desplazan juntos.",
+        "Aprovecha el breve momento de invulnerabilidad de su definitiva para hacer fallar el control, los disparos de torre o la ráfaga del rival.",
+        "Acumula rápido la reducción de armadura con los golpes de los clones para que tanques, Lord y Tortuga caigan mucho antes.",
+        "Céntrate en empujar torres en tu línea; desde el 2.2.16 su build de roam fue recortada porque consumía demasiados recursos del equipo."
+      ]},
+      {"h": "Qué elegir contra Sun"},
+      {"ul": [
+        "Tanques de control en área: los clones también sufren el control, así que tanques como Minotaur, Tigreal, Gloo y Khufra funcionan muy bien. Nuestro motor coloca a Gloo y Khufra entre los mejores picks.",
+        "Magos de ráfaga: magos de área como Pharsa, Vale y Eudora limpian sus clones en segundos.",
+        "Estadísticas de mlbbhub: las mayores ventajas contra él son de Natan (+5,3 puntos), Joy (+4,7), Marcel (+3,9), Ruby y Faramis.",
+        "Objetos: Sea Halberd o Necklace of Durance para cortar su curación, y Antique Cuirass o Wind of Nature contra su daño físico."
+      ]},
+      {"h": "Contra quién es bueno Sun"},
+      {"p": "Los datos de mlbbhub muestran ventaja contra Jawhead (+4,2), Harley (+3,1) y Layla (+3,0), y TopUpLive también señala a los tiradores sin escape, como Layla y Miya, como objetivos fáciles."},
+      {"h": "Cambios recientes"},
+      {"p": "En el 2.2.16 Moonton recortó la build de roam de Sun porque quitaba demasiados recursos a sus compañeros. Su pasiva cura menos por golpe de clon, quien mata un clon recibe menos oro y la habilidad de clon tiene menos enfriamiento. Sun no cambió en el 2.2.16a."}
+    ],
+    "pt": [
+      {"h": "Função e estilo de jogo"},
+      {"p": "Sun é um lutador baseado em clones, jogado na rota EXP e na selva. Cada golpe reduz a armadura do alvo, e os clones copiam parte dos atributos dele, então ele derrete tanques e torres rápido. Nos dados do mlbbhub de 18 de outubro, ele está no tier A com 52,4% de vitórias, 1,6% de escolha e 21,4% de banimentos. Um detalhe chama atenção: ele vence 55,6% no Epic, mas só 48,8% no Mythical Glory ou acima, porque jogadores experientes sabem lidar com os clones."},
+      {"h": "Build e emblema recomendados"},
+      {"ul": [
+        "Itens: Swift Boots, Corrosion Scythe, Demon Hunter Sword, Golden Staff, Sea Halberd, Windtalker. mlbbhub e TopUpLive recomendam os mesmos seis itens.",
+        "Botas: Tough Boots contra controle em sequência, Warrior Boots contra rotas muito físicas.",
+        "Trocas: Rose Gold Meteor no lugar de Windtalker contra magos de explosão; Thunder Belt quando precisar aguentar mais; Blade of Despair no lugar de Sea Halberd quando estiver na frente e o inimigo não tiver cura.",
+        "Emblema: Assassino com Rupture, Master Assassin e Killing Spree.",
+        "Feitiço: Flicker."
+      ]},
+      {"h": "Táticas com clones e dicas"},
+      {"ul": [
+        "Jogue a habilidade que cria clone no mato para explorar com segurança, ou deixe um clone tomar os tiros da torre.",
+        "Use Swift Exchange para chegar perto, fugir ou atravessar paredes; Sun e o clone avançam juntos.",
+        "Use a breve invulnerabilidade da ultimate para fazer o inimigo desperdiçar controle, tiros de torre ou explosão de dano.",
+        "Acumule rápido a redução de armadura com golpes dos clones para que tanques, Lord e Tartaruga caiam muito antes.",
+        "Foque em derrubar torres na sua rota; desde o 2.2.16 a build de roam foi cortada porque consumia recursos demais do time."
+      ]},
+      {"h": "O que escolher contra Sun"},
+      {"ul": [
+        "Tanques de controle em área: os clones também levam controle, então tanques como Minotaur, Tigreal, Gloo e Khufra funcionam muito bem. Nosso motor coloca Gloo e Khufra entre os melhores picks.",
+        "Magos de explosão: magos de área como Pharsa, Vale e Eudora limpam os clones em segundos.",
+        "Estatísticas do mlbbhub: as maiores vantagens contra ele são de Natan (+5,3 pontos), Joy (+4,7), Marcel (+3,9), Ruby e Faramis.",
+        "Itens: Sea Halberd ou Necklace of Durance para cortar a cura, e Antique Cuirass ou Wind of Nature contra o dano físico."
+      ]},
+      {"h": "Contra quem Sun é bom"},
+      {"p": "Os dados do mlbbhub mostram vantagem contra Jawhead (+4,2), Harley (+3,1) e Layla (+3,0), e o TopUpLive também aponta atiradores sem fuga, como Layla e Miya, como alvos fáceis."},
+      {"h": "O que mudou recentemente"},
+      {"p": "No 2.2.16 a Moonton cortou a build de roam do Sun porque ela tirava recursos demais dos companheiros. A passiva cura menos por golpe de clone, quem mata um clone ganha menos ouro e a habilidade de clone tem recarga menor. Sun não foi alterado no 2.2.16a."}
+    ]
+  }
+}
