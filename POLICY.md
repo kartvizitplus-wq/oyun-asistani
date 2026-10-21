@@ -59,7 +59,7 @@ Last reviewed against the official pages: 2026-10-21.
   "Privacy & messaging → European regulations" message; the owner turns it on in AdSense.
 
 ## 5. Site quality
-- Easy navigation: header menu, breadcrumbs, links between related pages, working search/calculator.
+- Easy navigation: header menu, breadcrumbs, links between related pages, working search and tools.
 - No broken pages or links, no "under construction" sections, no empty pages.
 - Fast and mobile-friendly: no horizontal scroll at 360 px, no heavy scripts or images.
 - robots.txt allows Googlebot and AdSense's crawler (Mediapartners-Google); sitemap.xml is valid.
