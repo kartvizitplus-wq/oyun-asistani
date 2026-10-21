@@ -1,7 +1,7 @@
 {
   "game": "brawlstars",
   "updated": "2026-10-19",
-  "notes": "c=class (tank, assassin, marksman, artillery, controller, support, damage), s=strengths (antitank, antiassassin, heal, wallbreak), tier=S/A/B/C or null (set by weekly updater). Class matchups and mode weights live in build logic (src/app.js). gears = suggested gear pair per class.",
+  "notes": "c=class (tank, assassin, marksman, artillery, controller, support, damage), s=strengths (antitank, antiassassin, heal, wallbreak), tier=S/A/B/C or null (set by weekly updater). Class matchups and mode weights live in build logic (src/app.js). gears = suggested gear pair per class. sd = short kit description per language for new or changed brawlers (sourced; shown on the brawler page).",
   "brawlers": [
     {
       "n": "8-Bit",
@@ -185,7 +185,14 @@
       "n": "Cosmo",
       "c": "controller",
       "s": [],
-      "tier": "S"
+      "tier": "S",
+      "sd": {
+        "en": "Mythic Controller released in September 2026. His attack sends three orbiting planets that hit much harder at the edge of their orbit (250 damage up close, 1,000 at the edge at power 1). His Super, Gravitational Pull, tags an enemy so teammates' projectiles home in on them for 6 seconds. Gadgets: Planetary Pushback (knockback) and Telescope Trap (blocks dashes, jumps and teleports). To beat him, dive in close with brawlers like Mortis or Kenji.",
+        "tr": "Eylül 2026'da gelen Efsanevi (Mythic) bir kontrolcü. Saldırısı etrafında dönen üç gezegen gönderir; gezegenler yörüngenin ucunda çok daha fazla vurur (1. seviyede yakında 250, uçta 1.000 hasar). Super'i Gravitational Pull bir rakibi işaretler ve takım arkadaşlarının mermileri 6 saniye boyunca o rakibe yönelir. Aletler: Planetary Pushback (geri itme) ve Telescope Trap (atılma, zıplama ve ışınlanmayı engeller). Onu yenmek için Mortis veya Kenji gibi brawlerlarla yakınına gir.",
+        "id": "Controller Mythic yang rilis September 2026. Serangannya mengirim tiga planet yang mengorbit dan jauh lebih sakit di ujung orbit (250 damage dari dekat, 1.000 di ujung pada power 1). Super-nya, Gravitational Pull, menandai musuh sehingga proyektil rekan setim mengejar musuh itu selama 6 detik. Gadget: Planetary Pushback (knockback) dan Telescope Trap (memblokir dash, lompatan, dan teleport). Untuk mengalahkannya, dekati dia dengan brawler seperti Mortis atau Kenji.",
+        "es": "Controlador Mítico lanzado en septiembre de 2026. Su ataque lanza tres planetas en órbita que pegan mucho más en el borde de la órbita (250 de daño de cerca y 1.000 en el borde a poder 1). Su Super, Gravitational Pull, marca a un rival para que los proyectiles de sus aliados lo persigan durante 6 segundos. Gadgets: Planetary Pushback (empuje) y Telescope Trap (bloquea saltos, embestidas y teletransportes). Para ganarle, acércate con brawlers como Mortis o Kenji.",
+        "pt": "Controlador Mítico lançado em setembro de 2026. O ataque envia três planetas em órbita que batem muito mais na borda da órbita (250 de dano de perto e 1.000 na borda no poder 1). O Super, Gravitational Pull, marca um inimigo para que os projéteis dos aliados persigam ele por 6 segundos. Acessórios: Planetary Pushback (empurrão) e Telescope Trap (bloqueia avanços, pulos e teleportes). Para vencer ele, chegue perto com brawlers como Mortis ou Kenji."
+      }
     },
     {
       "n": "Crow",
@@ -692,7 +699,14 @@
       "n": "Vince",
       "c": "damage",
       "s": [],
-      "tier": null
+      "tier": null,
+      "sd": {
+        "en": "Mythic Damage Dealer, in early access since October 2026. His attack, Espresso Shot, fires coffee shots, and his Super, Barista Barrage, puts a Caterpillar debuff on an enemy so his attacks deal bonus damage to them. Caterpillars appear near him and turn into moths he collects; he loses half of the collection when defeated, so careful play pays off. Gadgets: Hot Coffee (area damage) and Metamothosis (converts nearby caterpillars). Star Powers: Come to Papa (pulls caterpillars to him) and Bug Bandage (heals on each conversion).",
+        "tr": "Ekim 2026'dan beri erken erişimde olan Efsanevi (Mythic) bir hasar uzmanı. Saldırısı Espresso Shot kahve atışları yapar; Super'i Barista Barrage bir rakibe Tırtıl etkisi bırakır ve normal saldırıları o rakibe ekstra hasar verir. Yanında beliren tırtıllar güvelere dönüşür ve onları toplar; elenirse koleksiyonunun yarısını kaybeder, bu yüzden dikkatli oynamak kazandırır. Aletler: Hot Coffee (alan hasarı) ve Metamothosis (yakındaki tırtılları dönüştürür). Yıldız Güçleri: Come to Papa (tırtılları kendine çeker) ve Bug Bandage (her dönüşümde can yeniler).",
+        "id": "Damage Dealer Mythic yang masuk early access sejak Oktober 2026. Serangannya, Espresso Shot, menembakkan kopi, dan Super-nya, Barista Barrage, memberi debuff Caterpillar ke musuh sehingga serangannya memberi damage ekstra ke musuh itu. Ulat muncul di dekatnya dan berubah menjadi ngengat yang dia kumpulkan; dia kehilangan setengah koleksinya saat kalah, jadi main hati-hati sangat penting. Gadget: Hot Coffee (damage area) dan Metamothosis (mengubah ulat di dekatnya). Star Power: Come to Papa (menarik ulat ke arahnya) dan Bug Bandage (heal setiap konversi).",
+        "es": "Damage Dealer Mítico, en acceso anticipado desde octubre de 2026. Su ataque, Espresso Shot, dispara café, y su Super, Barista Barrage, aplica a un rival el efecto Oruga para que sus ataques le hagan daño extra. Junto a él aparecen orugas que se convierten en polillas y él las colecciona; al ser derrotado pierde la mitad de la colección, así que conviene jugar con cuidado. Gadgets: Hot Coffee (daño en área) y Metamothosis (transforma las orugas cercanas). Habilidades estelares: Come to Papa (atrae las orugas) y Bug Bandage (cura en cada transformación).",
+        "pt": "Damage Dealer Mítico, em acesso antecipado desde outubro de 2026. O ataque, Espresso Shot, dispara café, e o Super, Barista Barrage, aplica em um inimigo o efeito Lagarta, fazendo os ataques causarem dano extra nele. Lagartas surgem perto dele e viram mariposas que ele coleciona; ao ser derrotado ele perde metade da coleção, então jogar com cuidado compensa. Acessórios: Hot Coffee (dano em área) e Metamothosis (transforma lagartas próximas). Poderes de Estrela: Come to Papa (puxa as lagartas) e Bug Bandage (cura a cada transformação)."
+      }
     },
     {
       "n": "Wendy",

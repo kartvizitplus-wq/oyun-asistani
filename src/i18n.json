@@ -376,7 +376,8 @@
   "hp_news": "{x} rehberleri ve haberleri",
   "relatedNews": "İlgili yazılar",
   "fp_skillH": "{x} yeteneği: {s}",
-  "q_ffskill": "Free Fire'da {x} yeteneği nedir?"
+  "q_ffskill": "Free Fire'da {x} yeteneği nedir?",
+  "bp_kitH": "{x} yetenekleri"
  },
  "en": {
   "langName": "English",
@@ -755,7 +756,8 @@
   "hp_news": "{x} guides and news",
   "relatedNews": "Related articles",
   "fp_skillH": "{x}'s skill: {s}",
-  "q_ffskill": "What is {x}'s skill in Free Fire?"
+  "q_ffskill": "What is {x}'s skill in Free Fire?",
+  "bp_kitH": "{x}'s kit"
  },
  "id": {
   "langName": "Bahasa Indonesia",
@@ -1134,7 +1136,8 @@
   "hp_news": "Panduan dan berita {x}",
   "relatedNews": "Artikel terkait",
   "fp_skillH": "Skill {x}: {s}",
-  "q_ffskill": "Apa skill {x} di Free Fire?"
+  "q_ffskill": "Apa skill {x} di Free Fire?",
+  "bp_kitH": "Kit {x}"
  },
  "es": {
   "langName": "Español",
@@ -1513,7 +1516,8 @@
   "hp_news": "Guías y noticias de {x}",
   "relatedNews": "Artículos relacionados",
   "fp_skillH": "Habilidad de {x}: {s}",
-  "q_ffskill": "¿Cuál es la habilidad de {x} en Free Fire?"
+  "q_ffskill": "¿Cuál es la habilidad de {x} en Free Fire?",
+  "bp_kitH": "Habilidades de {x}"
  },
  "pt": {
   "langName": "Português",
@@ -1892,6 +1896,7 @@
   "hp_news": "Guias e notícias de {x}",
   "relatedNews": "Artigos relacionados",
   "fp_skillH": "Habilidade de {x}: {s}",
-  "q_ffskill": "Qual é a habilidade de {x} no Free Fire?"
+  "q_ffskill": "Qual é a habilidade de {x} no Free Fire?",
+  "bp_kitH": "Habilidades de {x}"
  }
 }
