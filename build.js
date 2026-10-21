@@ -192,12 +192,12 @@ ${isMoba ? `<section id="buildsec"><h2>${esc(t.yourHero)}</h2><div class="heroli
 <div class="bar"><button class="btn" id="winBtn" type="button">✓ ${esc(t.winBtn)}</button><button class="btn ghost" id="lossBtn" type="button">✕ ${esc(t.lossBtn)}</button></div><p class="note" id="reportMsg" aria-live="polite"></p><p class="badge" id="badge"></p></section>` : `<section><div class="card"><ul class="tips" id="tips" style="margin:0"></ul></div></section>`}
 <div class="bar"><button class="btn" id="speak" type="button">🔊 ${esc(t.speak)}</button><button class="btn ghost" id="clear" type="button">${esc(t.clear)}</button>${isMoba ? `<a class="btn ghost" href="/${gp}/draft/">🎯 ${esc(t.draftLink)}</a>` : ''}</div>
 <section><h2>${esc(isMoba ? t.allHeroes : t.allBrawlers)}</h2><div class="list-links">${links}</div></section>`;
-      write(`${gp}/index.html`, layout({ lang, rel: `${gp}/`, title: `${gameTitle(g)} · ${cfg.siteName}`, desc: gameDesc(g), active: g.id, body, app, img: g.id, lastmod: D.updated }));
+      write(`${gp}/index.html`, layout({ lang, rel: `${gp}/`, title: `${gameTitle(g)} · ${cfg.siteName}`, desc: `${g.full} – ${gameDesc(g)}`, active: g.id, body, app, img: g.id, lastmod: D.updated }));
 
       if (D.tierList) writeTier(list, h => isMoba ? h.r : h.c);
       if (isMoba) write(`${gp}/draft/index.html`, layout({
         lang, rel: `${gp}/draft/`, active: g.id, img: g.id, lastmod: D.updated, app: { lang, game: g.id, kind: 'draft', t: tSub, data: D, itemsTr: lang === 'tr' && g.id === 'mlbb' ? ITEMS_TR : null },
-        title: `${tt('draftTitle', { g: g.name })} · ${cfg.siteName}`, desc: t.draftDesc,
+        title: `${tt('draftTitle', { g: g.name })} · ${cfg.siteName}`, desc: `${g.full} – ${t.draftDesc}`,
         body: `<section><h1>${esc(tt('draftTitle', { g: g.name }))}</h1><p class="lead">${esc(t.draftDesc)}</p></section>
 <section><div class="row seg"><span class="note">${esc(t.dMode)}:</span><span class="row seg" id="dmodeSeg"></span></div>
 <div class="row seg" id="banRow" style="margin-top:8px"><span class="note">${esc(t.banCount)}:</span><span class="row seg" id="banSeg"></span></div>
@@ -313,7 +313,7 @@ ${faqBlock(fqa)}
         write(`${gp}/${slug(c.n)}/index.html`, layout({ lang, rel: `${gp}/${slug(c.n)}/`, active: g.id, body: body2, jsonld: faqLd(fqa), img: g.id, lastmod: D.updated,
           crumbs: [[t.home, `${lang}/`], [g.name, `${gp}/`], [c.n, `${gp}/${slug(c.n)}/`]],
           title: c.skill ? `${tt('fp_title2', { x: c.n, s: c.skill, p: period })} · Free Fire` : `${tt('fp_h1', { x: c.n })} ${period} · Free Fire`,
-          desc: (sd ? `${c.skill}: ${sd} ` : '') + tt('fp_desc2', { x: c.n, top: comboTxt, d: dateTxt }) }));
+          desc: tt('fp_desc2', { x: c.n, top: comboTxt, d: dateTxt }) + (sd ? ` ${c.skill}: ${sd}` : '') }));
       }
     }
   }
@@ -364,7 +364,7 @@ ${G.sections.map((sec, i) => `<h2 id="s${i + 1}">${esc(sec.h)}</h2><ol>${sec.ste
 /* Root, assets, SEO files */
 fs.mkdirSync(OUT, { recursive: true });
 fs.writeFileSync(path.join(OUT, 'index.html'), `<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-<title>${esc(cfg.siteName)}</title><meta name="description" content="${esc(I18N.en.homeText)}">
+<title>${esc(cfg.siteName)} · ${esc(I18N.en.tagline)}</title><meta name="description" content="${esc(I18N.en.homeText)}">${base ? `<link rel="canonical" href="${base}/${cfg.defaultLang}/">` : ''}
 ${cfg.googleVerification ? `<meta name="google-site-verification" content="${esc(cfg.googleVerification)}">` : ''}
 ${cfg.adsenseClient ? `<meta name="google-adsense-account" content="${esc(cfg.adsenseClient)}"><script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=${esc(cfg.adsenseClient)}" crossorigin="anonymous"></script>` : ''}
 ${cfg.langs.map(l => `<link rel="alternate" hreflang="${l}" href="${base}/${l}/">`).join('')}
