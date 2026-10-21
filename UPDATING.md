@@ -1,3 +1,5 @@
+> **Before anything else read POLICY.md (Google AdSense and Search policy checklist) and check your work against it before pushing.**
+
 # Weekly update procedure
 
 Instruction set for the automated weekly run (a human can follow it too).
