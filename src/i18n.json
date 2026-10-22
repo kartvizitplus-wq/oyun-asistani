@@ -395,7 +395,8 @@
     "emailUs": "E-posta gönder",
     "privKids": "Bu site 13 yaşın altındaki çocuklara yönelik değildir ve bilerek çocuklardan kişisel bilgi toplamaz.",
     "privP5": "Gizlilikle ilgili sorular için İletişim sayfasındaki adrese yazabilirsin:",
-    "privDate": "Son güncelleme"
+    "privDate": "Son güncelleme",
+    "statsLabel": "Oyun başına incelenen kahraman, savaşçı ve karakter sayısı"
   },
   "en": {
     "langName": "English",
@@ -793,7 +794,8 @@
     "emailUs": "Send an email",
     "privKids": "This site is not directed at children under 13 and does not knowingly collect personal information from children.",
     "privP5": "For privacy questions, write to the address on the Contact page:",
-    "privDate": "Last updated"
+    "privDate": "Last updated",
+    "statsLabel": "Heroes, brawlers and characters covered per game"
   },
   "id": {
     "langName": "Bahasa Indonesia",
@@ -1191,7 +1193,8 @@
     "emailUs": "Kirim email",
     "privKids": "Situs ini tidak ditujukan untuk anak di bawah 13 tahun dan tidak dengan sengaja mengumpulkan informasi pribadi dari anak-anak.",
     "privP5": "Untuk pertanyaan tentang privasi, kirim email ke alamat di halaman Kontak:",
-    "privDate": "Terakhir diperbarui"
+    "privDate": "Terakhir diperbarui",
+    "statsLabel": "Jumlah hero, brawler, dan karakter yang dibahas per game"
   },
   "es": {
     "langName": "Español",
@@ -1589,7 +1592,8 @@
     "emailUs": "Enviar correo",
     "privKids": "Este sitio no está dirigido a menores de 13 años y no recoge a sabiendas información personal de niños.",
     "privP5": "Para preguntas sobre privacidad, escribe a la dirección de la página de Contacto:",
-    "privDate": "Última actualización"
+    "privDate": "Última actualización",
+    "statsLabel": "Héroes, brawlers y personajes analizados por juego"
   },
   "pt": {
     "langName": "Português",
@@ -1987,6 +1991,7 @@
     "emailUs": "Enviar e-mail",
     "privKids": "Este site não é direcionado a crianças menores de 13 anos e não coleta intencionalmente informações pessoais de crianças.",
     "privP5": "Para dúvidas sobre privacidade, escreva para o endereço da página de Contato:",
-    "privDate": "Última atualização"
+    "privDate": "Última atualização",
+    "statsLabel": "Heróis, brawlers e personagens analisados por jogo"
   }
 }

@@ -13,11 +13,11 @@ const asset = f => `/assets/${f}?v=${VER[f]}`;
 
 /* Games shown on the site. kind: moba (heroes + items), bs (Brawl Stars), ff (Free Fire). */
 const GAMES = [
-  { id: 'mlbb', slug: 'mlbb', name: 'Mobile Legends', full: 'Mobile Legends: Bang Bang', kind: 'moba', data: read('data/mlbb.json'), example: ['Ling', 'Estes', 'Tigreal', 'Pharsa', 'Claude'] },
-  { id: 'hok', slug: 'honor-of-kings', name: 'Honor of Kings', full: 'Honor of Kings', kind: 'moba', data: read('data/hok.json'), example: ['Lam', 'Cai Yan', 'Lian Po', 'Kongming', 'Marco Polo'] },
-  { id: 'wildrift', slug: 'wild-rift', name: 'Wild Rift', full: 'League of Legends: Wild Rift', kind: 'moba', data: read('data/wildrift.json'), example: ['Yasuo', 'Soraka', 'Malphite', 'Ahri', 'Jinx'] },
-  { id: 'freefire', slug: 'free-fire', name: 'Free Fire', full: 'Free Fire', kind: 'ff', data: read('data/freefire.json') },
-  { id: 'brawlstars', slug: 'brawl-stars', name: 'Brawl Stars', full: 'Brawl Stars', kind: 'bs', data: read('data/brawlstars.json'), example: ['Mortis', 'Piper', 'Bull'] }
+  { id: 'mlbb', accent: '#a77bf3', slug: 'mlbb', name: 'Mobile Legends', full: 'Mobile Legends: Bang Bang', kind: 'moba', data: read('data/mlbb.json'), example: ['Ling', 'Estes', 'Tigreal', 'Pharsa', 'Claude'] },
+  { id: 'hok', accent: '#ef5a52', slug: 'honor-of-kings', name: 'Honor of Kings', full: 'Honor of Kings', kind: 'moba', data: read('data/hok.json'), example: ['Lam', 'Cai Yan', 'Lian Po', 'Kongming', 'Marco Polo'] },
+  { id: 'wildrift', accent: '#3ec3f5', slug: 'wild-rift', name: 'Wild Rift', full: 'League of Legends: Wild Rift', kind: 'moba', data: read('data/wildrift.json'), example: ['Yasuo', 'Soraka', 'Malphite', 'Ahri', 'Jinx'] },
+  { id: 'freefire', accent: '#f7863a', slug: 'free-fire', name: 'Free Fire', full: 'Free Fire', kind: 'ff', data: read('data/freefire.json') },
+  { id: 'brawlstars', accent: '#f5c842', slug: 'brawl-stars', name: 'Brawl Stars', full: 'Brawl Stars', kind: 'bs', data: read('data/brawlstars.json'), example: ['Mortis', 'Piper', 'Bull'] }
 ];
 const NEWS = fs.existsSync(R('data/news')) ? fs.readdirSync(R('data/news')).filter(f => f.endsWith('.json')).map(f => read('data/news/' + f)).sort((a, b) => b.date.localeCompare(a.date)) : [];
 
@@ -39,11 +39,14 @@ const itemName = (lang, i, t) => i.startsWith('#') ? t[i.slice(1)] : ((lang === 
 const itemHtml = (lang, i, t) => { const n = itemName(lang, i, t); return Icons.item(i, 28) + '<span class="iname">' + esc(n) + (n !== i && !i.startsWith('#') ? '<small class="en">' + esc(i) + '</small>' : ''); };
 const scoreCls = s => s >= 7 ? 'good' : s >= 5 ? 'mid' : 'bad';
 
+/* Radar mark used in the header logo (original drawing). */
+const LOGO = '<svg class="mark" viewBox="0 0 32 32" width="28" height="28" aria-hidden="true"><circle cx="16" cy="16" r="14" fill="none" stroke="#f5a524" stroke-width="3"/><circle cx="16" cy="16" r="8.5" fill="none" stroke="#f5a524" stroke-width="1.5" opacity=".55"/><path d="M16 16L16 2A14 14 0 0 1 29.3 11.7Z" fill="#f5a524" opacity=".35"/><circle cx="16" cy="16" r="4.2" fill="#e2595b"/></svg>';
 const OG_LOCALE = { en: 'en_US', tr: 'tr_TR', id: 'id_ID', es: 'es_ES', pt: 'pt_BR' };
 /* Breadcrumb trail as schema.org BreadcrumbList: crumbs = [[name, rel], ...]. */
 const crumbLd = crumbs => crumbs && crumbs.length > 1 ? { '@context': 'https://schema.org', '@type': 'BreadcrumbList', itemListElement: crumbs.map(([name, r], i) => ({ '@type': 'ListItem', position: i + 1, name, item: `${base}/${r}` })) } : null;
 function layout({ lang, rel, title, desc, body, active, app, type, jsonld, img, crumbs, lastmod }) {
   const t = I18N[lang];
+  const gm = GAMES.find(g => g.id === active);
   const tail = rel.replace(/^[a-z]{2}\//, '');
   pages.push({ rel, lastmod: lastmod || lastUpdated });
   const ogImg = `${base}/og/${img || 'default'}.png`;
@@ -69,18 +72,19 @@ ${verify}${base ? `<link rel="canonical" href="${base}/${rel}">` : ''}${alts}
 <meta property="og:title" content="${esc(title)}"><meta property="og:description" content="${esc(desc)}"><meta property="og:type" content="${type || 'website'}"><meta property="og:site_name" content="${esc(cfg.siteName)}">${base ? `<meta property="og:url" content="${base}/${rel}">` : ''}<meta property="og:locale" content="${OG_LOCALE[lang] || 'en_US'}"><meta property="og:image" content="${ogImg}"><meta property="og:image:width" content="1200"><meta property="og:image:height" content="630"><meta property="og:image:alt" content="${esc(cfg.siteName)}">
 <meta name="twitter:card" content="summary_large_image"><meta name="twitter:title" content="${esc(title)}"><meta name="twitter:description" content="${esc(desc)}"><meta name="twitter:image" content="${ogImg}">
 ${lds.map(j => `<script type="application/ld+json">${JSON.stringify(j).replace(/</g, '\\u003c')}</script>`).join('')}
-<link rel="icon" href="/assets/icon.svg" type="image/svg+xml"><link rel="manifest" href="/manifest.webmanifest"><meta name="theme-color" content="#0c1018"><link rel="apple-touch-icon" href="/icons/icon-192.png">
+<link rel="icon" href="/assets/icon.svg" type="image/svg+xml"><link rel="manifest" href="/manifest.webmanifest"><meta name="theme-color" content="#0a0e16"><link rel="apple-touch-icon" href="/icons/icon-192.png">
 <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@500;700&family=IBM+Plex+Sans:wght@400;600&display=swap">
 <link rel="stylesheet" href="${asset('style.css')}">
 ${ads}
 </head>
-<body>
+<body${gm ? ` class="g-${gm.id}" style="--accent:${gm.accent}"` : ''}>
 <header class="top"><div class="wrap">
-<a class="logo" href="/${lang}/">${esc(cfg.siteName).replace(/(Radar)$/, '<span>$1</span>')}</a>
+<a class="logo" href="/${lang}/">${LOGO}<span class="name">${esc(cfg.siteName).replace(/(Radar)$/, '<span>$1</span>')}</span></a>
 <select class="lang" id="langSel" aria-label="${esc(t.language)}">${langOpts}</select>
 <nav class="games">${nav}</nav>
 </div></header>
+${gm ? `<div class="gbanner" aria-hidden="true" style="background-image:url(/img/${gm.id}-1200.webp)"></div>` : ''}
 <main class="wrap">
 ${crumbNav}${body}
 </main>
@@ -123,9 +127,10 @@ for (const lang of cfg.langs) {
   write(`${lang}/index.html`, layout({
     lang, rel: `${lang}/`, title: `${cfg.siteName} · ${t.tagline}`, desc: t.homeText,
     jsonld: { '@context': 'https://schema.org', '@type': 'WebSite', name: cfg.siteName, url: `${base}/${lang}/`, inLanguage: lang },
-    body: `<section><h1>${esc(t.homeH1)}</h1><p class="lead">${esc(t.homeText)}</p><div class="bar" style="margin-top:12px"><a class="btn ghost" href="/${lang}/guide/">❓ ${esc(GUIDE[lang].nav)}</a></div></section>
-<section><h2>${esc(t.chooseGame)}</h2><div class="games-grid">
-${GAMES.map(g => `<a class="game" href="/${lang}/${g.slug}/"><h3>${esc(g.full)}</h3><span class="note">${esc(gameDesc(g))}</span><span class="go">${esc(t.openTool)} →</span></a>`).join('\n')}
+    body: `<section class="homehero"><img class="homehero-img" src="/img/hero-1376.webp" srcset="/img/hero-800.webp 800w, /img/hero-1376.webp 1376w" sizes="(max-width: 1040px) 100vw, 1040px" width="1376" height="768" alt="" fetchpriority="high"><div class="homehero-body"><span class="kicker">${esc(t.tagline)}</span><h1>${esc(t.homeH1)}</h1><p class="lead">${esc(t.homeText)}</p><div class="bar"><a class="btn" href="#games">${esc(t.chooseGame)} ↓</a><a class="btn ghost" href="/${lang}/guide/">❓ ${esc(GUIDE[lang].nav)}</a></div>
+<div class="stats" aria-label="${esc(t.statsLabel)}">${GAMES.map(g => `<a class="stat" href="/${lang}/${g.slug}/" style="--accent:${g.accent}"><b>${(g.data.heroes || g.data.brawlers || g.data.characters || []).length}</b><span>${esc(g.name)}</span></a>`).join('')}</div><p class="note">${esc(t.statsLabel)}</p></div></section>
+<section id="games"><h2>${esc(t.chooseGame)}</h2><div class="games-grid">
+${GAMES.map(g => `<a class="game" href="/${lang}/${g.slug}/" style="--accent:${g.accent}"><img src="/img/${g.id}-640.webp" srcset="/img/${g.id}-640.webp 640w, /img/${g.id}-1200.webp 1200w" sizes="(max-width: 700px) 100vw, 500px" width="640" height="357" alt="" loading="lazy" decoding="async"><span class="gbody"><h3>${esc(g.full)}</h3><span class="note">${esc(gameDesc(g))}</span><span class="go">${esc(t.openTool)} →</span></span></a>`).join('\n')}
 </div></section>
 ${showcase(lang)}
 <section><h2>${esc(t.latestNews)}</h2>${newsCards(lang, NEWS.slice(0, 6))}</section>`

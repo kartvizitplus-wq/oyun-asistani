@@ -1,6 +1,6 @@
 /* Dark match-HUD look: navy ground, gold for "your" picks, red for enemy, blue for counter items */
 :root{
-  --bg:#0c1018; --panel:#141a25; --panel2:#1a2230; --line:#27324a; --fg:#e9edf5; --muted:#8e9ab0;
+  --bg:#0a0e16; --panel:#121825; --panel2:#182032; --line:#253048; --fg:#e9edf5; --muted:#8e9ab0;
   --gold:#e8b44a; --gold-bg:#2a2212; --red:#e2595b; --red-bg:#2a1517; --blue:#4a9bea; --green:#4fc28a; --green-bg:#16301f;
   --display:"Chakra Petch",system-ui,sans-serif; --body:"IBM Plex Sans",system-ui,sans-serif;
   color-scheme:dark;
@@ -9,7 +9,7 @@
 html{-webkit-text-size-adjust:100%}
 body{margin:0;background:var(--bg);color:var(--fg);font:15px/1.55 var(--body)}
 a{color:var(--gold)}
-.wrap{max-width:900px;margin:0 auto;padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px))}
+.wrap{max-width:1040px;margin:0 auto;padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px))}
 header.top{border-bottom:1px solid var(--line);background:var(--panel)}
 header.top .wrap{display:flex;align-items:center;justify-content:space-between;gap:12px;padding-block:12px;flex-wrap:wrap}
 .logo{font-family:var(--display);font-weight:700;font-size:1.25rem;color:var(--fg);text-decoration:none;letter-spacing:.02em}
@@ -169,3 +169,48 @@ ul.mm li.bad{color:var(--red)}ul.mm li.good{color:var(--green)}
 .badge{margin:8px 0 0;color:var(--gold);font-size:.9rem}
 .crumbs{margin:14px 0 -4px;overflow-wrap:anywhere}
 .crumbs a{color:var(--muted)}
+
+/* ---- 2026-10 redesign: game art, accents, hero area ---- */
+:root{--accent:var(--gold)}
+header.top{position:sticky;top:0;z-index:20;background:rgba(10,14,22,.86);-webkit-backdrop-filter:blur(10px);backdrop-filter:blur(10px)}
+.logo{display:inline-flex;align-items:center;gap:9px;font-size:1.35rem}
+.logo .mark{flex:none}
+.logo .name{color:var(--fg)}.logo .name span{color:var(--gold)}
+nav.games a{padding:4px 0;border-bottom:2px solid transparent}
+nav.games a[aria-current="page"]{border-bottom-color:var(--accent)}
+/* Faded game artwork behind the top of every game page */
+.gbanner{position:absolute;left:0;right:0;top:0;height:340px;background-size:cover;background-position:center 30%;opacity:.5;z-index:0;pointer-events:none;
+  -webkit-mask-image:linear-gradient(180deg,#000 20%,transparent 100%);mask-image:linear-gradient(180deg,#000 20%,transparent 100%)}
+body{position:relative}
+main.wrap,footer{position:relative;z-index:1}
+body[class^="g-"] h1{text-shadow:0 2px 14px rgba(0,0,0,.7)}
+body[class^="g-"] main.wrap>section:first-of-type .lead,body[class^="g-"] .crumbs{text-shadow:0 1px 8px rgba(0,0,0,.8)}
+body[class^="g-"] main.wrap>section:first-of-type .lead{color:#c3cbda}
+.game .go,body[class^="g-"] .crumbs a:hover{color:var(--accent)}
+/* Home hero */
+.homehero{position:relative;border-radius:16px;overflow:hidden;border:1px solid var(--line);min-height:420px;display:flex;flex-direction:column;justify-content:flex-end;align-items:stretch;background:#05070c}
+.homehero-img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:center 35%}
+.homehero::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(5,7,12,.15) 0%,rgba(5,7,12,.55) 45%,rgba(5,7,12,.96) 100%)}
+.homehero-body{position:relative;z-index:1;padding:28px 26px 22px;display:flex;flex-direction:column;gap:12px;max-width:720px}
+.homehero h1{font-size:clamp(1.8rem,5vw,2.9rem);text-shadow:0 2px 18px rgba(0,0,0,.6)}
+.homehero .lead{color:#c9d1df;margin:0}
+.kicker{font:700 .74rem var(--display);letter-spacing:.14em;text-transform:uppercase;color:var(--gold)}
+.stats{display:flex;flex-wrap:wrap;gap:8px;margin-top:6px}
+.stat{display:inline-flex;align-items:baseline;gap:7px;text-decoration:none;color:var(--muted);background:rgba(18,24,37,.8);border:1px solid var(--line);border-left:3px solid var(--accent);border-radius:10px;padding:7px 12px;font-size:.88rem}
+.stat b{font:700 1.2rem var(--display);color:var(--fg);font-variant-numeric:tabular-nums}
+.stat:hover{border-color:var(--accent);color:var(--fg)}
+/* Game cards with artwork */
+#games{scroll-margin-top:80px}
+#games h2{display:flex;align-items:center;gap:12px;color:var(--gold)}
+#games h2::after{content:"";flex:1;height:1px;background:var(--line)}
+.games-grid{grid-template-columns:repeat(auto-fill,minmax(300px,1fr));gap:16px}
+.game{padding:0;overflow:hidden;border-radius:14px;gap:0;transition:transform .18s ease,border-color .18s ease,box-shadow .18s ease}
+.game img{display:block;width:100%;height:auto;aspect-ratio:16/9;object-fit:cover;-webkit-mask-image:linear-gradient(180deg,#000 70%,transparent 100%);mask-image:linear-gradient(180deg,#000 70%,transparent 100%)}
+.gbody{display:flex;flex-direction:column;gap:8px;padding:4px 18px 18px}
+.game:hover{border-color:var(--accent);transform:translateY(-3px);box-shadow:0 10px 30px -12px var(--accent)}
+.game .go{font-size:1.02rem}
+.btn{transition:filter .15s ease}
+.btn:hover{filter:brightness(1.08)}
+@media (max-width:640px){.homehero{display:block;min-height:0}.homehero::after{display:none}.homehero-img{position:static;display:block;height:auto;aspect-ratio:16/9;-webkit-mask-image:linear-gradient(180deg,#000 55%,transparent 100%);mask-image:linear-gradient(180deg,#000 55%,transparent 100%)}.homehero-body{padding:0 16px 18px;margin-top:-36px}}
+@media (max-width:480px){.stat{font-size:.8rem;padding:6px 10px}.games-grid{grid-template-columns:1fr}.gbanner{height:240px}}
+@media (prefers-reduced-motion:reduce){.game:hover{transform:none}}
