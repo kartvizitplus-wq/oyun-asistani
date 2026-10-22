@@ -23,6 +23,8 @@ const NEWS = fs.existsSync(R('data/news')) ? fs.readdirSync(R('data/news')).filt
 
 const slug = s => s.toLowerCase().replace(/&/g, 'and').replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, '');
 const esc = s => String(s).replace(/[&<>"]/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[c]));
+/* English article: "is a assassin" -> "is an assassin" */
+const anA = (s, lang) => lang === 'en' ? String(s).replace(/\b(is) a ([aeiouAEIOU])/g, '$1 an $2') : s;
 const fill = (s, v) => { for (const k in v || {}) s = s.split('{' + k + '}').join(v[k]); return s; };
 const base = (cfg.baseUrl || '').replace(/\/$/, '');
 const pages = [];
@@ -149,14 +151,14 @@ ${showcase(lang)}
         const src = D.tierSource || {};
         const tlPeriod = D.patch ? period : src.patch ? fill(t.patchLbl, { v: src.patch }) : period;
         const tqa = [[tt('tl_q', { g: g.name }), tt('tl_a', { list: listOf(sTop.slice(0, 10)) })]];
-        const tbody = `<section><h1>${esc(tt('tl_h1', { g: g.name }))} <span class="tlper">${esc(tlPeriod)}</span></h1><p class="lead">${esc(tt('tl_intro', { src: src.name || '' }))}</p>
+        const tbody = `<section><h1>${esc(tt('tl_h1', { g: g.name }))} <span class="tlper">${esc(tlPeriod)}</span></h1><p class="lead">${esc(tt(g.kind === 'bs' ? 'tl_intro_bs' : g.kind === 'ff' ? 'tl_intro_ff' : 'tl_intro', { src: src.name || '' }))}</p>
 <p class="note">${esc(t.tl_src)}: ${src.url ? `<a href="${esc(src.url)}" rel="nofollow noopener" target="_blank">${esc(src.name)}</a>` : esc(src.name || '')} · ${esc(src.date || D.updated)}</p></section>
 ${lanes ? lanes.map(([lane, tl]) => `<section><h2>${esc(t['tl_lane_' + lane] || lane)}</h2><div class="card tiers">${rows(tl)}</div></section>`).join('') : `<section><div class="card tiers">${rows(D.tierList)}</div></section>`}
 <div class="bar"><a class="btn" href="/${gp}/">${esc(gameTitle(g))} →</a></div>
 ${faqBlock(tqa)}`;
         write(`${gp}/tier-list/index.html`, layout({ lang, rel: `${gp}/tier-list/`, active: g.id, body: tbody, jsonld: faqLd(tqa), img: g.id, lastmod: D.updated,
           crumbs: [[t.home, `${lang}/`], [g.name, `${gp}/`], [tt('tl_h1', { g: g.name }), `${gp}/tier-list/`]],
-          title: tt('tl_title', { g: g.name, p: tlPeriod }), desc: tt('tl_desc', { g: g.name, top: listOf(sTop.slice(0, 4)), d: dateTxt }) }));
+          title: tt(g.kind === 'bs' ? 'tl_title_bs' : g.kind === 'ff' ? 'tl_title_ff' : 'tl_title', { g: g.name, p: tlPeriod }), desc: tt('tl_desc', { g: g.name, top: listOf(sTop.slice(0, 4)), d: dateTxt }) }));
       };
     const app = { lang, game: g.id, kind: g.kind, t: tSub, data: D, example: g.example || null, itemsTr: lang === 'tr' && g.id === 'mlbb' ? ITEMS_TR : null };
 
@@ -178,7 +180,7 @@ ${isMoba ? `<h2 style="margin-top:14px">${esc(t.myTeam)}</h2><div class="slots" 
 ${isMoba ? '' : `<section><h2>${esc(t.mode)}</h2><div class="row seg" id="modes"></div></section>`}
 ${isMoba ? `<section><h2>${esc(t.teamAnalysis)}</h2><div class="card teams" id="team"></div></section>
 <section><h2>${esc(t.bansTitle)}</h2><div class="card" id="bans"></div></section>` : ''}
-<section class="card poolcard" id="poolcard"><div class="poolhead"><h2 style="margin:0">⭐ ${esc(t.myPool)}</h2><button class="btn ghost" id="poolEdit" type="button">${esc(t.poolEdit)}</button></div>
+<section class="card poolcard" id="poolcard"><div class="poolhead"><h2 style="margin:0">⭐ ${esc(isMoba ? t.myPool : t.myPoolBs)}</h2><button class="btn ghost" id="poolEdit" type="button">${esc(t.poolEdit)}</button></div>
 <p class="note" id="poolHint"></p><div class="list-links" id="poolSel"></div><div class="row seg" id="poolMode"></div>
 <div id="poolPicker" hidden><input id="pq" type="search" placeholder="${esc(t.search)}" autocomplete="off" aria-label="${esc(t.search)}"><div class="pool" id="mypool"></div></div></section>
 <section><h2>${esc(t.bestPicks)}</h2>${D.lanes ? `<div class="row seg" style="margin-bottom:10px"><span class="note">${esc(t.myLane)}:</span><span class="row seg" id="laneSeg"></span></div>` : ''}<div class="card" id="picks"></div>
@@ -224,7 +226,7 @@ ${isMoba ? `<section id="buildsec"><h2>${esc(t.yourHero)}</h2><div class="heroli
           const own = Engine.mlBuild(D, x, []);
           const traits = [...h.t].map(k => t['tr_' + k]).filter(Boolean);
           inner = `<section><div class="heroline">${Icons.hero(x, h.r, 56)}<h1>${esc(tt('hp_h1', { x }))}</h1></div>
-<p class="lead">${esc(tt('hp_about', { x, role: t['role_' + h.r].toLowerCase(), dmg: h.d === 'P' ? t.dmgP : t.dmgM }))}${traits.length ? ' ' + esc(t.hp_traits) + ': ' + esc(traits.join(', ')) + '.' : ''}</p></section>
+<p class="lead">${esc(anA(tt('hp_about', { x, role: t['role_' + h.r].toLowerCase(), dmg: h.d === 'P' ? t.dmgP : t.dmgM }), lang))}${traits.length ? ' ' + esc(t.hp_traits) + ': ' + esc(traits.join(', ')) + '.' : ''}</p></section>
 <section><h2>${esc(tt('hp_best', { x }))}</h2><div class="card">${picks.map(p => `<div class="pick">${Icons.hero(p.n, p.r, 36)}<span class="pmain"><span><span class="score ${scoreCls(p.s)}">${p.s.toFixed(1)}</span> <b><a href="/${gp}/${slug(p.n)}/" style="color:inherit">${esc(p.n)}</a></b> <span class="role">${esc(t['role_' + p.r])}</span></span><span class="why">${esc(p.why.length ? [...new Set(p.why.map(w => typeof w === 'string' ? t[w] : fill(t[w.k] || '', { x: w.x })))].join(' · ') : t.neutral)}</span></span><span></span></div>`).join('')}</div></section>
 ${items.length ? `<section><h2>${esc(tt('hp_items', { x }))}</h2><div class="card"><ol class="build">${items.map(([i, r]) => `<li class="adapt">${itemHtml(lang, i, t)}<small class="why">${esc(t[r] || '')}</small></span></li>`).join('')}</ol></div></section>` : ''}
 ${strong.length ? `<section><h2>${esc(tt('hp_strong', { x }))}</h2><p style="margin:0">${esc(strong.map(k => t['s_' + k]).join(', '))}</p></section>` : ''}
@@ -254,7 +256,7 @@ ${own.emblem ? `<h2 style="margin:16px 0 10px">${esc(own.emblem.arcana ? t.arcan
           const picks = Engine.bsScore(D, [x], null, null).slice(0, 8);
           const strong = Engine.bsStrongAgainst(D, x);
           const whyTxt = w => w.k === 'bw_counter' ? tt('bw_counter', { cls: t['cl_' + w.cls] }) : w.k === 'bw_mode' ? tt('bw_mode', { mode: t['m_' + w.mode] }) : t[w.k];
-          inner = `<section><div class="heroline">${Icons.hero(x, h.c, 56)}<h1>${esc(tt('bp_h1', { x }))}</h1></div><p class="lead">${esc(tt('bp_about', { x, cls: t['cl_' + h.c] }))}</p></section>
+          inner = `<section><div class="heroline">${Icons.hero(x, h.c, 56)}<h1>${esc(tt('bp_h1', { x }))}</h1></div><p class="lead">${esc(anA(tt('bp_about', { x, cls: t['cl_' + h.c] }), lang))}</p></section>
 ${h.sd ? `<section><h2>${esc(tt('bp_kitH', { x }))}</h2><p style="margin:0">${esc(h.sd[lang] || h.sd.en)}</p></section>` : ''}
 <section><h2>${esc(tt('bp_best', { x }))}</h2><div class="card">${picks.map(p => `<div class="pick">${Icons.hero(p.n, p.c, 36)}<span class="pmain"><span><span class="score ${scoreCls(p.s)}">${p.s.toFixed(1)}</span> <b><a href="/${gp}/${slug(p.n)}/" style="color:inherit">${esc(p.n)}</a></b> <span class="role">${esc(t['cl_' + p.c])}</span></span><span class="why">${esc(p.why.length ? [...new Set(p.why.map(whyTxt))].join(' · ') : t.neutral)}</span></span><span></span></div>`).join('')}</div></section>
 ${strong.length ? `<section><h2>${esc(tt('bp_strong', { x }))}</h2><p style="margin:0">${esc(strong.map(c => t['cl_' + c]).join(', '))}</p></section>` : ''}
@@ -335,7 +337,7 @@ ${faqBlock(fqa)}
         about: g ? { '@type': 'VideoGame', name: g.full } : undefined,
         publisher: { '@type': 'Organization', name: cfg.siteName, url: `${base}/`, logo: { '@type': 'ImageObject', url: `${base}/icons/icon-512.png` } }, author: { '@type': 'Organization', name: cfg.siteName, url: `${base}/${lang}/about/` } },
       body: `<article class="prose"><p class="note">${esc(t.publishedOn)}: ${esc(n.date)}${g ? ' · ' + esc(g.full) : ''}</p><h1>${esc(title)}</h1>${blocks}
-${n.sources && n.sources.length ? `<p class="note">${esc(n.sources.join(' · '))}</p>` : ''}</article>
+${n.sources && n.sources.length ? `<p class="note">${esc(n.sources.join(' · '))}</p>` : ''}<p class="note">${esc(t.aiNote)}</p></article>
 <div class="bar">${g && n.hero ? `<a class="btn ghost" href="/${lang}/${g.slug}/${slug(n.hero)}/">${esc(tt('hp_h1', { x: n.hero }))}</a>` : ''}${g && g.data.tierList ? `<a class="btn ghost" href="/${lang}/${g.slug}/tier-list/">${esc(tt('tl_h1', { g: g.name }))}</a>` : ''}${g ? `<a class="btn" href="/${lang}/${g.slug}/">${esc(t.openTool)} →</a>` : ''}</div>
 ${newsSection(lang, t.relatedNews, NEWS.filter(m => m !== n && m.game === n.game).slice(0, 4))}`
     }));
@@ -357,7 +359,7 @@ ${G.sections.map((sec, i) => `<h2 id="s${i + 1}">${esc(sec.h)}</h2><ol>${sec.ste
 
   /* Privacy & About */
   write(`${lang}/privacy/index.html`, layout({ lang, rel: `${lang}/privacy/`, title: `${t.privTitle} · ${cfg.siteName}`, desc: t.privBody[0],
-    body: `<section class="prose"><h1>${esc(t.privTitle)}</h1>${t.privBody.map(p => `<p>${esc(p)}</p>`).join('')}</section>` }));
+    body: `<section class="prose"><h1>${esc(t.privTitle)}</h1>${t.privBody.map(p => `<p>${p}</p>`).join('')}</section>` }));
   write(`${lang}/about/index.html`, layout({ lang, rel: `${lang}/about/`, title: `${t.aboutTitle} · ${cfg.siteName}`, desc: t.aboutBody[0],
     body: `<section class="prose"><h1>${esc(t.aboutTitle)}</h1>${t.aboutBody.map(p => `<p>${esc(p)}</p>`).join('')}${cfg.contactEmail ? `<p>${esc(t.contact)}: <span style="user-select:all">${esc(cfg.contactEmail)}</span></p>` : ''}</section>` }));
 }
@@ -367,7 +369,7 @@ fs.mkdirSync(OUT, { recursive: true });
 fs.writeFileSync(path.join(OUT, 'index.html'), `<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
 <title>${esc(cfg.siteName)} · ${esc(I18N.en.tagline)}</title><meta name="description" content="${esc(I18N.en.homeText)}">${base ? `<link rel="canonical" href="${base}/${cfg.defaultLang}/">` : ''}
 ${cfg.googleVerification ? `<meta name="google-site-verification" content="${esc(cfg.googleVerification)}">` : ''}
-${cfg.adsenseClient ? `<meta name="google-adsense-account" content="${esc(cfg.adsenseClient)}"><script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=${esc(cfg.adsenseClient)}" crossorigin="anonymous"></script>` : ''}
+${cfg.adsenseClient ? `<meta name="google-adsense-account" content="${esc(cfg.adsenseClient)}">` : ''}
 ${cfg.langs.map(l => `<link rel="alternate" hreflang="${l}" href="${base}/${l}/">`).join('')}
 <script>(function(){var L=${JSON.stringify(cfg.langs)},s=null;try{s=localStorage.getItem('lang')}catch(e){}
 var n=(s||navigator.language||'en').slice(0,2).toLowerCase();location.replace('/'+(L.indexOf(n)>-1?n:'${cfg.defaultLang}')+'/');})();</script>
@@ -395,7 +397,7 @@ fs.writeFileSync(path.join(OUT, 'robots.txt'), AI_BOTS.map(b => `User-agent: ${b
     const n = (g.data.heroes || g.data.brawlers || g.data.characters || []).length;
     const tool = g.kind === 'moba' ? en.mobaToolDesc : g.kind === 'bs' ? en.bsToolDesc : en.ffToolDesc;
     return `## ${g.full}\n- [Assistant](${B}/en/${g.slug}/): ${tool}\n` +
-      (g.data.tierList ? `- [Tier list](${B}/en/${g.slug}/tier-list/): current ranking of every ${g.kind === 'bs' ? 'brawler' : 'hero'} from S to D, from ${g.data.tierSource ? g.data.tierSource.name : 'public sources'}, reviewed weekly.\n` : '') +
+      (g.data.tierList ? `- [Tier list](${B}/en/${g.slug}/tier-list/): current ranking of every ${g.kind === 'bs' ? 'brawler' : g.kind === 'ff' ? 'character' : 'hero'} from S to D, from ${g.data.tierSource ? g.data.tierSource.name : 'public sources'}, reviewed weekly.\n` : '') +
       (g.kind === 'moba' ? `- [Draft practice](${B}/en/${g.slug}/draft/): ranked or classic draft with bans against an AI, with item and emblem prep and scoring.\n` : '') +
       `- ${n} ${g.kind === 'ff' ? 'character' : g.kind === 'bs' ? 'brawler' : 'hero'} pages at ${B}/en/${g.slug}/<name>/ (example: ${B}/en/${g.slug}/${slug((g.data.heroes || g.data.brawlers || g.data.characters)[0].n)}/): ${g.kind === 'ff' ? 'best active and passive skill combination' : g.kind === 'bs' ? 'best counter brawlers, tips by class and mode, suggested gears, FAQ' : 'best counter picks, items to buy against it, suggested build, how to play against it, FAQ'}.\n`;
   }).join('\n');

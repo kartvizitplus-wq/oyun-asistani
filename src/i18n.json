@@ -128,16 +128,19 @@
   "bp_tip": "{cls} sınıfı için taktik",
   "privTitle": "Gizlilik Politikası",
   "privBody": [
-   "Bu site hesap açmanızı istemez ve kişisel bilgi toplamaz. Seçimleriniz yalnızca kendi tarayıcınızda saklanır.",
-   "Sitede Google AdSense reklamları gösterilebilir. Google ve iş ortakları, ilgi alanına dayalı reklam göstermek için çerez kullanabilir. Bunu Google Reklam Ayarları sayfasından kapatabilirsiniz.",
-   "Site, ziyaretçilerin isteğe bağlı bildirdiği maç sonuçlarını isimsiz olarak saklar. Kötüye kullanımı önlemek için IP adresiniz günlük değişen bir şifreyle tek yönlü dönüştürülür ve ham hali saklanmaz.",
-   "Site bağlantı ortaklığı linkleri içerebilir. Bu linklerden yapılan alışverişlerden komisyon alabiliriz; fiyat sizin için değişmez.",
-   "Sorularınız için Hakkında sayfasındaki iletişim adresini kullanabilirsiniz."
+   "Bu site hesap açmanı istemez ve kişisel bilgi toplamaz. Seçimlerin, kahraman havuzun ve dil tercihin yalnızca kendi tarayıcında (yerel depolama) saklanır.",
+   "Bu sitede Google AdSense reklamları gösterilir. Google ve iş ortakları, bu ve diğer sitelere yaptığın ziyaretlere göre reklam göstermek ve reklamları ölçmek için çerezler veya benzer teknolojiler kullanabilir. Google bunu <a href=\"https://policies.google.com/technologies/partner-sites\" rel=\"noopener\" target=\"_blank\">Google'ın, hizmetlerini kullanan sitelerden gelen bilgileri nasıl kullandığı</a> sayfasında açıklar. Kişiselleştirilmiş reklamları <a href=\"https://adssettings.google.com/\" rel=\"noopener\" target=\"_blank\">Google Reklam Ayarları</a> sayfasından kapatabilirsin.",
+   "AEA, Birleşik Krallık ve İsviçre'deki ziyaretçilerden kişiselleştirilmiş reklam gösterilmeden önce Google'ın sertifikalı onay mesajıyla izin istenir; tercih her zaman değiştirilebilir.",
+   "Site, ziyaretçilerin bildirmeyi seçtiği maç sonuçlarını anonim olarak saklar. Kötüye kullanımı önlemek için IP adresin her gün değişen tek yönlü bir koda çevrilir; adresin kendisi saklanmaz.",
+   "Sayfalar yazı tiplerini Google Fonts'tan yükler, bu yüzden tarayıcın Google sunucularına bağlanır. Site Cloudflare üzerinde barındırılır; Cloudflare sayfaları sunmak ve siteyi kötüye kullanıma karşı korumak için IP adresi gibi teknik verileri işler.",
+   "Sorular için Hakkında sayfasındaki iletişim adresini kullanabilirsin."
   ],
   "aboutTitle": "Hakkında",
   "aboutBody": [
-   "Bu site, mobil oyuncuların maç öncesi daha iyi seçim yapmasına yardımcı olan bağımsız ve ücretsiz bir asistandır.",
-   "Kahraman ve item verileri her hafta güncel yama notlarına göre gözden geçirilir. Öneriler genel karşılaşma mantığına dayanır; her maç farklıdır, kendi deneyiminizle birleştirin."
+   "PickRadar, mobil oyuncuların maç öncesi daha iyi seçim yapmasına yardım eden bağımsız ve ücretsiz bir asistandır. Tek kişinin yürüttüğü küçük bir projedir ve hiçbir oyun yayıncısıyla bağlantısı yoktur.",
+   "Öneriler nasıl hesaplanır: işaretlediğin her rakip için motor, her kahramana genel eşleşme kurallarıyla (hasar türü, kitle kontrolü, ani hasar, hareketlilik, can yenileme ve rol) 0–10 arası puan verir; güncel tier listesinde üst sıradaki kahramanlara ve Mobile Legends'ta herkese açık dereceli kazanma oranlarına küçük bir bonus ekler. 7 ve üzeri iyi seçim, 5 civarı nötr, daha düşüğü risklidir. Bunlar kesin sonuç değil, genel kurallardır: koridor, beceri ve takım da önemlidir; kendi deneyiminle birlikte kullan.",
+   "Veriler nereden geliyor: kahraman, item ve yama verileri her hafta resmi yama notlarıyla karşılaştırılır. Tier listeleri her oyun için adı belirtilen tek bir herkese açık kaynaktan gelir (ör. mlbbhub.com, GamsGo, WildRiftCore, Timesaver.gg ve Game Overdrive); kaynak ve tarih her tier listesinde yazılıdır. Kazanma oranları yalnızca adı belirtilen herkese açık istatistiklerden (Mobile Legends için mlcounters.app) alınır, asla tahmin edilmez. Topluluk kazanma oranları yalnızca ziyaretçilerin bildirdiği maç sonuçlarından gelir.",
+   "Haberler ve kahraman rehberleri yapay zekâ desteğiyle hazırlanır ve her yazının altında listelenen kaynaklarla kontrol edilir. Bir hata görürsen bize yaz, düzeltelim."
   ],
   "contact": "İletişim",
   "r_cc": "CC süresini kısaltır",
@@ -151,7 +154,7 @@
   "cat_mpen": "Büyü delici item",
   "cat_lifesave": "Hayat kurtaran savunma itemi",
   "cat_ccboots": "CC süresini kısaltan bot",
-  "partialNote": "Bu oyun için sabit dizilim henüz eklenmedi; rakibe göre alman gereken item türleri gösteriliyor.",
+  "partialNote": "Bu oyunda sabit bir item listesi yerine bu rakip takıma karşı alman gereken item türleri gösterilir.",
   "ffToolTitle": "Free Fire Yetenek Asistanı",
   "ffToolDesc": "Oyun tarzını ve modu seç; en iyi aktif ve pasif karakter kombinasyonunu al.",
   "playstyle": "Oyun tarzın",
@@ -377,7 +380,13 @@
   "relatedNews": "İlgili yazılar",
   "fp_skillH": "{x} yeteneği: {s}",
   "q_ffskill": "Free Fire'da {x} yeteneği nedir?",
-  "bp_kitH": "{x} yetenekleri"
+  "bp_kitH": "{x} yetenekleri",
+  "tl_title_bs": "{g} Tier List {p}: En Güçlü Savaşçılar",
+  "tl_intro_bs": "Güncel metada savaşçılar en güçlüden (S) en zayıfa (D) sıralandı. Sıralama {src} verisine dayanıyor ve her hafta gözden geçiriliyor. Bir savaşçıya dokunarak ona karşı en iyi seçimleri görebilirsin.",
+  "tl_title_ff": "{g} Tier List {p}: En Güçlü Karakterler",
+  "tl_intro_ff": "Güncel metada karakterler en güçlüden (S) en zayıfa (D) sıralandı. Sıralama {src} verisine dayanıyor ve her hafta gözden geçiriliyor. Bir karaktere dokunarak yeteneğini, en iyi kombinasyonları ve ipuçlarını görebilirsin.",
+  "myPoolBs": "Oynadığım savaşçılar",
+  "aiNote": "Bu yazı yapay zekâ desteğiyle hazırlandı ve yukarıda listelenen kaynaklarla kontrol edildi."
  },
  "en": {
   "langName": "English",
@@ -508,16 +517,19 @@
   "bp_tip": "Tips for {cls} brawlers",
   "privTitle": "Privacy Policy",
   "privBody": [
-   "This site does not ask you to create an account and does not collect personal information. Your selections are stored only in your own browser.",
-   "This site may show Google AdSense ads. Google and its partners may use cookies to show interest-based ads. You can turn this off in Google Ads Settings.",
+   "This site does not ask you to create an account and does not collect personal information. Your selections, hero pool and language are stored only in your own browser (local storage).",
+   "This site shows ads from Google AdSense. Google and its partners may use cookies or similar technologies to show ads based on your visits to this and other websites and to measure them. Google explains this in <a href=\"https://policies.google.com/technologies/partner-sites\" rel=\"noopener\" target=\"_blank\">How Google uses information from sites that use its services</a>. You can turn off personalized ads in <a href=\"https://adssettings.google.com/\" rel=\"noopener\" target=\"_blank\">Google Ads Settings</a>.",
+   "Visitors in the EEA, the UK and Switzerland are asked for consent through Google's certified consent message before personalized ads are shown, and can change their choice at any time.",
    "The site stores match results that visitors choose to report, anonymously. To prevent abuse, your IP address is turned into a one-way code that changes daily; the raw address is not stored.",
-   "This site may contain affiliate links. We may earn a commission on purchases made through them at no extra cost to you.",
+   "Pages load fonts from Google Fonts, so your browser connects to Google's servers. The site is hosted on Cloudflare, which processes technical data such as IP addresses to deliver pages and protect the site against abuse.",
    "For questions, use the contact address on the About page."
   ],
   "aboutTitle": "About",
   "aboutBody": [
-   "This is an independent, free assistant that helps mobile players make better picks before a match.",
-   "Hero and item data is reviewed every week against the latest patch notes. Suggestions follow general matchup logic; every game is different, so combine them with your own experience."
+   "PickRadar is an independent, free assistant that helps mobile players make better picks before a match. It is a small project run by one person and is not affiliated with any game publisher.",
+   "How the suggestions work: for each enemy you mark, the engine scores every hero from 0 to 10 with general matchup rules (damage type, crowd control, burst, mobility, sustain and role), plus a small bonus for heroes ranked high in the current tier list and, for Mobile Legends, public ranked win rates. 7 or more is a good pick, around 5 is neutral and lower is risky. These are rules of thumb, not guarantees: lane, skill and team still matter, so combine them with your own experience.",
+   "Where the data comes from: hero, item and patch data is reviewed every week against official patch notes. Tier lists come from one named public source per game (for example mlbbhub.com, GamsGo, WildRiftCore, Timesaver.gg and Game Overdrive); the source and date are shown on every tier list. Win rates come only from named public statistics (mlcounters.app for Mobile Legends) and are never estimated. Community win rates come only from match results that visitors report.",
+   "News articles and hero guides are drafted with AI assistance and checked against the sources listed under each article. If you spot a mistake, please write to us so we can fix it."
   ],
   "contact": "Contact",
   "r_cc": "shortens crowd control",
@@ -531,7 +543,7 @@
   "cat_mpen": "Magic penetration item",
   "cat_lifesave": "Life-saving defense item",
   "cat_ccboots": "Boots that reduce crowd control",
-  "partialNote": "A fixed build for this game is not added yet; the item types to buy against this enemy are shown.",
+  "partialNote": "For this game we show the item types to buy against this enemy team instead of a fixed item list.",
   "ffToolTitle": "Free Fire Skill Assistant",
   "ffToolDesc": "Choose your playstyle and mode to get the best active and passive character combination.",
   "playstyle": "Your playstyle",
@@ -674,7 +686,7 @@
   "mm_bad": "{x} is dangerous for you",
   "mm_none": "Pick enemies to see your hero's matchup score here.",
   "hp_title2": "{x} Counter {g} {p}: {top} + Items",
-  "hp_desc2": "Best counters (ct) to {x} in {g}: {top}. Items to buy against {x}, suggested build and tips. Updated {d}.",
+  "hp_desc2": "Best counters to {x} in {g}: {top}. Items to buy against {x}, suggested build and tips. Updated {d}.",
   "bp_title2": "{x} Counter Brawl Stars {p}: {top}",
   "bp_desc2": "Best picks against {x} in Brawl Stars: {top}. Tips by game mode. Updated {d}.",
   "fp_title2": "{x} Skill ({s}) & Best Combo {p}",
@@ -757,7 +769,13 @@
   "relatedNews": "Related articles",
   "fp_skillH": "{x}'s skill: {s}",
   "q_ffskill": "What is {x}'s skill in Free Fire?",
-  "bp_kitH": "{x}'s kit"
+  "bp_kitH": "{x}'s kit",
+  "tl_title_bs": "{g} Tier List {p}: Best Brawlers Ranked",
+  "tl_intro_bs": "Brawlers ranked from strongest (S) to weakest (D) in the current meta. The ranking is based on {src} and reviewed every week. Tap a brawler to see the best picks against it.",
+  "tl_title_ff": "{g} Tier List {p}: Best Characters Ranked",
+  "tl_intro_ff": "Characters ranked from strongest (S) to weakest (D) in the current meta. The ranking is based on {src} and reviewed every week. Tap a character to see its skill, best combinations and tips.",
+  "myPoolBs": "Brawlers I play",
+  "aiNote": "This article was drafted with AI assistance and checked against the sources listed above."
  },
  "id": {
   "langName": "Bahasa Indonesia",
@@ -888,16 +906,19 @@
   "bp_tip": "Tips untuk kelas {cls}",
   "privTitle": "Kebijakan Privasi",
   "privBody": [
-   "Situs ini tidak meminta kamu membuat akun dan tidak mengumpulkan data pribadi. Pilihanmu hanya disimpan di browsermu sendiri.",
-   "Situs ini dapat menampilkan iklan Google AdSense. Google dan mitranya dapat memakai cookie untuk iklan berbasis minat. Kamu bisa menonaktifkannya di Setelan Iklan Google.",
-   "Situs menyimpan hasil pertandingan yang dilaporkan pengunjung secara anonim. Untuk mencegah penyalahgunaan, alamat IP-mu diubah menjadi kode satu arah yang berganti setiap hari; alamat aslinya tidak disimpan.",
-   "Situs ini dapat berisi link afiliasi. Kami bisa mendapat komisi dari pembelian lewat link tersebut tanpa biaya tambahan untukmu.",
+   "Situs ini tidak memintamu membuat akun dan tidak mengumpulkan informasi pribadi. Pilihan, daftar hero, dan bahasamu hanya disimpan di browser-mu sendiri (local storage).",
+   "Situs ini menampilkan iklan dari Google AdSense. Google dan mitranya dapat menggunakan cookie atau teknologi serupa untuk menampilkan iklan berdasarkan kunjunganmu ke situs ini dan situs lain serta untuk mengukurnya. Google menjelaskannya di <a href=\"https://policies.google.com/technologies/partner-sites\" rel=\"noopener\" target=\"_blank\">Cara Google menggunakan informasi dari situs yang menggunakan layanannya</a>. Kamu dapat menonaktifkan iklan yang dipersonalisasi di <a href=\"https://adssettings.google.com/\" rel=\"noopener\" target=\"_blank\">Setelan Iklan Google</a>.",
+   "Pengunjung di EEA, Inggris, dan Swiss dimintai persetujuan melalui pesan persetujuan bersertifikat Google sebelum iklan yang dipersonalisasi ditampilkan, dan dapat mengubah pilihannya kapan saja.",
+   "Situs ini menyimpan hasil pertandingan yang dilaporkan pengunjung secara anonim. Untuk mencegah penyalahgunaan, alamat IP-mu diubah menjadi kode satu arah yang berganti setiap hari; alamat aslinya tidak disimpan.",
+   "Halaman memuat font dari Google Fonts, sehingga browser-mu terhubung ke server Google. Situs ini di-hosting di Cloudflare, yang memproses data teknis seperti alamat IP untuk mengirim halaman dan melindungi situs dari penyalahgunaan.",
    "Untuk pertanyaan, gunakan alamat kontak di halaman Tentang."
   ],
   "aboutTitle": "Tentang",
   "aboutBody": [
-   "Ini adalah asisten gratis dan independen yang membantu pemain mobile memilih lebih baik sebelum pertandingan.",
-   "Data hero dan item ditinjau setiap minggu berdasarkan patch notes terbaru. Saran mengikuti logika matchup umum; setiap game berbeda, jadi gabungkan dengan pengalamanmu."
+   "PickRadar adalah asisten gratis dan independen yang membantu pemain mobile memilih hero lebih baik sebelum pertandingan. Ini proyek kecil yang dijalankan oleh satu orang dan tidak berafiliasi dengan penerbit game mana pun.",
+   "Cara kerja saran: untuk setiap musuh yang kamu tandai, mesin memberi skor 0–10 ke setiap hero berdasarkan aturan matchup umum (tipe damage, crowd control, burst, mobilitas, sustain, dan role), ditambah bonus kecil untuk hero yang berperingkat tinggi di tier list saat ini dan, untuk Mobile Legends, win rate ranked publik. Skor 7 ke atas berarti pilihan bagus, sekitar 5 netral, dan lebih rendah berisiko. Ini panduan umum, bukan jaminan: lane, skill, dan tim tetap berpengaruh, jadi gabungkan dengan pengalamanmu sendiri.",
+   "Asal data: data hero, item, dan patch ditinjau setiap minggu berdasarkan patch notes resmi. Tier list berasal dari satu sumber publik yang disebutkan untuk tiap game (misalnya mlbbhub.com, GamsGo, WildRiftCore, Timesaver.gg, dan Game Overdrive); sumber dan tanggalnya ditampilkan di setiap tier list. Win rate hanya diambil dari statistik publik yang disebutkan (mlcounters.app untuk Mobile Legends) dan tidak pernah diperkirakan. Win rate komunitas hanya berasal dari hasil pertandingan yang dilaporkan pengunjung.",
+   "Artikel berita dan panduan hero disusun dengan bantuan AI dan diperiksa dengan sumber yang tercantum di bawah setiap artikel. Jika kamu menemukan kesalahan, kirimi kami pesan agar bisa kami perbaiki."
   ],
   "contact": "Kontak",
   "r_cc": "memperpendek crowd control",
@@ -911,7 +932,7 @@
   "cat_mpen": "Item penetrasi magic",
   "cat_lifesave": "Item defense penyelamat",
   "cat_ccboots": "Sepatu pengurang crowd control",
-  "partialNote": "Build tetap untuk game ini belum ditambahkan; yang ditampilkan adalah jenis item untuk melawan tim musuh ini.",
+  "partialNote": "Untuk game ini, yang ditampilkan adalah jenis item untuk melawan tim musuh ini, bukan daftar item tetap.",
   "ffToolTitle": "Asisten Skill Free Fire",
   "ffToolDesc": "Pilih gaya bermain dan mode untuk mendapatkan kombinasi karakter aktif dan pasif terbaik.",
   "playstyle": "Gaya bermainmu",
@@ -1137,7 +1158,13 @@
   "relatedNews": "Artikel terkait",
   "fp_skillH": "Skill {x}: {s}",
   "q_ffskill": "Apa skill {x} di Free Fire?",
-  "bp_kitH": "Kit {x}"
+  "bp_kitH": "Kit {x}",
+  "tl_title_bs": "Tier List {g} {p}: Brawler Terkuat",
+  "tl_intro_bs": "Brawler diurutkan dari terkuat (S) sampai terlemah (D) di meta saat ini. Peringkat berdasarkan {src} dan ditinjau setiap minggu. Ketuk brawler untuk melihat counter terbaiknya.",
+  "tl_title_ff": "Tier List {g} {p}: Karakter Terkuat",
+  "tl_intro_ff": "Karakter diurutkan dari terkuat (S) sampai terlemah (D) di meta saat ini. Peringkat berdasarkan {src} dan ditinjau setiap minggu. Ketuk karakter untuk melihat skill, kombinasi terbaik, dan tipsnya.",
+  "myPoolBs": "Brawler yang saya mainkan",
+  "aiNote": "Artikel ini disusun dengan bantuan AI dan diperiksa dengan sumber yang tercantum di atas."
  },
  "es": {
   "langName": "Español",
@@ -1268,16 +1295,19 @@
   "bp_tip": "Consejos para la clase {cls}",
   "privTitle": "Política de Privacidad",
   "privBody": [
-   "Este sitio no te pide crear una cuenta y no recopila datos personales. Tus selecciones se guardan solo en tu navegador.",
-   "Este sitio puede mostrar anuncios de Google AdSense. Google y sus socios pueden usar cookies para mostrar anuncios basados en intereses. Puedes desactivarlo en la Configuración de anuncios de Google.",
-   "El sitio guarda de forma anónima los resultados de partidas que los visitantes deciden informar. Para evitar abusos, tu dirección IP se convierte en un código de un solo sentido que cambia cada día; la dirección original no se guarda.",
-   "Este sitio puede contener enlaces de afiliado. Podemos ganar una comisión por compras hechas a través de ellos sin costo extra para ti.",
+   "Este sitio no te pide crear una cuenta ni recoge información personal. Tus selecciones, tu lista de héroes y tu idioma se guardan solo en tu navegador (almacenamiento local).",
+   "Este sitio muestra anuncios de Google AdSense. Google y sus socios pueden usar cookies o tecnologías similares para mostrar anuncios según tus visitas a este y otros sitios web y para medirlos. Google lo explica en <a href=\"https://policies.google.com/technologies/partner-sites\" rel=\"noopener\" target=\"_blank\">Cómo utiliza Google la información de los sitios que usan sus servicios</a>. Puedes desactivar los anuncios personalizados en la <a href=\"https://adssettings.google.com/\" rel=\"noopener\" target=\"_blank\">configuración de anuncios de Google</a>.",
+   "A los visitantes del EEE, el Reino Unido y Suiza se les pide su consentimiento mediante el mensaje de consentimiento certificado de Google antes de mostrar anuncios personalizados, y pueden cambiar su elección en cualquier momento.",
+   "El sitio guarda de forma anónima los resultados de partidas que los visitantes deciden reportar. Para evitar abusos, tu dirección IP se convierte en un código de un solo sentido que cambia cada día; la dirección original no se guarda.",
+   "Las páginas cargan fuentes de Google Fonts, por lo que tu navegador se conecta a servidores de Google. El sitio está alojado en Cloudflare, que trata datos técnicos como la dirección IP para servir las páginas y proteger el sitio contra abusos.",
    "Para preguntas, usa la dirección de contacto de la página Acerca de."
   ],
   "aboutTitle": "Acerca de",
   "aboutBody": [
-   "Este es un asistente gratuito e independiente que ayuda a los jugadores móviles a elegir mejor antes de cada partida.",
-   "Los datos de héroes y objetos se revisan cada semana con las notas del último parche. Las sugerencias siguen una lógica general de enfrentamientos; cada partida es distinta, combínalas con tu experiencia."
+   "PickRadar es un asistente independiente y gratuito que ayuda a los jugadores de móvil a elegir mejor antes de una partida. Es un proyecto pequeño gestionado por una sola persona y no está afiliado a ningún editor de juegos.",
+   "Cómo funcionan las sugerencias: por cada enemigo que marcas, el motor puntúa a cada héroe de 0 a 10 con reglas generales de enfrentamiento (tipo de daño, control de masas, daño explosivo, movilidad, sustain y rol), más una pequeña bonificación para los héroes mejor situados en la tier list actual y, en Mobile Legends, las tasas de victoria públicas en clasificatoria. 7 o más es una buena elección, alrededor de 5 es neutral y menos es arriesgado. Son reglas generales, no garantías: la línea, la habilidad y el equipo también cuentan, así que combínalas con tu propia experiencia.",
+   "De dónde salen los datos: los datos de héroes, objetos y parches se revisan cada semana con las notas oficiales de parche. Las tier lists proceden de una fuente pública nombrada por juego (por ejemplo mlbbhub.com, GamsGo, WildRiftCore, Timesaver.gg y Game Overdrive); la fuente y la fecha aparecen en cada tier list. Las tasas de victoria proceden solo de estadísticas públicas nombradas (mlcounters.app para Mobile Legends) y nunca se estiman. Las tasas de la comunidad salen solo de resultados que reportan los visitantes.",
+   "Las noticias y guías de héroes se redactan con ayuda de IA y se comprueban con las fuentes indicadas bajo cada artículo. Si ves un error, escríbenos para corregirlo."
   ],
   "contact": "Contacto",
   "r_cc": "reduce el control",
@@ -1291,7 +1321,7 @@
   "cat_mpen": "Objeto de penetración mágica",
   "cat_lifesave": "Objeto defensivo salvavidas",
   "cat_ccboots": "Botas que reducen el control",
-  "partialNote": "Aún no hay una build fija para este juego; se muestran los tipos de objeto a comprar contra este equipo.",
+  "partialNote": "En este juego se muestran los tipos de objeto a comprar contra este equipo en lugar de una lista fija de objetos.",
   "ffToolTitle": "Asistente de Habilidades Free Fire",
   "ffToolDesc": "Elige tu estilo de juego y modo para obtener la mejor combinación de personajes activos y pasivos.",
   "playstyle": "Tu estilo de juego",
@@ -1517,7 +1547,13 @@
   "relatedNews": "Artículos relacionados",
   "fp_skillH": "Habilidad de {x}: {s}",
   "q_ffskill": "¿Cuál es la habilidad de {x} en Free Fire?",
-  "bp_kitH": "Habilidades de {x}"
+  "bp_kitH": "Habilidades de {x}",
+  "tl_title_bs": "Tier List de {g} {p}: Mejores Brawlers",
+  "tl_intro_bs": "Brawlers ordenados del más fuerte (S) al más débil (D) en el meta actual. La clasificación se basa en {src} y se revisa cada semana. Toca un brawler para ver sus mejores counters.",
+  "tl_title_ff": "Tier List de {g} {p}: Mejores Personajes",
+  "tl_intro_ff": "Personajes ordenados del más fuerte (S) al más débil (D) en el meta actual. La clasificación se basa en {src} y se revisa cada semana. Toca un personaje para ver su habilidad, las mejores combinaciones y consejos.",
+  "myPoolBs": "Brawlers que juego",
+  "aiNote": "Este artículo se redactó con ayuda de IA y se comprobó con las fuentes indicadas arriba."
  },
  "pt": {
   "langName": "Português",
@@ -1648,16 +1684,19 @@
   "bp_tip": "Dicas para a classe {cls}",
   "privTitle": "Política de Privacidade",
   "privBody": [
-   "Este site não pede que você crie uma conta e não coleta dados pessoais. Suas escolhas ficam salvas apenas no seu navegador.",
-   "Este site pode exibir anúncios do Google AdSense. O Google e seus parceiros podem usar cookies para anúncios baseados em interesses. Você pode desativar isso nas Configurações de anúncios do Google.",
-   "O site guarda de forma anônima os resultados de partidas que os visitantes escolhem informar. Para evitar abusos, seu endereço IP vira um código de mão única que muda todo dia; o endereço original não é guardado.",
-   "Este site pode conter links de afiliado. Podemos receber comissão por compras feitas por eles, sem custo extra para você.",
-   "Para dúvidas, use o endereço de contato na página Sobre."
+   "Este site não pede que você crie uma conta e não coleta informações pessoais. Suas seleções, sua lista de heróis e seu idioma ficam salvos só no seu navegador (armazenamento local).",
+   "Este site mostra anúncios do Google AdSense. O Google e seus parceiros podem usar cookies ou tecnologias semelhantes para mostrar anúncios com base nas suas visitas a este e a outros sites e para medi-los. O Google explica isso em <a href=\"https://policies.google.com/technologies/partner-sites\" rel=\"noopener\" target=\"_blank\">Como o Google usa informações de sites que usam seus serviços</a>. Você pode desativar anúncios personalizados nas <a href=\"https://adssettings.google.com/\" rel=\"noopener\" target=\"_blank\">Configurações de anúncios do Google</a>.",
+   "Visitantes do EEE, do Reino Unido e da Suíça recebem o pedido de consentimento pela mensagem de consentimento certificada do Google antes de verem anúncios personalizados e podem mudar a escolha a qualquer momento.",
+   "O site guarda de forma anônima os resultados de partidas que os visitantes decidem informar. Para evitar abuso, seu endereço IP é transformado num código de mão única que muda todo dia; o endereço original não é guardado.",
+   "As páginas carregam fontes do Google Fonts, então seu navegador se conecta a servidores do Google. O site é hospedado na Cloudflare, que processa dados técnicos como o endereço IP para entregar as páginas e proteger o site contra abuso.",
+   "Para dúvidas, use o endereço de contato da página Sobre."
   ],
   "aboutTitle": "Sobre",
   "aboutBody": [
-   "Este é um assistente gratuito e independente que ajuda jogadores mobile a escolher melhor antes de cada partida.",
-   "Os dados de heróis e itens são revisados toda semana com as notas do patch mais recente. As sugestões seguem uma lógica geral de confrontos; cada partida é diferente, combine-as com a sua experiência."
+   "O PickRadar é um assistente independente e gratuito que ajuda jogadores de celular a escolher melhor antes da partida. É um projeto pequeno mantido por uma pessoa e não tem vínculo com nenhuma publicadora de jogos.",
+   "Como as sugestões funcionam: para cada inimigo que você marca, o motor dá a cada herói uma nota de 0 a 10 com regras gerais de confronto (tipo de dano, controle de grupo, dano explosivo, mobilidade, sustentação e função), mais um pequeno bônus para heróis bem colocados na tier list atual e, no Mobile Legends, taxas de vitória públicas do ranqueado. 7 ou mais é uma boa escolha, perto de 5 é neutro e abaixo disso é arriscado. São regras gerais, não garantias: rota, habilidade e time também contam, então combine com a sua experiência.",
+   "De onde vêm os dados: dados de heróis, itens e patches são revisados toda semana com as notas oficiais de atualização. As tier lists vêm de uma fonte pública identificada por jogo (por exemplo mlbbhub.com, GamsGo, WildRiftCore, Timesaver.gg e Game Overdrive); a fonte e a data aparecem em cada tier list. Taxas de vitória vêm só de estatísticas públicas identificadas (mlcounters.app para Mobile Legends) e nunca são estimadas. As taxas da comunidade vêm só de resultados informados pelos visitantes.",
+   "Notícias e guias de heróis são redigidos com ajuda de IA e conferidos com as fontes listadas abaixo de cada artigo. Se encontrar um erro, escreva para nós para corrigirmos."
   ],
   "contact": "Contato",
   "r_cc": "reduz o controle",
@@ -1671,7 +1710,7 @@
   "cat_mpen": "Item de penetração mágica",
   "cat_lifesave": "Item defensivo salva-vidas",
   "cat_ccboots": "Botas que reduzem controle",
-  "partialNote": "Ainda não há uma build fixa para este jogo; são mostrados os tipos de item para comprar contra este time.",
+  "partialNote": "Neste jogo são mostrados os tipos de item para comprar contra este time, em vez de uma lista fixa de itens.",
   "ffToolTitle": "Assistente de Habilidades Free Fire",
   "ffToolDesc": "Escolha seu estilo de jogo e modo para receber a melhor combinação de personagens ativos e passivos.",
   "playstyle": "Seu estilo de jogo",
@@ -1897,6 +1936,12 @@
   "relatedNews": "Artigos relacionados",
   "fp_skillH": "Habilidade de {x}: {s}",
   "q_ffskill": "Qual é a habilidade de {x} no Free Fire?",
-  "bp_kitH": "Habilidades de {x}"
+  "bp_kitH": "Habilidades de {x}",
+  "tl_title_bs": "Tier List de {g} {p}: Melhores Brawlers",
+  "tl_intro_bs": "Brawlers ordenados do mais forte (S) ao mais fraco (D) no meta atual. O ranking se baseia em {src} e é revisado toda semana. Toque num brawler para ver os melhores counters.",
+  "tl_title_ff": "Tier List de {g} {p}: Melhores Personagens",
+  "tl_intro_ff": "Personagens ordenados do mais forte (S) ao mais fraco (D) no meta atual. O ranking se baseia em {src} e é revisado toda semana. Toque num personagem para ver a habilidade, as melhores combinações e dicas.",
+  "myPoolBs": "Brawlers que eu jogo",
+  "aiNote": "Este artigo foi redigido com ajuda de IA e conferido com as fontes listadas acima."
  }
 }
