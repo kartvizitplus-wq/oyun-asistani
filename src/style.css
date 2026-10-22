@@ -214,3 +214,46 @@ body[class^="g-"] main.wrap>section:first-of-type .lead{color:#c3cbda}
 @media (max-width:640px){.homehero{display:block;min-height:0}.homehero::after{display:none}.homehero-img{position:static;display:block;height:auto;aspect-ratio:16/9;-webkit-mask-image:linear-gradient(180deg,#000 55%,transparent 100%);mask-image:linear-gradient(180deg,#000 55%,transparent 100%)}.homehero-body{padding:0 16px 18px;margin-top:-36px}}
 @media (max-width:480px){.stat{font-size:.8rem;padding:6px 10px}.games-grid{grid-template-columns:1fr}.gbanner{height:240px}}
 @media (prefers-reduced-motion:reduce){.game:hover{transform:none}}
+
+/* ---- 2026-10 gaming UI: glow background, hero cards, role badges ---- */
+body{background:radial-gradient(1100px 620px at 8% -8%,rgba(74,155,234,.13),transparent 60%),radial-gradient(900px 540px at 100% -4%,rgba(232,180,74,.10),transparent 58%),radial-gradient(800px 700px at 50% 110%,rgba(155,79,209,.08),transparent 60%),var(--bg);background-attachment:fixed}
+body::before{content:"";position:fixed;inset:0;pointer-events:none;z-index:0;background-image:linear-gradient(rgba(140,170,220,.045) 1px,transparent 1px),linear-gradient(90deg,rgba(140,170,220,.045) 1px,transparent 1px);background-size:44px 44px;-webkit-mask-image:radial-gradient(ellipse 90% 60% at 50% 0%,#000 25%,transparent 75%);mask-image:radial-gradient(ellipse 90% 60% at 50% 0%,#000 25%,transparent 75%)}
+header.top{border-bottom:1px solid transparent;border-image:linear-gradient(90deg,transparent,rgba(232,180,74,.45),rgba(74,155,234,.45),transparent) 1}
+h2{color:#9fb0cc}
+.card{background:linear-gradient(180deg,rgba(26,34,50,.92),rgba(16,22,34,.92));box-shadow:inset 0 1px 0 rgba(255,255,255,.04),0 8px 24px -16px rgba(0,0,0,.8)}
+.btn{background:linear-gradient(180deg,#f4c766,#d99b2b);box-shadow:0 6px 20px -8px rgba(232,180,74,.75),inset 0 1px 0 rgba(255,255,255,.35)}
+.btn.ghost{background:rgba(20,28,42,.7);box-shadow:none}
+.btn.ghost:hover{border-color:var(--gold);box-shadow:0 0 0 1px rgba(232,180,74,.25),0 6px 18px -10px rgba(232,180,74,.6)}
+.newsitem,.list-links a,.tierlink{transition:transform .16s ease,box-shadow .16s ease,border-color .16s ease}
+.newsitem:hover{transform:translateY(-2px);box-shadow:0 10px 26px -14px rgba(232,180,74,.55)}
+.list-links a:hover,a.tierlink:hover{transform:translateY(-2px);box-shadow:0 6px 16px -8px rgba(232,180,74,.6)}
+.tier.tB{background:var(--green-bg);color:var(--green)}.tier.tC{background:#13233a;color:var(--blue)}.tier.tD{background:var(--panel2);color:var(--muted)}
+.pick .role{font:600 .7rem var(--display);letter-spacing:.03em;border:1px solid var(--line);border-radius:99px;padding:0 7px;white-space:nowrap}
+/* Hero cards */
+.hgrid{display:grid;grid-template-columns:repeat(auto-fill,minmax(148px,1fr));gap:10px}
+.hcard{--rc:var(--gold);position:relative;display:flex;flex-direction:column;align-items:center;gap:7px;padding:16px 8px 12px;min-width:0;text-align:center;text-decoration:none;color:var(--fg);
+  background:linear-gradient(180deg,rgba(34,44,64,.95),rgba(16,22,34,.95));background:linear-gradient(180deg,color-mix(in srgb,var(--rc) 16%,#151c2a) 0%,#121825 72%);
+  border:1px solid var(--line);border-radius:14px;transition:transform .16s ease,box-shadow .16s ease,border-color .16s ease}
+.hcard:hover,.hcard:focus-visible{transform:translateY(-4px) scale(1.03);border-color:var(--rc);box-shadow:0 0 0 1px var(--rc),0 12px 30px -10px var(--rc);z-index:1}
+.hcard .av{width:56px;height:56px;border-radius:14px;background:var(--panel2) center/cover;display:grid;place-items:center;font:700 1.1rem var(--display);color:#fff;text-shadow:0 1px 3px rgba(0,0,0,.65);
+  box-shadow:inset 0 0 0 1px rgba(255,255,255,.18),0 0 22px -6px var(--rc)}
+.hcard .hn{font:700 .92rem/1.2 var(--display);overflow-wrap:anywhere}
+.rb{font:700 .64rem var(--display);letter-spacing:.06em;text-transform:uppercase;color:var(--rc);border:1px solid var(--rc);border-color:color-mix(in srgb,var(--rc) 45%,transparent);background:color-mix(in srgb,var(--rc) 12%,transparent);border-radius:99px;padding:2px 8px;white-space:nowrap}
+.hcard .rb{color:var(--rc)}
+.hcard .tier{position:absolute;top:8px;right:8px}
+.hgrid.mini{grid-template-columns:repeat(auto-fill,minmax(150px,1fr));gap:6px}
+.hcard.mini{flex-direction:row;justify-content:flex-start;gap:8px;padding:6px 8px;border-radius:10px;text-align:left}
+.hcard.mini:hover{transform:translateY(-2px)}
+.hcard.mini .av{width:30px;height:30px;border-radius:8px;font-size:.72rem;flex:none}
+.hcard.mini .hn{font-size:.84rem;flex:1;min-width:0;overflow-wrap:break-word;hyphens:auto}
+.hcard.mini .tier{position:static}
+.teams .hgrid.mini{margin-top:6px}
+/* Role filter */
+.rolefilter{margin-bottom:12px;flex-wrap:wrap}
+.rolefilter button{display:inline-flex;align-items:center;gap:6px}
+.rolefilter button small{color:var(--muted);font-weight:600}
+.rolefilter .dot{width:9px;height:9px;border-radius:50%;background:var(--rc);box-shadow:0 0 8px var(--rc)}
+.rolefilter button[aria-pressed="true"]{border-color:var(--gold);color:var(--gold);background:var(--gold-bg)}
+.rolefilter button.r-tank[aria-pressed="true"],.rolefilter button[class^="r-"][aria-pressed="true"]{border-color:var(--rc);color:var(--fg);background:color-mix(in srgb,var(--rc) 18%,transparent)}
+@media (max-width:480px){.hgrid{grid-template-columns:repeat(auto-fill,minmax(104px,1fr));gap:8px}.hcard{padding:12px 6px 10px}.hcard .av{width:46px;height:46px}.hcard .hn{font-size:.82rem}.hgrid.mini{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media (prefers-reduced-motion:reduce){.hcard:hover,.newsitem:hover,.list-links a:hover,a.tierlink:hover{transform:none}}

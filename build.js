@@ -38,6 +38,19 @@ function write(rel, html) {
 const itemName = (lang, i, t) => i.startsWith('#') ? t[i.slice(1)] : ((lang === 'tr' && ITEMS_TR[i]) || i);
 const itemHtml = (lang, i, t) => { const n = itemName(lang, i, t); return Icons.item(i, 28) + '<span class="iname">' + esc(n) + (n !== i && !i.startsWith('#') ? '<small class="en">' + esc(i) + '</small>' : ''); };
 const scoreCls = s => s >= 7 ? 'good' : s >= 5 ? 'mid' : 'bad';
+/* Light hero cards: role color + role art come from one generated stylesheet, initials are text. */
+const ROLE_KEYS = ['tank', 'fighter', 'assassin', 'mage', 'marksman', 'support', 'artillery', 'controller', 'damage', 'a', 'p'];
+const ROLE_CSS = ROLE_KEYS.map(r => `.r-${r}{--rc:${Icons.roleColor(r)}}.r-${r} .av{background-image:url("data:image/svg+xml,${encodeURIComponent(Icons.roleArt(r)).replace(/'/g, '%27')}")}`).join('\n') + '\n';
+VER['roles.css'] = crypto.createHash('md5').update(ROLE_CSS).digest('hex').slice(0, 8);
+const roleKey = h => h.r || h.c || h.type || '';
+const roleLabel = (g, h, t) => g.kind === 'moba' ? t['role_' + h.r] : g.kind === 'bs' ? t['cl_' + h.c] : (h.type === 'a' ? t.activeSkill : t.passiveSkill);
+const heroCard = (g, h, t, href, mini) => `<a class="hcard r-${roleKey(h)}${mini ? ' mini' : ''}" href="${href}" data-r="${roleKey(h)}"><span class="av" aria-hidden="true">${esc(Icons.initials(h.n))}</span><span class="hn">${esc(h.n)}</span>${mini ? '' : `<span class="rb">${esc(roleLabel(g, h, t) || '')}</span>`}${h.tier ? `<span class="tier t${h.tier}">${h.tier}</span>` : ''}</a>`;
+/* Grid of hero cards; full grids get role filter buttons (shown only when JavaScript runs). */
+const heroGrid = (g, list, t, gp, mini) => {
+  const roles = [...new Set(list.map(roleKey))].filter(Boolean);
+  const filt = !mini && roles.length > 1 ? `<div class="row seg rolefilter" hidden><button type="button" data-rf="" aria-pressed="true">${esc(t.rfAll)} <small>${list.length}</small></button>${roles.map(r => { const h0 = list.find(h => roleKey(h) === r); return `<button type="button" data-rf="${r}" aria-pressed="false" class="r-${r}"><span class="dot"></span>${esc(roleLabel(g, h0, t) || r)} <small>${list.filter(h => roleKey(h) === r).length}</small></button>`; }).join('')}</div>` : '';
+  return `${filt}<div class="hgrid${mini ? ' mini' : ''}">${list.map(h => heroCard(g, h, t, `/${gp}/${slug(h.n)}/`, mini)).join('')}</div>`;
+};
 
 /* Radar mark used in the header logo (original drawing). */
 const LOGO = '<svg class="mark" viewBox="0 0 32 32" width="28" height="28" aria-hidden="true"><circle cx="16" cy="16" r="14" fill="none" stroke="#f5a524" stroke-width="3"/><circle cx="16" cy="16" r="8.5" fill="none" stroke="#f5a524" stroke-width="1.5" opacity=".55"/><path d="M16 16L16 2A14 14 0 0 1 29.3 11.7Z" fill="#f5a524" opacity=".35"/><circle cx="16" cy="16" r="4.2" fill="#e2595b"/></svg>';
@@ -75,7 +88,7 @@ ${lds.map(j => `<script type="application/ld+json">${JSON.stringify(j).replace(/
 <link rel="icon" href="/assets/icon.svg" type="image/svg+xml"><link rel="manifest" href="/manifest.webmanifest"><meta name="theme-color" content="#0a0e16"><link rel="apple-touch-icon" href="/icons/icon-192.png">
 <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@500;700&family=IBM+Plex+Sans:wght@400;600&display=swap">
-<link rel="stylesheet" href="${asset('style.css')}">
+<link rel="stylesheet" href="${asset('style.css')}"><link rel="stylesheet" href="${asset('roles.css')}">
 ${ads}
 </head>
 <body${gm ? ` class="g-${gm.id}" style="--accent:${gm.accent}"` : ''}>
@@ -104,7 +117,7 @@ function showcase(lang) {
     const list = (g.data.heroes || g.data.brawlers || g.data.characters || []).filter(h => h.tier === 'S' || h.tier === 'A')
       .sort((a, b) => order[a.tier] - order[b.tier] || a.n.localeCompare(b.n)).slice(0, 10);
     if (!list.length) return '';
-    return `<div class="team"><b><a href="/${lang}/${g.slug}/${g.data.tierList ? 'tier-list/' : ''}" style="color:inherit">${esc(g.name)} →</a></b><div class="list-links">${list.map(h => `<a href="/${lang}/${g.slug}/${slug(h.n)}/" class="tierlink">${Icons.hero(h.n, h.r || h.c || h.type, 20)}<span>${esc(h.n)}</span><span class="tier t${h.tier}">${h.tier}</span></a>`).join('')}</div></div>`;
+    return `<div class="team"><b><a href="/${lang}/${g.slug}/${g.data.tierList ? 'tier-list/' : ''}" style="color:inherit">${esc(g.name)} →</a></b><div class="hgrid mini">${list.map(h => heroCard(g, h, t, `/${lang}/${g.slug}/${slug(h.n)}/`, true)).join('')}</div></div>`;
   }).filter(Boolean);
   if (!blocks.length) return '';
   return `<section><h2>${esc(t.topHome)}</h2><div class="card teams">${blocks.join('')}</div><p class="note" style="margin-top:6px">${esc(t.topHomeNote)}</p></section>`;
@@ -171,7 +184,6 @@ ${faqBlock(tqa)}`;
       const isMoba = g.kind === 'moba';
       const list = isMoba ? D.heroes : D.brawlers;
       const roleOf = x => isMoba ? x.r : x.c;
-      const links = list.map(h => `<a href="/${gp}/${slug(h.n)}/">${esc(h.n)}</a>`).join('');
       /* Sourced matchups (field mu) for popular heroes: names from a public stats source, explanations in our own words. */
       const byName = Object.fromEntries(list.map(z => [z.n, z]));
       const roleLbl = z => isMoba ? t['role_' + z.r] : t['cl_' + z.c];
@@ -203,7 +215,7 @@ ${isMoba ? `<section id="buildsec"><h2>${esc(t.yourHero)}</h2><div class="heroli
 <section class="card" id="report"><h2>${esc(t.reportTitle)}</h2><p class="note" id="reportHint"></p>
 <div class="bar"><button class="btn" id="winBtn" type="button">✓ ${esc(t.winBtn)}</button><button class="btn ghost" id="lossBtn" type="button">✕ ${esc(t.lossBtn)}</button></div><p class="note" id="reportMsg" aria-live="polite"></p><p class="badge" id="badge"></p></section>` : `<section><div class="card"><ul class="tips" id="tips" style="margin:0"></ul></div></section>`}
 <div class="bar"><button class="btn" id="speak" type="button">🔊 ${esc(t.speak)}</button><button class="btn ghost" id="clear" type="button">${esc(t.clear)}</button>${isMoba ? `<a class="btn ghost" href="/${gp}/draft/">🎯 ${esc(t.draftLink)}</a>` : ''}</div>
-<section><h2>${esc(isMoba ? t.allHeroes : t.allBrawlers)}</h2><div class="list-links">${links}</div></section>`;
+<section><h2>${esc(isMoba ? t.allHeroes : t.allBrawlers)}</h2>${heroGrid(g, list, t, gp, false)}</section>`;
       write(`${gp}/index.html`, layout({ lang, rel: `${gp}/`, title: `${gameTitle(g)} · ${cfg.siteName}`, desc: `${g.full} – ${gameDesc(g)}`, active: g.id, body, app, img: g.id, lastmod: D.updated }));
 
       if (D.tierList) writeTier(list, h => isMoba ? h.r : h.c);
@@ -290,7 +302,7 @@ ${src}${comm}
 <div class="bar"><a class="btn" href="/${gp}/?e=${encodeURIComponent(x)}">${esc(tt('hp_try', { x }))}</a>${D.tierList ? `<a class="btn ghost" href="/${gp}/tier-list/">${esc(tt('tl_h1', { g: g.name }))}</a>` : ''}</div>
 ${newsSection(lang, tt('hp_news', { x }), newsAbout(g.id, x))}
 ${faqBlock(qa)}
-<section><h2>${esc(isMoba ? t.allHeroes : t.allBrawlers)}</h2><div class="list-links">${links}</div></section>`;
+<section><h2>${esc(isMoba ? t.allHeroes : t.allBrawlers)}</h2>${heroGrid(g, list, t, gp, true)}</section>`;
         write(`${gp}/${slug(x)}/index.html`, layout({
           lang, rel: `${gp}/${slug(x)}/`, active: g.id, body: body2, jsonld: faqLd(qa), img: g.id, lastmod: D.updated,
           crumbs: [[t.home, `${lang}/`], [g.name, `${gp}/`], [x, `${gp}/${slug(x)}/`]],
@@ -302,14 +314,13 @@ ${faqBlock(qa)}
 
     if (g.kind === 'ff') {
       const chars = D.characters;
-      const links = chars.map(c => `<a href="/${gp}/${slug(c.n)}/">${esc(c.n)}</a>`).join('');
       const body = `<section><h1>${esc(t.ffToolTitle)}</h1><p class="lead">${esc(t.ffToolDesc)} <a href="/${lang}/guide/">${esc(GUIDE[lang].nav)} →</a>${D.tierList ? ` · <a href="/${gp}/tier-list/">${esc(tt('tl_h1', { g: g.name }))} →</a>` : ''}</p></section>
 <section><h2>${esc(t.playstyle)}</h2><div class="row seg" id="styles"></div></section>
 <section><h2>${esc(t.ffMode)}</h2><div class="row seg" id="ffmodes"></div></section>
 <section><h2>${esc(t.threats)}</h2><div class="row seg" id="threats"></div></section>
 <section><h2>${esc(t.ffCombo)}</h2><div class="card" id="combo"></div></section>
 <div class="bar"><button class="btn" id="speak" type="button">🔊 ${esc(t.speak)}</button></div>
-<section><h2>${esc(t.allCharacters)}</h2><div class="list-links">${links}</div></section>`;
+<section><h2>${esc(t.allCharacters)}</h2>${heroGrid(g, chars, t, gp, false)}</section>`;
       write(`${gp}/index.html`, layout({ lang, rel: `${gp}/`, title: `${t.ffToolTitle} · ${cfg.siteName}`, desc: t.ffToolDesc, active: g.id, body, app, img: g.id, lastmod: D.updated }));
       if (D.tierList) writeTier(chars, c => c.type);
       for (const c of chars) {
@@ -329,7 +340,7 @@ ${c.skill && sd ? `<section><h2>${esc(tt('fp_skillH', { x: c.n, s: c.skill }))}<
 <div class="bar"><a class="btn" href="/${gp}/?c=${encodeURIComponent(c.n)}">${esc(tt('hp_try', { x: c.n }))}</a>${D.tierList ? `<a class="btn ghost" href="/${gp}/tier-list/">${esc(tt('tl_h1', { g: g.name }))}</a>` : ''}</div>
 ${newsSection(lang, tt('hp_news', { x: c.n }), newsAbout(g.id, c.n))}
 ${faqBlock(fqa)}
-<section><h2>${esc(t.allCharacters)}</h2><div class="list-links">${links}</div></section>`;
+<section><h2>${esc(t.allCharacters)}</h2>${heroGrid(g, chars, t, gp, true)}</section>`;
         write(`${gp}/${slug(c.n)}/index.html`, layout({ lang, rel: `${gp}/${slug(c.n)}/`, active: g.id, body: body2, jsonld: faqLd(fqa), img: g.id, lastmod: D.updated,
           crumbs: [[t.home, `${lang}/`], [g.name, `${gp}/`], [c.n, `${gp}/${slug(c.n)}/`]],
           title: c.skill ? `${tt('fp_title2', { x: c.n, s: c.skill, p: period })} · Free Fire` : `${tt('fp_h1', { x: c.n })} ${period} · Free Fire`,
@@ -407,6 +418,7 @@ fs.writeFileSync(path.join(OUT, 'manifest.webmanifest'), JSON.stringify({
     { src: '/icons/icon-512.png', sizes: '512x512', type: 'image/png', purpose: 'maskable' }],
   shortcuts: GAMES.map(g => ({ name: g.name, url: `/${cfg.defaultLang}/${g.slug}/` }))
 }, null, 1));
+fs.writeFileSync(path.join(OUT, 'assets/roles.css'), ROLE_CSS);
 fs.writeFileSync(path.join(OUT, 'assets/icon.svg'), '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32"><rect width="32" height="32" rx="7" fill="#0c1018"/><circle cx="16" cy="16" r="10" fill="none" stroke="#e8b44a" stroke-width="2.5"/><circle cx="16" cy="16" r="4" fill="#e2595b"/><path d="M16 3v6M16 23v6M3 16h6M23 16h6" stroke="#e8b44a" stroke-width="2.5"/></svg>');
 /* Search engines and AI assistants (search and answer bots) are explicitly welcome. */
 const AI_BOTS = ['Googlebot', 'Bingbot', 'OAI-SearchBot', 'ChatGPT-User', 'GPTBot', 'PerplexityBot', 'Perplexity-User', 'ClaudeBot', 'Claude-SearchBot', 'Claude-User', 'Google-Extended', 'Applebot', 'Applebot-Extended', 'DuckAssistBot', 'meta-externalagent'];

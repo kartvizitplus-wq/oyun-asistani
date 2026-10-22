@@ -518,6 +518,22 @@
   }).catch(() => {});
 })();
 
+/* Role filter above hero card grids: shown only when this script runs, so the buttons always work. */
+(function () {
+  document.querySelectorAll('.rolefilter').forEach(box => {
+    const grid = box.nextElementSibling;
+    if (!grid || !grid.classList.contains('hgrid')) return;
+    box.hidden = false;
+    box.addEventListener('click', e => {
+      const b = e.target.closest('button[data-rf]');
+      if (!b) return;
+      const r = b.dataset.rf;
+      box.querySelectorAll('button').forEach(x => x.setAttribute('aria-pressed', x === b ? 'true' : 'false'));
+      grid.querySelectorAll('.hcard').forEach(c => { c.hidden = !!r && c.dataset.r !== r; });
+    });
+  });
+})();
+
 /* Language picker (all pages) */
 (function () {
   const s = document.getElementById('langSel');

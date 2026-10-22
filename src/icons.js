@@ -96,6 +96,12 @@
     for (const [re, g, col] of TALENT) if (re.test(name)) { k = g; c = col; break; }
     return `<svg class="ico talent" width="${s}" height="${s}" viewBox="0 0 30 30" role="img" aria-label="${ea(name)}"><circle cx="15" cy="15" r="14.5" fill="${c}" opacity=".16"/><circle cx="15" cy="15" r="13.5" fill="none" stroke="${c}" stroke-width="1.5" opacity=".8"/><g transform="translate(7 7) scale(.667)">${paint(k, c, '#0c1018')}</g></svg>`;
   }
-  const Icons = { hero, item, itemKind, talent };
+  /* Role art without initials, used as a CSS background for the light hero cards (one image per role). */
+  function roleArt(role) {
+    const [c1, c2] = ROLE[role] || ['#5a6b8a', '#2a3346'], em = EMBLEM[role] || 'star';
+    return `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 40 40"><defs><linearGradient id="g" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="${c1}"/><stop offset="1" stop-color="${c2}"/></linearGradient></defs><rect width="40" height="40" fill="url(#g)"/><g opacity=".28" transform="translate(13 11) rotate(-8 12 12) scale(1.15)">${paint(em, '#fff', '#fff')}</g></svg>`;
+  }
+  const roleColor = role => (ROLE[role] || ['#8e9ab0'])[0];
+  const Icons = { hero, item, itemKind, talent, roleArt, roleColor, initials };
   if (typeof module !== 'undefined' && module.exports) module.exports = Icons; else root.Icons = Icons;
 })(typeof window !== 'undefined' ? window : globalThis);
