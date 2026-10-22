@@ -1,7 +1,7 @@
 {
   "game": "brawlstars",
   "updated": "2026-10-19",
-  "notes": "c=class (tank, assassin, marksman, artillery, controller, support, damage), s=strengths (antitank, antiassassin, heal, wallbreak), tier=S/A/B/C or null (set by weekly updater). Class matchups and mode weights live in build logic (src/app.js). gears = suggested gear pair per class. sd = short kit description per language for new or changed brawlers (sourced; shown on the brawler page).",
+  "notes": "c=class (tank, assassin, marksman, artillery, controller, support, damage), s=strengths (antitank, antiassassin, heal, wallbreak), tier=S/A/B/C or null (set by weekly updater). Class matchups and mode weights live in build logic (src/app.js). gears = suggested gear pair per class. sd = short kit description per language for new or changed brawlers (sourced; shown on the brawler page). mu = sourced matchups for popular heroes: src (list of {name,url,date,patch|scope}), c (list of {n, w:{lang: why it works, own words}}), tip ({lang}). Shown on the hero page; keep names consistent with this file.",
   "brawlers": [
     {
       "n": "8-Bit",
@@ -675,7 +675,83 @@
       "n": "Surge",
       "c": "damage",
       "s": [],
-      "tier": "B"
+      "tier": "B",
+      "sd": {
+        "en": "Damage Dealer whose main attack, Juice of Justice, splits into two smaller shots when it hits an enemy. His Super, Party Tricks, upgrades him up to three times: stage 1 adds movement speed, stage 2 adds range and stage 3 splits each shot into six. All upgrades are lost when he is defeated. With the Star Power Serve Ice Cold he spawns with a full Super.",
+        "tr": "Ana saldırısı Juice of Justice, bir rakibe çarpınca ikiye bölünen bir Hasar Veren. Süper yeteneği Party Tricks onu üç kademeye kadar güçlendirir: 1. kademe hareket hızı, 2. kademe menzil verir, 3. kademede her atış altıya bölünür. Elendiğinde tüm kademeleri kaybeder. Serve Ice Cold yıldız gücüyle oyuna Süper'i dolu başlar.",
+        "id": "Damage Dealer dengan serangan utama Juice of Justice yang terpecah menjadi dua tembakan kecil saat mengenai musuh. Super-nya, Party Tricks, meng-upgrade dirinya hingga tiga kali: tahap 1 menambah kecepatan gerak, tahap 2 menambah jangkauan, dan tahap 3 memecah setiap tembakan menjadi enam. Semua upgrade hilang saat ia kalah. Dengan Star Power Serve Ice Cold, ia muncul dengan Super penuh.",
+        "es": "Damage Dealer cuyo ataque básico, Juice of Justice, se divide en dos disparos más pequeños al impactar a un enemigo. Su Súper, Party Tricks, lo mejora hasta tres veces: la fase 1 da velocidad de movimiento, la fase 2 da alcance y la fase 3 divide cada disparo en seis. Pierde todas las mejoras al ser derrotado. Con la Habilidad Estelar Serve Ice Cold reaparece con el Súper cargado.",
+        "pt": "Damage Dealer cujo ataque principal, Juice of Justice, se divide em dois tiros menores ao acertar um inimigo. O Super, Party Tricks, o melhora até três vezes: o estágio 1 dá velocidade de movimento, o estágio 2 dá alcance e o estágio 3 divide cada tiro em seis. Ele perde todas as melhorias ao ser derrotado. Com a Star Power Serve Ice Cold, ele nasce com o Super carregado."
+      },
+      "mu": {
+        "src": [
+          {
+            "name": "Brawl Time Ninja",
+            "url": "https://brawltime.ninja/tier-list/brawler/surge",
+            "date": "2026-10-22",
+            "scope": "current season"
+          }
+        ],
+        "c": [
+          {
+            "n": "Ash",
+            "w": {
+              "en": "A tank with lots of health whose Rage meter fills as he deals and takes damage, so trading shots with Surge only makes him faster and stronger.",
+              "tr": "Canı yüksek bir tank. Öfke barı hasar verdikçe ve aldıkça dolar, bu yüzden Surge'le atışmak onu sadece daha hızlı ve güçlü yapar.",
+              "id": "Tank dengan health besar yang meteran Rage-nya terisi saat ia memberi dan menerima damage, jadi saling tembak dengan Surge justru membuatnya lebih cepat dan kuat.",
+              "es": "Un tanque con mucha vida cuya barra de Ira se llena al hacer y recibir daño, así que intercambiar disparos con Surge solo lo vuelve más rápido y fuerte.",
+              "pt": "Um tanque com muita vida cuja barra de Raiva enche ao causar e receber dano, então trocar tiros com Surge só o deixa mais rápido e forte."
+            }
+          },
+          {
+            "n": "Ollie",
+            "w": {
+              "en": "A sturdy brawler with a gap-closing Super. He reaches Surge before the range upgrade and forces the close fights an unupgraded Surge struggles in.",
+              "tr": "Mesafe kapatan bir Süper'e sahip dayanıklı bir savaşçı. Surge menzil kademesine ulaşmadan yanına gelir ve onu güçlenmemiş haldeyken zorlandığı yakın dövüşe sokar.",
+              "id": "Brawler tangguh dengan Super untuk menutup jarak. Ia mencapai Surge sebelum upgrade jangkauan dan memaksa duel jarak dekat yang sulit bagi Surge yang belum di-upgrade.",
+              "es": "Un brawler resistente con un Súper para acortar distancias. Llega hasta Surge antes de la mejora de alcance y lo obliga a pelear de cerca, donde un Surge sin mejoras sufre.",
+              "pt": "Um brawler resistente com um Super que encurta a distância. Ele alcança Surge antes da melhoria de alcance e força lutas de perto, onde um Surge sem melhorias sofre."
+            }
+          },
+          {
+            "n": "Shelly",
+            "w": {
+              "en": "Her shotgun deals huge burst up close and her Super knocks enemies back. She punishes Surge around bushes and corners, where his base range is short.",
+              "tr": "Pompalısı yakın mesafede çok yüksek ani hasar verir, Süper'i rakibi geri savurur. Temel menzili kısa olan Surge'ü çalılık ve köşe başlarında cezalandırır.",
+              "id": "Shotgun-nya memberi burst besar dari dekat dan Super-nya mendorong musuh mundur. Ia menghukum Surge di sekitar semak dan tikungan, tempat jangkauan dasarnya pendek.",
+              "es": "Su escopeta hace muchísimo daño de cerca y su Súper empuja a los enemigos. Castiga a Surge en arbustos y esquinas, donde su alcance base es corto.",
+              "pt": "Sua espingarda causa muito dano de perto e o Super empurra os inimigos. Ela pune Surge perto de arbustos e esquinas, onde o alcance base dele é curto."
+            }
+          },
+          {
+            "n": "Nita",
+            "w": {
+              "en": "Her Bear soaks Surge's shots and pressures him from a second angle, which makes it hard for him to charge his Super safely.",
+              "tr": "Ayısı Surge'ün atışlarını üstüne çeker ve ona ikinci bir yönden baskı kurar. Bu yüzden Surge Süper'ini güvenle dolduramaz.",
+              "id": "Bear miliknya menyerap tembakan Surge dan menekannya dari sudut kedua, sehingga Surge sulit mengisi Super dengan aman.",
+              "es": "Su Oso absorbe los disparos de Surge y lo presiona desde un segundo ángulo, lo que le impide cargar el Súper con seguridad.",
+              "pt": "O Urso dela absorve os tiros de Surge e o pressiona de um segundo ângulo, o que dificulta carregar o Super com segurança."
+            }
+          },
+          {
+            "n": "Jacky",
+            "w": {
+              "en": "High health and an area attack that hits through walls, and her Super pulls enemies in, so Surge cannot keep his distance.",
+              "tr": "Canı yüksek, saldırısı duvarların arkasına da işleyen alan hasarı verir. Süper'i rakipleri kendine çeker, bu yüzden Surge mesafeyi koruyamaz.",
+              "id": "Health tinggi dan serangan area yang menembus dinding, dan Super-nya menarik musuh mendekat, jadi Surge tidak bisa menjaga jarak.",
+              "es": "Mucha vida y un ataque de área que atraviesa muros, y su Súper atrae a los enemigos, así que Surge no puede mantener la distancia.",
+              "pt": "Muita vida e um ataque em área que atravessa paredes, e o Super dela puxa os inimigos, então Surge não consegue manter distância."
+            }
+          }
+        ],
+        "tip": {
+          "en": "Focus Surge before he reaches stage 2 or 3: every defeat resets his upgrades. Once he is fully upgraded, avoid standing close to teammates, because his split shots hit several targets.",
+          "tr": "Surge'ü 2. veya 3. kademeye ulaşmadan hedef alın: her elenişte güçlendirmeleri sıfırlanır. Tam güçlendiğinde takım arkadaşlarınızla yan yana durmayın, çünkü bölünen atışları birden fazla kişiye isabet eder.",
+          "id": "Fokuskan Surge sebelum ia mencapai tahap 2 atau 3: setiap kali kalah, upgrade-nya ter-reset. Saat ia sudah full upgrade, jangan berdiri berdekatan dengan rekan tim, karena tembakan pecahnya mengenai beberapa target.",
+          "es": "Céntrate en Surge antes de que llegue a la fase 2 o 3: cada derrota reinicia sus mejoras. Cuando esté totalmente mejorado, no te quedes pegado a tus compañeros, porque sus disparos divididos golpean a varios objetivos.",
+          "pt": "Foque Surge antes que ele chegue ao estágio 2 ou 3: cada derrota zera as melhorias. Quando ele estiver totalmente melhorado, não fique perto dos colegas, porque os tiros divididos acertam vários alvos."
+        }
+      }
     },
     {
       "n": "Tara",

@@ -19,6 +19,14 @@ For every game, research the latest official patch / balance notes (official sit
 - Update `updated` (YYYY-MM-DD) and `patch` where the file has it.
 - Turkish item names for MLBB live in `data/mlbb-items-tr.json`.
 
+## 1b. Sourced matchups (`mu`) for popular heroes
+Hero pages show a "hardest matchups" block when the hero entry has an `mu` field (schema in each data file's `notes`; examples: Surge in `data/brawlstars.json`, Vayne and Tristana in `data/wildrift.json`).
+- **Refresh every week**: re-open each `mu` source. If the counters changed, update the list, the reasons and `date`/`patch`. If a source is gone or no longer supports the list, remove that hero's `mu` rather than keep stale data.
+- **Add 2 or 3 heroes per week**, choosing heroes people search for most (popular picks, heroes that just changed). Quality over volume: never add `mu` to many heroes at once.
+- Take counter names from one or two named public statistics sources (with URL, date and patch or scope). When sources disagree, prefer counters that appear in both and say nothing you cannot support.
+- Write every reason in your own words in all five languages, specific to that matchup (abilities, range, timing). No copied sentences, no template reasons reused across heroes, no invented numbers.
+- Keep the hero's other data consistent with the reasons (role, traits, `sd` kit description for Brawl Stars).
+
 ## 2. Articles (patch news, meta reports, hero guides)
 All articles live in `data/news/` as one JSON file each, same structure as the existing article:
 - `type`: `patch`, `meta` or `guide`; `slug`, `date`, `game` (mlbb, hok, wildrift, freefire, brawlstars), `sources` (names of sources used); guides also set `hero` (exact name as in the game data file, so the article links to the hero page)

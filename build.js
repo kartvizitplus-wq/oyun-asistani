@@ -172,6 +172,11 @@ ${faqBlock(tqa)}`;
       const list = isMoba ? D.heroes : D.brawlers;
       const roleOf = x => isMoba ? x.r : x.c;
       const links = list.map(h => `<a href="/${gp}/${slug(h.n)}/">${esc(h.n)}</a>`).join('');
+      /* Sourced matchups (field mu) for popular heroes: names from a public stats source, explanations in our own words. */
+      const byName = Object.fromEntries(list.map(z => [z.n, z]));
+      const roleLbl = z => isMoba ? t['role_' + z.r] : t['cl_' + z.c];
+      const muSrc = m => m.src.map(s => `<a href="${esc(s.url)}" rel="nofollow noopener" target="_blank">${esc(s.name)}</a> (${s.patch ? esc(fill(t.patchLbl, { v: s.patch })) + ', ' : ''}${esc(s.date)})`).join(', ');
+      const muSec = h => !h.mu ? '' : `<section><h2>${esc(tt('mu_h', { x: h.n }))}</h2><div class="card">${h.mu.c.map(c => { const z = byName[c.n]; return `<div class="pick">${Icons.hero(c.n, z ? roleOf(z) : '', 36)}<span class="pmain"><span><b><a href="/${gp}/${slug(c.n)}/" style="color:inherit">${esc(c.n)}</a></b> <span class="role">${z ? esc(roleLbl(z)) : ''}</span></span><span class="why">${esc(c.w[lang] || c.w.en)}</span></span></div>`; }).join('')}${h.mu.tip ? `<p style="margin:12px 0 0"><b>${esc(t.mu_tip)}:</b> ${esc(h.mu.tip[lang] || h.mu.tip.en)}</p>` : ''}<p class="note" style="margin-top:10px">${fill(esc(t.mu_note), { src: muSrc(h.mu) })}</p></div></section>`;
       const body = `<section><h1>${esc(gameTitle(g))}</h1><p class="lead">${esc(gameDesc(g))} <a href="/${lang}/guide/">${esc(GUIDE[lang].nav)} →</a>${D.tierList ? ` · <a href="/${gp}/tier-list/">${esc(tt('tl_h1', { g: g.name }))} →</a>` : ''}</p></section>
 <section><h2>${esc(t.enemyTeam)}</h2>
 <div class="slots" id="slots" style="grid-template-columns:repeat(${isMoba ? 5 : 3},1fr)"></div>
@@ -230,9 +235,10 @@ ${isMoba ? `<section id="buildsec"><h2>${esc(t.yourHero)}</h2><div class="heroli
           const items = Engine.mlCounterItems(D, x);
           const own = Engine.mlBuild(D, x, []);
           const traits = [...h.t].map(k => t['tr_' + k]).filter(Boolean);
-          inner = `<section><div class="heroline">${Icons.hero(x, h.r, 56)}<h1>${esc(tt('hp_h1', { x }))}</h1></div>
+          inner = `<section><div class="heroline">${Icons.hero(x, h.r, 56)}<h1>${esc(tt('hp_h1g', { x, g: g.name }))}</h1></div>
 <p class="lead">${esc(anA(tt('hp_about', { x, role: t['role_' + h.r].toLowerCase(), dmg: h.d === 'P' ? t.dmgP : t.dmgM }), lang))}${traits.length ? ' ' + esc(t.hp_traits) + ': ' + esc(traits.join(', ')) + '.' : ''}</p></section>
-<section><h2>${esc(tt('hp_best', { x }))}</h2><div class="card">${picks.map(p => `<div class="pick">${Icons.hero(p.n, p.r, 36)}<span class="pmain"><span><span class="score ${scoreCls(p.s)}">${p.s.toFixed(1)}</span> <b><a href="/${gp}/${slug(p.n)}/" style="color:inherit">${esc(p.n)}</a></b> <span class="role">${esc(t['role_' + p.r])}</span></span><span class="why">${esc(p.why.length ? [...new Set(p.why.map(w => typeof w === 'string' ? t[w] : fill(t[w.k] || '', { x: w.x })))].join(' · ') : t.neutral)}</span></span><span></span></div>`).join('')}</div></section>
+${muSec(h)}
+<section><h2>${esc(tt(h.mu ? 'mu_more' : 'hp_best', { x }))}</h2><div class="card">${picks.map(p => `<div class="pick">${Icons.hero(p.n, p.r, 36)}<span class="pmain"><span><span class="score ${scoreCls(p.s)}">${p.s.toFixed(1)}</span> <b><a href="/${gp}/${slug(p.n)}/" style="color:inherit">${esc(p.n)}</a></b> <span class="role">${esc(t['role_' + p.r])}</span></span><span class="why">${esc(p.why.length ? [...new Set(p.why.map(w => typeof w === 'string' ? t[w] : fill(t[w.k] || '', { x: w.x })))].join(' · ') : t.neutral)}</span></span><span></span></div>`).join('')}</div></section>
 ${items.length ? `<section><h2>${esc(tt('hp_items', { x }))}</h2><div class="card"><ol class="build">${items.map(([i, r]) => `<li class="adapt">${itemHtml(lang, i, t)}<small class="why">${esc(t[r] || '')}</small></span></li>`).join('')}</ol></div></section>` : ''}
 ${strong.length ? `<section><h2>${esc(tt('hp_strong', { x }))}</h2><p style="margin:0">${esc(strong.map(k => t['s_' + k]).join(', '))}</p></section>` : ''}
 ${own.items.length ? `<section><h2>${esc(tt('hp_build', { x }))}</h2><div class="card"><ol class="build">${own.items.map(o => `<li>${itemHtml(lang, o.item, t)}</span></li>`).join('')}</ol>
@@ -261,15 +267,21 @@ ${own.emblem ? `<h2 style="margin:16px 0 10px">${esc(own.emblem.arcana ? t.arcan
           const picks = Engine.bsScore(D, [x], null, null).slice(0, 8);
           const strong = Engine.bsStrongAgainst(D, x);
           const whyTxt = w => w.k === 'bw_counter' ? tt('bw_counter', { cls: t['cl_' + w.cls] }) : w.k === 'bw_mode' ? tt('bw_mode', { mode: t['m_' + w.mode] }) : t[w.k];
-          inner = `<section><div class="heroline">${Icons.hero(x, h.c, 56)}<h1>${esc(tt('bp_h1', { x }))}</h1></div><p class="lead">${esc(anA(tt('bp_about', { x, cls: t['cl_' + h.c] }), lang))}</p></section>
+          inner = `<section><div class="heroline">${Icons.hero(x, h.c, 56)}<h1>${esc(tt('hp_h1g', { x, g: g.name }))}</h1></div><p class="lead">${esc(anA(tt('bp_about', { x, cls: t['cl_' + h.c] }), lang))}</p></section>
 ${h.sd ? `<section><h2>${esc(tt('bp_kitH', { x }))}</h2><p style="margin:0">${esc(h.sd[lang] || h.sd.en)}</p></section>` : ''}
-<section><h2>${esc(tt('bp_best', { x }))}</h2><div class="card">${picks.map(p => `<div class="pick">${Icons.hero(p.n, p.c, 36)}<span class="pmain"><span><span class="score ${scoreCls(p.s)}">${p.s.toFixed(1)}</span> <b><a href="/${gp}/${slug(p.n)}/" style="color:inherit">${esc(p.n)}</a></b> <span class="role">${esc(t['cl_' + p.c])}</span></span><span class="why">${esc(p.why.length ? [...new Set(p.why.map(whyTxt))].join(' · ') : t.neutral)}</span></span><span></span></div>`).join('')}</div></section>
+${muSec(h)}
+<section><h2>${esc(tt(h.mu ? 'mu_more' : 'bp_best', { x }))}</h2><div class="card">${picks.map(p => `<div class="pick">${Icons.hero(p.n, p.c, 36)}<span class="pmain"><span><span class="score ${scoreCls(p.s)}">${p.s.toFixed(1)}</span> <b><a href="/${gp}/${slug(p.n)}/" style="color:inherit">${esc(p.n)}</a></b> <span class="role">${esc(t['cl_' + p.c])}</span></span><span class="why">${esc(p.why.length ? [...new Set(p.why.map(whyTxt))].join(' · ') : t.neutral)}</span></span><span></span></div>`).join('')}</div></section>
 ${strong.length ? `<section><h2>${esc(tt('bp_strong', { x }))}</h2><p style="margin:0">${esc(strong.map(c => t['cl_' + c]).join(', '))}</p></section>` : ''}
 <section><h2>${esc(tt('bp_tip', { cls: t['cl_' + h.c] }))}</h2><p style="margin:0">${esc(t['bt_' + h.c])}</p>${D.gears && D.gears[h.c] ? `<p style="margin:8px 0 0"><b>${esc(t.gearTitle)}:</b> ${esc(D.gears[h.c].join(' + '))}</p>` : ''}</section>`;
           const top3 = picks.slice(0, 3), w0 = top3[0] && top3[0].why[0];
           qa = [[tt('q_bsbest', { x }), tt('a_best', { x, list: listOf(top3.map(p => p.n)), first: top3[0].n, why: w0 ? whyTxt(w0) : t.neutral })]];
           if (strong.length) qa.push([tt('q_strong', { x }), tt('a_strong', { x, list: listOf(strong.map(c => t['cl_' + c])) })]);
           topNames = top3.map(p => p.n);
+        }
+        if (h.mu) {
+          const mn = h.mu.c.map(c => c.n), w0 = (h.mu.c[0].w[lang] || h.mu.c[0].w.en);
+          qa[0] = [qa[0][0], tt('a_mu', { x, src: listOf(h.mu.src.map(z => z.name)), list: listOf(mn.slice(0, 4)), first: mn[0], why: w0 })];
+          topNames = mn.slice(0, 3);
         }
         const src = isMoba && h.wr && D.wrSource ? `<section class="card"><h2>${esc(t.srcTitle)}</h2><p style="margin:0">${esc(tt('srcRate', { p: h.wr.toFixed(1), src: D.wrSource.name, d: D.wrSource.date }))}</p><p class="note" style="margin-top:6px"><a href="${esc(D.wrSource.url)}" rel="nofollow noopener" target="_blank">${esc(D.wrSource.name)}</a></p></section>` : '';
         const comm = isMoba ? `<section class="card" id="community" hidden data-game="${g.id}" data-hero="${esc(x)}" data-t="${esc(JSON.stringify({ commTitle: t.commTitle, commRate: t.commRate, commVs: t.commVs, commFew: t.commFew }))}"></section>` : '';

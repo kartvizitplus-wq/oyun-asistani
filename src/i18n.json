@@ -396,7 +396,13 @@
     "privKids": "Bu site 13 yaşın altındaki çocuklara yönelik değildir ve bilerek çocuklardan kişisel bilgi toplamaz.",
     "privP5": "Gizlilikle ilgili sorular için İletişim sayfasındaki adrese yazabilirsin:",
     "privDate": "Son güncelleme",
-    "statsLabel": "Oyun başına incelenen kahraman, savaşçı ve karakter sayısı"
+    "statsLabel": "Oyun başına incelenen kahraman, savaşçı ve karakter sayısı",
+    "hp_h1g": "{g}: {x} nasıl yenilir?",
+    "mu_h": "{x} için en zor eşleşmeler",
+    "mu_note": "Eşleşmeler {src} verilerine dayanıyor. Açıklamalar, her seçimin neden işe yaradığına dair kendi özetimizdir.",
+    "mu_tip": "Önemli ipucu",
+    "mu_more": "Role ve takıma göre diğer seçimler (asistan modeli)",
+    "a_mu": "{src} verilerine göre şu an {x} için en zor eşleşmeler: {list}. {first}: {why}"
   },
   "en": {
     "langName": "English",
@@ -795,7 +801,13 @@
     "privKids": "This site is not directed at children under 13 and does not knowingly collect personal information from children.",
     "privP5": "For privacy questions, write to the address on the Contact page:",
     "privDate": "Last updated",
-    "statsLabel": "Heroes, brawlers and characters covered per game"
+    "statsLabel": "Heroes, brawlers and characters covered per game",
+    "hp_h1g": "How to counter {x} in {g}",
+    "mu_h": "{x}'s hardest matchups",
+    "mu_note": "Matchups from {src}. The explanations are our own summary of why each pick works.",
+    "mu_tip": "Key tip",
+    "mu_more": "More picks by role and team (assistant model)",
+    "a_mu": "According to {src}, the hardest matchups for {x} right now are {list}. {first}: {why}"
   },
   "id": {
     "langName": "Bahasa Indonesia",
@@ -1194,7 +1206,13 @@
     "privKids": "Situs ini tidak ditujukan untuk anak di bawah 13 tahun dan tidak dengan sengaja mengumpulkan informasi pribadi dari anak-anak.",
     "privP5": "Untuk pertanyaan tentang privasi, kirim email ke alamat di halaman Kontak:",
     "privDate": "Terakhir diperbarui",
-    "statsLabel": "Jumlah hero, brawler, dan karakter yang dibahas per game"
+    "statsLabel": "Jumlah hero, brawler, dan karakter yang dibahas per game",
+    "hp_h1g": "Cara counter {x} di {g}",
+    "mu_h": "Matchup tersulit untuk {x}",
+    "mu_note": "Matchup dari {src}. Penjelasannya adalah ringkasan kami sendiri tentang alasan setiap pick efektif.",
+    "mu_tip": "Tips utama",
+    "mu_more": "Pick lain berdasarkan role dan tim (model asisten)",
+    "a_mu": "Menurut {src}, matchup tersulit untuk {x} saat ini adalah {list}. {first}: {why}"
   },
   "es": {
     "langName": "Español",
@@ -1593,7 +1611,13 @@
     "privKids": "Este sitio no está dirigido a menores de 13 años y no recoge a sabiendas información personal de niños.",
     "privP5": "Para preguntas sobre privacidad, escribe a la dirección de la página de Contacto:",
     "privDate": "Última actualización",
-    "statsLabel": "Héroes, brawlers y personajes analizados por juego"
+    "statsLabel": "Héroes, brawlers y personajes analizados por juego",
+    "hp_h1g": "Cómo counterear a {x} en {g}",
+    "mu_h": "Los enfrentamientos más difíciles de {x}",
+    "mu_note": "Enfrentamientos según {src}. Las explicaciones son nuestro propio resumen de por qué funciona cada elección.",
+    "mu_tip": "Consejo clave",
+    "mu_more": "Más opciones por rol y equipo (modelo del asistente)",
+    "a_mu": "Según {src}, los enfrentamientos más difíciles de {x} ahora mismo son {list}. {first}: {why}"
   },
   "pt": {
     "langName": "Português",
@@ -1992,6 +2016,12 @@
     "privKids": "Este site não é direcionado a crianças menores de 13 anos e não coleta intencionalmente informações pessoais de crianças.",
     "privP5": "Para dúvidas sobre privacidade, escreva para o endereço da página de Contato:",
     "privDate": "Última atualização",
-    "statsLabel": "Heróis, brawlers e personagens analisados por jogo"
+    "statsLabel": "Heróis, brawlers e personagens analisados por jogo",
+    "hp_h1g": "Como counterar {x} em {g}",
+    "mu_h": "Os confrontos mais difíceis de {x}",
+    "mu_note": "Confrontos segundo {src}. As explicações são nosso próprio resumo de por que cada escolha funciona.",
+    "mu_tip": "Dica principal",
+    "mu_more": "Mais escolhas por função e time (modelo do assistente)",
+    "a_mu": "Segundo {src}, os confrontos mais difíceis de {x} agora são {list}. {first}: {why}"
   }
 }

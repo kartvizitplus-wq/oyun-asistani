@@ -306,7 +306,8 @@
   function bsStrongAgainst(data, name) {
     const b = bsIndex(data)[name];
     const m = BS_MATCH[b.c];
-    const set = new Set(Object.keys(m).filter(k => m[k] >= 1));
+    /* Skip classes that the table also rates as strong against this one, so a page never claims both directions. */
+    const set = new Set(Object.keys(m).filter(k => m[k] >= 1 && !((BS_MATCH[k] || {})[b.c] >= 1)));
     if (b.s.includes('antitank')) set.add('tank');
     if (b.s.includes('antiassassin')) set.add('assassin');
     return [...set];

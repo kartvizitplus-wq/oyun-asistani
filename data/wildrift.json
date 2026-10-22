@@ -2,7 +2,7 @@
   "game": "wildrift",
   "patch": "7.3b",
   "updated": "2026-10-19",
-  "notes": "Same schema as mlbb.json. tier=S/A/B/C or null (weekly updater). Item names starting with # are category keys translated in src/i18n.json.",
+  "notes": "Same schema as mlbb.json. tier=S/A/B/C or null (weekly updater). Item names starting with # are category keys translated in src/i18n.json. mu = sourced matchups for popular heroes: src (list of {name,url,date,patch|scope}), c (list of {n, w:{lang: why it works, own words}}), tip ({lang}). Shown on the hero page; keep names consistent with this file.",
   "archetypes": {
     "fP": {
       "group": "front",
@@ -1731,7 +1731,72 @@
         "baron",
         "mid",
         "dragon"
-      ]
+      ],
+      "mu": {
+        "src": [
+          {
+            "name": "Wild Rift Meta",
+            "url": "https://www.wildriftmeta.com/champions/tristana/countered-by/",
+            "date": "2026-10-17",
+            "patch": "7.3b"
+          },
+          {
+            "name": "Wild Rift Core",
+            "url": "https://wildriftcore.com/en/champions/tristana/counters/",
+            "date": "2026-10-22",
+            "patch": "7.3c"
+          }
+        ],
+        "c": [
+          {
+            "n": "Draven",
+            "w": {
+              "en": "His axes win the early trades and punish Tristana while she is still stacking Explosive Charge.",
+              "tr": "Baltalarıyla erken oyundaki değişimleri kazanır ve Tristana Explosive Charge yüklerini biriktirirken onu cezalandırır.",
+              "id": "Kapaknya memenangkan trade di early game dan menghukum Tristana saat ia masih menumpuk Explosive Charge.",
+              "es": "Sus hachas ganan los primeros intercambios y castigan a Tristana mientras aún acumula Explosive Charge.",
+              "pt": "Os machados vencem as primeiras trocas e punem Tristana enquanto ela ainda acumula Explosive Charge."
+            }
+          },
+          {
+            "n": "Caitlyn",
+            "w": {
+              "en": "Longer early range and traps let her zone Tristana and punish her for pushing the wave before Tristana's range grows.",
+              "tr": "Erken oyunda daha uzun menzili ve tuzaklarıyla Tristana'yı alandan uzak tutar, menzili büyümeden minyon dalgasını ittiği için onu cezalandırır.",
+              "id": "Jangkauan awal yang lebih jauh dan jebakan membuatnya bisa mengusir Tristana dan menghukumnya saat push wave sebelum jangkauan Tristana bertambah.",
+              "es": "Su mayor alcance inicial y sus trampas le permiten alejar a Tristana y castigarla por empujar la oleada antes de que su alcance crezca.",
+              "pt": "O alcance inicial maior e as armadilhas permitem afastar Tristana e puni-la por empurrar a wave antes que o alcance dela cresça."
+            }
+          },
+          {
+            "n": "Xayah",
+            "w": {
+              "en": "Featherstorm makes her untargetable during Tristana's bomb, and her recalled feathers can root Tristana right after a Rocket Jump.",
+              "tr": "Featherstorm sırasında hedef alınamaz hale gelip Tristana'nın bombasından kurtulur. Geri çağırdığı tüyler, Rocket Jump'tan hemen sonra Tristana'yı köklendirebilir.",
+              "id": "Featherstorm membuatnya tidak bisa ditarget saat bom Tristana, dan bulu yang ia tarik kembali bisa me-root Tristana tepat setelah Rocket Jump.",
+              "es": "Featherstorm la vuelve inalcanzable durante la bomba de Tristana, y sus plumas al volver pueden enraizarla justo después de un Rocket Jump.",
+              "pt": "Featherstorm a deixa inalvejável durante a bomba de Tristana, e as penas ao voltar podem enraizar Tristana logo após um Rocket Jump."
+            }
+          },
+          {
+            "n": "Nautilus",
+            "w": {
+              "en": "Punishes Tristana's predictable Rocket Jumps with hook, root and ultimate before she can reset her jump.",
+              "tr": "Tristana'nın tahmin edilebilir Rocket Jump'larını, zıplaması yenilenmeden kanca, köklendirme ve ultisiyle cezalandırır.",
+              "id": "Menghukum Rocket Jump Tristana yang mudah ditebak dengan hook, root, dan ultimate sebelum ia bisa me-reset lompatannya.",
+              "es": "Castiga los Rocket Jump predecibles de Tristana con gancho, enraizamiento y definitiva antes de que pueda reiniciar el salto.",
+              "pt": "Pune os Rocket Jumps previsíveis de Tristana com gancho, raiz e ultimate antes que ela consiga reiniciar o salto."
+            }
+          }
+        ],
+        "tip": {
+          "en": "Tristana is weakest before her first item and whenever Rocket Jump is on cooldown. Bait the jump first, then trade, and save your crowd control for the moment she lands.",
+          "tr": "Tristana ilk itemini almadan önce ve Rocket Jump bekleme süresindeyken en zayıf halindedir. Önce zıplamasını harcatın, sonra saldırın; kitle kontrolünüzü yere indiği an için saklayın.",
+          "id": "Tristana paling lemah sebelum item pertamanya dan saat Rocket Jump sedang cooldown. Pancing lompatannya dulu, lalu trade, dan simpan crowd control untuk saat ia mendarat.",
+          "es": "Tristana es más débil antes de su primer objeto y cuando Rocket Jump está en enfriamiento. Provoca el salto primero, luego intercambia, y guarda tu control para cuando aterrice.",
+          "pt": "Tristana é mais fraca antes do primeiro item e quando o Rocket Jump está em recarga. Force o salto primeiro, depois troque, e guarde o controle de grupo para quando ela pousar."
+        }
+      }
     },
     {
       "n": "Tryndamere",
@@ -1811,7 +1876,72 @@
       "lanes": [
         "baron",
         "dragon"
-      ]
+      ],
+      "mu": {
+        "src": [
+          {
+            "name": "Wild Rift Meta",
+            "url": "https://www.wildriftmeta.com/champions/vayne/countered-by/",
+            "date": "2026-10-17",
+            "patch": "7.3b"
+          },
+          {
+            "name": "Wild Rift Core",
+            "url": "https://wildriftcore.com/en/champions/vayne/counters/",
+            "date": "2026-10-22",
+            "patch": "7.3c"
+          }
+        ],
+        "c": [
+          {
+            "n": "Caitlyn",
+            "w": {
+              "en": "Outranges Vayne in lane and pokes her with long-range basic attacks and traps, denying farm before Vayne reaches her late-game power.",
+              "tr": "Koridorda Vayne'den uzun menzile sahiptir. Uzak mesafeli saldırıları ve tuzaklarıyla onu yıpratır, Vayne güçlendiği oyun sonuna ulaşmadan minyon almasını engeller.",
+              "id": "Jangkauannya lebih jauh dari Vayne di lane dan ia mem-poke Vayne dengan basic attack jarak jauh dan jebakan, menahan farm sebelum Vayne mencapai kekuatan late game.",
+              "es": "Tiene más alcance que Vayne en la línea y la castiga con ataques básicos de largo alcance y trampas, negándole farmeo antes de que llegue a su fuerza de late game.",
+              "pt": "Tem mais alcance que Vayne na rota e a desgasta com ataques básicos de longo alcance e armadilhas, negando farm antes que ela chegue à força de late game."
+            }
+          },
+          {
+            "n": "Draven",
+            "w": {
+              "en": "His Spinning Axes win the early basic-attack trades. One bad trade can send Vayne back to base before Silver Bolts start to matter.",
+              "tr": "Spinning Axes ile erken oyundaki saldırı değişimlerini kazanır. Tek bir kötü değişim, Silver Bolts etkili olmaya başlamadan Vayne'i üsse geri gönderebilir.",
+              "id": "Spinning Axes-nya memenangkan trade basic attack di early game. Satu trade buruk bisa memaksa Vayne recall sebelum Silver Bolts mulai berpengaruh.",
+              "es": "Sus Spinning Axes ganan los intercambios de ataques básicos al principio. Un mal intercambio puede mandar a Vayne a la base antes de que Silver Bolts empiece a importar.",
+              "pt": "Os Spinning Axes vencem as trocas de ataques básicos no início. Uma troca ruim pode mandar Vayne para a base antes que Silver Bolts comece a importar."
+            }
+          },
+          {
+            "n": "Varus",
+            "w": {
+              "en": "Long-range poke wears Vayne down in lane, and Chain of Corruption roots her so she cannot tumble out of a fight.",
+              "tr": "Uzun menzilli saldırılarıyla Vayne'i koridorda yıpratır. Chain of Corruption onu yerinde köklendirir, böylece Vayne takla atarak dövüşten kaçamaz.",
+              "id": "Poke jarak jauhnya melemahkan Vayne di lane, dan Chain of Corruption me-root Vayne sehingga ia tidak bisa tumble keluar dari pertarungan.",
+              "es": "Su hostigamiento de largo alcance desgasta a Vayne en la línea, y Chain of Corruption la enraíza para que no pueda escapar con Tumble.",
+              "pt": "O poke de longo alcance desgasta Vayne na rota, e Chain of Corruption a enraíza para que ela não consiga escapar com Tumble."
+            }
+          },
+          {
+            "n": "Nautilus",
+            "w": {
+              "en": "His hook, passive root and ultimate lock Vayne in place and take away the space she needs to kite. He is most dangerous once he reaches level 5.",
+              "tr": "Kancası, pasif köklendirmesi ve ultisi Vayne'i yerinde tutar ve uzaktan vurup kaçması için gereken alanı elinden alır. 5. seviyeden sonra en tehlikeli halindedir.",
+              "id": "Hook, root pasif, dan ultimate-nya mengunci Vayne dan menghilangkan ruang yang ia butuhkan untuk kiting. Ia paling berbahaya setelah mencapai level 5.",
+              "es": "Su gancho, su enraizamiento pasivo y su definitiva inmovilizan a Vayne y le quitan el espacio que necesita para kitear. Es más peligroso a partir del nivel 5.",
+              "pt": "O gancho, a raiz passiva e a ultimate prendem Vayne e tiram o espaço que ela precisa para kitar. Ele fica mais perigoso a partir do nível 5."
+            }
+          }
+        ],
+        "tip": {
+          "en": "Pressure Vayne early with poke and wave control: she is weakest before her core items. Wait for Condemn and Tumble to be used before you commit to an all-in.",
+          "tr": "Vayne'e erken oyunda uzaktan hasar ve minyon kontrolüyle baskı kurun, ana itemleri tamamlanmadan önce en zayıf halindedir. Tam saldırıya geçmeden önce Condemn ve Tumble'ı kullanmasını bekleyin.",
+          "id": "Tekan Vayne sejak awal dengan poke dan kontrol wave: ia paling lemah sebelum item inti selesai. Tunggu Condemn dan Tumble terpakai sebelum all-in.",
+          "es": "Presiona a Vayne pronto con hostigamiento y control de oleadas: es más débil antes de sus objetos principales. Espera a que use Condemn y Tumble antes de comprometerte.",
+          "pt": "Pressione Vayne cedo com poke e controle de wave: ela é mais fraca antes dos itens principais. Espere ela usar Condemn e Tumble antes de entrar com tudo."
+        }
+      }
     },
     {
       "n": "Veigar",
