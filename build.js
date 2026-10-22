@@ -86,7 +86,7 @@ ${crumbNav}${body}
 </main>
 <footer><div class="wrap">
 <span>${esc(t.disclaimer)}</span>
-<span><a href="/${lang}/about/">${esc(t.about)}</a> · <a href="/${lang}/privacy/">${esc(t.privacy)}</a> · <a href="/${lang}/news/">${esc(t.news)}</a> · ${esc(t.updatedOn)}: ${esc(lastUpdated)}</span>
+<span><a href="/${lang}/about/">${esc(t.about)}</a> · <a href="/${lang}/privacy/">${esc(t.privacy)}</a> · <a href="/${lang}/contact/">${esc(t.contact)}</a> · <a href="/${lang}/news/">${esc(t.news)}</a> · ${esc(t.updatedOn)}: ${esc(lastUpdated)}</span>
 </div></footer>
 ${appJs}<script src="${asset('icons.js')}"></script><script src="${asset('app.js')}"></script>
 </body>
@@ -115,7 +115,7 @@ const newsSection = (lang, h, list) => list.length ? `<section><h2>${esc(h)}</h2
 for (const lang of cfg.langs) {
   const t = I18N[lang];
   const tt = (k, v) => fill(t[k] || k, v);
-  const tSub = Object.fromEntries(Object.keys(t).filter(k => !/^(priv|about)Body$|^homeText$/.test(k)).map(k => [k, t[k]]));
+  const tSub = Object.fromEntries(Object.keys(t).filter(k => !/^(priv|about|contact)Body$|^homeText$/.test(k)).map(k => [k, t[k]]));
 
   /* Home */
   const gameDesc = g => g.kind === 'moba' ? t.mobaToolDesc : g.kind === 'bs' ? t.bsToolDesc : t.ffToolDesc;
@@ -357,11 +357,15 @@ ${G.sections.map((sec, i) => `<h2 id="s${i + 1}">${esc(sec.h)}</h2><ol>${sec.ste
 <div class="bar">${GAMES.map(gm => `<a class="btn ghost" href="/${lang}/${gm.slug}/">${esc(gm.name)}</a>`).join('')}</div>`
   }));
 
-  /* Privacy & About */
+  /* Privacy, About & Contact */
+  const PRIVACY_DATE = '2026-10-22';
+  const mail = `<a href="mailto:${esc(cfg.contactEmail)}">${esc(cfg.contactEmail)}</a>`;
   write(`${lang}/privacy/index.html`, layout({ lang, rel: `${lang}/privacy/`, title: `${t.privTitle} · ${cfg.siteName}`, desc: t.privBody[0],
-    body: `<section class="prose"><h1>${esc(t.privTitle)}</h1>${t.privBody.map(p => `<p>${p}</p>`).join('')}</section>` }));
+    body: `<section class="prose"><h1>${esc(t.privTitle)}</h1><p class="muted">${esc(t.privDate)}: ${PRIVACY_DATE}</p>${t.privBody.map(p => `<p>${p}</p>`).join('')}<p>${esc(t.privP5)} ${mail}</p></section>` }));
   write(`${lang}/about/index.html`, layout({ lang, rel: `${lang}/about/`, title: `${t.aboutTitle} · ${cfg.siteName}`, desc: t.aboutBody[0],
-    body: `<section class="prose"><h1>${esc(t.aboutTitle)}</h1>${t.aboutBody.map(p => `<p>${esc(p)}</p>`).join('')}${cfg.contactEmail ? `<p>${esc(t.contact)}: <span style="user-select:all">${esc(cfg.contactEmail)}</span></p>` : ''}</section>` }));
+    body: `<section class="prose"><h1>${esc(t.aboutTitle)}</h1>${t.aboutBody.map(p => `<p>${esc(p)}</p>`).join('')}${cfg.contactEmail ? `<p>${esc(t.contact)}: ${mail}</p>` : ''}</section>` }));
+  write(`${lang}/contact/index.html`, layout({ lang, rel: `${lang}/contact/`, title: `${t.contactTitle} · ${cfg.siteName}`, desc: t.contactBody[0],
+    body: `<section class="prose"><h1>${esc(t.contactTitle)}</h1>${t.contactBody.map(p => `<p>${esc(p)}</p>`).join('')}<p><b>E-mail:</b> ${mail}</p><p><a class="btn" href="mailto:${esc(cfg.contactEmail)}?subject=PickRadar">${esc(t.emailUs)}</a></p><p><a href="/${lang}/about/">${esc(t.about)}</a> · <a href="/${lang}/privacy/">${esc(t.privacy)}</a></p></section>` }));
 }
 
 /* Root, assets, SEO files */
