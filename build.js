@@ -300,7 +300,7 @@ ${strong.length ? `<section><h2>${esc(tt('bp_strong', { x }))}</h2><p style="mar
         const comm = isMoba ? `<section class="card" id="community" hidden data-game="${g.id}" data-hero="${esc(x)}" data-t="${esc(JSON.stringify({ commTitle: t.commTitle, commRate: t.commRate, commVs: t.commVs, commFew: t.commFew }))}"></section>` : '';
         const body2 = `${inner}
 ${src}${comm}
-<div class="bar"><a class="btn" href="/${gp}/?e=${encodeURIComponent(x)}">${esc(tt('hp_try', { x }))}</a>${D.tierList ? `<a class="btn ghost" href="/${gp}/tier-list/">${esc(tt('tl_h1', { g: g.name }))}</a>` : ''}</div>
+<div class="bar"><a class="btn" href="/${gp}/?e=${encodeURIComponent(x).replace(/'/g, '%27')}">${esc(tt('hp_try', { x }))}</a>${D.tierList ? `<a class="btn ghost" href="/${gp}/tier-list/">${esc(tt('tl_h1', { g: g.name }))}</a>` : ''}</div>
 ${newsSection(lang, tt('hp_news', { x }), newsAbout(g.id, x))}
 ${faqBlock(qa)}
 <section><h2>${esc(t.simHeroes)}</h2>${heroGrid(g, list.filter(z => z !== h && roleKey(z) === roleKey(h)).slice(0, 12), t, gp, true)}<p class="note" style="margin-top:10px"><a href="/${gp}/">${esc(isMoba ? t.allHeroes : t.allBrawlers)} →</a></p></section>`;
