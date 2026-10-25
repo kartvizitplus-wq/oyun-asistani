@@ -249,6 +249,7 @@ ${isMoba ? `<section id="buildsec"><h2>${esc(t.yourHero)}</h2><div class="heroli
           const traits = [...h.t].map(k => t['tr_' + k]).filter(Boolean);
           inner = `<section><div class="heroline">${Icons.hero(x, h.r, 56)}<h1>${esc(tt('hp_h1g', { x, g: g.name }))}</h1></div>
 <p class="lead">${esc(anA(tt('hp_about', { x, role: t['role_' + h.r].toLowerCase(), dmg: h.d === 'P' ? t.dmgP : t.dmgM }), lang))}${traits.length ? ' ' + esc(t.hp_traits) + ': ' + esc(traits.join(', ')) + '.' : ''}</p></section>
+${h.sd ? `<section><h2>${esc(tt('bp_kitH', { x }))}</h2><p style="margin:0">${esc(h.sd[lang] || h.sd.en)}</p></section>` : ''}
 ${muSec(h)}
 <section><h2>${esc(tt(h.mu ? 'mu_more' : 'hp_best', { x }))}</h2><div class="card">${picks.map(p => `<div class="pick">${Icons.hero(p.n, p.r, 36)}<span class="pmain"><span><span class="score ${scoreCls(p.s)}">${p.s.toFixed(1)}</span> <b><a href="/${gp}/${slug(p.n)}/" style="color:inherit">${esc(p.n)}</a></b> <span class="role">${esc(t['role_' + p.r])}</span></span><span class="why">${esc(p.why.length ? [...new Set(p.why.map(w => typeof w === 'string' ? t[w] : fill(t[w.k] || '', { x: w.x })))].join(' · ') : t.neutral)}</span></span><span></span></div>`).join('')}</div></section>
 ${items.length ? `<section><h2>${esc(tt('hp_items', { x }))}</h2><div class="card"><ol class="build">${items.map(([i, r]) => `<li class="adapt">${itemHtml(lang, i, t)}<small class="why">${esc(t[r] || '')}</small></span></li>`).join('')}</ol></div></section>` : ''}
@@ -302,7 +303,7 @@ ${src}${comm}
 <div class="bar"><a class="btn" href="/${gp}/?e=${encodeURIComponent(x)}">${esc(tt('hp_try', { x }))}</a>${D.tierList ? `<a class="btn ghost" href="/${gp}/tier-list/">${esc(tt('tl_h1', { g: g.name }))}</a>` : ''}</div>
 ${newsSection(lang, tt('hp_news', { x }), newsAbout(g.id, x))}
 ${faqBlock(qa)}
-<section><h2>${esc(isMoba ? t.allHeroes : t.allBrawlers)}</h2>${heroGrid(g, list, t, gp, true)}</section>`;
+<section><h2>${esc(t.simHeroes)}</h2>${heroGrid(g, list.filter(z => z !== h && roleKey(z) === roleKey(h)).slice(0, 12), t, gp, true)}<p class="note" style="margin-top:10px"><a href="/${gp}/">${esc(isMoba ? t.allHeroes : t.allBrawlers)} →</a></p></section>`;
         write(`${gp}/${slug(x)}/index.html`, layout({
           lang, rel: `${gp}/${slug(x)}/`, active: g.id, body: body2, jsonld: faqLd(qa), img: g.id, lastmod: D.updated,
           crumbs: [[t.home, `${lang}/`], [g.name, `${gp}/`], [x, `${gp}/${slug(x)}/`]],
@@ -340,7 +341,7 @@ ${c.skill && sd ? `<section><h2>${esc(tt('fp_skillH', { x: c.n, s: c.skill }))}<
 <div class="bar"><a class="btn" href="/${gp}/?c=${encodeURIComponent(c.n)}">${esc(tt('hp_try', { x: c.n }))}</a>${D.tierList ? `<a class="btn ghost" href="/${gp}/tier-list/">${esc(tt('tl_h1', { g: g.name }))}</a>` : ''}</div>
 ${newsSection(lang, tt('hp_news', { x: c.n }), newsAbout(g.id, c.n))}
 ${faqBlock(fqa)}
-<section><h2>${esc(t.allCharacters)}</h2>${heroGrid(g, chars, t, gp, true)}</section>`;
+<section><h2>${esc(t.simChars)}</h2>${heroGrid(g, chars.filter(z => z !== c && z.type === c.type).slice(0, 12), t, gp, true)}<p class="note" style="margin-top:10px"><a href="/${gp}/">${esc(t.allCharacters)} →</a></p></section>`;
         write(`${gp}/${slug(c.n)}/index.html`, layout({ lang, rel: `${gp}/${slug(c.n)}/`, active: g.id, body: body2, jsonld: faqLd(fqa), img: g.id, lastmod: D.updated,
           crumbs: [[t.home, `${lang}/`], [g.name, `${gp}/`], [c.n, `${gp}/${slug(c.n)}/`]],
           title: c.skill ? `${tt('fp_title2', { x: c.n, s: c.skill, p: period })} · Free Fire` : `${tt('fp_h1', { x: c.n })} ${period} · Free Fire`,

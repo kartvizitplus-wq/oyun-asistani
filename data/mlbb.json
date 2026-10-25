@@ -302,7 +302,7 @@
       "s": [],
       "b": "fP",
       "tier": "S",
-      "wr": 56.0,
+      "wr": 56,
       "lanes": [
         "exp"
       ]
@@ -350,7 +350,7 @@
         "Malefic Roar"
       ],
       "tier": "S",
-      "wr": 60.0,
+      "wr": 60,
       "lanes": [
         "jungle",
         "exp"
@@ -501,7 +501,14 @@
       "lanes": [
         "roam",
         "exp"
-      ]
+      ],
+      "sd": {
+        "en": "Belerick is a roaming or EXP lane tank built around punishing the people who hit him. His passive, Deadly Thorns, deals damage back to enemies that attack him, so marksmen and fighters who rely on basic attacks lose trades. Ancient Seed throws vines that slow and damage, Nature's Strike taunts nearby enemies after a short delay (it can be cancelled by moving out of range), and his ultimate, Wrath of Dryad, taunts everyone in a wide circle and gives him extra defence. Play against him by spreading out before his ultimate, using skill damage instead of basic attacks, and buying penetration or anti-heal, since his kit rewards long fights.",
+        "tr": "Belerick, kendisine vuranları cezalandırmak üzerine kurulu bir roam veya EXP koridoru tankıdır. Pasifi Deadly Thorns, ona saldıran rakiplere hasar geri yansıtır; bu yüzden normal saldırıya dayanan nişancılar ve dövüşçüler alışverişi kaybeder. Ancient Seed yavaşlatan ve hasar veren sarmaşıklar atar, Nature's Strike kısa bir gecikmeden sonra yakındaki rakipleri kışkırtır (menzilden çıkarak kaçılabilir), ultisi Wrath of Dryad ise geniş bir alandaki herkesi kışkırtır ve ona ekstra savunma verir. Ona karşı ultisinden önce dağılın, normal saldırı yerine yetenek hasarı kullanın ve uzun çatışmaları ödüllendirdiği için penetrasyon ya da anti-heal alın.",
+        "id": "Belerick adalah tank roam atau EXP lane yang dirancang untuk menghukum siapa pun yang menyerangnya. Pasifnya, Deadly Thorns, memantulkan damage ke musuh yang menyerangnya, sehingga marksman dan fighter yang mengandalkan basic attack kalah trade. Ancient Seed melempar sulur yang memberi slow dan damage, Nature's Strike memberi taunt ke musuh di dekatnya setelah jeda singkat (bisa dihindari dengan keluar dari jangkauan), dan ultimate-nya, Wrath of Dryad, memberi taunt ke semua musuh dalam area luas sekaligus menambah pertahanannya. Lawan dia dengan menyebar sebelum ultimate-nya, memakai damage skill alih-alih basic attack, dan membeli penetrasi atau anti-heal.",
+        "es": "Belerick es un tanque de roam o de la línea de experiencia pensado para castigar a quien le golpea. Su pasiva, Deadly Thorns, devuelve daño a los enemigos que le atacan, así que tiradores y luchadores que dependen del ataque básico pierden los intercambios. Ancient Seed lanza enredaderas que ralentizan y dañan, Nature's Strike provoca a los enemigos cercanos tras un breve retraso (se puede esquivar saliendo del área) y su definitiva, Wrath of Dryad, provoca a todos en un círculo amplio y le da defensa extra. Contra él, sepárate antes de su definitiva, usa daño de habilidades en vez de ataques básicos y compra penetración o antisanación.",
+        "pt": "Belerick é um tanque de roam ou da rota EXP feito para punir quem bate nele. A passiva, Deadly Thorns, devolve dano a quem o ataca, então atiradores e lutadores que dependem do ataque básico perdem as trocas. Ancient Seed lança vinhas que causam lentidão e dano, Nature's Strike provoca inimigos próximos depois de um pequeno atraso (dá para escapar saindo da área) e a ultimate, Wrath of Dryad, provoca todos num círculo grande e lhe dá defesa extra. Contra ele, espalhe o time antes da ultimate, use dano de habilidade em vez de ataque básico e compre penetração ou antícura."
+      }
     },
     {
       "n": "Benedetta",
@@ -733,7 +740,14 @@
       "tier": "C",
       "lanes": [
         "exp"
-      ]
+      ],
+      "sd": {
+        "en": "Esmeralda is a mage-tank hybrid usually played in the EXP lane. Her passive, Starmoon Casket, turns the shields of nearby enemies into her own shield, and while she has a shield her basic attacks deal extra damage and ignore part of the target's defence. Frostmoon Shield gives her a shield and movement speed, Stardust Dance spins in an area to damage enemies, heal her and steal more shield, and her ultimate, Falling Starmoon, leaps to an area to damage and briefly root enemies. Because she sustains through shields and healing, anti-heal items, burst damage and long-range poke work against her, while shield-reliant heroes feed her.",
+        "tr": "Esmeralda, genellikle EXP koridorunda oynanan büyücü-tank karışımı bir kahramandır. Pasifi Starmoon Casket, yakındaki rakiplerin kalkanlarını kendi kalkanına çevirir; kalkanı varken normal saldırıları ekstra hasar verir ve hedefin savunmasının bir kısmını yok sayar. Frostmoon Shield ona kalkan ve hareket hızı verir, Stardust Dance bir alanda dönerek rakiplere hasar verir, onu iyileştirir ve daha fazla kalkan çalar; ultisi Falling Starmoon ise bir alana sıçrayıp hasar verir ve rakipleri kısa süre köklendirir. Kalkan ve iyileşmeyle ayakta kaldığı için ona karşı anti-heal, ani hasar ve uzaktan dürtme işe yarar; kalkana dayanan kahramanlar ise onu besler.",
+        "id": "Esmeralda adalah hybrid mage-tank yang biasanya dimainkan di EXP lane. Pasifnya, Starmoon Casket, mengubah shield musuh di dekatnya menjadi shield miliknya, dan selama dia punya shield basic attack-nya memberi damage ekstra dan mengabaikan sebagian pertahanan target. Frostmoon Shield memberinya shield dan kecepatan gerak, Stardust Dance berputar di satu area untuk memberi damage, memulihkan HP, dan mencuri lebih banyak shield, dan ultimate-nya, Falling Starmoon, melompat ke satu area untuk memberi damage dan root sesaat. Karena dia bertahan lewat shield dan heal, item anti-heal, burst damage, dan poke jarak jauh efektif melawannya, sedangkan hero yang mengandalkan shield justru memberinya keuntungan.",
+        "es": "Esmeralda es una híbrida entre maga y tanque que suele jugarse en la línea de experiencia. Su pasiva, Starmoon Casket, convierte los escudos de los enemigos cercanos en escudo propio, y mientras tiene escudo sus ataques básicos hacen daño extra e ignoran parte de la defensa del objetivo. Frostmoon Shield le da escudo y velocidad, Stardust Dance gira en un área para dañar, curarse y robar más escudo, y su definitiva, Falling Starmoon, salta a una zona para dañar y enraizar brevemente. Como aguanta con escudos y curación, contra ella funcionan la antisanación, el daño explosivo y el hostigamiento a distancia; los héroes que dependen de escudos la alimentan.",
+        "pt": "Esmeralda é uma híbrida de maga e tanque, normalmente jogada na rota EXP. A passiva, Starmoon Casket, transforma os escudos dos inimigos próximos em escudo para ela, e enquanto tem escudo os ataques básicos causam dano extra e ignoram parte da defesa do alvo. Frostmoon Shield dá escudo e velocidade, Stardust Dance gira numa área causando dano, curando e roubando mais escudo, e a ultimate, Falling Starmoon, salta numa área causando dano e enraizando por um instante. Como ela se sustenta com escudo e cura, antícura, dano explosivo e ataques de longe funcionam contra ela; heróis que dependem de escudo só a alimentam."
+      }
     },
     {
       "n": "Estes",
@@ -1354,7 +1368,14 @@
       "tier": "B",
       "lanes": [
         "gold"
-      ]
+      ],
+      "sd": {
+        "en": "Lesley is a long-range marksman (sometimes played as a jungler) who wins by picking off targets from safety. Her passive, Deadly Sniper, empowers her next basic attack with extra range and critical damage after she has stayed out of combat for a few seconds. Master of Camouflage makes her invisible and faster when she is not taking damage, Tactical Grenade knocks enemies back and pushes her away, and her ultimate, Ultimate Snipe, locks on to an enemy hero from very far away and fires several shots that can finish low-health targets. Against her, dive with fast assassins or hard crowd control, keep your carry behind a tank during her ultimate, and use reveal effects to stop her camouflage.",
+        "tr": "Lesley, hedefleri güvenli mesafeden avlayarak kazanan, uzun menzilli bir nişancıdır (bazen ormancı olarak da oynanır). Pasifi Deadly Sniper, birkaç saniye çatışmaya girmediğinde bir sonraki normal saldırısına ekstra menzil ve kritik hasar verir. Master of Camouflage hasar almadığında onu görünmez ve daha hızlı yapar, Tactical Grenade rakipleri geri iterken onu da geri savurur, ultisi Ultimate Snipe ise çok uzaktan bir rakip kahramana kilitlenip canı az kalan hedefleri bitirebilen birkaç atış yapar. Ona karşı hızlı suikastçılar ya da güçlü kitle kontrolüyle üstüne atlayın, ultisi sırasında taşıyıcınızı tankın arkasında tutun ve görünmezliğini bozmak için açığa çıkarma etkileri kullanın.",
+        "id": "Lesley adalah marksman jarak jauh (kadang dimainkan sebagai jungler) yang menang dengan memburu target dari posisi aman. Pasifnya, Deadly Sniper, memperkuat basic attack berikutnya dengan jangkauan ekstra dan critical damage setelah dia tidak bertarung selama beberapa detik. Master of Camouflage membuatnya tak terlihat dan lebih cepat saat tidak menerima damage, Tactical Grenade mendorong musuh mundur sekaligus melontarkannya menjauh, dan ultimate-nya, Ultimate Snipe, mengunci hero musuh dari jarak sangat jauh dan menembakkan beberapa peluru yang bisa menghabisi target sekarat. Lawan dia dengan assassin cepat atau crowd control keras, lindungi carry di belakang tank saat ultimate-nya, dan gunakan efek reveal untuk membongkar kamuflasenya.",
+        "es": "Lesley es una tiradora de largo alcance (a veces jugada en la jungla) que gana eliminando objetivos desde una posición segura. Su pasiva, Deadly Sniper, potencia su siguiente ataque básico con más alcance y daño crítico tras unos segundos fuera de combate. Master of Camouflage la vuelve invisible y más rápida mientras no recibe daño, Tactical Grenade empuja a los enemigos y la aleja a ella, y su definitiva, Ultimate Snipe, fija a un héroe enemigo desde muy lejos y dispara varias balas que rematan a objetivos con poca vida. Contra ella, entra con asesinos rápidos o control fuerte, protege a tu carry detrás de un tanque durante su definitiva y usa efectos de revelación para romper su camuflaje.",
+        "pt": "Lesley é uma atiradora de longo alcance (às vezes jogada na selva) que vence eliminando alvos de uma posição segura. A passiva, Deadly Sniper, fortalece o próximo ataque básico com alcance extra e dano crítico depois de alguns segundos fora de combate. Master of Camouflage a deixa invisível e mais rápida enquanto não recebe dano, Tactical Grenade empurra os inimigos e a joga para trás, e a ultimate, Ultimate Snipe, trava num herói inimigo de muito longe e dispara vários tiros que finalizam alvos com pouca vida. Contra ela, avance com assassinos rápidos ou controle forte, proteja o seu carry atrás de um tanque durante a ultimate e use efeitos de revelação para quebrar a camuflagem."
+      }
     },
     {
       "n": "Ling",
@@ -1797,7 +1818,14 @@
       "tier": "B",
       "lanes": [
         "exp"
-      ]
+      ],
+      "sd": {
+        "en": "Sora is an EXP lane fighter who switches between two forms through his ultimate, Shifting Skies: Thunder for fast, mobile burst and Torrent for crowd control. His passive, Mystic Surge, is a leap that slams the ground and slows when it reaches a hero. In Thunder form his skills hit several times and let him keep moving; in Torrent form Sundering Strike stuns, Wind Strike knocks enemies airborne and his ultimate stuns with every hit. Changing form also makes him briefly immune to crowd control. He is weakest against suppression (Franco, Kaja, Minotaur's lock-down) once his dashes are spent, and against tanks that win long fights.",
+        "tr": "Sora, ulti yeteneği Shifting Skies ile iki form arasında geçiş yapan bir EXP koridoru dövüşçüsüdür: Thunder hızlı ve hareketli ani hasar, Torrent ise kitle kontrolü içindir. Pasifi Mystic Surge ileri sıçrayıp yere vurur, bir kahramana ulaşırsa yavaşlatır. Thunder formunda yetenekleri birkaç kez vurur ve hareket etmeye devam edebilir; Torrent formunda Sundering Strike sersemletir, Wind Strike rakipleri havaya kaldırır ve ultisi her vuruşta sersemletir. Form değiştirmek onu kısa bir süre kitle kontrolüne karşı bağışık yapar. Atılmaları bittiğinde Franco, Kaja gibi bastırma (suppression) yeteneklerine ve uzun çatışmayı kazanan tanklara karşı zayıftır.",
+        "id": "Sora adalah fighter EXP lane yang berganti antara dua bentuk lewat ultimate-nya, Shifting Skies: Thunder untuk burst cepat dan lincah, Torrent untuk crowd control. Pasifnya, Mystic Surge, adalah lompatan yang menghantam tanah dan memberi slow saat mengenai hero. Di bentuk Thunder skill-nya memukul berkali-kali dan dia tetap bisa bergerak; di bentuk Torrent, Sundering Strike memberi stun, Wind Strike melempar musuh ke udara, dan ultimate-nya memberi stun di setiap pukulan. Berganti bentuk juga memberinya kebal crowd control sesaat. Dia paling lemah melawan suppression (Franco, Kaja) setelah dash-nya habis, dan melawan tank yang menang di pertarungan panjang.",
+        "es": "Sora es un luchador de la línea de experiencia que cambia entre dos formas con su definitiva, Shifting Skies: Thunder para daño rápido y mucha movilidad, y Torrent para control de masas. Su pasiva, Mystic Surge, es un salto que golpea el suelo y ralentiza si alcanza a un héroe. En forma Thunder sus habilidades golpean varias veces y puede seguir moviéndose; en forma Torrent, Sundering Strike aturde, Wind Strike lanza a los enemigos por los aires y su definitiva aturde con cada golpe. Cambiar de forma también le da inmunidad breve al control. Sufre contra la supresión (Franco, Kaja) cuando ya gastó sus saltos y contra tanques que ganan las peleas largas.",
+        "pt": "Sora é um lutador da rota EXP que alterna entre duas formas com a ultimate, Shifting Skies: Thunder para dano rápido e muita mobilidade, e Torrent para controle de grupo. A passiva, Mystic Surge, é um salto que acerta o chão e causa lentidão ao atingir um herói. Na forma Thunder as habilidades acertam várias vezes e ele continua se movendo; na forma Torrent, Sundering Strike atordoa, Wind Strike joga os inimigos para o alto e a ultimate atordoa a cada golpe. Trocar de forma também dá imunidade curta a controle. Ele sofre contra supressão (Franco, Kaja) depois de gastar os avanços e contra tanques que vencem lutas longas."
+      }
     },
     {
       "n": "Sun",

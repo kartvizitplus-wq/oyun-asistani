@@ -402,7 +402,9 @@
     "mu_note": "Eşleşmeler {src} verilerine dayanıyor. Açıklamalar, her seçimin neden işe yaradığına dair kendi özetimizdir.",
     "mu_tip": "Önemli ipucu",
     "mu_more": "Role ve takıma göre diğer seçimler (asistan modeli)",
-    "a_mu": "{src} verilerine göre şu an {x} için en zor eşleşmeler: {list}. {first}: {why}"
+    "a_mu": "{src} verilerine göre şu an {x} için en zor eşleşmeler: {list}. {first}: {why}",
+    "simHeroes": "Benzer kahramanlar",
+    "simChars": "Benzer karakterler"
   },
   "en": {
     "langName": "English",
@@ -807,7 +809,9 @@
     "mu_note": "Matchups from {src}. The explanations are our own summary of why each pick works.",
     "mu_tip": "Key tip",
     "mu_more": "More picks by role and team (assistant model)",
-    "a_mu": "According to {src}, the hardest matchups for {x} right now are {list}. {first}: {why}"
+    "a_mu": "According to {src}, the hardest matchups for {x} right now are {list}. {first}: {why}",
+    "simHeroes": "Similar heroes",
+    "simChars": "Similar characters"
   },
   "id": {
     "langName": "Bahasa Indonesia",
@@ -1212,7 +1216,9 @@
     "mu_note": "Matchup dari {src}. Penjelasannya adalah ringkasan kami sendiri tentang alasan setiap pick efektif.",
     "mu_tip": "Tips utama",
     "mu_more": "Pick lain berdasarkan role dan tim (model asisten)",
-    "a_mu": "Menurut {src}, matchup tersulit untuk {x} saat ini adalah {list}. {first}: {why}"
+    "a_mu": "Menurut {src}, matchup tersulit untuk {x} saat ini adalah {list}. {first}: {why}",
+    "simHeroes": "Hero serupa",
+    "simChars": "Karakter serupa"
   },
   "es": {
     "langName": "Español",
@@ -1617,7 +1623,9 @@
     "mu_note": "Enfrentamientos según {src}. Las explicaciones son nuestro propio resumen de por qué funciona cada elección.",
     "mu_tip": "Consejo clave",
     "mu_more": "Más opciones por rol y equipo (modelo del asistente)",
-    "a_mu": "Según {src}, los enfrentamientos más difíciles de {x} ahora mismo son {list}. {first}: {why}"
+    "a_mu": "Según {src}, los enfrentamientos más difíciles de {x} ahora mismo son {list}. {first}: {why}",
+    "simHeroes": "Héroes similares",
+    "simChars": "Personajes similares"
   },
   "pt": {
     "langName": "Português",
@@ -2022,6 +2030,8 @@
     "mu_note": "Confrontos segundo {src}. As explicações são nosso próprio resumo de por que cada escolha funciona.",
     "mu_tip": "Dica principal",
     "mu_more": "Mais escolhas por função e time (modelo do assistente)",
-    "a_mu": "Segundo {src}, os confrontos mais difíceis de {x} agora são {list}. {first}: {why}"
+    "a_mu": "Segundo {src}, os confrontos mais difíceis de {x} agora são {list}. {first}: {why}",
+    "simHeroes": "Heróis semelhantes",
+    "simChars": "Personagens semelhantes"
   }
 }

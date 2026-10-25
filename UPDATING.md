@@ -27,6 +27,13 @@ Hero pages show a "hardest matchups" block when the hero entry has an `mu` field
 - Write every reason in your own words in all five languages, specific to that matchup (abilities, range, timing). No copied sentences, no template reasons reused across heroes, no invented numbers.
 - Keep the hero's other data consistent with the reasons (role, traits, `sd` kit description for Brawl Stars).
 
+## 1b. Hero page enrichment (top priority until AdSense approves the site)
+AdSense rejected the site on 2026-10-25 for "low value content": hero pages were mostly the same template. Every week, add a hand-written kit summary (`sd`: {en, tr, id, es, pt}) to **15–20 heroes** that do not have one yet (MOBA heroes and brawlers; Free Fire characters already have `sd`). Each summary, 80–130 words per language, in our own words, from Liquipedia, official sources or reputable guides:
+- role and usual lane, passive and skills by their real names and what they do (no numbers unless the source gives them),
+- what makes the hero strong, and how to play against them (consistent with the site's counters).
+Never guess a kit; skip a hero when sources disagree or the kit was just reworked and is unclear. Re-check `sd` of heroes changed by a patch.
+Priority order (most Google impressions first): MLBB Gloo, Barats, Sun, Novaria, Lukas, Freya, Guinevere, Masha, Valir, Ixia, Badang, Carmilla, Rafaela, Minotaur, X.Borg, Thamuz, Floryn, Obsidia, Nolan, Clint, Brody, Layla, Balmond, Lunox, Arlott, Vexana, Lylia; Wild Rift Tristana, Zed, Lucian, Xayah, Yunara, Jayce; HoK Chano, Sun Ce, Dolia, Wang Zhaojun; Brawl Stars Gus, Surge, Larry & Lawrie. Then S and A tier heroes of each game. Done: Sora, Belerick, Lesley, Esmeralda.
+
 ## 2. Articles (patch news, meta reports, hero guides)
 All articles live in `data/news/` as one JSON file each, same structure as the existing article:
 - `type`: `patch`, `meta` or `guide`; `slug`, `date`, `game` (mlbb, hok, wildrift, freefire, brawlstars), `sources` (names of sources used); guides also set `hero` (exact name as in the game data file, so the article links to the hero page)
