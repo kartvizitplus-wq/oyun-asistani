@@ -1,5 +1,15 @@
 # Google policy checklist (read before every task)
 
+> **OWNER'S RULE — NO ACTIONS THAT CAN CAUSE A TRAFFIC DROP.** The owner wants steady growth only. Before any change,
+> ask: could this lower rankings, clicks or indexing? If yes or unsure, do not do it. Concretely:
+> - Never change titles, URLs, headings, internal links or page structure site-wide or for many pages at once.
+>   Change at most a handful of pages per day, only where Search Console data shows a clear opportunity, and log them.
+> - Never remove internal links, sections or content that pages currently rank with. Only ADD useful content.
+> - No new page types, no mass page generation, no noindex, no URL or slug changes, no redirects of live pages.
+> - Additive work is the default: new guides, new news posts, new products, verified rates, small fixes of real errors.
+> - After any change to pages that get impressions, note it in docs/AUDIT_LOG.md so its effect can be checked a week later;
+>   if a change is followed by a drop on those pages, revert it.
+
 The owner wants the site to pass Google AdSense review and stay safe in Google Search. Every bot reads this file
 before doing anything and checks its own work against it before pushing. If a task would break a rule here, skip
 that part and say so in the summary.
