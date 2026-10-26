@@ -1,0 +1,199 @@
+{
+  "type": "guide",
+  "slug": "wildrift-guide-smolder-2026-10-26",
+  "date": "2026-10-26",
+  "game": "wildrift",
+  "hero": "Smolder",
+  "sources": [
+    "WildRiftCore Smolder champion page, build and statistics (patch 7.3c, October 25, 2026)",
+    "WildRiftCore Smolder guide (patch 7.3c) and counters page (patch 7.3a, October 3, 2026)",
+    "wr-meta.com Smolder page (runes and statistics, October 26, 2026)",
+    "riftpatchnotes.com Smolder change history (patch 7.1e stack thresholds)"
+  ],
+  "title": {
+    "tr": "Wild Rift Smolder rehberi (7.3c): yük eşikleri, rünler, itemler ve counter'lar",
+    "en": "Wild Rift Smolder guide (7.3c): stack thresholds, runes, items and counters",
+    "id": "Guide Smolder Wild Rift (7.3c): batas stack, rune, item, dan counter",
+    "es": "Guía de Smolder en Wild Rift (7.3c): umbrales de cargas, runas, objetos y counters",
+    "pt": "Guia de Smolder no Wild Rift (7.3c): limites de acúmulos, runas, itens e counters"
+  },
+  "summary": {
+    "tr": "Smolder bu ay WildRiftCore'un ejderha listesinde S+'ya çıktı. Wild Rift'e özgü 25/100/175 yük eşikleri, Essence Reaver ile başlayan build, Fleet Footwork, erken oyunda onu zorlayan Caitlyn, Draven, Tristana ve Lucian.",
+    "en": "Smolder rose to S+ on WildRiftCore's Dragon lane list this month. The Wild Rift stack thresholds (25/100/175), the Essence Reaver build, Fleet Footwork, and the early-game lanes that punish him: Caitlyn, Draven, Tristana and Lucian.",
+    "id": "Smolder naik ke S+ di daftar Dragon lane WildRiftCore bulan ini. Batas stack khas Wild Rift (25/100/175), build Essence Reaver, Fleet Footwork, dan lawan early game yang menyulitkannya: Caitlyn, Draven, Tristana, dan Lucian.",
+    "es": "Smolder subió a S+ en la lista de la línea del Dragón de WildRiftCore este mes. Los umbrales de cargas de Wild Rift (25/100/175), la build con Essence Reaver, Fleet Footwork y los rivales que lo castigan al principio: Caitlyn, Draven, Tristana y Lucian.",
+    "pt": "Smolder subiu para S+ na lista da rota do Dragão do WildRiftCore este mês. Os limites de acúmulos do Wild Rift (25/100/175), a build com Essence Reaver, Fleet Footwork e os rivais que o punem no início: Caitlyn, Draven, Tristana e Lucian."
+  },
+  "body": {
+    "en": [
+      { "h": "Role and playstyle" },
+      { "p": "Smolder is a Dragon lane marksman who starts weak and grows through his passive, Dragon Practice. He gains a stack each time an ability hits an enemy champion and each time Super Scorcher Breath (Q) kills a unit, minions included. Stacks add magic damage to his abilities, and his Q changes at three thresholds that are different from the PC game: at 25 stacks it also hits enemies near the target, at 100 it sends two extra explosions past the target, and at 175 it burns the target and executes a burning champion below 6.5% of their maximum HP. Riot moved these thresholds from 20/85/150 in patch 7.1e, so older guides can be wrong." },
+      { "p": "WildRiftCore moved him from S to S+ in the Dragon lane this month. Its 30-day Master+ data (patch 7.3c, October 25) gives him a 52.7% win rate, a 9.1% pick rate and only a 3.7% ban rate, so he is usually available in draft." },
+      { "h": "Recommended build and runes" },
+      { "ul": [
+        "Items (WildRiftCore): Essence Reaver, Black Cleaver, Rapid Firecannon, Infinity Edge, Fiendhunter Bolts, with Ionian Boots of Lucidity for ability haste. Start with Long Sword.",
+        "Situational items from the same guide: Mortal Reminder against healing, Guardian Angel against AD burst, Maw of Malmortius against AP burst, Serylda's Grudge against armour or mobile targets.",
+        "Keystone: Fleet Footwork, used by WildRiftCore, wr-meta.com and WildRiftFire. wr-meta pairs it with Brutal, Coup de Grace, Legend: Alacrity and Bone Plating.",
+        "Summoner spells: Flash and Barrier; Cleanse when the enemy has a lot of hard crowd control.",
+        "Skill priority: Q first, then W, then E. Every source we checked agrees on this."
+      ] },
+      { "p": "Other sites build Manamune or Trinity Force first, so builds vary more than runes. The Essence Reaver path is the one tied to the S+ tier list we follow; none of these core items changed in the 7.3 patches." },
+      { "h": "Key tips" },
+      { "ul": [
+        "Early game is about stacks, not kills: last-hit with Q and avoid long trades. WildRiftCore marks levels 5 and 6 (with Essence Reaver) and level 9 (with Black Cleaver) as his first power spikes.",
+        "Use Achooo! (W) for its slow to kite, escape or set up your ultimate, not only for damage. Every champion it hits gives a stack.",
+        "Flap, Flap, Flap (E) is your only mobility and flies over walls. Casting Q or W during the flight ends it, so keep it for escapes.",
+        "Open team fights with MMOOOMMMM! (R): the centre of the breath slows, and Smolder heals if it passes over him.",
+        "Aim for the 175-stack execute in time for the mid-game Dragon and Baron fights, and stay grouped: a lone death late wastes your team's main damage."
+      ] },
+      { "h": "Counters: who beats Smolder" },
+      { "ul": [
+        "Caitlyn: her range and traps punish every Q last-hit and slow his stacking.",
+        "Draven: wins the early basic-attack trades and chases with Blood Rush.",
+        "Tristana: Rocket Jump plus Explosive Charge kills him before his stacks matter.",
+        "Lucian: short burst trades with his passive that Smolder cannot answer early.",
+        "WildRiftCore's 7.3c guide also lists Varus, Ezreal, Miss Fortune and Xayah as uncomfortable lanes. Pairing with a hard-engage support like Braum or Leona helps him land Q and W."
+      ] },
+      { "h": "Who Smolder is good against" },
+      { "p": "WildRiftCore lists Kog'Maw, Samira, Vayne and Sivir as good lanes for him. Kog'Maw has no dash to leave the W slow, Samira needs a clean all-in that his poke and slow can deny, and Vayne struggles to land three Silver Bolts on a target that keeps its distance." },
+      { "h": "What changed recently" },
+      { "p": "Smolder had only a base attack speed adjustment in patch 7.3, and patch 7.3b fixed his Q tooltip text without changing his power. Patch 7.3c, released October 21, only changed the AAA ARAM mode, so his rise in ranked comes from the current meta rather than a buff. He is not alone: on the same list Kalista also moved up to S and Sivir from C to B, while Varus dropped from S to A." }
+    ],
+    "tr": [
+      { "h": "Rolü ve oyun tarzı" },
+      { "p": "Smolder zayıf başlayıp pasifi Dragon Practice ile büyüyen bir ejderha koridoru nişancısı. Bir yeteneği rakip şampiyona her isabet ettiğinde ve Super Scorcher Breath (Q) minyonlar dahil bir birimi her öldürdüğünde yük kazanıyor. Yükler yeteneklerine büyü hasarı ekliyor, Q'su da PC sürümünden farklı üç eşikte değişiyor: 25 yükte hedefin yakınındakilere de vuruyor, 100'de hedefin arkasına iki ek patlama gönderiyor, 175'te hedefi yakıyor ve azami canının %6,5'inin altına düşen yanan şampiyonu infaz ediyor. Riot bu eşikleri 7.1e yamasında 20/85/150'den değiştirdi, bu yüzden eski rehberler yanlış olabilir." },
+      { "p": "WildRiftCore bu ay onu ejderha koridorunda S'den S+'ya çıkardı. 30 günlük Master+ verisine göre (7.3c, 25 Ekim) kazanma oranı %52,7, seçilme oranı %9,1, ban oranı ise sadece %3,7; yani draftta genelde açık kalıyor." },
+      { "h": "Önerilen build ve rünler" },
+      { "ul": [
+        "Itemler (WildRiftCore): Essence Reaver, Black Cleaver, Rapid Firecannon, Infinity Edge, Fiendhunter Bolts; yetenek hızı için Ionian Boots of Lucidity. Long Sword ile başlayın.",
+        "Aynı rehberden duruma göre itemler: iyileşmeye karşı Mortal Reminder, AD ani hasarına karşı Guardian Angel, AP ani hasarına karşı Maw of Malmortius, zırhlı veya hareketli hedeflere karşı Serylda's Grudge.",
+        "Ana rün: Fleet Footwork; WildRiftCore, wr-meta.com ve WildRiftFire bunu kullanıyor. wr-meta yanına Brutal, Coup de Grace, Legend: Alacrity ve Bone Plating koyuyor.",
+        "Sihirdar büyüleri: Flash ve Barrier; rakipte çok sert kitle kontrolü varsa Cleanse.",
+        "Yetenek önceliği: önce Q, sonra W, sonra E. İncelediğimiz tüm kaynaklar bunda hemfikir."
+      ] },
+      { "p": "Bazı siteler önce Manamune veya Trinity Force alıyor; yani item build'leri rünlerden daha çok değişiyor. Essence Reaver yolu, takip ettiğimiz S+ listesine bağlı olan build. Bu ana itemlerin hiçbiri 7.3 yamalarında değişmedi." },
+      { "h": "Önemli ipuçları" },
+      { "ul": [
+        "Erken oyunun amacı öldürmek değil yük toplamak: Q ile son vuruş yapın ve uzun değişimlerden kaçının. WildRiftCore ilk güç noktalarını 5 ve 6. seviye (Essence Reaver ile) ve 9. seviye (Black Cleaver ile) olarak gösteriyor.",
+        "Achooo! (W) yavaşlatması için de değerli: mesafe korumak, kaçmak ya da ultinizi hazırlamak için kullanın. İsabet ettiği her şampiyon yük veriyor.",
+        "Flap, Flap, Flap (E) tek hareket yeteneğiniz ve duvarların üzerinden uçuruyor. Uçuş sırasında Q veya W kullanmak onu bitiriyor, bu yüzden kaçış için saklayın.",
+        "Takım savaşlarını MMOOOMMMM! (R) ile açın: nefesin merkezi yavaşlatıyor ve üzerinizden geçerse Smolder iyileşiyor.",
+        "Orta oyundaki Ejderha ve Baron savaşlarına 175 yük infazıyla yetişmeyi hedefleyin ve toplu durun: oyun sonunda tek başına ölmek takımın ana hasarını boşa harcar."
+      ] },
+      { "h": "Counter'lar: Smolder'ı kim yener" },
+      { "ul": [
+        "Caitlyn: menzili ve tuzakları her Q son vuruşunu cezalandırıyor ve yük toplamasını yavaşlatıyor.",
+        "Draven: erken normal saldırı değişimlerini kazanıyor ve Blood Rush ile kovalıyor.",
+        "Tristana: Rocket Jump ve Explosive Charge, yükleri önem kazanmadan onu öldürüyor.",
+        "Lucian: pasifiyle Smolder'ın erken oyunda karşılık veremediği kısa ani hasar değişimleri yapıyor.",
+        "WildRiftCore'un 7.3c rehberi Varus, Ezreal, Miss Fortune ve Xayah'ı da zor koridorlar olarak sayıyor. Braum veya Leona gibi sert giriş yapan bir destek, Q ve W'yi tutturmasını kolaylaştırıyor."
+      ] },
+      { "h": "Smolder kime karşı güçlü" },
+      { "p": "WildRiftCore ona iyi gelen koridorlar olarak Kog'Maw, Samira, Vayne ve Sivir'i gösteriyor. Kog'Maw'ın W yavaşlatmasından kaçacak atılması yok, Samira'nın ihtiyaç duyduğu temiz tam saldırıyı Smolder'ın uzaktan hasarı ve yavaşlatması engelliyor, Vayne de mesafesini koruyan bir hedefe üç Silver Bolts tutturmakta zorlanıyor." },
+      { "h": "Son değişiklikler" },
+      { "p": "Smolder 7.3 yamasında yalnızca temel saldırı hızı ayarı aldı; 7.3b ise gücünü değiştirmeden Q açıklama metnini düzeltti. 21 Ekim'de çıkan 7.3c yalnızca AAA ARAM modunu değiştirdi. Yani derecelideki yükselişi bir güçlendirmeden değil, mevcut metadan geliyor. Tek yükselen o değil: aynı listede Kalista S'ye, Sivir C'den B'ye çıktı, Varus ise S'den A'ya düştü." }
+    ],
+    "id": [
+      { "h": "Role dan gaya bermain" },
+      { "p": "Smolder adalah marksman Dragon lane yang lemah di awal dan berkembang lewat pasifnya, Dragon Practice. Ia mendapat satu stack setiap kali ability mengenai champion musuh dan setiap kali Super Scorcher Breath (Q) membunuh unit, termasuk minion. Stack menambah magic damage pada ability-nya, dan Q berubah di tiga batas yang berbeda dari versi PC: di 25 stack Q juga mengenai musuh di dekat target, di 100 stack mengirim dua ledakan tambahan melewati target, dan di 175 stack membakar target serta mengeksekusi champion yang terbakar di bawah 6,5% Max HP. Riot mengubah batas ini dari 20/85/150 di patch 7.1e, jadi guide lama bisa keliru." },
+      { "p": "WildRiftCore menaikkannya dari S ke S+ di Dragon lane bulan ini. Data Master+ 30 hari (patch 7.3c, 25 Oktober) mencatat win rate 52,7%, pick rate 9,1%, dan ban rate hanya 3,7%, jadi ia biasanya tersedia saat draft." },
+      { "h": "Build dan rune yang disarankan" },
+      { "ul": [
+        "Item (WildRiftCore): Essence Reaver, Black Cleaver, Rapid Firecannon, Infinity Edge, Fiendhunter Bolts, dengan Ionian Boots of Lucidity untuk ability haste. Mulai dengan Long Sword.",
+        "Item situasional dari guide yang sama: Mortal Reminder melawan heal, Guardian Angel melawan burst AD, Maw of Malmortius melawan burst AP, Serylda's Grudge melawan target berarmor atau lincah.",
+        "Keystone: Fleet Footwork, dipakai WildRiftCore, wr-meta.com, dan WildRiftFire. wr-meta memadukannya dengan Brutal, Coup de Grace, Legend: Alacrity, dan Bone Plating.",
+        "Summoner spell: Flash dan Barrier; Cleanse jika musuh punya banyak hard CC.",
+        "Prioritas skill: Q dulu, lalu W, lalu E. Semua sumber yang kami cek sepakat."
+      ] },
+      { "p": "Situs lain membeli Manamune atau Trinity Force lebih dulu, jadi build item lebih bervariasi daripada rune. Jalur Essence Reaver adalah build yang terkait dengan tier list S+ yang kami ikuti; tidak ada item inti ini yang berubah di patch 7.3." },
+      { "h": "Tips penting" },
+      { "ul": [
+        "Early game soal stack, bukan kill: last-hit dengan Q dan hindari trade panjang. WildRiftCore menandai level 5 dan 6 (dengan Essence Reaver) serta level 9 (dengan Black Cleaver) sebagai power spike pertamanya.",
+        "Pakai Achooo! (W) juga untuk slow-nya: kiting, kabur, atau menyiapkan ultimate. Setiap champion yang terkena memberi stack.",
+        "Flap, Flap, Flap (E) adalah satu-satunya mobilitas dan bisa terbang melewati dinding. Memakai Q atau W saat terbang mengakhirinya, jadi simpan untuk kabur.",
+        "Buka teamfight dengan MMOOOMMMM! (R): bagian tengah semburan memberi slow, dan Smolder pulih jika semburan melewatinya.",
+        "Targetkan eksekusi 175 stack sebelum perebutan Dragon dan Baron di mid game, dan tetap bersama tim: mati sendirian di late game membuang damage utama tim."
+      ] },
+      { "h": "Counter: siapa yang mengalahkan Smolder" },
+      { "ul": [
+        "Caitlyn: jangkauan dan jebakannya menghukum setiap last-hit Q dan memperlambat stack-nya.",
+        "Draven: memenangkan trade basic attack awal dan mengejar dengan Blood Rush.",
+        "Tristana: Rocket Jump plus Explosive Charge membunuhnya sebelum stack berarti.",
+        "Lucian: trade burst singkat lewat pasifnya yang tidak bisa dibalas Smolder di awal.",
+        "Guide 7.3c WildRiftCore juga menyebut Varus, Ezreal, Miss Fortune, dan Xayah sebagai lane yang tidak nyaman. Support hard engage seperti Braum atau Leona membantunya mengenai Q dan W."
+      ] },
+      { "h": "Smolder kuat melawan siapa" },
+      { "p": "WildRiftCore mencantumkan Kog'Maw, Samira, Vayne, dan Sivir sebagai lane yang bagus untuknya. Kog'Maw tidak punya dash untuk lepas dari slow W, Samira butuh all-in bersih yang bisa digagalkan poke dan slow Smolder, dan Vayne kesulitan mendaratkan tiga Silver Bolts ke target yang menjaga jarak." },
+      { "h": "Perubahan terbaru" },
+      { "p": "Smolder hanya mendapat penyesuaian attack speed dasar di patch 7.3, dan patch 7.3b memperbaiki teks tooltip Q tanpa mengubah kekuatannya. Patch 7.3c yang rilis 21 Oktober hanya mengubah mode AAA ARAM, jadi kenaikannya di ranked datang dari meta saat ini, bukan dari buff. Ia tidak sendirian: di daftar yang sama Kalista naik ke S dan Sivir dari C ke B, sementara Varus turun dari S ke A." }
+    ],
+    "es": [
+      { "h": "Rol y estilo de juego" },
+      { "p": "Smolder es un tirador de la línea del Dragón que empieza débil y crece con su pasiva, Dragon Practice. Gana una carga cada vez que una habilidad golpea a un campeón enemigo y cada vez que Super Scorcher Breath (Q) mata una unidad, súbditos incluidos. Las cargas añaden daño mágico a sus habilidades, y su Q cambia en tres umbrales distintos a los de PC: con 25 cargas también golpea a los enemigos cercanos al objetivo, con 100 lanza dos explosiones extra más allá del objetivo y con 175 quema al objetivo y ejecuta a un campeón ardiendo por debajo del 6,5% de su vida máxima. Riot cambió estos umbrales desde 20/85/150 en el parche 7.1e, así que las guías antiguas pueden estar mal." },
+      { "p": "WildRiftCore lo subió de S a S+ en la línea del Dragón este mes. Sus datos de 30 días en Master+ (parche 7.3c, 25 de octubre) le dan un 52,7% de victorias, un 9,1% de selección y solo un 3,7% de bans, así que suele estar disponible en el draft." },
+      { "h": "Build y runas recomendadas" },
+      { "ul": [
+        "Objetos (WildRiftCore): Essence Reaver, Black Cleaver, Rapid Firecannon, Infinity Edge, Fiendhunter Bolts, con Ionian Boots of Lucidity para la aceleración de habilidades. Empieza con Long Sword.",
+        "Objetos situacionales de la misma guía: Mortal Reminder contra curaciones, Guardian Angel contra ráfaga física, Maw of Malmortius contra ráfaga mágica y Serylda's Grudge contra objetivos con armadura o movilidad.",
+        "Runa clave: Fleet Footwork, la que usan WildRiftCore, wr-meta.com y WildRiftFire. wr-meta la combina con Brutal, Coup de Grace, Legend: Alacrity y Bone Plating.",
+        "Hechizos: Flash y Barrier; Cleanse si el rival tiene mucho control duro.",
+        "Prioridad de habilidades: primero Q, luego W y después E. Todas las fuentes consultadas coinciden."
+      ] },
+      { "p": "Otras webs empiezan con Manamune o Trinity Force, así que los objetos varían más que las runas. La ruta de Essence Reaver es la vinculada a la lista S+ que seguimos, y ninguno de esos objetos principales cambió en los parches 7.3." },
+      { "h": "Consejos clave" },
+      { "ul": [
+        "Al principio importan las cargas, no las muertes: remata con la Q y evita intercambios largos. WildRiftCore marca los niveles 5 y 6 (con Essence Reaver) y el 9 (con Black Cleaver) como sus primeros picos de poder.",
+        "Usa Achooo! (W) también por su ralentización: para kitear, escapar o preparar la definitiva. Cada campeón alcanzado da una carga.",
+        "Flap, Flap, Flap (E) es su única movilidad y vuela sobre muros. Usar Q o W durante el vuelo lo corta, así que resérvalo para escapar.",
+        "Abre las peleas con MMOOOMMMM! (R): el centro del aliento ralentiza y Smolder se cura si el aliento pasa por encima de él.",
+        "Intenta llegar a la ejecución de 175 cargas para las peleas de Dragón y Barón de mitad de partida, y mantente con el equipo: morir solo al final desperdicia el daño principal."
+      ] },
+      { "h": "Counters: quién gana a Smolder" },
+      { "ul": [
+        "Caitlyn: su alcance y sus trampas castigan cada remate con la Q y frenan sus cargas.",
+        "Draven: gana los intercambios de básicos al principio y persigue con Blood Rush.",
+        "Tristana: Rocket Jump con Explosive Charge lo mata antes de que sus cargas importen.",
+        "Lucian: intercambios cortos y explosivos con su pasiva que Smolder no puede responder pronto.",
+        "La guía 7.3c de WildRiftCore añade a Varus, Ezreal, Miss Fortune y Xayah como líneas incómodas. Un soporte de enganche como Braum o Leona le ayuda a acertar la Q y la W."
+      ] },
+      { "h": "Contra quién es fuerte Smolder" },
+      { "p": "WildRiftCore señala a Kog'Maw, Samira, Vayne y Sivir como buenas líneas para él. Kog'Maw no tiene desplazamiento para salir de la ralentización de la W, Samira necesita un all-in limpio que su hostigamiento y su ralentización pueden negar, y a Vayne le cuesta acertar tres Silver Bolts a un objetivo que mantiene la distancia." },
+      { "h": "Cambios recientes" },
+      { "p": "Smolder solo recibió un ajuste de velocidad de ataque base en el parche 7.3, y el 7.3b corrigió el texto de su Q sin cambiar su poder. El parche 7.3c, del 21 de octubre, solo cambió el modo AAA ARAM, así que su subida en clasificatoria viene del meta actual y no de una mejora. No es el único: en la misma lista Kalista subió a S y Sivir de C a B, mientras que Varus bajó de S a A." }
+    ],
+    "pt": [
+      { "h": "Função e estilo de jogo" },
+      { "p": "Smolder é um atirador da rota do Dragão que começa fraco e cresce com a passiva, Dragon Practice. Ele ganha um acúmulo sempre que uma habilidade acerta um campeão inimigo e sempre que Super Scorcher Breath (Q) mata uma unidade, incluindo minions. Os acúmulos adicionam dano mágico às habilidades, e o Q muda em três limites diferentes dos do PC: com 25 acúmulos ele também atinge inimigos perto do alvo, com 100 manda duas explosões extras além do alvo e com 175 queima o alvo e executa um campeão em chamas abaixo de 6,5% da vida máxima. A Riot mudou esses limites de 20/85/150 no patch 7.1e, então guias antigos podem estar errados." },
+      { "p": "O WildRiftCore o subiu de S para S+ na rota do Dragão este mês. Os dados de 30 dias no Master+ (patch 7.3c, 25 de outubro) mostram 52,7% de vitórias, 9,1% de escolha e só 3,7% de banimento, então ele costuma estar disponível no draft." },
+      { "h": "Build e runas recomendadas" },
+      { "ul": [
+        "Itens (WildRiftCore): Essence Reaver, Black Cleaver, Rapid Firecannon, Infinity Edge, Fiendhunter Bolts, com Ionian Boots of Lucidity para aceleração de habilidade. Comece com Long Sword.",
+        "Itens situacionais do mesmo guia: Mortal Reminder contra cura, Guardian Angel contra dano físico explosivo, Maw of Malmortius contra dano mágico explosivo e Serylda's Grudge contra alvos com armadura ou mobilidade.",
+        "Runa principal: Fleet Footwork, usada por WildRiftCore, wr-meta.com e WildRiftFire. O wr-meta a combina com Brutal, Coup de Grace, Legend: Alacrity e Bone Plating.",
+        "Feitiços: Flash e Barrier; Cleanse se o inimigo tiver muito controle forte.",
+        "Prioridade de habilidades: Q primeiro, depois W e depois E. Todas as fontes consultadas concordam."
+      ] },
+      { "p": "Outros sites começam com Manamune ou Trinity Force, então os itens variam mais que as runas. O caminho de Essence Reaver é o ligado à lista S+ que seguimos, e nenhum desses itens principais mudou nos patches 7.3." },
+      { "h": "Dicas principais" },
+      { "ul": [
+        "O início é sobre acúmulos, não abates: dê o último golpe com o Q e evite trocas longas. O WildRiftCore aponta os níveis 5 e 6 (com Essence Reaver) e o 9 (com Black Cleaver) como os primeiros picos de poder.",
+        "Use Achooo! (W) também pela lentidão: para kitar, fugir ou preparar a ultimate. Cada campeão atingido dá um acúmulo.",
+        "Flap, Flap, Flap (E) é a única mobilidade e voa sobre paredes. Usar Q ou W durante o voo o encerra, então guarde para fugir.",
+        "Abra as lutas com MMOOOMMMM! (R): o centro do sopro causa lentidão e Smolder se cura se o sopro passar por ele.",
+        "Tente chegar à execução de 175 acúmulos a tempo das lutas de Dragão e Barão no meio do jogo e fique com o time: morrer sozinho no fim desperdiça o dano principal."
+      ] },
+      { "h": "Counters: quem vence Smolder" },
+      { "ul": [
+        "Caitlyn: o alcance e as armadilhas punem cada último golpe com o Q e atrasam os acúmulos.",
+        "Draven: vence as trocas de básicos no início e persegue com Blood Rush.",
+        "Tristana: Rocket Jump com Explosive Charge o mata antes que os acúmulos importem.",
+        "Lucian: trocas curtas e explosivas com a passiva que Smolder não consegue responder cedo.",
+        "O guia 7.3c do WildRiftCore também cita Varus, Ezreal, Miss Fortune e Xayah como rotas desconfortáveis. Um suporte de engajamento como Braum ou Leona ajuda a acertar o Q e o W."
+      ] },
+      { "h": "Contra quem Smolder é forte" },
+      { "p": "O WildRiftCore aponta Kog'Maw, Samira, Vayne e Sivir como boas rotas para ele. Kog'Maw não tem avanço para sair da lentidão do W, Samira precisa de um all-in limpo que o poke e a lentidão dele podem negar, e Vayne tem dificuldade para acertar três Silver Bolts num alvo que mantém distância." },
+      { "h": "O que mudou recentemente" },
+      { "p": "Smolder recebeu só um ajuste de velocidade de ataque base no patch 7.3, e o 7.3b corrigiu o texto do Q sem mudar a força dele. O patch 7.3c, de 21 de outubro, só mudou o modo AAA ARAM, então a subida dele no ranqueado vem do meta atual e não de um buff. Ele não está sozinho: na mesma lista Kalista subiu para S e Sivir de C para B, enquanto Varus caiu de S para A." }
+    ]
+  }
+}

@@ -1,0 +1,189 @@
+{
+  "type": "guide",
+  "slug": "mlbb-guide-masha-2026-10-26",
+  "date": "2026-10-26",
+  "game": "mlbb",
+  "hero": "Masha",
+  "sources": [
+    "mlbbhub.com Masha build, win rate and matchup data (patch 2.2.16a, stats refreshed October 25, 2026)",
+    "mlbb.io Masha counter data (October 2026, last 7 days)",
+    "esports.gg Masha revamp guide (September 21, 2026)",
+    "Advanced Server notes 2.2.26 and 2.2.28 via gamingonphone.com (October 16 and 25, 2026)"
+  ],
+  "title": {
+    "tr": "Masha rehberi ve counter'ları (2.2.16a): yenilenen kit, EXP build'i, Yara kombosu ve eşleşmeler",
+    "en": "Masha guide and counters (2.2.16a): reworked kit, EXP build, Wound combo and matchups",
+    "id": "Guide dan counter Masha (2.2.16a): kit baru, build EXP, combo Wound, dan matchup",
+    "es": "Guía y counters de Masha (2.2.16a): kit renovado, build de experiencia, combo de Heridas y enfrentamientos",
+    "pt": "Guia e counters de Masha (2.2.16a): kit reformulado, build da rota EXP, combo de Feridas e confrontos"
+  },
+  "summary": {
+    "tr": "Yenilenen Masha, 2.2.16a'da yaklaşık %60 kazanma oranıyla en güçlü kahraman ve Mythical Glory'de maçların dörtte üçünde banlanıyor. Build, Yara döngüsü, ona karşı Estes ve Rafaela, Advanced Server testleri.",
+    "en": "The reworked Masha is the strongest hero of 2.2.16a with a win rate around 60% and a 75% ban rate in Mythical Glory. Build, the Wound loop, why Estes and Rafaela beat her, and what the Advanced Server is testing.",
+    "id": "Masha versi baru adalah hero terkuat di 2.2.16a dengan win rate sekitar 60% dan ban rate 75% di Mythical Glory. Build, loop Wound, kenapa Estes dan Rafaela unggul, dan apa yang diuji di Advanced Server.",
+    "es": "La nueva Masha es la heroína más fuerte del 2.2.16a, con cerca de un 60% de victorias y un 75% de bans en Mythical Glory. Build, el ciclo de Heridas, por qué Estes y Rafaela la frenan y qué se prueba en el Advanced Server.",
+    "pt": "A nova Masha é a heroína mais forte do 2.2.16a, com cerca de 60% de vitórias e 75% de banimento no Mythical Glory. Build, o ciclo de Feridas, por que Estes e Rafaela a seguram e o que o Advanced Server está testando."
+  },
+  "body": {
+    "en": [
+      { "h": "Role and playstyle" },
+      { "p": "Masha was rebuilt from scratch in patch 2.2.16 and is now an EXP lane fighter who wins by staying in fights. Her passive, Primal Pact, gives her three HP bars: losing one clears crowd control on her and resets Claw Strike, so killing her takes three separate commitments. Her skills leave a directional Wound on enemy heroes, and a basic attack from the same side breaks it and starts her Feral State, where her next three basic attacks become wide claw sweeps that heal her." },
+      { "p": "The numbers explain why she is banned so often. In mlbbhub's ranked data for 2.2.16a (refreshed October 25) she has a 60.5% win rate, up 3.9 points over the last 39 days, and a 33.5% ban rate overall. In Mythical Glory and above she wins 61.8% of her games and is banned in 75% of them, so she is rarely picked at all (0.56% pick rate). mlbb.io's seven-day sample shows almost the same picture: 60.8% wins and a 37.1% ban rate." },
+      { "h": "Recommended build and emblem" },
+      { "ul": [
+        "Items (mlbbhub, the build with the best tracked results): Warrior Boots, War Axe, Corrosion Scythe, Thunder Belt, Queen's Wings, Immortality.",
+        "Swaps: Tough Boots against heavy slows or chained crowd control; Sea Halberd instead of Thunder Belt when the enemy relies on healing or shields; Oracle instead of Immortality for long trades.",
+        "Emblem: Fighter set with Festival of Blood and the Brave Smite core talent. For the first talent our page lists Thrill; mlbbhub's build uses Firmness, which suits lanes with a lot of magic poke.",
+        "Battle spell: Sprint. All three guides we checked recommend it, because her damage depends on reaching the right side of the target."
+      ] },
+      { "p": "Other guides push a critical-strike build (esports.gg) or Demon Hunter Sword. Sources disagree on this, so treat the list above as a starting point and keep Corrosion Scythe and an attack speed item in every version." },
+      { "h": "Combo and key tips" },
+      { "ul": [
+        "Basic loop: land Feral Swipe or Claw Strike to place a Wound, step to that side and basic attack to enter Feral State, spend the three claws, then cast skills again for the next Wound.",
+        "Breaking another Wound while you are already Feral adds more claws (mlbbhub lists up to six), so weave skills between your empowered attacks instead of saving them.",
+        "Feral State stores part of the damage and turns it into HP after combat ends. Step out briefly when a fight stalls instead of trading at low HP.",
+        "Claw Strike resets each time you lose an HP bar. Use it right after a bar breaks to chase a fleeing target or to leave.",
+        "Savage Maul is your commitment button: it stuns the target and knocks back nearby enemies, and its damage grows with your max HP. Save it for the carry, not for the first hero you meet."
+      ] },
+      { "h": "Counters: who beats Masha" },
+      { "ul": [
+        "Estes and Rafaela appear on both statistics lists we checked (mlbb.io: +3.7 and +2.5 points; mlbbhub: +2.9 and +2.0). Steady team healing undoes her burst, and Rafaela's Holy Baptism stun stops her charge.",
+        "Kimmy is the third pick on our hero page: she shoots while moving and can stay out of claw range. mlbbhub also lists Freya (+2.7) and Bruno (+2.2); mlbb.io adds Uranus, Floryn and Aldous, mostly from Mythic rank upward.",
+        "Timing matters more than the pick: since every lost HP bar clears crowd control, save your hardest stun for her last bar or for the moment she uses Savage Maul.",
+        "Items: Sea Halberd or Dominance Ice for anti-heal, and Antique Cuirass or Blade Armor against her physical damage."
+      ] },
+      { "h": "Who Masha is good against" },
+      { "p": "Both statistics sites show her winning most against Eudora, Yu Zhong and Pharsa. mlbbhub also lists Gloo (+3.6), Cici and Brody. Immobile mages cannot escape Claw Strike, and tanks like Gloo lose the long trade against her three HP bars; our engine also marks her as strong against tanks." },
+      { "h": "What changed recently" },
+      { "p": "The full rework arrived in 2.2.16 (live September 16, 2026), and hotfix 2.2.16a did not touch her. The Advanced Server is testing changes, which are not live and may still change: build 2.2.26 moved the slow from Feral Swipe to Claw Strike and cut her ultimate's base damage, and build 2.2.28 restored that ultimate damage but lowered her passive physical attack bonus. If a version of these reaches the live server, we will update this guide." }
+    ],
+    "tr": [
+      { "h": "Rolü ve oyun tarzı" },
+      { "p": "Masha 2.2.16 yamasında sıfırdan yeniden yapıldı ve artık çatışmada kalarak kazanan bir EXP koridoru dövüşçüsü. Pasifi Primal Pact ona üç can barı veriyor: bir barı kaybetmek üzerindeki kitle kontrolünü temizliyor ve Claw Strike'ı sıfırlıyor, yani onu öldürmek üç ayrı hamle gerektiriyor. Yetenekleri rakip kahramanlarda yönlü bir Yara bırakıyor; aynı taraftan yapılan normal saldırı yarayı kırıp Vahşi Durum'u başlatıyor ve sonraki üç saldırısı onu iyileştiren geniş pençe savuruşlarına dönüşüyor." },
+      { "p": "Bu kadar sık banlanmasının nedeni rakamlarda. mlbbhub'ın 2.2.16a dereceli verisinde (25 Ekim'de güncellendi) kazanma oranı %60,5; son 39 günde 3,9 puan artmış, genel ban oranı %33,5. Mythical Glory ve üstünde maçlarının %61,8'ini kazanıyor ve %75'inde banlanıyor, bu yüzden neredeyse hiç seçilemiyor (seçilme oranı %0,56). mlbb.io'nun yedi günlük örneği de aynı tabloyu gösteriyor: %60,8 kazanma, %37,1 ban." },
+      { "h": "Önerilen build ve amblem" },
+      { "ul": [
+        "Itemler (mlbbhub'da en iyi sonuç veren build): Warrior Boots, War Axe, Corrosion Scythe, Thunder Belt, Queen's Wings, Immortality.",
+        "Değişiklikler: yoğun yavaşlatma veya zincir kitle kontrolüne karşı Tough Boots; rakip iyileşme ya da kalkana dayanıyorsa Thunder Belt yerine Sea Halberd; uzun değişimler için Immortality yerine Oracle.",
+        "Amblem: Fighter seti, Festival of Blood ve çekirdek yetenek Brave Smite. İlk yetenek için sayfamızda Thrill var; mlbbhub'ın build'i Firmness kullanıyor, bu da koridorda büyü hasarı çoksa daha uygun.",
+        "Savaş büyüsü: Sprint. İncelediğimiz üç rehberin üçü de bunu öneriyor, çünkü hasarı hedefin doğru tarafına ulaşmasına bağlı."
+      ] },
+      { "p": "Bazı rehberler kritik vuruş build'i (esports.gg) ya da Demon Hunter Sword öneriyor. Kaynaklar bu konuda ayrışıyor; yukarıdaki listeyi başlangıç noktası olarak alın ve her versiyonda Corrosion Scythe ile bir saldırı hızı itemi bulundurun." },
+      { "h": "Kombo ve önemli ipuçları" },
+      { "ul": [
+        "Temel döngü: Feral Swipe veya Claw Strike ile Yara açın, o tarafa geçip normal saldırıyla Vahşi Durum'a girin, üç pençeyi harcayın, sonra yeni Yara için yeteneklerinizi tekrar kullanın.",
+        "Zaten Vahşi durumdayken başka bir Yara kırmak pençe sayısını artırıyor (mlbbhub altıya kadar diyor); yetenekleri saklamak yerine güçlendirilmiş saldırıların arasına serpiştirin.",
+        "Vahşi Durum hasarın bir kısmını biriktirip çatışma bitince cana çeviriyor. Çatışma tıkandığında düşük canla değişim yapmak yerine kısa süre geri çekilin.",
+        "Claw Strike her can barı kaybettiğinizde sıfırlanıyor. Bar kırılır kırılmaz kaçan hedefi kovalamak ya da çıkmak için kullanın.",
+        "Savage Maul sizin giriş tuşunuz: hedefi sersemletiyor, yakındakileri geri savuruyor ve hasarı azami canınızla artıyor. İlk gördüğünüz kahramana değil taşıyıcıya saklayın."
+      ] },
+      { "h": "Counter'lar: Masha'yı kim yener" },
+      { "ul": [
+        "Estes ve Rafaela, incelediğimiz iki istatistik listesinde de var (mlbb.io: +3,7 ve +2,5 puan; mlbbhub: +2,9 ve +2,0). Sürekli takım iyileştirmesi ani hasarını boşa çıkarıyor, Rafaela'nın Holy Baptism sersemletmesi de girişini durduruyor.",
+        "Kahraman sayfamızdaki üçüncü seçim Kimmy: hareket ederken ateş edebildiği için pençe menzilinin dışında kalıyor. mlbbhub ayrıca Freya (+2,7) ve Bruno'yu (+2,2) listeliyor; mlbb.io'ya göre Uranus, Floryn ve Aldous da özellikle Mythic ve üstünde etkili.",
+        "Seçimden çok zamanlama önemli: kaybettiği her can barı kitle kontrolünü temizlediği için en sert sersemletmenizi son barına ya da Savage Maul kullandığı ana saklayın.",
+        "Itemler: anti-heal için Sea Halberd veya Dominance Ice, fiziksel hasarına karşı Antique Cuirass veya Blade Armor."
+      ] },
+      { "h": "Masha kime karşı güçlü" },
+      { "p": "İki istatistik sitesi de en büyük avantajını Eudora, Yu Zhong ve Pharsa'ya karşı gösteriyor. mlbbhub ayrıca Gloo (+3,6), Cici ve Brody'yi listeliyor. Hareketsiz büyücüler Claw Strike'tan kaçamıyor, Gloo gibi tanklar da üç can barına karşı uzun değişimi kaybediyor; motorumuz da onu tanklara karşı güçlü olarak işaretliyor." },
+      { "h": "Son değişiklikler" },
+      { "p": "Tam yenileme 2.2.16 ile geldi (16 Eylül 2026'da canlıya çıktı), 2.2.16a ara yaması ona dokunmadı. Advanced Server'da canlıda olmayan ve hâlâ değişebilecek testler var: 2.2.26 sürümü yavaşlatmayı Feral Swipe'tan Claw Strike'a taşıdı ve ultisinin temel hasarını düşürdü; 2.2.28 sürümü ulti hasarını geri getirdi ama pasifindeki fiziksel saldırı bonusunu azalttı. Bunlardan biri canlı sunucuya gelirse bu rehberi güncelleyeceğiz." }
+    ],
+    "id": [
+      { "h": "Role dan gaya bermain" },
+      { "p": "Masha dibangun ulang dari nol di patch 2.2.16 dan kini menjadi fighter EXP lane yang menang dengan bertahan lama di pertarungan. Pasifnya, Primal Pact, memberinya tiga bar HP: kehilangan satu bar menghapus crowd control dan me-reset Claw Strike, jadi untuk membunuhnya butuh tiga kali komitmen. Skill-nya meninggalkan Wound berarah pada hero musuh, dan basic attack dari sisi yang sama memecahnya lalu memulai Feral State, di mana tiga basic attack berikutnya menjadi sapuan cakar lebar yang memulihkan HP-nya." },
+      { "p": "Angkanya menjelaskan kenapa ia sering di-ban. Di data ranked mlbbhub untuk 2.2.16a (diperbarui 25 Oktober), win rate-nya 60,5%, naik 3,9 poin dalam 39 hari terakhir, dengan ban rate keseluruhan 33,5%. Di Mythical Glory ke atas ia menang 61,8% dan di-ban di 75% pertandingan, sehingga hampir tidak pernah dipick (pick rate 0,56%). Sampel tujuh hari mlbb.io menunjukkan gambaran serupa: 60,8% menang dan 37,1% ban." },
+      { "h": "Build dan emblem yang disarankan" },
+      { "ul": [
+        "Item (build dengan hasil terbaik di mlbbhub): Warrior Boots, War Axe, Corrosion Scythe, Thunder Belt, Queen's Wings, Immortality.",
+        "Alternatif: Tough Boots melawan banyak slow atau CC beruntun; Sea Halberd menggantikan Thunder Belt jika musuh mengandalkan heal atau shield; Oracle menggantikan Immortality untuk trade panjang.",
+        "Emblem: set Fighter dengan Festival of Blood dan talent inti Brave Smite. Untuk talent pertama halaman kami memakai Thrill; build mlbbhub memakai Firmness, yang cocok jika lane-mu banyak menerima poke magic.",
+        "Battle spell: Sprint. Ketiga guide yang kami cek merekomendasikannya, karena damage-nya bergantung pada mencapai sisi target yang tepat."
+      ] },
+      { "p": "Guide lain memakai build critical (esports.gg) atau Demon Hunter Sword. Sumber berbeda pendapat, jadi anggap daftar di atas sebagai titik awal dan selalu sertakan Corrosion Scythe serta satu item attack speed." },
+      { "h": "Combo dan tips penting" },
+      { "ul": [
+        "Loop dasar: kenai Feral Swipe atau Claw Strike untuk membuat Wound, pindah ke sisi itu dan basic attack untuk masuk Feral State, habiskan tiga cakar, lalu pakai skill lagi untuk Wound berikutnya.",
+        "Memecah Wound lain saat sudah Feral menambah jumlah cakar (mlbbhub menyebut hingga enam), jadi selipkan skill di antara serangan yang diperkuat alih-alih menyimpannya.",
+        "Feral State menyimpan sebagian damage dan mengubahnya menjadi HP setelah pertarungan selesai. Mundur sebentar saat pertarungan buntu daripada trade dengan HP rendah.",
+        "Claw Strike reset setiap kali kamu kehilangan bar HP. Pakai tepat setelah bar pecah untuk mengejar target yang kabur atau untuk keluar.",
+        "Savage Maul adalah tombol komitmen: memberi stun pada target, mendorong musuh di sekitar, dan damage-nya naik sesuai Max HP. Simpan untuk carry, bukan hero pertama yang kamu temui."
+      ] },
+      { "h": "Counter: siapa yang mengalahkan Masha" },
+      { "ul": [
+        "Estes dan Rafaela muncul di kedua daftar statistik yang kami cek (mlbb.io: +3,7 dan +2,5 poin; mlbbhub: +2,9 dan +2,0). Heal tim yang stabil membatalkan burst-nya, dan stun Holy Baptism Rafaela menghentikan terjangannya.",
+        "Kimmy adalah pilihan ketiga di halaman hero kami: ia menembak sambil bergerak dan bisa tetap di luar jangkauan cakar. mlbbhub juga mencantumkan Freya (+2,7) dan Bruno (+2,2); mlbb.io menambahkan Uranus, Floryn, dan Aldous, terutama dari rank Mythic ke atas.",
+        "Timing lebih penting daripada pick: karena setiap bar HP yang hilang menghapus CC, simpan stun terkuatmu untuk bar terakhirnya atau saat ia memakai Savage Maul.",
+        "Item: Sea Halberd atau Dominance Ice untuk anti-heal, dan Antique Cuirass atau Blade Armor melawan physical damage-nya."
+      ] },
+      { "h": "Masha kuat melawan siapa" },
+      { "p": "Kedua situs statistik menunjukkan ia paling unggul melawan Eudora, Yu Zhong, dan Pharsa. mlbbhub juga mencantumkan Gloo (+3,6), Cici, dan Brody. Mage tanpa mobilitas tidak bisa lolos dari Claw Strike, dan tank seperti Gloo kalah trade panjang melawan tiga bar HP-nya; engine kami juga menandainya kuat melawan tank." },
+      { "h": "Perubahan terbaru" },
+      { "p": "Rework penuh datang di 2.2.16 (live 16 September 2026), dan hotfix 2.2.16a tidak mengubahnya. Advanced Server sedang menguji perubahan yang belum live dan masih bisa berubah: build 2.2.26 memindahkan slow dari Feral Swipe ke Claw Strike dan mengurangi base damage ultimate, lalu build 2.2.28 mengembalikan damage ultimate itu tetapi menurunkan bonus physical attack dari pasifnya. Jika salah satunya masuk ke server live, guide ini akan kami perbarui." }
+    ],
+    "es": [
+      { "h": "Rol y estilo de juego" },
+      { "p": "Masha se rehízo desde cero en el parche 2.2.16 y ahora es una luchadora de la línea de experiencia que gana quedándose en la pelea. Su pasiva, Primal Pact, le da tres barras de vida: perder una le quita el control y reinicia Claw Strike, así que matarla exige tres compromisos distintos. Sus habilidades dejan una Herida direccional en los héroes enemigos, y un ataque básico desde ese mismo lado la rompe e inicia su Estado Salvaje, en el que sus tres siguientes básicos se vuelven zarpazos amplios que la curan." },
+      { "p": "Los números explican por qué la banean tanto. En los datos de clasificatoria de mlbbhub para el 2.2.16a (actualizados el 25 de octubre) tiene un 60,5% de victorias, 3,9 puntos más que hace 39 días, y un 33,5% de bans en general. En Mythical Glory o más gana el 61,8% de sus partidas y la banean en el 75%, así que casi nunca se elige (0,56% de selección). La muestra de siete días de mlbb.io da casi lo mismo: 60,8% de victorias y 37,1% de bans." },
+      { "h": "Build y emblema recomendados" },
+      { "ul": [
+        "Objetos (la build con mejores resultados registrados en mlbbhub): Warrior Boots, War Axe, Corrosion Scythe, Thunder Belt, Queen's Wings, Immortality.",
+        "Cambios: Tough Boots contra muchas ralentizaciones o control encadenado; Sea Halberd en lugar de Thunder Belt si el rival depende de curaciones o escudos; Oracle en lugar de Immortality para intercambios largos.",
+        "Emblema: set de Luchador con Festival of Blood y el talento principal Brave Smite. Para el primer talento nuestra página indica Thrill; la build de mlbbhub usa Firmness, que encaja en líneas con mucho daño mágico.",
+        "Hechizo: Sprint. Las tres guías que revisamos lo recomiendan, porque su daño depende de llegar al lado correcto del objetivo."
+      ] },
+      { "p": "Otras guías proponen una build de crítico (esports.gg) o Demon Hunter Sword. Las fuentes no coinciden, así que toma la lista de arriba como punto de partida y mantén Corrosion Scythe y un objeto de velocidad de ataque en cualquier versión." },
+      { "h": "Combo y consejos clave" },
+      { "ul": [
+        "Ciclo básico: acierta Feral Swipe o Claw Strike para dejar una Herida, colócate en ese lado y ataca para entrar en Estado Salvaje, gasta los tres zarpazos y vuelve a usar habilidades para la siguiente Herida.",
+        "Romper otra Herida estando ya en Estado Salvaje añade zarpazos (mlbbhub indica hasta seis), así que intercala habilidades entre los básicos potenciados en vez de guardarlas.",
+        "El Estado Salvaje acumula parte del daño y lo convierte en vida al salir del combate. Si la pelea se estanca, retírate un momento en lugar de intercambiar con poca vida.",
+        "Claw Strike se reinicia cada vez que pierdes una barra. Úsalo justo después para perseguir a quien huye o para salir.",
+        "Savage Maul es tu botón de compromiso: aturde al objetivo, empuja a los cercanos y su daño crece con tu vida máxima. Guárdalo para el carry, no para el primer héroe que veas."
+      ] },
+      { "h": "Counters: quién gana a Masha" },
+      { "ul": [
+        "Estes y Rafaela aparecen en las dos listas estadísticas que revisamos (mlbb.io: +3,7 y +2,5 puntos; mlbbhub: +2,9 y +2,0). La curación constante del equipo anula su ráfaga, y el aturdimiento de Holy Baptism de Rafaela frena su carga.",
+        "Kimmy es la tercera opción en nuestra página de la heroína: dispara mientras se mueve y se mantiene fuera del alcance de los zarpazos. mlbbhub añade a Freya (+2,7) y Bruno (+2,2); mlbb.io suma a Uranus, Floryn y Aldous, sobre todo desde rango Mythic.",
+        "Importa más el momento que la elección: como cada barra perdida le quita el control, guarda tu aturdimiento más fuerte para su última barra o para cuando use Savage Maul.",
+        "Objetos: Sea Halberd o Dominance Ice como antisanación, y Antique Cuirass o Blade Armor contra su daño físico."
+      ] },
+      { "h": "Contra quién es fuerte Masha" },
+      { "p": "Ambas webs de estadísticas muestran su mayor ventaja contra Eudora, Yu Zhong y Pharsa. mlbbhub también incluye a Gloo (+3,6), Cici y Brody. Los magos sin movilidad no escapan de Claw Strike, y tanques como Gloo pierden el intercambio largo frente a sus tres barras; nuestro motor también la marca como fuerte contra tanques." },
+      { "h": "Cambios recientes" },
+      { "p": "El rework completo llegó en el 2.2.16 (en vivo desde el 16 de septiembre de 2026) y el hotfix 2.2.16a no la tocó. El Advanced Server prueba cambios que no están en vivo y pueden cambiar: la versión 2.2.26 pasó la ralentización de Feral Swipe a Claw Strike y bajó el daño base de su definitiva, y la 2.2.28 devolvió ese daño pero redujo el bonus de ataque físico de su pasiva. Si alguno llega al servidor normal, actualizaremos esta guía." }
+    ],
+    "pt": [
+      { "h": "Função e estilo de jogo" },
+      { "p": "Masha foi refeita do zero no patch 2.2.16 e agora é uma lutadora da rota EXP que vence ficando na luta. A passiva, Primal Pact, dá a ela três barras de vida: perder uma remove os controles sobre ela e reinicia Claw Strike, então matá-la exige três investidas separadas. As habilidades deixam uma Ferida direcional nos heróis inimigos, e um ataque básico vindo do mesmo lado a quebra e inicia o Estado Selvagem, em que os três próximos básicos viram golpes de garra amplos que a curam." },
+      { "p": "Os números explicam por que ela é tão banida. Nos dados ranqueados do mlbbhub para o 2.2.16a (atualizados em 25 de outubro), ela tem 60,5% de vitórias, 3,9 pontos a mais que há 39 dias, e 33,5% de banimento no geral. No Mythical Glory ou acima ela vence 61,8% das partidas e é banida em 75%, por isso quase nunca é escolhida (0,56% de escolha). A amostra de sete dias do mlbb.io mostra quase o mesmo: 60,8% de vitórias e 37,1% de banimento." },
+      { "h": "Build e emblema recomendados" },
+      { "ul": [
+        "Itens (a build com melhores resultados registrados no mlbbhub): Warrior Boots, War Axe, Corrosion Scythe, Thunder Belt, Queen's Wings, Immortality.",
+        "Trocas: Tough Boots contra muita lentidão ou controle em cadeia; Sea Halberd no lugar de Thunder Belt quando o inimigo depende de cura ou escudo; Oracle no lugar de Immortality para trocas longas.",
+        "Emblema: conjunto de Lutador com Festival of Blood e o talento principal Brave Smite. Para o primeiro talento nossa página indica Thrill; a build do mlbbhub usa Firmness, que combina com rotas com muito dano mágico.",
+        "Feitiço: Sprint. Os três guias que consultamos o recomendam, porque o dano dela depende de chegar ao lado certo do alvo."
+      ] },
+      { "p": "Outros guias sugerem uma build de crítico (esports.gg) ou Demon Hunter Sword. As fontes não concordam, então use a lista acima como ponto de partida e mantenha Corrosion Scythe e um item de velocidade de ataque em qualquer versão." },
+      { "h": "Combo e dicas principais" },
+      { "ul": [
+        "Ciclo básico: acerte Feral Swipe ou Claw Strike para criar uma Ferida, vá para esse lado e ataque para entrar no Estado Selvagem, gaste as três garras e use as habilidades de novo para a próxima Ferida.",
+        "Quebrar outra Ferida já no Estado Selvagem adiciona garras (o mlbbhub fala em até seis), então intercale habilidades entre os básicos fortalecidos em vez de guardá-las.",
+        "O Estado Selvagem acumula parte do dano e o transforma em vida quando o combate termina. Se a luta travar, saia por um momento em vez de trocar golpes com pouca vida.",
+        "Claw Strike reinicia sempre que você perde uma barra. Use logo depois para perseguir quem foge ou para sair.",
+        "Savage Maul é o seu botão de entrada: atordoa o alvo, empurra os inimigos próximos e o dano cresce com a vida máxima. Guarde para o carregador, não para o primeiro herói que aparecer."
+      ] },
+      { "h": "Counters: quem vence Masha" },
+      { "ul": [
+        "Estes e Rafaela aparecem nas duas listas de estatísticas que consultamos (mlbb.io: +3,7 e +2,5 pontos; mlbbhub: +2,9 e +2,0). A cura constante do time anula a rajada dela, e o atordoamento de Holy Baptism de Rafaela para a investida.",
+        "Kimmy é a terceira opção na nossa página da heroína: atira enquanto anda e fica fora do alcance das garras. O mlbbhub também lista Freya (+2,7) e Bruno (+2,2); o mlbb.io acrescenta Uranus, Floryn e Aldous, principalmente a partir do Mythic.",
+        "O momento importa mais que a escolha: como cada barra perdida remove controles, guarde o atordoamento mais forte para a última barra ou para quando ela usar Savage Maul.",
+        "Itens: Sea Halberd ou Dominance Ice como antecura, e Antique Cuirass ou Blade Armor contra o dano físico."
+      ] },
+      { "h": "Contra quem Masha é forte" },
+      { "p": "Os dois sites de estatísticas mostram a maior vantagem dela contra Eudora, Yu Zhong e Pharsa. O mlbbhub também lista Gloo (+3,6), Cici e Brody. Magos sem mobilidade não escapam de Claw Strike, e tanques como Gloo perdem a troca longa contra as três barras; nosso sistema também a marca como forte contra tanques." },
+      { "h": "O que mudou recentemente" },
+      { "p": "A reformulação completa veio no 2.2.16 (no ar desde 16 de setembro de 2026), e o hotfix 2.2.16a não mexeu nela. O Advanced Server testa mudanças que não estão no ar e ainda podem mudar: a versão 2.2.26 passou a lentidão de Feral Swipe para Claw Strike e reduziu o dano base da ultimate, e a 2.2.28 devolveu esse dano mas diminuiu o bônus de ataque físico da passiva. Se alguma delas chegar ao servidor normal, atualizaremos este guia." }
+    ]
+  }
+}

@@ -1,7 +1,7 @@
 {
   "game": "hok",
   "patch": "S16",
-  "updated": "2026-10-19",
+  "updated": "2026-10-26",
   "notes": "Same schema as mlbb.json. tier=S/A/B/C or null (weekly updater). Item names starting with # are category keys translated in src/i18n.json.",
   "archetypes": {
     "fP": {
@@ -655,6 +655,26 @@
         "clash",
         "roam"
       ]
+    },
+    {
+      "n": "Dunshan",
+      "r": "tank",
+      "d": "P",
+      "t": "c",
+      "s": [],
+      "b": "tank",
+      "tier": null,
+      "lanes": [
+        "roam"
+      ],
+      "sd": {
+        "en": "Dunshan is a tank support released on October 21, 2026, usually played as a roamer next to the Farm Lane. His passive, Moving Mountain, adds physical damage to his basic attacks, and while Bastion is active his attacks become ranged area hits that slow; holding the attack button charges and aims them. Bastion is his signature skill: cast on a teammate, he dashes to them and both get a shield, then the teammate steers both heroes; cast on an allied tower or its ruins, he merges into a turret that cannot be targeted and recovers health. Collision Course charges forward, tosses enemy heroes behind him and stuns on landing. His ultimate, Allshield, raises a huge shield that gives brief crowd-control immunity, knocks back and slows, then moves forward and blocks projectiles. Against Dunshan, punish the carry he protects from an angle his shield does not cover.",
+        "tr": "Dunshan, 21 Ekim 2026'da çıkan ve genellikle Farm Lane'in yanında roam olarak oynanan bir tank destekçidir. Pasifi Moving Mountain normal saldırılarına fiziksel hasar ekler; Bastion etkinken saldırıları yavaşlatan uzak menzilli alan vuruşlarına dönüşür, saldırı tuşunu basılı tutarak doldurup nişan alabilirsiniz. İmza yeteneği Bastion'dur: bir takım arkadaşına kullanınca ona atılır, ikisi de kalkan alır ve iki kahramanın hareketini arkadaşı yönetir; dost bir kuleye veya kule kalıntısına kullanınca hedef alınamayan ve can yenileyen bir tarete dönüşür. Collision Course ileri koşar, rakip kahramanları arkasına fırlatır ve yere inince sersemletir. Ultisi Allshield kısa süre kitle kontrolü bağışıklığı veren dev bir kalkan kaldırır, rakipleri geri savurup yavaşlatır, sonra ilerleyerek mermileri engeller. Dunshan'a karşı koruduğu taşıyıcıyı kalkanının kapatmadığı bir açıdan cezalandırın.",
+        "id": "Dunshan adalah tank support yang rilis pada 21 Oktober 2026 dan biasanya dimainkan sebagai roamer di dekat Farm Lane. Pasifnya, Moving Mountain, menambah physical damage pada basic attack, dan saat Bastion aktif serangannya menjadi hit area jarak jauh yang memberi slow; menahan tombol serang akan mengisi dan mengarahkannya. Bastion adalah skill khasnya: jika dipakai ke rekan, ia dash ke rekan itu dan keduanya mendapat shield, lalu rekan tersebut mengendalikan gerak keduanya; jika dipakai ke tower atau reruntuhan tower sekutu, ia menyatu menjadi turret yang tidak bisa ditarget dan memulihkan HP. Collision Course menerjang ke depan, melempar hero musuh ke belakangnya, dan memberi stun saat mendarat. Ultimate-nya, Allshield, mengangkat perisai raksasa yang memberi kebal crowd control sebentar, knockback dan slow, lalu bergerak maju dan memblok proyektil. Lawan Dunshan dengan menyerang carry yang ia lindungi dari sudut yang tidak tertutup perisainya.",
+        "es": "Dunshan es un tanque de apoyo lanzado el 21 de octubre de 2026, que suele jugarse como roamer junto a la Farm Lane. Su pasiva, Moving Mountain, añade daño físico a sus ataques básicos, y con Bastion activo sus golpes se vuelven ataques de área a distancia que ralentizan; manteniendo el botón se cargan y se apuntan. Bastion es su habilidad clave: sobre un aliado, se desplaza hasta él, ambos reciben un escudo y el aliado controla el movimiento de los dos; sobre una torre aliada o sus ruinas, se funde en una torreta que no puede ser objetivo y recupera vida. Collision Course carga hacia delante, lanza a los héroes enemigos detrás de él y aturde al aterrizar. Su definitiva, Allshield, levanta un escudo gigante que da inmunidad breve al control, empuja y ralentiza, y luego avanza bloqueando proyectiles. Contra Dunshan, ataca al carry que protege desde un ángulo que su escudo no cubra.",
+        "pt": "Dunshan é um tanque de suporte lançado em 21 de outubro de 2026, normalmente jogado como roamer perto da Farm Lane. A passiva, Moving Mountain, adiciona dano físico aos ataques básicos, e com Bastion ativo os golpes viram ataques em área à distância que causam lentidão; segurar o botão de ataque carrega e mira. Bastion é a habilidade principal: num aliado, ele avança até ele, os dois ganham escudo e o aliado controla o movimento de ambos; numa torre aliada ou nas ruínas dela, ele se funde numa torre que não pode ser alvo e recupera vida. Collision Course avança, joga os heróis inimigos para trás dele e atordoa ao aterrissar. A ultimate, Allshield, ergue um escudo gigante que dá imunidade breve a controle, empurra e causa lentidão, depois avança bloqueando projéteis. Contra Dunshan, puna o carregador que ele protege por um ângulo que o escudo não cobre."
+      },
+      "spell": "Flash"
     },
     {
       "n": "Dyadia",
@@ -1491,7 +1511,14 @@
       "lanes": [
         "mid"
       ],
-      "tier": "A"
+      "tier": "A",
+      "sd": {
+        "en": "Wang Wei is a mid lane mage released in the global version on October 8, 2026, who controls zones and roams across the map. His passive builds marks over time, faster inside his own Misty Mountain or after his ultimate; at five marks he dodges the next instance of damage, including a turret shot, but it does not block crowd control. Misty Mountain creates a zone that damages and slows enemies before exploding. Endless River sends a river that knocks enemies back and splits into streams that chase and slow; cast around Misty Mountain, it loops and pulls enemies to the centre. His ultimate, One With All, sends his spirit flying across the map through walls; recasting teleports him there for heavy damage, while his body stays behind and can be attacked. Against Wang Wei, dive him with assassins once his marks are spent and use crowd control, which his passive cannot stop.",
+        "tr": "Wang Wei, global sürümde 8 Ekim 2026'da çıkan, alan kontrol eden ve haritada dolaşan bir orta koridor büyücüsüdür. Pasifi zamanla işaret biriktirir, kendi Misty Mountain alanında veya ultisinden sonra daha hızlı; beş işarette, kule atışı dahil bir sonraki hasarı savuşturur, ancak kitle kontrolünü engellemez. Misty Mountain patlamadan önce rakiplere hasar veren ve onları yavaşlatan bir alan yaratır. Endless River rakipleri geri iten ve sonra takip edip yavaşlatan kollara ayrılan bir nehir gönderir; Misty Mountain çevresinde kullanılınca dağın etrafında dönüp rakipleri merkeze çeker. Ultisi One With All ruhunu duvarların içinden geçerek haritada uçurur; tekrar basınca oraya ışınlanıp yüksek hasar verir, bu sırada bedeni geride kalır ve saldırıya açıktır. Wang Wei'ye karşı işaretleri harcanınca suikastçıyla üzerine gidin ve pasifinin durduramadığı kitle kontrolünü kullanın.",
+        "id": "Wang Wei adalah mage mid lane yang rilis di versi global pada 8 Oktober 2026, yang mengontrol area dan aktif roaming. Pasifnya mengumpulkan tanda seiring waktu, lebih cepat di dalam Misty Mountain miliknya atau setelah ultimate; pada lima tanda ia menghindari satu instance damage berikutnya, termasuk tembakan turret, tetapi tidak menahan crowd control. Misty Mountain menciptakan area yang memberi damage dan slow sebelum meledak. Endless River mengirim sungai yang mendorong musuh lalu terpecah menjadi aliran yang mengejar dan memberi slow; jika dipakai di sekitar Misty Mountain, sungai berputar dan menarik musuh ke tengah. Ultimate-nya, One With All, menerbangkan rohnya melintasi map menembus dinding; cast ulang memindahkannya ke sana untuk damage besar, sementara tubuhnya tertinggal dan bisa diserang. Lawan Wang Wei dengan dive memakai assassin setelah tandanya habis dan gunakan crowd control yang tidak bisa ditahan pasifnya.",
+        "es": "Wang Wei es un mago de la línea central lanzado en la versión global el 8 de octubre de 2026, que controla zonas y rota por el mapa. Su pasiva acumula marcas con el tiempo, más rápido dentro de su Misty Mountain o tras su definitiva; con cinco marcas esquiva el siguiente golpe, incluido un disparo de torre, pero no bloquea el control. Misty Mountain crea una zona que daña y ralentiza antes de explotar. Endless River envía un río que empuja a los enemigos y se divide en corrientes que los persiguen y ralentizan; lanzado alrededor de Misty Mountain, gira y atrae a los enemigos al centro. Su definitiva, One With All, hace volar su espíritu por el mapa a través de muros; al relanzarla se teletransporta allí con mucho daño, mientras su cuerpo se queda atrás y puede ser atacado. Contra Wang Wei, entra con asesinos cuando gaste sus marcas y usa control, que su pasiva no detiene.",
+        "pt": "Wang Wei é um mago da rota do meio lançado na versão global em 8 de outubro de 2026, que controla áreas e roda pelo mapa. A passiva acumula marcas com o tempo, mais rápido dentro da própria Misty Mountain ou depois da ultimate; com cinco marcas ele desvia do próximo dano, incluindo um tiro de torre, mas não bloqueia controle. Misty Mountain cria uma área que causa dano e lentidão antes de explodir. Endless River envia um rio que empurra os inimigos e se divide em correntes que os perseguem e causam lentidão; lançado ao redor da Misty Mountain, ele circula e puxa os inimigos para o centro. A ultimate, One With All, faz o espírito dele voar pelo mapa atravessando paredes; ao reativar, ele se teleporta para lá com muito dano, enquanto o corpo fica para trás e pode ser atacado. Contra Wang Wei, mergulhe com assassinos quando as marcas acabarem e use controle, que a passiva não impede."
+      }
     },
     {
       "n": "Wang Zhaojun",

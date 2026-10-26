@@ -1,0 +1,158 @@
+{
+  "type": "meta",
+  "slug": "brawlstars-meta-2026-10-26",
+  "date": "2026-10-26",
+  "game": "brawlstars",
+  "sources": [
+    "SeeMeta Brawl Stars tier list and brawler pages, Ranked data September 25 to October 25, 2026 (1,199,265 battles)",
+    "RankedBoost Brawl Stars tier list (updated October 24, 2026)",
+    "timesaver.gg Season 55 and Vince event coverage (October 2 and 20, 2026)",
+    "Playnews summary of the September 16, 2026 balance changes"
+  ],
+  "title": {
+    "tr": "Brawl Stars meta raporu (Sezon 55, 26 Ekim 2026): Amber, Shade ve Wendy zirvede",
+    "en": "Brawl Stars meta report (Season 55, October 26, 2026): Amber, Shade and Wendy on top",
+    "id": "Laporan meta Brawl Stars (Season 55, 26 Oktober 2026): Amber, Shade, dan Wendy teratas",
+    "es": "Informe de meta de Brawl Stars (temporada 55, 26 de octubre de 2026): Amber, Shade y Wendy en lo más alto",
+    "pt": "Relatório de meta de Brawl Stars (temporada 55, 26 de outubro de 2026): Amber, Shade e Wendy no topo"
+  },
+  "summary": {
+    "tr": "1,2 milyon dereceli maça göre Amber, Shade, Wendy, Ash ve Gus en üst kademede. İki kaynağın ayrıştığı Cosmo, Wendy ve Shade'e karşı veriyle desteklenen seçimler ve Vince için neden henüz erken olduğu.",
+    "en": "Based on 1.2 million Ranked battles, Amber, Shade, Wendy, Ash and Gus form the top tier. Where two tier lists disagree (Cosmo), the data-backed answers to Wendy and Shade, and why it is too early to judge Vince.",
+    "id": "Berdasarkan 1,2 juta pertandingan Ranked, Amber, Shade, Wendy, Ash, dan Gus berada di tier teratas. Di mana dua tier list berbeda (Cosmo), jawaban berbasis data untuk Wendy dan Shade, serta kenapa Vince belum bisa dinilai.",
+    "es": "Según 1,2 millones de partidas clasificatorias, Amber, Shade, Wendy, Ash y Gus forman el nivel más alto. Dónde no coinciden dos listas (Cosmo), las respuestas respaldadas por datos contra Wendy y Shade, y por qué es pronto para juzgar a Vince.",
+    "pt": "Com base em 1,2 milhão de partidas ranqueadas, Amber, Shade, Wendy, Ash e Gus formam o nível mais alto. Onde duas listas discordam (Cosmo), as respostas apoiadas em dados contra Wendy e Shade e por que ainda é cedo para avaliar Vince."
+  },
+  "body": {
+    "en": [
+      { "p": "This is our first Brawl Stars meta report. It is based on SeeMeta's tier list, built from 1,199,265 Ranked battles between September 25 and October 25, 2026, and checked against RankedBoost's editorial list of October 24. No balance changes have been confirmed since the September 16 maintenance; the October 1 Season 55 \"Brawl-O-Ween\" update added the new Mythic brawler Vince." },
+      { "h": "The strongest brawlers right now" },
+      { "ul": [
+        "Amber, Shade and Wendy are at the top of both lists, so this is the safest core of the meta. In SeeMeta's data Wendy wins 55.0% of her Ranked games and Shade 55.1%, both with low use rates (3.3% and 2.5%), which means they win a lot without being everywhere.",
+        "Ash and Gus complete SeeMeta's top tier. Both are only A on RankedBoost, so the win-rate data rates them higher than the editorial view does.",
+        "Next in SeeMeta's S tier: Juju, Bibi, Bolt, Ollie, Sprout, Emz, Melodie, Nita, Bo, Rico and Brock.",
+        "Shade, Amber and Gus were all nerfed on September 16 (Shade's Super charge, gadget cooldown and fear radius, Amber's Storm Lighter health, Gus's healing). A month later they are still at the top."
+      ] },
+      { "h": "Where the two lists disagree" },
+      { "ul": [
+        "Cosmo is the biggest gap: S on RankedBoost but D in SeeMeta's Ranked data. Cosmo is a newer Mythic, so the data may reflect players still learning the brawler, but for now the numbers do not support picking him in Ranked.",
+        "Starr Nova and Nori are also S on RankedBoost but only B and A in SeeMeta. El Primo, who was S on the list we used at the start of October, sits in A in the new data.",
+        "Our tier list page now follows SeeMeta, because its ranking comes from match results rather than opinion; we merge its S+ into S."
+      ] },
+      { "h": "Answers to the top picks" },
+      { "ul": [
+        "Against Wendy: Ash (Wendy wins only 45.9% against him) and Trunk (45.5%) are her worst matchups in SeeMeta's data. Her best teammates there are 8-Bit (62.1%), Spike and Brock.",
+        "Against Shade: Gray is Shade's hardest matchup (Shade wins 49.4%). Griff, Gene, Colette and Piper follow, though Shade still wins slightly more than half of those games.",
+        "Shade's best partners in the same data are 8-Bit (60.5%), Gus and Colette, so expect to see 8-Bit next to both top picks."
+      ] },
+      { "h": "Vince: too early to rank" },
+      { "p": "Vince, the Mythic damage dealer who collects caterpillars that turn into moths and releases them with his Super, is in early access, and the Vince event runs from October 19 to 29. SeeMeta has no matchup data for him yet and RankedBoost places him in B. We will add him to the tier list once there is enough Ranked data." },
+      { "h": "Draft tip" },
+      { "p": "If the enemy team takes Wendy early, answer with Ash: he is already S+ on his own and is her worst matchup in the data. If they take Shade, Gray is the pick with the best record against Shade in the data." }
+    ],
+    "tr": [
+      { "p": "Bu ilk Brawl Stars meta raporumuz. SeeMeta'nın 25 Eylül ile 25 Ekim 2026 arasındaki 1.199.265 dereceli maçtan oluşturduğu kademe listesine dayanıyor ve RankedBoost'un 24 Ekim tarihli editoryal listesiyle karşılaştırıldı. 16 Eylül bakımından bu yana onaylanmış bir denge değişikliği yok; 1 Ekim'deki Sezon 55 \"Brawl-O-Ween\" güncellemesi yeni Efsanevi (Mythic) savaşçı Vince'i ekledi." },
+      { "h": "Şu anda en güçlü savaşçılar" },
+      { "ul": [
+        "Amber, Shade ve Wendy iki listenin de en üstünde; metanın en güvenli çekirdeği bu üçlü. SeeMeta verisinde Wendy dereceli maçlarının %55,0'ını, Shade %55,1'ini kazanıyor, kullanım oranları ise düşük (%3,3 ve %2,5): yani her maçta görülmeden çok kazanıyorlar.",
+        "SeeMeta'nın en üst kademesini Ash ve Gus tamamlıyor. İkisi de RankedBoost'ta sadece A; kazanma verisi onları editoryal görüşten daha yüksek değerlendiriyor.",
+        "SeeMeta'nın S kademesinde sırada: Juju, Bibi, Bolt, Ollie, Sprout, Emz, Melodie, Nita, Bo, Rico ve Brock.",
+        "Shade, Amber ve Gus 16 Eylül'de zayıflatılmıştı (Shade'in Süper dolumu, gadget bekleme süresi ve korku alanı; Amber'in Storm Lighter canı; Gus'ın iyileştirmesi). Bir ay sonra hâlâ zirvedeler."
+      ] },
+      { "h": "İki listenin ayrıştığı yerler" },
+      { "ul": [
+        "En büyük fark Cosmo'da: RankedBoost'ta S, SeeMeta'nın dereceli verisinde D. Cosmo yeni bir Efsanevi; veri oyuncuların onu hâlâ öğrendiğini yansıtıyor olabilir, ama şimdilik rakamlar onu derecelide seçmeyi desteklemiyor.",
+        "Starr Nova ve Nori de RankedBoost'ta S, SeeMeta'da ise B ve A. Ekim başında kullandığımız listede S olan El Primo yeni veride A'da.",
+        "Kademe listesi sayfamız artık SeeMeta'yı izliyor, çünkü sıralaması görüşten değil maç sonuçlarından geliyor; S+ kademesini S ile birleştiriyoruz."
+      ] },
+      { "h": "Zirvedeki seçimlere cevaplar" },
+      { "ul": [
+        "Wendy'ye karşı: SeeMeta verisinde en kötü eşleşmeleri Ash (Wendy ona karşı sadece %45,9 kazanıyor) ve Trunk (%45,5). En iyi takım arkadaşları 8-Bit (%62,1), Spike ve Brock.",
+        "Shade'e karşı: en zor eşleşmesi Gray (Shade %49,4 kazanıyor). Ardından Griff, Gene, Colette ve Piper geliyor, ancak Shade bu maçların da yarısından biraz fazlasını kazanıyor.",
+        "Aynı veride Shade'in en iyi ortakları 8-Bit (%60,5), Gus ve Colette; yani iki zirve seçiminin yanında da sık sık 8-Bit görmeyi bekleyin."
+      ] },
+      { "h": "Vince: sıralamak için erken" },
+      { "p": "Tırtıl toplayıp onları güveye dönüştüren ve Süper'iyle salan Efsanevi hasar veren Vince erken erişimde; Vince etkinliği 19–29 Ekim arasında sürüyor. SeeMeta'da onun için henüz eşleşme verisi yok, RankedBoost onu B'ye koyuyor. Yeterli dereceli veri oluşunca kademe listesine ekleyeceğiz." },
+      { "h": "Draft ipucu" },
+      { "p": "Rakip takım Wendy'yi erken alırsa Ash ile cevap verin: kendisi zaten S+ ve veride Wendy'nin en kötü eşleşmesi. Shade'i alırlarsa verideki en iyi cevap Gray." }
+    ],
+    "id": [
+      { "p": "Ini laporan meta Brawl Stars pertama kami. Laporan ini berdasarkan tier list SeeMeta yang dibangun dari 1.199.265 pertandingan Ranked antara 25 September dan 25 Oktober 2026, lalu dibandingkan dengan daftar editorial RankedBoost tanggal 24 Oktober. Belum ada perubahan balance yang terkonfirmasi sejak maintenance 16 September; update Season 55 \"Brawl-O-Ween\" pada 1 Oktober menambahkan brawler Mythic baru, Vince." },
+      { "h": "Brawler terkuat saat ini" },
+      { "ul": [
+        "Amber, Shade, dan Wendy ada di puncak kedua daftar, jadi inilah inti meta yang paling aman. Di data SeeMeta, Wendy menang 55,0% di Ranked dan Shade 55,1%, keduanya dengan use rate rendah (3,3% dan 2,5%), artinya mereka sering menang tanpa muncul di setiap pertandingan.",
+        "Ash dan Gus melengkapi tier teratas SeeMeta. Keduanya hanya A di RankedBoost, jadi data win rate menilai mereka lebih tinggi daripada pandangan editorial.",
+        "Berikutnya di tier S SeeMeta: Juju, Bibi, Bolt, Ollie, Sprout, Emz, Melodie, Nita, Bo, Rico, dan Brock.",
+        "Shade, Amber, dan Gus di-nerf pada 16 September (pengisian Super, cooldown gadget, dan radius fear Shade; HP Storm Lighter Amber; heal Gus). Sebulan kemudian mereka masih di puncak."
+      ] },
+      { "h": "Di mana kedua daftar berbeda" },
+      { "ul": [
+        "Perbedaan terbesar ada pada Cosmo: S di RankedBoost tetapi D di data Ranked SeeMeta. Cosmo adalah Mythic yang lebih baru, jadi datanya mungkin mencerminkan pemain yang masih belajar, tetapi untuk saat ini angka tidak mendukung memilihnya di Ranked.",
+        "Starr Nova dan Nori juga S di RankedBoost tetapi hanya B dan A di SeeMeta. El Primo, yang S di daftar yang kami pakai awal Oktober, kini di A dalam data baru.",
+        "Halaman tier list kami sekarang mengikuti SeeMeta, karena peringkatnya berasal dari hasil pertandingan, bukan opini; S+ kami gabungkan ke S."
+      ] },
+      { "h": "Jawaban untuk pick teratas" },
+      { "ul": [
+        "Melawan Wendy: Ash (Wendy hanya menang 45,9% melawannya) dan Trunk (45,5%) adalah matchup terburuknya di data SeeMeta. Rekan terbaiknya adalah 8-Bit (62,1%), Spike, dan Brock.",
+        "Melawan Shade: Gray adalah matchup tersulitnya (Shade menang 49,4%). Disusul Griff, Gene, Colette, dan Piper, meski Shade masih menang sedikit lebih dari separuh pertandingan itu.",
+        "Partner terbaik Shade di data yang sama adalah 8-Bit (60,5%), Gus, dan Colette, jadi 8-Bit akan sering muncul di samping kedua pick teratas."
+      ] },
+      { "h": "Vince: terlalu dini untuk dinilai" },
+      { "p": "Vince, damage dealer Mythic yang mengumpulkan ulat yang berubah menjadi ngengat lalu melepaskannya dengan Super, masih dalam early access, dan event Vince berlangsung 19 sampai 29 Oktober. SeeMeta belum punya data matchup untuknya dan RankedBoost menempatkannya di B. Kami akan menambahkannya ke tier list setelah data Ranked cukup." },
+      { "h": "Tips draft" },
+      { "p": "Jika tim lawan mengambil Wendy lebih dulu, jawab dengan Ash: ia sudah S+ dan menjadi matchup terburuk Wendy di data. Jika mereka mengambil Shade, Gray adalah pilihan dengan hasil terbaik melawan Shade di data." }
+    ],
+    "es": [
+      { "p": "Este es nuestro primer informe de meta de Brawl Stars. Se basa en la lista de SeeMeta, creada a partir de 1.199.265 partidas clasificatorias entre el 25 de septiembre y el 25 de octubre de 2026, y contrastada con la lista editorial de RankedBoost del 24 de octubre. No hay cambios de equilibrio confirmados desde el mantenimiento del 16 de septiembre; la actualización de la temporada 55 \"Brawl-O-Ween\" del 1 de octubre añadió al nuevo brawler mítico Vince." },
+      { "h": "Los brawlers más fuertes ahora" },
+      { "ul": [
+        "Amber, Shade y Wendy encabezan ambas listas, así que son el núcleo más seguro del meta. En los datos de SeeMeta, Wendy gana el 55,0% de sus partidas clasificatorias y Shade el 55,1%, con tasas de uso bajas (3,3% y 2,5%): ganan mucho sin aparecer en todas partes.",
+        "Ash y Gus completan el nivel más alto de SeeMeta. Ambos son solo A en RankedBoost, así que los datos de victorias los valoran más que la opinión editorial.",
+        "Les siguen en el nivel S de SeeMeta: Juju, Bibi, Bolt, Ollie, Sprout, Emz, Melodie, Nita, Bo, Rico y Brock.",
+        "Shade, Amber y Gus recibieron nerfs el 16 de septiembre (carga del Súper, enfriamiento del gadget y radio de miedo de Shade; vida del Storm Lighter de Amber; curación de Gus). Un mes después siguen arriba."
+      ] },
+      { "h": "Dónde no coinciden las listas" },
+      { "ul": [
+        "La mayor diferencia es Cosmo: S en RankedBoost pero D en los datos de clasificatoria de SeeMeta. Es un mítico reciente y los datos pueden reflejar que aún se está aprendiendo, pero por ahora los números no respaldan elegirlo en clasificatoria.",
+        "Starr Nova y Nori también son S en RankedBoost, pero solo B y A en SeeMeta. El Primo, que era S en la lista que usábamos a principios de octubre, queda en A con los nuevos datos.",
+        "Nuestra página de tier list sigue ahora a SeeMeta, porque su clasificación sale de resultados de partidas y no de opiniones; unimos su S+ con la S."
+      ] },
+      { "h": "Respuestas a los picks más fuertes" },
+      { "ul": [
+        "Contra Wendy: Ash (Wendy solo gana el 45,9% contra él) y Trunk (45,5%) son sus peores enfrentamientos en los datos de SeeMeta. Sus mejores compañeros allí son 8-Bit (62,1%), Spike y Brock.",
+        "Contra Shade: Gray es su enfrentamiento más difícil (Shade gana el 49,4%). Le siguen Griff, Gene, Colette y Piper, aunque Shade aún gana algo más de la mitad de esas partidas.",
+        "Los mejores compañeros de Shade en los mismos datos son 8-Bit (60,5%), Gus y Colette, así que verás a 8-Bit junto a ambos picks principales."
+      ] },
+      { "h": "Vince: aún es pronto" },
+      { "p": "Vince, el mítico de daño que recoge orugas que se convierten en polillas y las suelta con su Súper, está en acceso anticipado, y su evento va del 19 al 29 de octubre. SeeMeta todavía no tiene datos de enfrentamientos para él y RankedBoost lo pone en B. Lo añadiremos a la lista cuando haya suficientes datos de clasificatoria." },
+      { "h": "Consejo de draft" },
+      { "p": "Si el rival elige a Wendy pronto, responde con Ash: ya es S+ por sí mismo y es su peor enfrentamiento según los datos. Si eligen a Shade, Gray es la opción con mejor resultado contra Shade en los datos." }
+    ],
+    "pt": [
+      { "p": "Este é o nosso primeiro relatório de meta de Brawl Stars. Ele se baseia na lista da SeeMeta, feita com 1.199.265 partidas ranqueadas entre 25 de setembro e 25 de outubro de 2026, comparada com a lista editorial da RankedBoost de 24 de outubro. Nenhuma mudança de balanceamento foi confirmada desde a manutenção de 16 de setembro; a atualização da temporada 55 \"Brawl-O-Ween\", de 1º de outubro, adicionou o novo brawler mítico Vince." },
+      { "h": "Os brawlers mais fortes agora" },
+      { "ul": [
+        "Amber, Shade e Wendy estão no topo das duas listas, então formam o núcleo mais seguro do meta. Nos dados da SeeMeta, Wendy vence 55,0% das partidas ranqueadas e Shade 55,1%, ambos com taxa de uso baixa (3,3% e 2,5%): vencem muito sem aparecer em todo jogo.",
+        "Ash e Gus completam o nível mais alto da SeeMeta. Os dois são só A na RankedBoost, então os dados de vitória os avaliam acima da opinião editorial.",
+        "Em seguida, no nível S da SeeMeta: Juju, Bibi, Bolt, Ollie, Sprout, Emz, Melodie, Nita, Bo, Rico e Brock.",
+        "Shade, Amber e Gus foram enfraquecidos em 16 de setembro (carga do Super, recarga do gadget e raio de medo de Shade; vida do Storm Lighter de Amber; cura de Gus). Um mês depois, continuam no topo."
+      ] },
+      { "h": "Onde as duas listas discordam" },
+      { "ul": [
+        "A maior diferença é Cosmo: S na RankedBoost, mas D nos dados ranqueados da SeeMeta. Ele é um mítico recente e os dados podem refletir jogadores ainda aprendendo, mas por enquanto os números não sustentam escolhê-lo no ranqueado.",
+        "Starr Nova e Nori também são S na RankedBoost, mas só B e A na SeeMeta. El Primo, que era S na lista que usávamos no início de outubro, está em A nos novos dados.",
+        "Nossa página de tier list agora segue a SeeMeta, porque a classificação vem de resultados de partidas e não de opinião; juntamos o S+ dela ao S."
+      ] },
+      { "h": "Respostas para os picks do topo" },
+      { "ul": [
+        "Contra Wendy: Ash (Wendy vence só 45,9% contra ele) e Trunk (45,5%) são os piores confrontos dela nos dados da SeeMeta. Os melhores parceiros dela são 8-Bit (62,1%), Spike e Brock.",
+        "Contra Shade: Gray é o confronto mais difícil (Shade vence 49,4%). Depois vêm Griff, Gene, Colette e Piper, embora Shade ainda vença um pouco mais da metade dessas partidas.",
+        "Os melhores parceiros de Shade nos mesmos dados são 8-Bit (60,5%), Gus e Colette, então espere ver 8-Bit ao lado dos dois picks do topo."
+      ] },
+      { "h": "Vince: ainda é cedo" },
+      { "p": "Vince, o mítico de dano que coleta lagartas que viram mariposas e as solta com o Super, está em acesso antecipado, e o evento dele vai de 19 a 29 de outubro. A SeeMeta ainda não tem dados de confronto para ele, e a RankedBoost o coloca em B. Vamos adicioná-lo à tier list quando houver dados ranqueados suficientes." },
+      { "h": "Dica de draft" },
+      { "p": "Se o time adversário pegar Wendy cedo, responda com Ash: ele já é S+ por conta própria e é o pior confronto dela nos dados. Se pegarem Shade, Gray é a escolha com melhor resultado contra Shade nos dados." }
+    ]
+  }
+}

@@ -1,0 +1,122 @@
+{
+  "type": "meta",
+  "slug": "wildrift-meta-2026-10-26",
+  "date": "2026-10-26",
+  "game": "wildrift",
+  "sources": [
+    "WildRiftCore lane tier lists with movement markers (patch 7.3b/7.3c, homepage updated October 25, 2026)",
+    "WildRiftCore rankings, CN Master+ data (patch 7.3c, October 24, 2026)",
+    "Riot Games Wild Rift patch notes 7.3c (October 21, 2026)"
+  ],
+  "title": {
+    "tr": "Wild Rift meta raporu (7.3c, 26 Ekim 2026): Malphite destekte zirvede, Smolder S+'ya çıktı",
+    "en": "Wild Rift meta report (7.3c, October 26, 2026): Malphite tops support, Smolder rises to S+",
+    "id": "Laporan meta Wild Rift (7.3c, 26 Oktober 2026): Malphite teratas di support, Smolder naik ke S+",
+    "es": "Informe de meta de Wild Rift (7.3c, 26 de octubre de 2026): Malphite lidera el soporte y Smolder sube a S+",
+    "pt": "Relatório de meta de Wild Rift (7.3c, 26 de outubro de 2026): Malphite lidera o suporte e Smolder sobe para S+"
+  },
+  "summary": {
+    "tr": "7.3c yalnızca ARAM'ı değiştirdi ama dereceli sıralamalar yine kıpırdadı: Malphite destekte tek S+, Smolder ve Kalista ejderhada yükseldi; Varus, Senna ve Thresh geriledi.",
+    "en": "Patch 7.3c only touched ARAM, yet the ranked lists still moved: Malphite is the only S+ support, Smolder and Kalista climbed in the Dragon lane, and Varus, Senna and Thresh slipped.",
+    "id": "Patch 7.3c hanya mengubah ARAM, tetapi daftar ranked tetap bergeser: Malphite satu-satunya support S+, Smolder dan Kalista naik di Dragon lane, sementara Varus, Senna, dan Thresh turun.",
+    "es": "El parche 7.3c solo tocó ARAM, pero las listas de clasificatoria se movieron: Malphite es el único soporte S+, Smolder y Kalista suben en la línea del Dragón, y Varus, Senna y Thresh bajan.",
+    "pt": "O patch 7.3c só mexeu no ARAM, mas as listas do ranqueado se moveram: Malphite é o único suporte S+, Smolder e Kalista subiram na rota do Dragão, e Varus, Senna e Thresh caíram."
+  },
+  "body": {
+    "en": [
+      { "p": "Riot released patch 7.3c on October 21, but its champion adjustments only apply to the AAA ARAM mode, so ranked balance is still that of 7.3b. The changes below come from a week of new ranked games: WildRiftCore updated its lists on October 25 and marks which champions moved in that update." },
+      { "h": "The strongest picks in every lane" },
+      { "ul": [
+        "Baron: Malphite, Shen, Mordekaiser and Teemo stay in S+. The lane did not move this week, so the advice from last week still holds.",
+        "Jungle: Rammus and Nocturne keep the top two spots, with Ekko and Amumu also in S+. Vi is the only faller, from A to B.",
+        "Mid: WildRiftCore's mid page did not load during our check, so we used its rankings page, which sorts by win rate. Hwei, Brand, Syndra and Morgana (as a second role) lead it, and Brand is the site's number-one mid pick with a 52.5% win rate.",
+        "Dragon: Ashe, Smolder and Senna are S+. Smolder moved up from S, and Kalista from A to S.",
+        "Support: Malphite is now the only S+ support. Braum, Sona, Leona, Thresh and Hwei follow in S."
+      ] },
+      { "h": "Rising and falling since October 19" },
+      { "ul": [
+        "Up: Smolder (S to S+) and Kalista (A to S) in the Dragon lane, Sivir from C to B. In support, Malphite moved up to S+, and Brand, Galio, Rakan and Karma moved from B to A.",
+        "Down: Varus fell from S to A in the Dragon lane. In support, Thresh and Hwei dropped from S+ to S, Senna from S+ to A, and Nautilus, Vel'Koz and Yuumi from A to B. Vi dropped from A to B in the jungle.",
+        "30-day trend on the WildRiftCore homepage: Samira (+5.2), Kog'Maw (+3.0) and Tristana (+2.7) are the fastest risers; support Senna (-5.9) and mid Hwei (-4.3) are the fastest fallers after their 7.3b nerfs."
+      ] },
+      { "h": "Draft tip" },
+      { "p": "Malphite is now S+ in both the Baron lane and support, which makes him one of the safest first picks: the enemy cannot tell which lane he will take until the swap phase. If you face him, do not delay your armour-penetration items, pick marksmen with true or percentage damage, and keep your carries apart so his ultimate cannot catch two at once." }
+    ],
+    "tr": [
+      { "p": "Riot 7.3c yamasını 21 Ekim'de yayınladı, ancak şampiyon ayarları yalnızca AAA ARAM modunu etkiliyor; dereceli denge hâlâ 7.3b'deki gibi. Aşağıdaki değişimler bir haftalık yeni dereceli maçlardan geliyor: WildRiftCore listelerini 25 Ekim'de güncelledi ve bu güncellemede hangi şampiyonların yer değiştirdiğini işaretliyor." },
+      { "h": "Koridor koridor en güçlü seçimler" },
+      { "ul": [
+        "Baron: Malphite, Shen, Mordekaiser ve Teemo S+'da kalıyor. Bu koridorda bu hafta hareket yok, geçen haftanın önerileri geçerli.",
+        "Orman: Rammus ve Nocturne ilk iki sırayı koruyor, Ekko ve Amumu da S+'da. Tek düşen Vi, A'dan B'ye.",
+        "Orta: WildRiftCore'un orta koridor sayfası kontrolümüz sırasında açılmadı; bu yüzden kazanma oranına göre sıralayan sıralama sayfasını kullandık. Başta Hwei, Brand, Syndra ve (ikinci rol olarak) Morgana var; Brand %52,5 kazanma oranıyla sitenin bir numaralı orta seçimi.",
+        "Ejderha: Ashe, Smolder ve Senna S+. Smolder S'den, Kalista A'dan S'ye yükseldi.",
+        "Destek: Malphite artık tek S+ destek. Onu S kademesinde Braum, Sona, Leona, Thresh ve Hwei izliyor."
+      ] },
+      { "h": "19 Ekim'den bu yana yükselenler ve düşenler" },
+      { "ul": [
+        "Yükselenler: ejderha koridorunda Smolder (S'den S+'ya) ve Kalista (A'dan S'ye), Sivir C'den B'ye. Destekte Malphite S+'ya çıktı; Brand, Galio, Rakan ve Karma B'den A'ya yükseldi.",
+        "Düşenler: Varus ejderhada S'den A'ya indi. Destekte Thresh ve Hwei S+'dan S'ye, Senna S+'dan A'ya, Nautilus, Vel'Koz ve Yuumi A'dan B'ye düştü. Ormanda Vi A'dan B'ye geriledi.",
+        "WildRiftCore ana sayfasındaki 30 günlük eğilim: en hızlı yükselenler Samira (+5,2), Kog'Maw (+3,0) ve Tristana (+2,7); 7.3b zayıflatmalarından sonra en hızlı düşenler destek Senna (-5,9) ve orta Hwei (-4,3)."
+      ] },
+      { "h": "Draft ipucu" },
+      { "p": "Malphite artık hem Baron koridorunda hem destekte S+; bu da onu en güvenli ilk seçimlerden biri yapıyor, çünkü rakip takas aşamasına kadar hangi koridora gideceğini bilemiyor. Ona karşı oynuyorsanız zırh delme itemlerini fazla geciktirmeyin, gerçek ya da yüzdesel hasar veren nişancılar seçin ve ultisi iki kişiyi birden yakalamasın diye taşıyıcılarınızı ayrı tutun." }
+    ],
+    "id": [
+      { "p": "Riot merilis patch 7.3c pada 21 Oktober, tetapi penyesuaian champion-nya hanya berlaku untuk mode AAA ARAM, jadi balance ranked masih sama dengan 7.3b. Perubahan di bawah berasal dari seminggu pertandingan ranked baru: WildRiftCore memperbarui daftarnya pada 25 Oktober dan menandai champion yang bergeser dalam pembaruan itu." },
+      { "h": "Pick terkuat di setiap lane" },
+      { "ul": [
+        "Baron: Malphite, Shen, Mordekaiser, dan Teemo tetap di S+. Lane ini tidak bergeser minggu ini, jadi saran minggu lalu masih berlaku.",
+        "Jungle: Rammus dan Nocturne tetap di dua teratas, dengan Ekko dan Amumu juga di S+. Satu-satunya yang turun adalah Vi, dari A ke B.",
+        "Mid: halaman mid WildRiftCore tidak terbuka saat kami cek, jadi kami memakai halaman rankings yang diurutkan berdasarkan win rate. Hwei, Brand, Syndra, dan Morgana (sebagai role kedua) memimpin, dan Brand adalah pick mid nomor satu situs itu dengan win rate 52,5%.",
+        "Dragon: Ashe, Smolder, dan Senna di S+. Smolder naik dari S, dan Kalista dari A ke S.",
+        "Support: Malphite kini satu-satunya support S+. Braum, Sona, Leona, Thresh, dan Hwei menyusul di S."
+      ] },
+      { "h": "Naik dan turun sejak 19 Oktober" },
+      { "ul": [
+        "Naik: Smolder (S ke S+) dan Kalista (A ke S) di Dragon lane, Sivir dari C ke B. Di support, Malphite naik ke S+, dan Brand, Galio, Rakan, serta Karma naik dari B ke A.",
+        "Turun: Varus turun dari S ke A di Dragon lane. Di support, Thresh dan Hwei turun dari S+ ke S, Senna dari S+ ke A, serta Nautilus, Vel'Koz, dan Yuumi dari A ke B. Vi turun dari A ke B di jungle.",
+        "Tren 30 hari di beranda WildRiftCore: Samira (+5,2), Kog'Maw (+3,0), dan Tristana (+2,7) naik paling cepat; Senna support (-5,9) dan Hwei mid (-4,3) turun paling cepat setelah nerf 7.3b."
+      ] },
+      { "h": "Tips draft" },
+      { "p": "Malphite kini S+ di Baron lane dan support sekaligus, sehingga ia termasuk first pick paling aman: musuh tidak tahu lane-nya sampai fase swap. Jika menghadapinya, jangan terlalu menunda item penetrasi armor, pilih marksman dengan true damage atau damage persentase, dan jaga jarak antar carry agar ultimate-nya tidak mengenai dua orang sekaligus." }
+    ],
+    "es": [
+      { "p": "Riot publicó el parche 7.3c el 21 de octubre, pero sus ajustes de campeones solo afectan al modo AAA ARAM, así que el equilibrio de clasificatoria sigue siendo el del 7.3b. Los cambios de abajo salen de una semana de partidas nuevas: WildRiftCore actualizó sus listas el 25 de octubre y marca qué campeones se movieron en esa actualización." },
+      { "h": "Los mejores picks de cada línea" },
+      { "ul": [
+        "Barón: Malphite, Shen, Mordekaiser y Teemo siguen en S+. La línea no se movió esta semana, así que los consejos de la anterior siguen valiendo.",
+        "Jungla: Rammus y Nocturne mantienen los dos primeros puestos, con Ekko y Amumu también en S+. El único que baja es Vi, de A a B.",
+        "Medio: la página de medio de WildRiftCore no cargó durante nuestra revisión, así que usamos su página de clasificación, ordenada por porcentaje de victorias. La encabezan Hwei, Brand, Syndra y Morgana (como segundo rol), y Brand es su mejor pick de medio con un 52,5% de victorias.",
+        "Dragón: Ashe, Smolder y Senna están en S+. Smolder sube desde S y Kalista de A a S.",
+        "Soporte: Malphite es ahora el único soporte S+. Le siguen en S Braum, Sona, Leona, Thresh y Hwei."
+      ] },
+      { "h": "Quién sube y quién baja desde el 19 de octubre" },
+      { "ul": [
+        "Suben: Smolder (de S a S+) y Kalista (de A a S) en la línea del Dragón, y Sivir de C a B. En soporte, Malphite sube a S+, y Brand, Galio, Rakan y Karma pasan de B a A.",
+        "Bajan: Varus cae de S a A en la línea del Dragón. En soporte, Thresh y Hwei bajan de S+ a S, Senna de S+ a A, y Nautilus, Vel'Koz y Yuumi de A a B. Vi baja de A a B en la jungla.",
+        "Tendencia de 30 días en la portada de WildRiftCore: Samira (+5,2), Kog'Maw (+3,0) y Tristana (+2,7) son los que más suben; Senna como soporte (-5,9) y Hwei en medio (-4,3) los que más bajan tras los nerfs del 7.3b."
+      ] },
+      { "h": "Consejo de draft" },
+      { "p": "Malphite es ahora S+ tanto en la línea del Barón como en soporte, lo que lo convierte en uno de los primeros picks más seguros: el rival no sabe qué línea ocupará hasta la fase de intercambio. Si te toca enfrentarlo, no retrases demasiado la penetración de armadura, elige tiradores con daño verdadero o porcentual y separa a tus carries para que su definitiva no atrape a dos a la vez." }
+    ],
+    "pt": [
+      { "p": "A Riot lançou o patch 7.3c em 21 de outubro, mas os ajustes de campeões valem só para o modo AAA ARAM, então o equilíbrio do ranqueado continua o do 7.3b. As mudanças abaixo vêm de uma semana de partidas novas: o WildRiftCore atualizou as listas em 25 de outubro e marca quais campeões se moveram nessa atualização." },
+      { "h": "Os picks mais fortes de cada rota" },
+      { "ul": [
+        "Barão: Malphite, Shen, Mordekaiser e Teemo continuam em S+. A rota não se mexeu nesta semana, então as dicas da semana passada continuam valendo.",
+        "Selva: Rammus e Nocturne mantêm as duas primeiras posições, com Ekko e Amumu também em S+. O único que caiu foi Vi, de A para B.",
+        "Meio: a página do meio do WildRiftCore não carregou na nossa checagem, então usamos a página de ranking, ordenada por taxa de vitória. Hwei, Brand, Syndra e Morgana (como segunda função) lideram, e Brand é o pick número um do site no meio, com 52,5% de vitórias.",
+        "Dragão: Ashe, Smolder e Senna estão em S+. Smolder subiu de S, e Kalista de A para S.",
+        "Suporte: Malphite agora é o único suporte S+. Braum, Sona, Leona, Thresh e Hwei vêm logo depois, em S."
+      ] },
+      { "h": "Quem subiu e quem caiu desde 19 de outubro" },
+      { "ul": [
+        "Subiram: Smolder (S para S+) e Kalista (A para S) na rota do Dragão, e Sivir de C para B. No suporte, Malphite subiu para S+, e Brand, Galio, Rakan e Karma passaram de B para A.",
+        "Caíram: Varus caiu de S para A na rota do Dragão. No suporte, Thresh e Hwei caíram de S+ para S, Senna de S+ para A, e Nautilus, Vel'Koz e Yuumi de A para B. Vi caiu de A para B na selva.",
+        "Tendência de 30 dias na página inicial do WildRiftCore: Samira (+5,2), Kog'Maw (+3,0) e Tristana (+2,7) são os que mais sobem; Senna como suporte (-5,9) e Hwei no meio (-4,3) são os que mais caem depois dos nerfs do 7.3b."
+      ] },
+      { "h": "Dica de draft" },
+      { "p": "Malphite agora é S+ tanto na rota do Barão quanto no suporte, o que faz dele um dos primeiros picks mais seguros: o adversário não sabe qual rota ele vai ocupar até a fase de troca. Se enfrentá-lo, não atrase demais os itens de penetração de armadura, escolha atiradores com dano verdadeiro ou percentual e mantenha seus carregadores separados para a ultimate não pegar dois de uma vez." }
+    ]
+  }
+}

@@ -1,7 +1,7 @@
 {
   "game": "wildrift",
-  "patch": "7.3b",
-  "updated": "2026-10-19",
+  "patch": "7.3c",
+  "updated": "2026-10-26",
   "notes": "Same schema as mlbb.json. tier=S/A/B/C or null (weekly updater). Item names starting with # are category keys translated in src/i18n.json. mu = sourced matchups for popular heroes: src (list of {name,url,date,patch|scope}), c (list of {n, w:{lang: why it works, own words}}), tip ({lang}). Shown on the hero page; keep names consistent with this file.",
   "archetypes": {
     "fP": {
@@ -469,7 +469,7 @@
         "antitank"
       ],
       "b": "fP",
-      "tier": "S",
+      "tier": "A",
       "lanes": [
         "baron",
         "jungle"
@@ -1214,7 +1214,7 @@
       "t": "c",
       "s": [],
       "b": "tank",
-      "tier": "B",
+      "tier": "A",
       "lanes": [
         "baron",
         "jungle",
@@ -1571,7 +1571,7 @@
       "lanes": [
         "baron"
       ],
-      "tier": "A"
+      "tier": "B"
     },
     {
       "n": "Sivir",
@@ -1585,7 +1585,7 @@
       "lanes": [
         "dragon"
       ],
-      "tier": "C"
+      "tier": "B"
     },
     {
       "n": "Skarner",
@@ -1609,7 +1609,81 @@
       "lanes": [
         "dragon"
       ],
-      "tier": "S"
+      "tier": "S",
+      "mu": {
+        "src": [
+          {
+            "name": "WildRiftCore counters",
+            "url": "https://wildriftcore.com/en/champions/smolder/counters/",
+            "date": "2026-10-03",
+            "patch": "7.3a"
+          },
+          {
+            "name": "WildRiftCore Smolder guide",
+            "url": "https://wildriftcore.com/en/guides/smolder-wild-rift-guide/",
+            "date": "2026-10-25",
+            "patch": "7.3c"
+          }
+        ],
+        "c": [
+          {
+            "n": "Caitlyn",
+            "w": {
+              "en": "Her range and Yordle Snap Traps punish Smolder every time he walks up to last-hit with Q, which slows down the stacks he needs for his mid-game power.",
+              "tr": "Menzili ve Yordle Snap Trap tuzakları, Smolder Q ile son vuruş yapmak için her öne çıktığında onu cezalandırır ve orta oyun gücü için gereken yükleri yavaşlatır.",
+              "id": "Jangkauan dan Yordle Snap Trap miliknya menghukum Smolder setiap kali ia maju untuk last-hit dengan Q, sehingga memperlambat stack yang ia butuhkan untuk kekuatan mid game.",
+              "es": "Su alcance y sus Yordle Snap Traps castigan a Smolder cada vez que se acerca a rematar con la Q, lo que frena las cargas que necesita para su fuerza de mitad de partida.",
+              "pt": "O alcance e as Yordle Snap Traps dela punem Smolder toda vez que ele avança para dar o último golpe com o Q, atrasando os acúmulos de que ele precisa no meio do jogo."
+            }
+          },
+          {
+            "n": "Draven",
+            "w": {
+              "en": "Spinning Axes win the early basic-attack trades by a wide margin, and Blood Rush lets Draven chase Smolder down before his stacks matter.",
+              "tr": "Spinning Axes erken oyundaki normal saldırı değişimlerini açık farkla kazanır; Blood Rush ile Draven, yükleri önem kazanmadan Smolder'ı kovalayıp yakalar.",
+              "id": "Spinning Axes memenangkan trade basic attack early game dengan jauh, dan Blood Rush membuat Draven bisa mengejar Smolder sebelum stack-nya berarti.",
+              "es": "Spinning Axes gana con claridad los intercambios de ataques básicos al principio, y Blood Rush permite a Draven perseguir a Smolder antes de que sus cargas importen.",
+              "pt": "Spinning Axes vence com folga as trocas de ataques básicos no início, e Blood Rush deixa Draven perseguir Smolder antes que os acúmulos façam diferença."
+            }
+          },
+          {
+            "n": "Tristana",
+            "w": {
+              "en": "Rocket Jump plus a fully stacked Explosive Charge is an all-in that kills Smolder in the early levels, when his only escape is Flap, Flap, Flap.",
+              "tr": "Rocket Jump ile tam yüklü Explosive Charge, Smolder'ı tek kaçışının Flap, Flap, Flap olduğu ilk seviyelerde öldüren bir tam saldırıdır.",
+              "id": "Rocket Jump ditambah Explosive Charge yang terisi penuh adalah all-in yang bisa membunuh Smolder di level awal, saat satu-satunya kaburnya adalah Flap, Flap, Flap.",
+              "es": "Rocket Jump con Explosive Charge cargado al máximo es un all-in que mata a Smolder en los primeros niveles, cuando su único escape es Flap, Flap, Flap.",
+              "pt": "Rocket Jump com Explosive Charge totalmente carregado é um all-in que mata Smolder nos primeiros níveis, quando a única fuga dele é Flap, Flap, Flap."
+            }
+          },
+          {
+            "n": "Lucian",
+            "w": {
+              "en": "His Lightslinger passive lets him trade in quick bursts that Smolder cannot answer early, and Piercing Light hits him through his own minions.",
+              "tr": "Lightslinger pasifi, Smolder'ın erken oyunda karşılık veremediği hızlı patlamalarla değişim yapmasını sağlar; Piercing Light de onu kendi minyonlarının arkasından vurur.",
+              "id": "Pasif Lightslinger membuatnya bisa trade dengan burst cepat yang tidak bisa dibalas Smolder di early game, dan Piercing Light mengenai Smolder menembus minion-nya sendiri.",
+              "es": "Su pasiva Lightslinger le permite intercambiar en ráfagas rápidas que Smolder no puede responder al principio, y Piercing Light le alcanza a través de sus propios súbditos.",
+              "pt": "A passiva Lightslinger permite trocas em rajadas rápidas que Smolder não consegue responder no início, e Piercing Light o acerta através dos próprios minions."
+            }
+          }
+        ],
+        "tip": {
+          "en": "Smolder is weakest before about 100 stacks. Trade with him while he walks up to Q minions, and save hard crowd control for after he uses Flap, Flap, Flap, because casting Q or W ends his flight early.",
+          "tr": "Smolder yaklaşık 100 yükten önce en zayıf halindedir. Q ile minyon almak için öne çıktığında onunla değişim yapın; sert kitle kontrolünü Flap, Flap, Flap'i kullandıktan sonraya saklayın, çünkü Q veya W kullanırsa uçuşu erken biter.",
+          "id": "Smolder paling lemah sebelum sekitar 100 stack. Trade dengannya saat ia maju untuk Q minion, dan simpan hard CC sampai ia memakai Flap, Flap, Flap, karena memakai Q atau W mengakhiri terbangnya lebih cepat.",
+          "es": "Smolder es más débil antes de unas 100 cargas. Intercambia con él cuando se acerque a rematar con la Q y guarda el control duro para después de Flap, Flap, Flap, porque usar Q o W corta su vuelo antes de tiempo.",
+          "pt": "Smolder é mais fraco antes de cerca de 100 acúmulos. Troque golpes quando ele avançar para usar o Q nos minions e guarde o controle forte para depois de Flap, Flap, Flap, porque usar Q ou W encerra o voo mais cedo."
+        }
+      },
+      "build": [
+        "Ionian Boots of Lucidity",
+        "Essence Reaver",
+        "Black Cleaver",
+        "Rapid Firecannon",
+        "Infinity Edge",
+        "Fiendhunter Bolts"
+      ],
+      "spell": "Flash + Barrier"
     },
     {
       "n": "Sona",
@@ -1858,7 +1932,7 @@
         "antiheal"
       ],
       "b": "mmA",
-      "tier": "S",
+      "tier": "A",
       "lanes": [
         "dragon"
       ]
@@ -1992,7 +2066,7 @@
       "t": "cd",
       "s": [],
       "b": "fP",
-      "tier": "A",
+      "tier": "B",
       "lanes": [
         "jungle"
       ]
@@ -2117,7 +2191,7 @@
       "t": "d",
       "s": [],
       "b": "fP",
-      "tier": "A",
+      "tier": "S",
       "lanes": [
         "baron",
         "jungle",
@@ -2247,8 +2321,8 @@
   "tierSource": {
     "name": "WildRiftCore",
     "url": "https://wildriftcore.com/en/tierlist/",
-    "date": "2026-10-18",
-    "patch": "7.3b"
+    "date": "2026-10-25",
+    "patch": "7.3c (ranked balance 7.3b); mid lane from the 2026-10-18 list"
   },
   "tierList": {
     "baron": {
@@ -2258,50 +2332,50 @@
         "Mordekaiser",
         "Teemo",
         "Cho'Gath",
+        "Gwen",
         "K'Sante",
         "Ambessa",
-        "Darius",
+        "Jax",
         "Kalista",
-        "Gwen",
-        "Ornn",
-        "Jax"
+        "Yone",
+        "Ornn"
       ],
       "A": [
-        "Yone",
-        "Singed",
+        "Darius",
         "Vayne",
+        "Poppy",
+        "Singed",
+        "Dr. Mundo",
+        "Sett",
         "Aatrox",
         "Gnar",
-        "Sett",
-        "Riven",
-        "Poppy",
-        "Sion",
-        "Kennen",
         "Wukong",
-        "Dr. Mundo",
+        "Riven",
+        "Nautilus",
+        "Kennen",
         "Ryze"
       ],
       "B": [
-        "Nautilus",
-        "Fiora",
-        "Volibear",
-        "Garen",
-        "Jayce",
-        "Smolder",
-        "Camille",
-        "Irelia",
-        "Kayle",
-        "Urgot",
         "Gragas",
         "Olaf",
+        "Camille",
+        "Jayce",
+        "Fiora",
+        "Smolder",
+        "Sion",
+        "Garen",
+        "Kayle",
+        "Irelia",
+        "Urgot",
+        "Volibear",
         "Pantheon"
       ],
       "C": [
         "Rumble",
         "Renekton",
         "Tryndamere",
-        "Yasuo",
         "Nasus",
+        "Yasuo",
         "Skarner",
         "Vladimir"
       ]
@@ -2312,32 +2386,31 @@
         "Nocturne",
         "Ekko",
         "Amumu",
-        "Jarvan IV",
-        "Lillia",
         "Gwen",
         "Skarner",
         "Shen",
-        "Kayn",
+        "Jarvan IV",
+        "Lillia",
         "Ambessa",
-        "Nidalee",
-        "Cho'Gath"
+        "Kayn",
+        "Cho'Gath",
+        "Nidalee"
       ],
       "A": [
-        "Xin Zhao",
-        "Pantheon",
-        "Nunu & Willump",
         "Zed",
         "Hecarim",
+        "Xin Zhao",
+        "Nunu & Willump",
         "Olaf",
-        "Fiddlesticks",
-        "Kindred",
         "Darius",
+        "Fiddlesticks",
+        "Pantheon",
+        "Warwick",
+        "Dr. Mundo",
         "Talon",
         "Kha'Zix",
-        "Warwick",
         "Diana",
-        "Vi",
-        "Dr. Mundo",
+        "Kindred",
         "Nilah",
         "Malphite",
         "Jayce",
@@ -2346,25 +2419,26 @@
       ],
       "B": [
         "Wukong",
-        "Rengar",
         "Riven",
-        "Yone",
-        "Aatrox",
-        "Evelynn",
-        "Jax",
+        "Vi",
         "Master Yi",
+        "Aatrox",
+        "Rengar",
+        "Jax",
+        "Evelynn",
         "Tryndamere",
         "Fizz",
+        "Yone",
         "Camille",
         "Taliyah"
       ],
       "C": [
-        "Lee Sin",
-        "Volibear",
         "Twitch",
+        "Volibear",
+        "Lee Sin",
+        "Viego",
         "Graves",
         "Shyvana",
-        "Viego",
         "Nautilus"
       ]
     },
@@ -2431,33 +2505,33 @@
     "dragon": {
       "S": [
         "Ashe",
-        "Senna",
         "Smolder",
+        "Senna",
         "Samira",
-        "Varus",
+        "Caitlyn",
         "Yunara",
-        "Caitlyn"
+        "Kalista"
       ],
       "A": [
+        "Varus",
         "Jinx",
+        "Kai'Sa",
         "Kog'Maw",
         "Ezreal",
         "Xayah",
-        "Kai'Sa",
-        "Kalista",
         "Twitch",
         "Corki"
       ],
       "B": [
         "Jhin",
-        "Miss Fortune",
         "Zeri",
-        "Vayne"
+        "Vayne",
+        "Miss Fortune",
+        "Sivir"
       ],
       "C": [
         "Tristana",
         "Lucian",
-        "Sivir",
         "Draven"
       ]
     },
