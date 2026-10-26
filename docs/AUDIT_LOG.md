@@ -2,6 +2,20 @@
 
 Technical SEO, AI visibility, usability and ad-readiness checks. Content (patch news, guides) is handled by the weekly bot (UPDATING.md).
 
+## 2026-10-26
+**Checked:** `node build.js` (2,935 pages, OK). Monday policy re-read (see DutyLens log: spam policies 2026-08-28 add manipulating AI answers; helpful content 2026-10-05 on creator identity and AI disclosure); POLICY.md updated. Live site checked by an independent reviewer subagent (canonical, hreflang, OG, JSON-LD valid, real 404, ads.txt valid) and compared with own build audit.
+**Fixed:**
+- Brawl Stars counter pages recommended brawlers that the target beats (Shelly, an anti-tank brawler, got Ash/Bibi/Bolt, all tanks, while the same page said Shelly is strong against tanks). The engine now lowers picks whose class or strengths the enemy beats; pages and the live assistant no longer contradict themselves.
+- Contact address was hidden by Cloudflare Email Obfuscation ("[email protected]" without JS) on Contact/About/Privacy; wrapped in `<!--email_off-->` so reviewers and crawlers see it.
+- About page (5 languages) named Timesaver.gg as a tier source; the Brawl Stars tier list now uses SeeMeta. Corrected.
+- Meta descriptions over ~165 characters (229 Free Fire pages at 260–276, some news) are now cut at a sentence or word boundary.
+- Copy: Brawl Stars / Free Fire tier FAQ said "S-tier heroes" → brawlers / characters (5 languages, new keys in sync); MOBA "strong against squishy mages and marksmen, marksmen" duplicate removed.
+**AdSense readiness:** ~35% (reviewer 20–30%). Blockers: (1) ~2,800 template hero/brawler/character pages vs 18 articles per language; same-class pages 60–80% identical (Layla/Miya, Hanzo/Saber), Brawl Stars counters are class rules + tier list; (2) About does not name who runs the site; (3) tool pages are mostly JS with little static text; (4) CMP not live.
+**Open (owner):**
+- Decide: noindex (and drop from the sitemap) hero/brawler/character pages without a hand-written kit summary (`sd`) or sourced matchups (`mu`) until enrichment reaches them, then reapply. The bot can do this on request.
+- Add a name (person or business) to About; publish Google's EEA/UK/CH consent message in AdSense.
+- Minor, for later runs: Turkish "Retri" shown for Retribution (gamer slang, reads as truncated); mixed English terms in TR/ID/PT pages.
+
 ## 2026-10-22
 **Checked:** `node build.js` (2,905 pages, OK); live site now reachable: home, game hubs, hero/brawler/character pages, tools, tier lists, articles, About/Privacy, robots.txt, sitemap, llms.txt, ads.txt (valid, matches config) in several languages. Independent reviewer subagent (strict AdSense reviewer / first-time visitor / AI engine) compared with own findings.
 **Fixed:**

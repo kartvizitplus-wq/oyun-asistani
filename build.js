@@ -57,7 +57,15 @@ const LOGO = '<svg class="mark" viewBox="0 0 32 32" width="28" height="28" aria-
 const OG_LOCALE = { en: 'en_US', tr: 'tr_TR', id: 'id_ID', es: 'es_ES', pt: 'pt_BR' };
 /* Breadcrumb trail as schema.org BreadcrumbList: crumbs = [[name, rel], ...]. */
 const crumbLd = crumbs => crumbs && crumbs.length > 1 ? { '@context': 'https://schema.org', '@type': 'BreadcrumbList', itemListElement: crumbs.map(([name, r], i) => ({ '@type': 'ListItem', position: i + 1, name, item: `${base}/${r}` })) } : null;
+/* Search snippets are cut at about 160 characters: end long descriptions at a sentence (or word) boundary. */
+function clipDesc(s, n = 165) {
+  if (!s || s.length <= n) return s;
+  const cut = s.slice(0, n), dot = cut.lastIndexOf('. ');
+  if (dot >= 100) return cut.slice(0, dot + 1);
+  return cut.slice(0, cut.lastIndexOf(' ')).replace(/[,;:–-]+$/, '') + '…';
+}
 function layout({ lang, rel, title, desc, body, active, app, type, jsonld, img, crumbs, lastmod }) {
+  desc = clipDesc(desc);
   const t = I18N[lang];
   const gm = GAMES.find(g => g.id === active);
   const tail = rel.replace(/^[a-z]{2}\//, '');
@@ -168,7 +176,7 @@ ${showcase(lang)}
         const sTop = lanes ? [...new Set(lanes.flatMap(([, tl]) => tl.S || []))] : (D.tierList.S || []);
         const src = D.tierSource || {};
         const tlPeriod = D.patch ? period : src.patch ? fill(t.patchLbl, { v: src.patch }) : period;
-        const tqa = [[tt('tl_q', { g: g.name }), tt('tl_a', { list: listOf(sTop.slice(0, 10)) })]];
+        const tqa = [[tt(g.kind === 'bs' ? 'tl_q_bs' : g.kind === 'ff' ? 'tl_q_ff' : 'tl_q', { g: g.name }), tt(g.kind === 'bs' ? 'tl_a_bs' : g.kind === 'ff' ? 'tl_a_ff' : 'tl_a', { list: listOf(sTop.slice(0, 10)) })]];
         const tbody = `<section><h1>${esc(tt('tl_h1', { g: g.name }))} <span class="tlper">${esc(tlPeriod)}</span></h1><p class="lead">${esc(tt(g.kind === 'bs' ? 'tl_intro_bs' : g.kind === 'ff' ? 'tl_intro_ff' : 'tl_intro', { src: src.name || '' }))}</p>
 <p class="note">${esc(t.tl_src)}: ${src.url ? `<a href="${esc(src.url)}" rel="nofollow noopener" target="_blank">${esc(src.name)}</a>` : esc(src.name || '')} · ${esc(src.date || D.updated)}</p></section>
 ${lanes ? lanes.map(([lane, tl]) => `<section><h2>${esc(t['tl_lane_' + lane] || lane)}</h2><div class="card tiers">${rows(tl)}</div></section>`).join('') : `<section><div class="card tiers">${rows(D.tierList)}</div></section>`}
@@ -388,13 +396,14 @@ ${G.sections.map((sec, i) => `<h2 id="s${i + 1}">${esc(sec.h)}</h2><ol>${sec.ste
 
   /* Privacy, About & Contact */
   const PRIVACY_DATE = '2026-10-22';
-  const mail = `<a href="mailto:${esc(cfg.contactEmail)}">${esc(cfg.contactEmail)}</a>`;
+  // email_off: Cloudflare Email Obfuscation must not hide the address from visitors without JS, reviewers and crawlers
+  const mail = `<!--email_off--><a href="mailto:${esc(cfg.contactEmail)}">${esc(cfg.contactEmail)}</a><!--/email_off-->`;
   write(`${lang}/privacy/index.html`, layout({ lang, rel: `${lang}/privacy/`, title: `${t.privTitle} · ${cfg.siteName}`, desc: t.privBody[0],
     body: `<section class="prose"><h1>${esc(t.privTitle)}</h1><p class="muted">${esc(t.privDate)}: ${PRIVACY_DATE}</p>${t.privBody.map(p => `<p>${p}</p>`).join('')}<p>${esc(t.privP5)} ${mail}</p></section>` }));
   write(`${lang}/about/index.html`, layout({ lang, rel: `${lang}/about/`, title: `${t.aboutTitle} · ${cfg.siteName}`, desc: t.aboutBody[0],
     body: `<section class="prose"><h1>${esc(t.aboutTitle)}</h1>${t.aboutBody.map(p => `<p>${esc(p)}</p>`).join('')}${cfg.contactEmail ? `<p>${esc(t.contact)}: ${mail}</p>` : ''}</section>` }));
   write(`${lang}/contact/index.html`, layout({ lang, rel: `${lang}/contact/`, title: `${t.contactTitle} · ${cfg.siteName}`, desc: t.contactBody[0],
-    body: `<section class="prose"><h1>${esc(t.contactTitle)}</h1>${t.contactBody.map(p => `<p>${esc(p)}</p>`).join('')}<p><b>E-mail:</b> ${mail}</p><p><a class="btn" href="mailto:${esc(cfg.contactEmail)}?subject=PickRadar">${esc(t.emailUs)}</a></p><p><a href="/${lang}/about/">${esc(t.about)}</a> · <a href="/${lang}/privacy/">${esc(t.privacy)}</a></p></section>` }));
+    body: `<section class="prose"><h1>${esc(t.contactTitle)}</h1>${t.contactBody.map(p => `<p>${esc(p)}</p>`).join('')}<p><b>E-mail:</b> ${mail}</p><p><!--email_off--><a class="btn" href="mailto:${esc(cfg.contactEmail)}?subject=PickRadar">${esc(t.emailUs)}</a><!--/email_off--></p><p><a href="/${lang}/about/">${esc(t.about)}</a> · <a href="/${lang}/privacy/">${esc(t.privacy)}</a></p></section>` }));
 }
 
 /* Root, assets, SEO files */

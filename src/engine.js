@@ -166,7 +166,9 @@
       antidash: y => y.t.includes('d'), antitank: y => y.r === 'tank', antisquishy: y => y.r === 'mage' || y.r === 'marksman',
       antiheal: y => y.t.includes('h'), antiburst: y => y.t.includes('b'), antimm: y => y.r === 'marksman', anticc: y => y.t.includes('c')
     };
-    return h.s.filter(k => test[k]);
+    const out = h.s.filter(k => test[k]);
+    /* 'squishy mages and marksmen' already covers marksmen */
+    return out.includes('antisquishy') ? out.filter(k => k !== 'antimm') : out;
   }
 
   /* Does hero x counter hero y (by x's strengths vs y's role/traits)? */
@@ -294,6 +296,13 @@
       if (best && bestV >= 0.9) why.push({ k: 'bw_counter', cls: best });
       if (b.s.includes('antitank') && ec.tank) { s += ec.tank; if (!why.some(w => w.cls === 'tank')) why.push({ k: 'bw_counter', cls: 'tank' }); }
       if (b.s.includes('antiassassin') && ec.assassin) { s += ec.assassin; if (!why.some(w => w.cls === 'assassin')) why.push({ k: 'bw_counter', cls: 'assassin' }); }
+      /* Reverse matchup: an enemy whose class or strengths beat this pick lowers it (e.g. anti-tank Shelly against tanks). */
+      for (const n of enemy) {
+        const e = B[n]; if (!e) continue;
+        s -= Math.max(0, (BS_MATCH[e.c] || {})[b.c] || 0) * 0.5;
+        if (b.c === 'tank' && e.s.includes('antitank')) s -= 1;
+        if (b.c === 'assassin' && e.s.includes('antiassassin')) s -= 1;
+      }
       if (mode && BS_MODES[mode]) {
         const m = BS_MODES[mode][b.c] || 0; s += m;
         if (m >= 1) why.push({ k: 'bw_mode', mode });

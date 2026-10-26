@@ -15,7 +15,7 @@ Official sources (re-read them; policies change and the publisher is responsible
 The maintenance bot re-reads these pages once a week (on Mondays) and updates this file when a rule changed,
 noting the change and date in docs/AUDIT_LOG.md (copy any change to the DutyLens POLICY.md too).
 
-Last reviewed against the official pages: 2026-10-21.
+Last reviewed against the official pages: 2026-10-26 (AdSense Program policies: page dated 2026-08-04, no change; spam policies: updated 2026-08-28; helpful content: updated 2026-10-05; EEA/UK/CH consent: no change).
 
 ## 1. Content: what Google approves
 - Original, accurate, useful content written for people. Every page must answer the visitor's question better than
@@ -40,6 +40,9 @@ Last reviewed against the official pages: 2026-10-21.
 - **Game IP**: PickRadar is an unofficial fan site. Keep the "not affiliated with" notice; never imply an official
   link with Moonton, Tencent, Riot, Garena or Supercell; no ripped game assets beyond fair, small references; no
   cheats, hacks, mods, account selling or top-up schemes (Publisher Policies: dishonest behaviour).
+- **Manipulating AI answers**: the spam policies (updated 2026-08-28) count attempts to manipulate generative AI
+  responses in Google Search (AI Overviews, AI Mode) as spam. llms.txt, FAQ blocks and structured data only summarise
+  what the visible page says; no text written for AI systems that people cannot see.
 - **Link spam**: no paid or exchanged links; any sponsored link gets rel="sponsored".
 
 ## 3. Trust signals (Who / How / Why)
@@ -47,6 +50,10 @@ Last reviewed against the official pages: 2026-10-21.
 - Explain where data comes from (official patch notes, game data) and which patch it reflects.
 - Disclose automation: news posts and guides are drafted with AI assistance and checked against official sources;
   keep that note on the About page and under every post. Never invent authors, credentials, reviews or quotes.
+- Helpful content guidance (updated 2026-10-05): never fabricate creator identities (made-up names, AI headshots,
+  false credentials); bylines only where accurate. The AI note should say how automation was used and why (e.g. drafted
+  with AI, figures checked against named official sources). Mass AI text without human oversight counts as
+  "little to no effort".
 - Privacy policy explains ads, cookies and consent. Keep it accurate.
 
 ## 4. Ads (when AdSense is live)
