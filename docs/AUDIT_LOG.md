@@ -2,6 +2,12 @@
 
 Technical SEO, AI visibility, usability and ad-readiness checks. Content (patch news, guides) is handled by the weekly bot (UPDATING.md).
 
+## 2026-10-28
+**Checked:** `node build.js` (2,935 pages, OK); static audit (0 broken internal links, JSON-LD valid, canonical everywhere except 404, no template leaks such as undefined/NaN, no future dates); live: root, EN/TR/ID homes, game hubs, tier lists (sources match About), news, About/Privacy/Contact, robots.txt, sitemap, llms.txt (= build), ads.txt (valid); 40 random sitemap URLs (200, canonical = URL, hreflang present); headless 360 px run: no JS errors, no overflow.
+**Fixed:** nothing needed.
+**AdSense readiness:** ~35%. Blockers unchanged: (1) ~2,800 template hero/brawler/character pages vs ~18 articles per language; (2) About does not name who runs the site; (3) tool pages mostly JS; (4) CMP not live.
+**Proposals (owner decides):** there is no Terms of use page (not required by AdSense, but a common trust page; adding it needs a footer link = template change, so not done); name a person or business on About.
+
 ## 2026-10-26
 **Checked:** `node build.js` (2,935 pages, OK). Monday policy re-read (see DutyLens log: spam policies 2026-08-28 add manipulating AI answers; helpful content 2026-10-05 on creator identity and AI disclosure); POLICY.md updated. Live site checked by an independent reviewer subagent (canonical, hreflang, OG, JSON-LD valid, real 404, ads.txt valid) and compared with own build audit.
 **Fixed:**
