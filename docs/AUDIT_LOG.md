@@ -2,6 +2,12 @@
 
 Technical SEO, AI visibility, usability and ad-readiness checks. Content (patch news, guides) is handled by the weekly bot (UPDATING.md).
 
+## 2026-11-02 (maintenance bot)
+**Checked:** `node build.js` (2,950 pages, OK); static audit (0 broken internal links, JSON-LD valid, canonical on every page, no undefined/NaN); live: all 2,950 sitemap URLs return 200, today's weekly update (Wild Rift 7.3d, Shyvana) is deployed; headless 360 px run on home, MLBB hub/draft/tier list/Brody, TR home, news, About/Privacy/Contact and random tr/id/es/en hero pages: no JS errors, no horizontal overflow, real 404; ads.txt matches the pub ID in the page code. Monday re-read of the six Google pages: no rule change (POLICY.md date updated).
+**Fixed:** nothing needed.
+**AdSense readiness:** ~35%. Blockers unchanged: (1) ~2,800 template hero/brawler/character pages vs ~20 articles per language (rejected 25 Oct for "low value content"); (2) About does not name who runs the site; (3) tool pages mostly JS; (4) CMP not live.
+**Proposals (owner decides):** name a person or business on About; Terms of use page (needs a footer link = template change, not done).
+
 ## 2026-11-02 (weekly content bot)
 **Changed pages with possible impressions (additive only, no title/URL/structure changes):** kit summaries (`sd`) added to MLBB Barats, Sun, Valir, Brody, Layla, Balmond, Lunox, Arlott, Vexana, Lylia and Wild Rift Tristana, Zed, Lucian, Xayah, Yunara, Jayce, Shyvana; MLBB tiers refreshed from mlbbhub (Nov 1, 19 heroes moved); Valir build/emblem and Shyvana build/rune (AD bruiser, per 7.3d guides) set on their hero pages. Check these pages in Search Console around 2026-11-09.
 

@@ -25,7 +25,7 @@ Official sources (re-read them; policies change and the publisher is responsible
 The maintenance bot re-reads these pages once a week (on Mondays) and updates this file when a rule changed,
 noting the change and date in docs/AUDIT_LOG.md (copy any change to the DutyLens POLICY.md too).
 
-Last reviewed against the official pages: 2026-10-26 (AdSense Program policies: page dated 2026-08-04, no change; spam policies: updated 2026-08-28; helpful content: updated 2026-10-05; EEA/UK/CH consent: no change).
+Last reviewed against the official pages: 2026-11-02 (all six pages re-read: AdSense Program policies dated 2026-08-04, spam policies 2026-08-28, helpful content 2026-10-05, Publisher Policies / eligibility / EEA-UK-CH consent: no change since the 2026-10-26 review).
 
 ## 1. Content: what Google approves
 - Original, accurate, useful content written for people. Every page must answer the visitor's question better than
