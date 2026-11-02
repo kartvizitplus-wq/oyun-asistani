@@ -2,6 +2,9 @@
 
 Technical SEO, AI visibility, usability and ad-readiness checks. Content (patch news, guides) is handled by the weekly bot (UPDATING.md).
 
+## 2026-11-02 (weekly content bot)
+**Changed pages with possible impressions (additive only, no title/URL/structure changes):** kit summaries (`sd`) added to MLBB Barats, Sun, Valir, Brody, Layla, Balmond, Lunox, Arlott, Vexana, Lylia and Wild Rift Tristana, Zed, Lucian, Xayah, Yunara, Jayce, Shyvana; MLBB tiers refreshed from mlbbhub (Nov 1, 19 heroes moved); Valir build/emblem and Shyvana build/rune (AD bruiser, per 7.3d guides) set on their hero pages. Check these pages in Search Console around 2026-11-09.
+
 ## 2026-10-28
 **Checked:** `node build.js` (2,935 pages, OK); static audit (0 broken internal links, JSON-LD valid, canonical everywhere except 404, no template leaks such as undefined/NaN, no future dates); live: root, EN/TR/ID homes, game hubs, tier lists (sources match About), news, About/Privacy/Contact, robots.txt, sitemap, llms.txt (= build), ads.txt (valid); 40 random sitemap URLs (200, canonical = URL, hreflang present); headless 360 px run: no JS errors, no overflow.
 **Fixed:** nothing needed.

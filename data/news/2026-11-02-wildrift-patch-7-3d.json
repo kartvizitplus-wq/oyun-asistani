@@ -1,0 +1,388 @@
+{
+ "type": "patch",
+ "slug": "wildrift-patch-7-3d",
+ "date": "2026-11-02",
+ "game": "wildrift",
+ "sources": [
+  "Riot Games official Wild Rift patch notes 7.3d (October 28, 2026)",
+  "riftpatchnotes.com 7.3d summary and Shyvana change history",
+  "wildriftguides.com tier list (patch 7.3d, October 29, 2026)",
+  "wr-meta.com Shyvana statistics (patch 7.3d, November 2, 2026)"
+ ],
+ "title": {
+  "tr": "Wild Rift 7.3d yaması: Shyvana yeniden ayarlandı, Malphite ve Singed zayıfladı, kule dalışları ucuzladı",
+  "en": "Wild Rift patch 7.3d: Shyvana retuned, Malphite and Singed nerfed, tower dives get cheaper",
+  "id": "Patch Wild Rift 7.3d: Shyvana dirombak angkanya, Malphite dan Singed di-nerf, dive tower jadi lebih murah",
+  "es": "Parche 7.3d de Wild Rift: Shyvana reajustada, Malphite y Singed bajan y los dives a torre salen más baratos",
+  "pt": "Patch 7.3d de Wild Rift: Shyvana reajustada, Malphite e Singed enfraquecem e dives em torre ficam mais baratos"
+ },
+ "summary": {
+  "tr": "28 Ekim'de gelen 7.3d; Shyvana'nın insan formunu güçlendirip geç oyun tavanını düşürdü, Lee Sin, Akali ve Camille'e seviye başına saldırı hızı verdi, Malphite, Singed, Samira ve Ashe'yi zayıflattı. Essence Reaver ve Fiendhunter Bolts güçlendi, Stormrazor ile iki büyücü desteği iteminin iyileştirme gücü düştü.",
+  "en": "Released October 28, patch 7.3d makes Shyvana's human form stronger while lowering her ceiling, gives Lee Sin, Akali and Camille more attack speed per level, and nerfs Malphite, Singed, Samira and Ashe. Essence Reaver and Fiendhunter Bolts get better; Stormrazor and two enchanter items lose power.",
+  "id": "Rilis 28 Oktober, patch 7.3d memperkuat human form Shyvana sambil menurunkan batas atasnya, memberi Lee Sin, Akali, dan Camille attack speed per level lebih besar, serta me-nerf Malphite, Singed, Samira, dan Ashe. Essence Reaver dan Fiendhunter Bolts naik, Stormrazor dan dua item enchanter turun.",
+  "es": "Publicado el 28 de octubre, el 7.3d refuerza la forma humana de Shyvana y baja su techo, da más velocidad de ataque por nivel a Lee Sin, Akali y Camille y debilita a Malphite, Singed, Samira y Ashe. Essence Reaver y Fiendhunter Bolts mejoran; Stormrazor y dos objetos de encantador pierden fuerza.",
+  "pt": "Lançado em 28 de outubro, o 7.3d fortalece a forma humana de Shyvana e reduz o teto dela, dá mais velocidade de ataque por nível a Lee Sin, Akali e Camille e enfraquece Malphite, Singed, Samira e Ashe. Essence Reaver e Fiendhunter Bolts melhoram; Stormrazor e dois itens de encantador perdem força."
+ },
+ "body": {
+  "en": [
+   {
+    "p": "Riot released 7.3d on October 28, 2026, the third follow-up to patch 7.3. It is a balance patch with no new systems: one big Shyvana pass, attack speed growth for three melee champions, a handful of nerfs, small item changes and a quieter change to how turrets and minions behave. Riot notes that some content arrives during the patch rather than on day one."
+   },
+   {
+    "h": "Shyvana: stronger early, lower ceiling"
+   },
+   {
+    "p": "Riot's stated goal is to make her human form better and her fully stacked late game less oppressive. In practice it is a buff for most players, because the gains come in every game while the losses only show once she is far ahead."
+   },
+   {
+    "ul": [
+     "Health per level 120 → 130, health regen per level 9 → 12, attack speed per level 0.012 → 0.024.",
+     "Shorter cooldowns: Twin Bite 8.5/7.5/6.5/5.5s → 7/6.5/6/5.5s, Burnout 13/12/11/10s → 12/11/10/9s, Flame Breath 11/10/9/8s → 10/9/8/7s.",
+     "Flame Breath ratio 30% AD + 40% AP → 50% AD + 80% AP; the Dragon Form detonation 50% AD + 70% AP → 100% AD + 100% AP; Dragon Form scorched earth 10% → 15% AD.",
+     "Nerfs: Wings of the Cloud bonus movement speed 25% → 15%, and the Life of the Ocean omnivamp on Dragon's Descent 20% → 10%."
+    ]
+   },
+   {
+    "h": "Buffs"
+   },
+   {
+    "ul": [
+     "Lee Sin: attack speed per level 0.02 → 0.04, and Dragon's Rage base damage 125/350/575 → 150/375/600.",
+     "Akali: attack speed per level 0.02 → 0.04 and base armor 34 → 37, which helps her survive early trades in mid lane.",
+     "Camille: attack speed per level 0.016 → 0.028.",
+     "Miss Fortune: Love Tap bonus AD multiplier 40% → 50%, and Bullet Time crit scaling 130–139% → 135–145.5%."
+    ]
+   },
+   {
+    "h": "Nerfs"
+   },
+   {
+    "ul": [
+     "Malphite: Granite Shield 11% → 10% max health, and Thunderclap's first attack 40/60/80/100 → 30/45/60/75 base damage with its armor ratio cut from 30% to 20%. Armor-stacking Malphite loses the most.",
+     "Singed: health 690 → 660, movement speed 355 → 350, Mega Adhesive cooldown 11s → 14/13/12/11s, Fling cooldown 12s → 13s.",
+     "Samira: Flair 125% → 115% AD, Inferno Trigger 50% → 45% AD.",
+     "Ashe: Frost Shot's crit-based bonus damage on basic attacks 0–130% → 0–123.5%.",
+     "Ekko: Z-Drive Resonance 120% → 110% and Timewinder 115% → 100% damage against monsters, so jungle Ekko clears more slowly while mid Ekko is untouched."
+    ]
+   },
+   {
+    "h": "Nasus adjustment"
+   },
+   {
+    "p": "Base attack damage goes from 58 to 62 and Fury of the Sands gives more armor and magic resist at ranks 2 and 3 (40/50/60 → 40/55/70), but Spirit Fire loses base damage (55/110/165/220 → 50/90/130/170). He farms Siphoning Strike stacks a little more easily and becomes tankier in his ultimate, at the cost of wave clear and poke."
+   },
+   {
+    "h": "Items"
+   },
+   {
+    "ul": [
+     "Essence Reaver: attack damage 50 → 55.",
+     "Fiendhunter Bolts: Opening Barrage crit damage 80% → 85% and true damage 15% → 17.5%.",
+     "Divine Sunderer: price 3400 → 3300.",
+     "Stormrazor: Bolt damage 120 → 100 and its movement speed 45% → 35%.",
+     "Whispering Circlet and Diadem of Songs: heal and shield power 8% → 6%."
+    ]
+   },
+   {
+    "h": "Turrets, minions and ARAM"
+   },
+   {
+    "p": "Turret shots on the same target ramp up less: the multiplier on consecutive hits goes from 100/150/215/300% to 100/150/210/270%, so the fourth shot of a dive hurts noticeably less. Minions empowered by Hand of Baron take less damage from champions, minions and turrets, and the team that is ahead gets sturdier minions in general. In ARAM, several augments such as Violet Toxin and Chromacrash Series were toned down and Crimson Burst got a shorter cooldown."
+   },
+   {
+    "h": "Our take"
+   },
+   {
+    "p": "Shyvana is the change to watch. wr-meta already shows her at a 52.8% win rate on 7.3d, and wildriftguides placed her in its S tier for the jungle on October 29; our own tier list still uses WildRiftCore's list from before this patch, which had her at C, and we will update it when that list is refreshed. Essence Reaver and Fiendhunter Bolts are both core items in the Smolder build on our site, so the S+ Dragon laner gets a quiet buff. In the support role, the heal and shield cut on Whispering Circlet and Diadem of Songs makes enchanters slightly weaker in long fights. The turret change rewards early dives, which suits Lee Sin's new attack speed growth and the stronger Hand of Baron push."
+   }
+  ],
+  "tr": [
+   {
+    "p": "Riot, 7.3 yamasının üçüncü ara güncellemesi olan 7.3d'yi 28 Ekim 2026'da yayınladı. Yeni bir sistem yok: büyük bir Shyvana ayarı, üç yakın dövüşçüye seviye başına saldırı hızı, birkaç zayıflatma, küçük item değişiklikleri ve kulelerle minyonların davranışına dair daha sessiz bir düzenleme var. Riot, bazı içeriklerin ilk gün değil, yama süresince geleceğini belirtiyor."
+   },
+   {
+    "h": "Shyvana: erken oyunda daha güçlü, tavanı daha düşük"
+   },
+   {
+    "p": "Riot'un hedefi insan formunu iyileştirmek ve tüm yükleri dolmuş geç oyun hâlini daha az bunaltıcı yapmak. Pratikte çoğu oyuncu için bu bir güçlendirme; çünkü kazançlar her maçta hissedilirken kayıplar ancak çok öndeyken ortaya çıkıyor."
+   },
+   {
+    "ul": [
+     "Seviye başına can 120 → 130, can yenilenmesi 9 → 12, saldırı hızı 0.012 → 0.024.",
+     "Daha kısa bekleme süreleri: Twin Bite 8.5/7.5/6.5/5.5 sn → 7/6.5/6/5.5 sn, Burnout 13/12/11/10 sn → 12/11/10/9 sn, Flame Breath 11/10/9/8 sn → 10/9/8/7 sn.",
+     "Flame Breath oranı %30 AD + %40 AP → %50 AD + %80 AP; Dragon Form patlaması %50 AD + %70 AP → %100 AD + %100 AP; Dragon Form yanık zemini %10 → %15 AD.",
+     "Zayıflatmalar: Wings of the Cloud ek hareket hızı %25 → %15, Dragon's Descent'teki Life of the Ocean omnivamp'ı %20 → %10."
+    ]
+   },
+   {
+    "h": "Güçlendirmeler"
+   },
+   {
+    "ul": [
+     "Lee Sin: seviye başına saldırı hızı 0.02 → 0.04, Dragon's Rage taban hasarı 125/350/575 → 150/375/600.",
+     "Akali: seviye başına saldırı hızı 0.02 → 0.04 ve taban zırh 34 → 37; orta koridordaki erken takaslarda daha dayanıklı.",
+     "Camille: seviye başına saldırı hızı 0.016 → 0.028.",
+     "Miss Fortune: Love Tap ek AD çarpanı %40 → %50, Bullet Time kritik ölçeklemesi %130–139 → %135–145.5."
+    ]
+   },
+   {
+    "h": "Zayıflatmalar"
+   },
+   {
+    "ul": [
+     "Malphite: Granite Shield maksimum canın %11'i → %10'u; Thunderclap'in ilk saldırısı 40/60/80/100 → 30/45/60/75 taban hasar ve zırh oranı %30 → %20. En çok zırh kasan Malphite kaybediyor.",
+     "Singed: can 690 → 660, hareket hızı 355 → 350, Mega Adhesive bekleme süresi 11 sn → 14/13/12/11 sn, Fling 12 sn → 13 sn.",
+     "Samira: Flair %125 → %115 AD, Inferno Trigger %50 → %45 AD.",
+     "Ashe: Frost Shot'un temel saldırılara eklediği kritik bazlı hasar %0–130 → %0–123.5.",
+     "Ekko: canavarlara karşı Z-Drive Resonance %120 → %110, Timewinder %115 → %100. Orman Ekko'su daha yavaş temizliyor, orta koridor Ekko'su etkilenmiyor."
+    ]
+   },
+   {
+    "h": "Nasus ayarı"
+   },
+   {
+    "p": "Taban saldırı gücü 58'den 62'ye çıktı, Fury of the Sands 2. ve 3. seviyede daha çok zırh ve büyü direnci veriyor (40/50/60 → 40/55/70). Buna karşılık Spirit Fire taban hasar kaybetti (55/110/165/220 → 50/90/130/170). Siphoning Strike yüklerini biraz daha kolay kasıyor ve ultisinde daha sağlam, ama dalga temizliği ve dürtme gücü azaldı."
+   },
+   {
+    "h": "İtemler"
+   },
+   {
+    "ul": [
+     "Essence Reaver: saldırı gücü 50 → 55.",
+     "Fiendhunter Bolts: Opening Barrage kritik hasarı %80 → %85, gerçek hasar %15 → %17.5.",
+     "Divine Sunderer: fiyat 3400 → 3300.",
+     "Stormrazor: Bolt hasarı 120 → 100, hareket hızı %45 → %35.",
+     "Whispering Circlet ve Diadem of Songs: iyileştirme ve kalkan gücü %8 → %6."
+    ]
+   },
+   {
+    "h": "Kuleler, minyonlar ve ARAM"
+   },
+   {
+    "p": "Kulenin aynı hedefe art arda attığı atışlar daha yavaş artıyor: çarpan %100/150/215/300'den %100/150/210/270'e indi, yani bir dalışta dördüncü atış belirgin şekilde daha az acıtıyor. Hand of Baron ile güçlenen minyonlar şampiyonlardan, minyonlardan ve kulelerden daha az hasar alıyor; öndeki takımın minyonları da genel olarak daha dayanıklı. ARAM'da Violet Toxin ve Chromacrash Series gibi bazı augment'ler zayıfladı, Crimson Burst'ün bekleme süresi kısaldı."
+   },
+   {
+    "h": "Bizim yorumumuz"
+   },
+   {
+    "p": "Asıl takip edilmesi gereken Shyvana. wr-meta 7.3d'de onu şimdiden %52.8 kazanma oranında gösteriyor, wildriftguides de 29 Ekim'de onu orman için S seviyesinde gösterdi. Bizim seviye listemiz hâlâ WildRiftCore'un yama öncesi listesini kullanıyor ve orada C'de; o liste yenilendiğinde biz de güncelleyeceğiz. Essence Reaver ve Fiendhunter Bolts sitemizdeki Smolder buildinin temel itemleri, yani S+ ejderha koridoru oyuncusu sessizce güçlendi. Destek rolünde Whispering Circlet ve Diadem of Songs'taki kesinti, büyücü destekleri uzun savaşlarda biraz zayıflatıyor. Kule değişikliği erken dalışları ödüllendiriyor; bu da Lee Sin'in yeni saldırı hızı artışıyla ve güçlenen Hand of Baron baskısıyla iyi uyuşuyor."
+   }
+  ],
+  "id": [
+   {
+    "p": "Riot merilis 7.3d pada 28 Oktober 2026, update lanjutan ketiga dari patch 7.3. Tidak ada sistem baru: ada penyesuaian besar untuk Shyvana, attack speed per level untuk tiga champion melee, beberapa nerf, perubahan item kecil, dan perubahan tenang pada perilaku turret dan minion. Riot menyebut sebagian konten akan dirilis selama patch berjalan, bukan di hari pertama."
+   },
+   {
+    "h": "Shyvana: lebih kuat di awal, batas atas lebih rendah"
+   },
+   {
+    "p": "Tujuan Riot adalah membuat human form-nya lebih baik dan late game saat stack penuh tidak terlalu menekan. Untuk sebagian besar pemain ini tetap buff, karena keuntungannya terasa di setiap game, sedangkan kerugiannya baru terlihat ketika ia sudah unggul jauh."
+   },
+   {
+    "ul": [
+     "Health per level 120 → 130, health regen per level 9 → 12, attack speed per level 0.012 → 0.024.",
+     "Cooldown lebih pendek: Twin Bite 8.5/7.5/6.5/5.5 dtk → 7/6.5/6/5.5 dtk, Burnout 13/12/11/10 dtk → 12/11/10/9 dtk, Flame Breath 11/10/9/8 dtk → 10/9/8/7 dtk.",
+     "Rasio Flame Breath 30% AD + 40% AP → 50% AD + 80% AP; ledakan Dragon Form 50% AD + 70% AP → 100% AD + 100% AP; area terbakar Dragon Form 10% → 15% AD.",
+     "Nerf: bonus movement speed Wings of the Cloud 25% → 15%, omnivamp Life of the Ocean pada Dragon's Descent 20% → 10%."
+    ]
+   },
+   {
+    "h": "Buff"
+   },
+   {
+    "ul": [
+     "Lee Sin: attack speed per level 0.02 → 0.04, base damage Dragon's Rage 125/350/575 → 150/375/600.",
+     "Akali: attack speed per level 0.02 → 0.04 dan base armor 34 → 37, membantunya bertahan saat trade awal di mid lane.",
+     "Camille: attack speed per level 0.016 → 0.028.",
+     "Miss Fortune: pengali bonus AD Love Tap 40% → 50%, scaling crit Bullet Time 130–139% → 135–145.5%."
+    ]
+   },
+   {
+    "h": "Nerf"
+   },
+   {
+    "ul": [
+     "Malphite: Granite Shield 11% → 10% max health, serangan pertama Thunderclap 40/60/80/100 → 30/45/60/75 base damage dan rasio armor 30% → 20%. Malphite full armor paling dirugikan.",
+     "Singed: health 690 → 660, movement speed 355 → 350, cooldown Mega Adhesive 11 dtk → 14/13/12/11 dtk, Fling 12 dtk → 13 dtk.",
+     "Samira: Flair 125% → 115% AD, Inferno Trigger 50% → 45% AD.",
+     "Ashe: bonus damage berbasis crit dari Frost Shot pada basic attack 0–130% → 0–123.5%.",
+     "Ekko: damage ke monster dari Z-Drive Resonance 120% → 110% dan Timewinder 115% → 100%. Ekko jungle clear lebih lambat, Ekko mid tidak berubah."
+    ]
+   },
+   {
+    "h": "Penyesuaian Nasus"
+   },
+   {
+    "p": "Base attack damage naik dari 58 ke 62 dan Fury of the Sands memberi armor dan magic resist lebih besar di rank 2 dan 3 (40/50/60 → 40/55/70), tetapi base damage Spirit Fire turun (55/110/165/220 → 50/90/130/170). Ia sedikit lebih mudah farming stack Siphoning Strike dan lebih tebal saat ultimate, dengan harga wave clear dan poke yang lebih lemah."
+   },
+   {
+    "h": "Item"
+   },
+   {
+    "ul": [
+     "Essence Reaver: attack damage 50 → 55.",
+     "Fiendhunter Bolts: crit damage Opening Barrage 80% → 85%, true damage 15% → 17.5%.",
+     "Divine Sunderer: harga 3400 → 3300.",
+     "Stormrazor: damage Bolt 120 → 100, movement speed 45% → 35%.",
+     "Whispering Circlet dan Diadem of Songs: heal and shield power 8% → 6%."
+    ]
+   },
+   {
+    "h": "Turret, minion, dan ARAM"
+   },
+   {
+    "p": "Tembakan turret beruntun ke target yang sama naik lebih pelan: pengalinya turun dari 100/150/215/300% menjadi 100/150/210/270%, jadi tembakan keempat saat dive terasa jauh lebih ringan. Minion yang diperkuat Hand of Baron menerima damage lebih kecil dari champion, minion, dan turret, dan minion tim yang unggul secara umum lebih tahan. Di ARAM, beberapa augment seperti Violet Toxin dan Chromacrash Series dilemahkan, sedangkan cooldown Crimson Burst dipercepat."
+   },
+   {
+    "h": "Pendapat kami"
+   },
+   {
+    "p": "Shyvana adalah perubahan yang paling layak diawasi. wr-meta sudah mencatat win rate 52.8% untuknya di 7.3d, dan wildriftguides menempatkannya di tier S jungle pada 29 Oktober. Tier list kami masih memakai daftar WildRiftCore dari sebelum patch ini, yang menempatkannya di C, dan akan kami perbarui saat daftar itu diperbarui. Essence Reaver dan Fiendhunter Bolts adalah item inti di build Smolder di situs kami, jadi Dragon laner S+ ini ikut mendapat buff diam-diam. Di role support, pemotongan heal dan shield pada Whispering Circlet dan Diadem of Songs membuat enchanter sedikit lebih lemah di fight panjang. Perubahan turret menguntungkan dive awal, cocok dengan attack speed baru Lee Sin dan push Hand of Baron yang lebih kuat."
+   }
+  ],
+  "es": [
+   {
+    "p": "Riot publicó el 7.3d el 28 de octubre de 2026, la tercera actualización menor del parche 7.3. No trae sistemas nuevos: un ajuste grande a Shyvana, más velocidad de ataque por nivel para tres campeones cuerpo a cuerpo, unos cuantos debilitamientos, pequeños cambios de objetos y un cambio más discreto en el comportamiento de torres y súbditos. Riot avisa de que parte del contenido llega durante el parche y no el primer día."
+   },
+   {
+    "h": "Shyvana: más fuerte al principio, con menos techo"
+   },
+   {
+    "p": "El objetivo declarado de Riot es mejorar su forma humana y hacer menos abrumador su final de partida con todas las cargas. En la práctica es una mejora para la mayoría, porque las ganancias se notan en cada partida y las pérdidas solo aparecen cuando ya va muy por delante."
+   },
+   {
+    "ul": [
+     "Vida por nivel 120 → 130, regeneración de vida por nivel 9 → 12, velocidad de ataque por nivel 0.012 → 0.024.",
+     "Enfriamientos más cortos: Twin Bite 8.5/7.5/6.5/5.5 s → 7/6.5/6/5.5 s, Burnout 13/12/11/10 s → 12/11/10/9 s, Flame Breath 11/10/9/8 s → 10/9/8/7 s.",
+     "Escalado de Flame Breath 30% AD + 40% AP → 50% AD + 80% AP; la detonación en Dragon Form 50% AD + 70% AP → 100% AD + 100% AP; el suelo quemado en Dragon Form 10% → 15% AD.",
+     "Debilitamientos: la velocidad de movimiento extra de Wings of the Cloud baja del 25% al 15% y el omnivamp de Life of the Ocean en Dragon's Descent del 20% al 10%."
+    ]
+   },
+   {
+    "h": "Mejoras"
+   },
+   {
+    "ul": [
+     "Lee Sin: velocidad de ataque por nivel 0.02 → 0.04 y daño base de Dragon's Rage 125/350/575 → 150/375/600.",
+     "Akali: velocidad de ataque por nivel 0.02 → 0.04 y armadura base 34 → 37, lo que la ayuda a aguantar los primeros intercambios en la línea central.",
+     "Camille: velocidad de ataque por nivel 0.016 → 0.028.",
+     "Miss Fortune: multiplicador de AD adicional de Love Tap 40% → 50% y escalado con crítico de Bullet Time 130–139% → 135–145.5%."
+    ]
+   },
+   {
+    "h": "Debilitamientos"
+   },
+   {
+    "ul": [
+     "Malphite: Granite Shield pasa del 11% al 10% de la vida máxima, y el primer golpe de Thunderclap baja de 40/60/80/100 a 30/45/60/75 de daño base con su escalado de armadura del 30% al 20%. El Malphite de pura armadura es el que más pierde.",
+     "Singed: vida 690 → 660, velocidad de movimiento 355 → 350, enfriamiento de Mega Adhesive 11 s → 14/13/12/11 s, Fling 12 s → 13 s.",
+     "Samira: Flair 125% → 115% AD, Inferno Trigger 50% → 45% AD.",
+     "Ashe: el daño extra de Frost Shot en ataques básicos, basado en crítico, pasa de 0–130% a 0–123.5%.",
+     "Ekko: contra monstruos, Z-Drive Resonance 120% → 110% y Timewinder 115% → 100%. Ekko en la jungla limpia más lento; en la línea central no cambia."
+    ]
+   },
+   {
+    "h": "Ajuste de Nasus"
+   },
+   {
+    "p": "Su daño de ataque base sube de 58 a 62 y Fury of the Sands da más armadura y resistencia mágica en los rangos 2 y 3 (40/50/60 → 40/55/70), pero Spirit Fire pierde daño base (55/110/165/220 → 50/90/130/170). Acumula cargas de Siphoning Strike con algo más de facilidad y aguanta más en la definitiva, a cambio de peor limpieza de oleadas y menos hostigamiento."
+   },
+   {
+    "h": "Objetos"
+   },
+   {
+    "ul": [
+     "Essence Reaver: daño de ataque 50 → 55.",
+     "Fiendhunter Bolts: daño crítico de Opening Barrage 80% → 85% y daño verdadero 15% → 17.5%.",
+     "Divine Sunderer: precio 3400 → 3300.",
+     "Stormrazor: daño de Bolt 120 → 100 y velocidad de movimiento 45% → 35%.",
+     "Whispering Circlet y Diadem of Songs: poder de curación y escudos 8% → 6%."
+    ]
+   },
+   {
+    "h": "Torres, súbditos y ARAM"
+   },
+   {
+    "p": "Los disparos consecutivos de una torre al mismo objetivo crecen menos: el multiplicador pasa de 100/150/215/300% a 100/150/210/270%, así que el cuarto disparo de un dive duele bastante menos. Los súbditos potenciados por Hand of Baron reciben menos daño de campeones, súbditos y torres, y en general los del equipo que va por delante son más resistentes. En ARAM se rebajan varios aumentos como Violet Toxin y Chromacrash Series, y Crimson Burst recibe menos enfriamiento."
+   },
+   {
+    "h": "Nuestra opinión"
+   },
+   {
+    "p": "El cambio a vigilar es Shyvana. wr-meta ya la muestra con un 52.8% de victorias en el 7.3d y wildriftguides la situó en el tier S de la jungla el 29 de octubre. Nuestra tier list todavía usa la lista de WildRiftCore anterior a este parche, donde estaba en C, y la actualizaremos cuando esa lista se renueve. Essence Reaver y Fiendhunter Bolts son objetos clave de la build de Smolder en nuestra web, así que el tirador S+ de la línea del Dragón sale reforzado sin hacer ruido. En soporte, el recorte de curación y escudos en Whispering Circlet y Diadem of Songs debilita un poco a los encantadores en peleas largas. El cambio de torres premia los dives tempranos, algo que encaja con la nueva velocidad de ataque de Lee Sin y con el empuje más fuerte de Hand of Baron."
+   }
+  ],
+  "pt": [
+   {
+    "p": "A Riot lançou o 7.3d em 28 de outubro de 2026, a terceira atualização menor do patch 7.3. Não há sistemas novos: um ajuste grande em Shyvana, mais velocidade de ataque por nível para três campeões corpo a corpo, alguns nerfs, pequenas mudanças de itens e uma alteração mais discreta no comportamento de torres e tropas. A Riot avisa que parte do conteúdo chega ao longo do patch, e não no primeiro dia."
+   },
+   {
+    "h": "Shyvana: mais forte no início, com teto menor"
+   },
+   {
+    "p": "O objetivo da Riot é melhorar a forma humana dela e deixar menos opressivo o fim de jogo com todos os acúmulos. Na prática é um buff para a maioria, porque os ganhos aparecem em toda partida e as perdas só pesam quando ela já está muito na frente."
+   },
+   {
+    "ul": [
+     "Vida por nível 120 → 130, regeneração de vida por nível 9 → 12, velocidade de ataque por nível 0.012 → 0.024.",
+     "Recargas menores: Twin Bite 8.5/7.5/6.5/5.5 s → 7/6.5/6/5.5 s, Burnout 13/12/11/10 s → 12/11/10/9 s, Flame Breath 11/10/9/8 s → 10/9/8/7 s.",
+     "Escalonamento de Flame Breath 30% AD + 40% AP → 50% AD + 80% AP; a detonação na Dragon Form 50% AD + 70% AP → 100% AD + 100% AP; o chão queimado na Dragon Form 10% → 15% AD.",
+     "Nerfs: velocidade de movimento extra de Wings of the Cloud 25% → 15% e omnivamp de Life of the Ocean no Dragon's Descent 20% → 10%."
+    ]
+   },
+   {
+    "h": "Buffs"
+   },
+   {
+    "ul": [
+     "Lee Sin: velocidade de ataque por nível 0.02 → 0.04 e dano base de Dragon's Rage 125/350/575 → 150/375/600.",
+     "Akali: velocidade de ataque por nível 0.02 → 0.04 e armadura base 34 → 37, o que ajuda nas trocas iniciais na rota do meio.",
+     "Camille: velocidade de ataque por nível 0.016 → 0.028.",
+     "Miss Fortune: multiplicador de AD bônus do Love Tap 40% → 50% e escalonamento de crítico do Bullet Time 130–139% → 135–145.5%."
+    ]
+   },
+   {
+    "h": "Nerfs"
+   },
+   {
+    "ul": [
+     "Malphite: Granite Shield cai de 11% para 10% da vida máxima, e o primeiro golpe do Thunderclap vai de 40/60/80/100 para 30/45/60/75 de dano base, com o escalonamento de armadura de 30% para 20%. O Malphite full armadura é quem mais perde.",
+     "Singed: vida 690 → 660, velocidade de movimento 355 → 350, recarga do Mega Adhesive 11 s → 14/13/12/11 s, Fling 12 s → 13 s.",
+     "Samira: Flair 125% → 115% AD, Inferno Trigger 50% → 45% AD.",
+     "Ashe: o dano extra do Frost Shot nos ataques básicos, baseado em crítico, vai de 0–130% para 0–123.5%.",
+     "Ekko: contra monstros, Z-Drive Resonance 120% → 110% e Timewinder 115% → 100%. Ekko na selva limpa mais devagar; no meio nada muda."
+    ]
+   },
+   {
+    "h": "Ajuste em Nasus"
+   },
+   {
+    "p": "O dano de ataque base sobe de 58 para 62 e Fury of the Sands dá mais armadura e resistência mágica nos níveis 2 e 3 (40/50/60 → 40/55/70), mas Spirit Fire perde dano base (55/110/165/220 → 50/90/130/170). Ele acumula Siphoning Strike com um pouco mais de facilidade e fica mais resistente na ultimate, em troca de pior limpeza de onda e menos poke."
+   },
+   {
+    "h": "Itens"
+   },
+   {
+    "ul": [
+     "Essence Reaver: dano de ataque 50 → 55.",
+     "Fiendhunter Bolts: dano crítico do Opening Barrage 80% → 85% e dano verdadeiro 15% → 17.5%.",
+     "Divine Sunderer: preço 3400 → 3300.",
+     "Stormrazor: dano do Bolt 120 → 100 e velocidade de movimento 45% → 35%.",
+     "Whispering Circlet e Diadem of Songs: poder de cura e escudo 8% → 6%."
+    ]
+   },
+   {
+    "h": "Torres, tropas e ARAM"
+   },
+   {
+    "p": "Os tiros seguidos da torre no mesmo alvo crescem menos: o multiplicador passa de 100/150/215/300% para 100/150/210/270%, então o quarto tiro de um dive dói bem menos. As tropas fortalecidas pela Hand of Baron recebem menos dano de campeões, tropas e torres, e as tropas do time que está na frente ficam mais resistentes em geral. No ARAM, vários aprimoramentos como Violet Toxin e Chromacrash Series foram reduzidos, e Crimson Burst ganhou recarga menor."
+   },
+   {
+    "h": "Nossa análise"
+   },
+   {
+    "p": "A mudança a acompanhar é Shyvana. O wr-meta já mostra 52.8% de vitórias para ela no 7.3d, e o wildriftguides a colocou no tier S da selva em 29 de outubro. Nossa tier list ainda usa a lista do WildRiftCore anterior a este patch, onde ela estava em C, e vamos atualizá-la quando essa lista for renovada. Essence Reaver e Fiendhunter Bolts são itens centrais da build de Smolder no nosso site, então o atirador S+ da rota do Dragão ganha um buff silencioso. No suporte, o corte de cura e escudo em Whispering Circlet e Diadem of Songs deixa os encantadores um pouco mais fracos em lutas longas. A mudança nas torres recompensa dives cedo, o que combina com a nova velocidade de ataque de Lee Sin e com o empurrão mais forte da Hand of Baron."
+   }
+  ]
+ }
+}

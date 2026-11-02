@@ -1,0 +1,319 @@
+{
+ "type": "guide",
+ "slug": "mlbb-guide-valir-2026-11-02",
+ "date": "2026-11-02",
+ "game": "mlbb",
+ "hero": "Valir",
+ "sources": [
+  "mlbbhub.com Valir build, win rate and matchup data (patch 2.2.16a, refreshed October 31, 2026)",
+  "mlbbhub.com tier list (patch 2.2.16a, November 1, 2026)",
+  "mlbb.io Valir community builds (August to October 2026)",
+  "ONE Esports Valir guide (skills, talents and combos)"
+ ],
+ "title": {
+  "tr": "MLBB Valir rehberi (2.2.16a): Glowing Wand buildi, amblem, kombolar ve counter'lar",
+  "en": "MLBB Valir guide (2.2.16a): Glowing Wand build, emblem, combos and counters",
+  "id": "Guide Valir MLBB (2.2.16a): build Glowing Wand, emblem, combo, dan counter",
+  "es": "Guía de Valir en MLBB (2.2.16a): build con Glowing Wand, emblema, combos y counters",
+  "pt": "Guia de Valir no MLBB (2.2.16a): build com Glowing Wand, emblema, combos e counters"
+ },
+ "summary": {
+  "tr": "Valir, mlbbhub'ın 1 Kasım listesinde S seviyesinde ve %54.4 kazanma oranıyla oynanıyor ama nadiren seçiliyor. Glowing Wand ve Ice Queen Wand'lı build, Impure Rage'li büyücü amblemi, Ablaze sersemletmesi için kombo ve onu zorlayan Kaja, Helcurt ve Rafaela.",
+  "en": "Valir is S tier on mlbbhub's November 1 list and wins 54.4% of ranked games, yet few players pick him. The Glowing Wand and Ice Queen Wand build, the Mage emblem with Impure Rage, the combo for his Ablaze stun, and the heroes that beat him: Kaja, Helcurt and Rafaela.",
+  "id": "Valir ada di tier S daftar mlbbhub 1 November dengan win rate 54.4% di ranked, tapi jarang di-pick. Build Glowing Wand dan Ice Queen Wand, emblem Mage dengan Impure Rage, combo untuk stun Ablaze, dan hero yang mengalahkannya: Kaja, Helcurt, dan Rafaela.",
+  "es": "Valir está en el tier S de la lista de mlbbhub del 1 de noviembre y gana el 54.4% de sus partidas clasificatorias, pero casi nadie lo elige. La build con Glowing Wand e Ice Queen Wand, el emblema de Mago con Impure Rage, el combo para su aturdimiento de Ablaze y quienes le ganan: Kaja, Helcurt y Rafaela.",
+  "pt": "Valir está no tier S da lista do mlbbhub de 1º de novembro e vence 54.4% das ranqueadas, mas quase ninguém o escolhe. A build com Glowing Wand e Ice Queen Wand, o emblema de Mago com Impure Rage, o combo para o atordoamento do Ablaze e os heróis que o vencem: Kaja, Helcurt e Rafaela."
+ },
+ "body": {
+  "en": [
+   {
+    "h": "Role and playstyle"
+   },
+   {
+    "p": "Valir is a mid lane mage built around control rather than one big burst. Every skill hit adds a stack of Ablaze through his passive, Ashing. Ablaze burns for a share of the target's maximum HP, and the third stack detonates with a short stun; ONE Esports puts the limit at one passive stun per target every seven seconds. Burst Fireball has two charges and slows, Searing Torrent pushes enemies to the end of its path and stops most dashes, and his ultimate, Vengeance Flame, cleanses his debuffs, speeds him up and upgrades his next skills."
+   },
+   {
+    "p": "He is one of the quiet winners of patch 2.2.16a. mlbbhub's ranked data (refreshed October 31) gives him a 54.4% win rate, up 1.9 points over 51 days, with only a 1.1% pick rate and a 3.0% ban rate. The win rate barely moves with rank, from 54.4% in Epic to 53.9% in Mythical Glory and above, which suggests he does not need a high skill level to work. mlbbhub kept him in the S tier when it refreshed its list on November 1."
+   },
+   {
+    "h": "Recommended build and emblem"
+   },
+   {
+    "ul": [
+     "Items (mlbbhub's main build, 10,900 gold): Demon Shoes, Glowing Wand, Ice Queen Wand, Genius Wand, Divine Glaive, Immortality. Glowing Wand is also the first core item in 10 of the 11 community builds on mlbb.io.",
+     "Power spike: Glowing Wand plus Ice Queen Wand, usually around minutes 7 to 9. The burn from Glowing Wand stacks with Ablaze, and Ice Queen Wand adds its own slow on top of the fireball's.",
+     "Swaps: Arcane Boots or Tough Boots instead of Demon Shoes, Wishing Lantern against tanky lines, and Winter Crown or Immortality when assassins focus you.",
+     "Emblem: Mage set with Inspire, Bargain Hunter and Impure Rage. ONE Esports and many mlbb.io builds use Festival of Blood instead of Bargain Hunter for extra spell vamp.",
+     "Battle spell: Flicker. He has no dash of his own, so this is his only reliable escape; Flameshot appears in about one in five community builds."
+    ]
+   },
+   {
+    "h": "Combo and key tips"
+   },
+   {
+    "ul": [
+     "Basic lane trade: two Burst Fireballs, then Searing Torrent. That is three hits, enough for the Ablaze stun, and the torrent pushes the enemy away before they can answer.",
+     "Keep Searing Torrent for the moment an assassin or fighter dashes at you. Used early, it leaves you with nothing against the real dive.",
+     "In team fights, wait for the enemy to use their crowd control, then press Vengeance Flame to cleanse it and throw the empowered fireball and the burning wall that follows the torrent.",
+     "Aim skills by hand and use Burst Fireball to check bushes; the lingering flame damages anyone hiding there.",
+     "Stay behind your frontline. His range is good but he has no mobility skill, and one caught position ends the fight for him."
+    ]
+   },
+   {
+    "h": "Counters: who beats Valir"
+   },
+   {
+    "ul": [
+     "Kaja (+3.5 points in mlbbhub's matchup data): Divine Judgment is a suppression, and Vengeance Flame cannot remove suppression, so Kaja can drag Valir out of position even after he cleanses.",
+     "Helcurt (+3.4): his ultimate blinds the whole team and he dives from fog, which is exactly when Valir has not seen the threat in time to save Searing Torrent.",
+     "Rafaela (+3.4): her heals undo much of the Ablaze burn and her Holy Baptism stun reaches him from range.",
+     "mlbbhub's author also names Franco, because his hook and suppression ultimate cannot be cleansed, and multi-dash assassins like Karina, who can come back after the first push."
+    ]
+   },
+   {
+    "h": "Who Valir is good against"
+   },
+   {
+    "p": "mlbbhub's matchup data shows his best results against Fredrinn (+4.2), Alice (+3.7) and Balmond (+3.4). All three need to stay close to their targets for a long time, and Valir's slows, knockback and repeated stuns keep pushing them back out of range. Against them, save the torrent for when they commit and keep stacking Ablaze with fireballs."
+   },
+   {
+    "h": "What changed recently"
+   },
+   {
+    "p": "mlbbhub's change history for Valir lists no adjustment since patch 2.1.61, which lowered Burst Fireball's mana cost and improved how it recharges, and that is a large part of why he can keep casting in long fights. His win rate has climbed this season without any change to his kit. We will update this guide if the next patch changes him."
+   }
+  ],
+  "tr": [
+   {
+    "h": "Rol ve oyun tarzı"
+   },
+   {
+    "p": "Valir, tek büyük patlama yerine kontrol üzerine kurulu bir orta koridor büyücüsüdür. Pasifi Ashing sayesinde her yetenek isabeti bir Ablaze yükü ekler. Ablaze hedefin maksimum canına bağlı olarak yakar, üçüncü yük de kısa bir sersemletmeyle patlar; ONE Esports bu pasif sersemletmenin aynı hedefe yedi saniyede bir işleyebildiğini belirtiyor. Burst Fireball iki şarjlıdır ve yavaşlatır, Searing Torrent rakipleri yolunun sonuna kadar iter ve çoğu atılmayı keser, ultisi Vengeance Flame ise üzerindeki olumsuz etkileri temizler, onu hızlandırır ve sonraki yeteneklerini güçlendirir."
+   },
+   {
+    "p": "2.2.16a yamasının sessiz kazananlarından biri. mlbbhub'ın derece verileri (31 Ekim'de yenilendi) ona %54.4 kazanma oranı veriyor; bu oran 51 günde 1.9 puan arttı. Buna karşın seçilme oranı yalnızca %1.1, yasaklanma oranı %3.0. Kazanma oranı dereceye göre neredeyse hiç değişmiyor (Epic'te %54.4, Mythical Glory ve üstünde %53.9), yani işe yaraması için çok yüksek beceri gerekmiyor. mlbbhub 1 Kasım'da listesini yenilediğinde onu S seviyesinde tuttu."
+   },
+   {
+    "h": "Önerilen build ve amblem"
+   },
+   {
+    "ul": [
+     "İtemler (mlbbhub'ın ana buildi, 10.900 altın): Demon Shoes, Glowing Wand, Ice Queen Wand, Genius Wand, Divine Glaive, Ölümsüzlük. mlbb.io'daki 11 topluluk buildinin 10'unda da ilk çekirdek item Glowing Wand.",
+     "Güç sıçraması: Glowing Wand ve Ice Queen Wand, genelde 7. ile 9. dakikalar arası. Glowing Wand'ın yanığı Ablaze ile birlikte işler, Ice Queen Wand da ateş topunun yavaşlatmasına kendi yavaşlatmasını ekler.",
+     "Alternatifler: Demon Shoes yerine Esrarlı Botlar veya Dayanıklı Botlar, dayanıklı ön hatlara karşı Wishing Lantern, suikastçılar sizi hedef aldığında Winter Crown veya Ölümsüzlük.",
+     "Amblem: Inspire, Bargain Hunter ve Impure Rage ile Mage seti. ONE Esports ve mlbb.io'daki pek çok build, ek büyü emişi için Bargain Hunter yerine Festival of Blood kullanıyor.",
+     "Savaş büyüsü: Flicker. Kendi atılması olmadığı için tek güvenilir kaçışı bu; Flameshot topluluk buildlerinin yaklaşık beşte birinde görülüyor."
+    ]
+   },
+   {
+    "h": "Kombo ve önemli ipuçları"
+   },
+   {
+    "ul": [
+     "Temel koridor takası: iki Burst Fireball, ardından Searing Torrent. Bu üç isabet Ablaze sersemletmesine yeter, akım da rakibi cevap veremeden geri iter.",
+     "Searing Torrent'i bir suikastçının ya da dövüşçünün üzerinize atıldığı an için saklayın. Erken harcarsanız asıl dalışa karşı elinizde bir şey kalmaz.",
+     "Takım savaşlarında rakibin kitle kontrolünü harcamasını bekleyin, sonra Vengeance Flame ile temizleyin ve güçlenmiş ateş topunu, akımın ardından gelen yanan duvarla birlikte atın.",
+     "Yetenekleri elle nişanlayın ve çalılıkları Burst Fireball ile kontrol edin; geride kalan alev orada saklanana hasar verir.",
+     "Ön hattınızın arkasında kalın. Menzili iyi ama hareket yeteneği yok; tek bir yakalanma onun için savaşı bitirir."
+    ]
+   },
+   {
+    "h": "Counter'lar: Valir'i kim yener"
+   },
+   {
+    "ul": [
+     "Kaja (mlbbhub eşleşme verisinde +3.5 puan): Divine Judgment bir bastırmadır ve Vengeance Flame bastırmayı kaldıramaz. Kaja, Valir temizlendikten sonra bile onu pozisyonundan çekip alabilir.",
+     "Helcurt (+3.4): ultisi bütün takımı kör eder ve sisten dalar; Valir'in tehdidi Searing Torrent'i saklayacak kadar erken göremediği an tam da budur.",
+     "Rafaela (+3.4): iyileştirmeleri Ablaze yanığının büyük kısmını geri alır, Holy Baptism sersemletmesi de ona uzaktan ulaşır.",
+     "mlbbhub yazarı ayrıca kancası ve bastırma ultisi temizlenemeyen Franco'yu ve ilk itişten sonra geri dönebilen Karina gibi çok atılmalı suikastçıları sayıyor."
+    ]
+   },
+   {
+    "h": "Valir kime karşı iyi"
+   },
+   {
+    "p": "mlbbhub'ın eşleşme verisi en iyi sonuçlarını Fredrinn (+4.2), Alice (+3.7) ve Balmond (+3.4) karşısında gösteriyor. Üçü de hedefinin dibinde uzun süre kalmak zorunda; Valir'in yavaşlatmaları, geri itmesi ve tekrarlanan sersemletmeleri onları sürekli menzil dışına atar. Bu rakiplere karşı akımı onlar girdiğinde kullanın ve ateş toplarıyla Ablaze yüklemeye devam edin."
+   },
+   {
+    "h": "Son değişiklikler"
+   },
+   {
+    "p": "mlbbhub'ın değişiklik geçmişinde Valir için 2.1.61 yamasından beri bir ayar yok. O yamada Burst Fireball'un mana maliyeti düştü ve şarj dolumu iyileşti. Uzun savaşlarda yetenek atmaya devam edebilmesinin büyük nedeni bu. Kazanma oranı bu sezon kitine hiç dokunulmadan yükseldi. Bir sonraki yama onu değiştirirse bu rehberi güncelleyeceğiz."
+   }
+  ],
+  "id": [
+   {
+    "h": "Role dan gaya bermain"
+   },
+   {
+    "p": "Valir adalah mage mid lane yang mengandalkan kontrol, bukan satu burst besar. Lewat pasifnya, Ashing, setiap skill yang kena menambah satu stack Ablaze. Ablaze membakar berdasarkan max HP target, dan stack ketiga meledak dengan stun singkat; menurut ONE Esports, stun pasif ini hanya bisa terjadi sekali setiap tujuh detik pada target yang sama. Burst Fireball punya dua charge dan memberi slow, Searing Torrent mendorong musuh sampai ujung jalurnya dan membatalkan sebagian besar dash, sedangkan ultimate-nya, Vengeance Flame, menghapus debuff, menambah kecepatan, dan memperkuat skill berikutnya."
+   },
+   {
+    "p": "Ia salah satu pemenang diam-diam di patch 2.2.16a. Data ranked mlbbhub (diperbarui 31 Oktober) mencatat win rate 54.4%, naik 1.9 poin dalam 51 hari, dengan pick rate hanya 1.1% dan ban rate 3.0%. Win rate-nya hampir tidak berubah antar rank, dari 54.4% di Epic sampai 53.9% di Mythical Glory ke atas, artinya ia tidak butuh skill tingkat tinggi untuk efektif. mlbbhub tetap menaruhnya di tier S saat memperbarui daftar pada 1 November."
+   },
+   {
+    "h": "Build dan emblem yang disarankan"
+   },
+   {
+    "ul": [
+     "Item (build utama mlbbhub, 10.900 gold): Demon Shoes, Glowing Wand, Ice Queen Wand, Genius Wand, Divine Glaive, Immortality. Glowing Wand juga menjadi item inti pertama di 10 dari 11 build komunitas di mlbb.io.",
+     "Power spike: Glowing Wand ditambah Ice Queen Wand, biasanya sekitar menit 7 sampai 9. Burn dari Glowing Wand berjalan bersama Ablaze, dan Ice Queen Wand menambah slow-nya sendiri di atas slow fireball.",
+     "Alternatif: Arcane Boots atau Tough Boots menggantikan Demon Shoes, Wishing Lantern melawan frontline tebal, serta Winter Crown atau Immortality saat assassin mengincar Anda.",
+     "Emblem: Mage dengan Inspire, Bargain Hunter, dan Impure Rage. ONE Esports dan banyak build mlbb.io memakai Festival of Blood sebagai ganti Bargain Hunter untuk spell vamp tambahan.",
+     "Battle spell: Flicker. Ia tidak punya dash sendiri, jadi ini satu-satunya escape yang bisa diandalkan; Flameshot muncul di sekitar seperlima build komunitas."
+    ]
+   },
+   {
+    "h": "Combo dan tips penting"
+   },
+   {
+    "ul": [
+     "Trade dasar di lane: dua Burst Fireball, lalu Searing Torrent. Tiga hit cukup untuk stun Ablaze, dan torrent mendorong musuh sebelum mereka sempat membalas.",
+     "Simpan Searing Torrent untuk saat assassin atau fighter melakukan dash ke arah Anda. Kalau dipakai terlalu awal, Anda tidak punya apa-apa saat dive sebenarnya datang.",
+     "Saat teamfight, tunggu musuh memakai crowd control mereka, lalu tekan Vengeance Flame untuk menghapusnya dan lempar fireball yang diperkuat serta dinding api setelah torrent.",
+     "Arahkan skill secara manual dan cek semak dengan Burst Fireball; api yang tertinggal melukai musuh yang bersembunyi di sana.",
+     "Tetap di belakang frontline. Jangkauannya bagus tetapi ia tidak punya skill mobilitas, dan sekali tertangkap biasanya fight selesai baginya."
+    ]
+   },
+   {
+    "h": "Counter: siapa yang mengalahkan Valir"
+   },
+   {
+    "ul": [
+     "Kaja (+3.5 poin di data matchup mlbbhub): Divine Judgment adalah suppression, dan Vengeance Flame tidak bisa menghapus suppression, jadi Kaja tetap bisa menarik Valir keluar posisi meski ia sudah cleanse.",
+     "Helcurt (+3.4): ultimate-nya membutakan seluruh tim dan ia dive dari fog, tepat saat Valir tidak melihat ancaman cukup cepat untuk menyimpan Searing Torrent.",
+     "Rafaela (+3.4): heal-nya menghapus banyak efek burn Ablaze dan stun Holy Baptism-nya mencapai Valir dari jauh.",
+     "Penulis mlbbhub juga menyebut Franco, karena hook dan ultimate suppression-nya tidak bisa di-cleanse, serta assassin multi-dash seperti Karina yang bisa kembali setelah dorongan pertama."
+    ]
+   },
+   {
+    "h": "Valir kuat melawan siapa"
+   },
+   {
+    "p": "Data matchup mlbbhub menunjukkan hasil terbaiknya melawan Fredrinn (+4.2), Alice (+3.7), dan Balmond (+3.4). Ketiganya harus menempel target dalam waktu lama, sedangkan slow, knockback, dan stun berulang dari Valir terus mendorong mereka keluar jangkauan. Melawan mereka, simpan torrent sampai mereka commit dan terus tumpuk Ablaze dengan fireball."
+   },
+   {
+    "h": "Perubahan terbaru"
+   },
+   {
+    "p": "Riwayat perubahan Valir di mlbbhub tidak mencatat penyesuaian apa pun sejak patch 2.1.61, yang menurunkan biaya mana Burst Fireball dan memperbaiki pengisian charge-nya, dan itulah alasan besar ia bisa terus melempar skill di fight panjang. Win rate-nya naik musim ini tanpa perubahan apa pun pada skill-nya. Kami akan memperbarui guide ini jika patch berikutnya mengubahnya."
+   }
+  ],
+  "es": [
+   {
+    "h": "Rol y estilo de juego"
+   },
+   {
+    "p": "Valir es un mago de la línea central basado en el control más que en un gran estallido. Cada habilidad que acierta añade una carga de Ablaze gracias a su pasiva, Ashing. Ablaze quema según la vida máxima del objetivo y la tercera carga detona con un aturdimiento corto; según ONE Esports, ese aturdimiento pasivo solo puede afectar al mismo objetivo una vez cada siete segundos. Burst Fireball tiene dos cargas y ralentiza, Searing Torrent empuja a los enemigos hasta el final de su recorrido y corta la mayoría de los desplazamientos, y su definitiva, Vengeance Flame, limpia sus efectos negativos, lo acelera y mejora sus siguientes habilidades."
+   },
+   {
+    "p": "Es uno de los ganadores silenciosos del parche 2.2.16a. Los datos clasificatorios de mlbbhub (actualizados el 31 de octubre) le dan un 54.4% de victorias, 1.9 puntos más que hace 51 días, con apenas un 1.1% de selección y un 3.0% de bloqueos. Su porcentaje casi no cambia con el rango, del 54.4% en Épico al 53.9% en Mythical Glory o más, lo que indica que no necesita un nivel de habilidad muy alto para rendir. mlbbhub lo mantuvo en el tier S al renovar su lista el 1 de noviembre."
+   },
+   {
+    "h": "Build y emblema recomendados"
+   },
+   {
+    "ul": [
+     "Objetos (build principal de mlbbhub, 10.900 de oro): Demon Shoes, Glowing Wand, Ice Queen Wand, Genius Wand, Divine Glaive, Immortality. Glowing Wand también es el primer objeto clave en 10 de las 11 builds de la comunidad en mlbb.io.",
+     "Pico de poder: Glowing Wand más Ice Queen Wand, normalmente entre los minutos 7 y 9. La quemadura de Glowing Wand se suma a Ablaze, e Ice Queen Wand añade su propia ralentización a la de la bola de fuego.",
+     "Cambios: Arcane Boots o Tough Boots en lugar de Demon Shoes, Wishing Lantern contra líneas muy resistentes, y Winter Crown o Immortality cuando los asesinos van a por ti.",
+     "Emblema: Mago con Inspire, Bargain Hunter e Impure Rage. ONE Esports y muchas builds de mlbb.io usan Festival of Blood en lugar de Bargain Hunter para tener más robo de hechizo.",
+     "Hechizo de batalla: Flicker. No tiene desplazamiento propio, así que es su única huida fiable; Flameshot aparece en aproximadamente una de cada cinco builds de la comunidad."
+    ]
+   },
+   {
+    "h": "Combo y consejos clave"
+   },
+   {
+    "ul": [
+     "Intercambio básico en línea: dos Burst Fireball y luego Searing Torrent. Son tres impactos, suficientes para el aturdimiento de Ablaze, y el torrente aleja al rival antes de que pueda responder.",
+     "Guarda Searing Torrent para cuando un asesino o luchador salte sobre ti. Si lo gastas pronto, no te queda nada contra el dive de verdad.",
+     "En las peleas de equipo, espera a que el rival use su control, pulsa Vengeance Flame para limpiarlo y lanza la bola de fuego potenciada y el muro ardiente que sigue al torrente.",
+     "Apunta las habilidades a mano y revisa los arbustos con Burst Fireball; la llama que queda daña a quien se esconda allí.",
+     "Quédate detrás de tu primera línea. Su alcance es bueno, pero no tiene habilidad de movilidad, y una sola mala posición termina la pelea para él."
+    ]
+   },
+   {
+    "h": "Counters: quién gana a Valir"
+   },
+   {
+    "ul": [
+     "Kaja (+3.5 puntos en los datos de enfrentamientos de mlbbhub): Divine Judgment es una supresión, y Vengeance Flame no elimina supresiones, así que Kaja puede sacar a Valir de su posición incluso después de que se limpie.",
+     "Helcurt (+3.4): su definitiva ciega a todo el equipo y entra desde la niebla, justo cuando Valir no ve la amenaza a tiempo para guardar Searing Torrent.",
+     "Rafaela (+3.4): sus curaciones deshacen buena parte de la quemadura de Ablaze y el aturdimiento de Holy Baptism le llega desde lejos.",
+     "El autor de mlbbhub también menciona a Franco, cuyo gancho y definitiva de supresión no se pueden limpiar, y a asesinos con varios saltos como Karina, que vuelven tras el primer empujón."
+    ]
+   },
+   {
+    "h": "Contra quién es bueno Valir"
+   },
+   {
+    "p": "Los datos de enfrentamientos de mlbbhub muestran sus mejores resultados contra Fredrinn (+4.2), Alice (+3.7) y Balmond (+3.4). Los tres necesitan pasar mucho tiempo pegados a su objetivo, y las ralentizaciones, el empujón y los aturdimientos repetidos de Valir los sacan una y otra vez de su alcance. Contra ellos, guarda el torrente para cuando se comprometan y sigue acumulando Ablaze con bolas de fuego."
+   },
+   {
+    "h": "Cambios recientes"
+   },
+   {
+    "p": "El historial de cambios de mlbbhub no registra ningún ajuste a Valir desde el parche 2.1.61, que redujo el coste de maná de Burst Fireball y mejoró su recarga, y eso explica en gran parte que pueda seguir lanzando habilidades en peleas largas. Su porcentaje de victorias ha subido esta temporada sin ningún cambio en su kit. Actualizaremos esta guía si el próximo parche lo modifica."
+   }
+  ],
+  "pt": [
+   {
+    "h": "Função e estilo de jogo"
+   },
+   {
+    "p": "Valir é um mago da rota do meio baseado em controle, e não em um único burst grande. Cada habilidade que acerta adiciona um acúmulo de Ablaze pela passiva, Ashing. Ablaze queima com base na vida máxima do alvo, e o terceiro acúmulo detona com um atordoamento curto; segundo a ONE Esports, esse atordoamento passivo só afeta o mesmo alvo uma vez a cada sete segundos. Burst Fireball tem duas cargas e causa lentidão, Searing Torrent empurra os inimigos até o fim do trajeto e interrompe a maioria dos avanços, e a ultimate, Vengeance Flame, remove efeitos negativos, dá velocidade e fortalece as próximas habilidades."
+   },
+   {
+    "p": "Ele é um dos vencedores silenciosos do patch 2.2.16a. Os dados de ranqueada do mlbbhub (atualizados em 31 de outubro) mostram 54.4% de vitórias, alta de 1.9 ponto em 51 dias, com apenas 1.1% de escolha e 3.0% de banimento. A taxa quase não muda com o elo, de 54.4% no Épico a 53.9% no Mythical Glory ou acima, o que indica que ele não exige muita habilidade para funcionar. O mlbbhub o manteve no tier S ao renovar a lista em 1º de novembro."
+   },
+   {
+    "h": "Build e emblema recomendados"
+   },
+   {
+    "ul": [
+     "Itens (build principal do mlbbhub, 10.900 de ouro): Demon Shoes, Glowing Wand, Ice Queen Wand, Genius Wand, Divine Glaive, Immortality. Glowing Wand também é o primeiro item central em 10 das 11 builds da comunidade no mlbb.io.",
+     "Pico de poder: Glowing Wand mais Ice Queen Wand, geralmente entre os minutos 7 e 9. A queimadura do Glowing Wand se soma ao Ablaze, e o Ice Queen Wand soma a própria lentidão à da bola de fogo.",
+     "Trocas: Arcane Boots ou Tough Boots no lugar de Demon Shoes, Wishing Lantern contra linhas de frente resistentes e Winter Crown ou Immortality quando assassinos focam você.",
+     "Emblema: Mago com Inspire, Bargain Hunter e Impure Rage. A ONE Esports e muitas builds do mlbb.io usam Festival of Blood no lugar de Bargain Hunter para ter mais roubo de feitiço.",
+     "Feitiço de batalha: Flicker. Ele não tem avanço próprio, então essa é a única fuga confiável; Flameshot aparece em cerca de uma a cada cinco builds da comunidade."
+    ]
+   },
+   {
+    "h": "Combo e dicas principais"
+   },
+   {
+    "ul": [
+     "Troca básica na rota: dois Burst Fireball e depois Searing Torrent. São três acertos, o suficiente para o atordoamento do Ablaze, e a torrente afasta o inimigo antes que ele responda.",
+     "Guarde Searing Torrent para quando um assassino ou lutador avançar em você. Usado cedo, ele deixa você sem resposta contra o mergulho de verdade.",
+     "Nas lutas de equipe, espere o inimigo gastar o controle, aperte Vengeance Flame para removê-lo e lance a bola de fogo fortalecida e a parede de fogo que vem depois da torrente.",
+     "Mire as habilidades manualmente e verifique os arbustos com Burst Fireball; a chama que fica causa dano a quem estiver escondido.",
+     "Fique atrás da sua linha de frente. O alcance é bom, mas ele não tem habilidade de mobilidade, e um único erro de posição encerra a luta para ele."
+    ]
+   },
+   {
+    "h": "Counters: quem vence Valir"
+   },
+   {
+    "ul": [
+     "Kaja (+3.5 pontos nos dados de confronto do mlbbhub): Divine Judgment é uma supressão, e Vengeance Flame não remove supressão, então Kaja consegue arrastar Valir para fora da posição mesmo depois da limpeza.",
+     "Helcurt (+3.4): a ultimate cega o time inteiro e ele mergulha pela névoa, justamente quando Valir não vê a ameaça a tempo de guardar Searing Torrent.",
+     "Rafaela (+3.4): as curas desfazem boa parte da queimadura do Ablaze e o atordoamento do Holy Baptism o alcança de longe.",
+     "O autor do mlbbhub também cita Franco, cujo gancho e ultimate de supressão não podem ser removidos, e assassinos com vários avanços como Karina, que voltam depois do primeiro empurrão."
+    ]
+   },
+   {
+    "h": "Contra quem Valir vai bem"
+   },
+   {
+    "p": "Os dados de confronto do mlbbhub mostram os melhores resultados contra Fredrinn (+4.2), Alice (+3.7) e Balmond (+3.4). Os três precisam ficar muito tempo colados no alvo, e a lentidão, o empurrão e os atordoamentos repetidos de Valir os jogam para fora do alcance o tempo todo. Contra eles, guarde a torrente para quando se comprometerem e continue acumulando Ablaze com as bolas de fogo."
+   },
+   {
+    "h": "O que mudou recentemente"
+   },
+   {
+    "p": "O histórico de mudanças do mlbbhub não registra nenhum ajuste em Valir desde o patch 2.1.61, que reduziu o custo de mana do Burst Fireball e melhorou a recarga, e isso explica boa parte de ele conseguir continuar usando habilidades em lutas longas. A taxa de vitórias dele subiu nesta temporada sem nenhuma mudança no kit. Vamos atualizar este guia se o próximo patch mexer nele."
+   }
+  ]
+ }
+}

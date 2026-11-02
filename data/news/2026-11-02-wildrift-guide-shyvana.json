@@ -1,0 +1,330 @@
+{
+ "type": "guide",
+ "slug": "wildrift-guide-shyvana-2026-11-02",
+ "date": "2026-11-02",
+ "game": "wildrift",
+ "hero": "Shyvana",
+ "sources": [
+  "Riot Games official Wild Rift patch notes 7.3d (October 28, 2026)",
+  "wildriftfire.com Shyvana build guide (patch 7.3d)",
+  "wildriftguides.com Shyvana jungle page (patch 7.3d, October 29, 2026)",
+  "wr-meta.com Shyvana page (statistics for patch 7.3d, November 2, 2026)",
+  "Wild Rift pages of the official League of Legends wiki (Shyvana kit)"
+ ],
+ "title": {
+  "tr": "Wild Rift Shyvana rehberi (7.3d): yeni oranlar, orman buildi, rünler ve counter'lar",
+  "en": "Wild Rift Shyvana guide (7.3d): new ratios, jungle build, runes and counters",
+  "id": "Guide Shyvana Wild Rift (7.3d): rasio baru, build jungle, rune, dan counter",
+  "es": "Guía de Shyvana en Wild Rift (7.3d): nuevos escalados, build de jungla, runas y counters",
+  "pt": "Guia de Shyvana no Wild Rift (7.3d): novos escalonamentos, build de selva, runas e counters"
+ },
+ "summary": {
+  "tr": "7.3d, Shyvana'nın bekleme sürelerini kısalttı ve Flame Breath ile Dragon Form patlamasının oranlarını yükseltti. Trinity Force'lu orman buildi, Fleet Footwork veya Conqueror, ejderha odaklı oyun planı ve onu zorlayan Rammus, Lillia ve Nunu & Willump.",
+  "en": "Patch 7.3d cut Shyvana's cooldowns and raised the ratios on Flame Breath and her Dragon Form explosion. The Trinity Force jungle build, Fleet Footwork or Conqueror, a dragon-first game plan, and the junglers that give her trouble: Rammus, Lillia and Nunu & Willump.",
+  "id": "Patch 7.3d memangkas cooldown Shyvana dan menaikkan rasio Flame Breath serta ledakan Dragon Form. Build jungle Trinity Force, Fleet Footwork atau Conqueror, rencana main yang fokus ke drake, dan jungler yang menyulitkannya: Rammus, Lillia, dan Nunu & Willump.",
+  "es": "El 7.3d redujo los enfriamientos de Shyvana y subió el escalado de Flame Breath y de la explosión en Dragon Form. La build de jungla con Trinity Force, Fleet Footwork o Conqueror, un plan centrado en dragones y los junglas que la complican: Rammus, Lillia y Nunu & Willump.",
+  "pt": "O 7.3d reduziu as recargas de Shyvana e aumentou o escalonamento de Flame Breath e da explosão na Dragon Form. A build de selva com Trinity Force, Fleet Footwork ou Conqueror, um plano focado em dragões e os caçadores que a atrapalham: Rammus, Lillia e Nunu & Willump."
+ },
+ "body": {
+  "en": [
+   {
+    "h": "Role and playstyle"
+   },
+   {
+    "p": "Shyvana is a jungle fighter who clears camps quickly, takes dragons and turns into a dragon with her ultimate, Dragon's Descent. Her passive, Fury of the Dragonborn, collects stacks from large monsters, takedowns and especially elemental dragons, and those stacks upgrade her Dragon Form abilities. She has little to offer in early skirmishes, so her plan is simple: full clears, dragon timers and a strong fight once Dragon's Descent is up."
+   },
+   {
+    "p": "Patch 7.3d changed her more than any other champion. Twin Bite, Burnout and Flame Breath all have shorter cooldowns, she gains more health and twice the attack speed per level, and Flame Breath (50% AD + 80% AP) and the Dragon Form explosion (100% AD + 100% AP) now scale far better. In return, Burnout's speed boost fell from 25% to 15% and the omnivamp on Dragon's Descent from 20% to 10%. wr-meta's 7.3d statistics, updated November 2, show a 52.8% win rate with a 5.6% pick rate and only a 1.3% ban rate, and wildriftguides placed her in its S tier for the jungle on October 29. Our tier list still shows her at C because it uses WildRiftCore's list from before this patch."
+   },
+   {
+    "h": "Recommended build and runes"
+   },
+   {
+    "ul": [
+     "Items (wildriftfire and wildriftguides, both on 7.3d): Trinity Force, Blade of the Ruined King and Death's Dance as the core, then Force of Nature and Amaranth's Twinguard. Start with Long Sword and take Smite with Flash.",
+     "Boots: wildriftfire lists Berserker's Greaves, wildriftguides prefers Immortal Treads and wr-meta's example build starts with Gluttonous Greaves. Pick attack speed boots when you need to clear faster, and tankier ones against heavy crowd control.",
+     "Runes: Fleet Footwork with Unshakeable, Second Wind and Overgrowth is the setup on two of the three sites. wr-meta suggests Conqueror with Triumph, Coup de Grace and Legend: Bloodline for longer fights.",
+     "Situational: Thornmail or Force of Nature against heavy healing, Randuin's Omen against critical strikes, Frozen Heart against attack-speed teams."
+    ]
+   },
+   {
+    "p": "Can you play her with ability power? The new ratios make AP Shyvana more tempting, but none of the three build sources we checked recommend it on 7.3d, so our hero page uses the AD bruiser build above."
+   },
+   {
+    "h": "Combo and key tips"
+   },
+   {
+    "ul": [
+     "Clear camps with Burnout first: its flames damage everything around you, and its speed boost gets you to the next camp.",
+     "Twin Bite makes your next basic attack hit twice. Use it right after Flame Breath so both hits land on the marked target.",
+     "Open with Flame Breath on the target you want to kill. The mark it leaves makes your basic attacks deal bonus damage based on maximum health.",
+     "Use Dragon's Descent to drag enemies toward your team or to cut off an escape, not to start a fight alone, since the healing from it is now smaller.",
+     "Give dragons priority over invades. Every dragon is worth stacks, and a stacked Dragon Form wins the teamfights she is built for."
+    ]
+   },
+   {
+    "h": "Counters: who beats Shyvana"
+   },
+   {
+    "ul": [
+     "Rammus appears on both counter lists we checked. His high armor and the damage he reflects punish a champion who relies on basic attacks.",
+     "Lillia (wildriftguides) runs circles around her with movement speed and puts her to sleep before she reaches the backline.",
+     "Nunu & Willump (wildriftguides) wins dragon races thanks to his objective damage, which delays her stacks.",
+     "Ekko is listed by wildriftfire. He can dodge her engage with Chronobreak, although 7.3d made his own jungle clear slower."
+    ]
+   },
+   {
+    "h": "Who Shyvana is good against"
+   },
+   {
+    "p": "wildriftguides lists Wukong, Nocturne and Kha'Zix as her best matchups. All three want short, decisive fights, and Shyvana's stronger health growth and faster Burnout cooldown let her survive the first burst and win the longer trade. Neither page gives win rate figures for these matchups, so treat them as a guide rather than a rule."
+   },
+   {
+    "h": "What changed recently"
+   },
+   {
+    "p": "Everything in this guide reflects patch 7.3d (October 28, 2026). Riot's aim was to make her human form stronger and her late game less extreme. Build sources still disagree on boots and keystone; once the new ratios have been tested for a few weeks, we will update the build and her tier on our site."
+   }
+  ],
+  "tr": [
+   {
+    "h": "Rol ve oyun tarzı"
+   },
+   {
+    "p": "Shyvana kampları hızlı temizleyen, ejderhaları alan ve ultisi Dragon's Descent ile ejderhaya dönüşen bir orman dövüşçüsüdür. Pasifi Fury of the Dragonborn; büyük canavarlardan, alımlardan ve özellikle elementel ejderhalardan yük toplar, bu yükler de Dragon Form yeteneklerini geliştirir. Erken çatışmalarda pek etkili değildir, bu yüzden planı basittir: tam temizlik, ejderha zamanlamaları ve Dragon's Descent hazır olduğunda güçlü bir savaş."
+   },
+   {
+    "p": "7.3d yaması en çok onu değiştirdi. Twin Bite, Burnout ve Flame Breath'in bekleme süreleri kısaldı, seviye başına daha fazla can ve iki kat saldırı hızı alıyor; Flame Breath (%50 AD + %80 AP) ve Dragon Form patlaması (%100 AD + %100 AP) artık çok daha iyi ölçekleniyor. Karşılığında Burnout'un hız artışı %25'ten %15'e, Dragon's Descent'teki omnivamp %20'den %10'a düştü. wr-meta'nın 2 Kasım'da güncellenen 7.3d verileri %52.8 kazanma, %5.6 seçilme ve yalnızca %1.3 yasaklanma oranı gösteriyor; wildriftguides de 29 Ekim'de onu orman için S seviyesinde gösterdi. Bizim seviye listemiz WildRiftCore'un bu yamadan önceki listesini kullandığı için onu hâlâ C'de gösteriyor."
+   },
+   {
+    "h": "Önerilen build ve rünler"
+   },
+   {
+    "ul": [
+     "İtemler (wildriftfire ve wildriftguides, ikisi de 7.3d): çekirdek olarak Trinity Force, Blade of the Ruined King ve Death's Dance, ardından Force of Nature ve Amaranth's Twinguard. Long Sword ile başlayın, Flash'ın yanına Smite alın.",
+     "Botlar: wildriftfire Berserker's Greaves, wildriftguides Immortal Treads öneriyor; wr-meta'nın örnek buildi Gluttonous Greaves ile başlıyor. Daha hızlı temizlik için saldırı hızı botu, yoğun kitle kontrolüne karşı daha dayanıklı bot seçin.",
+     "Rünler: üç sitenin ikisinde Fleet Footwork, Unshakeable, Second Wind ve Overgrowth kurulumu var. wr-meta uzun savaşlar için Triumph, Coup de Grace ve Legend: Bloodline ile Conqueror öneriyor.",
+     "Duruma göre: yoğun iyileştirmeye karşı Thornmail veya Force of Nature, kritik vuruşa karşı Randuin's Omen, saldırı hızına dayanan takımlara karşı Frozen Heart."
+    ]
+   },
+   {
+    "p": "AP ile oynanır mı? Yeni oranlar AP Shyvana'yı cazip gösteriyor, ama baktığımız üç build kaynağının hiçbiri 7.3d'de bunu önermiyor. Bu yüzden kahraman sayfamız yukarıdaki AD dövüşçü buildini kullanıyor."
+   },
+   {
+    "h": "Kombo ve önemli ipuçları"
+   },
+   {
+    "ul": [
+     "Kampları önce Burnout ile temizleyin: alevleri çevrenizdeki her şeye vurur, hız artışı da sizi bir sonraki kampa taşır.",
+     "Twin Bite sonraki temel saldırınızı iki kez vurdurur. Her iki vuruş da işaretli hedefe insin diye onu Flame Breath'ten hemen sonra kullanın.",
+     "Öldürmek istediğiniz hedefe Flame Breath ile başlayın. Bıraktığı iz, temel saldırılarınıza maksimum cana bağlı ek hasar kazandırır.",
+     "Dragon's Descent'i tek başına savaş başlatmak için değil, rakipleri takımınıza sürüklemek ya da kaçış yolunu kesmek için kullanın; verdiği iyileştirme artık daha az.",
+     "Rakip ormana girmek yerine ejderhalara öncelik verin. Her ejderha yük demektir, yükleri dolmuş bir Dragon Form da onun için tasarlandığı takım savaşlarını kazanır."
+    ]
+   },
+   {
+    "h": "Counter'lar: Shyvana'yı kim yener"
+   },
+   {
+    "ul": [
+     "Rammus baktığımız iki counter listesinde de var. Yüksek zırhı ve geri yansıttığı hasar, temel saldırıya dayanan bir şampiyonu cezalandırır.",
+     "Lillia (wildriftguides) hareket hızıyla onun etrafında döner ve arka hatta ulaşmadan onu uyutur.",
+     "Nunu & Willump (wildriftguides) hedef hasarı sayesinde ejderha yarışlarını kazanır ve Shyvana'nın yüklerini geciktirir.",
+     "Ekko'yu wildriftfire listeliyor. Chronobreak ile onun girişinden kaçabilir; ancak 7.3d Ekko'nun kendi orman temizliğini de yavaşlattı."
+    ]
+   },
+   {
+    "h": "Shyvana kime karşı iyi"
+   },
+   {
+    "p": "wildriftguides en iyi eşleşmeleri olarak Wukong, Nocturne ve Kha'Zix'i gösteriyor. Üçü de kısa ve kesin savaşlar ister; Shyvana'nın artan can büyümesi ve daha hızlı dolan Burnout'u ilk patlamayı atlatıp uzayan takası kazanmasını sağlıyor. Sayfa bu eşleşmeler için kazanma oranı vermiyor, bu yüzden bunları kesin kural değil, yol gösterici olarak görün."
+   },
+   {
+    "h": "Son değişiklikler"
+   },
+   {
+    "p": "Bu rehberdeki her şey 7.3d yamasına (28 Ekim 2026) göre. Riot'un amacı insan formunu güçlendirmek ve geç oyununu daha az uç hâle getirmekti. Build kaynakları bot ve ana rün konusunda hâlâ ayrışıyor; yeni oranlar birkaç hafta denendikten sonra sitemizdeki buildi ve seviyesini güncelleyeceğiz."
+   }
+  ],
+  "id": [
+   {
+    "h": "Role dan gaya bermain"
+   },
+   {
+    "p": "Shyvana adalah fighter jungle yang clear camp dengan cepat, mengambil drake, dan berubah menjadi naga lewat ultimate-nya, Dragon's Descent. Pasifnya, Fury of the Dragonborn, mengumpulkan stack dari monster besar, takedown, dan terutama elemental drake, dan stack itu meningkatkan skill Dragon Form-nya. Ia tidak banyak berguna di skirmish awal, jadi rencananya sederhana: full clear, jaga timer drake, dan teamfight kuat saat Dragon's Descent siap."
+   },
+   {
+    "p": "Patch 7.3d mengubahnya lebih banyak daripada champion lain. Cooldown Twin Bite, Burnout, dan Flame Breath lebih pendek, health per level naik dan attack speed per level jadi dua kali lipat, sementara Flame Breath (50% AD + 80% AP) dan ledakan Dragon Form (100% AD + 100% AP) kini scaling jauh lebih baik. Sebagai gantinya, bonus speed Burnout turun dari 25% ke 15% dan omnivamp Dragon's Descent dari 20% ke 10%. Statistik 7.3d dari wr-meta, diperbarui 2 November, mencatat win rate 52.8%, pick rate 5.6%, dan ban rate hanya 1.3%, dan wildriftguides menempatkannya di tier S jungle pada 29 Oktober. Tier list kami masih menaruhnya di C karena memakai daftar WildRiftCore dari sebelum patch ini."
+   },
+   {
+    "h": "Build dan rune yang disarankan"
+   },
+   {
+    "ul": [
+     "Item (wildriftfire dan wildriftguides, keduanya 7.3d): inti Trinity Force, Blade of the Ruined King, dan Death's Dance, lalu Force of Nature dan Amaranth's Twinguard. Mulai dengan Long Sword dan bawa Smite bersama Flash.",
+     "Boots: wildriftfire memakai Berserker's Greaves, wildriftguides memilih Immortal Treads, dan contoh build wr-meta mulai dengan Gluttonous Greaves. Pilih boots attack speed untuk clear lebih cepat, dan yang lebih tebal saat lawan punya banyak crowd control.",
+     "Rune: Fleet Footwork dengan Unshakeable, Second Wind, dan Overgrowth dipakai di dua dari tiga situs. wr-meta menyarankan Conqueror dengan Triumph, Coup de Grace, dan Legend: Bloodline untuk fight panjang.",
+     "Situasional: Thornmail atau Force of Nature melawan heal besar, Randuin's Omen melawan crit, Frozen Heart melawan tim attack speed."
+    ]
+   },
+   {
+    "p": "Bisa dimainkan AP? Rasio baru membuat Shyvana AP terlihat menggoda, tetapi tidak satu pun dari tiga sumber build yang kami cek menyarankannya di 7.3d, jadi halaman hero kami memakai build bruiser AD di atas."
+   },
+   {
+    "h": "Combo dan tips penting"
+   },
+   {
+    "ul": [
+     "Clear camp dengan Burnout lebih dulu: apinya mengenai semua yang ada di sekitar, dan bonus speed-nya membawa Anda ke camp berikutnya.",
+     "Twin Bite membuat basic attack berikutnya mengenai dua kali. Pakai tepat setelah Flame Breath agar kedua hit mengenai target yang sudah ditandai.",
+     "Buka dengan Flame Breath ke target yang ingin dibunuh. Tanda yang ditinggalkannya membuat basic attack memberi bonus damage berdasarkan max HP.",
+     "Pakai Dragon's Descent untuk menyeret musuh ke arah tim atau memotong jalur kabur, bukan untuk memulai fight sendirian, karena heal-nya sekarang lebih kecil.",
+     "Utamakan drake daripada invade. Setiap drake berarti stack, dan Dragon Form dengan stack penuh memenangkan teamfight yang memang menjadi kekuatannya."
+    ]
+   },
+   {
+    "h": "Counter: siapa yang mengalahkan Shyvana"
+   },
+   {
+    "ul": [
+     "Rammus muncul di kedua daftar counter yang kami cek. Armor tinggi dan damage yang ia pantulkan menghukum champion yang mengandalkan basic attack.",
+     "Lillia (wildriftguides) mengitarinya dengan movement speed dan menidurkannya sebelum ia mencapai backline.",
+     "Nunu & Willump (wildriftguides) menang balapan drake berkat damage ke objektif, sehingga stack Shyvana tertunda.",
+     "Ekko dicantumkan oleh wildriftfire. Ia bisa menghindari engage Shyvana dengan Chronobreak, walaupun 7.3d juga memperlambat clear jungle Ekko sendiri."
+    ]
+   },
+   {
+    "h": "Shyvana kuat melawan siapa"
+   },
+   {
+    "p": "wildriftguides menyebut Wukong, Nocturne, dan Kha'Zix sebagai matchup terbaiknya. Ketiganya ingin fight singkat dan cepat, sedangkan pertumbuhan health dan cooldown Burnout yang lebih cepat membuat Shyvana bisa menahan burst pertama lalu menang di trade panjang. Halaman itu tidak memberi angka win rate untuk matchup ini, jadi anggap sebagai panduan, bukan aturan pasti."
+   },
+   {
+    "h": "Perubahan terbaru"
+   },
+   {
+    "p": "Semua isi guide ini mengikuti patch 7.3d (28 Oktober 2026). Riot ingin human form-nya lebih kuat dan late game-nya tidak terlalu ekstrem. Sumber build masih berbeda soal boots dan keystone; setelah rasio baru diuji beberapa minggu, kami akan memperbarui build dan tier-nya di situs."
+   }
+  ],
+  "es": [
+   {
+    "h": "Rol y estilo de juego"
+   },
+   {
+    "p": "Shyvana es una luchadora de jungla que limpia campamentos rápido, se lleva dragones y se transforma en dragón con su definitiva, Dragon's Descent. Su pasiva, Fury of the Dragonborn, acumula cargas de monstruos grandes, asesinatos y sobre todo dragones elementales, y esas cargas mejoran sus habilidades en Dragon Form. Aporta poco en las escaramuzas tempranas, así que su plan es claro: limpiezas completas, tiempos de dragón y una pelea fuerte en cuanto tiene Dragon's Descent."
+   },
+   {
+    "p": "El 7.3d la cambió más que a ningún otro campeón. Twin Bite, Burnout y Flame Breath tienen menos enfriamiento, gana más vida y el doble de velocidad de ataque por nivel, y Flame Breath (50% AD + 80% AP) y la explosión en Dragon Form (100% AD + 100% AP) escalan mucho mejor. A cambio, la velocidad de Burnout baja del 25% al 15% y el omnivamp de Dragon's Descent del 20% al 10%. Las estadísticas del 7.3d de wr-meta, actualizadas el 2 de noviembre, le dan un 52.8% de victorias con un 5.6% de selección y solo un 1.3% de bloqueos, y wildriftguides la situó en el tier S de la jungla el 29 de octubre. Nuestra tier list aún la muestra en C porque usa la lista de WildRiftCore anterior a este parche."
+   },
+   {
+    "h": "Build y runas recomendadas"
+   },
+   {
+    "ul": [
+     "Objetos (wildriftfire y wildriftguides, ambos en el 7.3d): Trinity Force, Blade of the Ruined King y Death's Dance como núcleo, después Force of Nature y Amaranth's Twinguard. Empieza con Long Sword y lleva Smite con Flash.",
+     "Botas: wildriftfire indica Berserker's Greaves, wildriftguides prefiere Immortal Treads y la build de ejemplo de wr-meta abre con Gluttonous Greaves. Elige botas de velocidad de ataque para limpiar más rápido y otras más resistentes contra mucho control.",
+     "Runas: Fleet Footwork con Unshakeable, Second Wind y Overgrowth es la configuración de dos de los tres sitios. wr-meta propone Conqueror con Triumph, Coup de Grace y Legend: Bloodline para peleas largas.",
+     "Situacionales: Thornmail o Force of Nature contra mucha curación, Randuin's Omen contra críticos, Frozen Heart contra equipos de velocidad de ataque."
+    ]
+   },
+   {
+    "p": "¿Se puede jugar con poder de habilidad? Los nuevos escalados hacen tentadora a la Shyvana AP, pero ninguna de las tres fuentes de builds que revisamos la recomienda en el 7.3d, así que nuestra página del campeón usa la build de luchadora AD de arriba."
+   },
+   {
+    "h": "Combo y consejos clave"
+   },
+   {
+    "ul": [
+     "Limpia los campamentos empezando por Burnout: sus llamas golpean todo a tu alrededor y su velocidad te lleva al siguiente campamento.",
+     "Twin Bite hace que tu siguiente ataque básico golpee dos veces. Úsalo justo después de Flame Breath para que ambos golpes caigan sobre el objetivo marcado.",
+     "Abre con Flame Breath sobre el objetivo que quieres matar. La marca que deja hace que tus ataques básicos inflijan daño extra según la vida máxima.",
+     "Usa Dragon's Descent para arrastrar enemigos hacia tu equipo o cortar una huida, no para iniciar sola, porque ahora cura menos.",
+     "Prioriza los dragones sobre las invasiones. Cada dragón son cargas, y una Dragon Form cargada gana las peleas de equipo para las que está hecha."
+    ]
+   },
+   {
+    "h": "Counters: quién gana a Shyvana"
+   },
+   {
+    "ul": [
+     "Rammus aparece en las dos listas de counters que revisamos. Su armadura alta y el daño que devuelve castigan a una campeona que depende de los ataques básicos.",
+     "Lillia (wildriftguides) la rodea con su velocidad de movimiento y la duerme antes de que llegue a la retaguardia.",
+     "Nunu & Willump (wildriftguides) gana las carreras por el dragón gracias a su daño a objetivos, lo que retrasa sus cargas.",
+     "Ekko figura en wildriftfire. Puede esquivar su entrada con Chronobreak, aunque el 7.3d también hizo más lenta su propia limpieza de jungla."
+    ]
+   },
+   {
+    "h": "Contra quién es buena Shyvana"
+   },
+   {
+    "p": "wildriftguides señala a Wukong, Nocturne y Kha'Zix como sus mejores enfrentamientos. Los tres buscan peleas cortas y decisivas, y el mayor crecimiento de vida de Shyvana y el enfriamiento más rápido de Burnout le permiten aguantar el primer estallido y ganar el intercambio largo. La página no da porcentajes de victoria para estos duelos, así que tómalos como orientación y no como regla."
+   },
+   {
+    "h": "Cambios recientes"
+   },
+   {
+    "p": "Todo en esta guía corresponde al parche 7.3d (28 de octubre de 2026). Riot buscaba reforzar su forma humana y hacer menos extremo su final de partida. Las fuentes aún no coinciden en botas ni en runa principal; cuando los nuevos escalados lleven unas semanas a prueba, actualizaremos la build y su tier en nuestra web."
+   }
+  ],
+  "pt": [
+   {
+    "h": "Função e estilo de jogo"
+   },
+   {
+    "p": "Shyvana é uma lutadora de selva que limpa acampamentos rápido, garante dragões e se transforma em dragão com a ultimate, Dragon's Descent. A passiva, Fury of the Dragonborn, junta acúmulos de monstros grandes, abates e principalmente dragões elementais, e esses acúmulos melhoram as habilidades na Dragon Form. Ela rende pouco nas escaramuças iniciais, então o plano é direto: limpar a selva inteira, controlar os tempos de dragão e lutar forte quando Dragon's Descent estiver pronta."
+   },
+   {
+    "p": "O 7.3d mexeu nela mais do que em qualquer outro campeão. Twin Bite, Burnout e Flame Breath têm recargas menores, ela ganha mais vida e o dobro de velocidade de ataque por nível, e Flame Breath (50% AD + 80% AP) e a explosão na Dragon Form (100% AD + 100% AP) escalam muito melhor. Em troca, a velocidade do Burnout caiu de 25% para 15% e o omnivamp de Dragon's Descent de 20% para 10%. As estatísticas do 7.3d no wr-meta, atualizadas em 2 de novembro, mostram 52.8% de vitórias, 5.6% de escolha e apenas 1.3% de banimento, e o wildriftguides a colocou no tier S da selva em 29 de outubro. Nossa tier list ainda a mostra em C porque usa a lista do WildRiftCore anterior a este patch."
+   },
+   {
+    "h": "Build e runas recomendadas"
+   },
+   {
+    "ul": [
+     "Itens (wildriftfire e wildriftguides, ambos no 7.3d): Trinity Force, Blade of the Ruined King e Death's Dance como núcleo, depois Force of Nature e Amaranth's Twinguard. Comece com Long Sword e leve Smite com Flash.",
+     "Botas: o wildriftfire indica Berserker's Greaves, o wildriftguides prefere Immortal Treads e a build de exemplo do wr-meta começa com Gluttonous Greaves. Use botas de velocidade de ataque para limpar mais rápido e outras mais resistentes contra muito controle.",
+     "Runas: Fleet Footwork com Unshakeable, Second Wind e Overgrowth é a configuração de dois dos três sites. O wr-meta sugere Conqueror com Triumph, Coup de Grace e Legend: Bloodline para lutas longas.",
+     "Situacionais: Thornmail ou Force of Nature contra muita cura, Randuin's Omen contra crítico, Frozen Heart contra times de velocidade de ataque."
+    ]
+   },
+   {
+    "p": "Dá para jogar de poder de habilidade? Os novos escalonamentos deixam a Shyvana AP tentadora, mas nenhuma das três fontes de build que verificamos a recomenda no 7.3d, então a página da campeã no nosso site usa a build de lutadora AD acima."
+   },
+   {
+    "h": "Combo e dicas principais"
+   },
+   {
+    "ul": [
+     "Limpe os acampamentos começando pelo Burnout: as chamas acertam tudo ao redor e a velocidade leva você ao próximo acampamento.",
+     "Twin Bite faz o próximo ataque básico acertar duas vezes. Use logo depois de Flame Breath para que os dois golpes caiam no alvo marcado.",
+     "Abra com Flame Breath no alvo que você quer matar. A marca deixada faz seus ataques básicos causarem dano extra com base na vida máxima.",
+     "Use Dragon's Descent para arrastar inimigos até o seu time ou cortar uma fuga, não para iniciar sozinha, já que agora a cura é menor.",
+     "Dê prioridade aos dragões em vez de invasões. Cada dragão vale acúmulos, e uma Dragon Form carregada vence as lutas de equipe para as quais ela foi feita."
+    ]
+   },
+   {
+    "h": "Counters: quem vence Shyvana"
+   },
+   {
+    "ul": [
+     "Rammus aparece nas duas listas de counters que verificamos. A armadura alta e o dano que ele reflete punem uma campeã que depende de ataques básicos.",
+     "Lillia (wildriftguides) gira em volta dela com velocidade de movimento e a faz dormir antes que chegue à linha de trás.",
+     "Nunu & Willump (wildriftguides) vence as disputas de dragão graças ao dano em objetivos, atrasando os acúmulos dela.",
+     "Ekko está na lista do wildriftfire. Ele escapa da entrada dela com Chronobreak, embora o 7.3d também tenha deixado mais lenta a limpeza de selva dele."
+    ]
+   },
+   {
+    "h": "Contra quem Shyvana vai bem"
+   },
+   {
+    "p": "O wildriftguides aponta Wukong, Nocturne e Kha'Zix como os melhores confrontos dela. Os três querem lutas curtas e decisivas, e o crescimento maior de vida e a recarga mais rápida do Burnout permitem que Shyvana aguente o primeiro burst e vença a troca longa. A página não traz taxas de vitória para esses confrontos, então use-os como orientação, não como regra."
+   },
+   {
+    "h": "O que mudou recentemente"
+   },
+   {
+    "p": "Tudo neste guia segue o patch 7.3d (28 de outubro de 2026). A intenção da Riot era fortalecer a forma humana e deixar o fim de jogo menos extremo. As fontes ainda divergem sobre botas e runa principal; depois de algumas semanas de testes com os novos escalonamentos, vamos atualizar a build e o tier dela no site."
+   }
+  ]
+ }
+}

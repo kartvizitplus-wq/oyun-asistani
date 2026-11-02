@@ -1,7 +1,7 @@
 {
   "game": "mlbb",
   "patch": "2.2.16a",
-  "updated": "2026-10-26",
+  "updated": "2026-11-02",
   "notes": "r=role, d=damage type (P/M), t=traits (h heal/sustain, c crowd control, b burst, d dash/mobility), s=strengths, b=build archetype, tier=S/A/B/C or null (set by weekly updater from patch notes/meta). build/spell override archetype defaults. wr = public ranked win rate (%) from data.wrSource; set only from a named public source, never estimated. lanes = lanes the hero is commonly played in.",
   "archetypes": {
     "fP": {
@@ -245,7 +245,7 @@
       "t": "hd",
       "s": [],
       "b": "mage",
-      "tier": "B",
+      "tier": "A",
       "lanes": [
         "exp",
         "mid"
@@ -260,7 +260,7 @@
         "antitank"
       ],
       "b": "fP",
-      "tier": "C",
+      "tier": "B",
       "wr": 48.2,
       "lanes": [
         "exp",
@@ -318,7 +318,14 @@
       "lanes": [
         "exp",
         "roam"
-      ]
+      ],
+      "sd": {
+        "en": "Arlott is a fighter for the EXP lane or roam, built to dive the enemy backline. His passive, Demon Gaze, marks nearby enemies hit by crowd control and also tags a nearby hero automatically every few seconds; marks even reveal enemies in bushes. Dauntless Strike swings forward and stuns everyone in the area, longer at the far edge. Vengeance is a targeted dash: against a marked enemy it crits, heals Arlott and resets its cooldown, letting him hop from target to target. Final Slash is a wide cleave that drags enemies to the end of the swing, then reveals and marks them. To fight Arlott, hold a stun for the moment he dashes in, avoid clumping up, and buy anti-heal since every Vengeance restores his HP.",
+        "tr": "Arlott, EXP koridorunda ya da roam olarak oynanan ve düşmanın arka hattına dalmak için tasarlanmış bir dövüşçü. Pasifi Demon Gaze, yakınındaki kitle kontrolüne maruz kalan düşmanları işaretler, ayrıca birkaç saniyede bir yakındaki bir kahramanı kendiliğinden işaretler; işaretli rakipler çalılıkta da görünür. Dauntless Strike ile silahını önüne savurur ve alandaki herkesi sersemletir, alanın uzak ucundakiler daha uzun sersemler. Vengeance hedefli bir atılmadır: işaretli rakibe kritik hasar verir, Arlott'u iyileştirir ve bekleme süresini sıfırlar, böylece hedeften hedefe sıçrayabilir. Final Slash geniş bir savuruşla düşmanları savuruşun ucuna sürükler, onları açığa çıkarır ve işaretler. Arlott'a karşı içeri atıldığı anda kullanmak üzere bir sersemletme saklayın, kümelenmekten kaçının ve her Vengeance can verdiği için anti-heal alın.",
+        "id": "Arlott adalah fighter yang dipakai di EXP lane atau sebagai roamer, dirancang untuk menyelam ke backline musuh. Pasifnya, Demon Gaze, memberi mark ke musuh di dekatnya yang terkena crowd control, dan setiap beberapa detik juga otomatis menandai hero terdekat; musuh bertanda tetap terlihat walau bersembunyi di semak. Dauntless Strike mengayunkan senjatanya ke depan dan memberi stun ke semua yang kena, dengan stun lebih lama di ujung area. Vengeance adalah dash ke target: kalau target bertanda, skill ini memberi critical damage, memulihkan HP, dan me-reset cooldown, sehingga Arlott bisa lompat dari satu musuh ke musuh lain. Final Slash adalah tebasan lebar yang menyeret musuh ke ujung ayunan, membuka posisi mereka, dan memberi mark. Melawan Arlott, simpan stun untuk saat dia masuk, jangan menumpuk, dan beli anti-heal karena setiap Vengeance memulihkan HP-nya.",
+        "es": "Arlott es un luchador de línea de experiencia o roamer, pensado para lanzarse sobre la retaguardia enemiga. Su pasiva, Demon Gaze, marca a los enemigos cercanos que sufren control de masas y, cada pocos segundos, a un héroe cercano automáticamente; las marcas revelan incluso a quien se esconde en los arbustos. Dauntless Strike lanza un golpe frontal que aturde a todos en el área, más tiempo en el extremo. Vengeance es una embestida dirigida: contra un marcado hace daño crítico, lo cura y reinicia su enfriamiento, así salta de rival en rival. Final Slash es un barrido amplio que arrastra a los enemigos hasta el borde del golpe, los revela y los marca. Contra Arlott, guarda un aturdimiento para cuando se lance, no te amontones y compra antisanación.",
+        "pt": "Arlott é um lutador da rota de EXP ou roamer, feito para mergulhar na retaguarda. A passiva, Demon Gaze, marca os inimigos próximos que sofrem controle de grupo e, a cada poucos segundos, um herói por perto automaticamente; as marcas revelam até quem está no mato. Dauntless Strike desfere um golpe à frente que atordoa todos na área, por mais tempo na ponta. Vengeance é uma investida em alvo: contra um inimigo marcado, causa dano crítico, cura Arlott e reinicia a recarga, então ele pula de alvo em alvo. Final Slash é um corte largo que arrasta os inimigos até a borda do golpe, revela e marca todos. Contra Arlott, guarde um atordoamento para quando ele entrar, não fique amontoado e compre anticura, já que cada Vengeance cura ele."
+      }
     },
     {
       "n": "Atlas",
@@ -413,11 +420,18 @@
       "t": "h",
       "s": [],
       "b": "fP",
-      "tier": "D",
+      "tier": "C",
       "lanes": [
         "jungle",
         "exp"
-      ]
+      ],
+      "sd": {
+        "en": "Balmond is a fighter who usually takes the jungle or the EXP lane and thrives in long brawls. His passive, Bloodthirst, restores part of his maximum HP when he kills a minion or creep and much more for a hero kill, so every takedown keeps him going. Soul Lock charges forward and knocks back the first hero he runs into, slowing them so he can stay close. Cyclone Sweep grants a short burst of speed while he spins his axe, and repeated hits on the same enemy grow stronger. Lethal Counter is a heavy true-damage strike that scales with the target's missing HP, an excellent finisher. Against Balmond, buy anti-heal, kite him with slows instead of trading inside his spin, and avoid fighting him at half health.",
+        "tr": "Balmond, çoğunlukla ormanda ya da EXP koridorunda oynanan ve uzun süren yakın dövüşlerde parlayan bir dövüşçü. Pasifi Bloodthirst, minyon veya canavar kestiğinde maksimum canının bir kısmını, kahraman öldürdüğünde ise çok daha fazlasını geri verir; böylece her skor onu savaşta tutar. Soul Lock ile ileri hücum eder, çarptığı ilk kahramanı geri iter ve yavaşlatarak dibinde kalır. Cyclone Sweep kısa bir hız artışı verirken baltasını döndürür; aynı hedefe art arda gelen vuruşlar giderek güçlenir. Lethal Counter, hedefin kayıp canına göre artan ağır bir gerçek hasar darbesidir ve mükemmel bir bitirici olarak çalışır. Basit, dayanıklı ve canı azalan rakipler için ölümcüldür. Balmond'a karşı anti-heal alın, dönerken onunla takas yapmak yerine yavaşlatmalarla mesafe koruyun ve canınız yarıya inmişken ona yaklaşmayın.",
+        "id": "Balmond adalah fighter yang biasanya main jungler atau di EXP lane dan makin kuat dalam fight jarak dekat yang panjang. Pasifnya, Bloodthirst, memulihkan sebagian max HP setiap kali dia membunuh minion atau monster, dan jauh lebih banyak saat dapat kill hero, jadi setiap kill membuatnya tetap hidup. Soul Lock membuatnya menerjang ke depan, mendorong mundur hero pertama yang ditabrak, dan memberi slow supaya dia tetap menempel. Cyclone Sweep memberi tambahan speed singkat sambil memutar kapaknya, dan hit beruntun ke target yang sama terus bertambah sakit. Lethal Counter adalah tebasan true damage besar yang makin kuat sesuai HP target yang hilang, cocok untuk finishing. Lawan Balmond dengan item anti-heal, kite dia pakai slow alih-alih adu damage di dalam putarannya, dan jangan dekati dia saat HP tinggal setengah.",
+        "es": "Balmond es un luchador de jungla o línea de experiencia que brilla en peleas largas. Su pasiva, Bloodthirst, le devuelve parte de su vida máxima al matar súbditos o monstruos, y bastante más al eliminar a un héroe. Soul Lock lo hace cargar hacia adelante, empuja al primer héroe con el que choca y lo ralentiza para no despegarse. Cyclone Sweep le da un breve impulso de velocidad mientras gira el hacha, y los golpes repetidos sobre el mismo enemigo pegan cada vez más. Lethal Counter es un tajo de daño verdadero que crece con la vida perdida del objetivo, ideal para rematar. Contra Balmond, compra antisanación, mantén la distancia con ralentizaciones en vez de pelear dentro de su giro y no te le acerques con media vida.",
+        "pt": "Balmond é um lutador de selva ou rota de EXP que cresce em lutas longas. A passiva, Bloodthirst, recupera parte da vida máxima quando ele mata tropas ou monstros, e bem mais ao abater um herói. Soul Lock faz ele investir para frente, empurrar o primeiro herói em que trombar e deixá-lo lento para continuar colado. Cyclone Sweep dá um impulso curto de velocidade enquanto ele gira o machado, e os golpes repetidos no mesmo alvo ficam cada vez mais fortes. Lethal Counter é um golpe de dano verdadeiro que aumenta com a vida perdida do alvo, perfeito para finalizar. Contra Balmond, compre anticura, faça kite com lentidão em vez de trocar dentro do giro e não chegue perto dele com meia vida."
+      }
     },
     {
       "n": "Bane",
@@ -458,6 +472,13 @@
         "t1": "Thrill",
         "t2": "Seasoned Hunter",
         "core": "War Cry"
+      },
+      "sd": {
+        "en": "Barats is a tank who usually clears the jungle or holds the EXP lane on the back of his dinosaur, Detona. His passive, Big Guy, gives a stack whenever Barats or Detona hits an enemy with a skill; each stack enlarges Detona and adds hybrid defense, and at full stacks basic attacks become a slowing Trample. So-Called Teamwork has Detona spit oil in a cone that Barats then ignites. Missile \"Expert\" fires two slowing missiles whose exhaust drags enemies toward him. In Detona's Welcome, Detona charges, swallows the first enemy it reaches and spits them out; if they slam into a wall or another hero, they explode and are stunned. Against Barats, fight in open ground, never line up with teammates, and wear him down before his stacks fill.",
+        "tr": "Barats, genelde ormanda ya da EXP koridorunda oynanan ve dinozoru Detona'nın sırtında savaşan bir tank; dövüş uzadıkça Detona da büyür. Pasifi Big Guy, Barats veya Detona bir rakibe skill ile her vurduğunda yük kazandırır; her yük Detona'yı büyütür ve hibrit savunma ekler, yükler dolunca normal saldırılar yavaşlatan Trample'a dönüşür. So-Called Teamwork'te Detona koni şeklinde yağ püskürtür, Barats da bunu ateşe verir. Missile \"Expert\" iki yavaşlatıcı füze atar; füzelerin dumanı düşmanları Barats'a doğru çeker. Detona's Welcome ile Detona ileri atılır, ilk yakaladığı rakibi yutar ve sonra tükürür; tükürülen hedef duvara ya da başka bir kahramana çarparsa patlar ve sersemler. Barats'a karşı ultisi hazırken duvar diplerinden uzak durun, takım arkadaşlarınızla aynı hatta dizilmeyin ve yükleri dolmadan onu yıpratın; savunma delen eşyalar uzun dövüşte işinizi kolaylaştırır.",
+        "id": "Barats adalah tank yang biasanya main jungler atau di EXP lane, menunggangi dinosaurus Detona yang makin besar seiring fight berjalan. Pasifnya, Big Guy, memberi stack setiap kali Barats atau Detona mengenai musuh dengan skill; tiap stack membesarkan Detona dan menambah hybrid defense, dan saat stack penuh basic attack berubah jadi Trample yang memberi slow. So-Called Teamwork membuat Detona menyemburkan minyak berbentuk kipas yang lalu dibakar Barats. Missile \"Expert\" menembakkan dua misil yang memberi slow, dan asapnya menarik musuh ke arah Barats. Lewat Detona's Welcome, Detona menerjang, menelan musuh pertama yang kena, lalu memuntahkannya; kalau target menabrak tembok atau hero lain, terjadi ledakan dan stun. Lawan Barats dengan bertarung di area terbuka jauh dari tembok, jangan berbaris sejajar dengan teman satu tim, dan kite dia sebelum stack-nya penuh.",
+        "es": "Barats es un tanque de jungla o línea de experiencia que pelea montado en su dinosaurio, Detona. Su pasiva, Big Guy, suma una carga cada vez que Barats o Detona golpean con una habilidad; cada carga agranda a Detona y le da defensa híbrida, y con el máximo sus básicos se convierten en Trample, que ralentiza. En So-Called Teamwork, Detona escupe aceite en cono y Barats lo prende fuego. Missile \"Expert\" lanza dos misiles que ralentizan y cuyo humo arrastra a los enemigos hacia él. Con Detona's Welcome, Detona embiste, se traga al primer rival y lo escupe; si choca contra un muro u otro héroe, explota y queda aturdido. Contra Barats, pelea lejos de las paredes, no te alinees con aliados y castígalo antes de que acumule cargas.",
+        "pt": "Barats é um tanque de selva ou da rota de EXP que luta montado no seu dinossauro, Detona. A passiva, Big Guy, dá um acúmulo sempre que Barats ou Detona acertam alguém com habilidade; cada acúmulo aumenta Detona e dá defesa híbrida, e no máximo os ataques básicos viram Trample, que causa lentidão. Em So-Called Teamwork, Detona cospe óleo em cone e Barats taca fogo. Missile \"Expert\" dispara dois mísseis que deixam lento, e a fumaça puxa os inimigos até ele. Com Detona's Welcome, Detona avança, engole o primeiro inimigo e depois cospe; se o alvo bater numa parede ou em outro herói, explode e fica atordoado. Contra Barats, lute longe de paredes, não fique em linha com aliados e pressione antes de ele acumular tudo."
       }
     },
     {
@@ -554,6 +575,13 @@
         "t1": "Rupture",
         "t2": "Master Assassin",
         "core": "Killing Spree"
+      },
+      "sd": {
+        "en": "Brody is a gold lane marksman who relies on slow but heavy basic attacks. Through his passive, Abyss Corrosion, he keeps moving while winding up an attack, and every hit adds an Abyss Mark that raises his damage against that target and his movement speed. Abyss Impact launches a shockwave that slows and applies marks. Corrosive Strike is a dash that stuns the enemy he reaches and grants one more quick step, so it serves for both engaging and escaping. Torn-Apart Memory locks onto every nearby enemy and consumes their marks for extra damage. That makes Brody an early-game bully and a reliable finisher. Against him, avoid long lane trades, stay out of range until his dash is used, and punish his low attack speed with gap closers and stuns.",
+        "tr": "Brody, hızlı değil ama ağır vuran normal saldırılarıyla öne çıkan bir altın koridor nişancısı. Pasifi Abyss Corrosion sayesinde saldırı hazırlarken yürümeye devam edebilir; her vuruş hedefe bir Abyss Mark ekler, bu işaretler o hedefe verdiği hasarı ve kendi hareket hızını artırır. Abyss Impact, yavaşlatan ve işaret bırakan bir şok dalgası gönderir. Corrosive Strike ile bir rakibe atılır, onu sersemletir ve ardından bir kez daha kısa bir adım atabilir; bu da skill'i hem dalış hem kaçış için kullanışlı yapar. Torn-Apart Memory menzildeki tüm düşmanlara kilitlenir ve üzerlerindeki işaretleri tüketerek ek hasar verir. Bu yüzden erken oyunda koridoru baskılar ve kaçan rakipleri kolayca bitirir. Ona karşı koridorda uzun takaslardan kaçının, atılması harcanana kadar menzilinin dışında kalın ve düşük saldırı hızını yakın mesafeye hızla giren kahramanlar ve sersemletmelerle cezalandırın.",
+        "id": "Brody adalah marksman gold lane yang mengandalkan basic attack lambat tapi sakit, bukan attack speed tinggi. Lewat pasifnya, Abyss Corrosion, dia tetap bisa bergerak saat mengisi serangan, dan setiap hit menambah Abyss Mark yang menaikkan damage-nya ke target itu sekaligus movement speed-nya. Abyss Impact menembakkan gelombang kejut yang memberi slow dan menambah mark. Corrosive Strike adalah dash ke musuh yang memberi stun, lalu Brody bisa bergeser sekali lagi, jadi skill ini berguna untuk engage maupun kabur. Torn-Apart Memory mengunci semua musuh di sekitar dan menghabiskan mark mereka untuk damage tambahan. Hasilnya, Brody sangat menekan di early game dan jago finishing. Saat melawannya, hindari trade panjang di lane, jaga jarak sampai dash-nya terpakai, lalu hukum attack speed-nya yang rendah dengan hero yang punya gap closer dan stun.",
+        "es": "Brody es un tirador de línea de oro que pega con ataques básicos lentos pero contundentes. Con su pasiva, Abyss Corrosion, se mueve mientras prepara cada disparo, y cada impacto deja una Abyss Mark que aumenta su daño contra ese objetivo y su velocidad. Abyss Impact suelta una onda de choque que ralentiza y aplica marcas. Corrosive Strike es un desplazamiento que aturde al enemigo alcanzado y le da un paso rápido extra, útil para entrar o huir. Torn-Apart Memory fija a todos los enemigos cercanos y consume sus marcas para dañar más. Por eso domina el inicio y remata fácil. Contra Brody, evita intercambios largos, no entres en su alcance hasta que gaste el desplazamiento y castiga su lenta cadencia con héroes que se acerquen rápido y aturdan.",
+        "pt": "Brody é um atirador da rota do ouro que bate com ataques básicos lentos, mas pesados. Com a passiva, Abyss Corrosion, ele anda enquanto carrega cada tiro, e cada acerto deixa uma Abyss Mark que aumenta o dano contra aquele alvo e a velocidade dele. Abyss Impact solta uma onda de choque que deixa lento e aplica marcas. Corrosive Strike é um avanço que atordoa o inimigo atingido e libera mais um passo rápido, servindo para iniciar ou fugir. Torn-Apart Memory trava em todos os inimigos próximos e consome as marcas para dano extra. Por isso amassa no começo e finaliza fácil. Contra Brody, evite trocas longas, fique fora do alcance até ele gastar o avanço e puna o ataque lento com heróis que encostam rápido e atordoam."
       }
     },
     {
@@ -661,7 +689,7 @@
       "t": "d",
       "s": [],
       "b": "mmA",
-      "tier": "B",
+      "tier": "C",
       "lanes": [
         "gold"
       ]
@@ -976,7 +1004,7 @@
       "t": "c",
       "s": [],
       "b": "tank",
-      "tier": "C",
+      "tier": "D",
       "lanes": [
         "roam"
       ]
@@ -990,7 +1018,7 @@
         "antisquishy"
       ],
       "b": "fM",
-      "tier": "B",
+      "tier": "A",
       "lanes": [
         "exp",
         "jungle"
@@ -1012,7 +1040,7 @@
         "antisquishy"
       ],
       "b": "assM",
-      "tier": "C",
+      "tier": "B",
       "lanes": [
         "jungle",
         "mid"
@@ -1118,7 +1146,7 @@
         "Dominance Ice",
         "Immortality"
       ],
-      "tier": "B",
+      "tier": "A",
       "lanes": [
         "exp",
         "roam"
@@ -1134,7 +1162,7 @@
       "lanes": [
         "jungle"
       ],
-      "tier": "A"
+      "tier": "B"
     },
     {
       "n": "Hylos",
@@ -1202,7 +1230,7 @@
       "t": "c",
       "s": [],
       "b": "tank",
-      "tier": "C",
+      "tier": "B",
       "lanes": [
         "roam"
       ]
@@ -1291,7 +1319,7 @@
       "lanes": [
         "roam"
       ],
-      "tier": "D"
+      "tier": "B"
     },
     {
       "n": "Karina",
@@ -1356,7 +1384,7 @@
       "t": "",
       "s": [],
       "b": "mage",
-      "tier": "C",
+      "tier": "B",
       "lanes": [
         "gold",
         "mid"
@@ -1399,7 +1427,14 @@
       "tier": "B",
       "lanes": [
         "gold"
-      ]
+      ],
+      "sd": {
+        "en": "Layla is a gold lane marksman built around range: her passive, Malefic Gun, makes basic attacks hit harder the farther away the target is, turrets excluded. Malefic Bomb is a skillshot that, on hitting, briefly extends the range of her attacks and Void Projectile and gives a fading speed boost. Void Projectile explodes in an area and marks enemies; hitting a marked target again, even with her other skills, stuns it. Destruction Rush fires a long energy beam, and each level permanently lengthens her attack range, eventually letting her hit turrets from safety. She is easy to learn and deadly behind a solid frontline. Having no dash is her weakness, so assassins, hooks and any hero who closes distance quickly will punish her.",
+        "tr": "Layla, menzile dayalı bir altın koridor nişancısı: pasifi Malefic Gun, normal saldırılarının uzaktaki hedeflere daha fazla hasar vermesini sağlar, ancak kuleler bu etkiye dahil değildir. Malefic Bomb isabet ettiğinde kısa süreliğine saldırı ve Void Projectile menzilini uzatır, ayrıca giderek azalan bir hız artışı verir. Void Projectile alanda patlayıp düşmanlara işaret koyar; işaretli hedef tekrar vurulduğunda, diğer skill'lerle bile olsa, sersemler. Destruction Rush düz bir hatta uzun bir enerji ışını fırlatır ve her seviyesi saldırı menzilini kalıcı olarak artırır; ileride kuleleri güvenli mesafeden dövebilir. Öğrenmesi kolaydır ve sağlam bir ön hattın arkasında çok tehlikelidir. Zayıf noktası hiçbir atılma skill'inin olmamasıdır; suikastçılar, çekme skill'leri ve mesafeyi hızla kapatan her kahraman onu kolayca cezalandırır.",
+        "id": "Layla adalah marksman gold lane yang semuanya soal jarak: pasifnya, Malefic Gun, membuat basic attack makin sakit semakin jauh targetnya, kecuali ke turret. Malefic Bomb adalah skillshot yang, kalau kena, menambah range basic attack dan Void Projectile untuk sementara serta memberi movement speed yang perlahan berkurang. Void Projectile meledak di area dan memberi tanda; kalau musuh bertanda terkena lagi, termasuk oleh skill lainnya, dia akan kena stun. Destruction Rush menembakkan sinar energi panjang dalam garis lurus, dan setiap level-nya menambah range serangan secara permanen sampai dia bisa menyerang turret dari jarak aman. Layla mudah dipelajari dan berbahaya di belakang frontline yang solid. Kelemahannya, dia sama sekali tidak punya dash, jadi assassin, hero dengan hook, dan siapa pun yang bisa menutup jarak akan gampang menghukumnya.",
+        "es": "Layla es una tiradora de línea de oro que vive del alcance: su pasiva, Malefic Gun, hace que sus básicos dañen más cuanto más lejos esté el objetivo, salvo contra torretas. Malefic Bomb es un proyectil que, al acertar, amplía un momento el alcance de sus básicos y de Void Projectile y le da velocidad decreciente. Void Projectile estalla en área y marca a los enemigos; si un marcado recibe otro golpe, incluso de sus otras habilidades, queda aturdido. Destruction Rush dispara un largo rayo en línea recta y cada nivel aumenta su alcance para siempre, hasta golpear torretas desde lejos. Es fácil de aprender y letal tras una buena primera línea. Al no tener desplazamientos, asesinos, ganchos y cualquier héroe que acorte distancias la castigan duramente.",
+        "pt": "Layla é uma atiradora da rota do ouro que vive de alcance: a passiva, Malefic Gun, faz os básicos causarem mais dano quanto mais longe o alvo estiver, menos contra torres. Malefic Bomb é um disparo que, ao acertar, aumenta por um tempo o alcance dos básicos e do Void Projectile e dá velocidade temporária. Void Projectile explode em área e marca os inimigos; se o marcado levar outro golpe, até das outras habilidades, fica atordoado. Destruction Rush lança um raio comprido em linha reta, e cada nível aumenta o alcance de vez, até ela bater em torres de longe. É fácil de aprender e perigosa atrás de uma boa linha de frente. Como não tem avanço nenhum, assassinos, ganchos e heróis que encurtam a distância punem Layla facilmente."
+      }
     },
     {
       "n": "Leomord",
@@ -1493,7 +1528,14 @@
       "tier": "C",
       "lanes": [
         "mid"
-      ]
+      ],
+      "sd": {
+        "en": "Lunox is a mid lane mage who swaps between Order and Chaos; her passive, Dreamland Twist, decides which form is active and which ultimate she gets. On the Order side, Starlight Pulse rains starlight around her and heals her, more so when it hits heroes. On the Chaos side, Chaos Assault fires energy that scales with the enemy's maximum HP. Cosmic Fission links both forms, damaging and slowing enemies in its path. The Order ultimate, Brilliance, makes her invincible for a few seconds while hurting nearby foes; the Chaos ultimate, Darkening, is a blink that briefly slashes Chaos Assault's cooldown. Spell vamp and burst make her hard to kill and hard to escape. Bring anti-heal, wait out Brilliance, and stun her before she chains Chaos Assault.",
+        "tr": "Lunox, Düzen ve Kaos arasında geçiş yapan bir orta koridor büyücüsü; pasifi Dreamland Twist hangi formda olduğunu ve hangi ultiyi kullanacağını belirler. Düzen tarafında Starlight Pulse çevresine yıldız ışığı yağdırır ve onu iyileştirir, kahramanlara isabet ettiğinde iyileşme artar. Kaos tarafında Chaos Assault, rakibin maksimum canına göre ölçeklenen bir enerji atışıdır. Cosmic Fission iki formu birbirine bağlar ve yolundaki düşmanlara hasar verip onları yavaşlatır. Düzen ultisi Brilliance birkaç saniyeliğine onu ölümsüz yaparken yakındakilere hasar verir; Kaos ultisi Darkening ise bir ışınlanmadır ve kısa süre Chaos Assault'un bekleme süresini ciddi şekilde düşürür. Büyü emişi ve ani hasarı sayesinde hem öldürmesi hem de ondan kaçması zordur. Ona karşı anti-heal alın, Brilliance bitmeden dalmayın ve Chaos Assault zincirine başlamadan onu sersemletin.",
+        "id": "Lunox adalah mage mid lane yang berganti-ganti antara Order dan Chaos, dan pasifnya, Dreamland Twist, menentukan wujud mana yang aktif serta ultimate yang bisa dipakai. Di sisi Order, Starlight Pulse menghujani musuh di sekitarnya dan memulihkan HP Lunox, dengan heal lebih besar bila kena hero. Di sisi Chaos, Chaos Assault menembakkan energi yang damage-nya ikut max HP musuh. Cosmic Fission menjadi penghubung kedua wujud, memberi damage dan slow di sepanjang jalurnya. Ultimate Order, Brilliance, membuatnya kebal beberapa detik sambil melukai musuh dekat, sedangkan ultimate Chaos, Darkening, adalah blink yang sebentar memangkas cooldown Chaos Assault. Spell vamp dan burst-nya bikin dia susah dibunuh sekaligus susah dihindari. Siapkan anti-heal, tunggu Brilliance habis sebelum masuk, dan stun dia sebelum mulai spam Chaos Assault.",
+        "es": "Lunox es una maga de línea media que alterna entre el Orden y el Caos; su pasiva, Dreamland Twist, determina qué forma está activa y qué definitiva usa. En Orden, Starlight Pulse golpea con luz estelar a su alrededor y la cura, más aún si alcanza a héroes. En Caos, Chaos Assault dispara energía que escala con la vida máxima del enemigo. Cosmic Fission une ambas formas y daña y ralentiza en su trayectoria. Brilliance, la definitiva del Orden, la vuelve invencible unos segundos mientras daña alrededor; Darkening, la del Caos, es un parpadeo que acorta temporalmente el enfriamiento de Chaos Assault. Su robo de hechizo y su daño explosivo la hacen difícil de matar. Lleva antisanación, espera a que termine Brilliance y atúrdela antes de que encadene Chaos Assault.",
+        "pt": "Lunox é uma maga da rota do meio que alterna entre Ordem e Caos; a passiva, Dreamland Twist, define a forma ativa e a ultimate disponível. Na Ordem, Starlight Pulse faz chover luz estelar ao redor e cura Lunox, ainda mais quando pega heróis. No Caos, Chaos Assault dispara energia que escala com a vida máxima do inimigo. Cosmic Fission liga as duas formas, causando dano e lentidão no caminho. Brilliance, a ultimate da Ordem, deixa ela invencível por alguns segundos enquanto fere quem está perto; Darkening, a do Caos, é um teleporte que reduz por um tempo a recarga do Chaos Assault. Roubo de vida mágico e burst fazem dela difícil de matar. Leve anticura, espere o Brilliance acabar e atordoe Lunox antes que ela emende Chaos Assault."
+      }
     },
     {
       "n": "Luo Yi",
@@ -1517,7 +1559,14 @@
       "tier": "B",
       "lanes": [
         "mid"
-      ]
+      ],
+      "sd": {
+        "en": "Lylia is a mid lane mage who scatters Shadow Energy on the ground and detonates it with Gloom for heavy area damage. Her passive, Angry Gloom, grants bonus movement speed while she stands inside Gloom, growing as Gloom is upgraded. Magic Shockwave sends Gloom forward in a line, slowing enemies and blowing up any Shadow Energy it touches. Shadow Energy plants slowing orbs; detonated, they deal extra damage and briefly become Gloom that can set off other orbs nearby in a chain. Black Shoes rewinds her to where she stood a few seconds earlier, restoring her HP, mana and orbs to that moment. She excels at wave clear and poke. Against Lylia, avoid orb-covered zones, bait out Black Shoes before committing your burst, then chase her with dash heroes.",
+        "tr": "Lylia, yere Shadow Energy küreleri saçıp bunları Gloom ile patlatarak geniş alan hasarı veren bir orta koridor büyücüsü. Pasifi Angry Gloom, Gloom alanının içindeyken ona ek hareket hızı verir ve Gloom güçlendikçe bu bonus artar. Magic Shockwave, Gloom'u düz bir hatta ileri gönderir; yolundaki düşmanları yavaşlatır ve değdiği Shadow Energy'yi patlatır. Shadow Energy yavaşlatan küreler bırakır; patlatıldıklarında ek hasar verip kısa süreliğine Gloom'a dönüşürler ve yakındaki diğer küreleri de tetikleyerek zincirleme patlamalar yaratırlar. Black Shoes, Lylia'yı birkaç saniye önce bulunduğu noktaya geri götürür ve canını, manasını ve kürelerini o anki hâline döndürür. Dalga temizleme ve uzaktan dürtmede çok güçlüdür. Ona karşı kürelerle kaplı bölgelere girmeyin, asıl hasarınızı harcamadan önce Black Shoes'u kullanmaya zorlayın, ardından atılma skill'i olan kahramanlarla üstüne gidin.",
+        "id": "Lylia adalah mage mid lane yang menebar Shadow Energy di tanah lalu meledakkannya dengan Gloom untuk damage area yang besar. Pasifnya, Angry Gloom, memberi tambahan movement speed selama dia berada di dalam area Gloom, dan bonusnya meningkat seiring Gloom di-upgrade. Magic Shockwave mengirim Gloom lurus ke depan, memberi slow, dan meledakkan Shadow Energy yang disentuhnya. Shadow Energy memasang orb yang memberi slow; saat diledakkan, orb memberi damage tambahan dan sesaat berubah jadi Gloom yang bisa memicu orb lain di dekatnya secara berantai. Black Shoes mengembalikan Lylia ke posisinya beberapa detik sebelumnya dan memulihkan HP, mana, serta orb seperti saat itu. Dia unggul dalam clear wave dan poke. Melawan Lylia, jauhi area penuh orb, pancing Black Shoes keluar sebelum kamu buang burst, lalu kejar dia dengan hero yang punya dash.",
+        "es": "Lylia es una maga de línea media que siembra Shadow Energy y la hace estallar con Gloom para causar gran daño en área. Su pasiva, Angry Gloom, le da velocidad extra dentro de Gloom, y el bono crece al mejorarlo. Magic Shockwave envía Gloom en línea recta, ralentiza y detona la Shadow Energy que toque. Shadow Energy coloca orbes que ralentizan; al detonarse hacen daño adicional y se vuelven Gloom por un instante, activando en cadena orbes cercanos. Black Shoes la devuelve a donde estaba unos segundos antes y restablece su vida, maná y orbes de ese momento. Destaca limpiando oleadas y castigando de lejos. Contra Lylia, evita las zonas con orbes, fuérzala a gastar Black Shoes antes de soltar tu daño y luego persíguela con héroes móviles.",
+        "pt": "Lylia é uma maga da rota do meio que espalha Shadow Energy e detona tudo com o Gloom para causar muito dano em área. A passiva, Angry Gloom, dá velocidade extra dentro do Gloom, e o bônus cresce conforme ele melhora. Magic Shockwave manda o Gloom em linha reta, deixa lento e explode a Shadow Energy que tocar. Shadow Energy planta orbes que causam lentidão; detonados, causam dano extra e viram Gloom por um instante, ativando orbes próximos em cadeia. Black Shoes volta Lylia ao ponto de segundos antes e restaura vida, mana e orbes daquele momento. Ela brilha limpando ondas e dando poke. Contra Lylia, fuja das áreas com orbes, force o Black Shoes antes de gastar seu burst e depois caia em cima com heróis móveis."
+      }
     },
     {
       "n": "Marcel",
@@ -1921,7 +1970,7 @@
       "t": "hc",
       "s": [],
       "b": "fP",
-      "tier": "B",
+      "tier": "C",
       "lanes": [
         "exp"
       ]
@@ -1937,7 +1986,7 @@
         "antidash"
       ],
       "b": "assP",
-      "tier": "B",
+      "tier": "A",
       "lanes": [
         "jungle",
         "roam"
@@ -1952,7 +2001,7 @@
         "antisquishy"
       ],
       "b": "assM",
-      "tier": "B",
+      "tier": "C",
       "lanes": [
         "roam",
         "mid"
@@ -1965,7 +2014,7 @@
       "t": "cd",
       "s": [],
       "b": "fM",
-      "tier": "B",
+      "tier": "A",
       "lanes": [
         "exp"
       ]
@@ -1996,7 +2045,7 @@
       "t": "hd",
       "s": [],
       "b": "fP",
-      "tier": "A",
+      "tier": "S",
       "wr": 52.5,
       "lanes": [
         "exp",
@@ -2016,6 +2065,13 @@
         "t1": "Rupture",
         "t2": "Master Assassin",
         "core": "Killing Spree"
+      },
+      "sd": {
+        "en": "Sun is an EXP lane or jungle fighter whose damage comes from Doppelgangers, clones that copy part of his stats. His passive, Simian God, lowers the physical defense of enemies struck by Sun or his clones and heals him whenever a clone deals damage. Endless Variety throws his Golden Staff, which turns into a clone on the enemy it hits or where it lands. Swift Exchange shares that cooldown: Sun leaves a clone behind and flies hidden with the staff, reappearing where it stops. Instantaneous Move sends Sun and his clones lunging at a target, and Clone Techniques summons a stronger, longer-lasting clone. Several copies at once melt turrets and lone heroes. Counter him with area damage and crowd control that hit every clone, plus anti-heal to blunt the passive.",
+        "tr": "Sun, EXP koridorunda veya ormanda oynanan bir dövüşçü; asıl hasarını özelliklerinin bir kısmını kopyalayan klonlarından, yani Doppelganger'larından alır. Pasifi Simian God, Sun ya da klonlarının vurduğu düşmanların fiziksel savunmasını düşürür ve bir klon her hasar verdiğinde Sun'a can kazandırır. Endless Variety ile Altın Asa'sını fırlatır; asa çarptığı rakipte ya da menzil sonunda klona dönüşür. Aynı bekleme süresini paylaşan Swift Exchange'te Sun yerinde bir klon bırakır, görünmez hâlde asayla birlikte uçar ve asa durduğunda yeniden belirir. Instantaneous Move, Sun'ı ve klonlarını seçilen hedefin üstüne gönderir. Clone Techniques ise daha uzun süren, daha güçlü bir klon çağırır. Birden fazla kopyayla kuleleri ve yalnız kalan kahramanları çok hızlı eritir. Ona karşı klonları toplu vuran alan hasarı ve kitle kontrolü kullanın, pasifinden gelen iyileşmeyi kesmek için de anti-heal eşyası alın.",
+        "id": "Sun adalah fighter untuk EXP lane atau jungle yang mengandalkan Doppelganger, klon yang meniru sebagian atribut dirinya. Pasifnya, Simian God, mengurangi physical defense musuh yang terkena serangan Sun atau klonnya, dan memulihkan HP Sun setiap kali klon memberi damage. Endless Variety melempar Golden Staff yang berubah jadi klon saat kena musuh atau di ujung jaraknya. Swift Exchange berbagi cooldown dengan skill itu: Sun meninggalkan klon, lalu ikut terbang bersama tongkatnya dalam keadaan tersembunyi dan muncul lagi di ujungnya. Instantaneous Move membuat Sun dan para klon menyerbu target pilihan, sedangkan Clone Techniques memanggil klon yang lebih kuat dan lebih awet. Dengan banyak klon sekaligus, turret dan hero yang sendirian cepat hancur. Lawan Sun dengan skill area dan crowd control yang kena semua klon, plus anti-heal untuk memotong sustain pasifnya.",
+        "es": "Sun es un luchador de experiencia o jungla cuyo daño depende de sus Doppelgangers, clones que heredan parte de sus atributos. Su pasiva, Simian God, reduce la defensa física de quien golpean él o sus clones y lo cura cada vez que un clon hace daño. Endless Variety lanza su Bastón Dorado, que se vuelve clon al impactar o al final del recorrido. Swift Exchange comparte enfriamiento con ella: Sun deja un clon atrás y viaja oculto con el bastón hasta reaparecer donde se detiene. Instantaneous Move lanza a Sun y sus clones sobre un objetivo, y Clone Techniques invoca un clon más fuerte y duradero. Sus copias derriban torretas en segundos. Contra él, usa daño en área y control que alcance a todos los clones, y antisanación.",
+        "pt": "Sun é um lutador de EXP ou selva que tira o dano dos seus Doppelgangers, clones que herdam parte dos atributos dele. A passiva, Simian God, reduz a defesa física de quem ele ou os clones acertam e cura Sun sempre que um clone causa dano. Endless Variety arremessa o Bastão Dourado, que vira clone ao acertar alguém ou no fim do trajeto. Swift Exchange divide a recarga com ela: Sun deixa um clone no lugar e voa escondido com o bastão, reaparecendo onde ele para. Instantaneous Move manda Sun e os clones para cima de um alvo, e Clone Techniques invoca um clone mais forte e duradouro. As cópias derrubam torres rapidinho. Contra Sun, use dano em área e controle que peguem todos os clones, além de anticura."
       }
     },
     {
@@ -2051,7 +2107,7 @@
       "t": "hd",
       "s": [],
       "b": "fP",
-      "tier": "C",
+      "tier": "B",
       "lanes": [
         "exp"
       ],
@@ -2126,7 +2182,29 @@
       "tier": "S",
       "lanes": [
         "mid"
-      ]
+      ],
+      "sd": {
+        "en": "Valir is a mid lane mage who controls fights with fire, knockbacks and repeated stuns. His passive, Ashing, adds an Ablaze stack with each skill hit; Ablaze burns based on the target's maximum HP, and a third stack detonates with a short stun, though the same target can only be stunned this way once in a while. Burst Fireball holds two charges, slows on impact and leaves a flame that explodes again. Searing Torrent blasts enemies to the end of its path, interrupting most dashes and flushing people out of bushes. Vengeance Flame purges his debuffs, speeds him up and empowers his next skills: a bigger fireball and a burning firewall after the torrent. Against Valir, bait out Searing Torrent before dashing in, and remember his ultimate cannot remove suppression.",
+        "tr": "Valir, orta koridorda oynanan ve ateşle, geri itmelerle ve tekrarlanan sersemletmelerle savaşı kontrol eden bir büyücü. Pasifi Ashing, her skill isabetinde hedefe bir Ablaze yükü koyar; Ablaze hedefin maksimum canına göre yakar, üçüncü yükte patlayıp kısa bir sersemletme uygular, ancak aynı hedef bu şekilde ancak belli aralıklarla sersemletilebilir. Burst Fireball iki şarj tutar, isabet ettiğinde yavaşlatır ve yerde kısa süre sonra yeniden patlayan bir alev bırakır. Searing Torrent düşmanları yolun sonuna kadar iter, çoğu atılmayı keser ve çalılıktaki rakipleri dışarı çıkarır. Vengeance Flame, Valir'in üzerindeki olumsuz etkileri temizler, ona hız verir ve sonraki skill'lerini güçlendirir: ateş topu büyür, alev seli ise yakan bir ateş duvarı bırakır. Valir'e karşı atılmadan önce Searing Torrent'i harcatın, yandan yaklaşın ve ultisinin bastırma etkilerini temizleyemediğini unutmayın.",
+        "id": "Valir adalah mage mid lane yang mengatur jalannya fight dengan api, knockback, dan stun beruntun. Pasifnya, Ashing, menempelkan stack Ablaze di setiap skill yang kena; Ablaze membakar berdasarkan max HP target, dan stack ketiga meledak sambil memberi stun singkat, walau target yang sama hanya bisa di-stun lewat cara ini sesekali. Burst Fireball punya dua charge, memberi slow, dan menyisakan api di tanah yang meledak lagi. Searing Torrent mendorong musuh sampai ujung jalurnya, membatalkan kebanyakan dash, dan bisa mengusir musuh dari semak. Vengeance Flame membersihkan debuff dari Valir, menambah movement speed, dan memperkuat skill berikutnya: fireball jadi lebih jauh dan luas, sementara torrent meninggalkan dinding api. Melawan Valir, pancing dulu Searing Torrent sebelum dash masuk, cari sudut dari samping, dan ingat ultimate-nya tidak bisa menghapus suppression.",
+        "es": "Valir es un mago de línea media que domina las peleas con fuego, empujones y aturdimientos repetidos. Su pasiva, Ashing, aplica una carga de Ablaze con cada habilidad que acierta; Ablaze quema según la vida máxima del objetivo y, a la tercera carga, estalla con un breve aturdimiento, que tarda en repetirse sobre el mismo enemigo. Burst Fireball guarda dos cargas, ralentiza y deja una llama que vuelve a explotar. Searing Torrent arrastra a los enemigos hasta el final de su trayectoria, corta desplazamientos y saca a rivales de los arbustos. Vengeance Flame limpia sus efectos negativos, le da velocidad y potencia sus siguientes habilidades con más alcance y un muro ardiente. Contra Valir, fuerza su Searing Torrent antes de lanzarte y recuerda que su definitiva no quita supresiones.",
+        "pt": "Valir é um mago da rota do meio que controla lutas com fogo, empurrões e atordoamentos. A passiva, Ashing, aplica um acúmulo de Ablaze a cada habilidade que acerta; Ablaze queima com base na vida máxima do alvo e, no terceiro acúmulo, explode com um atordoamento curto, que demora a se repetir no mesmo inimigo. Burst Fireball guarda duas cargas, deixa lento e larga uma chama que explode de novo. Searing Torrent joga os inimigos até o fim do trajeto, corta avanços e tira gente do mato. Vengeance Flame limpa os efeitos negativos dele, dá velocidade e fortalece as próximas habilidades com mais alcance e uma parede de fogo. Contra Valir, faça ele gastar o Searing Torrent antes de avançar e lembre que a ultimate não remove supressão."
+      },
+      "build": [
+        "Demon Shoes",
+        "Glowing Wand",
+        "Ice Queen Wand",
+        "Genius Wand",
+        "Divine Glaive",
+        "Immortality"
+      ],
+      "spell": "Flicker",
+      "emblem": {
+        "set": "Mage",
+        "t1": "Inspire",
+        "t2": "Bargain Hunter",
+        "core": "Impure Rage"
+      }
     },
     {
       "n": "Vexana",
@@ -2138,7 +2216,14 @@
       "tier": "B",
       "lanes": [
         "mid"
-      ]
+      ],
+      "sd": {
+        "en": "Vexana is a mid lane mage who controls teamfights with fear and an undead summon. Her passive, Nether Touch, curses enemies hit by her or her Eternal Guard; a cursed enemy that dies explodes and damages those nearby, which speeds up wave clear. Deathly Grasp fires a thin claw that passes through minions and, if it reaches a hero, terrifies them and erupts into a second burst of fear around them. Cursed Blast marks an area that slows and detonates after a short delay, her main damage source. Eternal Guard calls an Undead Knight that knocks enemies airborne on arrival and fights beside her for several seconds, even if she dies. Against Vexana, leave the marked area at once, sidestep Deathly Grasp, and pressure her before the knight is ready.",
+        "tr": "Vexana, korku etkileri ve çağırdığı ölümsüz şövalyeyle takım savaşlarını yöneten bir orta koridor büyücüsü. Pasifi Nether Touch, kendisinin ve Eternal Guard'ın vurduğu düşmanlara lanet koyar; lanetli bir düşman ölünce patlar ve çevresine hasar verir, bu da minyon dalgalarını temizlemeyi hızlandırır. Deathly Grasp, minyonların içinden geçen ince bir pençe fırlatır; bir kahramana değerse onu korkutur ve etrafında ikinci bir korku patlaması yaratır. Cursed Blast bir alanı işaretleyip içindekileri yavaşlatır, kısa bir gecikmeden sonra patlar ve onun ana hasar kaynağıdır. Eternal Guard bir Undead Knight çağırır; şövalye geldiği yerde düşmanları havaya kaldırır ve Vexana ölse bile birkaç saniye yanında savaşmaya devam eder. Ona karşı gecikmeli patlamanın alanından hemen çıkın, Deathly Grasp'tan yana kaçın ve şövalye hazır olmadan baskı kurun.",
+        "id": "Vexana adalah mage mid lane yang mengatur team fight lewat efek fear dan summon ksatria undead. Pasifnya, Nether Touch, mengutuk musuh yang terkena serangan Vexana maupun Eternal Guard; musuh terkutuk yang mati akan meledak dan melukai sekitarnya, jadi clear wave minion lebih cepat. Deathly Grasp melontarkan cakar tipis yang tembus minion dan, kalau kena hero, membuatnya ketakutan lalu memicu ledakan fear kedua di sekelilingnya. Cursed Blast menandai area yang memberi slow, lalu meledak setelah jeda singkat, dan inilah sumber damage utamanya. Eternal Guard memanggil Undead Knight yang membuat musuh terpental ke udara saat muncul dan bertarung di sisinya selama beberapa detik, bahkan kalau Vexana mati. Untuk melawannya, langsung keluar dari area ledakan yang tertunda, hindari Deathly Grasp ke samping, dan tekan dia sebelum ultimate-nya siap.",
+        "es": "Vexana es una maga de línea media que controla las peleas con miedo y un caballero no muerto. Su pasiva, Nether Touch, maldice a los enemigos golpeados por ella o su Eternal Guard; si un maldito muere, explota y daña a su alrededor, ideal para limpiar oleadas. Deathly Grasp lanza una garra fina que atraviesa súbditos y, si alcanza a un héroe, lo aterroriza y desata otro estallido de miedo. Cursed Blast, su principal daño, marca una zona que ralentiza y detona tras un breve retraso. Eternal Guard invoca un Undead Knight que levanta a los enemigos al aparecer y pelea a su lado varios segundos, aunque ella muera. Contra Vexana, sal enseguida de la zona marcada, esquiva la garra de lado y presiónala antes de la definitiva.",
+        "pt": "Vexana é uma maga da rota do meio que controla as lutas com medo e um cavaleiro morto-vivo. A passiva, Nether Touch, amaldiçoa os inimigos atingidos por ela ou pelo Eternal Guard; quando um amaldiçoado morre, explode e fere quem está em volta, acelerando a limpeza das ondas. Deathly Grasp lança uma garra fina que atravessa tropas e, se pegar um herói, deixa ele aterrorizado e solta outra explosão de medo. Cursed Blast, seu principal dano, marca uma área que deixa lento e explode após um breve atraso. Eternal Guard invoca um Undead Knight que arremessa inimigos ao chegar e luta ao lado dela por alguns segundos, mesmo se ela morrer. Contra Vexana, saia logo da área marcada, desvie da garra para o lado e pressione antes da ultimate."
+      }
     },
     {
       "n": "Wanwan",
@@ -2210,7 +2295,7 @@
         "antisquishy"
       ],
       "b": "fP",
-      "tier": "C",
+      "tier": "B",
       "lanes": [
         "jungle",
         "exp"
@@ -2382,150 +2467,150 @@
   "tierSource": {
     "name": "mlbbhub.com",
     "url": "https://mlbbhub.com/tier-list",
-    "date": "2026-10-16",
+    "date": "2026-11-01",
     "patch": "2.2.16a"
   },
   "tierList": {
     "S": [
       "Masha",
-      "Aulus",
       "Marcel",
-      "Rafaela",
       "Argus",
-      "Minotaur",
+      "Rafaela",
       "Khufra",
       "Popol and Kupa",
       "Gloo",
-      "Floryn",
       "Valir",
+      "Floryn",
+      "Minotaur",
+      "Aulus",
       "Carmilla",
-      "Obsidia"
+      "Obsidia",
+      "Sun"
     ],
     "A": [
-      "Lolita",
       "Diggie",
       "Bruno",
-      "Gord",
-      "Lukas",
-      "Hirara",
+      "Lolita",
       "Estes",
-      "Benedetta",
-      "Edith",
-      "Irithel",
+      "Gord",
       "Ling",
-      "Sun",
-      "Zhask",
+      "Lukas",
       "Hanabi",
+      "Irithel",
+      "Zhask",
       "Atlas",
+      "Edith",
+      "Benedetta",
       "Belerick",
-      "Barats",
       "Kagura",
+      "Barats",
       "Minsitthar",
       "Kadita",
-      "Eudora",
-      "Zetian"
+      "Silvanna",
+      "Guinevere",
+      "Saber",
+      "Hilda",
+      "Zetian",
+      "Alice",
+      "Eudora"
     ],
     "B": [
       "Yve",
       "Bane",
       "Cyclops",
       "Fredrinn",
-      "Guinevere",
-      "Beatrix",
-      "Natan",
       "Faramis",
-      "Natalia",
-      "Silvanna",
       "Cecilion",
-      "Alice",
-      "Terizla",
-      "Brody",
-      "Leomord",
+      "Natan",
+      "Natalia",
       "Khaleed",
-      "Hilda",
-      "Clint",
-      "Akai",
+      "Terizla",
       "Aldous",
-      "Paquito",
+      "Clint",
+      "Leomord",
+      "Beatrix",
       "Zhuxin",
-      "Badang",
-      "Aamon",
-      "Vale",
-      "Julian",
-      "Ixia",
-      "Saber",
       "Moskov",
-      "X.Borg",
+      "Kalea",
+      "Badang",
+      "Vale",
+      "Akai",
+      "Aamon",
+      "Paquito",
       "Kaja",
+      "Brody",
+      "Julian",
+      "X.Borg",
+      "Hirara",
+      "Ixia",
       "Hanzo",
       "Novaria",
-      "Xavier",
+      "Angela",
       "Suyou",
+      "Lylia",
+      "Miya",
+      "Nolan",
+      "Cici",
+      "Odette",
+      "Xavier",
+      "Yin",
+      "Vexana",
       "Sora",
       "Yi Sun-shin",
-      "Ruby",
-      "Vexana",
-      "Layla",
-      "Lylia",
-      "Cici",
-      "Miya",
-      "Odette",
-      "Angela",
-      "Claude",
-      "Nolan",
-      "Selena",
       "Dyrroth",
+      "Layla",
+      "Kimmy",
+      "Johnson",
+      "Thamuz",
+      "Alpha",
+      "Gusion",
       "Lesley"
     ],
     "C": [
-      "Joy",
+      "Ruby",
       "Uranus",
-      "Yu Zhong",
-      "Hylos",
-      "Yin",
-      "Roger",
-      "Thamuz",
-      "Karrie",
-      "Kimmy",
-      "Lapu-Lapu",
-      "Melissa",
       "Aurora",
-      "Phoveus",
-      "Johnson",
-      "Lunox",
-      "Hayabusa",
-      "Wanwan",
-      "Alpha",
-      "Freya",
+      "Yu Zhong",
+      "Joy",
+      "Claude",
+      "Karrie",
+      "Melissa",
       "Alucard",
-      "Arlott",
-      "Gusion",
-      "Luo Yi",
+      "Lunox",
+      "Hylos",
+      "Roger",
+      "Lapu-Lapu",
       "Chang'e",
-      "Jawhead",
+      "Freya",
+      "Phoveus",
+      "Hayabusa",
+      "Selena",
       "Karina",
       "Harley",
+      "Jawhead",
+      "Wanwan",
+      "Luo Yi",
       "Chip",
+      "Arlott",
       "Nana",
       "Pharsa",
+      "Helcurt",
       "Martis",
       "Esmeralda",
-      "Grock",
-      "Helcurt"
+      "Balmond"
     ],
     "D": [
-      "Baxia",
-      "Kalea",
-      "Balmond",
+      "Grock",
       "Harith",
+      "Baxia",
       "Zilong",
-      "Valentina",
-      "Chou",
       "Gatotkaca",
-      "Mathilda",
+      "Chou",
       "Tigreal",
-      "Granger",
+      "Valentina",
+      "Mathilda",
       "Lancelot",
+      "Granger",
       "Fanny",
       "Franco"
     ]
