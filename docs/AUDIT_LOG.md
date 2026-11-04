@@ -2,6 +2,12 @@
 
 Technical SEO, AI visibility, usability and ad-readiness checks. Content (patch news, guides) is handled by the weekly bot (UPDATING.md).
 
+## 2026-11-04 (maintenance bot)
+**Checked:** `node build.js` (2,950 pages, OK); static audit (0 broken internal links, JSON-LD valid, canonical everywhere, no undefined/NaN); live = build (home, llms.txt, robots.txt, ads.txt, sitemap identical); all 2,950 sitemap URLs 200; real 404; headless 360 px on EN/TR homes, About and 8 random hero/brawler/character pages in 5 languages: no JS errors, no overflow.
+**Fixed:** nothing needed.
+**AdSense readiness:** ~35%. Blockers unchanged: (1) ~2,800 template hero/brawler/character pages vs ~20 articles per language; (2) About does not name who runs the site; (3) tool pages mostly JS; (4) CMP not live.
+**Proposals (owner):** name a person or business on About; decide on noindexing hero pages without a kit summary (`sd`) or sourced matchups.
+
 ## 2026-11-02 (maintenance bot)
 **Checked:** `node build.js` (2,950 pages, OK); static audit (0 broken internal links, JSON-LD valid, canonical on every page, no undefined/NaN); live: all 2,950 sitemap URLs return 200, today's weekly update (Wild Rift 7.3d, Shyvana) is deployed; headless 360 px run on home, MLBB hub/draft/tier list/Brody, TR home, news, About/Privacy/Contact and random tr/id/es/en hero pages: no JS errors, no horizontal overflow, real 404; ads.txt matches the pub ID in the page code. Monday re-read of the six Google pages: no rule change (POLICY.md date updated).
 **Fixed:** nothing needed.
