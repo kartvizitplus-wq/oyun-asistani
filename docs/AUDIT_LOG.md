@@ -2,6 +2,12 @@
 
 Technical SEO, AI visibility, usability and ad-readiness checks. Content (patch news, guides) is handled by the weekly bot (UPDATING.md).
 
+## 2026-11-06 (maintenance bot)
+**Checked:** `node build.js` (2,950 pages, OK); static audit (0 broken internal links, JSON-LD valid, canonical everywhere, no undefined/NaN); live = build (llms.txt, robots.txt, ads.txt, sitemap identical); all 2,950 sitemap URLs 200; real 404; headless 360 px on EN/TR homes, MLBB hub, About/Privacy/Contact and 10 random pages in 5 languages: no overflow, canonical = URL, no page JS errors (only Cloudflare beacon / Google CSP report-only console notices).
+**Fixed:** nothing needed.
+**AdSense readiness:** ~35%. Blockers unchanged: (1) ~2,800 template hero/brawler/character pages vs ~20 articles per language; (2) About does not name who runs the site; (3) tool pages mostly JS; (4) CMP not live.
+**Proposals (owner):** name a person or business on About; decide on noindexing hero pages without a kit summary (`sd`) or sourced matchups.
+
 ## 2026-11-04 (maintenance bot)
 **Checked:** `node build.js` (2,950 pages, OK); static audit (0 broken internal links, JSON-LD valid, canonical everywhere, no undefined/NaN); live = build (home, llms.txt, robots.txt, ads.txt, sitemap identical); all 2,950 sitemap URLs 200; real 404; headless 360 px on EN/TR homes, About and 8 random hero/brawler/character pages in 5 languages: no JS errors, no overflow.
 **Fixed:** nothing needed.
