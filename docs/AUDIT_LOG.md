@@ -2,6 +2,10 @@
 
 Technical SEO, AI visibility, usability and ad-readiness checks. Content (patch news, guides) is handled by the weekly bot (UPDATING.md).
 
+## 2026-11-09 (weekly content bot)
+**Changed pages with possible impressions (additive only, no title/URL/structure changes):** kit summaries (`sd`) added to Honor of Kings Chano and Dolia (from hokstats.gg). New article: Brawl Stars November 2026 update. Check these pages in Search Console around 2026-11-16.
+**Not done this week (sources unreachable from the bot: mlbbhub, mlcounters, brawlify, brawltime.ninja, hokbuild, fandom, wildriftcore, seemeta):** tier list refreshes, MLBB `wr` refresh (mlcounters data of 2026-10-14 turns 30 days old on 2026-11-13; remove it next run if it cannot be refreshed), Surge `mu` re-check, hero guides (no sourced build/matchup data). No new patches for MLBB (2.2.16a), HoK (S16) or Free Fire (OB56 not yet live); Wild Rift 7.3e (Nov 4) is ARAM augments only.
+
 ## 2026-11-06 (maintenance bot)
 **Checked:** `node build.js` (2,950 pages, OK); static audit (0 broken internal links, JSON-LD valid, canonical everywhere, no undefined/NaN); live = build (llms.txt, robots.txt, ads.txt, sitemap identical); all 2,950 sitemap URLs 200; real 404; headless 360 px on EN/TR homes, MLBB hub, About/Privacy/Contact and 10 random pages in 5 languages: no overflow, canonical = URL, no page JS errors (only Cloudflare beacon / Google CSP report-only console notices).
 **Fixed:** nothing needed.

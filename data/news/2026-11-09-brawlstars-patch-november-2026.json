@@ -1,0 +1,223 @@
+{
+  "type": "patch",
+  "slug": "brawlstars-patch-november-2026",
+  "date": "2026-11-09",
+  "game": "brawlstars",
+  "sources": [
+    "Supercell official Brawl Stars release notes, November 2026 (published November 3, 2026)",
+    "PocketGamer.biz on the update rollout and Season 56 Brawl Vice (November 6, 2026)",
+    "TrophyCoach November 2026 update guide, citing the October 31 Brawl Talk (November 3, 2026)",
+    "timesaver.gg Brawl Stars tier list (checked November 7, 2026), quoting Brawl Planet and Brawl Time Ninja ranked data"
+  ],
+  "title": {
+    "tr": "Brawl Stars Kasım 2026 güncellemesi: Shade, Gus ve Amber zayıfladı, Dereceli 5.000 kupaya taşındı",
+    "en": "Brawl Stars November 2026 update: Shade, Gus and Amber nerfed, Ranked now unlocks at 5,000 Trophies",
+    "id": "Update Brawl Stars November 2026: Shade, Gus, dan Amber di-nerf, Ranked kini terbuka di 5.000 Trofi",
+    "es": "Actualización de noviembre de 2026 de Brawl Stars: Shade, Gus y Amber bajan y la Clasificatoria se abre a los 5.000 trofeos",
+    "pt": "Atualização de novembro de 2026 do Brawl Stars: Shade, Gus e Amber enfraquecem e o Ranqueado agora abre com 5.000 troféus"
+  },
+  "summary": {
+    "tr": "3 Kasım bakımıyla gelen güncelleme 27 savaşçıyı değiştirdi: meta'nın tepesindeki Shade, Gus, Amber, Wendy ve Ash zayıfladı; Hank, Shelly, Draco ve Chuck güçlendi. Dereceli mod artık 5.000 kupada açılıyor ve her rütbede Güç 11 istiyor. Thunder Frogs, Rey ve Ruby duyuruldu.",
+    "en": "The update that arrived with the November 3 maintenance changes 27 brawlers: Shade, Gus, Amber, Wendy and Ash at the top of the meta are nerfed, while Hank, Shelly, Draco and Chuck get buffs. Ranked now unlocks at 5,000 Trophies and asks for Power 11 at every rank. Thunder Frogs, Rey and Ruby are announced.",
+    "id": "Update yang datang lewat maintenance 3 November mengubah 27 brawler: Shade, Gus, Amber, Wendy, dan Ash di puncak meta di-nerf, sedangkan Hank, Shelly, Draco, dan Chuck di-buff. Ranked kini terbuka di 5.000 Trofi dan meminta Power 11 di semua rank. Thunder Frogs, Rey, dan Ruby diumumkan.",
+    "es": "La actualización que llegó con el mantenimiento del 3 de noviembre cambia a 27 brawlers: Shade, Gus, Amber, Wendy y Ash, en lo alto del meta, bajan; Hank, Shelly, Draco y Chuck suben. La Clasificatoria se abre ahora a los 5.000 trofeos y pide Poder 11 en todos los rangos. Se anuncian Thunder Frogs, Rey y Ruby.",
+    "pt": "A atualização que chegou com a manutenção de 3 de novembro mexe em 27 brawlers: Shade, Gus, Amber, Wendy e Ash, no topo do meta, enfraquecem; Hank, Shelly, Draco e Chuck melhoram. O Ranqueado agora abre com 5.000 troféus e pede Força 11 em todos os ranks. Thunder Frogs, Rey e Ruby foram anunciados."
+  },
+  "body": {
+    "en": [
+      {"p": "Supercell published the November 2026 release notes on November 3, and the update rolled out after that day's maintenance; Season 56, Brawl Vice, started on November 5. It is the largest update in months: 27 brawlers changed, a reworked Ranked mode, new modes and maps, and three new brawlers announced. Numbers below are the values Supercell lists in its notes. When a brawler's main attack or Super damage changes, Supercell adjusts the charge rate so the number of hits needed for a Super stays the same, unless the notes say otherwise."},
+      {"h": "Nerfs: the top of the meta takes the hits"},
+      {"ul": [
+        "Shade: the biggest nerf. Health 3,700 to 3,400, Super lasts 4 seconds instead of 6 and charges 12% slower, Jump Scare's cooldown rises from 18 to 24 seconds and its shield drops from 1,000 to 400, and Hardened Hoodie's shield falls from 30% to 20%.",
+        "Gus: only 3 spirits can be on the map at once instead of 10. His Super charges 8% slower, Knockback Spirit's cooldown goes from 18 to 26 seconds and its damage from 540 to 260, and Healing Bonanza's bonus healing drops from 75% to 50%.",
+        "Amber: Dancing Flames' cooldown goes from 14 to 20 seconds, Fire Starters from 24 to 28 seconds with barrels at 1,000 health instead of 1,300, her Super's burn drops from 480 to 400 and her Hypercharge radius shrinks from 1,600 to 1,200.",
+        "Wendy: main attack projectiles are 20% smaller, Wind-Powered's range drops from 15 to 10 and Slowing Shield slows by 15% instead of 20%.",
+        "Ash: 15% slower Super charge in general and 40% less charge from his own Super.",
+        "Max: less Super charge from moving, a shorter Super Charged shield (3 seconds) and a weaker Sneaky Sneakers (24-second cooldown, 2-second duration).",
+        "Smaller cuts: Pierce's last shot (1,500 to 1,400), Maisie's main attack (1,500 to 1,360), Nori's Super (3% per fish instead of 4%), Colette's Hypercharged second projectile, and Buffie values for Brock and Rico."
+      ]},
+      {"h": "Buffs: tanks and forgotten picks"},
+      {"ul": [
+        "Hank: health 5,500 to 6,000.",
+        "Shelly: main attack 300 to 340 per pellet and Super 320 to 360.",
+        "Draco: his Super now applies damage more consistently, its damage goes from 1,120 to 1,620 and its damage reduction from 20% to 25%.",
+        "Chuck, Darryl and Melodie no longer lose unused Super charges when they are defeated. Chuck also reloads faster (2,000 to 1,800), Darryl's Super hits harder (660 to 720) and Melodie's attack and notes deal more damage.",
+        "Ziggy's main attack rises from 950 to 1,050 while The Great Ziggini drops from 18% to 7% bonus damage, so the power moves out of the Star Power and into the base kit.",
+        "Small quality buffs: Buster's trait charges his Super 10% faster near allies, Angelo charges his shot 10% faster and R-T's projectiles are 15% larger."
+      ]},
+      {"h": "Mixed changes"},
+      {"ul": [
+        "Surge: his Hypercharged Super no longer jumps him straight to the last upgrade stage, but his attack fires faster (470 to 400) and Power Shield's cooldown drops from 22 to 18 seconds.",
+        "Cosmo: more health (3,400 to 3,600), but Telescope Trap has a longer cooldown (24 seconds) and a smaller area.",
+        "Damian: slower Super jump, harder punches. Squeak: more damage on attack and Super, less from Chain Reaction. Kit: his Super now deals its damage at 0.75 and 1.5 seconds instead of 1 and 2."
+      ]},
+      {"h": "New brawlers and Hypercharges"},
+      {"p": "The notes introduce three brawlers. Thunder Frogs is a Legendary Artillery trio whose attack lands one frog and then a damaging triangle that hurts most along its sides; the Super merges them into one big frog that jumps three times. Rey (Mythic Marksman) and Ruby (Mythic Damage Dealer) are a pair: each one's main attack heals the other when both are on the same team. Rey marks enemies and his Super fires at every visible marked target in range, and Ruby's Super creates a zone that grounds enemies and deals damage based on their maximum health. TrophyCoach, citing the October 31 Brawl Talk, says Thunder Frogs arrive in November and Rey and Ruby in December, so not all three may be in the game yet. Cosmo and Vince also get Hypercharges, and Mr. P, Lou, Gale, Mandy, Chester and Berry get Buffies with several gadget and Star Power reworks."},
+      {"h": "Ranked and modes"},
+      {"ul": [
+        "Ranked now unlocks at 5,000 Trophies instead of 1,000 (players who already had access keep it), every rank needs Power 11 brawlers, and Diamond asks for 12 maxed brawlers instead of 9. Free maxed brawlers per season go from 3 to 6.",
+        "The monthly reset now drops you 2 ranks instead of 6, a 2-0 win gives extra Elo and a 1-2 loss costs less, and Ranked teams are no longer allowed from Masters I upwards.",
+        "Pick and ban gets a new grid that also shows gadgets and Star Powers, ban suggestions and pick-order swaps; Ranked and 5v5, 3v3 and 2v2 games now have post-match stats.",
+        "New modes include Mega Showdown for 20 players and Counterlight, and 18 new maps arrive across Hot Zone, Brawl Ball, Heist, Gem Grab, Knockout and Bounty."
+      ]},
+      {"h": "Our take"},
+      {"p": "The first week of data, as reported by timesaver.gg on November 7, already shows the Shade nerf working: his win-rate advantage in Ranked on Brawl Time Ninja fell from +3.4% to +0.1%, although blended Brawl Planet data that still includes older games keeps him at 58.9%. Amber was hit less (from +4.5% to +3.0%) and stays a strong pick. Gus is still the most picked brawler in Masters and above at 40.9%, down from 48.3% on November 1; Brawl Time Ninja does not show a clear change in his win rate yet, so his strength now depends more on timing his spirits than on stacking them. The early winner is Mr. P, whose advantage jumped from +3.0% to +9.2% with his new Buffies. Our tier list still uses SeeMeta's October ranking, which was measured before this patch; we will refresh it once there is enough post-patch data, and until then treat Shade and Gus as weaker than their listed S."}
+    ],
+    "tr": [
+      {"p": "Supercell Kasım 2026 güncelleme notlarını 3 Kasım'da yayımladı; güncelleme aynı günkü bakımın ardından oyuna geldi ve 56. sezon Brawl Vice 5 Kasım'da başladı. Aylardır gelen en büyük güncelleme bu: 27 savaşçı değişti, Dereceli mod yenilendi, yeni modlar ve haritalar eklendi, üç yeni savaşçı duyuruldu. Aşağıdaki sayılar Supercell'in notlarında yazan değerler. Bir savaşçının ana saldırı veya Süper hasarı değiştiğinde, notlarda aksi belirtilmedikçe Süper'i doldurmak için gereken isabet sayısı aynı kalacak şekilde dolum hızı da ayarlanıyor."},
+      {"h": "Zayıflatmalar: meta'nın zirvesi hedefte"},
+      {"ul": [
+        "Shade: en sert darbe onda. Can 3.700'den 3.400'e iniyor, Süper 6 yerine 4 saniye sürüyor ve %12 daha yavaş doluyor, Jump Scare'in bekleme süresi 18'den 24 saniyeye çıkıyor ve kalkanı 1.000'den 400'e düşüyor, Hardened Hoodie kalkanı da %30'dan %20'ye iniyor.",
+        "Gus: haritada aynı anda 10 yerine en fazla 3 ruh bulunabiliyor. Süper'i %8 daha yavaş doluyor, Knockback Spirit'in bekleme süresi 18'den 26 saniyeye çıkıyor ve hasarı 540'tan 260'a iniyor, Healing Bonanza'nın ek iyileştirmesi %75'ten %50'ye düşüyor.",
+        "Amber: Dancing Flames'in bekleme süresi 14'ten 20 saniyeye, Fire Starters'ınki 24'ten 28 saniyeye çıkıyor ve variller 1.300 yerine 1.000 canla geliyor; Süper'in yakma hasarı 480'den 400'e, Hiper Yük alanı 1.600'den 1.200'e iniyor.",
+        "Wendy: ana saldırı mermileri %20 küçülüyor, Wind-Powered'ın menzili 15'ten 10'a iniyor ve Slowing Shield %20 yerine %15 yavaşlatıyor.",
+        "Ash: Süper'i genel olarak %15, kendi Süper'inden gelen dolum ise %40 daha yavaş.",
+        "Max: hareket ederek daha az Süper dolduruyor, Super Charged kalkanı 3 saniyeye iniyor, Sneaky Sneakers da zayıflıyor (24 saniye bekleme, 2 saniye süre).",
+        "Daha küçük kesintiler: Pierce'ın son atışı (1.500'den 1.400'e), Maisie'nin ana saldırısı (1.500'den 1.360'a), Nori'nin Süper'i (balık başına %4 yerine %3), Colette'in Hiper Yüklü ikinci mermisi ve Brock ile Rico'nun Buffie değerleri."
+      ]},
+      {"h": "Güçlendirmeler: tanklar ve unutulmuş seçimler"},
+      {"ul": [
+        "Hank: can 5.500'den 6.000'e.",
+        "Shelly: ana saldırı saçma başına 300'den 340'a, Süper 320'den 360'a.",
+        "Draco: Süper'i hasarı artık daha tutarlı uyguluyor; hasarı 1.120'den 1.620'ye, hasar azaltması %20'den %25'e çıkıyor.",
+        "Chuck, Darryl ve Melodie artık yenildiklerinde kullanmadıkları Süper yüklerini kaybetmiyor. Chuck ayrıca daha hızlı dolduruyor (2.000'den 1.800'e), Darryl'in Süper'i daha sert vuruyor (660'tan 720'ye), Melodie'nin saldırısı ve notaları daha fazla hasar veriyor.",
+        "Ziggy'nin ana saldırısı 950'den 1.050'ye çıkarken The Great Ziggini'nin ek hasarı %18'den %7'ye iniyor; yani güç Yıldız Gücü'nden temel kite kayıyor.",
+        "Küçük ama işe yarar artışlar: Buster'ın özelliği takım arkadaşlarının yanında Süper'i %10 daha hızlı dolduruyor, Angelo atışını %10 daha hızlı şarj ediyor, R-T'nin mermileri %15 büyüyor."
+      ]},
+      {"h": "Karışık değişiklikler"},
+      {"ul": [
+        "Surge: Hiper Yüklü Süper'i onu artık doğrudan son kademeye çıkarmıyor, ama saldırısı daha hızlı çıkıyor (470'ten 400'e) ve Power Shield'ın bekleme süresi 22'den 18 saniyeye iniyor.",
+        "Cosmo: daha fazla can (3.400'den 3.600'e), ama Telescope Trap'in bekleme süresi 24 saniyeye çıkıyor ve alanı küçülüyor.",
+        "Damian: Süper sıçraması yavaşlıyor, yumrukları sertleşiyor. Squeak: saldırı ve Süper hasarı artıyor, Chain Reaction'ın katkısı azalıyor. Kit: Süper hasarı artık 1 ve 2 yerine 0,75 ve 1,5 saniyede işliyor."
+      ]},
+      {"h": "Yeni savaşçılar ve Hiper Yükler"},
+      {"p": "Notlar üç savaşçıyı tanıtıyor. Thunder Frogs, Efsanevi bir Topçu üçlüsü: saldırısında önce bir kurbağa iniyor, ardından en çok kenarlarında acıtan bir üçgen alan oluşuyor; Süper'de üçü tek bir dev kurbağaya dönüşüp üç kez zıplıyor. Rey (Mitik Nişancı) ve Ruby (Mitik Hasar Veren) bir çift: aynı takımdayken birinin ana saldırısı diğerini iyileştiriyor. Rey düşmanları işaretliyor ve Süper'i menzildeki her görünür işaretli hedefe ateş ediyor; Ruby'nin Süper'i ise düşmanları yere bağlayan ve maksimum canlarına göre hasar veren bir alan kuruyor. TrophyCoach, 31 Ekim Brawl Talk'una dayanarak Thunder Frogs'un Kasım'da, Rey ile Ruby'nin Aralık'ta geleceğini yazıyor; yani üçü de henüz oyunda olmayabilir. Cosmo ve Vince Hiper Yük kazanıyor; Mr. P, Lou, Gale, Mandy, Chester ve Berry de Buffie alıyor, bazı aletleri ve Yıldız Güçleri yeniden tasarlandı."},
+      {"h": "Dereceli ve modlar"},
+      {"ul": [
+        "Dereceli artık 1.000 yerine 5.000 kupada açılıyor (zaten erişimi olanlar koruyor), her rütbede Güç 11 savaşçı gerekiyor ve Elmas için 9 yerine 12 maksimum seviye savaşçı isteniyor. Sezon başına ücretsiz maksimum seviye savaşçı sayısı 3'ten 6'ya çıkıyor.",
+        "Aylık sıfırlama artık 6 yerine 2 rütbe düşürüyor; 2-0 galibiyet ek Elo veriyor, 1-2 yenilgi daha az kaybettiriyor; Masters I ve üzerinde artık Dereceli takım kurulamıyor.",
+        "Seçme ve yasaklama ekranı aletleri ve Yıldız Güçlerini de gösteren yeni bir ızgara, yasak önerileri ve seçim sırası takası getiriyor; Dereceli ile 5v5, 3v3 ve 2v2 maçlarında artık maç sonu istatistikleri var.",
+        "Yeni modlar arasında 20 oyunculu Mega Showdown ve Counterlight var; Hot Zone, Brawl Ball, Heist, Gem Grab, Knockout ve Bounty için toplam 18 yeni harita geliyor."
+      ]},
+      {"h": "Bizim yorumumuz"},
+      {"p": "timesaver.gg'nin 7 Kasım'da aktardığı ilk hafta verileri Shade zayıflatmasının işe yaradığını gösteriyor: Brawl Time Ninja'da Dereceli kazanma avantajı +%3,4'ten +%0,1'e düştü; eski maçları da içeren Brawl Planet verisi ise onu hâlâ %58,9'da gösteriyor. Amber daha az etkilendi (+%4,5'ten +%3,0'a) ve güçlü bir seçim olarak kalıyor. Gus, Masters ve üzerinde hâlâ en çok seçilen savaşçı (%40,9), ama 1 Kasım'daki %48,3'ten geriledi; Brawl Time Ninja'da kazanma oranında henüz belirgin bir değişim görünmüyor; artık gücü ruhları biriktirmekten çok doğru zamanda kullanmaya bağlı. Erken kazanan Mr. P: yeni Buffie'leriyle avantajı +%3,0'dan +%9,2'ye fırladı. Seviye listemiz hâlâ SeeMeta'nın bu yamadan önce ölçülmüş Ekim sıralamasını kullanıyor; yama sonrası yeterli veri birikince yenileyeceğiz. O zamana kadar Shade ile Gus'ı listedeki S seviyesinden daha zayıf düşünün."}
+    ],
+    "id": [
+      {"p": "Supercell merilis catatan update November 2026 pada 3 November, dan update masuk ke game setelah maintenance hari itu; Season 56, Brawl Vice, dimulai 5 November. Ini update terbesar dalam beberapa bulan: 27 brawler berubah, mode Ranked dirombak, ada mode dan map baru, serta tiga brawler baru diumumkan. Angka di bawah adalah nilai yang tertulis di catatan Supercell. Jika damage main attack atau Super seorang brawler berubah, Supercell menyesuaikan kecepatan isi Super sehingga jumlah serangan yang dibutuhkan tetap sama, kecuali catatan menyebut lain."},
+      {"h": "Nerf: puncak meta jadi sasaran"},
+      {"ul": [
+        "Shade: nerf terbesar. Health 3.700 jadi 3.400, Super bertahan 4 detik (sebelumnya 6) dan terisi 12% lebih lambat, cooldown Jump Scare naik dari 18 ke 24 detik dan shield-nya turun dari 1.000 ke 400, shield Hardened Hoodie turun dari 30% ke 20%.",
+        "Gus: hanya 3 spirit yang bisa ada di map sekaligus, bukan 10. Super terisi 8% lebih lambat, cooldown Knockback Spirit naik dari 18 ke 26 detik dan damage-nya turun dari 540 ke 260, bonus heal Healing Bonanza turun dari 75% ke 50%.",
+        "Amber: cooldown Dancing Flames naik dari 14 ke 20 detik, Fire Starters dari 24 ke 28 detik dengan tong ber-health 1.000 (sebelumnya 1.300), burn Super turun dari 480 ke 400 dan radius Hypercharge menyusut dari 1.600 ke 1.200.",
+        "Wendy: proyektil main attack 20% lebih kecil, jangkauan Wind-Powered turun dari 15 ke 10, dan Slowing Shield memperlambat 15% (sebelumnya 20%).",
+        "Ash: Super terisi 15% lebih lambat secara umum dan 40% lebih sedikit dari Super-nya sendiri.",
+        "Max: isi Super dari bergerak berkurang, shield Super Charged jadi 3 detik, dan Sneaky Sneakers melemah (cooldown 24 detik, durasi 2 detik).",
+        "Potongan kecil: tembakan terakhir Pierce (1.500 ke 1.400), main attack Maisie (1.500 ke 1.360), Super Nori (3% per ikan, bukan 4%), proyektil kedua Hypercharge Colette, serta nilai Buffie Brock dan Rico."
+      ]},
+      {"h": "Buff: tank dan pilihan yang terlupakan"},
+      {"ul": [
+        "Hank: health 5.500 jadi 6.000.",
+        "Shelly: main attack 300 ke 340 per peluru dan Super 320 ke 360.",
+        "Draco: Super kini memberi damage lebih konsisten, damage-nya naik dari 1.120 ke 1.620 dan damage reduction dari 20% ke 25%.",
+        "Chuck, Darryl, dan Melodie tidak lagi kehilangan charge Super yang belum dipakai saat kalah. Chuck juga reload lebih cepat (2.000 ke 1.800), Super Darryl lebih sakit (660 ke 720), dan serangan serta not Melodie memberi damage lebih besar.",
+        "Main attack Ziggy naik dari 950 ke 1.050, sedangkan bonus The Great Ziggini turun dari 18% ke 7%, jadi kekuatannya pindah dari Star Power ke kit dasar.",
+        "Buff kecil yang terasa: trait Buster mengisi Super 10% lebih cepat di dekat rekan, Angelo mengisi tembakannya 10% lebih cepat, dan proyektil R-T 15% lebih besar."
+      ]},
+      {"h": "Perubahan campuran"},
+      {"ul": [
+        "Surge: Super ber-Hypercharge tidak lagi langsung membawanya ke tahap upgrade terakhir, tetapi serangannya keluar lebih cepat (470 ke 400) dan cooldown Power Shield turun dari 22 ke 18 detik.",
+        "Cosmo: health lebih besar (3.400 ke 3.600), tetapi cooldown Telescope Trap jadi 24 detik dan areanya lebih kecil.",
+        "Damian: lompatan Super lebih lambat, pukulan lebih keras. Squeak: damage serangan dan Super naik, Chain Reaction turun. Kit: damage Super kini masuk di detik 0,75 dan 1,5, bukan 1 dan 2."
+      ]},
+      {"h": "Brawler baru dan Hypercharge"},
+      {"p": "Catatan update memperkenalkan tiga brawler. Thunder Frogs adalah trio Artillery Legendary: serangannya mendaratkan satu katak lalu membentuk segitiga yang paling sakit di sisi-sisinya, dan Super menyatukan mereka menjadi satu katak besar yang melompat tiga kali. Rey (Marksman Mythic) dan Ruby (Damage Dealer Mythic) adalah pasangan: main attack masing-masing menyembuhkan yang lain jika berada di tim yang sama. Rey menandai musuh dan Super-nya menembak setiap target bertanda yang terlihat dalam jangkauan, sedangkan Super Ruby membuat area yang menahan musuh di tanah dan memberi damage berdasarkan max health mereka. TrophyCoach, mengutip Brawl Talk 31 Oktober, menyebut Thunder Frogs hadir di November dan Rey serta Ruby di Desember, jadi belum tentu ketiganya sudah ada di game. Cosmo dan Vince juga mendapat Hypercharge, sementara Mr. P, Lou, Gale, Mandy, Chester, dan Berry mendapat Buffie dengan beberapa gadget dan Star Power yang dirombak."},
+      {"h": "Ranked dan mode"},
+      {"ul": [
+        "Ranked kini terbuka di 5.000 Trofi, bukan 1.000 (pemain yang sudah punya akses tetap bisa main), semua rank membutuhkan brawler Power 11, dan Diamond meminta 12 brawler maks, bukan 9. Brawler maks gratis per season naik dari 3 ke 6.",
+        "Reset bulanan kini hanya menurunkan 2 rank (sebelumnya 6), menang 2-0 memberi Elo tambahan dan kalah 1-2 mengurangi lebih sedikit, dan tim Ranked tidak diizinkan lagi mulai Masters I.",
+        "Pick dan ban punya grid baru yang juga menampilkan gadget dan Star Power, saran ban, serta tukar urutan pick; Ranked dan laga 5v5, 3v3, serta 2v2 kini punya statistik pasca-laga.",
+        "Mode baru antara lain Mega Showdown untuk 20 pemain dan Counterlight, plus 18 map baru untuk Hot Zone, Brawl Ball, Heist, Gem Grab, Knockout, dan Bounty."
+      ]},
+      {"h": "Pendapat kami"},
+      {"p": "Data minggu pertama yang dilaporkan timesaver.gg pada 7 November sudah menunjukkan nerf Shade bekerja: keunggulan win rate-nya di Ranked menurut Brawl Time Ninja turun dari +3,4% ke +0,1%, meski data gabungan Brawl Planet yang masih memuat laga lama tetap menempatkannya di 58,9%. Amber terkena lebih ringan (+4,5% ke +3,0%) dan tetap pilihan kuat. Gus masih brawler paling sering dipilih di Masters ke atas dengan 40,9%, turun dari 48,3% pada 1 November; Brawl Time Ninja belum menunjukkan perubahan jelas pada win rate-nya, jadi kekuatannya kini lebih bergantung pada timing spirit daripada menumpuknya. Pemenang awal adalah Mr. P, yang keunggulannya melonjak dari +3,0% ke +9,2% berkat Buffie barunya. Tier list kami masih memakai peringkat SeeMeta bulan Oktober yang diukur sebelum patch ini; kami akan memperbaruinya setelah data pasca-patch cukup, dan sampai saat itu anggap Shade dan Gus lebih lemah dari label S mereka."}
+    ],
+    "es": [
+      {"p": "Supercell publicó las notas de la actualización de noviembre de 2026 el 3 de noviembre, y la actualización llegó tras el mantenimiento de ese día; la temporada 56, Brawl Vice, empezó el 5 de noviembre. Es la actualización más grande en meses: 27 brawlers cambian, la Clasificatoria se rediseña, llegan modos y mapas nuevos y se anuncian tres brawlers. Las cifras de abajo son las que Supercell da en sus notas. Cuando cambia el daño del ataque principal o del Súper, Supercell ajusta la carga para que el número de golpes necesarios para el Súper siga igual, salvo que las notas digan otra cosa."},
+      {"h": "Debilitaciones: lo más alto del meta recibe los golpes"},
+      {"ul": [
+        "Shade: la mayor debilitación. Vida de 3.700 a 3.400, el Súper dura 4 segundos en vez de 6 y carga un 12% más lento, el enfriamiento de Jump Scare pasa de 18 a 24 segundos y su escudo de 1.000 a 400, y el escudo de Hardened Hoodie baja del 30% al 20%.",
+        "Gus: solo puede haber 3 espíritus en el mapa a la vez, en lugar de 10. Su Súper carga un 8% más lento, Knockback Spirit pasa de 18 a 26 segundos de enfriamiento y de 540 a 260 de daño, y la curación extra de Healing Bonanza baja del 75% al 50%.",
+        "Amber: Dancing Flames pasa de 14 a 20 segundos de enfriamiento y Fire Starters de 24 a 28, con barriles de 1.000 de vida en vez de 1.300; la quemadura del Súper baja de 480 a 400 y el radio de su Hipercarga de 1.600 a 1.200.",
+        "Wendy: los proyectiles de su ataque son un 20% más pequeños, el alcance de Wind-Powered baja de 15 a 10 y Slowing Shield ralentiza un 15% en vez de un 20%.",
+        "Ash: un 15% menos de carga de Súper en general y un 40% menos de la que obtiene con su propio Súper.",
+        "Max: menos carga de Súper al moverse, escudo de Super Charged más corto (3 segundos) y un Sneaky Sneakers más débil (24 segundos de enfriamiento, 2 de duración).",
+        "Recortes menores: el último disparo de Pierce (1.500 a 1.400), el ataque de Maisie (1.500 a 1.360), el Súper de Nori (3% por pez en vez de 4%), el segundo proyectil hipercargado de Colette y valores de Buffies de Brock y Rico."
+      ]},
+      {"h": "Mejoras: tanques y elecciones olvidadas"},
+      {"ul": [
+        "Hank: vida de 5.500 a 6.000.",
+        "Shelly: ataque de 300 a 340 por perdigón y Súper de 320 a 360.",
+        "Draco: su Súper aplica el daño de forma más constante, sube de 1.120 a 1.620 de daño y su reducción de daño pasa del 20% al 25%.",
+        "Chuck, Darryl y Melodie ya no pierden las cargas de Súper sin usar al ser derrotados. Además, Chuck recarga más rápido (2.000 a 1.800), el Súper de Darryl pega más (660 a 720) y el ataque y las notas de Melodie hacen más daño.",
+        "El ataque de Ziggy sube de 950 a 1.050 mientras The Great Ziggini baja del 18% al 7% de daño extra: el poder pasa del Poder Estelar al kit base.",
+        "Pequeñas mejoras útiles: el rasgo de Buster carga el Súper un 10% más rápido cerca de aliados, Angelo carga su disparo un 10% más rápido y los proyectiles de R-T son un 15% más grandes."
+      ]},
+      {"h": "Cambios mixtos"},
+      {"ul": [
+        "Surge: su Súper hipercargado ya no lo lleva directamente a la última mejora, pero dispara más rápido (470 a 400) y Power Shield baja de 22 a 18 segundos de enfriamiento.",
+        "Cosmo: más vida (3.400 a 3.600), pero Telescope Trap tiene más enfriamiento (24 segundos) y un área menor.",
+        "Damian: salto de Súper más lento y puñetazos más fuertes. Squeak: más daño en ataque y Súper, menos con Chain Reaction. Kit: su Súper hace daño a los 0,75 y 1,5 segundos en lugar de a los 1 y 2."
+      ]},
+      {"h": "Nuevos brawlers e Hipercargas"},
+      {"p": "Las notas presentan tres brawlers. Thunder Frogs es un trío Legendario de tipo Artillero: su ataque hace caer una rana y luego forma un triángulo que daña sobre todo en sus lados; el Súper los une en una gran rana que salta tres veces. Rey (Mítico, Tirador) y Ruby (Mítico, Dañino) son pareja: el ataque principal de cada uno cura al otro cuando juegan en el mismo equipo. Rey marca enemigos y su Súper dispara a cada objetivo marcado y visible dentro del alcance; el Súper de Ruby crea una zona que deja a los enemigos en el suelo y hace daño según su vida máxima. TrophyCoach, citando la Brawl Talk del 31 de octubre, dice que Thunder Frogs llega en noviembre y Rey y Ruby en diciembre, así que puede que no estén aún los tres. Cosmo y Vince reciben Hipercarga, y Mr. P, Lou, Gale, Mandy, Chester y Berry reciben Buffies con varios gadgets y Poderes Estelares rediseñados."},
+      {"h": "Clasificatoria y modos"},
+      {"ul": [
+        "La Clasificatoria se abre ahora a los 5.000 trofeos en lugar de 1.000 (quien ya tenía acceso lo conserva), todos los rangos piden brawlers a Poder 11 y Diamante exige 12 brawlers al máximo en vez de 9. Los brawlers al máximo gratis por temporada pasan de 3 a 6.",
+        "El reinicio mensual baja 2 rangos en vez de 6, ganar 2-0 da Elo extra y perder 1-2 resta menos, y desde Masters I ya no se permiten equipos en Clasificatoria.",
+        "La selección y el baneo tienen una nueva cuadrícula que muestra también gadgets y Poderes Estelares, sugerencias de baneo e intercambio del orden de elección; la Clasificatoria y las partidas 5v5, 3v3 y 2v2 tienen estadísticas al terminar.",
+        "Entre los modos nuevos están Mega Showdown para 20 jugadores y Counterlight, y llegan 18 mapas nuevos para Hot Zone, Brawl Ball, Heist, Gem Grab, Knockout y Bounty."
+      ]},
+      {"h": "Nuestra opinión"},
+      {"p": "Los datos de la primera semana que recoge timesaver.gg el 7 de noviembre ya muestran que la debilitación de Shade funciona: su ventaja de victorias en Clasificatoria en Brawl Time Ninja cayó de +3,4% a +0,1%, aunque los datos combinados de Brawl Planet, que aún incluyen partidas antiguas, lo mantienen en 58,9%. Amber sufrió menos (de +4,5% a +3,0%) y sigue siendo una buena elección. Gus sigue siendo el brawler más elegido en Masters o superior con un 40,9%, frente al 48,3% del 1 de noviembre; Brawl Time Ninja todavía no muestra un cambio claro en su porcentaje de victorias, así que ahora su fuerza depende más de usar bien los espíritus que de acumularlos. El primer ganador es Mr. P, cuya ventaja saltó de +3,0% a +9,2% con sus nuevos Buffies. Nuestra lista de niveles todavía usa la clasificación de octubre de SeeMeta, medida antes de este parche; la renovaremos cuando haya datos suficientes, y hasta entonces considera a Shade y Gus más débiles que su S."}
+    ],
+    "pt": [
+      {"p": "A Supercell publicou as notas da atualização de novembro de 2026 em 3 de novembro, e a atualização entrou no jogo depois da manutenção desse dia; a temporada 56, Brawl Vice, começou em 5 de novembro. É a maior atualização em meses: 27 brawlers mudam, o Ranqueado é reformulado, chegam modos e mapas novos e três brawlers são anunciados. Os números abaixo são os valores que a Supercell informa nas notas. Quando muda o dano do ataque principal ou do Super, a Supercell ajusta a carga para que o número de acertos necessários para o Super continue igual, a menos que as notas digam outra coisa."},
+      {"h": "Nerfs: o topo do meta leva os golpes"},
+      {"ul": [
+        "Shade: o maior nerf. Vida de 3.700 para 3.400, o Super dura 4 segundos em vez de 6 e carrega 12% mais devagar, a recarga de Jump Scare vai de 18 para 24 segundos e o escudo de 1.000 para 400, e o escudo de Hardened Hoodie cai de 30% para 20%.",
+        "Gus: só podem existir 3 espíritos no mapa ao mesmo tempo, não 10. O Super carrega 8% mais devagar, Knockback Spirit vai de 18 para 26 segundos de recarga e de 540 para 260 de dano, e a cura extra de Healing Bonanza cai de 75% para 50%.",
+        "Amber: Dancing Flames vai de 14 para 20 segundos de recarga e Fire Starters de 24 para 28, com barris de 1.000 de vida em vez de 1.300; a queimadura do Super cai de 480 para 400 e o raio da Hipercarga de 1.600 para 1.200.",
+        "Wendy: os projéteis do ataque ficam 20% menores, o alcance de Wind-Powered cai de 15 para 10 e Slowing Shield desacelera 15% em vez de 20%.",
+        "Ash: 15% menos carga de Super em geral e 40% menos carga vinda do próprio Super.",
+        "Max: menos carga de Super ao se mover, escudo de Super Charged mais curto (3 segundos) e Sneaky Sneakers mais fraco (24 segundos de recarga, 2 de duração).",
+        "Cortes menores: o último tiro de Pierce (1.500 para 1.400), o ataque de Maisie (1.500 para 1.360), o Super de Nori (3% por peixe em vez de 4%), o segundo projétil hipercarregado de Colette e valores de Buffies de Brock e Rico."
+      ]},
+      {"h": "Buffs: tanques e escolhas esquecidas"},
+      {"ul": [
+        "Hank: vida de 5.500 para 6.000.",
+        "Shelly: ataque de 300 para 340 por projétil e Super de 320 para 360.",
+        "Draco: o Super aplica o dano de forma mais consistente, sobe de 1.120 para 1.620 de dano e a redução de dano vai de 20% para 25%.",
+        "Chuck, Darryl e Melodie não perdem mais as cargas de Super não usadas ao serem derrotados. Além disso, Chuck recarrega mais rápido (2.000 para 1.800), o Super de Darryl bate mais (660 para 720) e o ataque e as notas de Melodie causam mais dano.",
+        "O ataque de Ziggy sobe de 950 para 1.050 enquanto The Great Ziggini cai de 18% para 7% de dano extra: a força sai do Poder de Estrela e vai para o kit base.",
+        "Pequenos buffs úteis: o traço de Buster carrega o Super 10% mais rápido perto de aliados, Angelo carrega o tiro 10% mais rápido e os projéteis de R-T ficam 15% maiores."
+      ]},
+      {"h": "Mudanças mistas"},
+      {"ul": [
+        "Surge: o Super hipercarregado não o leva mais direto ao último estágio, mas o ataque sai mais rápido (470 para 400) e Power Shield cai de 22 para 18 segundos de recarga.",
+        "Cosmo: mais vida (3.400 para 3.600), mas Telescope Trap tem recarga maior (24 segundos) e área menor.",
+        "Damian: salto do Super mais lento e socos mais fortes. Squeak: mais dano no ataque e no Super, menos com Chain Reaction. Kit: o Super causa dano aos 0,75 e 1,5 segundos em vez de 1 e 2."
+      ]},
+      {"h": "Novos brawlers e Hipercargas"},
+      {"p": "As notas apresentam três brawlers. Thunder Frogs é um trio Lendário de Artilharia: o ataque faz um sapo cair e depois forma um triângulo que causa mais dano nas laterais; o Super junta os três num sapo gigante que pula três vezes. Rey (Mítico, Atirador) e Ruby (Mítica, Causadora de Dano) formam um casal: o ataque principal de cada um cura o outro quando estão no mesmo time. Rey marca inimigos e o Super dele atira em cada alvo marcado e visível no alcance; o Super de Ruby cria uma área que prende os inimigos ao chão e causa dano com base na vida máxima deles. A TrophyCoach, citando o Brawl Talk de 31 de outubro, diz que Thunder Frogs chega em novembro e Rey e Ruby em dezembro, então talvez os três ainda não estejam no jogo. Cosmo e Vince ganham Hipercarga, e Mr. P, Lou, Gale, Mandy, Chester e Berry ganham Buffies com vários acessórios e Poderes de Estrela reformulados."},
+      {"h": "Ranqueado e modos"},
+      {"ul": [
+        "O Ranqueado agora abre com 5.000 troféus em vez de 1.000 (quem já tinha acesso mantém), todos os ranks pedem brawlers Força 11 e o Diamante exige 12 brawlers no máximo em vez de 9. Os brawlers no máximo grátis por temporada passam de 3 para 6.",
+        "O reset mensal derruba 2 ranks em vez de 6, vencer por 2-0 dá Elo extra e perder por 1-2 tira menos, e a partir de Masters I não são mais permitidos times no Ranqueado.",
+        "A escolha e o banimento ganham uma nova grade que também mostra acessórios e Poderes de Estrela, sugestões de banimento e troca da ordem de escolha; o Ranqueado e as partidas 5v5, 3v3 e 2v2 agora têm estatísticas pós-partida.",
+        "Entre os modos novos estão Mega Showdown para 20 jogadores e Counterlight, e chegam 18 mapas novos para Hot Zone, Brawl Ball, Heist, Gem Grab, Knockout e Bounty."
+      ]},
+      {"h": "Nossa análise"},
+      {"p": "Os dados da primeira semana relatados pelo timesaver.gg em 7 de novembro já mostram o nerf de Shade funcionando: a vantagem de vitórias dele no Ranqueado no Brawl Time Ninja caiu de +3,4% para +0,1%, embora os dados combinados do Brawl Planet, que ainda incluem partidas antigas, o mantenham em 58,9%. Amber sofreu menos (de +4,5% para +3,0%) e continua uma boa escolha. Gus ainda é o brawler mais escolhido no Masters ou acima, com 40,9%, abaixo dos 48,3% de 1º de novembro; o Brawl Time Ninja ainda não mostra mudança clara na taxa de vitórias dele, então a força dele agora depende mais de usar bem os espíritos do que de acumulá-los. O primeiro vencedor é Mr. P, cuja vantagem saltou de +3,0% para +9,2% com os novos Buffies. Nossa tier list ainda usa o ranking de outubro do SeeMeta, medido antes deste patch; vamos atualizá-la quando houver dados suficientes, e até lá considere Shade e Gus mais fracos do que o S listado."}
+    ]
+  }
+}
