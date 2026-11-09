@@ -2,6 +2,13 @@
 
 Technical SEO, AI visibility, usability and ad-readiness checks. Content (patch news, guides) is handled by the weekly bot (UPDATING.md).
 
+## 2026-11-09 (maintenance bot)
+**Checked:** `node build.js` (2,955 pages, OK); static audit (0 broken internal links, JSON-LD valid, canonical everywhere except 404, no undefined/NaN); live = build (robots.txt, sitemap, llms.txt, ads.txt identical); all 2,955 sitemap URLs 200 (incl. today's Brawl Stars November article); real 404; headless 360 px on EN/TR homes and 10 random hero/brawler/news pages in 4 languages: no overflow, canonical = URL, no JS errors.
+**Monday Google re-read:** not done this run: WebFetch was blocked by an unanswered permission prompt for all six pages (no workaround used). POLICY.md left as reviewed on 2026-11-02; retry next Monday.
+**Fixed:** nothing needed.
+**AdSense readiness:** ~35%. Blockers unchanged: (1) ~2,800 template hero/brawler/character pages vs ~20 articles per language; (2) About does not name who runs the site; (3) tool pages mostly JS; (4) CMP not live.
+**Proposals (owner):** name a person or business on About; decide on noindexing hero pages without a kit summary (`sd`) or sourced matchups.
+
 ## 2026-11-09 (weekly content bot)
 **Changed pages with possible impressions (additive only, no title/URL/structure changes):** kit summaries (`sd`) added to Honor of Kings Chano and Dolia (from hokstats.gg). New article: Brawl Stars November 2026 update. Check these pages in Search Console around 2026-11-16.
 **Not done this week (sources unreachable from the bot: mlbbhub, mlcounters, brawlify, brawltime.ninja, hokbuild, fandom, wildriftcore, seemeta):** tier list refreshes, MLBB `wr` refresh (mlcounters data of 2026-10-14 turns 30 days old on 2026-11-13; remove it next run if it cannot be refreshed), Surge `mu` re-check, hero guides (no sourced build/matchup data). No new patches for MLBB (2.2.16a), HoK (S16) or Free Fire (OB56 not yet live); Wild Rift 7.3e (Nov 4) is ARAM augments only.
