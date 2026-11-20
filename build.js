@@ -3,12 +3,12 @@
 const fs = require('fs'), path = require('path');
 const R = p => path.join(__dirname, p);
 const read = p => JSON.parse(fs.readFileSync(R(p), 'utf8'));
-const cfg = read('config.json'), I18N = read('src/i18n.json'), ITEMS_TR = read('data/mlbb-items-tr.json'), GUIDE = read('src/guide.json'), CG = read('src/colorgame.json');
+const cfg = read('config.json'), I18N = read('src/i18n.json'), ITEMS_TR = read('data/mlbb-items-tr.json'), GUIDE = read('src/guide.json'), CG = read('src/colorgame.json'), ND = read('src/nightdrop.json');
 const Engine = require('./src/engine.js'), Icons = require('./src/icons.js');
 const OUT = R('dist');
 /* Cache-busting: asset URLs carry a hash of their content so browsers never mix old and new scripts. */
 const crypto = require('crypto');
-const VER = Object.fromEntries(['style.css', 'app.js', 'engine.js', 'icons.js', 'colorgame.js'].map(f => [f, crypto.createHash('md5').update(fs.readFileSync(R('src/' + f))).digest('hex').slice(0, 8)]));
+const VER = Object.fromEntries(['style.css', 'app.js', 'engine.js', 'icons.js', 'colorgame.js', 'nightdrop.js'].map(f => [f, crypto.createHash('md5').update(fs.readFileSync(R('src/' + f))).digest('hex').slice(0, 8)]));
 const asset = f => `/assets/${f}?v=${VER[f]}`;
 
 /* Games shown on the site. kind: moba (heroes + items), bs (Brawl Stars), ff (Free Fire). */
@@ -445,6 +445,49 @@ ${G.sections.map((sec, i) => `<h2 id="s${i + 1}">${esc(sec.h)}</h2><ol>${sec.ste
     }));
   }
 
+  /* Night Drop: top-down battle royale against bots (standalone page, own script). */
+  {
+    const N = ND[lang] || ND.en, rel = `${lang}/night-drop/`;
+    const ui = Object.fromEntries(['name', 'you', 'play', 'again', 'startText', 'drop', 'zoneShrink', 'zoneMoving', 'zoneIn', 'zone', 'outside', 'reloading', 'pick', 'winTitle', 'winText', 'deadTitle', 'deadText', 'statsLine', 'w'].map(k => [k, N[k]]));
+    const li = a => a.map(x => `<li>${esc(x)}</li>`).join('');
+    write(`${rel}index.html`, layout({
+      lang, rel, title: `${N.title} · ${cfg.siteName}`, desc: N.desc, lastmod: '2026-11-20',
+      crumbs: [[t.home, `${lang}/`], [N.name, rel]],
+      jsonld: { '@context': 'https://schema.org', '@type': 'VideoGame', name: N.name, description: N.desc, url: `${base}/${rel}`, inLanguage: lang,
+        genre: ['Battle royale', 'Shooter'], gamePlatform: 'Web browser', applicationCategory: 'Game', operatingSystem: 'Any', isAccessibleForFree: true, playMode: 'SinglePlayer',
+        publisher: { '@type': 'Organization', name: cfg.siteName, url: `${base}/` } },
+      body: `<section><h1>${esc(N.h1)}</h1><p class="lead">${esc(N.intro)}</p></section>
+<section id="nd" class="nd" data-t="${esc(JSON.stringify(ui))}">
+<div class="nd-stage"><canvas aria-label="${esc(N.name)}"></canvas>
+<div class="nd-btns" hidden><button type="button" data-k="pick" hidden>↑</button><button type="button" data-k="heal" aria-label="${esc(N.heal)}">+</button><button type="button" data-k="reload" aria-label="${esc(N.reload)}">⟳</button></div>
+<button type="button" class="nd-full" data-k="full" aria-label="${esc(N.fullscreen)}">⛶</button>
+<div class="nd-ov"></div></div>
+<noscript><p class="note">JavaScript is required to play.</p></noscript>
+</section>
+<article class="prose"><h2>${esc(N.ctrlH)}</h2><ul>${li(N.ctrl)}</ul>
+<h2>${esc(N.howH)}</h2><ol>${li(N.how)}</ol>
+<h2>${esc(N.weaponsH)}</h2><ul>${li(N.weapons)}</ul>
+<h2>${esc(N.tipsH)}</h2><ul>${li(N.tips)}</ul>
+<h2>${esc(N.aboutH)}</h2><p>${esc(N.about)}</p></article>
+<style>
+.nd-stage{position:relative;width:100%;height:min(76vh,620px);min-height:380px;border:1px solid var(--line);border-radius:10px;overflow:hidden;background:#04060b;touch-action:none;user-select:none;-webkit-user-select:none}
+.nd-stage:fullscreen{height:100%;border:0;border-radius:0}
+.nd-stage canvas{display:block;width:100%;height:100%;touch-action:none}
+.nd-ov{position:absolute;inset:0;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:10px;text-align:center;background:rgba(4,6,11,.72);padding:20px}
+.nd-ov[hidden]{display:none}
+.nd-ov h3{font-size:1.8rem}
+.nd-ov p{margin:0;color:var(--muted);max-width:44ch}
+.nd-ov small{display:block;margin-top:8px;font-size:.82rem}
+.nd-btns{position:absolute;right:14px;bottom:14px;display:flex;flex-direction:column;gap:10px}
+.nd-btns[hidden],.nd-btns [hidden]{display:none}
+.nd-btns button,.nd-full{width:52px;height:52px;border-radius:50%;border:1px solid rgba(255,255,255,.25);background:rgba(10,14,22,.6);color:#fff;font:700 1.3rem var(--display);cursor:pointer}
+.nd-btns button[data-k=pick]{background:rgba(232,180,74,.85);color:#1a1405}
+.nd-full{position:absolute;left:10px;bottom:10px;width:40px;height:40px;font-size:1.1rem;border-radius:8px}
+</style>
+<script src="${asset('nightdrop.js')}" defer></script>`
+    }));
+  }
+
   /* Privacy, About & Contact */
   const PRIVACY_DATE = '2026-10-22';
   // email_off: Cloudflare Email Obfuscation must not hide the address from visitors without JS, reviewers and crawlers
@@ -470,7 +513,7 @@ var n=(s||navigator.language||'en').slice(0,2).toLowerCase();location.replace('/
 ${cfg.langs.map(l => `<a style="color:#e8b44a;margin-right:12px" href="/${l}/">${esc(I18N[l].langName)}</a>`).join('')}
 </body></html>`);
 fs.mkdirSync(path.join(OUT, 'assets'), { recursive: true });
-for (const f of ['style.css', 'app.js', 'engine.js', 'icons.js', 'colorgame.js']) fs.copyFileSync(R('src/' + f), path.join(OUT, 'assets', f));
+for (const f of ['style.css', 'app.js', 'engine.js', 'icons.js', 'colorgame.js', 'nightdrop.js']) fs.copyFileSync(R('src/' + f), path.join(OUT, 'assets', f));
 if (fs.existsSync(R('static'))) fs.cpSync(R('static'), OUT, { recursive: true });
 fs.writeFileSync(path.join(OUT, 'manifest.webmanifest'), JSON.stringify({
   name: cfg.siteName + ' – ' + I18N.en.tagline, short_name: cfg.siteName, start_url: '/', scope: '/', display: 'standalone',
