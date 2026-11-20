@@ -2,6 +2,11 @@
 
 Technical SEO, AI visibility, usability and ad-readiness checks. Content (patch news, guides) is handled by the weekly bot (UPDATING.md).
 
+## 2026-11-20 (owner request): games redesign, Red Scarf, new home page
+**Added:** Red Scarf (ninja stealth game in a generated labyrinth, `/xx/red-scarf/`, 5 languages); shared character painter `src/chibi.js`; stories for every game (`src/stories.json`) shown on each game page; animated home-page covers (`src/home.js`).
+**Changed:** Night Drop now a neon rain city with a sonar mechanic; MOBA games got three worlds (sky islands with night fog, ink-painted seasons, volcanic arena with rising lava); all characters redrawn as faced figures; new home page (featured banner + cards with live covers + teasers).
+**Checked:** clean build (50 pages), no JS errors on home and game pages at 390 px and 1280 px, no horizontal scroll, Red Scarf takedowns/traps/death/level-clear tested headless.
+
 ## 2026-11-20 (owner request): PickRadar is now a games site
 **Why:** owner reports search traffic had fallen to about zero and asked to turn the whole site into a browser-games site (explicit exception to the "no traffic drop" rule in POLICY.md).
 **Added:** five original games in 5 languages: Night Drop (top-down battle royale vs 11 bots), Crown Clash (5v5 MOBA, 3 lanes), Jade Lanes (3v3 MOBA, 2 lanes), Duel Peak (1v1 MOBA duel), Color Gradient (puzzle). MOBA games share one engine (`src/moba.js`, set-ups in `src/moba.json`).

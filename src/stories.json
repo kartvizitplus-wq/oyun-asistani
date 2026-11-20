@@ -1,0 +1,207 @@
+{
+ "en": {
+  "night-drop": {
+   "teaser": "The night the city's grid went dark, the acid rain began.",
+   "story": [
+    "When the power grid of Vell failed, the rain turned to acid and the city's rooftops became the only safe ground. Each night twelve runners drop onto the roofs to fight for the last working power cell.",
+    "They have no lights – only sonar, neon signs and the flash of gunfire. Whoever still stands when the storm closes in takes the cell, and the city's lights, home."
+   ]
+  },
+  "crown-clash": {
+   "teaser": "Two crowns, one Heart Crystal, a kingdom falling from the sky.",
+   "story": [
+    "Aeris was once one great kingdom in the clouds. When the old king died, it broke apart into floating islands held up only by the Heart Crystals at either end of the sky.",
+    "The Azure Crown and the Ember Crown each guard one crystal. Whoever shatters the other's crystal sends those islands falling – and rules what is left of the sky. When night comes, even the bridges disappear in the dark."
+   ]
+  },
+  "jade-lanes": {
+   "teaser": "A painted world where every brushstroke turns the season.",
+   "story": [
+    "In the Valley of Mo everything was painted by the Old Brush: the mountains, the river, the pagodas, even the heroes. With every stroke the seasons turn.",
+    "Two schools of painters fight for the Jade Seal that keeps the brush. Win it and you paint the next season of the world. Lose, and your side of the valley fades back into blank paper."
+   ]
+  },
+  "duel-peak": {
+   "teaser": "Inside the volcano, two champions and one Ember Rune.",
+   "story": [
+    "Deep inside the volcano Karrak lies an arena carved by fire. Once a year two champions climb down to duel for the Ember Rune, the heart of the mountain.",
+    "The mountain does not like to wait: the longer the duel lasts, the higher the lava climbs. Strike in harmony – two skills in a row – and the rune resonates with you."
+   ]
+  },
+  "color-gradient": {
+   "teaser": "The Prism Keeper's light has shattered – put the colours back.",
+   "story": [
+    "The Prism Keeper kept every colour of the world in one perfect beam of light. One night the prism cracked and the colours scattered into thousands of tiles.",
+    "Each level is a piece of that light. Put the shades back in order and a little more colour returns to the world."
+   ]
+  },
+  "red-scarf": {
+   "teaser": "The last ninja of the Kage clan and a labyrinth that never forgets.",
+   "story": null
+  }
+ },
+ "tr": {
+  "night-drop": {
+   "teaser": "Şehrin şebekesinin karardığı gece asit yağmuru başladı.",
+   "story": [
+    "Vell'in elektrik şebekesi çöktüğünde yağmur aside döndü ve şehrin çatıları tek güvenli yer oldu. Her gece on iki koşucu, çalışan son enerji hücresi için çatılara iniyor.",
+    "Işıkları yok; sadece sonar, neon tabelalar ve silahların parıltısı var. Fırtına kapandığında ayakta kalan, hücreyi ve şehrin ışıklarını eve götürür."
+   ]
+  },
+  "crown-clash": {
+   "teaser": "İki taç, bir Kalp Kristali ve gökten düşen bir krallık.",
+   "story": [
+    "Aeris bir zamanlar bulutların üstünde tek büyük bir krallıktı. Yaşlı kral ölünce krallık, gökyüzünün iki ucundaki Kalp Kristalleri sayesinde havada duran uçan adalara bölündü.",
+    "Mavi Taç ve Kor Taç birer kristali koruyor. Ötekinin kristalini kıran, o adaları düşürür ve gökyüzünden geriye kalanı yönetir. Gece olduğunda köprüler bile karanlıkta kaybolur."
+   ]
+  },
+  "jade-lanes": {
+   "teaser": "Her fırça darbesinin mevsimi değiştirdiği, resmedilmiş bir dünya.",
+   "story": [
+    "Mo Vadisi'ndeki her şey Yaşlı Fırça tarafından çizildi: dağlar, nehir, pagodalar, hatta kahramanlar. Her darbede mevsim döner.",
+    "İki ressam okulu, fırçayı koruyan Yeşim Mühür için savaşıyor. Mührü kazanan dünyanın bir sonraki mevsimini çizer. Kaybedenin vadisi ise boş kâğıda dönüşüp silinir."
+   ]
+  },
+  "duel-peak": {
+   "teaser": "Volkanın içinde iki şampiyon ve tek bir Kor Rünü.",
+   "story": [
+    "Karrak volkanının derinlerinde ateşin oyduğu bir arena var. Her yıl iki şampiyon, dağın kalbi olan Kor Rünü için düelloya iner.",
+    "Dağ beklemeyi sevmez: düello uzadıkça lav yükselir. Uyum içinde vur – arka arkaya iki yetenek – ve rün seninle titreşsin."
+   ]
+  },
+  "color-gradient": {
+   "teaser": "Prizma Bekçisi'nin ışığı paramparça – renkleri yerine koy.",
+   "story": [
+    "Prizma Bekçisi dünyanın bütün renklerini tek, kusursuz bir ışık huzmesinde saklardı. Bir gece prizma çatladı ve renkler binlerce kareye dağıldı.",
+    "Her bölüm o ışığın bir parçası. Tonları sıraya diz, dünyaya biraz daha renk dönsün."
+   ]
+  },
+  "red-scarf": {
+   "teaser": "Kage klanının son ninjası ve hiç unutmayan bir labirent.",
+   "story": null
+  }
+ },
+ "id": {
+  "night-drop": {
+   "teaser": "Malam jaringan listrik kota padam, hujan asam pun turun.",
+   "story": [
+    "Saat jaringan listrik Vell gagal, hujan berubah menjadi asam dan atap kota menjadi satu-satunya tempat aman. Setiap malam dua belas pelari turun ke atap untuk merebut sel daya terakhir.",
+    "Mereka tak punya lampu – hanya sonar, papan neon, dan kilatan tembakan. Siapa yang masih berdiri saat badai menutup, membawa pulang sel itu dan lampu kota."
+   ]
+  },
+  "crown-clash": {
+   "teaser": "Dua mahkota, satu Kristal Jantung, kerajaan yang jatuh dari langit.",
+   "story": [
+    "Aeris dulunya satu kerajaan besar di atas awan. Saat raja tua wafat, kerajaan pecah menjadi pulau terapung yang hanya ditopang Kristal Jantung di kedua ujung langit.",
+    "Mahkota Biru dan Mahkota Bara masing-masing menjaga satu kristal. Siapa yang menghancurkan kristal lawan menjatuhkan pulau-pulaunya – dan menguasai sisa langit. Saat malam tiba, jembatan pun lenyap dalam gelap."
+   ]
+  },
+  "jade-lanes": {
+   "teaser": "Dunia lukisan tempat setiap goresan kuas mengubah musim.",
+   "story": [
+    "Di Lembah Mo semuanya dilukis oleh Kuas Tua: gunung, sungai, pagoda, bahkan para hero. Setiap goresan memutar musim.",
+    "Dua perguruan pelukis memperebutkan Segel Giok yang menyimpan kuas itu. Menangkan segel dan kamu melukis musim berikutnya. Kalah, dan sisi lembahmu memudar menjadi kertas kosong."
+   ]
+  },
+  "duel-peak": {
+   "teaser": "Di dalam gunung berapi, dua juara dan satu Rune Bara.",
+   "story": [
+    "Jauh di dalam gunung berapi Karrak ada arena yang diukir api. Setiap tahun dua juara turun untuk berduel memperebutkan Rune Bara, jantung gunung.",
+    "Gunung tak suka menunggu: makin lama duel, makin tinggi lava naik. Serang selaras – dua skill beruntun – dan rune itu beresonansi denganmu."
+   ]
+  },
+  "color-gradient": {
+   "teaser": "Cahaya Penjaga Prisma pecah – kembalikan warnanya.",
+   "story": [
+    "Penjaga Prisma menyimpan semua warna dunia dalam satu berkas cahaya sempurna. Suatu malam prisma itu retak dan warnanya tercerai-berai menjadi ribuan kotak.",
+    "Setiap level adalah sepotong cahaya itu. Urutkan kembali gradasinya dan sedikit warna kembali ke dunia."
+   ]
+  },
+  "red-scarf": {
+   "teaser": "Ninja terakhir klan Kage dan labirin yang tak pernah lupa.",
+   "story": null
+  }
+ },
+ "es": {
+  "night-drop": {
+   "teaser": "La noche en que la red de la ciudad se apagó, empezó la lluvia ácida.",
+   "story": [
+    "Cuando falló la red eléctrica de Vell, la lluvia se volvió ácida y las azoteas pasaron a ser el único suelo seguro. Cada noche doce corredores saltan a los tejados para luchar por la última célula de energía.",
+    "No tienen luz: solo sonar, carteles de neón y el destello de los disparos. Quien siga en pie cuando la tormenta se cierre se lleva la célula, y las luces de la ciudad."
+   ]
+  },
+  "crown-clash": {
+   "teaser": "Dos coronas, un Cristal Corazón y un reino que cae del cielo.",
+   "story": [
+    "Aeris fue un gran reino sobre las nubes. Cuando murió el viejo rey, se partió en islas flotantes que solo sostienen los Cristales Corazón de cada extremo del cielo.",
+    "La Corona Azur y la Corona de Brasa guardan un cristal cada una. Quien rompa el cristal del otro hará caer sus islas y gobernará lo que quede del cielo. Al caer la noche, hasta los puentes desaparecen en la oscuridad."
+   ]
+  },
+  "jade-lanes": {
+   "teaser": "Un mundo pintado donde cada pincelada cambia la estación.",
+   "story": [
+    "En el Valle de Mo todo lo pintó el Viejo Pincel: las montañas, el río, las pagodas y hasta los héroes. Con cada trazo cambia la estación.",
+    "Dos escuelas de pintores luchan por el Sello de Jade que guarda el pincel. Quien lo gane pintará la próxima estación del mundo. Quien pierda verá su lado del valle volver a ser papel en blanco."
+   ]
+  },
+  "duel-peak": {
+   "teaser": "Dentro del volcán: dos campeones y una sola Runa de Brasa.",
+   "story": [
+    "En lo más hondo del volcán Karrak hay una arena tallada por el fuego. Cada año dos campeones bajan a batirse por la Runa de Brasa, el corazón de la montaña.",
+    "A la montaña no le gusta esperar: cuanto más dura el duelo, más sube la lava. Golpea en armonía, dos habilidades seguidas, y la runa resonará contigo."
+   ]
+  },
+  "color-gradient": {
+   "teaser": "La luz del Guardián del Prisma se ha roto: devuelve los colores.",
+   "story": [
+    "El Guardián del Prisma guardaba todos los colores del mundo en un único haz de luz perfecto. Una noche el prisma se agrietó y los colores se dispersaron en miles de fichas.",
+    "Cada nivel es un trozo de esa luz. Pon los tonos en orden y un poco más de color volverá al mundo."
+   ]
+  },
+  "red-scarf": {
+   "teaser": "La última ninja del clan Kage y un laberinto que nunca olvida.",
+   "story": null
+  }
+ },
+ "pt": {
+  "night-drop": {
+   "teaser": "Na noite em que a rede da cidade apagou, começou a chuva ácida.",
+   "story": [
+    "Quando a rede elétrica de Vell falhou, a chuva virou ácido e os telhados passaram a ser o único chão seguro. Toda noite doze corredores caem nos telhados para disputar a última célula de energia.",
+    "Eles não têm luz – só sonar, letreiros neon e o clarão dos tiros. Quem ainda estiver de pé quando a tempestade fechar leva a célula, e as luzes da cidade, para casa."
+   ]
+  },
+  "crown-clash": {
+   "teaser": "Duas coroas, um Cristal Coração e um reino caindo do céu.",
+   "story": [
+    "Aeris já foi um grande reino acima das nuvens. Quando o velho rei morreu, ele se partiu em ilhas flutuantes sustentadas só pelos Cristais Coração nas duas pontas do céu.",
+    "A Coroa Azul e a Coroa de Brasa guardam um cristal cada. Quem quebrar o cristal do outro derruba suas ilhas e governa o que sobrar do céu. Quando a noite chega, até as pontes somem no escuro."
+   ]
+  },
+  "jade-lanes": {
+   "teaser": "Um mundo pintado onde cada pincelada muda a estação.",
+   "story": [
+    "No Vale de Mo tudo foi pintado pelo Velho Pincel: as montanhas, o rio, os pagodes, até os heróis. A cada traço a estação muda.",
+    "Duas escolas de pintores lutam pelo Selo de Jade que guarda o pincel. Quem ganhar pinta a próxima estação do mundo. Quem perder vê seu lado do vale voltar a ser papel em branco."
+   ]
+  },
+  "duel-peak": {
+   "teaser": "Dentro do vulcão, dois campeões e uma única Runa de Brasa.",
+   "story": [
+    "No fundo do vulcão Karrak existe uma arena esculpida pelo fogo. Todo ano dois campeões descem para duelar pela Runa de Brasa, o coração da montanha.",
+    "A montanha não gosta de esperar: quanto mais dura o duelo, mais a lava sobe. Ataque em harmonia – duas habilidades seguidas – e a runa ressoa com você."
+   ]
+  },
+  "color-gradient": {
+   "teaser": "A luz do Guardião do Prisma se partiu – devolva as cores.",
+   "story": [
+    "O Guardião do Prisma guardava todas as cores do mundo num único feixe de luz perfeito. Uma noite o prisma rachou e as cores se espalharam em milhares de peças.",
+    "Cada nível é um pedaço daquela luz. Coloque os tons em ordem e um pouco mais de cor volta ao mundo."
+   ]
+  },
+  "red-scarf": {
+   "teaser": "A última ninja do clã Kage e um labirinto que nunca esquece.",
+   "story": null
+  }
+ }
+}

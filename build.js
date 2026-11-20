@@ -3,14 +3,14 @@
 const fs = require('fs'), path = require('path');
 const R = p => path.join(__dirname, p);
 const read = p => JSON.parse(fs.readFileSync(R(p), 'utf8'));
-const cfg = read('config.json'), I18N = read('src/i18n.json'), ITEMS_TR = read('data/mlbb-items-tr.json'), GUIDE = read('src/guide.json'), CG = read('src/colorgame.json'), ND = read('src/nightdrop.json'), MB = read('src/moba.json'), SITE = read('src/site.json'), RS = read('src/redscarf.json');
+const cfg = read('config.json'), I18N = read('src/i18n.json'), ITEMS_TR = read('data/mlbb-items-tr.json'), GUIDE = read('src/guide.json'), CG = read('src/colorgame.json'), ND = read('src/nightdrop.json'), MB = read('src/moba.json'), SITE = read('src/site.json'), RS = read('src/redscarf.json'), STORY = read('src/stories.json');
 /* The old pick-assistant pages (hero, tier, draft, news, guide) are no longer built: PickRadar is a games site now. */
 const LEGACY = false;
 const Engine = require('./src/engine.js'), Icons = require('./src/icons.js');
 const OUT = R('dist');
 /* Cache-busting: asset URLs carry a hash of their content so browsers never mix old and new scripts. */
 const crypto = require('crypto');
-const VER = Object.fromEntries(['style.css', 'app.js', 'engine.js', 'icons.js', 'colorgame.js', 'nightdrop.js', 'moba.js', 'chibi.js', 'redscarf.js'].map(f => [f, crypto.createHash('md5').update(fs.readFileSync(R('src/' + f))).digest('hex').slice(0, 8)]));
+const VER = Object.fromEntries(['style.css', 'app.js', 'engine.js', 'icons.js', 'colorgame.js', 'nightdrop.js', 'moba.js', 'chibi.js', 'redscarf.js', 'home.js'].map(f => [f, crypto.createHash('md5').update(fs.readFileSync(R('src/' + f))).digest('hex').slice(0, 8)]));
 const asset = f => `/assets/${f}?v=${VER[f]}`;
 
 /* Games shown on the site. kind: moba (heroes + items), bs (Brawl Stars), ff (Free Fire). */
@@ -39,6 +39,10 @@ const COVER = {
   'color-gradient': Array.from({ length: 40 }, (_, i) => { const x = i % 8, y = Math.floor(i / 8); return `<rect x="${12 + x * 37}" y="${8 + y * 33}" width="34" height="30" rx="4" fill="hsl(${200 + x * 14 - y * 9} ${55 + y * 6}% ${72 - y * 9 - x * 2}%)"/>`; }).join('') + '<circle cx="29" cy="23" r="4" fill="#0006"/><circle cx="288" cy="155" r="4" fill="#0006"/>'
 };
 COVER['red-scarf'] = '<rect width="320" height="180" fill="#050508"/><path d="M0 40h120v30H60v70H0zM200 0h30v110h90v30H200z" fill="#26262f"/><path d="M150 120 L300 60 L300 170 Z" fill="#ff2d48" opacity=".18"/><circle cx="150" cy="120" r="14" fill="#4a5a6a" stroke="#15121c" stroke-width="3"/><ellipse cx="150" cy="108" rx="20" ry="7" fill="#c9a25e"/><circle cx="95" cy="125" r="13" fill="#101016" stroke="#d4142e" stroke-width="3"/><rect x="98" y="120" width="12" height="5" rx="2" fill="#e8c4a0"/><path d="M83 128 q-20 4 -34 -2 M83 132 q-18 10 -30 8" stroke="#d4142e" stroke-width="5" fill="none" stroke-linecap="round"/><circle cx="260" cy="30" r="12" fill="#d8dde8" opacity=".8"/>';
+const ACCENT = { 'red-scarf': '#ff2d48', 'night-drop': '#2ef2ff', 'crown-clash': '#5aa7ff', 'jade-lanes': '#3fbf8f', 'duel-peak': '#ff8a3d', 'color-gradient': '#b48cff' };
+const NEW_LBL = { en: 'New', tr: 'Yeni', id: 'Baru', es: 'Nuevo', pt: 'Novo' };
+/* Story block shown at the top of each game's text */
+const storyBlock = (lang, slug) => { const st = (STORY[lang] || STORY.en)[slug]; return st && st.story ? `<h2>${esc(RS[lang].storyH)}</h2>${st.story.map(p => `<p>${esc(p)}</p>`).join('')}` : ''; };
 const cover = slug => `<svg viewBox="0 0 320 180" width="320" height="180" aria-hidden="true" preserveAspectRatio="xMidYMid slice">${COVER[slug]}</svg>`;
 const NEWS = fs.existsSync(R('data/news')) ? fs.readdirSync(R('data/news')).filter(f => f.endsWith('.json')).map(f => read('data/news/' + f)).sort((a, b) => b.date.localeCompare(a.date)) : [];
 
@@ -169,20 +173,41 @@ for (const lang of cfg.langs) {
     lang, rel: `${lang}/`, title: `${cfg.siteName} · ${S.tagline}`, desc: S.homeText,
     jsonld: [{ '@context': 'https://schema.org', '@type': 'WebSite', name: cfg.siteName, url: `${base}/${lang}/`, inLanguage: lang },
       { '@context': 'https://schema.org', '@type': 'ItemList', itemListElement: PLAY.map((g, i) => ({ '@type': 'ListItem', position: i + 1, url: `${base}/${lang}/${g.slug}/`, name: g.name(lang) })) }],
-    body: `<section class="playhero"><span class="kicker">${esc(S.tagline)}</span><h1>${esc(S.homeH1)}</h1><p class="lead">${esc(S.homeText)}</p></section>
+    body: `<section class="hx"><div class="hx-art">${cover('red-scarf')}<canvas data-scene="red-scarf" aria-hidden="true"></canvas></div>
+<div class="hx-body"><span class="kicker">${esc(S.tagline)}</span><h1>${esc(S.homeH1)}</h1><p class="lead">${esc(S.homeText)}</p>
+<p class="hx-feat"><span class="badge">${NEW_LBL[lang]}</span> <b>${esc(RS[lang].name)}</b> – ${esc(STORY[lang]['red-scarf'].teaser)}</p>
+<div class="bar"><a class="btn" href="/${lang}/red-scarf/">▶ ${esc(S.play)}: ${esc(RS[lang].name)}</a><a class="btn ghost" href="#games">${esc(S.gamesH)} ↓</a></div></div></section>
 <section id="games"><h2>${esc(S.gamesH)}</h2><div class="playgrid">
-${PLAY.map((g, i) => `<a class="playcard" href="/${lang}/${g.slug}/">${cover(g.slug)}<span class="pbody"><span class="note">${esc(S.genre[g.slug])}</span><h3>${esc(g.name(lang))}</h3><span class="note">${esc(g.desc(lang))}</span><span class="go">▶ ${esc(S.play)}</span></span></a>`).join('\n')}
+${PLAY.map(g => `<a class="pc" href="/${lang}/${g.slug}/" style="--ac:${ACCENT[g.slug]}"><span class="pc-art">${cover(g.slug)}<canvas data-scene="${g.slug}" aria-hidden="true"></canvas><span class="chip">${esc(S.genre[g.slug])}</span></span><span class="pc-body"><h3>${esc(g.name(lang))}</h3><span class="teaser">${esc(STORY[lang][g.slug].teaser)}</span><span class="note">${esc(g.desc(lang))}</span><span class="go">▶ ${esc(S.play)}</span></span></a>`).join('\n')}
 </div></section>
-<section class="prose"><h2>${esc(S.whyH)}</h2><ul>${S.why.map(x => `<li>${esc(x)}</li>`).join('')}</ul></section>
+<section><h2>${esc(S.whyH)}</h2><div class="whys">${S.why.map((x, i) => `<div class="why"><span class="wi">${['⚡', '📱', '🤖', '🎨'][i]}</span><p>${esc(x)}</p></div>`).join('')}</div></section>
 <style>
-.playhero{gap:6px}
-.playgrid{display:grid;grid-template-columns:repeat(auto-fill,minmax(250px,1fr));gap:14px}
-.playcard{display:flex;flex-direction:column;text-decoration:none;color:var(--fg);background:var(--panel);border:1px solid var(--line);border-radius:12px;overflow:hidden;transition:transform .15s ease,border-color .15s ease}
-.playcard:hover{border-color:var(--gold);transform:translateY(-2px)}
-.playcard svg{display:block;width:100%;height:auto;aspect-ratio:16/9}
-.playcard .pbody{display:flex;flex-direction:column;gap:6px;padding:14px}
-.playcard .go{font-family:var(--display);font-weight:700;color:var(--gold);margin-top:4px}
-</style>`
+.hx{position:relative;border-radius:16px;overflow:hidden;border:1px solid #ff2d4855;min-height:420px;display:flex;flex-direction:row;align-items:flex-end;box-shadow:0 30px 80px -40px #ff2d48}
+.hx-art{position:absolute;inset:0}
+.hx-art svg,.hx-art canvas{position:absolute;inset:0;width:100%;height:100%}
+.hx-art::after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(5,5,8,.92) 0%,rgba(5,5,8,.7) 45%,rgba(5,5,8,0) 80%),linear-gradient(0deg,rgba(5,5,8,.8),rgba(5,5,8,0) 50%)}
+.hx-body{position:relative;padding:28px;max-width:620px;display:flex;flex-direction:column;gap:10px}
+.hx-body h1{font-size:clamp(1.9rem,5vw,3rem)}
+.hx-feat{margin:0;color:#e8dfe2}
+.badge{display:inline-block;background:#ff2d48;color:#fff;font:700 .72rem var(--display);padding:3px 8px;border-radius:999px;letter-spacing:.06em;text-transform:uppercase;vertical-align:2px}
+.playgrid{display:grid;grid-template-columns:repeat(auto-fill,minmax(290px,1fr));gap:18px}
+.pc{display:flex;flex-direction:column;text-decoration:none;color:var(--fg);background:linear-gradient(180deg,var(--panel),#0c1019);border:1px solid var(--line);border-radius:16px;overflow:hidden;transition:transform .2s ease,border-color .2s ease,box-shadow .2s ease}
+.pc:hover{transform:translateY(-4px);border-color:var(--ac);box-shadow:0 18px 50px -24px var(--ac)}
+.pc-art{position:relative;display:block;aspect-ratio:16/10;overflow:hidden}
+.pc-art svg,.pc-art canvas{position:absolute;inset:0;width:100%;height:100%}
+.pc-art::after{content:"";position:absolute;inset:auto 0 0 0;height:40%;background:linear-gradient(0deg,#0f1420,rgba(15,20,32,0))}
+.chip{position:absolute;left:12px;top:12px;z-index:1;background:rgba(5,8,14,.75);backdrop-filter:blur(4px);border:1px solid var(--ac);color:#fff;font:600 .74rem var(--body);padding:4px 10px;border-radius:999px}
+.pc-body{display:flex;flex-direction:column;gap:8px;padding:6px 18px 18px}
+.pc-body h3{font-size:1.45rem;letter-spacing:.01em}
+.pc .teaser{font-style:italic;color:#d7dbe6;border-left:3px solid var(--ac);padding-left:10px}
+.pc .go{align-self:flex-start;margin-top:4px;font:700 .95rem var(--display);color:#0b0f17;background:var(--ac);padding:8px 16px;border-radius:999px}
+.whys{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:12px}
+.why{background:var(--panel);border:1px solid var(--line);border-radius:12px;padding:16px;display:flex;flex-direction:column;gap:6px}
+.why .wi{font-size:1.6rem}
+.why p{margin:0;color:var(--muted)}
+@media (max-width:600px){.hx{min-height:480px}.hx-art::after{background:linear-gradient(0deg,rgba(5,5,8,.95) 0%,rgba(5,5,8,.75) 50%,rgba(5,5,8,.1) 100%)}.hx-body{padding:20px}}
+</style>
+<script src="${asset('chibi.js')}" defer></script><script src="${asset('home.js')}" defer></script>`
   }));
 
   if (LEGACY) {
@@ -442,7 +467,7 @@ ${G.sections.map((sec, i) => `<h2 id="s${i + 1}">${esc(sec.h)}</h2><ol>${sec.ste
 <div class="cg-ctl"><button type="button" class="btn ghost" data-a="prev" aria-label="${esc(C.prev)}">←</button><button type="button" class="btn ghost" data-a="hint">${esc(C.hint)}</button><button type="button" class="btn ghost" data-a="restart">${esc(C.restart)}</button><button type="button" class="btn ghost" data-a="next" aria-label="${esc(C.next)}">→</button></div>
 <noscript><p class="note">JavaScript is required to play.</p></noscript>
 </section>
-<article class="prose"><h2>${esc(C.howH)}</h2><ol>${C.how.map(x => `<li>${esc(x)}</li>`).join('')}</ol>
+<article class="prose">${storyBlock(lang, 'color-gradient')}<h2>${esc(C.howH)}</h2><ol>${C.how.map(x => `<li>${esc(x)}</li>`).join('')}</ol>
 <h2>${esc(C.tipsH)}</h2><ul>${C.tips.map(x => `<li>${esc(x)}</li>`).join('')}</ul>
 <h2>${esc(C.aboutH)}</h2><p>${esc(C.about)}</p></article>
 <style>
@@ -540,7 +565,7 @@ ${G.sections.map((sec, i) => `<h2 id="s${i + 1}">${esc(sec.h)}</h2><ol>${sec.ste
 <div class="nd-ov"></div></div>
 <noscript><p class="note">JavaScript is required to play.</p></noscript>
 </section>
-<article class="prose"><h2>${esc(N.ctrlH)}</h2><ul>${li(N.ctrl)}</ul>
+<article class="prose">${storyBlock(lang, 'night-drop')}<h2>${esc(N.ctrlH)}</h2><ul>${li(N.ctrl)}</ul>
 <h2>${esc(N.howH)}</h2><ol>${li(N.how)}</ol>
 <h2>${esc(N.weaponsH)}</h2><ul>${li(N.weapons)}</ul>
 <h2>${esc(N.tipsH)}</h2><ul>${li(N.tips)}</ul>
@@ -586,7 +611,7 @@ ${G.sections.map((sec, i) => `<h2 id="s${i + 1}">${esc(sec.h)}</h2><ol>${sec.ste
 <div class="mb-ov"></div></div>
 <noscript><p class="note">JavaScript is required to play.</p></noscript>
 </section>
-<article class="prose"><h2>${esc(P.ctrlH)}</h2><ul>${li(P.ctrl)}</ul>
+<article class="prose">${storyBlock(lang, G.slug)}<h2>${esc(P.ctrlH)}</h2><ul>${li(P.ctrl)}</ul>
 <h2>${esc(G.style)}</h2><ol>${li(C.how)}</ol>
 <h2>${esc(P.heroesH)}</h2><ul>${G.cfg.roster.map(r => `<li><b>${esc(r.name)}</b> – ${esc(sk[r.arch].name)}: ${esc(sk[r.arch].d)} <span class="note">(${sk[r.arch].s.map(esc).join(' · ')})</span></li>`).join('')}</ul>
 <h2>${esc(P.tipsH)}</h2><ul>${li(P.tips)}</ul>
@@ -645,7 +670,7 @@ var n=(s||navigator.language||'en').slice(0,2).toLowerCase();location.replace('/
 ${cfg.langs.map(l => `<a style="color:#e8b44a;margin-right:12px" href="/${l}/">${esc(I18N[l].langName)}</a>`).join('')}
 </body></html>`);
 fs.mkdirSync(path.join(OUT, 'assets'), { recursive: true });
-for (const f of ['style.css', 'app.js', 'engine.js', 'icons.js', 'colorgame.js', 'nightdrop.js', 'moba.js', 'chibi.js', 'redscarf.js']) fs.copyFileSync(R('src/' + f), path.join(OUT, 'assets', f));
+for (const f of ['style.css', 'app.js', 'engine.js', 'icons.js', 'colorgame.js', 'nightdrop.js', 'moba.js', 'chibi.js', 'redscarf.js', 'home.js']) fs.copyFileSync(R('src/' + f), path.join(OUT, 'assets', f));
 if (fs.existsSync(R('static'))) fs.cpSync(R('static'), OUT, { recursive: true });
 fs.writeFileSync(path.join(OUT, 'manifest.webmanifest'), JSON.stringify({
   name: cfg.siteName + ' – ' + SITE.en.tagline, short_name: cfg.siteName, start_url: '/', scope: '/', display: 'standalone',
