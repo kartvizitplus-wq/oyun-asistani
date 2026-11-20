@@ -44,7 +44,7 @@
   "title": "Red Scarf: Silent Steps – Free Ninja Stealth Game",
   "desc": "Sneak through a dark, ever-changing labyrinth as a ninja in a red scarf. Avoid guards' sight, dodge eight kinds of traps and take guards down unseen. Free browser game.",
   "h1": "Red Scarf: Silent Steps – ninja stealth in a dark labyrinth",
-  "intro": "Sneak through a labyrinth that changes every night. Come from behind and a silent takedown plays out; meet a guard face to face and it becomes a duel where you must read his stance. Fall once and you start again at gate 1.",
+  "intro": "Sneak through a labyrinth that changes every night. Come from behind and a silent takedown plays out; meet a guard face to face and it becomes a duel where you must read his stance. Three hearts, a breath that runs out, and every gate saved as a checkpoint.",
   "storyH": "Story",
   "storyFull": [
    "Long ago the Kage clan guarded the Scroll of Quiet Steps. When the Iron Shogun crushed the clan, he locked the scroll at the bottom of the Labyrinth of a Thousand Gates – a fortress of stone halls that rearrange themselves every night.",
@@ -58,21 +58,23 @@
    "Reach a guard from behind or from the side unseen and Kurenai takes him down in a short cinematic: tanto, wire, iai cut or a kunai drop when you dash in.",
    "Meet a guard face to face and a duel begins. Read his stance and choose before time runs out: High stance → Katana Rise, Middle stance → Kusarigama, Iai stance → Shuriken. A smoke bomb lets you escape. Captains need two right answers in a row.",
    "Takedowns and gates earn mon. Spend it on lasting upgrades: Silence, Shadow (slower detection), Extra life, Smoke bombs and Focus (more duel time).",
-   "Every run has a seed – type the same seed on the start screen to play the same labyrinths again."
+   "Kurenai has three hearts. A trap or a lost duel costs one; only the last one kills. Each cleared gate gives a heart back.",
+   "Your progress is saved at every gate: after a fall you can continue from the same gate or start over from gate 1.",
+   "Breath: running drains it fast and long walks drain it slowly. When it runs low, Kurenai pants – she slows down and guards nearby can hear her. Stand still to recover."
   ],
   "trapsH": "Traps",
   "traps": [
    "Spike floor: spikes rise every few seconds; the holes glow red just before.",
-   "Pressure plate: darts fly across the corridor a moment after you step on it – keep moving.",
+   "Dart wall: every few seconds a volley of darts crosses the corridor – the holes glow red first.",
    "Swinging blade: a pendulum sweeps across the corridor; time your crossing.",
    "Fire jet: a nozzle in the wall breathes fire at intervals.",
    "Rail saw: a saw slides from wall to wall.",
-   "Collapsing floor: cracks under you and falls away a moment later.",
-   "Tripwire: not deadly, but it rings a bell and every guard nearby comes running.",
+   "Crumbling floor: it cracks, then falls away for a moment, then closes again – on its own clock.",
+   "Stone crusher: a block slams out of the wall across the corridor; it shakes just before.",
    "Poison gas: a vent puffs a green cloud; stay in it too long and you choke."
   ],
   "movesH": "Takedowns",
-  "movesList": "Silent takedowns: tanto and wire from behind, an iai cut from the side, a kunai drop when you dash in. Duels: Katana Rise, Kusarigama and Shuriken, each beating one stance.",
+  "movesList": "Eight silent takedowns: behead, both arms, low cut and triple cut, plus tanto, wire, iai and kunai drop – limbs fly and the blood gushes. Duels: Katana Rise takes the sword arm, Kusarigama pulls the head, Shuriken stops an iai draw.",
   "ctrlH": "Controls",
   "ctrl": [
    "Computer: W A S D or arrows to move, Shift to run (noisy), Space to dash (short invulnerability, jumps floor traps), Q for a smoke bomb, Esc to pause. In duels press 1–4.",
@@ -200,7 +202,7 @@
   "title": "Red Scarf: Sessiz Adımlar – Ücretsiz Ninja Gizlilik Oyunu",
   "desc": "Kırmızı atkılı bir ninja olarak karanlık ve sürekli değişen bir labirentte gizlice ilerle. Muhafızların görüşünden kaç, sekiz çeşit tuzaktan sakın, görünmeden alt et. Ücretsiz tarayıcı oyunu.",
   "h1": "Red Scarf: Sessiz Adımlar – karanlık labirentte ninja gizliliği",
-  "intro": "Her gece değişen bir labirentte gizlice ilerle. Arkadan yaklaşırsan sessiz bir takedown sahnesi oynar; bir muhafızla yüz yüze gelirsen duruşunu okuman gereken bir düello başlar. Bir kez düşersen 1. kapıdan yeniden başlarsın.",
+  "intro": "Her gece değişen bir labirentte gizlice ilerle. Arkadan yaklaşırsan sessiz bir takedown sahnesi oynar; bir muhafızla yüz yüze gelirsen duruşunu okuman gereken bir düello başlar. Üç can, tükenen bir nefes ve her kapıda kaydedilen ilerleme.",
   "storyH": "Hikâye",
   "storyFull": [
    "Kage klanı uzun zaman önce Sessiz Adımlar Parşömeni'ni korurdu. Demir Şogun klanı ezince parşömeni Bin Kapılı Labirent'in dibine kilitledi: taş koridorları her gece yeniden dizilen bir kale.",
@@ -214,21 +216,23 @@
    "Bir muhafıza arkadan ya da yandan görünmeden ulaşırsan Kurenai onu kısa bir sinematikle alt eder: tanto, tel, iai kesişi ya da atılarak gelirsen kunai düşüşü.",
    "Bir muhafızla yüz yüze gelirsen düello başlar. Duruşunu oku ve süre bitmeden seç: Yüksek duruş → Katana Rise, Orta duruş → Kusarigama, Iai duruşu → Shuriken. Sis bombasıyla kaçabilirsin. Kaptanlar için arka arkaya iki doğru cevap gerekir.",
    "Takedown'lar ve geçilen kapılar mon kazandırır. Monu kalıcı yükseltmelere harca: Sessizlik, Gölge (daha yavaş fark edilme), Ekstra can, Sis bombası ve Odak (daha uzun düello süresi).",
-   "Her koşunun bir seed'i var – başlangıç ekranına aynı seed'i yazarak aynı labirentleri yeniden oynayabilirsin."
+   "Kurenai'nin üç canı var. Tuzak ya da kaybedilen bir düello bir can götürür; sadece son can öldürür. Geçilen her kapı bir can geri verir.",
+   "İlerlemen her kapıda kaydedilir: düştükten sonra aynı kapıdan devam edebilir ya da 1. kapıdan baştan başlayabilirsin.",
+   "Nefes: koşmak hızla, uzun yürüyüş yavaşça tüketir. Azaldığında Kurenai nefes nefese kalır – yavaşlar ve yakındaki muhafızlar onu duyabilir. Durarak dinlen."
   ],
   "trapsH": "Tuzaklar",
   "traps": [
    "Diken zemin: dikenler birkaç saniyede bir çıkar; hemen öncesinde delikler kırmızı parlar.",
-   "Basınç plakası: üstüne bastıktan bir an sonra koridor boyunca oklar uçar – durmadan ilerle.",
+   "Ok duvarı: birkaç saniyede bir koridordan bir ok yağmuru geçer – önce delikler kırmızı parlar.",
    "Sallanan bıçak: bir sarkaç koridoru boydan boya süpürür; geçişini zamanla.",
    "Ateş püskürtücü: duvardaki bir ağız aralıklarla ateş üfler.",
    "Raylı testere: bir testere duvardan duvara kayar.",
-   "Çöken zemin: ayağının altında çatlar ve bir an sonra çöker.",
-   "Alarm teli: öldürmez ama çan çalar ve yakındaki bütün muhafızlar koşa koşa gelir.",
+   "Çöken zemin: kendi döngüsüyle çatlar, bir süre çöker, sonra yeniden kapanır.",
+   "Taş pres: duvardan çıkan bir blok koridoru ezer; hemen öncesinde titrer.",
    "Zehirli gaz: bir delik yeşil bulut püskürtür; içinde fazla kalırsan boğulursun."
   ],
   "movesH": "Etkisiz hâle getirme",
-  "movesList": "Sessiz takedown'lar: arkadan tanto ve tel, yandan iai kesişi, atılarak gelince kunai düşüşü. Düellolar: Katana Rise, Kusarigama ve Shuriken – her biri bir duruşu yener.",
+  "movesList": "Sekiz sessiz takedown: kelle, iki kol, diz altı ve üçlü kesim, ayrıca tanto, tel, iai ve kunai düşüşü – uzuvlar uçar, kan oluk oluk akar. Düellolar: Katana Rise kılıç kolunu alır, Kusarigama kelleyi koparır, Shuriken iai çekişini durdurur.",
   "ctrlH": "Kontroller",
   "ctrl": [
    "Bilgisayar: W A S D ya da ok tuşlarıyla yürü, Shift ile koş (gürültülü), Boşluk ile atıl (kısa dokunulmazlık, zemin tuzaklarının üstünden atlar), Q sis bombası, Esc duraklat. Düelloda 1–4 tuşları.",
@@ -356,7 +360,7 @@
   "title": "Red Scarf: Langkah Sunyi – Game Ninja Siluman Gratis",
   "desc": "Menyelinap sebagai ninja bersyal merah di labirin gelap yang selalu berubah. Hindari pandangan penjaga, delapan jenis jebakan, dan lumpuhkan penjaga tanpa terlihat. Game browser gratis.",
   "h1": "Red Scarf: Langkah Sunyi – ninja siluman di labirin gelap",
-  "intro": "Menyelinaplah di labirin yang berubah setiap malam. Datang dari belakang dan takedown senyap dimainkan; bertatap muka dengan penjaga dan dimulailah duel di mana kamu harus membaca kuda-kudanya. Sekali jatuh, kamu mulai lagi dari gerbang 1.",
+  "intro": "Menyelinaplah di labirin yang berubah setiap malam. Datang dari belakang dan takedown senyap dimainkan; bertatap muka dengan penjaga dan dimulailah duel di mana kamu harus membaca kuda-kudanya. Tiga nyawa, napas yang bisa habis, dan progres tersimpan di setiap gerbang.",
   "storyH": "Cerita",
   "storyFull": [
    "Dahulu klan Kage menjaga Gulungan Langkah Sunyi. Saat Shogun Besi menghancurkan klan itu, ia mengunci gulungannya di dasar Labirin Seribu Gerbang – benteng dengan lorong batu yang tersusun ulang setiap malam.",
@@ -370,21 +374,23 @@
    "Capai penjaga dari belakang atau samping tanpa terlihat dan Kurenai melumpuhkannya dalam sinematik singkat: tanto, kawat, tebasan iai, atau terjang kunai saat dash.",
    "Bertatap muka dengan penjaga memulai duel. Baca kuda-kudanya dan pilih sebelum waktu habis: Tinggi → Katana Rise, Tengah → Kusarigama, Iai → Shuriken. Bom asap untuk kabur. Kapten butuh dua jawaban benar berturut-turut.",
    "Takedown dan gerbang memberi mon. Belanjakan untuk peningkatan permanen: Sunyi, Bayangan (deteksi lebih lambat), Nyawa tambahan, Bom asap, dan Fokus (waktu duel lebih lama).",
-   "Setiap putaran punya seed – ketik seed yang sama di layar awal untuk memainkan labirin yang sama lagi."
+   "Kurenai punya tiga nyawa. Jebakan atau duel yang kalah mengambil satu; hanya yang terakhir mematikan. Setiap gerbang yang dilewati mengembalikan satu.",
+   "Progres disimpan di setiap gerbang: setelah jatuh kamu bisa lanjut dari gerbang yang sama atau mulai lagi dari gerbang 1.",
+   "Napas: berlari menguras cepat, berjalan lama menguras pelan. Saat menipis Kurenai terengah-engah – melambat dan penjaga di dekat bisa mendengarnya. Diam untuk pulih."
   ],
   "trapsH": "Jebakan",
   "traps": [
    "Lantai duri: duri naik setiap beberapa detik; lubangnya menyala merah sesaat sebelumnya.",
-   "Pelat tekanan: panah melesat melintasi lorong sesaat setelah kamu menginjaknya – terus bergerak.",
+   "Dinding panah: setiap beberapa detik hujan panah melintasi lorong – lubangnya menyala merah lebih dulu.",
    "Bilah berayun: bandul menyapu lorong; atur waktu menyeberang.",
    "Semburan api: lubang di dinding menyemburkan api berkala.",
    "Gergaji rel: gergaji meluncur dari dinding ke dinding.",
-   "Lantai runtuh: retak di bawahmu lalu runtuh sesaat kemudian.",
-   "Kawat jebakan: tidak mematikan, tapi membunyikan lonceng dan semua penjaga di dekat datang berlari.",
+   "Lantai runtuh: retak, runtuh sebentar, lalu menutup lagi – dengan iramanya sendiri.",
+   "Penghancur batu: balok keluar dari dinding dan menghantam lorong; bergetar sesaat sebelumnya.",
    "Gas beracun: lubang menyemburkan awan hijau; terlalu lama di dalamnya, kamu tercekik."
   ],
   "movesH": "Lumpuhan",
-  "movesList": "Takedown senyap: tanto dan kawat dari belakang, tebasan iai dari samping, terjang kunai saat dash. Duel: Katana Rise, Kusarigama, dan Shuriken – masing-masing mengalahkan satu kuda-kuda.",
+  "movesList": "Delapan takedown senyap: penggal, dua lengan, tebas bawah dan tiga tebasan, plus tanto, kawat, iai dan terjang kunai – anggota tubuh terlempar dan darah menyembur. Duel: Katana Rise memutus lengan pedang, Kusarigama menarik kepala, Shuriken menghentikan cabutan iai.",
   "ctrlH": "Kontrol",
   "ctrl": [
    "Komputer: W A S D atau panah untuk bergerak, Shift lari (berisik), Spasi dash (kebal sebentar, melompati jebakan lantai), Q bom asap, Esc jeda. Saat duel tekan 1–4.",
@@ -512,7 +518,7 @@
   "title": "Red Scarf: Pasos Callados – Juego ninja de sigilo gratis",
   "desc": "Avanza en sigilo como una ninja con bufanda roja por un laberinto oscuro que siempre cambia. Evita la vista de los guardias y ocho tipos de trampas, y elimínalos sin ser vista. Juego de navegador gratis.",
   "h1": "Red Scarf: Pasos Silenciosos – sigilo ninja en un laberinto oscuro",
-  "intro": "Avanza en sigilo por un laberinto que cambia cada noche. Llega por la espalda y verás una eliminación silenciosa; cruza la mirada con un guardia y empezará un duelo en el que debes leer su guardia. Si caes una vez, vuelves a la puerta 1.",
+  "intro": "Avanza en sigilo por un laberinto que cambia cada noche. Llega por la espalda y verás una eliminación silenciosa; cruza la mirada con un guardia y empezará un duelo en el que debes leer su guardia. Tres vidas, un aliento que se agota y el progreso guardado en cada puerta.",
   "storyH": "Historia",
   "storyFull": [
    "Hace mucho, el clan Kage custodiaba el Pergamino de los Pasos Callados. Cuando el Shogun de Hierro aplastó al clan, encerró el pergamino en el fondo del Laberinto de las Mil Puertas, una fortaleza de pasillos de piedra que se reordenan cada noche.",
@@ -526,21 +532,23 @@
    "Llega a un guardia por detrás o de lado sin ser vista y Kurenai lo elimina en una breve cinemática: tanto, alambre, corte iai o una caída kunai si llegas con impulso.",
    "Si te encuentras cara a cara empieza un duelo. Lee su guardia y elige antes de que acabe el tiempo: Alta → Katana Rise, Media → Kusarigama, Iai → Shuriken. Con una bomba de humo puedes huir. Los capitanes exigen dos aciertos seguidos.",
    "Las eliminaciones y las puertas dan mon. Gástalo en mejoras permanentes: Silencio, Sombra (te detectan más despacio), Vida extra, Bombas de humo y Concentración (más tiempo en los duelos).",
-   "Cada partida tiene una semilla: escríbela en la pantalla de inicio para volver a jugar los mismos laberintos."
+   "Kurenai tiene tres vidas. Una trampa o un duelo perdido cuesta una; solo la última mata. Cada puerta superada devuelve una.",
+   "Tu progreso se guarda en cada puerta: tras caer puedes continuar en la misma puerta o empezar desde la puerta 1.",
+   "Aliento: correr lo gasta rápido y caminar mucho, despacio. Cuando se agota, Kurenai jadea: va más lenta y los guardias cercanos pueden oírla. Quédate quieta para recuperarlo."
   ],
   "trapsH": "Trampas",
   "traps": [
    "Suelo de pinchos: los pinchos salen cada pocos segundos; justo antes los agujeros brillan en rojo.",
-   "Placa de presión: unos dardos cruzan el pasillo poco después de pisarla; no te pares.",
+   "Muro de dardos: cada pocos segundos una ráfaga de dardos cruza el pasillo; antes los agujeros brillan en rojo.",
    "Cuchilla oscilante: un péndulo barre el pasillo; calcula el momento de pasar.",
    "Chorro de fuego: una boquilla en la pared escupe fuego a intervalos.",
    "Sierra de raíl: una sierra se desliza de pared a pared.",
-   "Suelo que se hunde: se agrieta bajo tus pies y cede un instante después.",
-   "Cable trampa: no mata, pero hace sonar una campana y todos los guardias cercanos acuden.",
+   "Suelo que se hunde: se agrieta, cede un momento y vuelve a cerrarse, a su propio ritmo.",
+   "Prensa de piedra: un bloque sale de la pared y aplasta el pasillo; tiembla justo antes.",
    "Gas venenoso: un respiradero suelta una nube verde; si te quedas dentro demasiado, te asfixias."
   ],
   "movesH": "Eliminaciones",
-  "movesList": "Eliminaciones silenciosas: tanto y alambre por detrás, corte iai de lado, caída kunai con impulso. Duelos: Katana Rise, Kusarigama y Shuriken, cada uno vence a una guardia.",
+  "movesList": "Ocho eliminaciones silenciosas: decapitar, sin brazos, corte bajo y triple corte, además de tanto, alambre, iai y caída kunai: los miembros vuelan y la sangre brota a chorros. Duelos: Katana Rise se lleva el brazo de la espada, Kusarigama arranca la cabeza, Shuriken frena el desenvaine iai.",
   "ctrlH": "Controles",
   "ctrl": [
    "Ordenador: W A S D o flechas para moverte, Shift para correr (ruido), Espacio para el impulso (invulnerable un instante, salta trampas del suelo), Q bomba de humo, Esc pausa. En los duelos pulsa 1–4.",
@@ -668,7 +676,7 @@
   "title": "Red Scarf: Passos Silenciosos – Jogo ninja furtivo grátis",
   "desc": "Avance em silêncio como uma ninja de cachecol vermelho num labirinto escuro que sempre muda. Fuja da visão dos guardas e de oito tipos de armadilhas e derrube-os sem ser vista. Jogo de navegador grátis.",
   "h1": "Red Scarf: Passos Silenciosos – furtividade ninja num labirinto escuro",
-  "intro": "Avance em silêncio por um labirinto que muda toda noite. Chegue por trás e uma derrubada silenciosa acontece; encontre um guarda cara a cara e começa um duelo em que você precisa ler a postura dele. Caiu uma vez, recomeça no portão 1.",
+  "intro": "Avance em silêncio por um labirinto que muda toda noite. Chegue por trás e uma derrubada silenciosa acontece; encontre um guarda cara a cara e começa um duelo em que você precisa ler a postura dele. Três vidas, um fôlego que acaba e o progresso salvo em cada portão.",
   "storyH": "História",
   "storyFull": [
    "Há muito tempo o clã Kage guardava o Pergaminho dos Passos Silenciosos. Quando o Xogum de Ferro esmagou o clã, trancou o pergaminho no fundo do Labirinto dos Mil Portões – uma fortaleza de corredores de pedra que se reorganizam toda noite.",
@@ -682,21 +690,23 @@
    "Chegue a um guarda por trás ou de lado sem ser vista e Kurenai o derruba numa cena curta: tanto, arame, corte iai ou queda kunai se você vier na investida.",
    "Cara a cara começa um duelo. Leia a postura e escolha antes do tempo acabar: Alta → Katana Rise, Média → Kusarigama, Iai → Shuriken. A bomba de fumaça permite fugir. Capitães exigem dois acertos seguidos.",
    "Derrubadas e portões rendem mon. Gaste em melhorias permanentes: Silêncio, Sombra (detecção mais lenta), Vida extra, Bombas de fumaça e Foco (mais tempo no duelo).",
-   "Cada partida tem uma semente – digite a mesma semente na tela inicial para jogar os mesmos labirintos de novo."
+   "Kurenai tem três vidas. Uma armadilha ou um duelo perdido custa uma; só a última mata. Cada portão vencido devolve uma.",
+   "Seu progresso é salvo em cada portão: depois de cair você pode continuar do mesmo portão ou recomeçar no portão 1.",
+   "Fôlego: correr gasta rápido e caminhar muito gasta devagar. Quando acaba, Kurenai ofega – fica mais lenta e os guardas por perto podem ouvir. Fique parada para recuperar."
   ],
   "trapsH": "Armadilhas",
   "traps": [
    "Piso de espinhos: os espinhos sobem a cada poucos segundos; logo antes os buracos brilham em vermelho.",
-   "Placa de pressão: dardos cruzam o corredor um instante depois de você pisar – não pare.",
+   "Parede de dardos: a cada poucos segundos uma rajada de dardos cruza o corredor – antes os buracos brilham em vermelho.",
    "Lâmina pendular: um pêndulo varre o corredor; escolha a hora de passar.",
    "Jato de fogo: um bocal na parede cospe fogo em intervalos.",
    "Serra de trilho: uma serra desliza de parede a parede.",
-   "Piso que desaba: racha sob seus pés e cai um instante depois.",
-   "Arame armadilha: não mata, mas toca um sino e todos os guardas por perto vêm correndo.",
+   "Piso que desaba: racha, cai por um instante e fecha de novo – no seu próprio ritmo.",
+   "Prensa de pedra: um bloco sai da parede e esmaga o corredor; ele treme logo antes.",
    "Gás venenoso: um respiradouro solta uma nuvem verde; fique tempo demais nela e você sufoca."
   ],
   "movesH": "Derrubadas",
-  "movesList": "Derrubadas silenciosas: tanto e arame por trás, corte iai de lado, queda kunai na investida. Duelos: Katana Rise, Kusarigama e Shuriken – cada um vence uma postura.",
+  "movesList": "Oito derrubadas silenciosas: degolar, sem braços, corte baixo e corte triplo, além de tanto, arame, iai e queda kunai – membros voam e o sangue jorra. Duelos: Katana Rise leva o braço da espada, Kusarigama arranca a cabeça, Shuriken impede o saque iai.",
   "ctrlH": "Controles",
   "ctrl": [
    "Computador: W A S D ou setas para andar, Shift para correr (barulho), Espaço para a investida (invulnerável por um instante, pula armadilhas do chão), Q bomba de fumaça, Esc pausa. No duelo aperte 1–4.",
