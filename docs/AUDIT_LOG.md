@@ -106,3 +106,8 @@ Technical SEO, AI visibility, usability and ad-readiness checks. Content (patch 
 - Added Teacher Tycoon (/:lang/teacher-tycoon/, 5 languages): original 3D classroom game on three.js r187 (already bundled). Teach at the board, manage six students with their own behaviour, three tasks per lesson, surprise events (paper fight, pop quiz, principal visit), stars and lesson/rank progress saved in localStorage. Desktop and touch controls.
 - Additive only: one new page per language, one new game card and nav link (appended at the end of the games list), sitemap entries, own OG image (static/og/teacher-tycoon.png) and card image (static/img/teacher-tycoon-card.webp). No existing titles, URLs, headings or links changed.
 - Page text written for people: how to play, the six students, events, controls, tips, FAQ (FAQPage JSON-LD mirrors the visible FAQ), about. All 3D models and sounds are generated in code.
+
+## 2026-11-21 – Teacher Tycoon LIVE mode
+- Teacher Tycoon gets a LIVE mode for streamers on the same URL (`?live=1`, stream output `?live=1&clean=1`); no new pages, canonical unchanged.
+- Viewers become part of the school: commenters take a seat as students, gifts make the sender teacher / vice principal / principal / inspector / Minister of Education (fictional characters, thresholds set by the streamer), top supporters become class president and vice president. Fixed, stated effect per gift; no chance-based rewards. Name and word filter, blocked-user list, duplicate-event protection.
+- Data source today is a clearly labelled simulator (SIMULATION / DEMO on screen). Not connected to TikTok; official TikTok LIVE access is pending, third-party providers stay off unless the owner approves.
