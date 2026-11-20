@@ -52,6 +52,20 @@
         c.strokeStyle = OL; c.lineWidth = 1.6; c.beginPath(); c.moveTo(1.5, hy - 6.5); c.lineTo(7.5, hy - 5); c.moveTo(9.5, hy - 5); c.lineTo(15, hy - 6.8); c.stroke();
         c.fillStyle = col; c.beginPath(); c.moveTo(-12, hy - 4); c.lineTo(-24, hy - 9 + Math.sin((o.t || 0) * 9) * 2); c.lineTo(-22, hy - 2); c.closePath(); c.fill();
         break; }
+      case 'ronin': {
+        /* masked ninja under a wide straw hat; the hat throws a shadow over the eyes */
+        c.fillStyle = '#0b0b10'; c.beginPath(); c.arc(0, hy, 14, 0, TAU); c.fill(); c.stroke();
+        c.fillStyle = '#e8c4a0'; rr(c, 2, hy - 2, 13, 5, 2.5); c.fill();
+        c.fillStyle = '#fff'; c.beginPath(); c.moveTo(3.5, hy + .5); c.lineTo(8, hy - 1); c.lineTo(8, hy + 2); c.closePath(); c.fill(); c.beginPath(); c.moveTo(10, hy - 1); c.lineTo(14.5, hy + .3); c.lineTo(10, hy + 2); c.closePath(); c.fill();
+        c.fillStyle = OL; c.fillRect(6, hy - .5, 1.8, 2); c.fillRect(10.4, hy - .5, 1.8, 2);
+        c.save(); c.rotate(-.12);
+        c.fillStyle = col; c.beginPath(); c.ellipse(1, hy - 8, 25, 7.5, 0, 0, TAU); c.fill(); c.stroke();
+        c.beginPath(); c.moveTo(-17, hy - 10); c.lineTo(1, hy - 25); c.lineTo(19, hy - 10); c.closePath(); c.fill(); c.stroke();
+        c.strokeStyle = 'rgba(40,25,10,.55)'; c.lineWidth = 1.1; for (let i = -3; i <= 3; i++) { c.beginPath(); c.moveTo(1 + i * 6, hy - 9); c.lineTo(1, hy - 24); c.stroke(); }
+        c.fillStyle = 'rgba(0,0,0,.35)'; c.beginPath(); c.ellipse(4, hy - 4, 16, 3, 0, 0, Math.PI); c.fill();
+        c.restore();
+        break; }
+      case 'chonmage': c.fillStyle = '#e9c9a6'; cap(Math.PI * 1.05, TAU * .99, 13); c.fillStyle = col; c.beginPath(); c.arc(0, hy, 13.6, Math.PI * .55, Math.PI * 1.1); c.lineTo(-6, hy - 4); c.closePath(); c.fill(); c.stroke(); c.fillStyle = col; rr(c, -6, hy - 19, 12, 5, 2.5); c.fill(); c.stroke(); rr(c, -9, hy - 16, 4, 6, 2); c.fill(); break;
       case 'straw': c.fillStyle = '#c9a25e'; c.beginPath(); c.ellipse(0, hy - 7, 23, 8, 0, 0, TAU); c.fill(); c.stroke(); c.beginPath(); c.moveTo(-15, hy - 9); c.lineTo(0, hy - 21); c.lineTo(15, hy - 9); c.closePath(); c.fill(); c.stroke(); c.strokeStyle = 'rgba(0,0,0,.25)'; c.lineWidth = 1; for (let i = -2; i <= 2; i++) { c.beginPath(); c.moveTo(i * 5, hy - 10); c.lineTo(0, hy - 20); c.stroke(); } break;
       case 'kabuto': c.fillStyle = col; cap(Math.PI * .9, TAU * 1.05, 15); c.fillStyle = '#ffd23d'; c.beginPath(); c.moveTo(-2, hy - 14); c.quadraticCurveTo(-12, hy - 30, -16, hy - 26); c.moveTo(2, hy - 14); c.quadraticCurveTo(12, hy - 30, 16, hy - 26); c.lineWidth = 3; c.strokeStyle = '#ffd23d'; c.stroke(); break;
       default: cap(Math.PI, TAU, 13.5);

@@ -1,6 +1,6 @@
 {
  "en": {
-  "name": "Red Scarf",
+  "name": "Red Scarf: Silent Steps",
   "play": "Enter the labyrinth",
   "level": "Level",
   "key": "Key",
@@ -8,7 +8,7 @@
   "running": "RUNNING – noisy",
   "sneaking": "Sneaking",
   "dash": "Dash",
-  "keys": "WASD move · Shift run (noisy) · Space dash · get close unseen to take down",
+  "keys": "WASD move · Shift run · Space dash · Q smoke · P pause",
   "locked": "The gate is locked – the captain has the key",
   "gotKey": "You took the captain's key!",
   "alarm": "Tripwire! The bell rings",
@@ -29,7 +29,8 @@
    "pendulum": "Cut by the swinging blade.",
    "saw": "Caught by the rail saw.",
    "pit": "Fell through a collapsing floor.",
-   "caught": "A guard saw you."
+   "caught": "A guard saw you.",
+   "duel": "Cut down in a duel."
   },
   "moves": {
    "katana": "KATANA",
@@ -37,15 +38,13 @@
    "garrote": "WIRE",
    "kunai": "KUNAI DROP",
    "tessen": "WAR FAN",
-   "smoke": "SMOKE BOMB",
-   "shuriken": "SHURIKEN",
-   "kusarigama": "KUSARIGAMA"
+   "smokeT": "SMOKE"
   },
   "story": "The Iron Shogun hid the last scroll of the Kage clan at the bottom of the Labyrinth of a Thousand Gates, a fortress whose halls change every night. Kurenai, the last of the clan, ties on her master's red scarf and goes in alone. The labyrinth has one rule: whoever falls starts again at the first gate.",
-  "title": "Red Scarf – Free Ninja Stealth Game in a Dark Labyrinth",
+  "title": "Red Scarf: Silent Steps – Free Ninja Stealth Game",
   "desc": "Sneak through a dark, ever-changing labyrinth as a ninja in a red scarf. Avoid guards' sight, dodge eight kinds of traps and take guards down unseen. Free browser game.",
-  "h1": "Red Scarf: ninja stealth in a dark labyrinth",
-  "intro": "No duels and no second chances. Slip through the shadows, stay out of the guards' sight and take them down the moment you get close. Fall once and the labyrinth sends you back to gate 1.",
+  "h1": "Red Scarf: Silent Steps – ninja stealth in a dark labyrinth",
+  "intro": "Sneak through a labyrinth that changes every night. Come from behind and a silent takedown plays out; meet a guard face to face and it becomes a duel where you must read his stance. Fall once and you start again at gate 1.",
   "storyH": "Story",
   "storyFull": [
    "Long ago the Kage clan guarded the Scroll of Quiet Steps. When the Iron Shogun crushed the clan, he locked the scroll at the bottom of the Labyrinth of a Thousand Gates – a fortress of stone halls that rearrange themselves every night.",
@@ -54,11 +53,12 @@
   ],
   "howH": "How to play",
   "how": [
-   "Find the captain (gold horns on his helmet) and take his key. The red gate opens only with the key.",
-   "Guards see in a cone in front of them. Inside the cone their meter fills – if it fills up, you are dead. Every level their cone gets wider and longer, and they notice you faster.",
-   "Get close to a guard without being seen and the ninja takes him down automatically. From behind, from the side or from the front you get different moves.",
-   "Running is fast but loud: guards nearby hear you. A guard who finds a fallen comrade or hears a bell comes to look.",
-   "Die once – to a guard or a trap – and you start again at gate 1. Your best gate is saved."
+   "Find the captain (gold horns on his helmet) and take his key – the red gate only opens with it.",
+   "Guards see in a cone. Inside it their meter fills; when it is full they raise the alarm and every guard nearby comes looking. Guards who find a body raise the alarm too.",
+   "Reach a guard from behind or from the side unseen and Kurenai takes him down in a short cinematic: tanto, wire, iai cut or a kunai drop when you dash in.",
+   "Meet a guard face to face and a duel begins. Read his stance and choose before time runs out: High stance → Katana Rise, Middle stance → Kusarigama, Iai stance → Shuriken. A smoke bomb lets you escape. Captains need two right answers in a row.",
+   "Takedowns and gates earn mon. Spend it on lasting upgrades: Silence, Shadow (slower detection), Extra life, Smoke bombs and Focus (more duel time).",
+   "Every run has a seed – type the same seed on the start screen to play the same labyrinths again."
   ],
   "trapsH": "Traps",
   "traps": [
@@ -72,24 +72,91 @@
    "Poison gas: a vent puffs a green cloud; stay in it too long and you choke."
   ],
   "movesH": "Takedowns",
-  "movesList": "Katana, tanto, wire, kunai drop, war fan, smoke bomb, shuriken and kusarigama – each with its own finish. Attacks from behind, from the side and from the front use different weapons.",
+  "movesList": "Silent takedowns: tanto and wire from behind, an iai cut from the side, a kunai drop when you dash in. Duels: Katana Rise, Kusarigama and Shuriken, each beating one stance.",
   "ctrlH": "Controls",
   "ctrl": [
-   "Computer: W A S D or arrow keys to move, hold Shift to run (noisy), Space to dash. A dash jumps over floor traps (spikes, plates, cracking floor, tripwires).",
-   "Phone: drag on the left of the screen to move – a small push sneaks, a full push runs. Tap the red button to dash. Turn the phone sideways for the best view."
+   "Computer: W A S D or arrows to move, Shift to run (noisy), Space to dash (short invulnerability, jumps floor traps), Q for a smoke bomb, Esc to pause. In duels press 1–4.",
+   "Phone: drag on the left of the screen to move – a small push sneaks, a full push runs. Buttons on the right: dash and smoke. In duels tap the weapon. Turn the phone sideways for the best view."
   ],
   "tipsH": "Tips",
   "tips": [
-   "Watch a guard's cone turn before you move – they pause and look around.",
-   "Sneak, don't run, when a guard is near a corner.",
-   "Use the dash to cross spikes and cracking floors, not to escape a guard – once he has seen you it is too late.",
-   "Light from lanterns does not hide you, but walls do: break line of sight."
+   "Watch a guard look around before you pass – they pause, sweep left and right, then turn.",
+   "A smoke bomb breaks a guard's sight and stuns those close to you.",
+   "If a guard has seen you, do not run blindly: turn the corner, break line of sight and wait for the alarm to fade.",
+   "In early gates the duel rule is shown on screen; later you have to remember it – and the timer gets shorter."
   ],
   "aboutH": "About this game",
-  "about": "Red Scarf is an original browser game made for PickRadar. The labyrinth, traps and guard positions are generated fresh for every level, so no two runs are the same. Your best level is stored only in your browser."
+  "about": "Red Scarf is an original browser game made for PickRadar. The labyrinth, traps and guard positions are generated fresh for every level, so no two runs are the same. Your best level is stored only in your browser.",
+  "sub": "Silent Steps",
+  "honor": "Honour",
+  "dojo": "Dojo",
+  "seed": "Seed",
+  "seedAuto": "random",
+  "dojoText": "Spend the honour you earn in every run on lasting training.",
+  "maxed": "Mastered",
+  "back": "Back",
+  "paused": "Paused",
+  "resume": "Resume",
+  "restart": "Restart this seed",
+  "menu": "Main menu",
+  "noSmoke": "No smoke bombs left",
+  "secondChance": "Second chance! The shadows hide you",
+  "honorRun": "Honour earned: {h}",
+  "honorGain": "+{h} honour",
+  "caughtDuel": "You were seen – read his stance and answer!",
+  "faceDuel": "Face to face – read his stance and answer!",
+  "duelLost": "Cut down",
+  "stances": {
+   "over": "Overhead strike",
+   "lunge": "Lunge",
+   "guard": "High guard",
+   "thrust": "Spear thrust"
+  },
+  "w": {
+   "katana": "Katana",
+   "shuriken": "Shuriken",
+   "kusarigama": "Kusarigama",
+   "smoke": "Smoke bomb"
+  },
+  "ups": {
+   "silence": [
+    "Silence",
+    "Running makes 22% less noise per level."
+   ],
+   "shadow": [
+    "Shadow",
+    "Guards notice you 14% slower per level."
+   ],
+   "life": [
+    "Second life",
+    "Survive one fatal blow per run, per level."
+   ],
+   "smoke": [
+    "Smoke",
+    "Start every run with one more smoke bomb."
+   ],
+   "focus": [
+    "Focus",
+    "+0.4 s to decide in every duel."
+   ]
+  },
+  "duelH": "Duels",
+  "duelList": [
+   "When a guard's meter fills, or you walk into one face to face, the screen turns into an ink duel. The samurai shows a stance – answer it with the right weapon before the red bar runs out:",
+   "Overhead strike → Kusarigama: the chain catches the raised blade.",
+   "Lunge → Smoke bomb: vanish and strike from behind (uses a smoke bomb).",
+   "High guard → Shuriken: stars slip under the guard.",
+   "Spear thrust → Katana: step inside the spear and cut.",
+   "Pick wrong or too late and you are cut down. Every gate gives you less time; the captain is faster still."
+  ],
+  "dojoH": "Dojo and seeds",
+  "dojoList": [
+   "Takedowns (+10), duels (+15) and cleared gates give honour. In the dojo it buys lasting training: Silence, Shadow, Second life, Smoke and Focus.",
+   "Every run has a seed. Type a seed in the menu to play exactly the same labyrinths again – handy for racing a friend."
+  ]
  },
  "tr": {
-  "name": "Red Scarf",
+  "name": "Red Scarf: Sessiz Adımlar",
   "play": "Labirente gir",
   "level": "Kapı",
   "key": "Anahtar",
@@ -97,7 +164,7 @@
   "running": "KOŞUYORSUN – ses çıkarıyor",
   "sneaking": "Sessiz",
   "dash": "Atılma",
-  "keys": "WASD yürü · Shift koş (gürültülü) · Boşluk atıl · görünmeden yaklaş ve alt et",
+  "keys": "WASD yürü · Shift koş · Boşluk atıl · Q sis · P duraklat",
   "locked": "Kapı kilitli – anahtar kaptanda",
   "gotKey": "Kaptanın anahtarını aldın!",
   "alarm": "Alarm teli! Çan çalıyor",
@@ -118,7 +185,8 @@
    "pendulum": "Sallanan bıçak seni biçti.",
    "saw": "Raylı testereye yakalandın.",
    "pit": "Çöken zeminden düştün.",
-   "caught": "Bir muhafız seni gördü."
+   "caught": "Bir muhafız seni gördü.",
+   "duel": "Bir düelloda yenildin."
   },
   "moves": {
    "katana": "KATANA",
@@ -126,15 +194,13 @@
    "garrote": "TEL",
    "kunai": "KUNAİ DÜŞÜŞÜ",
    "tessen": "SAVAŞ YELPAZESİ",
-   "smoke": "SİS BOMBASI",
-   "shuriken": "SHURİKEN",
-   "kusarigama": "KUSARİGAMA"
+   "smokeT": "SİS"
   },
   "story": "Demir Şogun, Kage klanının son parşömenini her gece koridorları değişen bir kale olan Bin Kapılı Labirent'in dibine sakladı. Klanın son üyesi Kurenai, ustasının kırmızı atkısını bağlayıp tek başına içeri giriyor. Labirentin tek bir kuralı var: düşen, ilk kapıdan yeniden başlar.",
-  "title": "Red Scarf – Karanlık Labirentte Ücretsiz Ninja Gizlilik Oyunu",
+  "title": "Red Scarf: Sessiz Adımlar – Ücretsiz Ninja Gizlilik Oyunu",
   "desc": "Kırmızı atkılı bir ninja olarak karanlık ve sürekli değişen bir labirentte gizlice ilerle. Muhafızların görüşünden kaç, sekiz çeşit tuzaktan sakın, görünmeden alt et. Ücretsiz tarayıcı oyunu.",
-  "h1": "Red Scarf: karanlık labirentte ninja gizliliği",
-  "intro": "Düello yok, ikinci şans yok. Gölgelerin arasından süzül, muhafızların görüşüne girme ve yaklaştığın an onları alt et. Bir kez düşersen labirent seni 1. kapıya geri gönderir.",
+  "h1": "Red Scarf: Sessiz Adımlar – karanlık labirentte ninja gizliliği",
+  "intro": "Her gece değişen bir labirentte gizlice ilerle. Arkadan yaklaşırsan sessiz bir takedown sahnesi oynar; bir muhafızla yüz yüze gelirsen duruşunu okuman gereken bir düello başlar. Bir kez düşersen 1. kapıdan yeniden başlarsın.",
   "storyH": "Hikâye",
   "storyFull": [
    "Kage klanı uzun zaman önce Sessiz Adımlar Parşömeni'ni korurdu. Demir Şogun klanı ezince parşömeni Bin Kapılı Labirent'in dibine kilitledi: taş koridorları her gece yeniden dizilen bir kale.",
@@ -143,11 +209,12 @@
   ],
   "howH": "Nasıl oynanır",
   "how": [
-   "Kaptanı bul (miğferinde altın boynuzlar var) ve anahtarını al. Kırmızı kapı sadece anahtarla açılır.",
-   "Muhafızlar önlerindeki bir koni içinde görür. Konide kaldıkça göstergeleri dolar – dolarsa ölürsün. Her bölümde koni genişler, uzar ve seni daha çabuk fark ederler.",
-   "Bir muhafıza görünmeden yaklaşırsan ninja onu otomatik olarak alt eder. Arkadan, yandan ya da önden farklı hareketler gelir.",
-   "Koşmak hızlıdır ama gürültülüdür: yakındaki muhafızlar seni duyar. Yerde yatan bir arkadaşını bulan ya da çan duyan muhafız bakmaya gelir.",
-   "Bir kez ölürsen – muhafız ya da tuzak – 1. kapıdan yeniden başlarsın. En iyi kapın kaydedilir."
+   "Kaptanı bul (miğferinde altın boynuzlar var) ve anahtarını al – kırmızı kapı yalnızca anahtarla açılır.",
+   "Muhafızlar bir koni içinde görür. Konide kaldıkça göstergeleri dolar; dolunca alarm verirler ve yakındaki bütün muhafızlar seni aramaya gelir. Ceset bulan muhafız da alarm verir.",
+   "Bir muhafıza arkadan ya da yandan görünmeden ulaşırsan Kurenai onu kısa bir sinematikle alt eder: tanto, tel, iai kesişi ya da atılarak gelirsen kunai düşüşü.",
+   "Bir muhafızla yüz yüze gelirsen düello başlar. Duruşunu oku ve süre bitmeden seç: Yüksek duruş → Katana Rise, Orta duruş → Kusarigama, Iai duruşu → Shuriken. Sis bombasıyla kaçabilirsin. Kaptanlar için arka arkaya iki doğru cevap gerekir.",
+   "Takedown'lar ve geçilen kapılar mon kazandırır. Monu kalıcı yükseltmelere harca: Sessizlik, Gölge (daha yavaş fark edilme), Ekstra can, Sis bombası ve Odak (daha uzun düello süresi).",
+   "Her koşunun bir seed'i var – başlangıç ekranına aynı seed'i yazarak aynı labirentleri yeniden oynayabilirsin."
   ],
   "trapsH": "Tuzaklar",
   "traps": [
@@ -161,24 +228,91 @@
    "Zehirli gaz: bir delik yeşil bulut püskürtür; içinde fazla kalırsan boğulursun."
   ],
   "movesH": "Etkisiz hâle getirme",
-  "movesList": "Katana, tanto, tel, kunai düşüşü, savaş yelpazesi, sis bombası, shuriken ve kusarigama – her birinin kendine has bir bitirişi var. Arkadan, yandan ve önden yaklaşınca farklı silahlar kullanılır.",
+  "movesList": "Sessiz takedown'lar: arkadan tanto ve tel, yandan iai kesişi, atılarak gelince kunai düşüşü. Düellolar: Katana Rise, Kusarigama ve Shuriken – her biri bir duruşu yener.",
   "ctrlH": "Kontroller",
   "ctrl": [
-   "Bilgisayar: W A S D ya da ok tuşlarıyla yürü, koşmak için Shift'i basılı tut (gürültülü), atılmak için Boşluk. Atılma zemin tuzaklarının (diken, plaka, çatlayan zemin, alarm teli) üstünden atlatır.",
-   "Telefon: ekranın solunda sürükleyerek yürü – az itersen sessiz, sonuna kadar itersen koşarsın. Atılmak için kırmızı düğmeye dokun. En iyi görüntü için telefonu yan çevir."
+   "Bilgisayar: W A S D ya da ok tuşlarıyla yürü, Shift ile koş (gürültülü), Boşluk ile atıl (kısa dokunulmazlık, zemin tuzaklarının üstünden atlar), Q sis bombası, Esc duraklat. Düelloda 1–4 tuşları.",
+   "Telefon: ekranın solunda sürükleyerek yürü – az itersen sessiz, sonuna kadar itersen koşarsın. Sağdaki düğmeler: atılma ve sis. Düelloda silaha dokun. En iyi görüntü için telefonu yan çevir."
   ],
   "tipsH": "İpuçları",
   "tips": [
-   "Hareket etmeden önce muhafızın konisinin dönmesini izle – durup etrafa bakarlar.",
-   "Muhafız köşeye yakınsa koşma, sessiz ilerle.",
-   "Atılmayı dikenleri ve çatlayan zeminleri geçmek için kullan, muhafızdan kaçmak için değil – seni gördüyse iş işten geçmiştir.",
-   "Fener ışığı seni saklamaz ama duvarlar saklar: görüş hattını kes."
+   "Geçmeden önce muhafızın etrafa bakmasını izle – durur, sağa sola tarar, sonra döner.",
+   "Sis bombası muhafızın görüşünü keser ve yakındakileri sersemletir.",
+   "Bir muhafız seni gördüyse körlemesine koşma: köşeyi dön, görüş hattını kes ve alarmın sönmesini bekle.",
+   "İlk kapılarda düello kuralı ekranda yazar; sonra ezberlemen gerekir – ve süre kısalır."
   ],
   "aboutH": "Bu oyun hakkında",
-  "about": "Red Scarf, PickRadar için yapılmış özgün bir tarayıcı oyunudur. Labirent, tuzaklar ve muhafız yerleri her bölümde yeniden üretilir; iki oyun asla aynı olmaz. En iyi bölümün yalnızca tarayıcında saklanır."
+  "about": "Red Scarf, PickRadar için yapılmış özgün bir tarayıcı oyunudur. Labirent, tuzaklar ve muhafız yerleri her bölümde yeniden üretilir; iki oyun asla aynı olmaz. En iyi bölümün yalnızca tarayıcında saklanır.",
+  "sub": "Sessiz Adımlar",
+  "honor": "Onur",
+  "dojo": "Dojo",
+  "seed": "Tohum",
+  "seedAuto": "rastgele",
+  "dojoText": "Her oyunda kazandığın onuru kalıcı eğitimlere harca.",
+  "maxed": "Ustalaştı",
+  "back": "Geri",
+  "paused": "Duraklatıldı",
+  "resume": "Devam et",
+  "restart": "Bu tohumu yeniden başlat",
+  "menu": "Ana menü",
+  "noSmoke": "Sis bomban kalmadı",
+  "secondChance": "İkinci şans! Gölgeler seni sakladı",
+  "honorRun": "Kazanılan onur: {h}",
+  "honorGain": "+{h} onur",
+  "caughtDuel": "Görüldün – duruşunu oku ve karşılık ver!",
+  "faceDuel": "Yüz yüze – duruşunu oku ve karşılık ver!",
+  "duelLost": "Yenildin",
+  "stances": {
+   "over": "Yukarıdan kesiş",
+   "lunge": "Hamle",
+   "guard": "Yüksek savunma",
+   "thrust": "Mızrak saplaması"
+  },
+  "w": {
+   "katana": "Katana",
+   "shuriken": "Shuriken",
+   "kusarigama": "Kusarigama",
+   "smoke": "Sis bombası"
+  },
+  "ups": {
+   "silence": [
+    "Sessizlik",
+    "Her seviye koşmanın sesini %22 azaltır."
+   ],
+   "shadow": [
+    "Gölge",
+    "Her seviye muhafızlar seni %14 daha yavaş fark eder."
+   ],
+   "life": [
+    "İkinci can",
+    "Her seviye, oyun başına bir ölümcül darbeden kurtulursun."
+   ],
+   "smoke": [
+    "Sis",
+    "Her oyuna bir sis bombası fazla başlarsın."
+   ],
+   "focus": [
+    "Odak",
+    "Her düelloda karar için +0,4 sn."
+   ]
+  },
+  "duelH": "Düellolar",
+  "duelList": [
+   "Bir muhafızın göstergesi dolarsa ya da biriyle yüz yüze gelirsen ekran mürekkep resmi bir düelloya döner. Samuray bir duruş gösterir – kırmızı çubuk bitmeden doğru silahla karşılık ver:",
+   "Yukarıdan kesiş → Kusarigama: zincir kalkan kılıcı yakalar.",
+   "Hamle → Sis bombası: kaybol ve arkadan vur (bir sis bombası harcar).",
+   "Yüksek savunma → Shuriken: yıldızlar savunmanın altından geçer.",
+   "Mızrak saplaması → Katana: mızrağın içine gir ve kes.",
+   "Yanlış seçersen ya da geç kalırsan yere serilirsin. Her kapıda süre kısalır; kaptan daha da hızlıdır."
+  ],
+  "dojoH": "Dojo ve tohum",
+  "dojoList": [
+   "Etkisiz hâle getirme (+10), düello (+15) ve geçilen kapılar onur kazandırır. Dojoda onurla kalıcı eğitimler alırsın: Sessizlik, Gölge, İkinci can, Sis ve Odak.",
+   "Her oyunun bir tohumu var. Menüde bir tohum yazarsan aynı labirentleri birebir yeniden oynarsın – bir arkadaşınla yarışmak için ideal."
+  ]
  },
  "id": {
-  "name": "Red Scarf",
+  "name": "Red Scarf: Langkah Sunyi",
   "play": "Masuki labirin",
   "level": "Gerbang",
   "key": "Kunci",
@@ -186,7 +320,7 @@
   "running": "BERLARI – berisik",
   "sneaking": "Mengendap",
   "dash": "Dash",
-  "keys": "WASD gerak · Shift lari (berisik) · Spasi dash · dekati tanpa terlihat untuk melumpuhkan",
+  "keys": "WASD gerak · Shift lari · Spasi dash · Q asap · P jeda",
   "locked": "Gerbang terkunci – kuncinya ada pada kapten",
   "gotKey": "Kamu mengambil kunci kapten!",
   "alarm": "Kawat jebakan! Lonceng berbunyi",
@@ -207,7 +341,8 @@
    "pendulum": "Tertebas bilah berayun.",
    "saw": "Tertangkap gergaji rel.",
    "pit": "Jatuh dari lantai yang runtuh.",
-   "caught": "Seorang penjaga melihatmu."
+   "caught": "Seorang penjaga melihatmu.",
+   "duel": "Tumbang dalam duel."
   },
   "moves": {
    "katana": "KATANA",
@@ -215,15 +350,13 @@
    "garrote": "KAWAT",
    "kunai": "TERJANG KUNAI",
    "tessen": "KIPAS PERANG",
-   "smoke": "BOM ASAP",
-   "shuriken": "SHURIKEN",
-   "kusarigama": "KUSARIGAMA"
+   "smokeT": "ASAP"
   },
   "story": "Shogun Besi menyembunyikan gulungan terakhir klan Kage di dasar Labirin Seribu Gerbang, benteng yang lorongnya berubah setiap malam. Kurenai, anggota terakhir klan, mengikat syal merah gurunya dan masuk sendirian. Labirin punya satu aturan: siapa yang jatuh, mulai lagi dari gerbang pertama.",
-  "title": "Red Scarf – Game Ninja Siluman Gratis di Labirin Gelap",
+  "title": "Red Scarf: Langkah Sunyi – Game Ninja Siluman Gratis",
   "desc": "Menyelinap sebagai ninja bersyal merah di labirin gelap yang selalu berubah. Hindari pandangan penjaga, delapan jenis jebakan, dan lumpuhkan penjaga tanpa terlihat. Game browser gratis.",
-  "h1": "Red Scarf: ninja siluman di labirin gelap",
-  "intro": "Tanpa duel dan tanpa kesempatan kedua. Menyelinaplah di kegelapan, hindari pandangan penjaga, dan lumpuhkan mereka begitu kamu dekat. Sekali jatuh, labirin mengembalikanmu ke gerbang 1.",
+  "h1": "Red Scarf: Langkah Sunyi – ninja siluman di labirin gelap",
+  "intro": "Menyelinaplah di labirin yang berubah setiap malam. Datang dari belakang dan takedown senyap dimainkan; bertatap muka dengan penjaga dan dimulailah duel di mana kamu harus membaca kuda-kudanya. Sekali jatuh, kamu mulai lagi dari gerbang 1.",
   "storyH": "Cerita",
   "storyFull": [
    "Dahulu klan Kage menjaga Gulungan Langkah Sunyi. Saat Shogun Besi menghancurkan klan itu, ia mengunci gulungannya di dasar Labirin Seribu Gerbang – benteng dengan lorong batu yang tersusun ulang setiap malam.",
@@ -232,11 +365,12 @@
   ],
   "howH": "Cara bermain",
   "how": [
-   "Temukan kapten (tanduk emas di helmnya) dan ambil kuncinya. Gerbang merah hanya terbuka dengan kunci.",
-   "Penjaga melihat dalam kerucut di depan mereka. Di dalam kerucut meteran mereka terisi – kalau penuh, kamu mati. Setiap level kerucutnya makin lebar dan panjang, dan mereka lebih cepat menyadarimu.",
-   "Dekati penjaga tanpa terlihat dan ninja melumpuhkannya otomatis. Dari belakang, samping, atau depan gerakannya berbeda.",
-   "Berlari itu cepat tapi berisik: penjaga di dekat mendengarmu. Penjaga yang menemukan rekannya tergeletak atau mendengar lonceng akan datang memeriksa.",
-   "Mati sekali – oleh penjaga atau jebakan – dan kamu mulai lagi dari gerbang 1. Gerbang terbaikmu disimpan."
+   "Temukan kapten (tanduk emas di helmnya) dan ambil kuncinya – gerbang merah hanya terbuka dengan kunci.",
+   "Penjaga melihat dalam kerucut. Di dalamnya meteran terisi; saat penuh mereka membunyikan alarm dan semua penjaga di dekat datang mencari. Penjaga yang menemukan mayat juga membunyikan alarm.",
+   "Capai penjaga dari belakang atau samping tanpa terlihat dan Kurenai melumpuhkannya dalam sinematik singkat: tanto, kawat, tebasan iai, atau terjang kunai saat dash.",
+   "Bertatap muka dengan penjaga memulai duel. Baca kuda-kudanya dan pilih sebelum waktu habis: Tinggi → Katana Rise, Tengah → Kusarigama, Iai → Shuriken. Bom asap untuk kabur. Kapten butuh dua jawaban benar berturut-turut.",
+   "Takedown dan gerbang memberi mon. Belanjakan untuk peningkatan permanen: Sunyi, Bayangan (deteksi lebih lambat), Nyawa tambahan, Bom asap, dan Fokus (waktu duel lebih lama).",
+   "Setiap putaran punya seed – ketik seed yang sama di layar awal untuk memainkan labirin yang sama lagi."
   ],
   "trapsH": "Jebakan",
   "traps": [
@@ -250,24 +384,91 @@
    "Gas beracun: lubang menyemburkan awan hijau; terlalu lama di dalamnya, kamu tercekik."
   ],
   "movesH": "Lumpuhan",
-  "movesList": "Katana, tanto, kawat, terjang kunai, kipas perang, bom asap, shuriken, dan kusarigama – masing-masing dengan akhir yang berbeda. Serangan dari belakang, samping, dan depan memakai senjata berbeda.",
+  "movesList": "Takedown senyap: tanto dan kawat dari belakang, tebasan iai dari samping, terjang kunai saat dash. Duel: Katana Rise, Kusarigama, dan Shuriken – masing-masing mengalahkan satu kuda-kuda.",
   "ctrlH": "Kontrol",
   "ctrl": [
-   "Komputer: W A S D atau panah untuk bergerak, tahan Shift untuk berlari (berisik), Spasi untuk dash. Dash melompati jebakan lantai (duri, pelat, lantai retak, kawat).",
-   "HP: geser di kiri layar untuk bergerak – dorong sedikit untuk mengendap, dorong penuh untuk lari. Ketuk tombol merah untuk dash. Miringkan HP untuk tampilan terbaik."
+   "Komputer: W A S D atau panah untuk bergerak, Shift lari (berisik), Spasi dash (kebal sebentar, melompati jebakan lantai), Q bom asap, Esc jeda. Saat duel tekan 1–4.",
+   "HP: geser di kiri layar untuk bergerak – dorong sedikit mengendap, dorong penuh berlari. Tombol kanan: dash dan asap. Saat duel ketuk senjata. Miringkan HP untuk tampilan terbaik."
   ],
   "tipsH": "Tips",
   "tips": [
-   "Perhatikan kerucut penjaga berputar sebelum bergerak – mereka berhenti dan melihat sekeliling.",
-   "Mengendaplah, jangan berlari, saat penjaga dekat tikungan.",
-   "Gunakan dash untuk melewati duri dan lantai retak, bukan untuk kabur dari penjaga – kalau sudah terlihat, terlambat.",
-   "Cahaya lentera tidak menyembunyikanmu, tapi dinding iya: putuskan garis pandang."
+   "Perhatikan penjaga melihat sekeliling sebelum lewat – mereka berhenti, menyapu kiri-kanan, lalu berbalik.",
+   "Bom asap memutus pandangan penjaga dan membuat yang dekat pusing.",
+   "Jika penjaga sudah melihatmu, jangan lari membabi buta: belok, putuskan garis pandang, tunggu alarm mereda.",
+   "Di gerbang awal aturan duel tertulis di layar; setelahnya kamu harus mengingatnya – dan waktunya makin singkat."
   ],
   "aboutH": "Tentang game ini",
-  "about": "Red Scarf adalah game browser orisinal buatan PickRadar. Labirin, jebakan, dan posisi penjaga dibuat ulang setiap level, jadi tak ada dua permainan yang sama. Level terbaikmu hanya disimpan di browsermu."
+  "about": "Red Scarf adalah game browser orisinal buatan PickRadar. Labirin, jebakan, dan posisi penjaga dibuat ulang setiap level, jadi tak ada dua permainan yang sama. Level terbaikmu hanya disimpan di browsermu.",
+  "sub": "Langkah Sunyi",
+  "honor": "Kehormatan",
+  "dojo": "Dojo",
+  "seed": "Seed",
+  "seedAuto": "acak",
+  "dojoText": "Gunakan kehormatan dari setiap permainan untuk latihan permanen.",
+  "maxed": "Dikuasai",
+  "back": "Kembali",
+  "paused": "Jeda",
+  "resume": "Lanjut",
+  "restart": "Ulangi seed ini",
+  "menu": "Menu utama",
+  "noSmoke": "Bom asap habis",
+  "secondChance": "Kesempatan kedua! Bayangan menyembunyikanmu",
+  "honorRun": "Kehormatan didapat: {h}",
+  "honorGain": "+{h} kehormatan",
+  "caughtDuel": "Kamu terlihat – baca kuda-kudanya dan balas!",
+  "faceDuel": "Berhadapan – baca kuda-kudanya dan balas!",
+  "duelLost": "Tumbang",
+  "stances": {
+   "over": "Tebasan atas",
+   "lunge": "Terjang",
+   "guard": "Pertahanan tinggi",
+   "thrust": "Tusukan tombak"
+  },
+  "w": {
+   "katana": "Katana",
+   "shuriken": "Shuriken",
+   "kusarigama": "Kusarigama",
+   "smoke": "Bom asap"
+  },
+  "ups": {
+   "silence": [
+    "Sunyi",
+    "Lari 22% lebih senyap per level."
+   ],
+   "shadow": [
+    "Bayangan",
+    "Penjaga 14% lebih lambat menyadarimu per level."
+   ],
+   "life": [
+    "Nyawa kedua",
+    "Selamat dari satu serangan maut per permainan, per level."
+   ],
+   "smoke": [
+    "Asap",
+    "Mulai setiap permainan dengan satu bom asap lebih."
+   ],
+   "focus": [
+    "Fokus",
+    "+0,4 dtk untuk memutuskan di setiap duel."
+   ]
+  },
+  "duelH": "Duel",
+  "duelList": [
+   "Jika meteran penjaga penuh, atau kamu berhadapan langsung, layar berubah menjadi duel lukisan tinta. Samurai menunjukkan kuda-kuda – balas dengan senjata yang tepat sebelum bar merah habis:",
+   "Tebasan atas → Kusarigama: rantai menangkap pedang yang terangkat.",
+   "Terjang → Bom asap: menghilang dan serang dari belakang (memakai satu bom asap).",
+   "Pertahanan tinggi → Shuriken: bintang lolos di bawah pertahanan.",
+   "Tusukan tombak → Katana: masuk ke dalam jangkauan tombak dan tebas.",
+   "Salah pilih atau terlambat, kamu tumbang. Setiap gerbang waktunya lebih singkat; kapten lebih cepat lagi."
+  ],
+  "dojoH": "Dojo dan seed",
+  "dojoList": [
+   "Lumpuhan (+10), duel (+15), dan gerbang yang dilewati memberi kehormatan. Di dojo kehormatan membeli latihan permanen: Sunyi, Bayangan, Nyawa kedua, Asap, dan Fokus.",
+   "Setiap permainan punya seed. Ketik seed di menu untuk memainkan labirin yang persis sama – cocok untuk lomba dengan teman."
+  ]
  },
  "es": {
-  "name": "Red Scarf",
+  "name": "Red Scarf: Pasos Silenciosos",
   "play": "Entrar al laberinto",
   "level": "Puerta",
   "key": "Llave",
@@ -275,7 +476,7 @@
   "running": "CORRIENDO – haces ruido",
   "sneaking": "Sigilo",
   "dash": "Impulso",
-  "keys": "WASD mover · Shift correr (ruido) · Espacio impulso · acércate sin ser visto para eliminar",
+  "keys": "WASD mover · Shift correr · Espacio impulso · Q humo · P pausa",
   "locked": "La puerta está cerrada: el capitán tiene la llave",
   "gotKey": "¡Has cogido la llave del capitán!",
   "alarm": "¡Cable trampa! Suena la campana",
@@ -296,7 +497,8 @@
    "pendulum": "Cortado por la cuchilla oscilante.",
    "saw": "Atrapado por la sierra del raíl.",
    "pit": "Caíste por un suelo que se hunde.",
-   "caught": "Un guardia te vio."
+   "caught": "Un guardia te vio.",
+   "duel": "Caíste en un duelo."
   },
   "moves": {
    "katana": "KATANA",
@@ -304,15 +506,13 @@
    "garrote": "ALAMBRE",
    "kunai": "CAÍDA KUNAI",
    "tessen": "ABANICO DE GUERRA",
-   "smoke": "BOMBA DE HUMO",
-   "shuriken": "SHURIKEN",
-   "kusarigama": "KUSARIGAMA"
+   "smokeT": "HUMO"
   },
   "story": "El Shogun de Hierro escondió el último pergamino del clan Kage en el fondo del Laberinto de las Mil Puertas, una fortaleza cuyos pasillos cambian cada noche. Kurenai, la última del clan, se ata la bufanda roja de su maestro y entra sola. El laberinto tiene una regla: quien cae, vuelve a empezar en la primera puerta.",
-  "title": "Red Scarf – Juego ninja de sigilo gratis en un laberinto oscuro",
+  "title": "Red Scarf: Pasos Callados – Juego ninja de sigilo gratis",
   "desc": "Avanza en sigilo como una ninja con bufanda roja por un laberinto oscuro que siempre cambia. Evita la vista de los guardias y ocho tipos de trampas, y elimínalos sin ser vista. Juego de navegador gratis.",
-  "h1": "Red Scarf: sigilo ninja en un laberinto oscuro",
-  "intro": "Sin duelos y sin segundas oportunidades. Deslízate entre las sombras, no entres en el campo de visión de los guardias y elimínalos en cuanto estés cerca. Si caes una vez, el laberinto te devuelve a la puerta 1.",
+  "h1": "Red Scarf: Pasos Silenciosos – sigilo ninja en un laberinto oscuro",
+  "intro": "Avanza en sigilo por un laberinto que cambia cada noche. Llega por la espalda y verás una eliminación silenciosa; cruza la mirada con un guardia y empezará un duelo en el que debes leer su guardia. Si caes una vez, vuelves a la puerta 1.",
   "storyH": "Historia",
   "storyFull": [
    "Hace mucho, el clan Kage custodiaba el Pergamino de los Pasos Callados. Cuando el Shogun de Hierro aplastó al clan, encerró el pergamino en el fondo del Laberinto de las Mil Puertas, una fortaleza de pasillos de piedra que se reordenan cada noche.",
@@ -321,11 +521,12 @@
   ],
   "howH": "Cómo se juega",
   "how": [
-   "Encuentra al capitán (cuernos dorados en el casco) y quítale la llave. La puerta roja solo se abre con ella.",
-   "Los guardias ven en un cono delante de ellos. Dentro del cono se llena su indicador; si se llena, mueres. Cada nivel el cono es más ancho y largo y te detectan antes.",
-   "Acércate a un guardia sin ser vista y la ninja lo elimina automáticamente. Por detrás, de lado o de frente hay movimientos distintos.",
-   "Correr es rápido pero ruidoso: los guardias cercanos te oyen. Un guardia que encuentra a un compañero caído o oye una campana viene a mirar.",
-   "Si mueres una vez, por un guardia o una trampa, empiezas de nuevo en la puerta 1. Se guarda tu mejor puerta."
+   "Encuentra al capitán (cuernos dorados en el casco) y quítale la llave: la puerta roja solo se abre con ella.",
+   "Los guardias ven en un cono. Dentro se llena su indicador; cuando está lleno dan la alarma y todos los guardias cercanos vienen a buscarte. Quien encuentra un cuerpo también da la alarma.",
+   "Llega a un guardia por detrás o de lado sin ser vista y Kurenai lo elimina en una breve cinemática: tanto, alambre, corte iai o una caída kunai si llegas con impulso.",
+   "Si te encuentras cara a cara empieza un duelo. Lee su guardia y elige antes de que acabe el tiempo: Alta → Katana Rise, Media → Kusarigama, Iai → Shuriken. Con una bomba de humo puedes huir. Los capitanes exigen dos aciertos seguidos.",
+   "Las eliminaciones y las puertas dan mon. Gástalo en mejoras permanentes: Silencio, Sombra (te detectan más despacio), Vida extra, Bombas de humo y Concentración (más tiempo en los duelos).",
+   "Cada partida tiene una semilla: escríbela en la pantalla de inicio para volver a jugar los mismos laberintos."
   ],
   "trapsH": "Trampas",
   "traps": [
@@ -339,24 +540,91 @@
    "Gas venenoso: un respiradero suelta una nube verde; si te quedas dentro demasiado, te asfixias."
   ],
   "movesH": "Eliminaciones",
-  "movesList": "Katana, tanto, alambre, caída kunai, abanico de guerra, bomba de humo, shuriken y kusarigama, cada uno con su propio final. Por detrás, de lado y de frente se usan armas distintas.",
+  "movesList": "Eliminaciones silenciosas: tanto y alambre por detrás, corte iai de lado, caída kunai con impulso. Duelos: Katana Rise, Kusarigama y Shuriken, cada uno vence a una guardia.",
   "ctrlH": "Controles",
   "ctrl": [
-   "Ordenador: W A S D o flechas para moverte, mantén Shift para correr (hace ruido), Espacio para el impulso. El impulso salta las trampas del suelo (pinchos, placas, suelo agrietado, cables).",
-   "Móvil: arrastra en la parte izquierda para moverte: un poco es sigilo, a fondo es correr. Toca el botón rojo para el impulso. Gira el móvil para verlo mejor."
+   "Ordenador: W A S D o flechas para moverte, Shift para correr (ruido), Espacio para el impulso (invulnerable un instante, salta trampas del suelo), Q bomba de humo, Esc pausa. En los duelos pulsa 1–4.",
+   "Móvil: arrastra en la parte izquierda para moverte: poco es sigilo, a fondo es correr. Botones a la derecha: impulso y humo. En los duelos toca el arma. Gira el móvil para verlo mejor."
   ],
   "tipsH": "Consejos",
   "tips": [
-   "Mira cómo gira el cono del guardia antes de moverte: se paran y miran alrededor.",
-   "Avanza en sigilo, sin correr, cuando un guardia esté cerca de una esquina.",
-   "Usa el impulso para cruzar pinchos y suelos agrietados, no para huir de un guardia: si te ha visto, ya es tarde.",
-   "La luz de los faroles no te oculta, pero los muros sí: rompe la línea de visión."
+   "Observa cómo el guardia mira alrededor antes de pasar: se para, barre a izquierda y derecha y se gira.",
+   "La bomba de humo corta la vista del guardia y aturde a los que están cerca.",
+   "Si un guardia te ha visto, no corras a ciegas: dobla la esquina, rompe la línea de visión y espera a que pase la alarma.",
+   "En las primeras puertas la regla del duelo aparece en pantalla; después tendrás que recordarla, y el tiempo se acorta."
   ],
   "aboutH": "Sobre este juego",
-  "about": "Red Scarf es un juego de navegador original hecho para PickRadar. El laberinto, las trampas y los guardias se generan de nuevo en cada nivel, así que no hay dos partidas iguales. Tu mejor nivel solo se guarda en tu navegador."
+  "about": "Red Scarf es un juego de navegador original hecho para PickRadar. El laberinto, las trampas y los guardias se generan de nuevo en cada nivel, así que no hay dos partidas iguales. Tu mejor nivel solo se guarda en tu navegador.",
+  "sub": "Pasos Callados",
+  "honor": "Honor",
+  "dojo": "Dojo",
+  "seed": "Semilla",
+  "seedAuto": "aleatoria",
+  "dojoText": "Gasta el honor de cada partida en entrenamiento permanente.",
+  "maxed": "Dominado",
+  "back": "Volver",
+  "paused": "En pausa",
+  "resume": "Seguir",
+  "restart": "Reiniciar esta semilla",
+  "menu": "Menú principal",
+  "noSmoke": "No te quedan bombas de humo",
+  "secondChance": "¡Segunda oportunidad! Las sombras te ocultan",
+  "honorRun": "Honor ganado: {h}",
+  "honorGain": "+{h} de honor",
+  "caughtDuel": "Te han visto: ¡lee su postura y responde!",
+  "faceDuel": "Cara a cara: ¡lee su postura y responde!",
+  "duelLost": "Derrotada",
+  "stances": {
+   "over": "Golpe alto",
+   "lunge": "Embestida",
+   "guard": "Guardia alta",
+   "thrust": "Estocada de lanza"
+  },
+  "w": {
+   "katana": "Katana",
+   "shuriken": "Shuriken",
+   "kusarigama": "Kusarigama",
+   "smoke": "Bomba de humo"
+  },
+  "ups": {
+   "silence": [
+    "Silencio",
+    "Correr hace un 22 % menos de ruido por nivel."
+   ],
+   "shadow": [
+    "Sombra",
+    "Los guardias te detectan un 14 % más despacio por nivel."
+   ],
+   "life": [
+    "Segunda vida",
+    "Sobrevive a un golpe mortal por partida, por nivel."
+   ],
+   "smoke": [
+    "Humo",
+    "Empieza cada partida con una bomba de humo más."
+   ],
+   "focus": [
+    "Concentración",
+    "+0,4 s para decidir en cada duelo."
+   ]
+  },
+  "duelH": "Duelos",
+  "duelList": [
+   "Si se llena el indicador de un guardia, o te topas con uno cara a cara, la pantalla se convierte en un duelo de tinta. El samurái muestra una postura: respóndela con el arma correcta antes de que se acabe la barra roja:",
+   "Golpe alto → Kusarigama: la cadena atrapa la hoja alzada.",
+   "Embestida → Bomba de humo: desaparece y ataca por detrás (gasta una bomba).",
+   "Guardia alta → Shuriken: las estrellas pasan por debajo de la guardia.",
+   "Estocada de lanza → Katana: entra dentro de la lanza y corta.",
+   "Si eliges mal o tarde, caes. Cada puerta te da menos tiempo; el capitán es aún más rápido."
+  ],
+  "dojoH": "Dojo y semillas",
+  "dojoList": [
+   "Las eliminaciones (+10), los duelos (+15) y las puertas superadas dan honor. En el dojo compras entrenamiento permanente: Silencio, Sombra, Segunda vida, Humo y Concentración.",
+   "Cada partida tiene una semilla. Escribe una en el menú para jugar exactamente los mismos laberintos: ideal para competir con un amigo."
+  ]
  },
  "pt": {
-  "name": "Red Scarf",
+  "name": "Red Scarf: Passos Silenciosos",
   "play": "Entrar no labirinto",
   "level": "Portão",
   "key": "Chave",
@@ -364,7 +632,7 @@
   "running": "CORRENDO – faz barulho",
   "sneaking": "Furtivo",
   "dash": "Investida",
-  "keys": "WASD andar · Shift correr (barulho) · Espaço investida · chegue perto sem ser visto para derrubar",
+  "keys": "WASD andar · Shift correr · Espaço investida · Q fumaça · P pausar",
   "locked": "O portão está trancado – a chave está com o capitão",
   "gotKey": "Você pegou a chave do capitão!",
   "alarm": "Arame armadilha! O sino toca",
@@ -385,7 +653,8 @@
    "pendulum": "Cortado pela lâmina pendular.",
    "saw": "Pego pela serra do trilho.",
    "pit": "Caiu por um piso que desabou.",
-   "caught": "Um guarda te viu."
+   "caught": "Um guarda te viu.",
+   "duel": "Derrotada num duelo."
   },
   "moves": {
    "katana": "KATANA",
@@ -393,15 +662,13 @@
    "garrote": "ARAME",
    "kunai": "QUEDA KUNAI",
    "tessen": "LEQUE DE GUERRA",
-   "smoke": "BOMBA DE FUMAÇA",
-   "shuriken": "SHURIKEN",
-   "kusarigama": "KUSARIGAMA"
+   "smokeT": "FUMAÇA"
   },
   "story": "O Xogum de Ferro escondeu o último pergaminho do clã Kage no fundo do Labirinto dos Mil Portões, uma fortaleza cujos corredores mudam toda noite. Kurenai, a última do clã, amarra o cachecol vermelho do seu mestre e entra sozinha. O labirinto tem uma regra: quem cai recomeça no primeiro portão.",
-  "title": "Red Scarf – Jogo ninja furtivo grátis num labirinto escuro",
+  "title": "Red Scarf: Passos Silenciosos – Jogo ninja furtivo grátis",
   "desc": "Avance em silêncio como uma ninja de cachecol vermelho num labirinto escuro que sempre muda. Fuja da visão dos guardas e de oito tipos de armadilhas e derrube-os sem ser vista. Jogo de navegador grátis.",
-  "h1": "Red Scarf: furtividade ninja num labirinto escuro",
-  "intro": "Sem duelos e sem segunda chance. Deslize pelas sombras, fique fora da visão dos guardas e derrube-os no instante em que chegar perto. Caiu uma vez, o labirinto te manda de volta ao portão 1.",
+  "h1": "Red Scarf: Passos Silenciosos – furtividade ninja num labirinto escuro",
+  "intro": "Avance em silêncio por um labirinto que muda toda noite. Chegue por trás e uma derrubada silenciosa acontece; encontre um guarda cara a cara e começa um duelo em que você precisa ler a postura dele. Caiu uma vez, recomeça no portão 1.",
   "storyH": "História",
   "storyFull": [
    "Há muito tempo o clã Kage guardava o Pergaminho dos Passos Silenciosos. Quando o Xogum de Ferro esmagou o clã, trancou o pergaminho no fundo do Labirinto dos Mil Portões – uma fortaleza de corredores de pedra que se reorganizam toda noite.",
@@ -410,11 +677,12 @@
   ],
   "howH": "Como jogar",
   "how": [
-   "Encontre o capitão (chifres dourados no capacete) e pegue a chave dele. O portão vermelho só abre com a chave.",
-   "Os guardas veem num cone à frente deles. Dentro do cone o medidor deles enche – se encher, você morre. A cada nível o cone fica mais largo e mais longo, e eles te percebem mais rápido.",
-   "Chegue perto de um guarda sem ser vista e a ninja o derruba automaticamente. Por trás, de lado ou de frente os golpes são diferentes.",
-   "Correr é rápido mas barulhento: guardas por perto te ouvem. Um guarda que encontra um colega caído ou ouve um sino vem ver.",
-   "Morreu uma vez – para um guarda ou uma armadilha – e você recomeça no portão 1. Seu melhor portão fica salvo."
+   "Encontre o capitão (chifres dourados no capacete) e pegue a chave – o portão vermelho só abre com ela.",
+   "Os guardas veem num cone. Dentro dele o medidor enche; quando enche, eles dão o alarme e todos os guardas por perto vêm procurar. Quem encontra um corpo também dá o alarme.",
+   "Chegue a um guarda por trás ou de lado sem ser vista e Kurenai o derruba numa cena curta: tanto, arame, corte iai ou queda kunai se você vier na investida.",
+   "Cara a cara começa um duelo. Leia a postura e escolha antes do tempo acabar: Alta → Katana Rise, Média → Kusarigama, Iai → Shuriken. A bomba de fumaça permite fugir. Capitães exigem dois acertos seguidos.",
+   "Derrubadas e portões rendem mon. Gaste em melhorias permanentes: Silêncio, Sombra (detecção mais lenta), Vida extra, Bombas de fumaça e Foco (mais tempo no duelo).",
+   "Cada partida tem uma semente – digite a mesma semente na tela inicial para jogar os mesmos labirintos de novo."
   ],
   "trapsH": "Armadilhas",
   "traps": [
@@ -428,20 +696,87 @@
    "Gás venenoso: um respiradouro solta uma nuvem verde; fique tempo demais nela e você sufoca."
   ],
   "movesH": "Derrubadas",
-  "movesList": "Katana, tanto, arame, queda kunai, leque de guerra, bomba de fumaça, shuriken e kusarigama – cada um com seu próprio final. Por trás, de lado e de frente são usadas armas diferentes.",
+  "movesList": "Derrubadas silenciosas: tanto e arame por trás, corte iai de lado, queda kunai na investida. Duelos: Katana Rise, Kusarigama e Shuriken – cada um vence uma postura.",
   "ctrlH": "Controles",
   "ctrl": [
-   "Computador: W A S D ou setas para andar, segure Shift para correr (barulho), Espaço para a investida. A investida pula as armadilhas do chão (espinhos, placas, piso rachado, arames).",
-   "Celular: arraste no lado esquerdo da tela para andar – pouco é furtivo, até o fim é correr. Toque no botão vermelho para a investida. Vire o celular para ver melhor."
+   "Computador: W A S D ou setas para andar, Shift para correr (barulho), Espaço para a investida (invulnerável por um instante, pula armadilhas do chão), Q bomba de fumaça, Esc pausa. No duelo aperte 1–4.",
+   "Celular: arraste no lado esquerdo para andar – pouco é furtivo, até o fim é correr. Botões à direita: investida e fumaça. No duelo toque na arma. Vire o celular para ver melhor."
   ],
   "tipsH": "Dicas",
   "tips": [
-   "Veja o cone do guarda girar antes de se mover – eles param e olham em volta.",
-   "Ande furtivamente, sem correr, quando um guarda estiver perto de uma esquina.",
-   "Use a investida para cruzar espinhos e pisos rachados, não para fugir de um guarda – se ele te viu, já era.",
-   "A luz das lanternas não te esconde, mas as paredes sim: quebre a linha de visão."
+   "Veja o guarda olhar em volta antes de passar – ele para, varre esquerda e direita e depois vira.",
+   "A bomba de fumaça corta a visão do guarda e atordoa quem está perto.",
+   "Se um guarda te viu, não corra às cegas: vire a esquina, quebre a linha de visão e espere o alarme passar.",
+   "Nos primeiros portões a regra do duelo aparece na tela; depois você precisa lembrar – e o tempo fica menor."
   ],
   "aboutH": "Sobre este jogo",
-  "about": "Red Scarf é um jogo de navegador original feito para o PickRadar. O labirinto, as armadilhas e os guardas são gerados de novo a cada nível, então nenhuma partida é igual. Seu melhor nível fica salvo só no seu navegador."
+  "about": "Red Scarf é um jogo de navegador original feito para o PickRadar. O labirinto, as armadilhas e os guardas são gerados de novo a cada nível, então nenhuma partida é igual. Seu melhor nível fica salvo só no seu navegador.",
+  "sub": "Passos Silenciosos",
+  "honor": "Honra",
+  "dojo": "Dojo",
+  "seed": "Semente",
+  "seedAuto": "aleatória",
+  "dojoText": "Use a honra de cada partida em treinos permanentes.",
+  "maxed": "Dominado",
+  "back": "Voltar",
+  "paused": "Pausado",
+  "resume": "Continuar",
+  "restart": "Reiniciar esta semente",
+  "menu": "Menu principal",
+  "noSmoke": "Sem bombas de fumaça",
+  "secondChance": "Segunda chance! As sombras te escondem",
+  "honorRun": "Honra ganha: {h}",
+  "honorGain": "+{h} de honra",
+  "caughtDuel": "Você foi vista – leia a postura e responda!",
+  "faceDuel": "Frente a frente – leia a postura e responda!",
+  "duelLost": "Derrotada",
+  "stances": {
+   "over": "Golpe de cima",
+   "lunge": "Investida",
+   "guard": "Guarda alta",
+   "thrust": "Estocada de lança"
+  },
+  "w": {
+   "katana": "Katana",
+   "shuriken": "Shuriken",
+   "kusarigama": "Kusarigama",
+   "smoke": "Bomba de fumaça"
+  },
+  "ups": {
+   "silence": [
+    "Silêncio",
+    "Correr faz 22% menos barulho por nível."
+   ],
+   "shadow": [
+    "Sombra",
+    "Guardas te percebem 14% mais devagar por nível."
+   ],
+   "life": [
+    "Segunda vida",
+    "Sobreviva a um golpe fatal por partida, por nível."
+   ],
+   "smoke": [
+    "Fumaça",
+    "Comece cada partida com uma bomba de fumaça a mais."
+   ],
+   "focus": [
+    "Foco",
+    "+0,4 s para decidir em cada duelo."
+   ]
+  },
+  "duelH": "Duelos",
+  "duelList": [
+   "Se o medidor de um guarda encher, ou você topar com um frente a frente, a tela vira um duelo em nanquim. O samurai mostra uma postura – responda com a arma certa antes da barra vermelha acabar:",
+   "Golpe de cima → Kusarigama: a corrente prende a lâmina erguida.",
+   "Investida → Bomba de fumaça: suma e ataque por trás (gasta uma bomba).",
+   "Guarda alta → Shuriken: as estrelas passam por baixo da guarda.",
+   "Estocada de lança → Katana: entre por dentro da lança e corte.",
+   "Escolheu errado ou tarde, você cai. Cada portão dá menos tempo; o capitão é ainda mais rápido."
+  ],
+  "dojoH": "Dojo e sementes",
+  "dojoList": [
+   "Derrubadas (+10), duelos (+15) e portões vencidos dão honra. No dojo ela compra treinos permanentes: Silêncio, Sombra, Segunda vida, Fumaça e Foco.",
+   "Toda partida tem uma semente. Digite uma no menu para jogar exatamente os mesmos labirintos – ótimo para disputar com um amigo."
+  ]
  }
 }

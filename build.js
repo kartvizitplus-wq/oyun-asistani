@@ -500,49 +500,34 @@ ${G.sections.map((sec, i) => `<h2 id="s${i + 1}">${esc(sec.h)}</h2><ol>${sec.ste
     }));
   }
 
-  /* Red Scarf: ninja stealth in a dark, generated labyrinth (own script + chibi painter). */
+  /* Red Scarf: Silent Steps – ninja stealth in a dark, seeded labyrinth, with ink duels and a dojo. */
   {
     const R = RS[lang] || RS.en, rel = `${lang}/red-scarf/`;
-    const ui = Object.fromEntries(['name', 'play', 'level', 'key', 'best', 'running', 'sneaking', 'dash', 'keys', 'locked', 'gotKey', 'alarm', 'levelStart', 'dead', 'reached', 'reset', 'again', 'clear', 'clearText', 'nextInfo', 'next', 'causes', 'moves', 'story'].map(k => [k, R[k]]));
+    const PAGE_ONLY = ['title', 'desc', 'h1', 'intro', 'storyH', 'storyFull', 'howH', 'how', 'trapsH', 'traps', 'movesH', 'movesList', 'ctrlH', 'ctrl', 'tipsH', 'tips', 'aboutH', 'about', 'duelH', 'duelList', 'dojoH', 'dojoList'];
+    const ui = Object.fromEntries(Object.entries(R).filter(([k]) => !PAGE_ONLY.includes(k)));
     const li = a => a.map(x => `<li>${esc(x)}</li>`).join('');
     write(`${rel}index.html`, layout({
       lang, rel, active: 'red-scarf', title: `${R.title} · ${cfg.siteName}`, desc: R.desc, lastmod: '2026-11-20',
       crumbs: [[t.home, `${lang}/`], [R.name, rel]],
-      jsonld: { '@context': 'https://schema.org', '@type': 'VideoGame', name: R.name, description: R.desc, url: `${base}/${rel}`, inLanguage: lang,
+      jsonld: { '@context': 'https://schema.org', '@type': 'VideoGame', name: `${R.name}: ${R.sub}`, description: R.desc, url: `${base}/${rel}`, inLanguage: lang,
         genre: ['Stealth', 'Action', 'Roguelike'], gamePlatform: 'Web browser', applicationCategory: 'Game', operatingSystem: 'Any', isAccessibleForFree: true, playMode: 'SinglePlayer',
         publisher: { '@type': 'Organization', name: cfg.siteName, url: `${base}/` } },
       body: `<section><h1>${esc(R.h1)}</h1><p class="lead">${esc(R.intro)}</p></section>
-<section id="rs" class="rs" data-t="${esc(JSON.stringify(ui))}">
-<div class="rs-stage"><canvas aria-label="${esc(R.name)}"></canvas>
-<div class="rs-pad" hidden><button type="button" data-k="dash" aria-label="${esc(R.dash)}">⚡</button></div>
-<button type="button" class="rs-full" data-k="full" aria-label="Full screen">⛶</button>
-<div class="rs-ov"></div></div>
-<noscript><p class="note">JavaScript is required to play.</p></noscript>
-</section>
+<section class="rs"><div class="rs-host" id="rsHost"></div><noscript><p class="note">JavaScript is required to play.</p></noscript></section>
 <article class="prose"><h2>${esc(R.storyH)}</h2>${R.storyFull.map(x => `<p>${esc(x)}</p>`).join('')}
 <h2>${esc(R.howH)}</h2><ol>${li(R.how)}</ol>
+<h2>${esc(R.duelH)}</h2><p>${esc(R.duelList[0])}</p><ul>${li(R.duelList.slice(1, 5))}</ul><p>${esc(R.duelList[5])}</p>
 <h2>${esc(R.trapsH)}</h2><ul>${li(R.traps)}</ul>
 <h2>${esc(R.movesH)}</h2><p>${esc(R.movesList)}</p>
+<h2>${esc(R.dojoH)}</h2>${R.dojoList.map(x => `<p>${esc(x)}</p>`).join('')}
 <h2>${esc(R.ctrlH)}</h2><ul>${li(R.ctrl)}</ul>
 <h2>${esc(R.tipsH)}</h2><ul>${li(R.tips)}</ul>
 <h2>${esc(R.aboutH)}</h2><p>${esc(R.about)}</p></article>
 <style>
-.rs-stage{position:relative;width:100%;height:min(78vh,640px);min-height:380px;border:1px solid #d4142e66;border-radius:10px;overflow:hidden;background:#050508;touch-action:none;user-select:none;-webkit-user-select:none;box-shadow:0 0 50px -16px #d4142e}
-.rs-stage:fullscreen{height:100%;border:0;border-radius:0}
-.rs-stage canvas{display:block;width:100%;height:100%;touch-action:none}
-.rs-ov{position:absolute;inset:0;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:12px;text-align:center;background:radial-gradient(circle at 50% 40%,rgba(60,4,12,.75),rgba(3,2,5,.92));padding:22px;overflow:auto}
-.rs-ov[hidden]{display:none}
-.rs-ov h3{font-size:2rem;color:#ff4d63;letter-spacing:.04em}
-.rs-ov p{margin:0;color:#c9c9d6;max-width:52ch}
-.rs-ov .rs-story{font-style:italic;color:#e0d6d8}
-.rs-ov .rs-reset{color:#ff4d63;font-weight:600}
-.rs-ov .btn{background:linear-gradient(180deg,#ff3a52,#a80f22);color:#fff;box-shadow:0 8px 24px -10px #ff2d48}
-.rs-pad{position:absolute;right:16px;bottom:16px}
-.rs-pad[hidden]{display:none}
-.rs-pad button{width:76px;height:76px;border-radius:50%;border:2px solid rgba(255,77,99,.7);background:rgba(160,10,30,.55);color:#fff;font-size:1.8rem;touch-action:none}
-.rs-full{position:absolute;left:10px;bottom:40px;width:40px;height:40px;border-radius:8px;border:1px solid rgba(255,255,255,.25);background:rgba(10,6,10,.6);color:#fff;cursor:pointer}
+.rs-host{position:relative;width:100%;height:min(80vh,680px);min-height:400px;border:1px solid #c3081f66;border-radius:10px;overflow:hidden;background:#07060a;box-shadow:0 0 60px -18px #c3081f}
+.rs-host:fullscreen{height:100%;border:0;border-radius:0}
 </style>
-<script src="${asset('chibi.js')}" defer></script><script src="${asset('redscarf.js')}" defer></script>`
+<script src="${asset('redscarf.js')}"></script><script>RedScarf.mount(document.getElementById('rsHost'), { lang: '${lang}' });</script>`
     }));
   }
 
