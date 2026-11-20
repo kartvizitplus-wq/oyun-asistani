@@ -1,0 +1,147 @@
+{
+ "en": {
+  "tagline": "Free browser games – no download",
+  "homeH1": "Free games you can play right now",
+  "homeText": "Battle royale, MOBA and puzzle games that run in your browser on phone or computer. No download, no sign-up – pick a game and press play.",
+  "gamesH": "Our games",
+  "play": "Play",
+  "genre": {
+   "night-drop": "Battle royale · 12 players",
+   "crown-clash": "MOBA · 5v5 · 3 lanes",
+   "jade-lanes": "MOBA · 3v3 · 2 lanes",
+   "duel-peak": "MOBA · 1v1 duel",
+   "color-gradient": "Puzzle · endless levels"
+  },
+  "whyH": "Why play on PickRadar",
+  "why": [
+   "Instant: games open in the browser – nothing to install, no account.",
+   "Made for phones: touch joysticks, full-screen mode and short matches.",
+   "Always someone to play with: every game has bots, so you can start at any time.",
+   "Original games: all heroes, maps and art are made by PickRadar."
+  ],
+  "disclaimer": "PickRadar makes its own original browser games. All characters, names and art belong to PickRadar; the games are not connected to any other game publisher.",
+  "about": [
+   "PickRadar is a small independent games site run by one person. We make free games that run directly in the browser, on phones and computers.",
+   "Every game is original: the heroes, maps, names and graphics are our own work. Opponents are computer-controlled bots, so you can play alone at any time. Code and texts are written with the help of AI tools and tested by us before release.",
+   "The site is paid for by ads from Google AdSense. Your game progress and statistics are stored only in your own browser – we do not ask for an account and do not collect personal information.",
+   "Found a bug or have an idea for a game? Write to us – we read every message."
+  ],
+  "privStore": "This site does not ask you to create an account and does not collect personal information. Your game progress, statistics and language are stored only in your own browser (local storage)."
+ },
+ "tr": {
+  "tagline": "Ücretsiz tarayıcı oyunları – indirme yok",
+  "homeH1": "Hemen oynayabileceğin ücretsiz oyunlar",
+  "homeText": "Telefonda ya da bilgisayarda tarayıcında çalışan battle royale, MOBA ve bulmaca oyunları. İndirme yok, üyelik yok – bir oyun seç ve oyna'ya bas.",
+  "gamesH": "Oyunlarımız",
+  "play": "Oyna",
+  "genre": {
+   "night-drop": "Battle royale · 12 oyuncu",
+   "crown-clash": "MOBA · 5v5 · 3 koridor",
+   "jade-lanes": "MOBA · 3v3 · 2 koridor",
+   "duel-peak": "MOBA · 1v1 düello",
+   "color-gradient": "Bulmaca · sonsuz bölüm"
+  },
+  "whyH": "Neden PickRadar'da oynamalı",
+  "why": [
+   "Anında: oyunlar tarayıcıda açılır – kurulum yok, hesap yok.",
+   "Telefona göre yapıldı: dokunmatik joystick, tam ekran modu ve kısa maçlar.",
+   "Her zaman rakip var: her oyunda bot var, istediğin an başlayabilirsin.",
+   "Özgün oyunlar: tüm kahramanlar, haritalar ve görseller PickRadar'a ait."
+  ],
+  "disclaimer": "PickRadar kendi özgün tarayıcı oyunlarını yapar. Tüm karakterler, isimler ve görseller PickRadar'a aittir; oyunların başka hiçbir oyun yayıncısıyla bağlantısı yoktur.",
+  "about": [
+   "PickRadar, tek kişinin yürüttüğü küçük ve bağımsız bir oyun sitesidir. Telefonda ve bilgisayarda doğrudan tarayıcıda çalışan ücretsiz oyunlar yaparız.",
+   "Her oyun özgündür: kahramanlar, haritalar, isimler ve grafikler bize aittir. Rakipler bilgisayarın yönettiği botlardır, bu yüzden istediğin zaman tek başına oynayabilirsin. Kodlar ve metinler yapay zekâ araçlarının yardımıyla yazılır ve yayından önce tarafımızdan test edilir.",
+   "Site, Google AdSense reklamlarıyla finanse edilir. Oyun ilerlemen ve istatistiklerin yalnızca kendi tarayıcında saklanır – hesap istemeyiz ve kişisel bilgi toplamayız.",
+   "Bir hata mı buldun ya da bir oyun fikrin mi var? Bize yaz – her mesajı okuyoruz."
+  ],
+  "privStore": "Bu site hesap açmanı istemez ve kişisel bilgi toplamaz. Oyun ilerlemen, istatistiklerin ve dil seçimin yalnızca kendi tarayıcında (yerel depolama) saklanır."
+ },
+ "id": {
+  "tagline": "Game browser gratis – tanpa unduhan",
+  "homeH1": "Game gratis yang bisa langsung dimainkan",
+  "homeText": "Game battle royale, MOBA, dan puzzle yang berjalan di browser HP atau komputer. Tanpa unduhan, tanpa daftar – pilih game dan tekan main.",
+  "gamesH": "Game kami",
+  "play": "Main",
+  "genre": {
+   "night-drop": "Battle royale · 12 pemain",
+   "crown-clash": "MOBA · 5v5 · 3 lane",
+   "jade-lanes": "MOBA · 3v3 · 2 lane",
+   "duel-peak": "MOBA · duel 1v1",
+   "color-gradient": "Puzzle · level tanpa akhir"
+  },
+  "whyH": "Kenapa main di PickRadar",
+  "why": [
+   "Instan: game terbuka di browser – tanpa instal, tanpa akun.",
+   "Dibuat untuk HP: joystick sentuh, mode layar penuh, dan pertandingan singkat.",
+   "Selalu ada lawan: setiap game punya bot, jadi bisa mulai kapan saja.",
+   "Game orisinal: semua hero, peta, dan gambar dibuat oleh PickRadar."
+  ],
+  "disclaimer": "PickRadar membuat game browser orisinal sendiri. Semua karakter, nama, dan gambar milik PickRadar; game ini tidak terkait dengan penerbit game lain.",
+  "about": [
+   "PickRadar adalah situs game kecil dan independen yang dijalankan satu orang. Kami membuat game gratis yang berjalan langsung di browser, di HP maupun komputer.",
+   "Setiap game orisinal: hero, peta, nama, dan grafiknya karya kami sendiri. Lawan adalah bot yang dikendalikan komputer, jadi kamu bisa bermain sendiri kapan saja. Kode dan teks ditulis dengan bantuan alat AI dan kami uji sebelum dirilis.",
+   "Situs ini dibiayai iklan Google AdSense. Progres dan statistik gamemu hanya disimpan di browsermu – kami tidak meminta akun dan tidak mengumpulkan informasi pribadi.",
+   "Menemukan bug atau punya ide game? Tulis ke kami – kami membaca setiap pesan."
+  ],
+  "privStore": "Situs ini tidak meminta kamu membuat akun dan tidak mengumpulkan informasi pribadi. Progres game, statistik, dan bahasamu hanya disimpan di browsermu sendiri (local storage)."
+ },
+ "es": {
+  "tagline": "Juegos gratis en el navegador, sin descargas",
+  "homeH1": "Juegos gratis para jugar ahora mismo",
+  "homeText": "Juegos de battle royale, MOBA y puzles que funcionan en el navegador del móvil o del ordenador. Sin descargas ni registro: elige un juego y pulsa jugar.",
+  "gamesH": "Nuestros juegos",
+  "play": "Jugar",
+  "genre": {
+   "night-drop": "Battle royale · 12 jugadores",
+   "crown-clash": "MOBA · 5v5 · 3 calles",
+   "jade-lanes": "MOBA · 3v3 · 2 calles",
+   "duel-peak": "MOBA · duelo 1v1",
+   "color-gradient": "Puzle · niveles infinitos"
+  },
+  "whyH": "Por qué jugar en PickRadar",
+  "why": [
+   "Al instante: los juegos se abren en el navegador, sin instalar nada ni crear cuenta.",
+   "Pensados para el móvil: joysticks táctiles, pantalla completa y partidas cortas.",
+   "Siempre hay con quién jugar: todos los juegos tienen bots, así que puedes empezar cuando quieras.",
+   "Juegos originales: todos los héroes, mapas y gráficos son de PickRadar."
+  ],
+  "disclaimer": "PickRadar crea sus propios juegos de navegador originales. Todos los personajes, nombres y gráficos pertenecen a PickRadar; los juegos no tienen relación con ninguna otra editorial de videojuegos.",
+  "about": [
+   "PickRadar es un pequeño sitio de juegos independiente llevado por una sola persona. Hacemos juegos gratis que funcionan directamente en el navegador, en móviles y ordenadores.",
+   "Cada juego es original: los héroes, mapas, nombres y gráficos son obra nuestra. Los rivales son bots controlados por el ordenador, así que puedes jugar solo cuando quieras. El código y los textos se escriben con ayuda de herramientas de IA y los probamos antes de publicarlos.",
+   "El sitio se financia con anuncios de Google AdSense. Tu progreso y tus estadísticas solo se guardan en tu navegador: no pedimos cuenta ni recogemos datos personales.",
+   "¿Has encontrado un error o tienes una idea para un juego? Escríbenos: leemos todos los mensajes."
+  ],
+  "privStore": "Este sitio no te pide crear una cuenta y no recoge datos personales. Tu progreso en los juegos, tus estadísticas y tu idioma solo se guardan en tu propio navegador (almacenamiento local)."
+ },
+ "pt": {
+  "tagline": "Jogos grátis no navegador, sem download",
+  "homeH1": "Jogos grátis para jogar agora",
+  "homeText": "Jogos de battle royale, MOBA e quebra-cabeça que rodam no navegador do celular ou do computador. Sem download, sem cadastro – escolha um jogo e aperte jogar.",
+  "gamesH": "Nossos jogos",
+  "play": "Jogar",
+  "genre": {
+   "night-drop": "Battle royale · 12 jogadores",
+   "crown-clash": "MOBA · 5v5 · 3 rotas",
+   "jade-lanes": "MOBA · 3v3 · 2 rotas",
+   "duel-peak": "MOBA · duelo 1v1",
+   "color-gradient": "Quebra-cabeça · níveis infinitos"
+  },
+  "whyH": "Por que jogar no PickRadar",
+  "why": [
+   "Na hora: os jogos abrem no navegador – nada para instalar, sem conta.",
+   "Feitos para celular: joysticks de toque, tela cheia e partidas curtas.",
+   "Sempre tem com quem jogar: todo jogo tem bots, então você começa quando quiser.",
+   "Jogos originais: todos os heróis, mapas e artes são do PickRadar."
+  ],
+  "disclaimer": "O PickRadar cria seus próprios jogos de navegador originais. Todos os personagens, nomes e artes pertencem ao PickRadar; os jogos não têm ligação com nenhuma outra editora de jogos.",
+  "about": [
+   "O PickRadar é um pequeno site de jogos independente mantido por uma pessoa. Fazemos jogos grátis que rodam direto no navegador, no celular e no computador.",
+   "Todo jogo é original: heróis, mapas, nomes e gráficos são obra nossa. Os rivais são bots controlados pelo computador, então você pode jogar sozinho quando quiser. Código e textos são escritos com ajuda de ferramentas de IA e testados por nós antes de publicar.",
+   "O site é mantido por anúncios do Google AdSense. Seu progresso e suas estatísticas ficam salvos só no seu navegador – não pedimos conta nem coletamos dados pessoais.",
+   "Achou um erro ou tem uma ideia de jogo? Escreva para nós – lemos todas as mensagens."
+  ],
+  "privStore": "Este site não pede que você crie uma conta e não coleta dados pessoais. Seu progresso nos jogos, suas estatísticas e seu idioma ficam salvos só no seu navegador (armazenamento local)."
+ }
+}

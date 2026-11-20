@@ -1,5 +1,7 @@
 # Google policy checklist (read before every task)
 
+> 2026-11-20: the site was turned into a games site at the owner's explicit request (see docs/AUDIT_LOG.md). The rules below still apply to all new work.
+
 > **OWNER'S RULE — NO ACTIONS THAT CAN CAUSE A TRAFFIC DROP.** The owner wants steady growth only. Before any change,
 > ask: could this lower rankings, clicks or indexing? If yes or unsure, do not do it. Concretely:
 > - Never change titles, URLs, headings, internal links or page structure site-wide or for many pages at once.

@@ -1,3 +1,5 @@
+> **2026-11-20: PickRadar is now a browser-games site.** Hero data, tier lists and news are no longer published (see docs/AUDIT_LOG.md). Do not run the weekly update until the owner gives new instructions.
+
 > **Before anything else read POLICY.md (Google AdSense and Search policy checklist) and check your work against it before pushing.**
 
 # Weekly update procedure

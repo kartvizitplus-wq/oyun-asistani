@@ -2,7 +2,15 @@
 
 Technical SEO, AI visibility, usability and ad-readiness checks. Content (patch news, guides) is handled by the weekly bot (UPDATING.md).
 
-## 2026-11-20 (owner request)
+## 2026-11-20 (owner request): PickRadar is now a games site
+**Why:** owner reports search traffic had fallen to about zero and asked to turn the whole site into a browser-games site (explicit exception to the "no traffic drop" rule in POLICY.md).
+**Added:** five original games in 5 languages: Night Drop (top-down battle royale vs 11 bots), Crown Clash (5v5 MOBA, 3 lanes), Jade Lanes (3v3 MOBA, 2 lanes), Duel Peak (1v1 MOBA duel), Color Gradient (puzzle). MOBA games share one engine (`src/moba.js`, set-ups in `src/moba.json`).
+**Changed:** new home page (game cards), header menu = games, footer, About and Privacy texts (`src/site.json`), llms.txt, manifest.
+**Removed:** hero, tier-list, draft, tool, news and guide pages are no longer built (`LEGACY = false` in build.js; data files kept). `_redirects` sends old sections with 301 to the matching game (mlbb → crown-clash, honor-of-kings → jade-lanes, wild-rift → duel-peak, free-fire → night-drop, brawl-stars/news/guide → home).
+**Bots:** the weekly content/update bots must stay paused: their work (hero data, news) is no longer published.
+**Checked:** clean build (45 pages), 0 broken internal links, every page loads without JS errors at 390 px and 1280 px, full bot-vs-bot matches end correctly in all games.
+
+## 2026-11-20 (owner request, earlier)
 **Added:** Color Gradient, a small hue-sorting puzzle game, as a new standalone page in 5 languages: `/en|tr|id|es|pt/color-gradient/` (own script `src/colorgame.js`, texts `src/colorgame.json`, styles inline on the page). Owner asked for it explicitly, as an exception to "no new page types".
 **Not changed:** no existing page, title, menu, footer or internal link was touched; the build diff vs. before is only the 5 new pages, `assets/colorgame.js` and 5 new sitemap entries. The page is reachable via the sitemap only until the owner decides whether to link it.
 **Checked:** `node build.js` (2,960 pages); headless play-test at 390 px and 1280 px: levels 1–9 solved, drag and tap-to-swap work, progress survives reload, no horizontal scroll, no JS errors, all 5 languages load.

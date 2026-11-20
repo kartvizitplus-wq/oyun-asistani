@@ -3,12 +3,14 @@
 const fs = require('fs'), path = require('path');
 const R = p => path.join(__dirname, p);
 const read = p => JSON.parse(fs.readFileSync(R(p), 'utf8'));
-const cfg = read('config.json'), I18N = read('src/i18n.json'), ITEMS_TR = read('data/mlbb-items-tr.json'), GUIDE = read('src/guide.json'), CG = read('src/colorgame.json'), ND = read('src/nightdrop.json');
+const cfg = read('config.json'), I18N = read('src/i18n.json'), ITEMS_TR = read('data/mlbb-items-tr.json'), GUIDE = read('src/guide.json'), CG = read('src/colorgame.json'), ND = read('src/nightdrop.json'), MB = read('src/moba.json'), SITE = read('src/site.json');
+/* The old pick-assistant pages (hero, tier, draft, news, guide) are no longer built: PickRadar is a games site now. */
+const LEGACY = false;
 const Engine = require('./src/engine.js'), Icons = require('./src/icons.js');
 const OUT = R('dist');
 /* Cache-busting: asset URLs carry a hash of their content so browsers never mix old and new scripts. */
 const crypto = require('crypto');
-const VER = Object.fromEntries(['style.css', 'app.js', 'engine.js', 'icons.js', 'colorgame.js', 'nightdrop.js'].map(f => [f, crypto.createHash('md5').update(fs.readFileSync(R('src/' + f))).digest('hex').slice(0, 8)]));
+const VER = Object.fromEntries(['style.css', 'app.js', 'engine.js', 'icons.js', 'colorgame.js', 'nightdrop.js', 'moba.js'].map(f => [f, crypto.createHash('md5').update(fs.readFileSync(R('src/' + f))).digest('hex').slice(0, 8)]));
 const asset = f => `/assets/${f}?v=${VER[f]}`;
 
 /* Games shown on the site. kind: moba (heroes + items), bs (Brawl Stars), ff (Free Fire). */
@@ -19,6 +21,23 @@ const GAMES = [
   { id: 'freefire', accent: '#f7863a', slug: 'free-fire', name: 'Free Fire', full: 'Free Fire', kind: 'ff', data: read('data/freefire.json') },
   { id: 'brawlstars', accent: '#f5c842', slug: 'brawl-stars', name: 'Brawl Stars', full: 'Brawl Stars', kind: 'bs', data: read('data/brawlstars.json'), example: ['Mortis', 'Piper', 'Bull'] }
 ];
+/* PickRadar's own browser games, in menu order. */
+const PLAY = [
+  { slug: 'night-drop', name: l => ND[l].name, desc: l => ND[l].desc, bg: '#0a0e16' },
+  { slug: 'crown-clash', name: () => MB.games.crown.name, desc: l => MB.pages[l].crown.desc, bg: '#14261b' },
+  { slug: 'jade-lanes', name: () => MB.games.jade.name, desc: l => MB.pages[l].jade.desc, bg: '#132a26' },
+  { slug: 'duel-peak', name: () => MB.games.duel.name, desc: l => MB.pages[l].duel.desc, bg: '#1a1a2e' },
+  { slug: 'color-gradient', name: l => CG[l].name, desc: l => CG[l].desc, bg: '#121825' }
+];
+/* Small original cover drawings for the game cards (inline SVG, no image files). */
+const COVER = {
+  'night-drop': '<rect width="320" height="180" fill="#05070c"/><path d="M160 110 L330 30 L330 190 Z" fill="#e8b44a" opacity=".22"/><circle cx="160" cy="110" r="46" fill="#2a2f3a"/><rect x="40" y="30" width="70" height="14" fill="#252e40"/><rect x="40" y="30" width="14" height="80" fill="#252e40"/><rect x="230" y="120" width="40" height="40" fill="#3a2f22"/><circle cx="160" cy="110" r="13" fill="#e8b44a" stroke="#7a5a17" stroke-width="3"/><circle cx="262" cy="80" r="11" fill="#e2595b" stroke="#6d1f22" stroke-width="3"/><circle cx="160" cy="90" r="140" fill="none" stroke="#ff5a78" stroke-width="3" opacity=".6"/>',
+  'crown-clash': '<rect width="320" height="180" fill="#14261b"/><path d="M20 165 L20 15 L300 15 M20 165 L300 165 L300 15 M20 165 L300 15" stroke="#4a3d2a" stroke-width="22" fill="none" stroke-linejoin="round"/><path d="M-10 -10 L330 190" stroke="#14354a" stroke-width="18"/><rect x="60" y="120" width="16" height="16" fill="#4a9bea"/><rect x="244" y="44" width="16" height="16" fill="#e2595b"/><circle cx="130" cy="98" r="11" fill="#b48cff" stroke="#4a9bea" stroke-width="3"/><circle cx="178" cy="78" r="11" fill="#ffb057" stroke="#e2595b" stroke-width="3"/><polygon points="20,150 32,157 32,171 20,178 8,171 8,157" fill="#4a9bea"/><polygon points="300,2 312,9 312,23 300,30 288,23 288,9" fill="#e2595b"/>',
+  'jade-lanes': '<rect width="320" height="180" fill="#132a26"/><path d="M20 165 L20 15 L300 15 M20 165 L300 165 L300 15" stroke="#5a4a33" stroke-width="24" fill="none" stroke-linejoin="round"/><path d="M-10 -10 L330 190" stroke="#123f45" stroke-width="22"/><circle cx="160" cy="90" r="14" fill="#c99a4a"/><circle cx="110" cy="65" r="9" fill="#c99a4a" opacity=".8"/><circle cx="210" cy="115" r="9" fill="#c99a4a" opacity=".8"/><circle cx="20" cy="70" r="11" fill="#6fd6b0" stroke="#4a9bea" stroke-width="3"/><circle cx="300" cy="110" r="11" fill="#e05a8a" stroke="#e2595b" stroke-width="3"/>',
+  'duel-peak': '<rect width="320" height="180" fill="#1a1a2e"/><path d="M30 160 L290 20" stroke="#3d3550" stroke-width="34"/><path d="M-10 -10 L330 190" stroke="#1b2f55" stroke-width="16" opacity=".8"/><circle cx="135" cy="104" r="14" fill="#a48bff" stroke="#4a9bea" stroke-width="4"/><circle cx="185" cy="77" r="14" fill="#ff5fa2" stroke="#e2595b" stroke-width="4"/><path d="M152 95 L170 86" stroke="#fff" stroke-width="3"/><rect x="72" y="128" width="16" height="16" fill="#4a9bea"/><rect x="232" y="36" width="16" height="16" fill="#e2595b"/>',
+  'color-gradient': Array.from({ length: 40 }, (_, i) => { const x = i % 8, y = Math.floor(i / 8); return `<rect x="${12 + x * 37}" y="${8 + y * 33}" width="34" height="30" rx="4" fill="hsl(${200 + x * 14 - y * 9} ${55 + y * 6}% ${72 - y * 9 - x * 2}%)"/>`; }).join('') + '<circle cx="29" cy="23" r="4" fill="#0006"/><circle cx="288" cy="155" r="4" fill="#0006"/>'
+};
+const cover = slug => `<svg viewBox="0 0 320 180" width="320" height="180" aria-hidden="true" preserveAspectRatio="xMidYMid slice">${COVER[slug]}</svg>`;
 const NEWS = fs.existsSync(R('data/news')) ? fs.readdirSync(R('data/news')).filter(f => f.endsWith('.json')).map(f => read('data/news/' + f)).sort((a, b) => b.date.localeCompare(a.date)) : [];
 
 const slug = s => s.toLowerCase().replace(/&/g, 'and').replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, '');
@@ -28,7 +47,7 @@ const anA = (s, lang) => lang === 'en' ? String(s).replace(/\b(is) a ([aeiouAEIO
 const fill = (s, v) => { for (const k in v || {}) s = s.split('{' + k + '}').join(v[k]); return s; };
 const base = (cfg.baseUrl || '').replace(/\/$/, '');
 const pages = [];
-const lastUpdated = [...GAMES.map(g => g.data.updated), ...NEWS.map(n => n.date)].sort().pop();
+const lastUpdated = '2026-11-20';
 
 function write(rel, html) {
   const f = path.join(OUT, rel);
@@ -79,9 +98,7 @@ function layout({ lang, rel, title, desc, body, active, app, type, jsonld, img, 
   const ads = cfg.adsenseClient ? `<meta name="google-adsense-account" content="${esc(cfg.adsenseClient)}"><script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=${esc(cfg.adsenseClient)}" crossorigin="anonymous"></script>` : '';
   const verify = cfg.googleVerification ? `<meta name="google-site-verification" content="${esc(cfg.googleVerification)}">` : '';
   const appJs = app ? `<script>window.APP=${JSON.stringify(app).replace(/</g, '\\u003c')}</script><script src="${asset('engine.js')}"></script>` : '';
-  const nav = GAMES.map(g => `<a href="/${lang}/${g.slug}/"${active === g.id ? ' aria-current="page"' : ''}>${esc(g.name)}</a>`).join('') +
-    `<a href="/${lang}/news/"${active === 'news' ? ' aria-current="page"' : ''}>${esc(t.news)}</a>` +
-    `<a href="/${lang}/guide/"${active === 'guide' ? ' aria-current="page"' : ''}>${esc(GUIDE[lang].nav)}</a>`;
+  const nav = PLAY.map(g => `<a href="/${lang}/${g.slug}/"${active === g.slug ? ' aria-current="page"' : ''}>${esc(g.name(lang))}</a>`).join('');
   return `<!doctype html>
 <html lang="${lang}">
 <head>
@@ -110,8 +127,8 @@ ${gm ? `<div class="gbanner" aria-hidden="true" style="background-image:url(/img
 ${crumbNav}${body}
 </main>
 <footer><div class="wrap">
-<span>${esc(t.disclaimer)}</span>
-<span><a href="/${lang}/about/">${esc(t.about)}</a> · <a href="/${lang}/privacy/">${esc(t.privacy)}</a> · <a href="/${lang}/contact/">${esc(t.contact)}</a> · <a href="/${lang}/news/">${esc(t.news)}</a> · ${esc(t.updatedOn)}: ${esc(lastUpdated)}</span>
+<span>${esc(SITE[lang].disclaimer)}</span>
+<span><a href="/${lang}/about/">${esc(t.about)}</a> · <a href="/${lang}/privacy/">${esc(t.privacy)}</a> · <a href="/${lang}/contact/">${esc(t.contact)}</a></span>
 </div></footer>
 ${appJs}<script src="${asset('icons.js')}"></script><script src="${asset('app.js')}"></script>
 </body>
@@ -145,18 +162,28 @@ for (const lang of cfg.langs) {
   /* Home */
   const gameDesc = g => g.kind === 'moba' ? t.mobaToolDesc : g.kind === 'bs' ? t.bsToolDesc : t.ffToolDesc;
   const gameTitle = g => g.kind === 'moba' ? tt('mobaToolTitle', { g: g.name }) : g.kind === 'bs' ? t.bsToolTitle : t.ffToolTitle;
+  const S = SITE[lang];
   write(`${lang}/index.html`, layout({
-    lang, rel: `${lang}/`, title: `${cfg.siteName} · ${t.tagline}`, desc: t.homeText,
-    jsonld: { '@context': 'https://schema.org', '@type': 'WebSite', name: cfg.siteName, url: `${base}/${lang}/`, inLanguage: lang },
-    body: `<section class="homehero"><img class="homehero-img" src="/img/hero-1376.webp" srcset="/img/hero-800.webp 800w, /img/hero-1376.webp 1376w" sizes="(max-width: 1040px) 100vw, 1040px" width="1376" height="768" alt="" fetchpriority="high"><div class="homehero-body"><span class="kicker">${esc(t.tagline)}</span><h1>${esc(t.homeH1)}</h1><p class="lead">${esc(t.homeText)}</p><div class="bar"><a class="btn" href="#games">${esc(t.chooseGame)} ↓</a><a class="btn ghost" href="/${lang}/guide/">❓ ${esc(GUIDE[lang].nav)}</a></div>
-<div class="stats" aria-label="${esc(t.statsLabel)}">${GAMES.map(g => `<a class="stat" href="/${lang}/${g.slug}/" style="--accent:${g.accent}"><b>${(g.data.heroes || g.data.brawlers || g.data.characters || []).length}</b><span>${esc(g.name)}</span></a>`).join('')}</div><p class="note">${esc(t.statsLabel)}</p></div></section>
-<section id="games"><h2>${esc(t.chooseGame)}</h2><div class="games-grid">
-${GAMES.map(g => `<a class="game" href="/${lang}/${g.slug}/" style="--accent:${g.accent}"><img src="/img/${g.id}-640.webp" srcset="/img/${g.id}-640.webp 640w, /img/${g.id}-1200.webp 1200w" sizes="(max-width: 700px) 100vw, 500px" width="640" height="357" alt="" loading="lazy" decoding="async"><span class="gbody"><h3>${esc(g.full)}</h3><span class="note">${esc(gameDesc(g))}</span><span class="go">${esc(t.openTool)} →</span></span></a>`).join('\n')}
+    lang, rel: `${lang}/`, title: `${cfg.siteName} · ${S.tagline}`, desc: S.homeText,
+    jsonld: [{ '@context': 'https://schema.org', '@type': 'WebSite', name: cfg.siteName, url: `${base}/${lang}/`, inLanguage: lang },
+      { '@context': 'https://schema.org', '@type': 'ItemList', itemListElement: PLAY.map((g, i) => ({ '@type': 'ListItem', position: i + 1, url: `${base}/${lang}/${g.slug}/`, name: g.name(lang) })) }],
+    body: `<section class="playhero"><span class="kicker">${esc(S.tagline)}</span><h1>${esc(S.homeH1)}</h1><p class="lead">${esc(S.homeText)}</p></section>
+<section id="games"><h2>${esc(S.gamesH)}</h2><div class="playgrid">
+${PLAY.map((g, i) => `<a class="playcard" href="/${lang}/${g.slug}/">${cover(g.slug)}<span class="pbody"><span class="note">${esc(S.genre[g.slug])}</span><h3>${esc(g.name(lang))}</h3><span class="note">${esc(g.desc(lang))}</span><span class="go">▶ ${esc(S.play)}</span></span></a>`).join('\n')}
 </div></section>
-${showcase(lang)}
-<section><h2>${esc(t.latestNews)}</h2>${newsCards(lang, NEWS.slice(0, 6))}</section>`
+<section class="prose"><h2>${esc(S.whyH)}</h2><ul>${S.why.map(x => `<li>${esc(x)}</li>`).join('')}</ul></section>
+<style>
+.playhero{gap:6px}
+.playgrid{display:grid;grid-template-columns:repeat(auto-fill,minmax(250px,1fr));gap:14px}
+.playcard{display:flex;flex-direction:column;text-decoration:none;color:var(--fg);background:var(--panel);border:1px solid var(--line);border-radius:12px;overflow:hidden;transition:transform .15s ease,border-color .15s ease}
+.playcard:hover{border-color:var(--gold);transform:translateY(-2px)}
+.playcard svg{display:block;width:100%;height:auto;aspect-ratio:16/9}
+.playcard .pbody{display:flex;flex-direction:column;gap:6px;padding:14px}
+.playcard .go{font-family:var(--display);font-weight:700;color:var(--gold);margin-top:4px}
+</style>`
   }));
 
+  if (LEGACY) {
   for (const g of GAMES) {
     const D = g.data;
     const gp = `${lang}/${g.slug}`;
@@ -393,13 +420,14 @@ ${G.sections.map((sec, i) => `<h2 id="s${i + 1}">${esc(sec.h)}</h2><ol>${sec.ste
 </article>
 <div class="bar">${GAMES.map(gm => `<a class="btn ghost" href="/${lang}/${gm.slug}/">${esc(gm.name)}</a>`).join('')}</div>`
   }));
+  } /* end LEGACY */
 
   /* Color Gradient: a small hue-sorting puzzle (standalone page, own script). */
   {
     const C = CG[lang] || CG.en, rel = `${lang}/color-gradient/`;
     const ui = { tile: C.tile, pinned: C.pinned, solvedIn: C.solvedIn };
     write(`${rel}index.html`, layout({
-      lang, rel, title: `${C.title} · ${cfg.siteName}`, desc: C.desc, lastmod: '2026-11-20',
+      lang, rel, active: 'color-gradient', title: `${C.title} · ${cfg.siteName}`, desc: C.desc, lastmod: '2026-11-20',
       crumbs: [[t.home, `${lang}/`], [C.name, rel]],
       jsonld: { '@context': 'https://schema.org', '@type': 'VideoGame', name: C.name, description: C.desc, url: `${base}/${rel}`, inLanguage: lang,
         genre: 'Puzzle', gamePlatform: 'Web browser', applicationCategory: 'Game', operatingSystem: 'Any', isAccessibleForFree: true,
@@ -451,7 +479,7 @@ ${G.sections.map((sec, i) => `<h2 id="s${i + 1}">${esc(sec.h)}</h2><ol>${sec.ste
     const ui = Object.fromEntries(['name', 'you', 'play', 'again', 'startText', 'drop', 'zoneShrink', 'zoneMoving', 'zoneIn', 'zone', 'outside', 'reloading', 'pick', 'winTitle', 'winText', 'deadTitle', 'deadText', 'statsLine', 'w'].map(k => [k, N[k]]));
     const li = a => a.map(x => `<li>${esc(x)}</li>`).join('');
     write(`${rel}index.html`, layout({
-      lang, rel, title: `${N.title} · ${cfg.siteName}`, desc: N.desc, lastmod: '2026-11-20',
+      lang, rel, active: 'night-drop', title: `${N.title} · ${cfg.siteName}`, desc: N.desc, lastmod: '2026-11-20',
       crumbs: [[t.home, `${lang}/`], [N.name, rel]],
       jsonld: { '@context': 'https://schema.org', '@type': 'VideoGame', name: N.name, description: N.desc, url: `${base}/${rel}`, inLanguage: lang,
         genre: ['Battle royale', 'Shooter'], gamePlatform: 'Web browser', applicationCategory: 'Game', operatingSystem: 'Any', isAccessibleForFree: true, playMode: 'SinglePlayer',
@@ -488,14 +516,68 @@ ${G.sections.map((sec, i) => `<h2 id="s${i + 1}">${esc(sec.h)}</h2><ol>${sec.ste
     }));
   }
 
+  /* MOBA games: one engine (src/moba.js), three set-ups from src/moba.json. */
+  for (const [gid, G] of Object.entries(MB.games)) {
+    const P = MB.pages[lang] || MB.pages.en, U = MB.ui[lang] || MB.ui.en, C = P[gid], rel = `${lang}/${G.slug}/`;
+    const ui = { ...U, name: G.name };
+    const li = a => a.map(x => `<li>${esc(x)}</li>`).join('');
+    const sk = U.roles;
+    write(`${rel}index.html`, layout({
+      lang, rel, active: G.slug, title: `${C.title} · ${cfg.siteName}`, desc: C.desc, lastmod: '2026-11-20',
+      crumbs: [[t.home, `${lang}/`], [G.name, rel]],
+      jsonld: { '@context': 'https://schema.org', '@type': 'VideoGame', name: G.name, description: C.desc, url: `${base}/${rel}`, inLanguage: lang,
+        genre: ['MOBA', 'Strategy'], gamePlatform: 'Web browser', applicationCategory: 'Game', operatingSystem: 'Any', isAccessibleForFree: true, playMode: 'SinglePlayer',
+        publisher: { '@type': 'Organization', name: cfg.siteName, url: `${base}/` } },
+      body: `<section><h1>${esc(C.h1)}</h1><p class="lead">${esc(C.intro)}</p></section>
+<section id="mb" class="mb" data-cfg="${esc(JSON.stringify({ id: gid, ...G.cfg }))}" data-t="${esc(JSON.stringify(ui))}">
+<div class="mb-stage"><canvas aria-label="${esc(G.name)}"></canvas>
+<div class="mb-pad" hidden><button type="button" data-s="recall" class="sm" aria-label="${esc(U.recall)}">⌂</button><button type="button" data-s="0"><i></i></button><button type="button" data-s="1"><i></i></button><button type="button" data-s="2" class="ult"><i></i></button><button type="button" data-s="atk" class="atk" aria-label="${esc(U.attack)}">⚔</button></div>
+<button type="button" class="mb-full" data-k="full" aria-label="${esc(U.fullscreen)}">⛶</button>
+<div class="mb-ov"></div></div>
+<noscript><p class="note">JavaScript is required to play.</p></noscript>
+</section>
+<article class="prose"><h2>${esc(P.ctrlH)}</h2><ul>${li(P.ctrl)}</ul>
+<h2>${esc(G.style)}</h2><ol>${li(C.how)}</ol>
+<h2>${esc(P.heroesH)}</h2><ul>${G.cfg.roster.map(r => `<li><b>${esc(r.name)}</b> – ${esc(sk[r.arch].name)}: ${esc(sk[r.arch].d)} <span class="note">(${sk[r.arch].s.map(esc).join(' · ')})</span></li>`).join('')}</ul>
+<h2>${esc(P.tipsH)}</h2><ul>${li(P.tips)}</ul>
+<h2>${esc(P.aboutH)}</h2><p>${esc(P.about.replace('{name}', G.name))}</p></article>
+<style>
+.mb-stage{position:relative;width:100%;height:min(76vh,620px);min-height:380px;border:1px solid var(--line);border-radius:10px;overflow:hidden;background:#05080c;touch-action:none;user-select:none;-webkit-user-select:none}
+.mb-stage:fullscreen{height:100%;border:0;border-radius:0}
+.mb-stage canvas{display:block;width:100%;height:100%;touch-action:none}
+.mb-ov{position:absolute;inset:0;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:10px;text-align:center;background:rgba(5,8,12,.78);padding:16px;overflow:auto}
+.mb-ov[hidden]{display:none}
+.mb-ov h3{font-size:1.8rem}
+.mb-ov p{margin:0;color:var(--muted)}
+.mb-roster{display:grid;grid-template-columns:repeat(3,minmax(0,140px));gap:8px}
+.mb-roster button{display:flex;flex-direction:column;gap:2px;align-items:center;padding:10px 6px;border-radius:10px;border:2px solid var(--line);background:var(--panel);color:var(--fg);cursor:pointer;font:inherit}
+.mb-roster button b{font-family:var(--display);color:var(--hc)}
+.mb-roster button small{color:var(--muted)}
+.mb-roster button[aria-pressed=true]{border-color:var(--hc);box-shadow:0 0 0 2px var(--hc) inset}
+.mb-pad{position:absolute;right:12px;bottom:12px;width:230px;height:200px}
+.mb-pad[hidden]{display:none}
+.mb-pad button{position:absolute;border-radius:50%;border:2px solid rgba(255,255,255,.3);background:rgba(10,14,22,.6);color:#fff;font:700 1rem var(--display);touch-action:none;width:58px;height:58px}
+.mb-pad button i{position:absolute;inset:0;display:flex;align-items:center;justify-content:center;font-style:normal;font-size:1rem}
+.mb-pad button.cd{opacity:.55}
+.mb-pad .atk{right:0;bottom:0;width:86px;height:86px;font-size:1.8rem;background:rgba(226,89,91,.55)}
+.mb-pad [data-s="0"]{right:96px;bottom:2px;background:rgba(74,155,234,.5)}
+.mb-pad [data-s="1"]{right:84px;bottom:72px;background:rgba(74,155,234,.5)}
+.mb-pad [data-s="2"]{right:18px;bottom:100px;background:rgba(167,123,243,.6)}
+.mb-pad .sm{right:170px;bottom:0;width:44px;height:44px;font-size:1.1rem}
+.mb-full{position:absolute;left:10px;bottom:10px;width:40px;height:40px;border-radius:8px;border:1px solid rgba(255,255,255,.25);background:rgba(10,14,22,.6);color:#fff;cursor:pointer}
+</style>
+<script src="${asset('moba.js')}" defer></script>`
+    }));
+  }
+
   /* Privacy, About & Contact */
-  const PRIVACY_DATE = '2026-10-22';
+  const PRIVACY_DATE = '2026-11-20';
   // email_off: Cloudflare Email Obfuscation must not hide the address from visitors without JS, reviewers and crawlers
   const mail = `<!--email_off--><a href="mailto:${esc(cfg.contactEmail)}">${esc(cfg.contactEmail)}</a><!--/email_off-->`;
   write(`${lang}/privacy/index.html`, layout({ lang, rel: `${lang}/privacy/`, title: `${t.privTitle} · ${cfg.siteName}`, desc: t.privBody[0],
-    body: `<section class="prose"><h1>${esc(t.privTitle)}</h1><p class="muted">${esc(t.privDate)}: ${PRIVACY_DATE}</p>${t.privBody.map(p => `<p>${p}</p>`).join('')}<p>${esc(t.privP5)} ${mail}</p></section>` }));
-  write(`${lang}/about/index.html`, layout({ lang, rel: `${lang}/about/`, title: `${t.aboutTitle} · ${cfg.siteName}`, desc: t.aboutBody[0],
-    body: `<section class="prose"><h1>${esc(t.aboutTitle)}</h1>${t.aboutBody.map(p => `<p>${esc(p)}</p>`).join('')}${cfg.contactEmail ? `<p>${esc(t.contact)}: ${mail}</p>` : ''}</section>` }));
+    body: `<section class="prose"><h1>${esc(t.privTitle)}</h1><p class="muted">${esc(t.privDate)}: ${PRIVACY_DATE}</p>${[SITE[lang].privStore, ...t.privBody.slice(1)].map(p => `<p>${p}</p>`).join('')}<p>${esc(t.privP5)} ${mail}</p></section>` }));
+  write(`${lang}/about/index.html`, layout({ lang, rel: `${lang}/about/`, title: `${t.aboutTitle} · ${cfg.siteName}`, desc: SITE[lang].about[0],
+    body: `<section class="prose"><h1>${esc(t.aboutTitle)}</h1>${SITE[lang].about.map(p => `<p>${esc(p)}</p>`).join('')}${cfg.contactEmail ? `<p>${esc(t.contact)}: ${mail}</p>` : ''}</section>` }));
   write(`${lang}/contact/index.html`, layout({ lang, rel: `${lang}/contact/`, title: `${t.contactTitle} · ${cfg.siteName}`, desc: t.contactBody[0],
     body: `<section class="prose"><h1>${esc(t.contactTitle)}</h1>${t.contactBody.map(p => `<p>${esc(p)}</p>`).join('')}<p><b>E-mail:</b> ${mail}</p><p><!--email_off--><a class="btn" href="mailto:${esc(cfg.contactEmail)}?subject=PickRadar">${esc(t.emailUs)}</a><!--/email_off--></p><p><a href="/${lang}/about/">${esc(t.about)}</a> · <a href="/${lang}/privacy/">${esc(t.privacy)}</a></p></section>` }));
 }
@@ -503,7 +585,7 @@ ${G.sections.map((sec, i) => `<h2 id="s${i + 1}">${esc(sec.h)}</h2><ol>${sec.ste
 /* Root, assets, SEO files */
 fs.mkdirSync(OUT, { recursive: true });
 fs.writeFileSync(path.join(OUT, 'index.html'), `<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-<title>${esc(cfg.siteName)} · ${esc(I18N.en.tagline)}</title><meta name="description" content="${esc(I18N.en.homeText)}">${base ? `<link rel="canonical" href="${base}/${cfg.defaultLang}/">` : ''}
+<title>${esc(cfg.siteName)} · ${esc(SITE.en.tagline)}</title><meta name="description" content="${esc(SITE.en.homeText)}">${base ? `<link rel="canonical" href="${base}/${cfg.defaultLang}/">` : ''}
 ${cfg.googleVerification ? `<meta name="google-site-verification" content="${esc(cfg.googleVerification)}">` : ''}
 ${cfg.adsenseClient ? `<meta name="google-adsense-account" content="${esc(cfg.adsenseClient)}">` : ''}
 ${cfg.langs.map(l => `<link rel="alternate" hreflang="${l}" href="${base}/${l}/">`).join('')}
@@ -513,14 +595,14 @@ var n=(s||navigator.language||'en').slice(0,2).toLowerCase();location.replace('/
 ${cfg.langs.map(l => `<a style="color:#e8b44a;margin-right:12px" href="/${l}/">${esc(I18N[l].langName)}</a>`).join('')}
 </body></html>`);
 fs.mkdirSync(path.join(OUT, 'assets'), { recursive: true });
-for (const f of ['style.css', 'app.js', 'engine.js', 'icons.js', 'colorgame.js', 'nightdrop.js']) fs.copyFileSync(R('src/' + f), path.join(OUT, 'assets', f));
+for (const f of ['style.css', 'app.js', 'engine.js', 'icons.js', 'colorgame.js', 'nightdrop.js', 'moba.js']) fs.copyFileSync(R('src/' + f), path.join(OUT, 'assets', f));
 if (fs.existsSync(R('static'))) fs.cpSync(R('static'), OUT, { recursive: true });
 fs.writeFileSync(path.join(OUT, 'manifest.webmanifest'), JSON.stringify({
-  name: cfg.siteName + ' – ' + I18N.en.tagline, short_name: cfg.siteName, start_url: '/', scope: '/', display: 'standalone',
-  background_color: '#0c1018', theme_color: '#0c1018', description: I18N.en.homeText,
+  name: cfg.siteName + ' – ' + SITE.en.tagline, short_name: cfg.siteName, start_url: '/', scope: '/', display: 'standalone',
+  background_color: '#0c1018', theme_color: '#0c1018', description: SITE.en.homeText,
   icons: [{ src: '/icons/icon-192.png', sizes: '192x192', type: 'image/png' }, { src: '/icons/icon-512.png', sizes: '512x512', type: 'image/png' },
     { src: '/icons/icon-512.png', sizes: '512x512', type: 'image/png', purpose: 'maskable' }],
-  shortcuts: GAMES.map(g => ({ name: g.name, url: `/${cfg.defaultLang}/${g.slug}/` }))
+  shortcuts: PLAY.slice(0, 4).map(g => ({ name: g.name('en'), url: `/${cfg.defaultLang}/${g.slug}/` }))
 }, null, 1));
 fs.writeFileSync(path.join(OUT, 'assets/roles.css'), ROLE_CSS);
 fs.writeFileSync(path.join(OUT, 'assets/icon.svg'), '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32"><rect width="32" height="32" rx="7" fill="#0c1018"/><circle cx="16" cy="16" r="10" fill="none" stroke="#e8b44a" stroke-width="2.5"/><circle cx="16" cy="16" r="4" fill="#e2595b"/><path d="M16 3v6M16 23v6M3 16h6M23 16h6" stroke="#e8b44a" stroke-width="2.5"/></svg>');
@@ -529,17 +611,14 @@ const AI_BOTS = ['Googlebot', 'Bingbot', 'OAI-SearchBot', 'ChatGPT-User', 'GPTBo
 fs.writeFileSync(path.join(OUT, 'robots.txt'), AI_BOTS.map(b => `User-agent: ${b}\nAllow: /\n`).join('\n') + `\nUser-agent: *\nAllow: /\n${base ? `\nSitemap: ${base}/sitemap.xml\n` : ''}`);
 /* llms.txt: a plain summary that AI assistants can read to understand and cite the site. */
 {
-  const en = I18N.en, B = base || '';
-  const gl = GAMES.map(g => {
-    const n = (g.data.heroes || g.data.brawlers || g.data.characters || []).length;
-    const tool = g.kind === 'moba' ? en.mobaToolDesc : g.kind === 'bs' ? en.bsToolDesc : en.ffToolDesc;
-    return `## ${g.full}\n- [Assistant](${B}/en/${g.slug}/): ${tool}\n` +
-      (g.data.tierList ? `- [Tier list](${B}/en/${g.slug}/tier-list/): current ranking of every ${g.kind === 'bs' ? 'brawler' : g.kind === 'ff' ? 'character' : 'hero'} from S to D, from ${g.data.tierSource ? g.data.tierSource.name : 'public sources'}, reviewed weekly.\n` : '') +
-      (g.kind === 'moba' ? `- [Draft practice](${B}/en/${g.slug}/draft/): ranked or classic draft with bans against an AI, with item and emblem prep and scoring.\n` : '') +
-      `- ${n} ${g.kind === 'ff' ? 'character' : g.kind === 'bs' ? 'brawler' : 'hero'} pages at ${B}/en/${g.slug}/<name>/ (example: ${B}/en/${g.slug}/${slug((g.data.heroes || g.data.brawlers || g.data.characters)[0].n)}/): ${g.kind === 'ff' ? 'best active and passive skill combination' : g.kind === 'bs' ? 'best counter brawlers, tips by class and mode, suggested gears, FAQ' : 'best counter picks, items to buy against it, suggested build, how to play against it, FAQ'}.\n`;
-  }).join('\n');
-  fs.writeFileSync(path.join(OUT, 'llms.txt'), `# ${cfg.siteName}\n\n> Free, multilingual pick assistant for mobile games: pick the enemy team and get counter picks, team analysis, ban suggestions, item builds and emblems that adapt to the enemy, with optional read-aloud. Covers Mobile Legends: Bang Bang, Honor of Kings, League of Legends: Wild Rift, Free Fire and Brawl Stars. No sign-up. Data and patch news are updated every week. Available in English, Turkish, Indonesian, Spanish and Portuguese (replace /en/ with /tr/, /id/, /es/ or /pt/).\n\n${gl}\n## More\n- [Patch news and guides](${B}/en/news/): weekly patch summaries, meta reports and hero guides written in our own words.\n- [How to use](${B}/en/guide/)\n- [About](${B}/en/about/) · Contact: ${cfg.contactEmail || ''}\n`);
+  const B = base || '', E = SITE.en;
+  fs.writeFileSync(path.join(OUT, 'llms.txt'), `# ${cfg.siteName}\n\n> ${E.homeText} All games are original and made by PickRadar. Available in English, Turkish, Indonesian, Spanish and Portuguese (replace /en/ with /tr/, /id/, /es/ or /pt/).\n\n## Games\n${PLAY.map(g => `- [${g.name('en')}](${B}/en/${g.slug}/): ${E.genre[g.slug]}. ${g.desc('en')}`).join('\n')}\n\n## More\n- [About](${B}/en/about/) · Contact: ${cfg.contactEmail || ''}\n`);
 }
+/* The old pick-assistant sections moved: send visitors and search engines to the matching new game (permanent). */
+fs.writeFileSync(path.join(OUT, '_redirects'), [
+  ['mlbb', 'crown-clash/'], ['honor-of-kings', 'jade-lanes/'], ['wild-rift', 'duel-peak/'], ['free-fire', 'night-drop/'],
+  ['brawl-stars', ''], ['news', ''], ['guide', '']
+].map(([from, to]) => `/:lang/${from}/* /:lang/${to} 301\n/:lang/${from} /:lang/${to} 301`).join('\n') + '\n');
 if (base) fs.writeFileSync(path.join(OUT, 'sitemap.xml'), `<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n${pages.map(p => `<url><loc>${base}/${p.rel}</loc><lastmod>${p.lastmod}</lastmod></url>`).join('\n')}\n</urlset>\n`);
 if (cfg.adsenseClient) fs.writeFileSync(path.join(OUT, 'ads.txt'), `google.com, ${cfg.adsenseClient.replace(/^ca-/, '')}, DIRECT, f08c47fec0942fa0\n`);
 fs.writeFileSync(path.join(OUT, '404.html'), `<!doctype html><meta charset="utf-8"><title>404</title><body style="background:#0c1018;color:#e9edf5;font-family:system-ui;padding:24px"><p>404 · <a style="color:#e8b44a" href="/">${esc(cfg.siteName)}</a></p></body>`);
