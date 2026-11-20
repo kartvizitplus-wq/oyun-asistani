@@ -3,14 +3,14 @@
 const fs = require('fs'), path = require('path');
 const R = p => path.join(__dirname, p);
 const read = p => JSON.parse(fs.readFileSync(R(p), 'utf8'));
-const cfg = read('config.json'), I18N = read('src/i18n.json'), ITEMS_TR = read('data/mlbb-items-tr.json'), GUIDE = read('src/guide.json'), CG = read('src/colorgame.json'), ND = read('src/nightdrop.json'), MB = read('src/moba.json'), SITE = read('src/site.json'), RS = read('src/redscarf.json'), STORY = read('src/stories.json'), PH = read('src/palmera.json');
+const cfg = read('config.json'), I18N = read('src/i18n.json'), ITEMS_TR = read('data/mlbb-items-tr.json'), GUIDE = read('src/guide.json'), CG = read('src/colorgame.json'), ND = read('src/nightdrop.json'), MB = read('src/moba.json'), SITE = read('src/site.json'), RS = read('src/redscarf.json'), STORY = read('src/stories.json'), PH = read('src/palmera.json'), TTJ = read('src/teachertycoon.json');
 /* The old pick-assistant pages (hero, tier, draft, news, guide) are no longer built: PickRadar is a games site now. */
 const LEGACY = false;
 const Engine = require('./src/engine.js'), Icons = require('./src/icons.js');
 const OUT = R('dist');
 /* Cache-busting: asset URLs carry a hash of their content so browsers never mix old and new scripts. */
 const crypto = require('crypto');
-const VER = Object.fromEntries(['style.css', 'app.js', 'engine.js', 'icons.js', 'colorgame.js', 'nightdrop.js', 'moba.js', 'chibi.js', 'redscarf.js', 'home.js', 'istanbul.js', 'three.min.js'].map(f => [f, crypto.createHash('md5').update(fs.readFileSync(R('src/' + f))).digest('hex').slice(0, 8)]));
+const VER = Object.fromEntries(['style.css', 'app.js', 'engine.js', 'icons.js', 'colorgame.js', 'nightdrop.js', 'moba.js', 'chibi.js', 'redscarf.js', 'home.js', 'istanbul.js', 'three.min.js', 'teachertycoon.js'].map(f => [f, crypto.createHash('md5').update(fs.readFileSync(R('src/' + f))).digest('hex').slice(0, 8)]));
 const asset = f => `/assets/${f}?v=${VER[f]}`;
 
 /* Games shown on the site. kind: moba (heroes + items), bs (Brawl Stars), ff (Free Fire). */
@@ -29,7 +29,8 @@ const PLAY = [
   { slug: 'crown-clash', name: () => MB.games.crown.name, desc: l => MB.pages[l].crown.desc, bg: '#14261b' },
   { slug: 'jade-lanes', name: () => MB.games.jade.name, desc: l => MB.pages[l].jade.desc, bg: '#132a26' },
   { slug: 'duel-peak', name: () => MB.games.duel.name, desc: l => MB.pages[l].duel.desc, bg: '#1a1a2e' },
-  { slug: 'color-gradient', name: l => CG[l].name, desc: l => CG[l].desc, bg: '#121825' }
+  { slug: 'color-gradient', name: l => CG[l].name, desc: l => CG[l].desc, bg: '#121825' },
+  { slug: 'teacher-tycoon', name: l => TTJ[l].name, desc: l => TTJ[l].card, bg: '#1f5e55' }
 ];
 /* Small original cover drawings for the game cards (inline SVG, no image files). */
 const COVER = {
@@ -41,7 +42,8 @@ const COVER = {
 };
 COVER['palmera-heat'] = '<defs><linearGradient id="ihs" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#2a1640"/><stop offset=".6" stop-color="#e2634a"/><stop offset=".72" stop-color="#ffb26b"/></linearGradient><linearGradient id="ihw" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#3a3f6a"/><stop offset="1" stop-color="#0d1630"/></linearGradient></defs><rect width="320" height="180" fill="url(#ihs)"/><circle cx="250" cy="112" r="20" fill="#ffd9a0" opacity=".85"/><rect y="118" width="320" height="62" fill="url(#ihw)"/><path d="M0 118h40v-10h12v10h18v-16h14v16h236" fill="#1a0f22"/><g fill="#1a0f22"><path d="M44 118v-14h52v14z"/><path d="M48 104a22 22 0 0 1 44 0z"/><circle cx="70" cy="80" r="2"/><rect x="40" y="62" width="3" height="56"/><rect x="97" y="62" width="3" height="56"/><path d="M40 62l1.5-8 1.5 8zM97 62l1.5-8 1.5 8z"/><rect x="30" y="78" width="2.5" height="40"/><rect x="108" y="78" width="2.5" height="40"/><path d="M128 118v-30h8v30zM127 88l5-14 5 14z"/></g><path d="M150 112L320 112" stroke="#d8d4e8" stroke-width="2"/><path d="M196 112V54M282 112V54" stroke="#e8e6f2" stroke-width="3"/><path d="M150 106Q173 60 196 54Q239 104 282 54Q300 62 320 80" stroke="#ff4fa0" stroke-width="1.6" fill="none"/><path d="M0 140h320M0 158h320" stroke="#ffffff" stroke-opacity=".08"/><path d="M60 150h60l-6 6h-48z" fill="#f2f2f2"/><rect x="82" y="142" width="16" height="8" fill="#f2f2f2"/><rect x="88" y="136" width="3" height="6" fill="#f2c230"/>';
 COVER['red-scarf'] = '<rect width="320" height="180" fill="#050508"/><path d="M0 40h120v30H60v70H0zM200 0h30v110h90v30H200z" fill="#26262f"/><path d="M150 120 L300 60 L300 170 Z" fill="#ff2d48" opacity=".18"/><circle cx="150" cy="120" r="14" fill="#4a5a6a" stroke="#15121c" stroke-width="3"/><ellipse cx="150" cy="108" rx="20" ry="7" fill="#c9a25e"/><circle cx="95" cy="125" r="13" fill="#101016" stroke="#d4142e" stroke-width="3"/><rect x="98" y="120" width="12" height="5" rx="2" fill="#e8c4a0"/><path d="M83 128 q-20 4 -34 -2 M83 132 q-18 10 -30 8" stroke="#d4142e" stroke-width="5" fill="none" stroke-linecap="round"/><circle cx="260" cy="30" r="12" fill="#d8dde8" opacity=".8"/>';
-const ACCENT = { 'palmera-heat': '#e30a17', 'red-scarf': '#ff2d48', 'night-drop': '#2ef2ff', 'crown-clash': '#5aa7ff', 'jade-lanes': '#3fbf8f', 'duel-peak': '#ff8a3d', 'color-gradient': '#b48cff' };
+COVER['teacher-tycoon'] = '<rect width="320" height="180" fill="#bfe0f0"/><image href="/img/teacher-tycoon-card.webp" x="0" y="0" width="320" height="180" preserveAspectRatio="xMidYMid slice"/>';
+const ACCENT = { 'teacher-tycoon': '#ffc93c', 'palmera-heat': '#e30a17', 'red-scarf': '#ff2d48', 'night-drop': '#2ef2ff', 'crown-clash': '#5aa7ff', 'jade-lanes': '#3fbf8f', 'duel-peak': '#ff8a3d', 'color-gradient': '#b48cff' };
 const NEW_LBL = { en: 'New', tr: 'Yeni', id: 'Baru', es: 'Nuevo', pt: 'Novo' };
 /* Story block shown at the top of each game's text */
 const storyBlock = (lang, slug) => { const st = (STORY[lang] || STORY.en)[slug]; return st && st.story ? `<h2>${esc(RS[lang].storyH)}</h2>${st.story.map(p => `<p>${esc(p)}</p>`).join('')}` : ''; };
@@ -563,6 +565,37 @@ ${G.sections.map((sec, i) => `<h2 id="s${i + 1}">${esc(sec.h)}</h2><ol>${sec.ste
     }));
   }
 
+  /* Teacher Tycoon – 3D classroom game: teach at the board, manage six students, surprise events. */
+  {
+    const R = TTJ[lang] || TTJ.en, rel = `${lang}/teacher-tycoon/`;
+    const li = a => a.map(x => `<li>${esc(x)}</li>`).join('');
+    write(`${rel}index.html`, layout({
+      lang, rel, active: 'teacher-tycoon', title: `${R.title} · ${cfg.siteName}`, desc: R.desc, lastmod: '2026-11-21', img: 'teacher-tycoon',
+      crumbs: [[t.home, `${lang}/`], [R.name, rel]],
+      jsonld: [{ '@context': 'https://schema.org', '@type': 'VideoGame', name: R.name, description: R.desc, url: `${base}/${rel}`, inLanguage: lang, image: `${base}/og/teacher-tycoon.png`,
+        genre: ['Simulation', 'Management', 'Casual'], gamePlatform: 'Web browser', applicationCategory: 'Game', operatingSystem: 'Any', isAccessibleForFree: true, playMode: 'SinglePlayer',
+        publisher: { '@type': 'Organization', name: cfg.siteName, url: `${base}/` } },
+        { '@context': 'https://schema.org', '@type': 'FAQPage', mainEntity: R.faq.map(([q, a]) => ({ '@type': 'Question', name: q, acceptedAnswer: { '@type': 'Answer', text: a } })) }],
+      body: `<section><h1>${esc(R.h1)}</h1><p class="lead">${esc(R.intro)}</p></section>
+<section class="ttp"><div class="tt-host" id="ttHost"></div><div class="ph-bar"><button class="btn ghost" type="button" onclick="var h=document.getElementById('ttHost');(h.requestFullscreen||h.webkitRequestFullscreen).call(h)">⛶ ${{ tr: 'Tam ekran', en: 'Fullscreen', es: 'Pantalla completa', pt: 'Tela cheia', id: 'Layar penuh' }[lang]}</button></div><noscript><p class="note">JavaScript is required to play.</p></noscript></section>
+<article class="prose"><h2>${esc(R.storyH)}</h2>${R.story.map(x => `<p>${esc(x)}</p>`).join('')}
+<h2>${esc(R.howH)}</h2><ol>${li(R.how)}</ol>
+<h2>${esc(R.kidsH)}</h2><ul>${R.kids.map(([n, d]) => `<li><b>${esc(n)}</b>: ${esc(d)}</li>`).join('')}</ul>
+<h2>${esc(R.eventsH)}</h2><ul>${li(R.events)}</ul>
+<h2>${esc(R.ctrlH)}</h2><ul>${li(R.ctrl)}</ul>
+<h2>${esc(R.tipsH)}</h2><ul>${li(R.tips)}</ul>
+<h2>${esc(R.faqH)}</h2>${R.faq.map(([q, a]) => `<h3>${esc(q)}</h3><p>${esc(a)}</p>`).join('')}
+<h2>${esc(R.aboutH)}</h2><p>${esc(R.about)}</p></article>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@600;700;800&display=swap">
+<style>
+.tt-host{position:relative;width:100%;height:min(80vh,680px);min-height:440px;border:1px solid #ffc93c66;border-radius:12px;overflow:hidden;background:#bfe0f0;box-shadow:0 0 60px -22px #ffc93c}
+.tt-host:fullscreen{height:100%;border:0;border-radius:0}
+.ph-bar{display:flex;justify-content:flex-end;margin-top:8px}
+</style>
+<script src="${asset('three.min.js')}"></script><script src="${asset('teachertycoon.js')}"></script><script>TeacherTycoon.mount(document.getElementById('ttHost'), { lang: '${lang}' });</script>`
+    }));
+  }
+
   /* Night Drop: top-down battle royale against bots (standalone page, own script). */
   {
     const N = ND[lang] || ND.en, rel = `${lang}/night-drop/`;
@@ -687,7 +720,7 @@ var n=(s||navigator.language||'en').slice(0,2).toLowerCase();location.replace('/
 ${cfg.langs.map(l => `<a style="color:#e8b44a;margin-right:12px" href="/${l}/">${esc(I18N[l].langName)}</a>`).join('')}
 </body></html>`);
 fs.mkdirSync(path.join(OUT, 'assets'), { recursive: true });
-for (const f of ['style.css', 'app.js', 'engine.js', 'icons.js', 'colorgame.js', 'nightdrop.js', 'moba.js', 'chibi.js', 'redscarf.js', 'home.js', 'istanbul.js', 'three.min.js']) fs.copyFileSync(R('src/' + f), path.join(OUT, 'assets', f));
+for (const f of ['style.css', 'app.js', 'engine.js', 'icons.js', 'colorgame.js', 'nightdrop.js', 'moba.js', 'chibi.js', 'redscarf.js', 'home.js', 'istanbul.js', 'three.min.js', 'teachertycoon.js']) fs.copyFileSync(R('src/' + f), path.join(OUT, 'assets', f));
 if (fs.existsSync(R('static'))) fs.cpSync(R('static'), OUT, { recursive: true });
 fs.writeFileSync(path.join(OUT, 'manifest.webmanifest'), JSON.stringify({
   name: cfg.siteName + ' – ' + SITE.en.tagline, short_name: cfg.siteName, start_url: '/', scope: '/', display: 'standalone',

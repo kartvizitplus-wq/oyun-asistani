@@ -101,3 +101,8 @@ Technical SEO, AI visibility, usability and ad-readiness checks. Content (patch 
 
 ## 2026-11-20 – İstanbul Heat (3D)
 - /:lang/palmera-heat/ now hosts İstanbul Heat: 3D open-world game (three.js r187 MIT, bundled as assets/three.min.js) on a stylised Istanbul map. Slug kept so the URL already sent to Search Console stays valid. src/palmera.js (2D) removed.
+
+## 2026-11-21 – Teacher Tycoon (3D)
+- Added Teacher Tycoon (/:lang/teacher-tycoon/, 5 languages): original 3D classroom game on three.js r187 (already bundled). Teach at the board, manage six students with their own behaviour, three tasks per lesson, surprise events (paper fight, pop quiz, principal visit), stars and lesson/rank progress saved in localStorage. Desktop and touch controls.
+- Additive only: one new page per language, one new game card and nav link (appended at the end of the games list), sitemap entries, own OG image (static/og/teacher-tycoon.png) and card image (static/img/teacher-tycoon-card.webp). No existing titles, URLs, headings or links changed.
+- Page text written for people: how to play, the six students, events, controls, tips, FAQ (FAQPage JSON-LD mirrors the visible FAQ), about. All 3D models and sounds are generated in code.

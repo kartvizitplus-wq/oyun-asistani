@@ -1,0 +1,447 @@
+{
+ "en": {
+  "name": "Teacher Tycoon",
+  "title": "Teacher Tycoon – Free 3D Classroom Game Online",
+  "desc": "Play Teacher Tycoon free in your browser: teach at the board, wake sleepers, stop paper fights and impress the principal in a 3D classroom. No download.",
+  "card": "3D classroom game: teach, handle six students and survive pop quizzes and the principal.",
+  "h1": "Teacher Tycoon: run your own 3D classroom",
+  "intro": "You are a new teacher with six students who all have other plans. Teach the lesson at the board, but every time you turn your back the class gets louder. Each lesson lasts 3½ minutes and plays differently.",
+  "storyH": "Your class, your rules, your chaos",
+  "story": [
+   "Room 12 is your first classroom. The students are friendly, clever and impossible to keep quiet for long: one throws paper balls the moment you face the board, one falls asleep after five minutes, and one has an answer to every question before you finish asking it.",
+   "Your job is simple on paper: get through the lesson, keep the class mood under control and earn stars. Do well and you move to the next lesson and up the career ladder, from Trainee Teacher to Legendary Teacher."
+  ],
+  "howH": "How to play",
+  "how": [
+   "Walk to the chalkboard and stand in front of it: the lesson only moves forward while you teach there.",
+   "Watch the Class mood bar at the top. Talking, phones, jokes and paper throwing push it toward Chaos, and above about 70% nobody can hear you.",
+   "Click or tap a student to walk over and open their actions: Warn stops bad behaviour, Praise keeps good students calm for longer, Ask gives a raised hand a turn.",
+   "Finish the three tasks of the lesson (teach to 100%, answer raised hands, stop disruptions) for three stars and the next lesson.",
+   "Pick the right action: warning a student who is behaving costs points, and praising a troublemaker makes things worse."
+  ],
+  "kidsH": "Meet the class",
+  "kids": [
+   [
+    "Ada – Know-it-all",
+    "Raises her hand all the time. Ask her before she gives up and she answers correctly, which also moves the lesson forward."
+   ],
+   [
+    "Bongo – Class clown",
+    "Tells jokes that make the whole room laugh. Funny, but loud: warn him or ask him a question to calm things down."
+   ],
+   [
+    "Nilo – Sleepyhead",
+    "Falls asleep, especially when you stay at the board. Walk close to wake him, or use Wake up."
+   ],
+   [
+    "Lulu – Chatterbox",
+    "Starts conversations and pulls her neighbour in. Standing nearby often ends the chat on its own."
+   ],
+   [
+    "Max – Troublemaker",
+    "Throws paper balls at classmates while your back is turned and acts innocent when you look at him."
+   ],
+   [
+    "Pixel – Tech kid",
+    "Sneaks out his phone. He keeps scrolling until you warn him."
+   ]
+  ],
+  "eventsH": "Surprise events",
+  "events": [
+   "Paper fight: two students start throwing at the same time. Stop both before the mood bar fills up.",
+   "Pop quiz: everyone writes for 16 seconds. Catch the students who peek at their neighbour's paper.",
+   "Principal visit: you get a 14-second warning. If the class is calm while the principal watches you earn a big bonus; if not, you lose points."
+  ],
+  "ctrlH": "Controls",
+  "ctrl": [
+   "Computer: WASD or arrow keys to walk, click a student or the board, E for the nearest student, 1 2 3 for actions, P to pause.",
+   "Phone and tablet: drag the joystick to walk, tap a student to open their actions, tap the board to walk there.",
+   "Graphics can be switched between high and fast in the menu or pause screen."
+  ],
+  "tipsH": "Tips",
+  "tips": [
+   "Teach in short bursts: write on the board, turn around when the mood bar turns yellow, then go back.",
+   "Max stops throwing when you walk up to him, but he starts again as soon as you leave. Warn him to make it count.",
+   "Praise focused students: praised students stay calm much longer.",
+   "Answer Ada's raised hand quickly: correct answers add to the lesson progress.",
+   "Before the principal arrives, wake Nilo and stop any chat or phone."
+  ],
+  "faqH": "FAQ",
+  "faq": [
+   [
+    "Is Teacher Tycoon free?",
+    "Yes. It runs in your browser for free, with no download and no account."
+   ],
+   [
+    "Does it work on phones?",
+    "Yes. On phones and tablets you get a joystick and tap controls. Choose Graphics: fast if it feels slow."
+   ],
+   [
+    "Is my progress saved?",
+    "Your best score, lesson number and sound setting are saved in your browser on this device only."
+   ],
+   [
+    "Will there be more lessons and students?",
+    "Yes. New subjects, students and classroom upgrades are planned for future updates."
+   ]
+  ],
+  "aboutH": "About this game",
+  "about": "Teacher Tycoon is an original game made by PickRadar. The 3D classroom, characters and sounds are generated in code with three.js; there are no downloaded models or images. The game stores only your score and settings in your browser."
+ },
+ "tr": {
+  "name": "Teacher Tycoon",
+  "title": "Teacher Tycoon – Ücretsiz 3D Sınıf Oyunu Oyna",
+  "desc": "Teacher Tycoon'u tarayıcında ücretsiz oyna: tahtada ders anlat, uyuyanları uyandır, kâğıt savaşını durdur ve müdürü etkile. 3D sınıf, indirme yok.",
+  "card": "3D sınıf oyunu: ders anlat, altı öğrenciyi idare et, sürpriz sınavı ve müdürü atlat.",
+  "h1": "Teacher Tycoon: kendi 3D sınıfını yönet",
+  "intro": "Yeni bir öğretmensin ve altı öğrencinin her birinin kafasında başka bir plan var. Tahtada dersi anlat, ama her arkanı döndüğünde sınıfın sesi yükseliyor. Her ders 3,5 dakika sürüyor ve her seferinde farklı geçiyor.",
+  "storyH": "Senin sınıfın, senin kuralların, senin kaosun",
+  "story": [
+   "12 numaralı sınıf senin ilk sınıfın. Öğrenciler tatlı, zeki ve uzun süre sessiz durmaları imkânsız: biri sen tahtaya döner dönmez kâğıt topu atıyor, biri beş dakikada uyuyakalıyor, biri de sen soruyu bitirmeden cevabı biliyor.",
+   "Görevin kâğıt üzerinde basit: dersi bitir, sınıfın havasını kontrol altında tut ve yıldız topla. İyi gidersen bir sonraki derse ve kariyer basamaklarına geçersin; Stajyer Öğretmen'den Efsane Öğretmen'e kadar."
+  ],
+  "howH": "Nasıl oynanır",
+  "how": [
+   "Tahtaya yürü ve önünde dur: ders yalnızca sen orada anlatırken ilerler.",
+   "Üstteki Sınıfın havası çubuğunu izle. Konuşmalar, telefonlar, şakalar ve kâğıt atmak çubuğu Kaos'a doğru iter; yaklaşık %70'in üstünde kimse seni duymaz.",
+   "Bir öğrenciye tıkla ya da dokun: yanına yürürsün ve eylemleri açılır. Uyar yaramazlığı durdurur, Övgü iyi öğrencileri daha uzun sakin tutar, Soru sor parmak kaldırana söz verir.",
+   "Dersin üç görevini bitir (%100 anlat, kaldırılan parmaklara söz ver, kargaşaları durdur): üç yıldız ve sonraki ders senin.",
+   "Doğru eylemi seç: uslu duran öğrenciyi uyarmak puan kaybettirir, yaramazı övmek ise işleri kötüleştirir."
+  ],
+  "kidsH": "Sınıfla tanış",
+  "kids": [
+   [
+    "Ada – Her şeyi bilen",
+    "Sürekli parmak kaldırır. Vazgeçmeden ona söz verirsen doğru cevaplar ve ders de ilerler."
+   ],
+   [
+    "Bongo – Sınıfın komiği",
+    "Bütün sınıfı güldüren şakalar yapar. Komik ama gürültülü: sakinleştirmek için uyar ya da ona bir soru sor."
+   ],
+   [
+    "Nilo – Uykucu",
+    "Özellikle sen tahtadayken uyuyakalır. Uyandırmak için yanına yürü ya da Uyandır'ı kullan."
+   ],
+   [
+    "Lulu – Geveze",
+    "Sohbet başlatır ve yanındakini de dahil eder. Çoğu zaman yanında durman sohbeti bitirmeye yeter."
+   ],
+   [
+    "Max – Yaramaz",
+    "Sen arkanı dönünce arkadaşlarına kâğıt topu atar, ona baktığında masum taklidi yapar."
+   ],
+   [
+    "Pixel – Teknoloji meraklısı",
+    "Gizlice telefonunu çıkarır. Sen uyarana kadar ekrandan kafasını kaldırmaz."
+   ]
+  ],
+  "eventsH": "Sürpriz olaylar",
+  "events": [
+   "Kâğıt savaşı: iki öğrenci aynı anda atmaya başlar. Sınıfın havası dolmadan ikisini de durdur.",
+   "Sürpriz sınav: herkes 16 saniye yazar. Yanındakinin kâğıdına bakanları yakala.",
+   "Müdür ziyareti: 14 saniye önceden haber alırsın. Müdür izlerken sınıf sakinse büyük bonus kazanırsın; değilse puan kaybedersin."
+  ],
+  "ctrlH": "Kontroller",
+  "ctrl": [
+   "Bilgisayar: yürümek için WASD ya da ok tuşları, öğrenciye ya da tahtaya tıkla, en yakın öğrenci için E, eylemler için 1 2 3, duraklatmak için P.",
+   "Telefon ve tablet: yürümek için joystick'i sürükle, eylemler için öğrenciye dokun, tahtaya gitmek için tahtaya dokun.",
+   "Grafikler menüde ya da duraklatma ekranında yüksek ve hızlı arasında değiştirilebilir."
+  ],
+  "tipsH": "İpuçları",
+  "tips": [
+   "Dersi parça parça anlat: tahtaya yaz, sınıfın havası sarıya dönünce dön, sonra tahtaya geri git.",
+   "Max yanına gidince atmayı bırakır ama sen uzaklaşınca yeniden başlar. Kalıcı olsun diye uyar.",
+   "Odaklı öğrencileri öv: övülen öğrenciler çok daha uzun süre sakin kalır.",
+   "Ada'nın kaldırdığı parmağa hızlı söz ver: doğru cevaplar dersin ilerlemesine eklenir.",
+   "Müdür gelmeden önce Nilo'yu uyandır, sohbetleri ve telefonları bitir."
+  ],
+  "faqH": "Sık sorulan sorular",
+  "faq": [
+   [
+    "Teacher Tycoon ücretsiz mi?",
+    "Evet. İndirme ve hesap gerektirmeden tarayıcında ücretsiz çalışır."
+   ],
+   [
+    "Telefonda çalışıyor mu?",
+    "Evet. Telefon ve tablette joystick ve dokunmatik kontroller var. Yavaş gelirse Grafik: hızlı seçeneğini seç."
+   ],
+   [
+    "İlerlemem kaydediliyor mu?",
+    "En iyi skorun, ders numaran ve ses ayarın yalnızca bu cihazdaki tarayıcında saklanır."
+   ],
+   [
+    "Yeni dersler ve öğrenciler gelecek mi?",
+    "Evet. Yeni dersler, öğrenciler ve sınıf geliştirmeleri sonraki güncellemeler için planlanıyor."
+   ]
+  ],
+  "aboutH": "Bu oyun hakkında",
+  "about": "Teacher Tycoon, PickRadar'ın yaptığı özgün bir oyundur. 3D sınıf, karakterler ve sesler three.js ile kodla üretilir; indirilen bir model ya da görsel yoktur. Oyun tarayıcında yalnızca skorunu ve ayarlarını saklar."
+ },
+ "es": {
+  "name": "Teacher Tycoon",
+  "title": "Teacher Tycoon – Juego de clase 3D gratis online",
+  "desc": "Juega gratis a Teacher Tycoon en tu navegador: enseña en la pizarra, despierta a los dormidos, frena la guerra de papeles e impresiona a la directora.",
+  "card": "Juego de clase en 3D: enseña, controla a seis alumnos y supera exámenes sorpresa y a la directora.",
+  "h1": "Teacher Tycoon: dirige tu propia clase en 3D",
+  "intro": "Eres una profesora nueva con seis alumnos que tienen otros planes. Enseña la lección en la pizarra, pero cada vez que te das la vuelta la clase hace más ruido. Cada clase dura 3 minutos y medio y nunca se juega igual.",
+  "storyH": "Tu clase, tus reglas, tu caos",
+  "story": [
+   "El aula 12 es tu primera clase. Los alumnos son simpáticos, listos e incapaces de estar callados mucho tiempo: uno tira bolas de papel en cuanto miras a la pizarra, otro se duerme a los cinco minutos y otra sabe la respuesta antes de que termines la pregunta.",
+   "Tu trabajo parece sencillo: terminar la lección, mantener el ambiente bajo control y ganar estrellas. Si lo haces bien pasas a la siguiente clase y subes en tu carrera, de profesora en prácticas a profe legendaria."
+  ],
+  "howH": "Cómo se juega",
+  "how": [
+   "Ve a la pizarra y quédate delante: la lección solo avanza mientras enseñas allí.",
+   "Vigila la barra de Ambiente de la clase. Las charlas, los móviles, los chistes y los papeles la empujan hacia el Caos, y por encima del 70% nadie te escucha.",
+   "Haz clic o toca a un alumno para acercarte y ver sus acciones: Avisar detiene el mal comportamiento, Elogiar mantiene tranquilos a los buenos alumnos y Preguntar da la palabra a una mano levantada.",
+   "Completa las tres tareas de la clase (enseñar al 100%, dar la palabra, detener interrupciones) para ganar tres estrellas y pasar a la siguiente.",
+   "Elige bien: avisar a quien se porta bien resta puntos y elogiar a un travieso empeora las cosas."
+  ],
+  "kidsH": "Conoce a la clase",
+  "kids": [
+   [
+    "Ada – Sabelotodo",
+    "Levanta la mano todo el rato. Si le das la palabra antes de que se canse, acierta y la lección avanza."
+   ],
+   [
+    "Bongo – Payaso de la clase",
+    "Cuenta chistes que hacen reír a todos. Divertido pero ruidoso: avísale o hazle una pregunta."
+   ],
+   [
+    "Nilo – Dormilón",
+    "Se duerme, sobre todo cuando estás en la pizarra. Acércate para despertarlo o usa Despertar."
+   ],
+   [
+    "Lulu – Charlatana",
+    "Empieza conversaciones y arrastra a su compañero. A menudo basta con quedarte cerca."
+   ],
+   [
+    "Max – Travieso",
+    "Tira bolas de papel cuando le das la espalda y se hace el inocente cuando lo miras."
+   ],
+   [
+    "Pixel – Fan de la tecnología",
+    "Saca el móvil a escondidas y no lo suelta hasta que le avisas."
+   ]
+  ],
+  "eventsH": "Eventos sorpresa",
+  "events": [
+   "Guerra de papeles: dos alumnos empiezan a tirar a la vez. Detenlos antes de que se llene la barra.",
+   "Examen sorpresa: todos escriben durante 16 segundos. Pilla a quien mire el examen de su compañero.",
+   "Visita de la directora: tienes 14 segundos de aviso. Si la clase está tranquila mientras observa, ganas un gran bonus; si no, pierdes puntos."
+  ],
+  "ctrlH": "Controles",
+  "ctrl": [
+   "Ordenador: WASD o flechas para caminar, clic en un alumno o en la pizarra, E para el alumno más cercano, 1 2 3 para las acciones, P para pausar.",
+   "Móvil y tableta: arrastra el joystick para caminar, toca a un alumno para ver sus acciones y toca la pizarra para ir allí.",
+   "Los gráficos se pueden cambiar entre altos y rápidos en el menú o en la pausa."
+  ],
+  "tipsH": "Consejos",
+  "tips": [
+   "Enseña a ratos: escribe en la pizarra, date la vuelta cuando la barra se ponga amarilla y vuelve.",
+   "Max deja de tirar cuando te acercas, pero vuelve a empezar cuando te vas. Avísale para que pare de verdad.",
+   "Elogia a los alumnos concentrados: se mantienen tranquilos mucho más tiempo.",
+   "Da la palabra rápido a Ada: sus respuestas correctas suman progreso a la lección.",
+   "Antes de que llegue la directora, despierta a Nilo y corta las charlas y el móvil."
+  ],
+  "faqH": "Preguntas frecuentes",
+  "faq": [
+   [
+    "¿Teacher Tycoon es gratis?",
+    "Sí. Funciona gratis en el navegador, sin descargas ni cuenta."
+   ],
+   [
+    "¿Funciona en el móvil?",
+    "Sí. En móviles y tabletas tienes joystick y controles táctiles. Elige Gráficos: rápidos si va lento."
+   ],
+   [
+    "¿Se guarda mi progreso?",
+    "Tu mejor puntuación, el número de clase y el sonido se guardan solo en el navegador de este dispositivo."
+   ],
+   [
+    "¿Habrá más clases y alumnos?",
+    "Sí. Hay nuevas asignaturas, alumnos y mejoras del aula previstas para próximas actualizaciones."
+   ]
+  ],
+  "aboutH": "Sobre este juego",
+  "about": "Teacher Tycoon es un juego original de PickRadar. El aula en 3D, los personajes y los sonidos se generan con código usando three.js; no hay modelos ni imágenes descargados. El juego solo guarda tu puntuación y tus ajustes en el navegador."
+ },
+ "pt": {
+  "name": "Teacher Tycoon",
+  "title": "Teacher Tycoon – Jogo de sala de aula 3D grátis online",
+  "desc": "Jogue Teacher Tycoon grátis no navegador: ensine no quadro, acorde quem dorme, pare a guerra de papel e impressione a diretora numa sala de aula 3D.",
+  "card": "Jogo de sala de aula em 3D: ensine, controle seis alunos e encare provas surpresa e a diretora.",
+  "h1": "Teacher Tycoon: comande sua própria sala de aula 3D",
+  "intro": "Você é uma professora nova com seis alunos que têm outros planos. Ensine a lição no quadro, mas cada vez que você vira as costas a turma fica mais barulhenta. Cada aula dura 3 minutos e meio e nunca é igual.",
+  "storyH": "Sua turma, suas regras, seu caos",
+  "story": [
+   "A sala 12 é a sua primeira turma. Os alunos são simpáticos, espertos e não conseguem ficar quietos por muito tempo: um joga bolinhas de papel assim que você olha para o quadro, outro dorme em cinco minutos e outra já sabe a resposta antes de você terminar a pergunta.",
+   "Seu trabalho parece simples: terminar a lição, manter o clima sob controle e ganhar estrelas. Indo bem, você passa para a próxima aula e sobe na carreira, de professora estagiária a professora lendária."
+  ],
+  "howH": "Como jogar",
+  "how": [
+   "Vá até o quadro e fique na frente dele: a lição só avança enquanto você ensina ali.",
+   "Observe a barra Clima da turma. Conversas, celulares, piadas e papéis empurram a barra para o Caos, e acima de uns 70% ninguém escuta você.",
+   "Clique ou toque em um aluno para ir até ele e abrir as ações: Advertir para a bagunça, Elogiar mantém os bons alunos calmos por mais tempo e Perguntar dá a vez a quem levantou a mão.",
+   "Complete as três tarefas da aula (ensinar até 100%, dar a vez às mãos levantadas, parar bagunças) para ganhar três estrelas e a próxima aula.",
+   "Escolha certo: advertir quem está se comportando tira pontos, e elogiar um bagunceiro piora tudo."
+  ],
+  "kidsH": "Conheça a turma",
+  "kids": [
+   [
+    "Ada – Sabe-tudo",
+    "Levanta a mão o tempo todo. Dê a vez antes que ela desista e ela acerta, o que também faz a lição avançar."
+   ],
+   [
+    "Bongo – Palhaço da turma",
+    "Conta piadas que fazem a sala inteira rir. Engraçado, mas barulhento: advirta ou faça uma pergunta."
+   ],
+   [
+    "Nilo – Dorminhoco",
+    "Dorme, principalmente quando você fica no quadro. Chegue perto para acordá-lo ou use Acordar."
+   ],
+   [
+    "Lulu – Tagarela",
+    "Começa conversas e puxa o vizinho junto. Muitas vezes ficar por perto já resolve."
+   ],
+   [
+    "Max – Bagunceiro",
+    "Joga bolinhas de papel quando você vira as costas e se faz de inocente quando você olha."
+   ],
+   [
+    "Pixel – Fã de tecnologia",
+    "Pega o celular escondido e só larga quando você adverte."
+   ]
+  ],
+  "eventsH": "Eventos surpresa",
+  "events": [
+   "Guerra de papel: dois alunos começam a jogar ao mesmo tempo. Pare os dois antes que a barra encha.",
+   "Prova surpresa: todos escrevem por 16 segundos. Pegue quem olha a prova do colega.",
+   "Visita da diretora: você tem 14 segundos de aviso. Se a turma estiver calma enquanto ela observa, ganha um bônus grande; se não, perde pontos."
+  ],
+  "ctrlH": "Controles",
+  "ctrl": [
+   "Computador: WASD ou setas para andar, clique em um aluno ou no quadro, E para o aluno mais próximo, 1 2 3 para as ações, P para pausar.",
+   "Celular e tablet: arraste o joystick para andar, toque em um aluno para ver as ações e toque no quadro para ir até ele.",
+   "Os gráficos podem ser trocados entre altos e rápidos no menu ou na pausa."
+  ],
+  "tipsH": "Dicas",
+  "tips": [
+   "Ensine em partes: escreva no quadro, vire quando a barra ficar amarela e depois volte.",
+   "Max para de jogar quando você chega perto, mas recomeça quando você sai. Advirta para valer.",
+   "Elogie alunos focados: eles ficam calmos por muito mais tempo.",
+   "Dê a vez rápido para a Ada: respostas certas somam progresso à lição.",
+   "Antes de a diretora chegar, acorde o Nilo e acabe com conversas e celular."
+  ],
+  "faqH": "Perguntas frequentes",
+  "faq": [
+   [
+    "Teacher Tycoon é grátis?",
+    "Sim. Roda grátis no navegador, sem download e sem conta."
+   ],
+   [
+    "Funciona no celular?",
+    "Sim. No celular e no tablet há joystick e controles de toque. Escolha Gráficos: rápidos se ficar lento."
+   ],
+   [
+    "Meu progresso é salvo?",
+    "Sua melhor pontuação, o número da aula e o som ficam salvos só no navegador deste aparelho."
+   ],
+   [
+    "Vai ter mais aulas e alunos?",
+    "Sim. Novas matérias, alunos e melhorias da sala estão planejados para as próximas atualizações."
+   ]
+  ],
+  "aboutH": "Sobre este jogo",
+  "about": "Teacher Tycoon é um jogo original feito pelo PickRadar. A sala de aula 3D, os personagens e os sons são gerados por código com three.js; não há modelos ou imagens baixados. O jogo guarda apenas sua pontuação e suas configurações no navegador."
+ },
+ "id": {
+  "name": "Teacher Tycoon",
+  "title": "Teacher Tycoon – Game Kelas 3D Gratis Online",
+  "desc": "Main Teacher Tycoon gratis di browser: mengajar di papan tulis, bangunkan yang tidur, hentikan perang kertas dan buat kepala sekolah terkesan. Tanpa unduhan.",
+  "card": "Game kelas 3D: mengajar, atur enam murid, hadapi kuis dadakan dan kepala sekolah.",
+  "h1": "Teacher Tycoon: kelola kelas 3D milikmu sendiri",
+  "intro": "Kamu guru baru dengan enam murid yang punya rencana sendiri. Ajarkan pelajaran di papan tulis, tapi setiap kali kamu membelakangi mereka, kelas makin ribut. Setiap pelajaran berlangsung 3,5 menit dan selalu berbeda.",
+  "storyH": "Kelasmu, aturanmu, kekacauanmu",
+  "story": [
+   "Ruang 12 adalah kelas pertamamu. Murid-muridnya ramah, pintar dan tidak bisa diam lama: satu melempar bola kertas begitu kamu menghadap papan, satu tertidur dalam lima menit, dan satu lagi sudah tahu jawabannya sebelum kamu selesai bertanya.",
+   "Tugasmu terdengar mudah: selesaikan pelajaran, jaga suasana kelas dan kumpulkan bintang. Kalau berhasil, kamu lanjut ke pelajaran berikutnya dan naik pangkat, dari Guru magang sampai Guru legendaris."
+  ],
+  "howH": "Cara bermain",
+  "how": [
+   "Berjalanlah ke papan tulis dan berdiri di depannya: pelajaran hanya maju saat kamu mengajar di sana.",
+   "Perhatikan bar Suasana kelas di atas. Mengobrol, main HP, melawak dan melempar kertas mendorongnya ke arah Kacau, dan di atas sekitar 70% tidak ada yang mendengarmu.",
+   "Klik atau ketuk murid untuk mendatanginya dan membuka aksinya: Tegur menghentikan kenakalan, Puji membuat murid baik tenang lebih lama, Tanya memberi giliran pada tangan yang terangkat.",
+   "Selesaikan tiga tugas pelajaran (mengajar sampai 100%, memberi giliran, menghentikan keributan) untuk tiga bintang dan pelajaran berikutnya.",
+   "Pilih aksi yang tepat: menegur murid yang sopan mengurangi poin, dan memuji si nakal membuat keadaan makin buruk."
+  ],
+  "kidsH": "Kenalan dengan kelas",
+  "kids": [
+   [
+    "Ada – Si pintar",
+    "Terus mengangkat tangan. Beri dia giliran sebelum menyerah, dia menjawab benar dan pelajaran ikut maju."
+   ],
+   [
+    "Bongo – Si pelawak",
+    "Lawakannya membuat seisi kelas tertawa. Lucu tapi berisik: tegur atau beri dia pertanyaan."
+   ],
+   [
+    "Nilo – Si tukang tidur",
+    "Tertidur, terutama saat kamu di papan tulis. Dekati untuk membangunkannya atau pakai Bangunkan."
+   ],
+   [
+    "Lulu – Si cerewet",
+    "Memulai obrolan dan mengajak teman sebelahnya. Sering kali cukup berdiri di dekatnya."
+   ],
+   [
+    "Max – Si nakal",
+    "Melempar bola kertas saat kamu membelakangi kelas dan pura-pura polos saat kamu melihatnya."
+   ],
+   [
+    "Pixel – Si gila teknologi",
+    "Diam-diam mengeluarkan HP dan terus menggulir sampai kamu tegur."
+   ]
+  ],
+  "eventsH": "Kejadian kejutan",
+  "events": [
+   "Perang kertas: dua murid mulai melempar bersamaan. Hentikan keduanya sebelum bar penuh.",
+   "Kuis dadakan: semua menulis selama 16 detik. Tangkap yang melirik kertas temannya.",
+   "Kunjungan kepala sekolah: kamu dapat peringatan 14 detik. Kalau kelas tenang saat dia mengamati, kamu dapat bonus besar; kalau tidak, poinmu berkurang."
+  ],
+  "ctrlH": "Kontrol",
+  "ctrl": [
+   "Komputer: WASD atau panah untuk berjalan, klik murid atau papan, E untuk murid terdekat, 1 2 3 untuk aksi, P untuk jeda.",
+   "Ponsel dan tablet: geser joystick untuk berjalan, ketuk murid untuk aksinya, ketuk papan untuk ke sana.",
+   "Grafis bisa diganti antara tinggi dan cepat di menu atau layar jeda."
+  ],
+  "tipsH": "Tips",
+  "tips": [
+   "Mengajarlah sedikit-sedikit: menulis di papan, berbalik saat bar menguning, lalu kembali.",
+   "Max berhenti melempar saat kamu mendekat, tapi mulai lagi saat kamu pergi. Tegur dia supaya benar-benar berhenti.",
+   "Puji murid yang fokus: mereka tetap tenang jauh lebih lama.",
+   "Cepat beri giliran pada Ada: jawaban benar menambah kemajuan pelajaran.",
+   "Sebelum kepala sekolah datang, bangunkan Nilo dan hentikan obrolan serta HP."
+  ],
+  "faqH": "Pertanyaan umum",
+  "faq": [
+   [
+    "Apakah Teacher Tycoon gratis?",
+    "Ya. Berjalan gratis di browser, tanpa unduhan dan tanpa akun."
+   ],
+   [
+    "Bisa dimainkan di ponsel?",
+    "Bisa. Di ponsel dan tablet ada joystick dan kontrol sentuh. Pilih Grafis: cepat kalau terasa lambat."
+   ],
+   [
+    "Apakah progresku tersimpan?",
+    "Skor terbaik, nomor pelajaran dan pengaturan suara hanya disimpan di browser perangkat ini."
+   ],
+   [
+    "Akan ada pelajaran dan murid baru?",
+    "Ya. Mata pelajaran, murid, dan peningkatan kelas baru direncanakan untuk pembaruan berikutnya."
+   ]
+  ],
+  "aboutH": "Tentang game ini",
+  "about": "Teacher Tycoon adalah game orisinal buatan PickRadar. Kelas 3D, karakter dan suaranya dibuat dengan kode memakai three.js; tidak ada model atau gambar yang diunduh. Game hanya menyimpan skor dan pengaturanmu di browser."
+ }
+}
