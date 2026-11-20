@@ -121,12 +121,21 @@
 
   /* ───────────────────────────── AUDIO (synthesised, no files) ───────────────────────────── */
   function makeAudio(save) {
-    let ac = null;
-    const ctx = () => { if (!ac) { try { ac = new (global.AudioContext || global.webkitAudioContext)(); } catch (e) {} } if (ac && ac.state === 'suspended') ac.resume(); return ac; };
-    function tone(f, d, type, vol, slide) { const a = ctx(); if (!a || save.mute) return; const o = a.createOscillator(), g = a.createGain(); o.type = type || 'sine'; o.frequency.value = f; if (slide) o.frequency.exponentialRampToValueAtTime(slide, a.currentTime + d); g.gain.setValueAtTime(vol || .2, a.currentTime); g.gain.exponentialRampToValueAtTime(.001, a.currentTime + d); o.connect(g); g.connect(a.destination); o.start(); o.stop(a.currentTime + d); }
-    function noise(d, vol, hp) { const a = ctx(); if (!a || save.mute) return; const b = a.createBuffer(1, a.sampleRate * d, a.sampleRate), ch = b.getChannelData(0); for (let i = 0; i < ch.length; i++) ch[i] = (Math.random() * 2 - 1) * (1 - i / ch.length); const s = a.createBufferSource(), f = a.createBiquadFilter(), g = a.createGain(); f.type = 'highpass'; f.frequency.value = hp || 1500; g.gain.value = vol || .3; s.buffer = b; s.connect(f); f.connect(g); g.connect(a.destination); s.start(); }
+    let ac = null, master = null, music = null;
+    function ctx() {
+      if (!ac) { try { ac = new (global.AudioContext || global.webkitAudioContext)(); } catch (e) { return null; } }
+      if (ac.state === 'suspended') ac.resume();
+      if (!master) { master = ac.createGain(); master.gain.value = save.mute ? 0 : 1; master.connect(ac.destination); music = makeMusic(ac, master); }
+      return ac;
+    }
+    function tone(f, d, type, vol, slide) { const a = ctx(); if (!a) return; const o = a.createOscillator(), g = a.createGain(); o.type = type || 'sine'; o.frequency.value = f; if (slide) o.frequency.exponentialRampToValueAtTime(slide, a.currentTime + d); g.gain.setValueAtTime(vol || .2, a.currentTime); g.gain.exponentialRampToValueAtTime(.001, a.currentTime + d); o.connect(g); g.connect(master); o.start(); o.stop(a.currentTime + d); }
+    function noise(d, vol, hp) { const a = ctx(); if (!a) return; const b = a.createBuffer(1, a.sampleRate * d, a.sampleRate), ch = b.getChannelData(0); for (let i = 0; i < ch.length; i++) ch[i] = (Math.random() * 2 - 1) * (1 - i / ch.length); const s = a.createBufferSource(), f = a.createBiquadFilter(), g = a.createGain(); f.type = 'highpass'; f.frequency.value = hp || 1500; g.gain.value = vol || .3; s.buffer = b; s.connect(f); f.connect(g); g.connect(master); s.start(); }
     return {
       unlock: ctx,
+      setMute(m) { if (master) master.gain.setTargetAtTime(m ? 0 : 1, ac.currentTime, .05); },
+      scene(sc) { if (music) music.scene(sc); },
+      tension(t) { if (music) music.tension(t); },
+      suspend(on) { if (ac) { if (on) ac.suspend(); else ac.resume(); } },
       slash() { noise(.22, .35, 2500); tone(1400, .15, 'sawtooth', .05, 300); },
       hit() { tone(90, .25, 'sine', .4, 40); noise(.1, .2, 400); },
       bell() { tone(880, 1.4, 'sine', .18); tone(1320, 1, 'sine', .08); },
@@ -136,6 +145,73 @@
       death() { tone(220, .9, 'sawtooth', .15, 55); },
       tick() { tone(1200, .05, 'square', .04); },
       gong() { tone(110, 1.6, 'sine', .35, 90); tone(220, 1.2, 'sine', .12); }
+    };
+  }
+
+  /* Generative score: drone + wind, shakuhachi-like flute and koto plucks in the Japanese "in" scale,
+     taiko drums that speed up with the tension (0 calm … 1 alarm/duel). No audio files. */
+  function makeMusic(ac, out) {
+    const bus = ac.createGain(); bus.gain.value = 0; bus.connect(out);
+    const comp = ac.createDynamicsCompressor(); comp.threshold.value = -18; comp.ratio.value = 4; comp.connect(bus);
+    /* a little room: feedback delay */
+    const dl = ac.createDelay(1), fb = ac.createGain(), wet = ac.createGain(), lp = ac.createBiquadFilter();
+    dl.delayTime.value = .33; fb.gain.value = .32; wet.gain.value = .35; lp.type = 'lowpass'; lp.frequency.value = 2200;
+    dl.connect(lp); lp.connect(fb); fb.connect(dl); lp.connect(wet); wet.connect(comp);
+    const dry = ac.createGain(); dry.connect(comp); dry.connect(dl);
+    /* drone */
+    const dG = ac.createGain(); dG.gain.value = .05; const dF = ac.createBiquadFilter(); dF.type = 'lowpass'; dF.frequency.value = 260; dF.Q.value = 4; dF.connect(dG); dG.connect(comp);
+    [[73.42, 'sine', .9], [73.9, 'sawtooth', .35], [110, 'sine', .25]].forEach(([f, t, v]) => { const o = ac.createOscillator(), g = ac.createGain(); o.type = t; o.frequency.value = f; g.gain.value = v; o.connect(g); g.connect(dF); o.start(); });
+    const lfo = ac.createOscillator(), lfoG = ac.createGain(); lfo.frequency.value = .06; lfoG.gain.value = 120; lfo.connect(lfoG); lfoG.connect(dF.frequency); lfo.start();
+    /* wind */
+    const nb = ac.createBuffer(1, ac.sampleRate * 3, ac.sampleRate), nd = nb.getChannelData(0); for (let i = 0; i < nd.length; i++) nd[i] = Math.random() * 2 - 1;
+    const wind = ac.createBufferSource(); wind.buffer = nb; wind.loop = true;
+    const wF = ac.createBiquadFilter(); wF.type = 'bandpass'; wF.frequency.value = 500; wF.Q.value = .8; const wG = ac.createGain(); wG.gain.value = .025;
+    wind.connect(wF); wF.connect(wG); wG.connect(comp); wind.start();
+    const wl = ac.createOscillator(), wlG = ac.createGain(); wl.frequency.value = .045; wlG.gain.value = 320; wl.connect(wlG); wlG.connect(wF.frequency); wl.start();
+    const SCALE = [293.66, 311.13, 392, 440, 466.16, 587.33, 622.25, 783.99];
+    let tension = 0, target = 0, sc = 'menu', next = ac.currentTime + .1, step = 0, flutePos = 3, fluteBusy = 0;
+    const env = (g, t, a, peak, rel) => { g.gain.setValueAtTime(.0001, t); g.gain.exponentialRampToValueAtTime(peak, t + a); g.gain.exponentialRampToValueAtTime(.0001, t + a + rel); };
+    function taiko(t, vol, pitch) {
+      const o = ac.createOscillator(), g = ac.createGain(); o.frequency.setValueAtTime(pitch || 130, t); o.frequency.exponentialRampToValueAtTime(42, t + .35); env(g, t, .005, vol, .5); o.connect(g); g.connect(dry); o.start(t); o.stop(t + .6);
+      const s = ac.createBufferSource(), f = ac.createBiquadFilter(), g2 = ac.createGain(); s.buffer = nb; f.type = 'lowpass'; f.frequency.value = 900; env(g2, t, .002, vol * .5, .09); s.connect(f); f.connect(g2); g2.connect(dry); s.start(t, Math.random() * 2, .12);
+    }
+    function shime(t, vol) { const s = ac.createBufferSource(), f = ac.createBiquadFilter(), g = ac.createGain(); s.buffer = nb; f.type = 'bandpass'; f.frequency.value = 2400; f.Q.value = 3; env(g, t, .002, vol, .06); s.connect(f); f.connect(g); g.connect(dry); s.start(t, Math.random() * 2, .08); }
+    function pluck(t, f, vol) { const o = ac.createOscillator(), fl = ac.createBiquadFilter(), g = ac.createGain(); o.type = 'sawtooth'; o.frequency.value = f; fl.type = 'lowpass'; fl.frequency.setValueAtTime(3200, t); fl.frequency.exponentialRampToValueAtTime(350, t + .35); env(g, t, .004, vol, .8); o.connect(fl); fl.connect(g); g.connect(dry); o.start(t); o.stop(t + 1); }
+    function flute(t, f, dur, vol) {
+      const o = ac.createOscillator(), o2 = ac.createOscillator(), g = ac.createGain(), vib = ac.createOscillator(), vg = ac.createGain();
+      o.type = 'sine'; o2.type = 'triangle'; o.frequency.setValueAtTime(f * .96, t); o.frequency.exponentialRampToValueAtTime(f, t + .22); o2.frequency.value = f * 2;
+      vib.frequency.value = 5.2; vg.gain.setValueAtTime(0, t); vg.gain.linearRampToValueAtTime(f * .012, t + dur * .6); vib.connect(vg); vg.connect(o.frequency);
+      const g2 = ac.createGain(); g2.gain.value = .08; o2.connect(g2); g2.connect(g); o.connect(g);
+      g.gain.setValueAtTime(.0001, t); g.gain.exponentialRampToValueAtTime(vol, t + .18); g.gain.setValueAtTime(vol, t + dur - .3); g.gain.exponentialRampToValueAtTime(.0001, t + dur + .25);
+      const s = ac.createBufferSource(), bf = ac.createBiquadFilter(), bg = ac.createGain(); s.buffer = nb; bf.type = 'bandpass'; bf.frequency.value = f * 2.2; bf.Q.value = 1.5; bg.gain.setValueAtTime(.0001, t); bg.gain.exponentialRampToValueAtTime(vol * .35, t + .1); bg.gain.exponentialRampToValueAtTime(.0001, t + dur); s.connect(bf); bf.connect(bg); bg.connect(dry); s.start(t, Math.random(), dur + .3);
+      g.connect(dry); [o, o2, vib].forEach(x => { x.start(t); x.stop(t + dur + .4); });
+    }
+    function schedule() {
+      tension += (target - tension) * .08;
+      const T = tension, bpm = 58 + T * 74, beat = 60 / bpm / 2;
+      while (next < ac.currentTime + .15) {
+        const t = next, s = step % 16, calm = sc === 'menu' || sc === 'over';
+        if (!calm) {
+          if (s === 0 || s === 8) taiko(t, .32 + T * .3, 120);
+          if (T > .25 && (s === 1 || s === 9)) taiko(t, .2 + T * .2, 150);
+          if (T > .5 && (s === 4 || s === 12)) taiko(t, .25, 110);
+          if (T > .7 && s % 2 === 1) shime(t, .06 + T * .06);
+          if (T > .85 && (s === 14 || s === 15)) taiko(t, .3, 170);
+        } else if (s === 0 && step % 32 === 0) taiko(t, .18, 100);
+        if (Math.random() < (sc === 'duel' ? .35 : .07 + T * .12)) pluck(t, SCALE[Math.floor(Math.random() * 5)] / 2, .06 + T * .04);
+        if (fluteBusy <= t && sc !== 'duel' && Math.random() < (calm ? .1 : .06 * (1 - T * .6))) {
+          let tt = t; const n = 1 + Math.floor(Math.random() * 3);
+          for (let i = 0; i < n; i++) { flutePos = Math.max(0, Math.min(SCALE.length - 1, flutePos + Math.floor(Math.random() * 5) - 2)); const d = .7 + Math.random() * 1.3; flute(tt, SCALE[flutePos], d, .05); tt += d + .1; }
+          fluteBusy = tt + 1.5;
+        }
+        next += beat; step++;
+      }
+    }
+    setInterval(() => { if (ac.state === 'running') schedule(); }, 50);
+    const LEVEL = { menu: .55, play: .7, duel: .85, cine: .75, over: .35, pause: .2 };
+    return {
+      scene(s) { if (s === sc) return; sc = s; bus.gain.setTargetAtTime(LEVEL[s] == null ? .6 : LEVEL[s], ac.currentTime, .6); dG.gain.setTargetAtTime(s === 'duel' ? .08 : .05, ac.currentTime, .5); },
+      tension(t) { target = clamp(t, 0, 1); wG.gain.setTargetAtTime(.02 + target * .03, ac.currentTime, .5); }
     };
   }
 
@@ -1029,7 +1105,7 @@
       else if (a === 'menu') showMenu();
       else if (a === 'pause') { if (mode === 'pause') resume(); else pause(); }
       else if (a === 'resume') resume();
-      else if (a === 'mute') { save.mute = !save.mute; storeSave(save); b.textContent = save.mute ? '🔇' : '🔊'; }
+      else if (a === 'mute') { save.mute = !save.mute; storeSave(save); sfx.setMute(save.mute); b.textContent = save.mute ? '🔇' : '🔊'; }
       else if (a === 'full') toggleFull();
     });
     function toggleFull() { try { if (document.fullscreenElement) document.exitFullscreen(); else (host.requestFullscreen ? host : root).requestFullscreen().catch(() => {}); } catch (e) {} }
@@ -1060,7 +1136,7 @@
     cv.addEventListener('pointerup', up); cv.addEventListener('pointercancel', up);
     cv.addEventListener('contextmenu', e => e.preventDefault());
     pad.addEventListener('pointerdown', e => { const b = e.target.closest('button'); if (!b) return; e.preventDefault(); sfx.unlock(); if (b.dataset.a === 'dash') dash(); if (b.dataset.a === 'smoke') smoke(); });
-    document.addEventListener('visibilitychange', () => { if (document.hidden) pause(); });
+    document.addEventListener('visibilitychange', () => { if (document.hidden) pause(); sfx.suspend(document.hidden); });
 
     /* ───────── loop ───────── */
     let last = 0;
@@ -1068,6 +1144,12 @@
       const dt = Math.min(.05, (ts - last) / 1000 || 0); last = ts;
       if (mode === 'play' || mode === 'duel' || mode === 'cine') { update(dt); stepParticles(dt); } else time += dt;
       if (run && pad) { const bb = pad.querySelector('[data-v=bombs]'); if (bb) bb.textContent = run.bombs; }
+      /* music follows the action */
+      const mscene = mode === 'menu' || mode === 'upgrades' ? 'menu' : mode === 'over' ? 'over' : mode === 'pause' ? 'pause' : mode === 'duel' ? 'duel' : mode === 'cine' ? 'cine' : 'play';
+      sfx.scene(mscene);
+      let ten = .1;
+      if (mode === 'duel') ten = 1; else if (mode === 'play' && guards) { ten = .15; for (const g of guards) if (g.alive) ten = Math.max(ten, g.state === 'hunt' ? 1 : g.det * .9, g.state === 'investigate' || g.state === 'suspicious' ? .45 : 0); if (alarmT > 0) ten = 1; }
+      sfx.tension(ten);
       render();
       requestAnimationFrame(frame);
     }
