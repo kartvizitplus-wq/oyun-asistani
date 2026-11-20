@@ -3,12 +3,12 @@
 const fs = require('fs'), path = require('path');
 const R = p => path.join(__dirname, p);
 const read = p => JSON.parse(fs.readFileSync(R(p), 'utf8'));
-const cfg = read('config.json'), I18N = read('src/i18n.json'), ITEMS_TR = read('data/mlbb-items-tr.json'), GUIDE = read('src/guide.json');
+const cfg = read('config.json'), I18N = read('src/i18n.json'), ITEMS_TR = read('data/mlbb-items-tr.json'), GUIDE = read('src/guide.json'), CG = read('src/colorgame.json');
 const Engine = require('./src/engine.js'), Icons = require('./src/icons.js');
 const OUT = R('dist');
 /* Cache-busting: asset URLs carry a hash of their content so browsers never mix old and new scripts. */
 const crypto = require('crypto');
-const VER = Object.fromEntries(['style.css', 'app.js', 'engine.js', 'icons.js'].map(f => [f, crypto.createHash('md5').update(fs.readFileSync(R('src/' + f))).digest('hex').slice(0, 8)]));
+const VER = Object.fromEntries(['style.css', 'app.js', 'engine.js', 'icons.js', 'colorgame.js'].map(f => [f, crypto.createHash('md5').update(fs.readFileSync(R('src/' + f))).digest('hex').slice(0, 8)]));
 const asset = f => `/assets/${f}?v=${VER[f]}`;
 
 /* Games shown on the site. kind: moba (heroes + items), bs (Brawl Stars), ff (Free Fire). */
@@ -394,6 +394,57 @@ ${G.sections.map((sec, i) => `<h2 id="s${i + 1}">${esc(sec.h)}</h2><ol>${sec.ste
 <div class="bar">${GAMES.map(gm => `<a class="btn ghost" href="/${lang}/${gm.slug}/">${esc(gm.name)}</a>`).join('')}</div>`
   }));
 
+  /* Color Gradient: a small hue-sorting puzzle (standalone page, own script). */
+  {
+    const C = CG[lang] || CG.en, rel = `${lang}/color-gradient/`;
+    const ui = { tile: C.tile, pinned: C.pinned, solvedIn: C.solvedIn };
+    write(`${rel}index.html`, layout({
+      lang, rel, title: `${C.title} · ${cfg.siteName}`, desc: C.desc, lastmod: '2026-11-20',
+      crumbs: [[t.home, `${lang}/`], [C.name, rel]],
+      jsonld: { '@context': 'https://schema.org', '@type': 'VideoGame', name: C.name, description: C.desc, url: `${base}/${rel}`, inLanguage: lang,
+        genre: 'Puzzle', gamePlatform: 'Web browser', applicationCategory: 'Game', operatingSystem: 'Any', isAccessibleForFree: true,
+        publisher: { '@type': 'Organization', name: cfg.siteName, url: `${base}/` } },
+      body: `<section><h1>${esc(C.h1)}</h1><p class="lead">${esc(C.intro)}</p></section>
+<section id="cg" class="cg card" data-t="${esc(JSON.stringify(ui))}">
+<div class="cg-bar"><span>${esc(C.level)} <b data-v="level">1</b></span><span>${esc(C.moves)} <b data-v="moves">0</b></span><span>${esc(C.best)} <b data-v="best">–</b></span></div>
+<div class="cg-wrap"><div class="cg-board" role="grid" aria-label="${esc(C.name)}"></div>
+<div class="cg-win" hidden><h3>${esc(C.solved)}</h3><p></p><button type="button" class="btn" data-a="continue">${esc(C.continue)}</button></div></div>
+<div class="cg-ctl"><button type="button" class="btn ghost" data-a="prev" aria-label="${esc(C.prev)}">←</button><button type="button" class="btn ghost" data-a="hint">${esc(C.hint)}</button><button type="button" class="btn ghost" data-a="restart">${esc(C.restart)}</button><button type="button" class="btn ghost" data-a="next" aria-label="${esc(C.next)}">→</button></div>
+<noscript><p class="note">JavaScript is required to play.</p></noscript>
+</section>
+<article class="prose"><h2>${esc(C.howH)}</h2><ol>${C.how.map(x => `<li>${esc(x)}</li>`).join('')}</ol>
+<h2>${esc(C.tipsH)}</h2><ul>${C.tips.map(x => `<li>${esc(x)}</li>`).join('')}</ul>
+<h2>${esc(C.aboutH)}</h2><p>${esc(C.about)}</p></article>
+<style>
+.cg{gap:14px;align-items:center}
+.cg-bar{display:flex;gap:18px;justify-content:center;font-family:var(--display);color:var(--muted);flex-wrap:wrap}
+.cg-bar b{color:var(--fg);font-size:1.15rem;margin-left:4px}
+.cg-wrap{position:relative;width:100%;max-width:520px}
+.cg-board{display:grid;grid-template-columns:repeat(var(--cols),1fr);gap:3px;touch-action:none;user-select:none;-webkit-user-select:none}
+.cg-t{aspect-ratio:1;border:0;border-radius:6px;padding:0;cursor:grab;position:relative;transition:transform .12s ease,box-shadow .12s ease}
+.cg-board.tube .cg-t{aspect-ratio:.42;border-radius:10px}
+.cg-t.pin{cursor:default}
+.cg-t.pin::after{content:"";position:absolute;left:50%;top:50%;width:7px;height:7px;margin:-3.5px;border-radius:50%;background:rgba(0,0,0,.45);box-shadow:0 0 0 2px rgba(255,255,255,.5)}
+.cg-t.sel{transform:scale(.86);box-shadow:0 0 0 3px var(--fg)}
+.cg-t:focus-visible{outline:3px solid var(--gold);outline-offset:1px}
+.cg-t.pop{animation:cgpop .22s ease}
+.cg-t.hint{animation:cghint 1.2s ease 2}
+.cg-board.won .cg-t{animation:cgwin .7s ease}
+@keyframes cgpop{50%{transform:scale(1.1)}}
+@keyframes cghint{50%{box-shadow:0 0 0 4px var(--gold);transform:scale(.9)}}
+@keyframes cgwin{40%{transform:scale(.92)}}
+.cg-win{position:absolute;inset:0;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:8px;text-align:center;background:rgba(10,14,22,.78);border-radius:10px;padding:16px}
+.cg-win[hidden]{display:none}
+.cg-win p{margin:0;color:var(--muted)}
+.cg-ctl{display:flex;gap:6px;justify-content:center}
+.cg-ctl .btn{padding:10px 12px;font-size:.88rem;white-space:nowrap}
+.cg-ctl .btn:disabled{opacity:.4;cursor:default}
+@media (prefers-reduced-motion:reduce){.cg-t,.cg-t.pop,.cg-t.hint,.cg-board.won .cg-t{animation:none;transition:none}}
+</style>
+<script src="${asset('colorgame.js')}" defer></script>`
+    }));
+  }
+
   /* Privacy, About & Contact */
   const PRIVACY_DATE = '2026-10-22';
   // email_off: Cloudflare Email Obfuscation must not hide the address from visitors without JS, reviewers and crawlers
@@ -419,7 +470,7 @@ var n=(s||navigator.language||'en').slice(0,2).toLowerCase();location.replace('/
 ${cfg.langs.map(l => `<a style="color:#e8b44a;margin-right:12px" href="/${l}/">${esc(I18N[l].langName)}</a>`).join('')}
 </body></html>`);
 fs.mkdirSync(path.join(OUT, 'assets'), { recursive: true });
-for (const f of ['style.css', 'app.js', 'engine.js', 'icons.js']) fs.copyFileSync(R('src/' + f), path.join(OUT, 'assets', f));
+for (const f of ['style.css', 'app.js', 'engine.js', 'icons.js', 'colorgame.js']) fs.copyFileSync(R('src/' + f), path.join(OUT, 'assets', f));
 if (fs.existsSync(R('static'))) fs.cpSync(R('static'), OUT, { recursive: true });
 fs.writeFileSync(path.join(OUT, 'manifest.webmanifest'), JSON.stringify({
   name: cfg.siteName + ' – ' + I18N.en.tagline, short_name: cfg.siteName, start_url: '/', scope: '/', display: 'standalone',

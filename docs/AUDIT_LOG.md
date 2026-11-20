@@ -2,6 +2,11 @@
 
 Technical SEO, AI visibility, usability and ad-readiness checks. Content (patch news, guides) is handled by the weekly bot (UPDATING.md).
 
+## 2026-11-20 (owner request)
+**Added:** Color Gradient, a small hue-sorting puzzle game, as a new standalone page in 5 languages: `/en|tr|id|es|pt/color-gradient/` (own script `src/colorgame.js`, texts `src/colorgame.json`, styles inline on the page). Owner asked for it explicitly, as an exception to "no new page types".
+**Not changed:** no existing page, title, menu, footer or internal link was touched; the build diff vs. before is only the 5 new pages, `assets/colorgame.js` and 5 new sitemap entries. The page is reachable via the sitemap only until the owner decides whether to link it.
+**Checked:** `node build.js` (2,960 pages); headless play-test at 390 px and 1280 px: levels 1–9 solved, drag and tap-to-swap work, progress survives reload, no horizontal scroll, no JS errors, all 5 languages load.
+
 ## 2026-11-09 (maintenance bot)
 **Checked:** `node build.js` (2,955 pages, OK); static audit (0 broken internal links, JSON-LD valid, canonical everywhere except 404, no undefined/NaN); live = build (robots.txt, sitemap, llms.txt, ads.txt identical); all 2,955 sitemap URLs 200 (incl. today's Brawl Stars November article); real 404; headless 360 px on EN/TR homes and 10 random hero/brawler/news pages in 4 languages: no overflow, canonical = URL, no JS errors.
 **Monday Google re-read:** not done this run: WebFetch was blocked by an unanswered permission prompt for all six pages (no workaround used). POLICY.md left as reviewed on 2026-11-02; retry next Monday.
