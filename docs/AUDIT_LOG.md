@@ -98,3 +98,6 @@ Technical SEO, AI visibility, usability and ad-readiness checks. Content (patch 
 
 ## 2026-11-20 – Palmera Heat
 - Added Palmera Heat (/:lang/palmera-heat/): original top-down open-world crime game (GTA-style genre, own city/characters/story, 8 missions, police wanted system, radio). Featured on the home page. Page text names GTA only descriptively, with a non-affiliation note.
+
+## 2026-11-20 – İstanbul Heat (3D)
+- /:lang/palmera-heat/ now hosts İstanbul Heat: 3D open-world game (three.js r187 MIT, bundled as assets/three.min.js) on a stylised Istanbul map. Slug kept so the URL already sent to Search Console stays valid. src/palmera.js (2D) removed.

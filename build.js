@@ -10,7 +10,7 @@ const Engine = require('./src/engine.js'), Icons = require('./src/icons.js');
 const OUT = R('dist');
 /* Cache-busting: asset URLs carry a hash of their content so browsers never mix old and new scripts. */
 const crypto = require('crypto');
-const VER = Object.fromEntries(['style.css', 'app.js', 'engine.js', 'icons.js', 'colorgame.js', 'nightdrop.js', 'moba.js', 'chibi.js', 'redscarf.js', 'home.js', 'palmera.js'].map(f => [f, crypto.createHash('md5').update(fs.readFileSync(R('src/' + f))).digest('hex').slice(0, 8)]));
+const VER = Object.fromEntries(['style.css', 'app.js', 'engine.js', 'icons.js', 'colorgame.js', 'nightdrop.js', 'moba.js', 'chibi.js', 'redscarf.js', 'home.js', 'istanbul.js', 'three.min.js'].map(f => [f, crypto.createHash('md5').update(fs.readFileSync(R('src/' + f))).digest('hex').slice(0, 8)]));
 const asset = f => `/assets/${f}?v=${VER[f]}`;
 
 /* Games shown on the site. kind: moba (heroes + items), bs (Brawl Stars), ff (Free Fire). */
@@ -39,9 +39,9 @@ const COVER = {
   'duel-peak': '<rect width="320" height="180" fill="#1a1a2e"/><path d="M30 160 L290 20" stroke="#3d3550" stroke-width="34"/><path d="M-10 -10 L330 190" stroke="#1b2f55" stroke-width="16" opacity=".8"/><circle cx="135" cy="104" r="14" fill="#a48bff" stroke="#4a9bea" stroke-width="4"/><circle cx="185" cy="77" r="14" fill="#ff5fa2" stroke="#e2595b" stroke-width="4"/><path d="M152 95 L170 86" stroke="#fff" stroke-width="3"/><rect x="72" y="128" width="16" height="16" fill="#4a9bea"/><rect x="232" y="36" width="16" height="16" fill="#e2595b"/>',
   'color-gradient': Array.from({ length: 40 }, (_, i) => { const x = i % 8, y = Math.floor(i / 8); return `<rect x="${12 + x * 37}" y="${8 + y * 33}" width="34" height="30" rx="4" fill="hsl(${200 + x * 14 - y * 9} ${55 + y * 6}% ${72 - y * 9 - x * 2}%)"/>`; }).join('') + '<circle cx="29" cy="23" r="4" fill="#0006"/><circle cx="288" cy="155" r="4" fill="#0006"/>'
 };
-COVER['palmera-heat'] = '<defs><linearGradient id="phs" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#1a0b3b"/><stop offset=".55" stop-color="#7a1f6a"/><stop offset=".72" stop-color="#ff6a4d"/><stop offset=".73" stop-color="#2a0d3a"/><stop offset="1" stop-color="#090616"/></linearGradient><linearGradient id="phu" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#ffe36b"/><stop offset="1" stop-color="#ff3f8e"/></linearGradient></defs><rect width="320" height="180" fill="url(#phs)"/><circle cx="160" cy="131" r="46" fill="url(#phu)"/><rect x="0" y="131" width="320" height="49" fill="#120624"/><path d="M0 131h22v-30h18v30h14v-48h20v48h10v-22h24v22h70v-40h16v40h12v-60h22v60h14v-26h20v26h56" fill="#12061f"/><path d="M160 131L60 180M160 131L260 180M160 131L120 180M160 131L200 180M0 150h320M0 165h320" stroke="#ff4fa0" stroke-width="1.2" opacity=".6"/><path d="M28 180q8-70 30-120M60 60q-30-8-50 6M60 60q-14-26-40-26M60 60q20-24 46-14M60 60q30 4 40 26" stroke="#09040f" stroke-width="6" fill="none" stroke-linecap="round"/>';
+COVER['palmera-heat'] = '<defs><linearGradient id="ihs" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#2a1640"/><stop offset=".6" stop-color="#e2634a"/><stop offset=".72" stop-color="#ffb26b"/></linearGradient><linearGradient id="ihw" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#3a3f6a"/><stop offset="1" stop-color="#0d1630"/></linearGradient></defs><rect width="320" height="180" fill="url(#ihs)"/><circle cx="250" cy="112" r="20" fill="#ffd9a0" opacity=".85"/><rect y="118" width="320" height="62" fill="url(#ihw)"/><path d="M0 118h40v-10h12v10h18v-16h14v16h236" fill="#1a0f22"/><g fill="#1a0f22"><path d="M44 118v-14h52v14z"/><path d="M48 104a22 22 0 0 1 44 0z"/><circle cx="70" cy="80" r="2"/><rect x="40" y="62" width="3" height="56"/><rect x="97" y="62" width="3" height="56"/><path d="M40 62l1.5-8 1.5 8zM97 62l1.5-8 1.5 8z"/><rect x="30" y="78" width="2.5" height="40"/><rect x="108" y="78" width="2.5" height="40"/><path d="M128 118v-30h8v30zM127 88l5-14 5 14z"/></g><path d="M150 112L320 112" stroke="#d8d4e8" stroke-width="2"/><path d="M196 112V54M282 112V54" stroke="#e8e6f2" stroke-width="3"/><path d="M150 106Q173 60 196 54Q239 104 282 54Q300 62 320 80" stroke="#ff4fa0" stroke-width="1.6" fill="none"/><path d="M0 140h320M0 158h320" stroke="#ffffff" stroke-opacity=".08"/><path d="M60 150h60l-6 6h-48z" fill="#f2f2f2"/><rect x="82" y="142" width="16" height="8" fill="#f2f2f2"/><rect x="88" y="136" width="3" height="6" fill="#f2c230"/>';
 COVER['red-scarf'] = '<rect width="320" height="180" fill="#050508"/><path d="M0 40h120v30H60v70H0zM200 0h30v110h90v30H200z" fill="#26262f"/><path d="M150 120 L300 60 L300 170 Z" fill="#ff2d48" opacity=".18"/><circle cx="150" cy="120" r="14" fill="#4a5a6a" stroke="#15121c" stroke-width="3"/><ellipse cx="150" cy="108" rx="20" ry="7" fill="#c9a25e"/><circle cx="95" cy="125" r="13" fill="#101016" stroke="#d4142e" stroke-width="3"/><rect x="98" y="120" width="12" height="5" rx="2" fill="#e8c4a0"/><path d="M83 128 q-20 4 -34 -2 M83 132 q-18 10 -30 8" stroke="#d4142e" stroke-width="5" fill="none" stroke-linecap="round"/><circle cx="260" cy="30" r="12" fill="#d8dde8" opacity=".8"/>';
-const ACCENT = { 'palmera-heat': '#ff4fa0', 'red-scarf': '#ff2d48', 'night-drop': '#2ef2ff', 'crown-clash': '#5aa7ff', 'jade-lanes': '#3fbf8f', 'duel-peak': '#ff8a3d', 'color-gradient': '#b48cff' };
+const ACCENT = { 'palmera-heat': '#e30a17', 'red-scarf': '#ff2d48', 'night-drop': '#2ef2ff', 'crown-clash': '#5aa7ff', 'jade-lanes': '#3fbf8f', 'duel-peak': '#ff8a3d', 'color-gradient': '#b48cff' };
 const NEW_LBL = { en: 'New', tr: 'Yeni', id: 'Baru', es: 'Nuevo', pt: 'Novo' };
 /* Story block shown at the top of each game's text */
 const storyBlock = (lang, slug) => { const st = (STORY[lang] || STORY.en)[slug]; return st && st.story ? `<h2>${esc(RS[lang].storyH)}</h2>${st.story.map(p => `<p>${esc(p)}</p>`).join('')}` : ''; };
@@ -502,7 +502,7 @@ ${G.sections.map((sec, i) => `<h2 id="s${i + 1}">${esc(sec.h)}</h2><ol>${sec.ste
     }));
   }
 
-  /* Palmera Heat – original top-down open-world crime story (GTA-style genre). */
+  /* İstanbul Heat (slug kept as palmera-heat) – original 3D open-world crime story on a stylised Istanbul map. */
   {
     const R = PH[lang] || PH.en, rel = `${lang}/palmera-heat/`;
     const li = a => a.map(x => `<li>${esc(x)}</li>`).join('');
@@ -510,11 +510,11 @@ ${G.sections.map((sec, i) => `<h2 id="s${i + 1}">${esc(sec.h)}</h2><ol>${sec.ste
       lang, rel, active: 'palmera-heat', title: R.title, desc: R.desc, lastmod: '2026-11-20',
       crumbs: [[t.home, `${lang}/`], [R.name, rel]],
       jsonld: [{ '@context': 'https://schema.org', '@type': 'VideoGame', name: R.name, description: R.desc, url: `${base}/${rel}`, inLanguage: lang,
-        genre: ['Open world', 'Action', 'Driving'], gamePlatform: 'Web browser', applicationCategory: 'Game', operatingSystem: 'Any', isAccessibleForFree: true, playMode: 'SinglePlayer',
+        genre: ['Open world', 'Action', 'Driving', '3D'], gamePlatform: 'Web browser', applicationCategory: 'Game', operatingSystem: 'Any', isAccessibleForFree: true, playMode: 'SinglePlayer',
         offers: { '@type': 'Offer', price: '0', priceCurrency: 'USD' }, publisher: { '@type': 'Organization', name: cfg.siteName, url: `${base}/` } },
         { '@context': 'https://schema.org', '@type': 'FAQPage', mainEntity: R.faq.map(([q, a]) => ({ '@type': 'Question', name: q, acceptedAnswer: { '@type': 'Answer', text: a } })) }],
       body: `<section><h1>${esc(R.h1)}</h1><p class="lead">${esc(R.intro)}</p></section>
-<section class="ph"><div class="ph-host" id="phHost"></div><noscript><p class="note">JavaScript is required to play.</p></noscript></section>
+<section class="ph"><div class="ph-host" id="phHost"></div><div class="ph-bar"><button class="btn ghost" type="button" onclick="var h=document.getElementById('phHost');(h.requestFullscreen||h.webkitRequestFullscreen).call(h)">⛶ ${{ tr: 'Tam ekran', en: 'Fullscreen', es: 'Pantalla completa', pt: 'Tela cheia', id: 'Layar penuh' }[lang]}</button></div><noscript><p class="note">JavaScript is required to play.</p></noscript></section>
 <article class="prose"><h2>${esc(R.storyH)}</h2>${R.story.map(x => `<p>${esc(x)}</p>`).join('')}
 <h2>${esc(R.missionsH)}</h2><ol>${li(R.missions)}</ol>
 <h2>${esc(R.howH)}</h2><ol>${li(R.how)}</ol>
@@ -524,9 +524,11 @@ ${G.sections.map((sec, i) => `<h2 id="s${i + 1}">${esc(sec.h)}</h2><ol>${sec.ste
 <h2>${esc(R.faqH)}</h2>${R.faq.map(([q, a]) => `<h3>${esc(q)}</h3><p>${esc(a)}</p>`).join('')}
 <h2>${esc(R.aboutH)}</h2><p>${esc(R.about)}</p></article>
 <style>
-.ph-host{position:relative;width:100%;height:min(80vh,700px);min-height:420px;border:1px solid #ff4fa066;border-radius:12px;overflow:hidden;background:#090616;box-shadow:0 0 70px -20px #ff4fa0}
+.ph-host{position:relative;width:100%;height:min(82vh,720px);min-height:420px;border:1px solid #e30a1766;border-radius:12px;overflow:hidden;background:#0b0d18;box-shadow:0 0 70px -20px #e30a17}
+.ph-host:fullscreen{height:100%;border:0;border-radius:0}
+.ph-bar{display:flex;justify-content:flex-end;margin-top:8px}
 </style>
-<script src="${asset('palmera.js')}"></script><script>PalmeraHeat.mount(document.getElementById('phHost'), { lang: '${lang}' });</script>`
+<script src="${asset('three.min.js')}"></script><script src="${asset('istanbul.js')}"></script><script>IstanbulHeat.mount(document.getElementById('phHost'), { lang: '${lang}' });</script>`
     }));
   }
 
@@ -685,7 +687,7 @@ var n=(s||navigator.language||'en').slice(0,2).toLowerCase();location.replace('/
 ${cfg.langs.map(l => `<a style="color:#e8b44a;margin-right:12px" href="/${l}/">${esc(I18N[l].langName)}</a>`).join('')}
 </body></html>`);
 fs.mkdirSync(path.join(OUT, 'assets'), { recursive: true });
-for (const f of ['style.css', 'app.js', 'engine.js', 'icons.js', 'colorgame.js', 'nightdrop.js', 'moba.js', 'chibi.js', 'redscarf.js', 'home.js', 'palmera.js']) fs.copyFileSync(R('src/' + f), path.join(OUT, 'assets', f));
+for (const f of ['style.css', 'app.js', 'engine.js', 'icons.js', 'colorgame.js', 'nightdrop.js', 'moba.js', 'chibi.js', 'redscarf.js', 'home.js', 'istanbul.js', 'three.min.js']) fs.copyFileSync(R('src/' + f), path.join(OUT, 'assets', f));
 if (fs.existsSync(R('static'))) fs.cpSync(R('static'), OUT, { recursive: true });
 fs.writeFileSync(path.join(OUT, 'manifest.webmanifest'), JSON.stringify({
   name: cfg.siteName + ' – ' + SITE.en.tagline, short_name: cfg.siteName, start_url: '/', scope: '/', display: 'standalone',

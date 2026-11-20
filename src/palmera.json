@@ -1,64 +1,73 @@
 {
  "tr": {
-  "name": "Palmera Heat",
-  "genre": "Açık dünya",
-  "teaser": "Bir şehir, bir borç ve hiç konuşmayan bir şoför.",
-  "card": "Araba çal, polisten kaç, 8 görevlik suç hikâyesini bitir.",
-  "title": "Palmera Heat – GTA Tarzı Ücretsiz Açık Dünya Oyunu, Tarayıcıda Oyna",
-  "desc": "GTA tarzı açık dünya suç oyunu tarayıcında: araba çal, polisten kaç, 8 hikâye görevini bitir. Ücretsiz, indirme yok; bilgisayarda ve telefonda oynanır.",
-  "h1": "Palmera Heat: GTA tarzı açık dünya suç oyunu",
-  "intro": "Palmera körfez şehri senin. İstediğin arabaya atla, radyoyu aç; Ocean Strip'in neon otellerinden Port Mangrove'un konteyner labirentine kadar sür. Polis peşine düşerse 5 yıldızlı aranma sisteminde helikopter bile gelir. İndirmeden, üye olmadan hemen oyna.",
+  "name": "İstanbul Heat",
+  "genre": "3D açık dünya",
+  "teaser": "İki kıtada bir şehir, bir borç ve hiç konuşmayan bir şoför.",
+  "card": "3D İstanbul'da araba, tekne ve helikopter kullan, Boğaz'da yüz, polisten kaç.",
+  "title": "İstanbul Heat – GTA Tarzı 3D Açık Dünya Oyunu, İstanbul Haritası, Ücretsiz Oyna",
+  "desc": "GTA tarzı 3D açık dünya oyunu İstanbul'da geçiyor: Boğaz Köprüsü, Galata, Kız Kulesi, vapurlar. Araba, tekne ve helikopter kullan, yüz, polisten kaç. Ücretsiz, indirme yok.",
+  "h1": "İstanbul Heat: İstanbul haritasında GTA tarzı 3D açık dünya oyunu",
+  "intro": "Boğaz'ın iki yakası senin. Avrupa yakasında Levent kulelerinden Tarihi Yarımada'nın camilerine sür, Boğaz Köprüsü'nden Anadolu yakasına geç, Karaköy'den tekneye atla ya da denize atlayıp yüz. Helikopterle şehrin üstünde uç. Polis peşine düşerse 5 yıldızlı aranma sisteminde helikopter ve sahil güvenlik bile gelir. İndirmeden, üye olmadan tarayıcında oyna.",
   "storyH": "Hikâye",
   "story": [
-   "Rook Navarro, Palmera County cezaevinde dört yıl yattı. Suç onun değildi: dedektif Wade Harlan bir soygunu onun üstüne yıktı. Kapıdan çıktığı gün kız kardeşi Ines'ten kötü haber gelir. Rook'un eski borcu yüzünden Gator Flats'teki garaja el konulmak üzeredir.",
-   "Borcu liman kraliçesi Coral Vasquez satın almıştır: elli bin dolar. Rook ödemek için Coral'a çalışır. Kanaldan paket toplar, polis peşindeyken kaçak minibüs taşır, Glass Heights kulesinden çıkan kara para aklayıcısı Vinnie Glass'ın Phantom'unu hurdaya çevirir.",
-   "Vinnie'nin çantasındaki rozet numarası her şeyi değiştirir: Coral ile Harlan ortaktır. Son görevde Rook, Harlan'ın rüşvet defterini güney iskelesinde bekleyen basına ulaştırmaya çalışır. Peşinde dört yıldız, tepesinde bir helikopter vardır."
+   "Kerem Yalçın dört yılını cezaevinde geçirdi. Suç onun değildi: Komiser Harun Demir bir soygunu onun üstüne yıktı. Kapıdan çıktığı gün kız kardeşi Ela'dan kötü haber gelir. Kerem'in eski borcu yüzünden Kasımpaşa'daki oto boya garajına el konulmak üzeredir.",
+   "Borcu Karaköy rıhtımlarının sahibi Mercan Sarıca satın almıştır: elli bin dolar. Kerem ödemek için Mercan'a çalışır. Boğaz'dan paket toplar, polis peşindeyken Haydarpaşa'dan Levent'e kaçak minibüs taşır, kara para aklayıcısı Cem Camcı'nın arabasını hurdaya çevirir.",
+   "Cem'in çantasındaki rozet numarası her şeyi değiştirir: Mercan ile Komiser Harun ortaktır. Son görevde Kerem, Harun'un rüşvet defterini Kız Kulesi'nde bekleyen basına ulaştırmaya çalışır. Peşinde dört yıldız, tepesinde bir helikopter vardır."
   ],
   "missionsH": "8 hikâye görevi",
   "missions": [
-   "Kafesten Çıkış: cezaevinden çık, bir araba kap ve Ines'in garajına sür.",
-   "Boya İşi: Ocean Strip'teki sarı Vesper GT'yi çal, hasarsız getir.",
-   "Tuzlu Su: süre bitmeden kanal boyundaki 5 paketi topla.",
-   "Sıcak Kargo: kaçak minibüsü al, polisi ek, depoya teslim et.",
-   "Cam Çene: Vinnie Glass'ın Phantom'unu kovala, hurdaya çevir, çantayı kap.",
-   "Bataklık Fareleri: garajı basan Gator Boys çetesini temizle.",
-   "Defter Koşusu: 6 kontrol noktasından süre bitmeden geç.",
-   "Palmera Ateşi: Harlan'ın takip aracını durdur, defteri iskeleye götür."
+   "Kafesten Çıkış: cezaevinden çık, bir araba kap ve Kasımpaşa'daki garaja sür.",
+   "Boya İşi: Bebek sahilindeki sarı spor arabayı çal, hasarsız getir.",
+   "Tuzlu Su: Boğaz'da yüzen 5 paketi tekneyle ya da yüzerek topla.",
+   "Sıcak Kargo: Haydarpaşa'daki minibüsü al, polisi ek, Levent'teki depoya götür.",
+   "Cam Çene: Cem Camcı'nın gümüş arabasını kovala, hurdaya çevir, çantayı kap.",
+   "Balat Kurtları: Haliç kıyısında saklanan çeteyi temizle.",
+   "Defter Koşusu: Boğaz Köprüsü üzerinden 6 kontrol noktasını süre bitmeden geç.",
+   "İstanbul Heat: Komiser Harun'un arabasını durdur, defteri Kız Kulesi'ne götür."
   ],
   "howH": "Nasıl oynanır?",
   "how": [
-   "Yürümek ve sürmek için WASD ya da ok tuşlarını kullan. Telefonda sol başparmağınla yön verirsin.",
-   "Arabaya binmek için yanına git ve F'ye bas (telefonda 🚗). Dolu bir arabayı çalarsan sürücü kaçar; polis görürse aranırsın.",
-   "Fareyle nişan al, tıklayarak ateş et. Telefonda 🔫 tuşu en yakın hedefe kendiliğinden nişan alır.",
-   "Pembe işaret sıradaki hikâye görevidir. Mor GPS çizgisi seni hedefe götürür. M ile haritayı açıp istediğin yere işaret koyabilirsin.",
-   "Suç işledikçe aranma yıldızların 1'den 5'e çıkar. Polislerin görüş alanından çıkıp bir süre saklanırsan yıldızlar söner. Ines'in garajında arabayı boyatırsan anında temize çıkarsın."
+   "WASD ile yürü, koş ve sür. Fareyle etrafa bak; ekrana tıklayınca fare kilitlenir.",
+   "Araca binmek için yanına git ve F'ye bas. Araba, tekne ve helikopter aynı tuşla kullanılır.",
+   "Sol tıkla ateş et, sağ tıkla omuz üstünden nişan al. Silahları Q/E ya da fare tekerleğiyle değiştir.",
+   "Denize girince yüzersin. Arabayla denize düşersen araba batar, sen yüzerek çıkarsın.",
+   "Helikopterde Boşluk yükseltir, C alçaltır, W/S ileri-geri, A/D döndürür.",
+   "Pembe işaret sıradaki görev. Haritadaki mor çizgi yolu gösterir; M ile büyük haritayı açıp istediğin yere hedef koyabilirsin.",
+   "Suç işledikçe aranma yıldızların artar. Polisin görüş alanından çıkıp saklanırsan yıldızlar söner; Ela'nın garajında boyatırsan anında temizlenirsin."
   ],
   "featH": "Oyunda neler var?",
   "feats": [
-   "Altı bölgeli kesintisiz bir şehir: Little Palmera, Glass Heights, Ocean Strip, Kanal Bölgesi, Gator Flats ve Port Mangrove.",
-   "9 araç tipi var: sedan, taksi, spor araba, muscle car, minibüs, pikap, polis arabası, takip aracı ve Phantom. Her birinin hızı, yol tutuşu ve dayanıklılığı farklı; el freniyle drift atılır.",
-   "Gece-gündüz döngüsü: akşamüstü gün batımı, gece farlar, sokak lambaları ve neon tabelalar.",
-   "İki radyo kanalı var: Palmera Wave 101.5 (synthwave) ve Gator Funk 88.1. Müzik ve sirenler oyunun içinde üretiliyor.",
-   "Silahlar: yumruk, tabanca, makineli ve pompalı. Bullet Bay Guns dükkânında mermi ve zırh satılıyor.",
-   "İlerlemen tarayıcına kaydedilir; kaldığın görevden devam edersin."
+   "Stilize ama tanıdık bir İstanbul: Boğaz, Haliç ve Marmara; Avrupa ve Anadolu yakası; Levent, Beşiktaş, Beyoğlu, Tarihi Yarımada, Balat, Üsküdar, Kadıköy ve Beylerbeyi.",
+   "Simgeler: altı minareli büyük cami, Ayasofya benzeri kubbe, Süleymaniye silueti, Galata Kulesi, Kız Kulesi, Dolmabahçe, Haydarpaşa ve gece renk değiştiren ışıklarıyla iki Boğaz köprüsü.",
+   "Taşıtlar: sarı taksi, sedan, spor araba, minibüs, polis arabası, sürat teknesi ve helikopter. Boğaz'da gidip gelen vapurlar.",
+   "Yüzme, zıplama, köprüden denize atlama ve çarpışmalarla hasar alan araçlar.",
+   "Gece-gündüz döngüsü: gün batımı, yanan pencereler, sokak lambaları, martılar ve dalgalanan Türk bayrakları.",
+   "Silahlar: yumruk, tabanca, makineli ve tüfek. Silahçıdan mermi ve zırh alınır.",
+   "İki radyo kanalı: Boğaz FM 101.5 ve Haliç Funk 88.1. Bütün müzik ve sesler oyunun içinde üretilir.",
+   "İlerlemen tarayıcına kaydedilir; telefonda dokunmatik kontroller vardır."
   ],
   "ctrlH": "Kontroller",
   "ctrl": [
-   "Bilgisayar: WASD ile yürü ya da sür, fareyle nişan al ve tıklayarak ateş et. F arabaya biner/iner, Shift koşturur, Boşluk el frenidir, Q/E silah değiştirir, R radyoyu, M haritayı açar, P duraklatır, H korna çalar.",
-   "Telefon: sol tarafa dokunup sürükleyerek yürü ya da sür. Sağdaki tuşlar: 🔫 ateş (araçta el freni), 🚗 bin/in, ⇄ silah, 🗺 harita, 📻 radyo."
+   "Bilgisayar: WASD hareket, fare bakış, sol tık ateş, sağ tık nişan, F bin/in, Shift koş, Boşluk zıpla / el freni / helikopteri yükselt, C helikopteri alçalt, Q/E silah, R radyo, M harita, P duraklat, H korna.",
+   "Telefon: sol tarafta sürükleyerek yürü ya da sür, sağ tarafı sürükleyerek etrafa bak. Tuşlar: 🔫 ateş (otomatik nişan), 🚗 bin/in, ⤒ zıpla, ⇄ silah, 🗺 harita, 📻 radyo.",
+   "Telefonun ısınırsa ya da oyun yavaşsa menüdeki \"Grafik: hızlı\" ayarını seç."
   ],
   "tipsH": "İpuçları",
   "tips": [
-   "Polisi ekmenin en hızlı yolu görüş hattını kesmek: ara sokaklara ve binaların arkasına sap.",
-   "Spor arabalar hızlı ama dayanıksız. Kovalamaca görevlerinde minibüs ya da pikapla çarpmak daha çok hasar verir.",
-   "Cam Çene görevinde Phantom'a yandan çarparsan daha çabuk durur.",
-   "Hastane ve kefalet ücretleri paranın bir kısmını götürür. Görevlerden önce zırh almak iyi fikirdir."
+   "Polisi ekmenin en hızlı yolu görüş hattını kesmek: ara sokağa sap ya da denize atla. Suda sahil güvenlik gelir, dikkat.",
+   "Tuzlu Su görevinde Karaköy iskelesindeki tekne yüzmekten çok daha hızlıdır.",
+   "Köprüde yüksek hızda yan duvara sürtmek hasar verir; düz git.",
+   "Helikopter pistleri Beşiktaş ve Üsküdar tarafında, haritada sarı noktalar."
   ],
   "faqH": "Sık sorulan sorular",
   "faq": [
    [
-    "Palmera Heat, GTA 6 mı?",
-    "Hayır. Palmera Heat, GTA serisinin tarzında (yukarıdan bakışlı açık dünya, araba çalma, aranma yıldızları) PickRadar'ın sıfırdan yaptığı bağımsız bir oyundur. Şehri, karakterleri ve hikâyesi tamamen bize aittir."
+    "İstanbul Heat, GTA 6 mı?",
+    "Hayır. İstanbul Heat, GTA serisinin tarzında (üçüncü şahıs açık dünya, araç çalma, aranma yıldızları) PickRadar'ın sıfırdan yaptığı bağımsız bir oyundur. Karakterleri ve hikâyesi bize aittir; GTA 5 ya da GTA 6'nın bütün özellikleri yoktur."
+   ],
+   [
+    "Gerçek İstanbul haritası mı?",
+    "Gerçek İstanbul'dan esinlenen, küçültülmüş ve sadeleştirilmiş bir haritadır. Boğaz, Haliç, köprüler ve semtler doğru taraflarda durur ama sokaklar birebir değildir."
    ],
    [
     "Ücretsiz mi? İndirmem gerekiyor mu?",
@@ -66,76 +75,85 @@
    ],
    [
     "Telefonda oynanır mı?",
-    "Evet. Dokunmatik ekranda solda sanal çubuk, sağda ateş, araba, silah ve harita tuşları çıkar."
+    "Evet. Dokunmatik ekranda sanal çubuk ve tuşlar çıkar. Yavaş cihazlarda menüden hızlı grafik ayarını seç."
    ],
    [
-    "Kaç görev var?",
-    "8 hikâye görevi var. Hikâye bittikten sonra serbest dolaşma sınırsız devam eder; bitirdiğin görevleri menüden yeniden oynayabilirsin."
+    "Yüzebiliyor muyum?",
+    "Evet. Boğaz'a, Haliç'e ya da Marmara'ya girince karakterin yüzer; köprüden denize atlayabilir, tekneye binebilirsin."
    ]
   ],
   "aboutH": "Bu oyun hakkında",
-  "about": "Palmera Heat, PickRadar'ın orijinal bir oyunudur. Rockstar Games ya da Take-Two Interactive ile hiçbir bağlantısı yoktur; GTA ve Grand Theft Auto, Take-Two Interactive'in ticari markalarıdır. Oyundaki bütün grafikler ve sesler kodla üretilir."
+  "about": "İstanbul Heat, PickRadar'ın orijinal bir oyunudur. Rockstar Games ya da Take-Two Interactive ile hiçbir bağlantısı yoktur; GTA ve Grand Theft Auto, Take-Two Interactive'in ticari markalarıdır. 3D çizim için açık kaynaklı three.js (MIT lisansı) kullanılır; bütün modeller, dokular ve sesler kodla üretilir."
  },
  "en": {
-  "name": "Palmera Heat",
-  "genre": "Open world",
-  "teaser": "One city, one debt and a driver who never talks.",
-  "card": "Steal cars, outrun the cops and finish an 8-mission crime story.",
-  "title": "Palmera Heat – Free GTA-Style Open-World Game to Play in Your Browser",
-  "desc": "A GTA-style open-world crime game in your browser: steal cars, escape the cops and finish 8 story missions. Free, no download, works on PC and phone.",
-  "h1": "Palmera Heat: a GTA-style open-world crime game",
-  "intro": "The bay city of Palmera is yours. Jump into any car, turn on the radio and drive from the neon hotels of Ocean Strip to the container maze of Port Mangrove. If the cops come after you, a 5-star wanted system sends in a helicopter. No download, no sign-up: just play.",
+  "name": "İstanbul Heat",
+  "genre": "3D open world",
+  "teaser": "One city on two continents, one debt and a driver who never talks.",
+  "card": "Drive cars, boats and a helicopter through 3D Istanbul, swim the Bosphorus, outrun the police.",
+  "title": "İstanbul Heat – Free GTA-Style 3D Open-World Game Set in Istanbul",
+  "desc": "A GTA-style 3D open-world game set in Istanbul: the Bosphorus Bridge, Galata, the Maiden's Tower and the ferries. Drive cars, boats and a helicopter, swim and escape the police. Free, no download.",
+  "h1": "İstanbul Heat: a GTA-style 3D open-world game on an Istanbul map",
+  "intro": "Both shores of the Bosphorus are yours. Drive from the Levent towers to the mosques of the Historic Peninsula, cross the Bosphorus Bridge to Asia, jump into a speedboat at Karaköy or dive into the sea and swim. Fly a helicopter over the city. If the police come after you, a 5-star wanted system sends a helicopter and the coast guard. No download, no sign-up.",
   "storyH": "Story",
   "story": [
-   "Rook Navarro spent four years in Palmera County Lockup for a robbery he never committed: Detective Wade Harlan pinned it on him. The day he walks out, his sister Ines calls with bad news. Because of Rook's old debt, her garage in Gator Flats is about to be seized.",
-   "The debt now belongs to Coral Vasquez, queen of the docks: fifty thousand dollars. Rook works it off for her. He fishes packages out of the canal, runs a hot van with the cops on his tail and wrecks the Phantom of Vinnie Glass, the money launderer who lives in a Glass Heights tower.",
-   "A badge number in Vinnie's briefcase changes everything: Coral and Harlan are partners. In the final mission Rook races to get Harlan's bribe ledger to the press waiting on the south pier, with four stars on his back and a helicopter overhead."
+   "Kerem Yalçın spent four years in prison for a robbery Inspector Harun Demir pinned on him. The day he walks out, his sister Ela calls with bad news: because of Kerem's old debt, her body shop in Kasımpaşa is about to be seized.",
+   "The debt now belongs to Mercan Sarıca, who runs the Karaköy docks: fifty thousand dollars. Kerem works it off. He fishes packages out of the Bosphorus, runs a hot van from Haydarpaşa to Levent with the police on his tail and wrecks the car of Cem Camcı, the money launderer.",
+   "A badge number in Cem's briefcase changes everything: Mercan and Inspector Harun are partners. In the last mission Kerem has to get Harun's bribe ledger to the reporters waiting at the Maiden's Tower, with four stars and a helicopter on his back."
   ],
   "missionsH": "8 story missions",
   "missions": [
-   "Out of the Cage: walk out of lockup, grab a car and drive to Ines' garage.",
-   "Paint Job: steal the yellow Vesper GT on Ocean Strip and bring it back in one piece.",
-   "Saltwater: collect 5 packages along the canal before time runs out.",
-   "Hot Cargo: take the smuggling van, lose the cops and deliver it to the warehouse.",
-   "Glass Jaw: chase Vinnie Glass's Phantom, wreck it and grab the briefcase.",
-   "Swamp Rats: clear out the Gator Boys who trashed the garage.",
-   "Ledger Run: hit 6 checkpoints before the clock runs out.",
-   "Palmera Heat: stop Harlan's interceptor and get the ledger to the pier."
+   "Out of the Cage: leave prison, grab a car and drive to the garage in Kasımpaşa.",
+   "Paint Job: steal the yellow sports car on the Bebek shore and bring it back in one piece.",
+   "Saltwater: collect 5 packages floating in the Bosphorus, by boat or swimming.",
+   "Hot Cargo: take the van at Haydarpaşa, lose the police and deliver it to Levent.",
+   "Glass Jaw: chase Cem Camcı's silver car, wreck it and grab the briefcase.",
+   "Balat Wolves: clear out the gang hiding by the Golden Horn.",
+   "Ledger Run: hit 6 checkpoints across the Bosphorus Bridge before time runs out.",
+   "İstanbul Heat: stop Inspector Harun's car and take the ledger to the Maiden's Tower."
   ],
   "howH": "How to play",
   "how": [
-   "Walk and drive with WASD or the arrow keys. On a phone, steer with your left thumb.",
-   "Walk up to a car and press F to get in (🚗 on a phone). Steal an occupied car and the driver runs; if a cop sees it, you are wanted.",
-   "Aim with the mouse and click to shoot. On a phone the 🔫 button aims at the nearest target for you.",
-   "The pink marker is the next story mission. The purple GPS line leads to your target. Press M for the map and click anywhere to set a waypoint.",
-   "Crimes raise your wanted level from 1 to 5 stars. Break line of sight with the police and stay hidden for a while to lose them, or repaint your car at Ines' garage to clear the stars at once."
+   "Walk, run and drive with WASD. Look around with the mouse; click the game to lock the pointer.",
+   "Walk up to any vehicle and press F. Cars, boats and the helicopter all use the same key.",
+   "Left click shoots, right click aims over the shoulder. Switch weapons with Q/E or the mouse wheel.",
+   "Walk into the water to swim. Drive a car into the sea and it sinks while you swim out.",
+   "In the helicopter, Space climbs, C descends, W/S fly forward and back, A/D turn.",
+   "The pink marker is the next mission. The purple line on the minimap shows the way; press M for the big map and click to set a waypoint.",
+   "Crimes raise your wanted stars. Break line of sight and hide to lose them, or repaint your car at Ela's garage."
   ],
   "featH": "What's inside",
   "feats": [
-   "One seamless city with six districts: Little Palmera, Glass Heights, Ocean Strip, the Canal District, Gator Flats and Port Mangrove.",
-   "9 vehicle types: sedan, taxi, sports car, muscle car, van, pickup, police cruiser, interceptor and Phantom. Each has its own speed, grip and toughness, and the handbrake lets you drift.",
-   "Day and night cycle: sunset in the evening, then headlights, street lamps and neon signs after dark.",
-   "Two radio stations, Palmera Wave 101.5 (synthwave) and Gator Funk 88.1. The music and sirens are generated inside the game.",
-   "Weapons: fists, pistol, SMG and shotgun. Bullet Bay Guns sells ammo and armor.",
-   "Progress is saved in your browser, so you continue from your last mission."
+   "A stylised but familiar Istanbul: the Bosphorus, the Golden Horn and the Sea of Marmara; the European and Asian sides; Levent, Beşiktaş, Beyoğlu, the Historic Peninsula, Balat, Üsküdar, Kadıköy and Beylerbeyi.",
+   "Landmarks: a six-minaret mosque, a great domed basilica, the Süleymaniye silhouette, Galata Tower, the Maiden's Tower, Dolmabahçe, Haydarpaşa and two Bosphorus bridges whose lights change colour at night.",
+   "Vehicles: yellow taxis, sedans, sports cars, vans, police cars, speedboats and helicopters, plus ferries crossing the Bosphorus.",
+   "Swimming, jumping, diving off bridges and cars that take damage.",
+   "Day and night: sunsets, lit windows, street lamps, seagulls and waving Turkish flags.",
+   "Weapons: fists, pistol, SMG and rifle. The gun shop sells ammo and armor.",
+   "Two radio stations, Boğaz FM 101.5 and Haliç Funk 88.1; all music and sound is generated in the game.",
+   "Progress is saved in your browser, and phones get touch controls."
   ],
   "ctrlH": "Controls",
   "ctrl": [
-   "PC: WASD walk or drive, mouse aim and click to shoot. F gets in or out, Shift sprints, Space is the handbrake, Q/E switch weapons, R changes the radio, M opens the map, P pauses, H honks.",
-   "Phone: touch and drag on the left side to walk or steer. Buttons on the right: 🔫 shoot (handbrake while driving), 🚗 get in/out, ⇄ weapon, 🗺 map, 📻 radio."
+   "PC: WASD move, mouse look, left click shoot, right click aim, F get in/out, Shift sprint, Space jump / handbrake / climb (helicopter), C descend, Q/E weapon, R radio, M map, P pause, H horn.",
+   "Phone: drag on the left to move or drive, drag on the right to look. Buttons: 🔫 shoot (auto-aim), 🚗 get in/out, ⤒ jump, ⇄ weapon, 🗺 map, 📻 radio.",
+   "If your phone gets hot or the game is slow, choose \"Graphics: fast\" in the menu."
   ],
   "tipsH": "Tips",
   "tips": [
-   "Breaking line of sight is the fastest way to lose the cops: duck into side streets and behind buildings.",
-   "Sports cars are fast but fragile. In chase missions a van or pickup does more damage when you ram.",
-   "In Glass Jaw, side hits stop the Phantom sooner.",
-   "Hospital bills and bail take part of your cash. Buying armor before a mission is a good idea."
+   "Breaking line of sight is the fastest way to lose the police: take a side street or jump into the sea. On the water the coast guard comes after you.",
+   "In Saltwater, the boat at the Karaköy pier is much faster than swimming.",
+   "Scraping the bridge rail at high speed damages your car.",
+   "Helipads are in Beşiktaş and on the Üsküdar side, shown as yellow dots on the map."
   ],
   "faqH": "Frequently asked questions",
   "faq": [
    [
-    "Is Palmera Heat GTA 6?",
-    "No. Palmera Heat is an independent game made from scratch by PickRadar in the style of the GTA series (top-down open world, car theft, wanted stars). Its city, characters and story are entirely our own."
+    "Is İstanbul Heat GTA 6?",
+    "No. İstanbul Heat is an independent game made from scratch by PickRadar in the style of the GTA series (third-person open world, car theft, wanted stars). Its characters and story are our own, and it does not have every feature of GTA 5 or GTA 6."
+   ],
+   [
+    "Is it the real Istanbul map?",
+    "It is a smaller, simplified map inspired by the real Istanbul. The Bosphorus, the Golden Horn, the bridges and the districts are on the right sides, but the streets are not one-to-one."
    ],
    [
     "Is it free? Do I need to download anything?",
@@ -143,76 +161,85 @@
    ],
    [
     "Can I play on my phone?",
-    "Yes. On a touch screen you get a virtual stick on the left and shoot, car, weapon and map buttons on the right."
+    "Yes. Touch screens get a virtual stick and buttons. On slower devices pick the fast graphics setting in the menu."
    ],
    [
-    "How many missions are there?",
-    "There are 8 story missions. After the story, free roam goes on forever, and you can replay finished missions from the menu."
+    "Can I swim?",
+    "Yes. Walk into the Bosphorus, the Golden Horn or the Marmara and your character swims; you can also dive off a bridge or take a boat."
    ]
   ],
   "aboutH": "About this game",
-  "about": "Palmera Heat is an original PickRadar game. It is not affiliated with Rockstar Games or Take-Two Interactive; GTA and Grand Theft Auto are trademarks of Take-Two Interactive. All graphics and sounds in the game are generated in code."
+  "about": "İstanbul Heat is an original PickRadar game. It is not affiliated with Rockstar Games or Take-Two Interactive; GTA and Grand Theft Auto are trademarks of Take-Two Interactive. It uses the open-source three.js library (MIT licence) for 3D; all models, textures and sounds are generated in code."
  },
  "es": {
-  "name": "Palmera Heat",
-  "genre": "Mundo abierto",
-  "teaser": "Una ciudad, una deuda y un conductor que nunca habla.",
-  "card": "Roba coches, escapa de la policía y completa una historia criminal de 8 misiones.",
-  "title": "Palmera Heat – Juego gratis de mundo abierto estilo GTA en el navegador",
-  "desc": "Un juego criminal de mundo abierto estilo GTA en tu navegador: roba coches, escapa de la policía y completa 8 misiones. Gratis, sin descargas, en PC y móvil.",
-  "h1": "Palmera Heat: juego criminal de mundo abierto estilo GTA",
-  "intro": "La ciudad costera de Palmera es tuya. Súbete a cualquier coche, enciende la radio y conduce desde los hoteles de neón de Ocean Strip hasta el laberinto de contenedores de Port Mangrove. Si la policía te persigue, el sistema de búsqueda de 5 estrellas manda hasta un helicóptero. Sin descargas ni registro.",
+  "name": "İstanbul Heat",
+  "genre": "Mundo abierto 3D",
+  "teaser": "Una ciudad en dos continentes, una deuda y un conductor que nunca habla.",
+  "card": "Conduce coches, lanchas y un helicóptero por un Estambul 3D, nada en el Bósforo y huye de la policía.",
+  "title": "İstanbul Heat – Juego gratis de mundo abierto 3D estilo GTA en Estambul",
+  "desc": "Un juego de mundo abierto 3D estilo GTA ambientado en Estambul: el puente del Bósforo, Gálata, la Torre de la Doncella y los ferris. Conduce coches, lanchas y un helicóptero, nada y escapa de la policía. Gratis, sin descargas.",
+  "h1": "İstanbul Heat: juego de mundo abierto 3D estilo GTA en un mapa de Estambul",
+  "intro": "Las dos orillas del Bósforo son tuyas. Conduce desde las torres de Levent hasta las mezquitas de la Península Histórica, cruza el puente del Bósforo hacia Asia, súbete a una lancha en Karaköy o lánzate al mar y nada. Vuela en helicóptero sobre la ciudad. Si la policía te persigue, el sistema de 5 estrellas envía un helicóptero y a los guardacostas. Sin descargas ni registro.",
   "storyH": "Historia",
   "story": [
-   "Rook Navarro pasó cuatro años en la cárcel del condado de Palmera por un robo que no cometió: el detective Wade Harlan se lo cargó a él. El día que sale, su hermana Ines le da una mala noticia. Por la vieja deuda de Rook, están a punto de embargarle el taller de Gator Flats.",
-   "La deuda ahora es de Coral Vasquez, reina del puerto: cincuenta mil dólares. Rook trabaja para pagarla. Recoge paquetes del canal, lleva una furgoneta caliente con la policía detrás y destroza el Phantom de Vinnie Glass, el blanqueador que vive en una torre de Glass Heights.",
-   "Un número de placa en el maletín de Vinnie lo cambia todo: Coral y Harlan son socios. En la misión final Rook intenta llevar el libro de sobornos de Harlan a la prensa que espera en el muelle sur, con cuatro estrellas encima y un helicóptero en el cielo."
+   "Kerem Yalçın pasó cuatro años en prisión por un robo que le cargó el inspector Harun Demir. El día que sale, su hermana Ela le da una mala noticia: por la vieja deuda de Kerem, van a embargar su taller de pintura en Kasımpaşa.",
+   "La deuda ahora es de Mercan Sarıca, dueña de los muelles de Karaköy: cincuenta mil dólares. Kerem trabaja para pagarla. Recoge paquetes del Bósforo, lleva una furgoneta caliente de Haydarpaşa a Levent con la policía detrás y destroza el coche de Cem Camcı, el blanqueador.",
+   "Un número de placa en el maletín de Cem lo cambia todo: Mercan y el inspector Harun son socios. En la última misión Kerem debe llevar el libro de sobornos de Harun a los periodistas que esperan en la Torre de la Doncella."
   ],
   "missionsH": "8 misiones de historia",
   "missions": [
-   "Fuera de la jaula: sal de la cárcel, consigue un coche y conduce al taller de Ines.",
-   "Trabajo de pintura: roba el Vesper GT amarillo de Ocean Strip y tráelo entero.",
-   "Agua salada: recoge 5 paquetes del canal antes de que acabe el tiempo.",
-   "Carga caliente: coge la furgoneta, pierde a la policía y entrégala en el almacén.",
-   "Mandíbula de cristal: persigue el Phantom de Vinnie Glass, destrózalo y coge el maletín.",
-   "Ratas del pantano: acaba con los Gator Boys que destrozaron el taller.",
-   "Carrera del libro: pasa 6 puntos de control antes de que se acabe el tiempo.",
-   "Palmera Heat: detén el interceptor de Harlan y lleva el libro al muelle."
+   "Fuera de la jaula: sal de la cárcel, consigue un coche y conduce al taller de Kasımpaşa.",
+   "Trabajo de pintura: roba el deportivo amarillo de la costa de Bebek y tráelo entero.",
+   "Agua salada: recoge 5 paquetes que flotan en el Bósforo, en lancha o nadando.",
+   "Carga caliente: coge la furgoneta en Haydarpaşa, pierde a la policía y llévala a Levent.",
+   "Mandíbula de cristal: persigue el coche plateado de Cem Camcı, destrózalo y coge el maletín.",
+   "Lobos de Balat: acaba con la banda escondida junto al Cuerno de Oro.",
+   "Carrera del libro: pasa 6 puntos de control por el puente del Bósforo antes de que acabe el tiempo.",
+   "İstanbul Heat: detén el coche del inspector Harun y lleva el libro a la Torre de la Doncella."
   ],
   "howH": "Cómo se juega",
   "how": [
-   "Camina y conduce con WASD o las flechas. En el móvil, dirige con el pulgar izquierdo.",
-   "Acércate a un coche y pulsa F para subir (🚗 en el móvil). Si robas un coche ocupado, el conductor huye; si te ve un policía, te buscan.",
-   "Apunta con el ratón y haz clic para disparar. En el móvil, el botón 🔫 apunta solo al objetivo más cercano.",
-   "El marcador rosa es la siguiente misión. La línea morada del GPS te lleva al objetivo. Pulsa M para el mapa y haz clic para marcar un destino.",
-   "Los delitos suben tu nivel de búsqueda de 1 a 5 estrellas. Rompe la línea de visión con la policía y escóndete un rato, o pinta el coche en el taller de Ines para borrar las estrellas al instante."
+   "Camina, corre y conduce con WASD. Mira con el ratón; haz clic en el juego para bloquear el puntero.",
+   "Acércate a cualquier vehículo y pulsa F. Coches, lanchas y el helicóptero usan la misma tecla.",
+   "Clic izquierdo dispara, clic derecho apunta sobre el hombro. Cambia de arma con Q/E o la rueda.",
+   "Entra en el agua para nadar. Si caes al mar con un coche, se hunde y tú sales nadando.",
+   "En el helicóptero, Espacio sube, C baja, W/S avanzan y retroceden, A/D giran.",
+   "El marcador rosa es la siguiente misión. La línea morada del minimapa marca el camino; pulsa M para el mapa grande.",
+   "Los delitos suben tus estrellas. Rompe la línea de visión y escóndete, o pinta el coche en el taller de Ela."
   ],
   "featH": "Qué incluye",
   "feats": [
-   "Una ciudad continua con seis distritos: Little Palmera, Glass Heights, Ocean Strip, el Distrito del Canal, Gator Flats y Port Mangrove.",
-   "9 tipos de vehículo: sedán, taxi, deportivo, muscle car, furgoneta, pickup, patrulla, interceptor y Phantom. Cada uno tiene su velocidad, agarre y resistencia, y con el freno de mano puedes derrapar.",
-   "Ciclo de día y noche: atardecer y, de noche, faros, farolas y letreros de neón.",
-   "Dos emisoras de radio, Palmera Wave 101.5 (synthwave) y Gator Funk 88.1. La música y las sirenas se generan dentro del juego.",
-   "Armas: puños, pistola, subfusil y escopeta. Bullet Bay Armas vende munición y blindaje.",
-   "El progreso se guarda en tu navegador y sigues desde tu última misión."
+   "Un Estambul estilizado pero reconocible: el Bósforo, el Cuerno de Oro y el mar de Mármara; las orillas europea y asiática; Levent, Beşiktaş, Beyoğlu, la Península Histórica, Balat, Üsküdar, Kadıköy y Beylerbeyi.",
+   "Monumentos: una mezquita de seis minaretes, una gran basílica con cúpula, la silueta de Süleymaniye, la Torre de Gálata, la Torre de la Doncella, Dolmabahçe, Haydarpaşa y dos puentes del Bósforo con luces de colores.",
+   "Vehículos: taxis amarillos, sedanes, deportivos, furgonetas, patrullas, lanchas y helicópteros, además de ferris que cruzan el Bósforo.",
+   "Natación, saltos, saltar desde los puentes y coches que reciben daño.",
+   "Día y noche: atardeceres, ventanas iluminadas, farolas, gaviotas y banderas turcas al viento.",
+   "Armas: puños, pistola, subfusil y fusil. La armería vende munición y blindaje.",
+   "Dos emisoras, Boğaz FM 101.5 y Haliç Funk 88.1; toda la música y los sonidos se generan en el juego.",
+   "El progreso se guarda en tu navegador y en el móvil hay controles táctiles."
   ],
   "ctrlH": "Controles",
   "ctrl": [
-   "PC: WASD para andar o conducir, ratón para apuntar y clic para disparar. F sube o baja, Shift corre, Espacio es el freno de mano, Q/E cambian de arma, R cambia la radio, M abre el mapa, P pausa, H claxon.",
-   "Móvil: toca y arrastra en la izquierda para andar o conducir. Botones a la derecha: 🔫 disparar (freno de mano al conducir), 🚗 subir/bajar, ⇄ arma, 🗺 mapa, 📻 radio."
+   "PC: WASD mover, ratón mirar, clic izquierdo disparar, clic derecho apuntar, F subir/bajar, Shift correr, Espacio saltar / freno de mano / subir (helicóptero), C bajar, Q/E arma, R radio, M mapa, P pausa, H claxon.",
+   "Móvil: arrastra a la izquierda para moverte o conducir, a la derecha para mirar. Botones: 🔫 disparar, 🚗 subir/bajar, ⤒ saltar, ⇄ arma, 🗺 mapa, 📻 radio.",
+   "Si el móvil se calienta o el juego va lento, elige \"Gráficos: rápidos\" en el menú."
   ],
   "tipsH": "Consejos",
   "tips": [
-   "Romper la línea de visión es la forma más rápida de perder a la policía: métete en calles laterales y detrás de los edificios.",
-   "Los deportivos son rápidos pero frágiles. En las persecuciones, una furgoneta o una pickup hace más daño al embestir.",
-   "En Mandíbula de cristal, los golpes laterales detienen antes al Phantom.",
-   "El hospital y la fianza se llevan parte de tu dinero. Comprar blindaje antes de una misión es buena idea."
+   "Romper la línea de visión es la forma más rápida de perder a la policía: métete en una calle lateral o salta al mar. En el agua vienen los guardacostas.",
+   "En Agua salada, la lancha del muelle de Karaköy es mucho más rápida que nadar.",
+   "Rozar la barandilla del puente a gran velocidad daña el coche.",
+   "Los helipuertos están en Beşiktaş y en el lado de Üsküdar, como puntos amarillos en el mapa."
   ],
   "faqH": "Preguntas frecuentes",
   "faq": [
    [
-    "¿Palmera Heat es GTA 6?",
-    "No. Palmera Heat es un juego independiente creado desde cero por PickRadar al estilo de la saga GTA (mundo abierto visto desde arriba, robo de coches, estrellas de búsqueda). La ciudad, los personajes y la historia son totalmente nuestros."
+    "¿İstanbul Heat es GTA 6?",
+    "No. İstanbul Heat es un juego independiente creado desde cero por PickRadar al estilo de la saga GTA (mundo abierto en tercera persona, robo de coches, estrellas de búsqueda). Los personajes y la historia son nuestros y no tiene todas las funciones de GTA 5 o GTA 6."
+   ],
+   [
+    "¿Es el mapa real de Estambul?",
+    "Es un mapa más pequeño y simplificado inspirado en el Estambul real. El Bósforo, el Cuerno de Oro, los puentes y los barrios están en su lado correcto, pero las calles no son exactas."
    ],
    [
     "¿Es gratis? ¿Hay que descargar algo?",
@@ -220,76 +247,85 @@
    ],
    [
     "¿Se puede jugar en el móvil?",
-    "Sí. En pantallas táctiles aparece un stick virtual a la izquierda y botones de disparo, coche, arma y mapa a la derecha."
+    "Sí. En pantallas táctiles aparecen un stick virtual y botones. En dispositivos lentos elige los gráficos rápidos."
    ],
    [
-    "¿Cuántas misiones hay?",
-    "Hay 8 misiones de historia. Después, el modo libre sigue sin fin y puedes repetir las misiones terminadas desde el menú."
+    "¿Se puede nadar?",
+    "Sí. Entra en el Bósforo, el Cuerno de Oro o el Mármara y tu personaje nada; también puedes saltar desde un puente o usar una lancha."
    ]
   ],
   "aboutH": "Sobre este juego",
-  "about": "Palmera Heat es un juego original de PickRadar. No tiene relación con Rockstar Games ni con Take-Two Interactive; GTA y Grand Theft Auto son marcas de Take-Two Interactive. Todos los gráficos y sonidos se generan con código."
+  "about": "İstanbul Heat es un juego original de PickRadar. No tiene relación con Rockstar Games ni con Take-Two Interactive; GTA y Grand Theft Auto son marcas de Take-Two Interactive. Usa la biblioteca de código abierto three.js (licencia MIT) para el 3D; todos los modelos, texturas y sonidos se generan con código."
  },
  "pt": {
-  "name": "Palmera Heat",
-  "genre": "Mundo aberto",
-  "teaser": "Uma cidade, uma dívida e um motorista que nunca fala.",
-  "card": "Roube carros, fuja da polícia e termine uma história de crime em 8 missões.",
-  "title": "Palmera Heat – Jogo grátis de mundo aberto estilo GTA no navegador",
-  "desc": "Um jogo de crime em mundo aberto estilo GTA no seu navegador: roube carros, fuja da polícia e complete 8 missões. Grátis, sem download, no PC e no celular.",
-  "h1": "Palmera Heat: jogo de crime em mundo aberto estilo GTA",
-  "intro": "A cidade litorânea de Palmera é sua. Entre em qualquer carro, ligue o rádio e dirija dos hotéis neon da Ocean Strip até o labirinto de contêineres de Port Mangrove. Se a polícia vier atrás, o sistema de procurado de 5 estrelas manda até um helicóptero. Sem download e sem cadastro.",
+  "name": "İstanbul Heat",
+  "genre": "Mundo aberto 3D",
+  "teaser": "Uma cidade em dois continentes, uma dívida e um motorista que nunca fala.",
+  "card": "Dirija carros, lanchas e um helicóptero por uma Istambul 3D, nade no Bósforo e fuja da polícia.",
+  "title": "İstanbul Heat – Jogo grátis de mundo aberto 3D estilo GTA em Istambul",
+  "desc": "Um jogo de mundo aberto 3D estilo GTA em Istambul: a ponte do Bósforo, Gálata, a Torre da Donzela e as balsas. Dirija carros, lanchas e um helicóptero, nade e fuja da polícia. Grátis, sem download.",
+  "h1": "İstanbul Heat: jogo de mundo aberto 3D estilo GTA num mapa de Istambul",
+  "intro": "As duas margens do Bósforo são suas. Dirija das torres de Levent até as mesquitas da Península Histórica, atravesse a ponte do Bósforo para a Ásia, pegue uma lancha em Karaköy ou pule no mar e nade. Voe de helicóptero sobre a cidade. Se a polícia vier atrás, o sistema de 5 estrelas manda um helicóptero e a guarda costeira. Sem download e sem cadastro.",
   "storyH": "História",
   "story": [
-   "Rook Navarro passou quatro anos na cadeia do condado de Palmera por um roubo que não cometeu: o detetive Wade Harlan jogou a culpa nele. No dia em que sai, a irmã Ines liga com uma má notícia. Por causa da dívida antiga de Rook, a oficina dela em Gator Flats está prestes a ser tomada.",
-   "Agora a dívida pertence a Coral Vasquez, a rainha do porto: cinquenta mil dólares. Rook trabalha para pagar. Recolhe pacotes no canal, leva uma van quente com a polícia na cola e destrói o Phantom de Vinnie Glass, o lavador de dinheiro que mora numa torre de Glass Heights.",
-   "Um número de distintivo na maleta de Vinnie muda tudo: Coral e Harlan são sócios. Na missão final, Rook tenta levar o livro de propinas de Harlan até a imprensa no píer sul, com quatro estrelas nas costas e um helicóptero no céu."
+   "Kerem Yalçın passou quatro anos na prisão por um roubo que o inspetor Harun Demir jogou nas costas dele. No dia em que sai, a irmã Ela liga com uma má notícia: por causa da dívida antiga de Kerem, a oficina dela em Kasımpaşa vai ser tomada.",
+   "A dívida agora é de Mercan Sarıca, dona do cais de Karaköy: cinquenta mil dólares. Kerem trabalha para pagar. Recolhe pacotes no Bósforo, leva uma van quente de Haydarpaşa a Levent com a polícia na cola e destrói o carro de Cem Camcı, o lavador de dinheiro.",
+   "Um número de distintivo na maleta de Cem muda tudo: Mercan e o inspetor Harun são sócios. Na última missão Kerem precisa levar o livro de propinas de Harun aos jornalistas na Torre da Donzela."
   ],
   "missionsH": "8 missões de história",
   "missions": [
-   "Fora da jaula: saia da cadeia, pegue um carro e dirija até a oficina da Ines.",
-   "Serviço de pintura: roube o Vesper GT amarelo na Ocean Strip e traga inteiro.",
-   "Água salgada: colete 5 pacotes no canal antes que o tempo acabe.",
-   "Carga quente: pegue a van, despiste a polícia e entregue no armazém.",
-   "Queixo de vidro: persiga o Phantom de Vinnie Glass, destrua e pegue a maleta.",
-   "Ratos do pântano: elimine os Gator Boys que destruíram a oficina.",
-   "Corrida do livro: passe por 6 pontos de controle antes do fim do tempo.",
-   "Palmera Heat: pare o interceptador de Harlan e leve o livro ao píer."
+   "Fora da jaula: saia da prisão, pegue um carro e dirija até a oficina em Kasımpaşa.",
+   "Serviço de pintura: roube o esportivo amarelo na orla de Bebek e traga inteiro.",
+   "Água salgada: colete 5 pacotes boiando no Bósforo, de lancha ou nadando.",
+   "Carga quente: pegue a van em Haydarpaşa, despiste a polícia e leve até Levent.",
+   "Queixo de vidro: persiga o carro prateado de Cem Camcı, destrua e pegue a maleta.",
+   "Lobos de Balat: elimine a gangue escondida no Chifre de Ouro.",
+   "Corrida do livro: passe por 6 pontos de controle pela ponte do Bósforo antes do fim do tempo.",
+   "İstanbul Heat: pare o carro do inspetor Harun e leve o livro à Torre da Donzela."
   ],
   "howH": "Como jogar",
   "how": [
-   "Ande e dirija com WASD ou as setas. No celular, guie com o polegar esquerdo.",
-   "Chegue perto de um carro e aperte F para entrar (🚗 no celular). Se roubar um carro ocupado, o motorista foge; se um policial vir, você fica procurado.",
-   "Mire com o mouse e clique para atirar. No celular, o botão 🔫 mira sozinho no alvo mais próximo.",
-   "O marcador rosa é a próxima missão. A linha roxa do GPS leva até o alvo. Aperte M para o mapa e clique para marcar um destino.",
-   "Crimes aumentam o nível de procurado de 1 a 5 estrelas. Quebre a linha de visão da polícia e fique escondido um tempo, ou pinte o carro na oficina da Ines para zerar as estrelas na hora."
+   "Ande, corra e dirija com WASD. Olhe com o mouse; clique no jogo para travar o ponteiro.",
+   "Chegue perto de qualquer veículo e aperte F. Carros, lanchas e o helicóptero usam a mesma tecla.",
+   "Clique esquerdo atira, clique direito mira por cima do ombro. Troque de arma com Q/E ou a roda do mouse.",
+   "Entre na água para nadar. Se cair no mar com um carro, ele afunda e você sai nadando.",
+   "No helicóptero, Espaço sobe, C desce, W/S vão para frente e para trás, A/D giram.",
+   "O marcador rosa é a próxima missão. A linha roxa no minimapa mostra o caminho; aperte M para o mapa grande.",
+   "Crimes aumentam suas estrelas. Quebre a linha de visão e se esconda, ou pinte o carro na oficina da Ela."
   ],
   "featH": "O que tem no jogo",
   "feats": [
-   "Uma cidade contínua com seis distritos: Little Palmera, Glass Heights, Ocean Strip, Distrito do Canal, Gator Flats e Port Mangrove.",
-   "9 tipos de veículo: sedã, táxi, esportivo, muscle car, van, picape, viatura, interceptador e Phantom. Cada um tem velocidade, aderência e resistência próprias, e o freio de mão permite drift.",
-   "Ciclo de dia e noite: pôr do sol à tarde e, à noite, faróis, postes e letreiros neon.",
-   "Duas rádios, Palmera Wave 101.5 (synthwave) e Gator Funk 88.1. A música e as sirenes são geradas dentro do jogo.",
-   "Armas: socos, pistola, submetralhadora e escopeta. A Bullet Bay Armas vende munição e colete.",
-   "O progresso fica salvo no navegador e você continua da última missão."
+   "Uma Istambul estilizada mas reconhecível: o Bósforo, o Chifre de Ouro e o mar de Mármara; os lados europeu e asiático; Levent, Beşiktaş, Beyoğlu, Península Histórica, Balat, Üsküdar, Kadıköy e Beylerbeyi.",
+   "Pontos turísticos: uma mesquita de seis minaretes, uma grande basílica com cúpula, a silhueta da Süleymaniye, a Torre de Gálata, a Torre da Donzela, Dolmabahçe, Haydarpaşa e duas pontes do Bósforo com luzes coloridas.",
+   "Veículos: táxis amarelos, sedãs, esportivos, vans, viaturas, lanchas e helicópteros, além de balsas cruzando o Bósforo.",
+   "Natação, pulos, saltos das pontes e carros que sofrem dano.",
+   "Dia e noite: pôr do sol, janelas acesas, postes, gaivotas e bandeiras turcas ao vento.",
+   "Armas: socos, pistola, submetralhadora e fuzil. A loja de armas vende munição e colete.",
+   "Duas rádios, Boğaz FM 101.5 e Haliç Funk 88.1; toda a música e os sons são gerados no jogo.",
+   "O progresso fica salvo no navegador e o celular tem controles de toque."
   ],
   "ctrlH": "Controles",
   "ctrl": [
-   "PC: WASD para andar ou dirigir, mouse para mirar e clique para atirar. F entra ou sai, Shift corre, Espaço é o freio de mão, Q/E trocam a arma, R muda o rádio, M abre o mapa, P pausa, H buzina.",
-   "Celular: toque e arraste à esquerda para andar ou dirigir. Botões à direita: 🔫 atirar (freio de mão no carro), 🚗 entrar/sair, ⇄ arma, 🗺 mapa, 📻 rádio."
+   "PC: WASD mover, mouse olhar, clique esquerdo atirar, clique direito mirar, F entrar/sair, Shift correr, Espaço pular / freio de mão / subir (helicóptero), C descer, Q/E arma, R rádio, M mapa, P pausa, H buzina.",
+   "Celular: arraste à esquerda para andar ou dirigir, à direita para olhar. Botões: 🔫 atirar, 🚗 entrar/sair, ⤒ pular, ⇄ arma, 🗺 mapa, 📻 rádio.",
+   "Se o celular esquentar ou o jogo ficar lento, escolha \"Gráficos: rápidos\" no menu."
   ],
   "tipsH": "Dicas",
   "tips": [
-   "Quebrar a linha de visão é o jeito mais rápido de despistar a polícia: entre em ruas laterais e atrás de prédios.",
-   "Esportivos são rápidos mas frágeis. Nas perseguições, uma van ou picape causa mais dano ao bater.",
-   "Em Queixo de vidro, batidas laterais param o Phantom mais rápido.",
-   "Hospital e fiança levam parte do seu dinheiro. Comprar colete antes de uma missão é boa ideia."
+   "Quebrar a linha de visão é o jeito mais rápido de despistar a polícia: entre numa rua lateral ou pule no mar. Na água vem a guarda costeira.",
+   "Em Água salgada, a lancha do píer de Karaköy é muito mais rápida que nadar.",
+   "Raspar na grade da ponte em alta velocidade danifica o carro.",
+   "Os helipontos ficam em Beşiktaş e no lado de Üsküdar, como pontos amarelos no mapa."
   ],
   "faqH": "Perguntas frequentes",
   "faq": [
    [
-    "Palmera Heat é GTA 6?",
-    "Não. Palmera Heat é um jogo independente criado do zero pela PickRadar no estilo da série GTA (mundo aberto visto de cima, roubo de carros, estrelas de procurado). A cidade, os personagens e a história são totalmente nossos."
+    "İstanbul Heat é GTA 6?",
+    "Não. İstanbul Heat é um jogo independente criado do zero pela PickRadar no estilo da série GTA (mundo aberto em terceira pessoa, roubo de carros, estrelas de procurado). Os personagens e a história são nossos e ele não tem todos os recursos de GTA 5 ou GTA 6."
+   ],
+   [
+    "É o mapa real de Istambul?",
+    "É um mapa menor e simplificado inspirado na Istambul real. O Bósforo, o Chifre de Ouro, as pontes e os bairros estão nos lados certos, mas as ruas não são exatas."
    ],
    [
     "É grátis? Preciso baixar algo?",
@@ -297,76 +333,85 @@
    ],
    [
     "Dá para jogar no celular?",
-    "Sim. Na tela de toque aparecem um analógico virtual à esquerda e botões de tiro, carro, arma e mapa à direita."
+    "Sim. Na tela de toque aparecem um analógico virtual e botões. Em aparelhos lentos escolha os gráficos rápidos."
    ],
    [
-    "Quantas missões existem?",
-    "São 8 missões de história. Depois, o modo livre continua sem fim e você pode repetir as missões concluídas pelo menu."
+    "Dá para nadar?",
+    "Sim. Entre no Bósforo, no Chifre de Ouro ou no Mármara e seu personagem nada; também dá para pular de uma ponte ou usar uma lancha."
    ]
   ],
   "aboutH": "Sobre este jogo",
-  "about": "Palmera Heat é um jogo original da PickRadar. Não tem ligação com a Rockstar Games nem com a Take-Two Interactive; GTA e Grand Theft Auto são marcas da Take-Two Interactive. Todos os gráficos e sons são gerados por código."
+  "about": "İstanbul Heat é um jogo original da PickRadar. Não tem ligação com a Rockstar Games nem com a Take-Two Interactive; GTA e Grand Theft Auto são marcas da Take-Two Interactive. Usa a biblioteca de código aberto three.js (licença MIT) para o 3D; todos os modelos, texturas e sons são gerados por código."
  },
  "id": {
-  "name": "Palmera Heat",
-  "genre": "Dunia terbuka",
-  "teaser": "Satu kota, satu utang, dan sopir yang tak pernah bicara.",
-  "card": "Curi mobil, kabur dari polisi, dan tamatkan kisah kriminal 8 misi.",
-  "title": "Palmera Heat – Game Dunia Terbuka Gaya GTA Gratis di Browser",
-  "desc": "Game kriminal dunia terbuka gaya GTA di browser: curi mobil, kabur dari polisi, dan selesaikan 8 misi cerita. Gratis, tanpa unduh, bisa di PC dan HP.",
-  "h1": "Palmera Heat: game kriminal dunia terbuka gaya GTA",
-  "intro": "Kota teluk Palmera milikmu. Naik mobil apa saja, nyalakan radio, dan menyetir dari hotel neon Ocean Strip sampai labirin kontainer Port Mangrove. Kalau polisi mengejar, sistem buronan 5 bintang bahkan mengirim helikopter. Tanpa unduh dan tanpa daftar.",
+  "name": "İstanbul Heat",
+  "genre": "Dunia terbuka 3D",
+  "teaser": "Satu kota di dua benua, satu utang, dan sopir yang tak pernah bicara.",
+  "card": "Kendarai mobil, perahu, dan helikopter di İstanbul 3D, berenang di Bosporus, kabur dari polisi.",
+  "title": "İstanbul Heat – Game Dunia Terbuka 3D Gaya GTA di İstanbul, Gratis",
+  "desc": "Game dunia terbuka 3D gaya GTA berlatar İstanbul: Jembatan Bosporus, Galata, Menara Gadis, dan kapal feri. Kendarai mobil, perahu, dan helikopter, berenang, dan kabur dari polisi. Gratis, tanpa unduh.",
+  "h1": "İstanbul Heat: game dunia terbuka 3D gaya GTA di peta İstanbul",
+  "intro": "Kedua tepi Bosporus milikmu. Menyetir dari menara Levent ke masjid-masjid Semenanjung Bersejarah, seberangi Jembatan Bosporus ke Asia, naik perahu cepat di Karaköy atau terjun ke laut dan berenang. Terbangkan helikopter di atas kota. Kalau polisi mengejar, sistem buronan 5 bintang mengirim helikopter dan penjaga pantai. Tanpa unduh dan tanpa daftar.",
   "storyH": "Cerita",
   "story": [
-   "Rook Navarro dipenjara empat tahun di Palmera County karena perampokan yang tidak ia lakukan: Detektif Wade Harlan menjebaknya. Hari ia bebas, adiknya Ines menelepon dengan kabar buruk. Karena utang lama Rook, bengkel Ines di Gator Flats akan disita.",
-   "Utang itu kini milik Coral Vasquez, ratu pelabuhan: lima puluh ribu dolar. Rook bekerja untuk melunasinya. Ia memungut paket di kanal, membawa van selundupan sambil dikejar polisi, dan menghancurkan Phantom milik Vinnie Glass, pencuci uang yang tinggal di menara Glass Heights.",
-   "Nomor lencana di koper Vinnie mengubah segalanya: Coral dan Harlan bersekutu. Di misi terakhir Rook berusaha membawa buku suap Harlan ke wartawan di dermaga selatan, dengan empat bintang di belakangnya dan helikopter di atas kepala."
+   "Kerem Yalçın dipenjara empat tahun karena perampokan yang dituduhkan Inspektur Harun Demir kepadanya. Hari ia bebas, adiknya Ela menelepon dengan kabar buruk: karena utang lama Kerem, bengkel cat Ela di Kasımpaşa akan disita.",
+   "Utang itu kini milik Mercan Sarıca, penguasa dermaga Karaköy: lima puluh ribu dolar. Kerem bekerja untuk melunasinya. Ia memungut paket di Bosporus, membawa van selundupan dari Haydarpaşa ke Levent sambil dikejar polisi, dan menghancurkan mobil Cem Camcı, si pencuci uang.",
+   "Nomor lencana di koper Cem mengubah segalanya: Mercan dan Inspektur Harun bersekutu. Di misi terakhir Kerem harus membawa buku suap Harun ke wartawan di Menara Gadis."
   ],
   "missionsH": "8 misi cerita",
   "missions": [
-   "Keluar dari Kandang: keluar dari penjara, ambil mobil, dan menyetir ke bengkel Ines.",
-   "Kerja Cat: curi Vesper GT kuning di Ocean Strip dan bawa pulang utuh.",
-   "Air Asin: kumpulkan 5 paket di kanal sebelum waktu habis.",
-   "Muatan Panas: ambil van, lolos dari polisi, dan antar ke gudang.",
-   "Rahang Kaca: kejar Phantom milik Vinnie Glass, hancurkan, dan ambil kopernya.",
-   "Tikus Rawa: habisi Gator Boys yang mengobrak-abrik bengkel.",
-   "Kejar Buku Besar: lewati 6 pos pemeriksaan sebelum waktu habis.",
-   "Palmera Heat: hentikan mobil pengejar Harlan dan bawa buku ke dermaga."
+   "Keluar dari Kandang: keluar dari penjara, ambil mobil, dan menyetir ke bengkel di Kasımpaşa.",
+   "Kerja Cat: curi mobil sport kuning di pantai Bebek dan bawa pulang utuh.",
+   "Air Asin: kumpulkan 5 paket yang mengapung di Bosporus, naik perahu atau berenang.",
+   "Muatan Panas: ambil van di Haydarpaşa, lolos dari polisi, dan antar ke Levent.",
+   "Rahang Kaca: kejar mobil perak Cem Camcı, hancurkan, dan ambil kopernya.",
+   "Serigala Balat: habisi geng yang bersembunyi di tepi Tanduk Emas.",
+   "Kejar Buku Besar: lewati 6 pos pemeriksaan melalui Jembatan Bosporus sebelum waktu habis.",
+   "İstanbul Heat: hentikan mobil Inspektur Harun dan bawa buku ke Menara Gadis."
   ],
   "howH": "Cara bermain",
   "how": [
-   "Jalan dan menyetir dengan WASD atau tombol panah. Di HP, arahkan dengan jempol kiri.",
-   "Dekati mobil dan tekan F untuk naik (🚗 di HP). Kalau mencuri mobil berpenumpang, sopirnya kabur; kalau polisi melihat, kamu jadi buronan.",
-   "Bidik dengan mouse dan klik untuk menembak. Di HP, tombol 🔫 otomatis membidik target terdekat.",
-   "Penanda merah muda adalah misi berikutnya. Garis GPS ungu menuntunmu ke target. Tekan M untuk peta dan klik untuk memasang tujuan.",
-   "Kejahatan menaikkan level buronan dari 1 sampai 5 bintang. Putus pandangan polisi dan bersembunyi sebentar, atau cat ulang mobil di bengkel Ines untuk menghapus bintang seketika."
+   "Jalan, lari, dan menyetir dengan WASD. Lihat sekeliling dengan mouse; klik game untuk mengunci kursor.",
+   "Dekati kendaraan apa pun dan tekan F. Mobil, perahu, dan helikopter memakai tombol yang sama.",
+   "Klik kiri menembak, klik kanan membidik dari balik bahu. Ganti senjata dengan Q/E atau roda mouse.",
+   "Masuk ke air untuk berenang. Kalau mobil jatuh ke laut, mobil tenggelam dan kamu berenang keluar.",
+   "Di helikopter, Spasi naik, C turun, W/S maju-mundur, A/D berbelok.",
+   "Penanda merah muda adalah misi berikutnya. Garis ungu di peta mini menunjukkan jalan; tekan M untuk peta besar.",
+   "Kejahatan menaikkan bintang buronan. Putus pandangan polisi dan bersembunyi, atau cat ulang mobil di bengkel Ela."
   ],
   "featH": "Isi game",
   "feats": [
-   "Satu kota utuh dengan enam distrik: Little Palmera, Glass Heights, Ocean Strip, Distrik Kanal, Gator Flats, dan Port Mangrove.",
-   "9 jenis kendaraan: sedan, taksi, mobil sport, muscle car, van, pikap, mobil polisi, mobil pengejar, dan Phantom. Kecepatan, cengkeraman, dan ketahanannya berbeda, dan rem tangan bisa dipakai drift.",
-   "Siklus siang dan malam: senja di sore hari, lalu lampu mobil, lampu jalan, dan papan neon saat gelap.",
-   "Dua stasiun radio, Palmera Wave 101.5 (synthwave) dan Gator Funk 88.1. Musik dan sirene dibuat di dalam game.",
-   "Senjata: tinju, pistol, SMG, dan senapan gentel. Toko Bullet Bay menjual peluru dan rompi.",
-   "Progres tersimpan di browser, jadi kamu lanjut dari misi terakhir."
+   "İstanbul yang disederhanakan tapi mudah dikenali: Bosporus, Tanduk Emas, dan Laut Marmara; sisi Eropa dan Asia; Levent, Beşiktaş, Beyoğlu, Semenanjung Bersejarah, Balat, Üsküdar, Kadıköy, dan Beylerbeyi.",
+   "Ikon kota: masjid enam menara, basilika berkubah besar, siluet Süleymaniye, Menara Galata, Menara Gadis, Dolmabahçe, Haydarpaşa, dan dua jembatan Bosporus yang lampunya berganti warna di malam hari.",
+   "Kendaraan: taksi kuning, sedan, mobil sport, van, mobil polisi, perahu cepat, dan helikopter, ditambah kapal feri yang menyeberangi Bosporus.",
+   "Berenang, melompat, terjun dari jembatan, dan mobil yang bisa rusak.",
+   "Siang dan malam: matahari terbenam, jendela menyala, lampu jalan, burung camar, dan bendera Turki yang berkibar.",
+   "Senjata: tinju, pistol, SMG, dan senapan. Toko senjata menjual peluru dan rompi.",
+   "Dua stasiun radio, Boğaz FM 101.5 dan Haliç Funk 88.1; semua musik dan suara dibuat di dalam game.",
+   "Progres tersimpan di browser, dan HP mendapat kontrol sentuh."
   ],
   "ctrlH": "Kontrol",
   "ctrl": [
-   "PC: WASD untuk jalan atau menyetir, mouse untuk membidik dan klik untuk menembak. F naik/turun, Shift lari, Spasi rem tangan, Q/E ganti senjata, R ganti radio, M buka peta, P jeda, H klakson.",
-   "HP: sentuh dan geser di sisi kiri untuk jalan atau menyetir. Tombol di kanan: 🔫 tembak (rem tangan saat menyetir), 🚗 naik/turun, ⇄ senjata, 🗺 peta, 📻 radio."
+   "PC: WASD gerak, mouse melihat, klik kiri tembak, klik kanan bidik, F naik/turun, Shift lari, Spasi lompat / rem tangan / naik (helikopter), C turun, Q/E senjata, R radio, M peta, P jeda, H klakson.",
+   "HP: geser di kiri untuk jalan atau menyetir, geser di kanan untuk melihat. Tombol: 🔫 tembak, 🚗 naik/turun, ⤒ lompat, ⇄ senjata, 🗺 peta, 📻 radio.",
+   "Kalau HP panas atau game lambat, pilih \"Grafis: cepat\" di menu."
   ],
   "tipsH": "Tips",
   "tips": [
-   "Cara tercepat lolos dari polisi adalah memutus pandangan: masuk gang dan sembunyi di balik gedung.",
-   "Mobil sport cepat tapi rapuh. Di misi kejar-kejaran, van atau pikap memberi kerusakan lebih besar saat menabrak.",
-   "Di Rahang Kaca, tabrakan dari samping menghentikan Phantom lebih cepat.",
-   "Biaya rumah sakit dan uang jaminan memotong uangmu. Beli rompi sebelum misi."
+   "Cara tercepat lolos dari polisi adalah memutus pandangan: masuk gang atau terjun ke laut. Di air, penjaga pantai akan datang.",
+   "Di misi Air Asin, perahu di dermaga Karaköy jauh lebih cepat daripada berenang.",
+   "Menggesek pagar jembatan dengan kecepatan tinggi merusak mobil.",
+   "Landasan helikopter ada di Beşiktaş dan sisi Üsküdar, berupa titik kuning di peta."
   ],
   "faqH": "Pertanyaan umum",
   "faq": [
    [
-    "Apakah Palmera Heat itu GTA 6?",
-    "Bukan. Palmera Heat adalah game independen buatan PickRadar dari nol dengan gaya seri GTA (dunia terbuka tampak atas, mencuri mobil, bintang buronan). Kota, tokoh, dan ceritanya sepenuhnya milik kami."
+    "Apakah İstanbul Heat itu GTA 6?",
+    "Bukan. İstanbul Heat adalah game independen buatan PickRadar dari nol dengan gaya seri GTA (dunia terbuka orang ketiga, mencuri mobil, bintang buronan). Tokoh dan ceritanya milik kami, dan game ini tidak punya semua fitur GTA 5 atau GTA 6."
+   ],
+   [
+    "Apakah ini peta İstanbul yang asli?",
+    "Ini peta yang lebih kecil dan disederhanakan, terinspirasi dari İstanbul asli. Bosporus, Tanduk Emas, jembatan, dan distriknya ada di sisi yang benar, tetapi jalannya tidak persis sama."
    ],
    [
     "Gratis? Perlu unduh?",
@@ -374,14 +419,14 @@
    ],
    [
     "Bisa dimainkan di HP?",
-    "Bisa. Di layar sentuh muncul stik virtual di kiri serta tombol tembak, mobil, senjata, dan peta di kanan."
+    "Bisa. Layar sentuh mendapat stik virtual dan tombol. Di perangkat lambat pilih grafis cepat di menu."
    ],
    [
-    "Ada berapa misi?",
-    "Ada 8 misi cerita. Setelah tamat, jelajah bebas terus berlanjut dan misi yang selesai bisa diulang dari menu."
+    "Bisa berenang?",
+    "Bisa. Masuk ke Bosporus, Tanduk Emas, atau Marmara dan karaktermu berenang; kamu juga bisa terjun dari jembatan atau naik perahu."
    ]
   ],
   "aboutH": "Tentang game ini",
-  "about": "Palmera Heat adalah game orisinal PickRadar. Tidak berafiliasi dengan Rockstar Games atau Take-Two Interactive; GTA dan Grand Theft Auto adalah merek dagang Take-Two Interactive. Semua grafik dan suara dibuat dengan kode."
+  "about": "İstanbul Heat adalah game orisinal PickRadar. Tidak berafiliasi dengan Rockstar Games atau Take-Two Interactive; GTA dan Grand Theft Auto adalah merek dagang Take-Two Interactive. Game ini memakai pustaka sumber terbuka three.js (lisensi MIT) untuk 3D; semua model, tekstur, dan suara dibuat dengan kode."
  }
 }
