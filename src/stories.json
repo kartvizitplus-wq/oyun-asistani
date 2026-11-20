@@ -38,6 +38,14 @@
   "red-scarf": {
    "teaser": "The last ninja of the Kage clan and a labyrinth that never forgets.",
    "story": null
+  },
+  "palmera-heat": {
+   "teaser": "One city, one debt and a driver who never talks.",
+   "story": [
+    "Rook Navarro spent four years in Palmera County Lockup for a robbery he never committed: Detective Wade Harlan pinned it on him. The day he walks out, his sister Ines calls with bad news. Because of Rook's old debt, her garage in Gator Flats is about to be seized.",
+    "The debt now belongs to Coral Vasquez, queen of the docks: fifty thousand dollars. Rook works it off for her. He fishes packages out of the canal, runs a hot van with the cops on his tail and wrecks the Phantom of Vinnie Glass, the money launderer who lives in a Glass Heights tower.",
+    "A badge number in Vinnie's briefcase changes everything: Coral and Harlan are partners. In the final mission Rook races to get Harlan's bribe ledger to the press waiting on the south pier, with four stars on his back and a helicopter overhead."
+   ]
   }
  },
  "tr": {
@@ -79,6 +87,14 @@
   "red-scarf": {
    "teaser": "Kage klanının son ninjası ve hiç unutmayan bir labirent.",
    "story": null
+  },
+  "palmera-heat": {
+   "teaser": "Bir şehir, bir borç ve hiç konuşmayan bir şoför.",
+   "story": [
+    "Rook Navarro, Palmera County cezaevinde dört yıl yattı. Suç onun değildi: dedektif Wade Harlan bir soygunu onun üstüne yıktı. Kapıdan çıktığı gün kız kardeşi Ines'ten kötü haber gelir. Rook'un eski borcu yüzünden Gator Flats'teki garaja el konulmak üzeredir.",
+    "Borcu liman kraliçesi Coral Vasquez satın almıştır: elli bin dolar. Rook ödemek için Coral'a çalışır. Kanaldan paket toplar, polis peşindeyken kaçak minibüs taşır, Glass Heights kulesinden çıkan kara para aklayıcısı Vinnie Glass'ın Phantom'unu hurdaya çevirir.",
+    "Vinnie'nin çantasındaki rozet numarası her şeyi değiştirir: Coral ile Harlan ortaktır. Son görevde Rook, Harlan'ın rüşvet defterini güney iskelesinde bekleyen basına ulaştırmaya çalışır. Peşinde dört yıldız, tepesinde bir helikopter vardır."
+   ]
   }
  },
  "id": {
@@ -120,6 +136,14 @@
   "red-scarf": {
    "teaser": "Ninja terakhir klan Kage dan labirin yang tak pernah lupa.",
    "story": null
+  },
+  "palmera-heat": {
+   "teaser": "Satu kota, satu utang, dan sopir yang tak pernah bicara.",
+   "story": [
+    "Rook Navarro dipenjara empat tahun di Palmera County karena perampokan yang tidak ia lakukan: Detektif Wade Harlan menjebaknya. Hari ia bebas, adiknya Ines menelepon dengan kabar buruk. Karena utang lama Rook, bengkel Ines di Gator Flats akan disita.",
+    "Utang itu kini milik Coral Vasquez, ratu pelabuhan: lima puluh ribu dolar. Rook bekerja untuk melunasinya. Ia memungut paket di kanal, membawa van selundupan sambil dikejar polisi, dan menghancurkan Phantom milik Vinnie Glass, pencuci uang yang tinggal di menara Glass Heights.",
+    "Nomor lencana di koper Vinnie mengubah segalanya: Coral dan Harlan bersekutu. Di misi terakhir Rook berusaha membawa buku suap Harlan ke wartawan di dermaga selatan, dengan empat bintang di belakangnya dan helikopter di atas kepala."
+   ]
   }
  },
  "es": {
@@ -161,6 +185,14 @@
   "red-scarf": {
    "teaser": "La última ninja del clan Kage y un laberinto que nunca olvida.",
    "story": null
+  },
+  "palmera-heat": {
+   "teaser": "Una ciudad, una deuda y un conductor que nunca habla.",
+   "story": [
+    "Rook Navarro pasó cuatro años en la cárcel del condado de Palmera por un robo que no cometió: el detective Wade Harlan se lo cargó a él. El día que sale, su hermana Ines le da una mala noticia. Por la vieja deuda de Rook, están a punto de embargarle el taller de Gator Flats.",
+    "La deuda ahora es de Coral Vasquez, reina del puerto: cincuenta mil dólares. Rook trabaja para pagarla. Recoge paquetes del canal, lleva una furgoneta caliente con la policía detrás y destroza el Phantom de Vinnie Glass, el blanqueador que vive en una torre de Glass Heights.",
+    "Un número de placa en el maletín de Vinnie lo cambia todo: Coral y Harlan son socios. En la misión final Rook intenta llevar el libro de sobornos de Harlan a la prensa que espera en el muelle sur, con cuatro estrellas encima y un helicóptero en el cielo."
+   ]
   }
  },
  "pt": {
@@ -202,6 +234,14 @@
   "red-scarf": {
    "teaser": "A última ninja do clã Kage e um labirinto que nunca esquece.",
    "story": null
+  },
+  "palmera-heat": {
+   "teaser": "Uma cidade, uma dívida e um motorista que nunca fala.",
+   "story": [
+    "Rook Navarro passou quatro anos na cadeia do condado de Palmera por um roubo que não cometeu: o detetive Wade Harlan jogou a culpa nele. No dia em que sai, a irmã Ines liga com uma má notícia. Por causa da dívida antiga de Rook, a oficina dela em Gator Flats está prestes a ser tomada.",
+    "Agora a dívida pertence a Coral Vasquez, a rainha do porto: cinquenta mil dólares. Rook trabalha para pagar. Recolhe pacotes no canal, leva uma van quente com a polícia na cola e destrói o Phantom de Vinnie Glass, o lavador de dinheiro que mora numa torre de Glass Heights.",
+    "Um número de distintivo na maleta de Vinnie muda tudo: Coral e Harlan são sócios. Na missão final, Rook tenta levar o livro de propinas de Harlan até a imprensa no píer sul, com quatro estrelas nas costas e um helicóptero no céu."
+   ]
   }
  }
 }

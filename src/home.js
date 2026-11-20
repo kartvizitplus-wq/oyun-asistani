@@ -8,6 +8,28 @@
   const R = (s => () => { s = (s * 16807) % 2147483647; return s / 2147483647; });
 
   const scenes = {
+    'palmera-heat'(c, w, h, t) {
+      const hz = h * .64, g = c.createLinearGradient(0, 0, 0, h);
+      g.addColorStop(0, '#1a0b3b'); g.addColorStop(.5, '#7a1f6a'); g.addColorStop(.64, '#ff6a4d'); g.addColorStop(.645, '#24092f'); g.addColorStop(1, '#090616');
+      c.fillStyle = g; c.fillRect(0, 0, w, h);
+      const sr = Math.min(w, h) * .26, sx = w * .62;
+      c.save(); c.beginPath(); c.rect(0, 0, w, hz); c.clip();
+      const sg = c.createLinearGradient(0, hz - sr, 0, hz); sg.addColorStop(0, '#ffe36b'); sg.addColorStop(1, '#ff3f8e'); c.fillStyle = sg; c.beginPath(); c.arc(sx, hz, sr, 0, TAU); c.fill();
+      c.fillStyle = '#7a1f6a'; for (let i = 0; i < 6; i++) c.fillRect(sx - sr, hz - sr * .5 + i * sr * .1 + i * i * 1.2, sr * 2, 2 + i);
+      c.restore();
+      const rnd = R(11); c.fillStyle = '#12061f'; let x = 0; while (x < w) { const bw = 16 + rnd() * 40, bh = 20 + rnd() * h * .25; c.fillRect(x, hz - bh, bw, bh); x += bw + 2; }
+      const r2 = R(5); c.fillStyle = 'rgba(255,210,140,.6)'; for (let i = 0; i < 70; i++) c.fillRect(r2() * w, hz - r2() * h * .22, 2, 2);
+      c.strokeStyle = 'rgba(255,79,160,.5)'; c.lineWidth = 1.2;
+      for (let i = 0; i < 12; i++) { const k = ((i + (t * .6) % 1) / 12), yy = hz + Math.pow(k, 2) * (h - hz); c.beginPath(); c.moveTo(0, yy); c.lineTo(w, yy); c.stroke(); }
+      for (let i = -10; i <= 10; i++) { c.beginPath(); c.moveTo(sx + i * 16, hz); c.lineTo(sx + i * 120, h); c.stroke(); }
+      // car on the grid road
+      const cx = sx - 40 + Math.sin(t * .8) * 30, cy = h * .86, cw = Math.min(150, w * .2), ch = cw * .32;
+      c.fillStyle = '#0b0614'; c.beginPath(); c.moveTo(cx - cw / 2, cy); c.lineTo(cx - cw * .38, cy - ch * .55); c.lineTo(cx - cw * .2, cy - ch); c.lineTo(cx + cw * .22, cy - ch); c.lineTo(cx + cw * .4, cy - ch * .55); c.lineTo(cx + cw / 2, cy); c.closePath(); c.fill();
+      c.fillStyle = '#ff2a3a'; c.fillRect(cx - cw * .46, cy - ch * .45, cw * .16, 4); c.fillRect(cx + cw * .3, cy - ch * .45, cw * .16, 4);
+      c.fillStyle = 'rgba(255,42,58,.25)'; c.fillRect(cx - cw * .5, cy - ch * .52, cw, 12);
+      const palm = (px, s, flip) => { c.save(); c.translate(px, h); c.scale(flip ? -s : s, s); c.fillStyle = '#09040f'; c.beginPath(); c.moveTo(-5, 0); c.quadraticCurveTo(8, -120, 34, -240); c.lineTo(40, -238); c.quadraticCurveTo(16, -120, 7, 0); c.fill(); for (let i = 0; i < 7; i++) { c.save(); c.translate(37, -240); c.rotate(-2.6 + i * .75 + Math.sin(t + i) * .04); c.beginPath(); c.ellipse(50, 0, 54, 8, .25, 0, TAU); c.fill(); c.restore(); } c.restore(); };
+      palm(w * .05, h / 330, false); palm(w * .97, h / 400, true);
+    },
     'red-scarf'(c, w, h, t) {
       c.fillStyle = '#07070b'; c.fillRect(0, 0, w, h);
       const T = 64;

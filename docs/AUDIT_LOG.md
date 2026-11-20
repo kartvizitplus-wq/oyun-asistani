@@ -95,3 +95,6 @@ Technical SEO, AI visibility, usability and ad-readiness checks. Content (patch 
 **Open (owner):**
 - The site does not show up yet in the bot's search backend (Bing-based). Check Bing Webmaster Tools (verify, submit sitemap) and Google Search Console coverage.
 - Allow pickradar.net in the Claude network settings so future audits can check the live site.
+
+## 2026-11-20 – Palmera Heat
+- Added Palmera Heat (/:lang/palmera-heat/): original top-down open-world crime game (GTA-style genre, own city/characters/story, 8 missions, police wanted system, radio). Featured on the home page. Page text names GTA only descriptively, with a non-affiliation note.

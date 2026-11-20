@@ -11,7 +11,8 @@
    "jade-lanes": "MOBA · 3v3 · 2 lanes",
    "duel-peak": "MOBA · 1v1 duel",
    "color-gradient": "Puzzle · endless levels",
-   "red-scarf": "Stealth · ninja · endless labyrinth"
+   "red-scarf": "Stealth · ninja · endless labyrinth",
+   "palmera-heat": "Open world"
   },
   "whyH": "Why play on PickRadar",
   "why": [
@@ -41,7 +42,8 @@
    "jade-lanes": "MOBA · 3v3 · 2 koridor",
    "duel-peak": "MOBA · 1v1 düello",
    "color-gradient": "Bulmaca · sonsuz bölüm",
-   "red-scarf": "Gizlilik · ninja · sonsuz labirent"
+   "red-scarf": "Gizlilik · ninja · sonsuz labirent",
+   "palmera-heat": "Açık dünya"
   },
   "whyH": "Neden PickRadar'da oynamalı",
   "why": [
@@ -71,7 +73,8 @@
    "jade-lanes": "MOBA · 3v3 · 2 lane",
    "duel-peak": "MOBA · duel 1v1",
    "color-gradient": "Puzzle · level tanpa akhir",
-   "red-scarf": "Siluman · ninja · labirin tanpa akhir"
+   "red-scarf": "Siluman · ninja · labirin tanpa akhir",
+   "palmera-heat": "Dunia terbuka"
   },
   "whyH": "Kenapa main di PickRadar",
   "why": [
@@ -101,7 +104,8 @@
    "jade-lanes": "MOBA · 3v3 · 2 calles",
    "duel-peak": "MOBA · duelo 1v1",
    "color-gradient": "Puzle · niveles infinitos",
-   "red-scarf": "Sigilo · ninja · laberinto infinito"
+   "red-scarf": "Sigilo · ninja · laberinto infinito",
+   "palmera-heat": "Mundo abierto"
   },
   "whyH": "Por qué jugar en PickRadar",
   "why": [
@@ -131,7 +135,8 @@
    "jade-lanes": "MOBA · 3v3 · 2 rotas",
    "duel-peak": "MOBA · duelo 1v1",
    "color-gradient": "Quebra-cabeça · níveis infinitos",
-   "red-scarf": "Furtividade · ninja · labirinto infinito"
+   "red-scarf": "Furtividade · ninja · labirinto infinito",
+   "palmera-heat": "Mundo aberto"
   },
   "whyH": "Por que jogar no PickRadar",
   "why": [

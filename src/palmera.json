@@ -1,0 +1,387 @@
+{
+ "tr": {
+  "name": "Palmera Heat",
+  "genre": "Açık dünya",
+  "teaser": "Bir şehir, bir borç ve hiç konuşmayan bir şoför.",
+  "card": "Araba çal, polisten kaç, 8 görevlik suç hikâyesini bitir.",
+  "title": "Palmera Heat – GTA Tarzı Ücretsiz Açık Dünya Oyunu, Tarayıcıda Oyna",
+  "desc": "GTA tarzı açık dünya suç oyunu tarayıcında: araba çal, polisten kaç, 8 hikâye görevini bitir. Ücretsiz, indirme yok; bilgisayarda ve telefonda oynanır.",
+  "h1": "Palmera Heat: GTA tarzı açık dünya suç oyunu",
+  "intro": "Palmera körfez şehri senin. İstediğin arabaya atla, radyoyu aç; Ocean Strip'in neon otellerinden Port Mangrove'un konteyner labirentine kadar sür. Polis peşine düşerse 5 yıldızlı aranma sisteminde helikopter bile gelir. İndirmeden, üye olmadan hemen oyna.",
+  "storyH": "Hikâye",
+  "story": [
+   "Rook Navarro, Palmera County cezaevinde dört yıl yattı. Suç onun değildi: dedektif Wade Harlan bir soygunu onun üstüne yıktı. Kapıdan çıktığı gün kız kardeşi Ines'ten kötü haber gelir. Rook'un eski borcu yüzünden Gator Flats'teki garaja el konulmak üzeredir.",
+   "Borcu liman kraliçesi Coral Vasquez satın almıştır: elli bin dolar. Rook ödemek için Coral'a çalışır. Kanaldan paket toplar, polis peşindeyken kaçak minibüs taşır, Glass Heights kulesinden çıkan kara para aklayıcısı Vinnie Glass'ın Phantom'unu hurdaya çevirir.",
+   "Vinnie'nin çantasındaki rozet numarası her şeyi değiştirir: Coral ile Harlan ortaktır. Son görevde Rook, Harlan'ın rüşvet defterini güney iskelesinde bekleyen basına ulaştırmaya çalışır. Peşinde dört yıldız, tepesinde bir helikopter vardır."
+  ],
+  "missionsH": "8 hikâye görevi",
+  "missions": [
+   "Kafesten Çıkış: cezaevinden çık, bir araba kap ve Ines'in garajına sür.",
+   "Boya İşi: Ocean Strip'teki sarı Vesper GT'yi çal, hasarsız getir.",
+   "Tuzlu Su: süre bitmeden kanal boyundaki 5 paketi topla.",
+   "Sıcak Kargo: kaçak minibüsü al, polisi ek, depoya teslim et.",
+   "Cam Çene: Vinnie Glass'ın Phantom'unu kovala, hurdaya çevir, çantayı kap.",
+   "Bataklık Fareleri: garajı basan Gator Boys çetesini temizle.",
+   "Defter Koşusu: 6 kontrol noktasından süre bitmeden geç.",
+   "Palmera Ateşi: Harlan'ın takip aracını durdur, defteri iskeleye götür."
+  ],
+  "howH": "Nasıl oynanır?",
+  "how": [
+   "Yürümek ve sürmek için WASD ya da ok tuşlarını kullan. Telefonda sol başparmağınla yön verirsin.",
+   "Arabaya binmek için yanına git ve F'ye bas (telefonda 🚗). Dolu bir arabayı çalarsan sürücü kaçar; polis görürse aranırsın.",
+   "Fareyle nişan al, tıklayarak ateş et. Telefonda 🔫 tuşu en yakın hedefe kendiliğinden nişan alır.",
+   "Pembe işaret sıradaki hikâye görevidir. Mor GPS çizgisi seni hedefe götürür. M ile haritayı açıp istediğin yere işaret koyabilirsin.",
+   "Suç işledikçe aranma yıldızların 1'den 5'e çıkar. Polislerin görüş alanından çıkıp bir süre saklanırsan yıldızlar söner. Ines'in garajında arabayı boyatırsan anında temize çıkarsın."
+  ],
+  "featH": "Oyunda neler var?",
+  "feats": [
+   "Altı bölgeli kesintisiz bir şehir: Little Palmera, Glass Heights, Ocean Strip, Kanal Bölgesi, Gator Flats ve Port Mangrove.",
+   "9 araç tipi var: sedan, taksi, spor araba, muscle car, minibüs, pikap, polis arabası, takip aracı ve Phantom. Her birinin hızı, yol tutuşu ve dayanıklılığı farklı; el freniyle drift atılır.",
+   "Gece-gündüz döngüsü: akşamüstü gün batımı, gece farlar, sokak lambaları ve neon tabelalar.",
+   "İki radyo kanalı var: Palmera Wave 101.5 (synthwave) ve Gator Funk 88.1. Müzik ve sirenler oyunun içinde üretiliyor.",
+   "Silahlar: yumruk, tabanca, makineli ve pompalı. Bullet Bay Guns dükkânında mermi ve zırh satılıyor.",
+   "İlerlemen tarayıcına kaydedilir; kaldığın görevden devam edersin."
+  ],
+  "ctrlH": "Kontroller",
+  "ctrl": [
+   "Bilgisayar: WASD ile yürü ya da sür, fareyle nişan al ve tıklayarak ateş et. F arabaya biner/iner, Shift koşturur, Boşluk el frenidir, Q/E silah değiştirir, R radyoyu, M haritayı açar, P duraklatır, H korna çalar.",
+   "Telefon: sol tarafa dokunup sürükleyerek yürü ya da sür. Sağdaki tuşlar: 🔫 ateş (araçta el freni), 🚗 bin/in, ⇄ silah, 🗺 harita, 📻 radyo."
+  ],
+  "tipsH": "İpuçları",
+  "tips": [
+   "Polisi ekmenin en hızlı yolu görüş hattını kesmek: ara sokaklara ve binaların arkasına sap.",
+   "Spor arabalar hızlı ama dayanıksız. Kovalamaca görevlerinde minibüs ya da pikapla çarpmak daha çok hasar verir.",
+   "Cam Çene görevinde Phantom'a yandan çarparsan daha çabuk durur.",
+   "Hastane ve kefalet ücretleri paranın bir kısmını götürür. Görevlerden önce zırh almak iyi fikirdir."
+  ],
+  "faqH": "Sık sorulan sorular",
+  "faq": [
+   [
+    "Palmera Heat, GTA 6 mı?",
+    "Hayır. Palmera Heat, GTA serisinin tarzında (yukarıdan bakışlı açık dünya, araba çalma, aranma yıldızları) PickRadar'ın sıfırdan yaptığı bağımsız bir oyundur. Şehri, karakterleri ve hikâyesi tamamen bize aittir."
+   ],
+   [
+    "Ücretsiz mi? İndirmem gerekiyor mu?",
+    "Tamamen ücretsizdir ve tarayıcıda çalışır. İndirme, kurulum ya da üyelik gerekmez."
+   ],
+   [
+    "Telefonda oynanır mı?",
+    "Evet. Dokunmatik ekranda solda sanal çubuk, sağda ateş, araba, silah ve harita tuşları çıkar."
+   ],
+   [
+    "Kaç görev var?",
+    "8 hikâye görevi var. Hikâye bittikten sonra serbest dolaşma sınırsız devam eder; bitirdiğin görevleri menüden yeniden oynayabilirsin."
+   ]
+  ],
+  "aboutH": "Bu oyun hakkında",
+  "about": "Palmera Heat, PickRadar'ın orijinal bir oyunudur. Rockstar Games ya da Take-Two Interactive ile hiçbir bağlantısı yoktur; GTA ve Grand Theft Auto, Take-Two Interactive'in ticari markalarıdır. Oyundaki bütün grafikler ve sesler kodla üretilir."
+ },
+ "en": {
+  "name": "Palmera Heat",
+  "genre": "Open world",
+  "teaser": "One city, one debt and a driver who never talks.",
+  "card": "Steal cars, outrun the cops and finish an 8-mission crime story.",
+  "title": "Palmera Heat – Free GTA-Style Open-World Game to Play in Your Browser",
+  "desc": "A GTA-style open-world crime game in your browser: steal cars, escape the cops and finish 8 story missions. Free, no download, works on PC and phone.",
+  "h1": "Palmera Heat: a GTA-style open-world crime game",
+  "intro": "The bay city of Palmera is yours. Jump into any car, turn on the radio and drive from the neon hotels of Ocean Strip to the container maze of Port Mangrove. If the cops come after you, a 5-star wanted system sends in a helicopter. No download, no sign-up: just play.",
+  "storyH": "Story",
+  "story": [
+   "Rook Navarro spent four years in Palmera County Lockup for a robbery he never committed: Detective Wade Harlan pinned it on him. The day he walks out, his sister Ines calls with bad news. Because of Rook's old debt, her garage in Gator Flats is about to be seized.",
+   "The debt now belongs to Coral Vasquez, queen of the docks: fifty thousand dollars. Rook works it off for her. He fishes packages out of the canal, runs a hot van with the cops on his tail and wrecks the Phantom of Vinnie Glass, the money launderer who lives in a Glass Heights tower.",
+   "A badge number in Vinnie's briefcase changes everything: Coral and Harlan are partners. In the final mission Rook races to get Harlan's bribe ledger to the press waiting on the south pier, with four stars on his back and a helicopter overhead."
+  ],
+  "missionsH": "8 story missions",
+  "missions": [
+   "Out of the Cage: walk out of lockup, grab a car and drive to Ines' garage.",
+   "Paint Job: steal the yellow Vesper GT on Ocean Strip and bring it back in one piece.",
+   "Saltwater: collect 5 packages along the canal before time runs out.",
+   "Hot Cargo: take the smuggling van, lose the cops and deliver it to the warehouse.",
+   "Glass Jaw: chase Vinnie Glass's Phantom, wreck it and grab the briefcase.",
+   "Swamp Rats: clear out the Gator Boys who trashed the garage.",
+   "Ledger Run: hit 6 checkpoints before the clock runs out.",
+   "Palmera Heat: stop Harlan's interceptor and get the ledger to the pier."
+  ],
+  "howH": "How to play",
+  "how": [
+   "Walk and drive with WASD or the arrow keys. On a phone, steer with your left thumb.",
+   "Walk up to a car and press F to get in (🚗 on a phone). Steal an occupied car and the driver runs; if a cop sees it, you are wanted.",
+   "Aim with the mouse and click to shoot. On a phone the 🔫 button aims at the nearest target for you.",
+   "The pink marker is the next story mission. The purple GPS line leads to your target. Press M for the map and click anywhere to set a waypoint.",
+   "Crimes raise your wanted level from 1 to 5 stars. Break line of sight with the police and stay hidden for a while to lose them, or repaint your car at Ines' garage to clear the stars at once."
+  ],
+  "featH": "What's inside",
+  "feats": [
+   "One seamless city with six districts: Little Palmera, Glass Heights, Ocean Strip, the Canal District, Gator Flats and Port Mangrove.",
+   "9 vehicle types: sedan, taxi, sports car, muscle car, van, pickup, police cruiser, interceptor and Phantom. Each has its own speed, grip and toughness, and the handbrake lets you drift.",
+   "Day and night cycle: sunset in the evening, then headlights, street lamps and neon signs after dark.",
+   "Two radio stations, Palmera Wave 101.5 (synthwave) and Gator Funk 88.1. The music and sirens are generated inside the game.",
+   "Weapons: fists, pistol, SMG and shotgun. Bullet Bay Guns sells ammo and armor.",
+   "Progress is saved in your browser, so you continue from your last mission."
+  ],
+  "ctrlH": "Controls",
+  "ctrl": [
+   "PC: WASD walk or drive, mouse aim and click to shoot. F gets in or out, Shift sprints, Space is the handbrake, Q/E switch weapons, R changes the radio, M opens the map, P pauses, H honks.",
+   "Phone: touch and drag on the left side to walk or steer. Buttons on the right: 🔫 shoot (handbrake while driving), 🚗 get in/out, ⇄ weapon, 🗺 map, 📻 radio."
+  ],
+  "tipsH": "Tips",
+  "tips": [
+   "Breaking line of sight is the fastest way to lose the cops: duck into side streets and behind buildings.",
+   "Sports cars are fast but fragile. In chase missions a van or pickup does more damage when you ram.",
+   "In Glass Jaw, side hits stop the Phantom sooner.",
+   "Hospital bills and bail take part of your cash. Buying armor before a mission is a good idea."
+  ],
+  "faqH": "Frequently asked questions",
+  "faq": [
+   [
+    "Is Palmera Heat GTA 6?",
+    "No. Palmera Heat is an independent game made from scratch by PickRadar in the style of the GTA series (top-down open world, car theft, wanted stars). Its city, characters and story are entirely our own."
+   ],
+   [
+    "Is it free? Do I need to download anything?",
+    "It is completely free and runs in your browser. No download, install or account."
+   ],
+   [
+    "Can I play on my phone?",
+    "Yes. On a touch screen you get a virtual stick on the left and shoot, car, weapon and map buttons on the right."
+   ],
+   [
+    "How many missions are there?",
+    "There are 8 story missions. After the story, free roam goes on forever, and you can replay finished missions from the menu."
+   ]
+  ],
+  "aboutH": "About this game",
+  "about": "Palmera Heat is an original PickRadar game. It is not affiliated with Rockstar Games or Take-Two Interactive; GTA and Grand Theft Auto are trademarks of Take-Two Interactive. All graphics and sounds in the game are generated in code."
+ },
+ "es": {
+  "name": "Palmera Heat",
+  "genre": "Mundo abierto",
+  "teaser": "Una ciudad, una deuda y un conductor que nunca habla.",
+  "card": "Roba coches, escapa de la policía y completa una historia criminal de 8 misiones.",
+  "title": "Palmera Heat – Juego gratis de mundo abierto estilo GTA en el navegador",
+  "desc": "Un juego criminal de mundo abierto estilo GTA en tu navegador: roba coches, escapa de la policía y completa 8 misiones. Gratis, sin descargas, en PC y móvil.",
+  "h1": "Palmera Heat: juego criminal de mundo abierto estilo GTA",
+  "intro": "La ciudad costera de Palmera es tuya. Súbete a cualquier coche, enciende la radio y conduce desde los hoteles de neón de Ocean Strip hasta el laberinto de contenedores de Port Mangrove. Si la policía te persigue, el sistema de búsqueda de 5 estrellas manda hasta un helicóptero. Sin descargas ni registro.",
+  "storyH": "Historia",
+  "story": [
+   "Rook Navarro pasó cuatro años en la cárcel del condado de Palmera por un robo que no cometió: el detective Wade Harlan se lo cargó a él. El día que sale, su hermana Ines le da una mala noticia. Por la vieja deuda de Rook, están a punto de embargarle el taller de Gator Flats.",
+   "La deuda ahora es de Coral Vasquez, reina del puerto: cincuenta mil dólares. Rook trabaja para pagarla. Recoge paquetes del canal, lleva una furgoneta caliente con la policía detrás y destroza el Phantom de Vinnie Glass, el blanqueador que vive en una torre de Glass Heights.",
+   "Un número de placa en el maletín de Vinnie lo cambia todo: Coral y Harlan son socios. En la misión final Rook intenta llevar el libro de sobornos de Harlan a la prensa que espera en el muelle sur, con cuatro estrellas encima y un helicóptero en el cielo."
+  ],
+  "missionsH": "8 misiones de historia",
+  "missions": [
+   "Fuera de la jaula: sal de la cárcel, consigue un coche y conduce al taller de Ines.",
+   "Trabajo de pintura: roba el Vesper GT amarillo de Ocean Strip y tráelo entero.",
+   "Agua salada: recoge 5 paquetes del canal antes de que acabe el tiempo.",
+   "Carga caliente: coge la furgoneta, pierde a la policía y entrégala en el almacén.",
+   "Mandíbula de cristal: persigue el Phantom de Vinnie Glass, destrózalo y coge el maletín.",
+   "Ratas del pantano: acaba con los Gator Boys que destrozaron el taller.",
+   "Carrera del libro: pasa 6 puntos de control antes de que se acabe el tiempo.",
+   "Palmera Heat: detén el interceptor de Harlan y lleva el libro al muelle."
+  ],
+  "howH": "Cómo se juega",
+  "how": [
+   "Camina y conduce con WASD o las flechas. En el móvil, dirige con el pulgar izquierdo.",
+   "Acércate a un coche y pulsa F para subir (🚗 en el móvil). Si robas un coche ocupado, el conductor huye; si te ve un policía, te buscan.",
+   "Apunta con el ratón y haz clic para disparar. En el móvil, el botón 🔫 apunta solo al objetivo más cercano.",
+   "El marcador rosa es la siguiente misión. La línea morada del GPS te lleva al objetivo. Pulsa M para el mapa y haz clic para marcar un destino.",
+   "Los delitos suben tu nivel de búsqueda de 1 a 5 estrellas. Rompe la línea de visión con la policía y escóndete un rato, o pinta el coche en el taller de Ines para borrar las estrellas al instante."
+  ],
+  "featH": "Qué incluye",
+  "feats": [
+   "Una ciudad continua con seis distritos: Little Palmera, Glass Heights, Ocean Strip, el Distrito del Canal, Gator Flats y Port Mangrove.",
+   "9 tipos de vehículo: sedán, taxi, deportivo, muscle car, furgoneta, pickup, patrulla, interceptor y Phantom. Cada uno tiene su velocidad, agarre y resistencia, y con el freno de mano puedes derrapar.",
+   "Ciclo de día y noche: atardecer y, de noche, faros, farolas y letreros de neón.",
+   "Dos emisoras de radio, Palmera Wave 101.5 (synthwave) y Gator Funk 88.1. La música y las sirenas se generan dentro del juego.",
+   "Armas: puños, pistola, subfusil y escopeta. Bullet Bay Armas vende munición y blindaje.",
+   "El progreso se guarda en tu navegador y sigues desde tu última misión."
+  ],
+  "ctrlH": "Controles",
+  "ctrl": [
+   "PC: WASD para andar o conducir, ratón para apuntar y clic para disparar. F sube o baja, Shift corre, Espacio es el freno de mano, Q/E cambian de arma, R cambia la radio, M abre el mapa, P pausa, H claxon.",
+   "Móvil: toca y arrastra en la izquierda para andar o conducir. Botones a la derecha: 🔫 disparar (freno de mano al conducir), 🚗 subir/bajar, ⇄ arma, 🗺 mapa, 📻 radio."
+  ],
+  "tipsH": "Consejos",
+  "tips": [
+   "Romper la línea de visión es la forma más rápida de perder a la policía: métete en calles laterales y detrás de los edificios.",
+   "Los deportivos son rápidos pero frágiles. En las persecuciones, una furgoneta o una pickup hace más daño al embestir.",
+   "En Mandíbula de cristal, los golpes laterales detienen antes al Phantom.",
+   "El hospital y la fianza se llevan parte de tu dinero. Comprar blindaje antes de una misión es buena idea."
+  ],
+  "faqH": "Preguntas frecuentes",
+  "faq": [
+   [
+    "¿Palmera Heat es GTA 6?",
+    "No. Palmera Heat es un juego independiente creado desde cero por PickRadar al estilo de la saga GTA (mundo abierto visto desde arriba, robo de coches, estrellas de búsqueda). La ciudad, los personajes y la historia son totalmente nuestros."
+   ],
+   [
+    "¿Es gratis? ¿Hay que descargar algo?",
+    "Es totalmente gratis y funciona en el navegador. Sin descargas, instalación ni cuenta."
+   ],
+   [
+    "¿Se puede jugar en el móvil?",
+    "Sí. En pantallas táctiles aparece un stick virtual a la izquierda y botones de disparo, coche, arma y mapa a la derecha."
+   ],
+   [
+    "¿Cuántas misiones hay?",
+    "Hay 8 misiones de historia. Después, el modo libre sigue sin fin y puedes repetir las misiones terminadas desde el menú."
+   ]
+  ],
+  "aboutH": "Sobre este juego",
+  "about": "Palmera Heat es un juego original de PickRadar. No tiene relación con Rockstar Games ni con Take-Two Interactive; GTA y Grand Theft Auto son marcas de Take-Two Interactive. Todos los gráficos y sonidos se generan con código."
+ },
+ "pt": {
+  "name": "Palmera Heat",
+  "genre": "Mundo aberto",
+  "teaser": "Uma cidade, uma dívida e um motorista que nunca fala.",
+  "card": "Roube carros, fuja da polícia e termine uma história de crime em 8 missões.",
+  "title": "Palmera Heat – Jogo grátis de mundo aberto estilo GTA no navegador",
+  "desc": "Um jogo de crime em mundo aberto estilo GTA no seu navegador: roube carros, fuja da polícia e complete 8 missões. Grátis, sem download, no PC e no celular.",
+  "h1": "Palmera Heat: jogo de crime em mundo aberto estilo GTA",
+  "intro": "A cidade litorânea de Palmera é sua. Entre em qualquer carro, ligue o rádio e dirija dos hotéis neon da Ocean Strip até o labirinto de contêineres de Port Mangrove. Se a polícia vier atrás, o sistema de procurado de 5 estrelas manda até um helicóptero. Sem download e sem cadastro.",
+  "storyH": "História",
+  "story": [
+   "Rook Navarro passou quatro anos na cadeia do condado de Palmera por um roubo que não cometeu: o detetive Wade Harlan jogou a culpa nele. No dia em que sai, a irmã Ines liga com uma má notícia. Por causa da dívida antiga de Rook, a oficina dela em Gator Flats está prestes a ser tomada.",
+   "Agora a dívida pertence a Coral Vasquez, a rainha do porto: cinquenta mil dólares. Rook trabalha para pagar. Recolhe pacotes no canal, leva uma van quente com a polícia na cola e destrói o Phantom de Vinnie Glass, o lavador de dinheiro que mora numa torre de Glass Heights.",
+   "Um número de distintivo na maleta de Vinnie muda tudo: Coral e Harlan são sócios. Na missão final, Rook tenta levar o livro de propinas de Harlan até a imprensa no píer sul, com quatro estrelas nas costas e um helicóptero no céu."
+  ],
+  "missionsH": "8 missões de história",
+  "missions": [
+   "Fora da jaula: saia da cadeia, pegue um carro e dirija até a oficina da Ines.",
+   "Serviço de pintura: roube o Vesper GT amarelo na Ocean Strip e traga inteiro.",
+   "Água salgada: colete 5 pacotes no canal antes que o tempo acabe.",
+   "Carga quente: pegue a van, despiste a polícia e entregue no armazém.",
+   "Queixo de vidro: persiga o Phantom de Vinnie Glass, destrua e pegue a maleta.",
+   "Ratos do pântano: elimine os Gator Boys que destruíram a oficina.",
+   "Corrida do livro: passe por 6 pontos de controle antes do fim do tempo.",
+   "Palmera Heat: pare o interceptador de Harlan e leve o livro ao píer."
+  ],
+  "howH": "Como jogar",
+  "how": [
+   "Ande e dirija com WASD ou as setas. No celular, guie com o polegar esquerdo.",
+   "Chegue perto de um carro e aperte F para entrar (🚗 no celular). Se roubar um carro ocupado, o motorista foge; se um policial vir, você fica procurado.",
+   "Mire com o mouse e clique para atirar. No celular, o botão 🔫 mira sozinho no alvo mais próximo.",
+   "O marcador rosa é a próxima missão. A linha roxa do GPS leva até o alvo. Aperte M para o mapa e clique para marcar um destino.",
+   "Crimes aumentam o nível de procurado de 1 a 5 estrelas. Quebre a linha de visão da polícia e fique escondido um tempo, ou pinte o carro na oficina da Ines para zerar as estrelas na hora."
+  ],
+  "featH": "O que tem no jogo",
+  "feats": [
+   "Uma cidade contínua com seis distritos: Little Palmera, Glass Heights, Ocean Strip, Distrito do Canal, Gator Flats e Port Mangrove.",
+   "9 tipos de veículo: sedã, táxi, esportivo, muscle car, van, picape, viatura, interceptador e Phantom. Cada um tem velocidade, aderência e resistência próprias, e o freio de mão permite drift.",
+   "Ciclo de dia e noite: pôr do sol à tarde e, à noite, faróis, postes e letreiros neon.",
+   "Duas rádios, Palmera Wave 101.5 (synthwave) e Gator Funk 88.1. A música e as sirenes são geradas dentro do jogo.",
+   "Armas: socos, pistola, submetralhadora e escopeta. A Bullet Bay Armas vende munição e colete.",
+   "O progresso fica salvo no navegador e você continua da última missão."
+  ],
+  "ctrlH": "Controles",
+  "ctrl": [
+   "PC: WASD para andar ou dirigir, mouse para mirar e clique para atirar. F entra ou sai, Shift corre, Espaço é o freio de mão, Q/E trocam a arma, R muda o rádio, M abre o mapa, P pausa, H buzina.",
+   "Celular: toque e arraste à esquerda para andar ou dirigir. Botões à direita: 🔫 atirar (freio de mão no carro), 🚗 entrar/sair, ⇄ arma, 🗺 mapa, 📻 rádio."
+  ],
+  "tipsH": "Dicas",
+  "tips": [
+   "Quebrar a linha de visão é o jeito mais rápido de despistar a polícia: entre em ruas laterais e atrás de prédios.",
+   "Esportivos são rápidos mas frágeis. Nas perseguições, uma van ou picape causa mais dano ao bater.",
+   "Em Queixo de vidro, batidas laterais param o Phantom mais rápido.",
+   "Hospital e fiança levam parte do seu dinheiro. Comprar colete antes de uma missão é boa ideia."
+  ],
+  "faqH": "Perguntas frequentes",
+  "faq": [
+   [
+    "Palmera Heat é GTA 6?",
+    "Não. Palmera Heat é um jogo independente criado do zero pela PickRadar no estilo da série GTA (mundo aberto visto de cima, roubo de carros, estrelas de procurado). A cidade, os personagens e a história são totalmente nossos."
+   ],
+   [
+    "É grátis? Preciso baixar algo?",
+    "É totalmente grátis e roda no navegador. Sem download, instalação ou conta."
+   ],
+   [
+    "Dá para jogar no celular?",
+    "Sim. Na tela de toque aparecem um analógico virtual à esquerda e botões de tiro, carro, arma e mapa à direita."
+   ],
+   [
+    "Quantas missões existem?",
+    "São 8 missões de história. Depois, o modo livre continua sem fim e você pode repetir as missões concluídas pelo menu."
+   ]
+  ],
+  "aboutH": "Sobre este jogo",
+  "about": "Palmera Heat é um jogo original da PickRadar. Não tem ligação com a Rockstar Games nem com a Take-Two Interactive; GTA e Grand Theft Auto são marcas da Take-Two Interactive. Todos os gráficos e sons são gerados por código."
+ },
+ "id": {
+  "name": "Palmera Heat",
+  "genre": "Dunia terbuka",
+  "teaser": "Satu kota, satu utang, dan sopir yang tak pernah bicara.",
+  "card": "Curi mobil, kabur dari polisi, dan tamatkan kisah kriminal 8 misi.",
+  "title": "Palmera Heat – Game Dunia Terbuka Gaya GTA Gratis di Browser",
+  "desc": "Game kriminal dunia terbuka gaya GTA di browser: curi mobil, kabur dari polisi, dan selesaikan 8 misi cerita. Gratis, tanpa unduh, bisa di PC dan HP.",
+  "h1": "Palmera Heat: game kriminal dunia terbuka gaya GTA",
+  "intro": "Kota teluk Palmera milikmu. Naik mobil apa saja, nyalakan radio, dan menyetir dari hotel neon Ocean Strip sampai labirin kontainer Port Mangrove. Kalau polisi mengejar, sistem buronan 5 bintang bahkan mengirim helikopter. Tanpa unduh dan tanpa daftar.",
+  "storyH": "Cerita",
+  "story": [
+   "Rook Navarro dipenjara empat tahun di Palmera County karena perampokan yang tidak ia lakukan: Detektif Wade Harlan menjebaknya. Hari ia bebas, adiknya Ines menelepon dengan kabar buruk. Karena utang lama Rook, bengkel Ines di Gator Flats akan disita.",
+   "Utang itu kini milik Coral Vasquez, ratu pelabuhan: lima puluh ribu dolar. Rook bekerja untuk melunasinya. Ia memungut paket di kanal, membawa van selundupan sambil dikejar polisi, dan menghancurkan Phantom milik Vinnie Glass, pencuci uang yang tinggal di menara Glass Heights.",
+   "Nomor lencana di koper Vinnie mengubah segalanya: Coral dan Harlan bersekutu. Di misi terakhir Rook berusaha membawa buku suap Harlan ke wartawan di dermaga selatan, dengan empat bintang di belakangnya dan helikopter di atas kepala."
+  ],
+  "missionsH": "8 misi cerita",
+  "missions": [
+   "Keluar dari Kandang: keluar dari penjara, ambil mobil, dan menyetir ke bengkel Ines.",
+   "Kerja Cat: curi Vesper GT kuning di Ocean Strip dan bawa pulang utuh.",
+   "Air Asin: kumpulkan 5 paket di kanal sebelum waktu habis.",
+   "Muatan Panas: ambil van, lolos dari polisi, dan antar ke gudang.",
+   "Rahang Kaca: kejar Phantom milik Vinnie Glass, hancurkan, dan ambil kopernya.",
+   "Tikus Rawa: habisi Gator Boys yang mengobrak-abrik bengkel.",
+   "Kejar Buku Besar: lewati 6 pos pemeriksaan sebelum waktu habis.",
+   "Palmera Heat: hentikan mobil pengejar Harlan dan bawa buku ke dermaga."
+  ],
+  "howH": "Cara bermain",
+  "how": [
+   "Jalan dan menyetir dengan WASD atau tombol panah. Di HP, arahkan dengan jempol kiri.",
+   "Dekati mobil dan tekan F untuk naik (🚗 di HP). Kalau mencuri mobil berpenumpang, sopirnya kabur; kalau polisi melihat, kamu jadi buronan.",
+   "Bidik dengan mouse dan klik untuk menembak. Di HP, tombol 🔫 otomatis membidik target terdekat.",
+   "Penanda merah muda adalah misi berikutnya. Garis GPS ungu menuntunmu ke target. Tekan M untuk peta dan klik untuk memasang tujuan.",
+   "Kejahatan menaikkan level buronan dari 1 sampai 5 bintang. Putus pandangan polisi dan bersembunyi sebentar, atau cat ulang mobil di bengkel Ines untuk menghapus bintang seketika."
+  ],
+  "featH": "Isi game",
+  "feats": [
+   "Satu kota utuh dengan enam distrik: Little Palmera, Glass Heights, Ocean Strip, Distrik Kanal, Gator Flats, dan Port Mangrove.",
+   "9 jenis kendaraan: sedan, taksi, mobil sport, muscle car, van, pikap, mobil polisi, mobil pengejar, dan Phantom. Kecepatan, cengkeraman, dan ketahanannya berbeda, dan rem tangan bisa dipakai drift.",
+   "Siklus siang dan malam: senja di sore hari, lalu lampu mobil, lampu jalan, dan papan neon saat gelap.",
+   "Dua stasiun radio, Palmera Wave 101.5 (synthwave) dan Gator Funk 88.1. Musik dan sirene dibuat di dalam game.",
+   "Senjata: tinju, pistol, SMG, dan senapan gentel. Toko Bullet Bay menjual peluru dan rompi.",
+   "Progres tersimpan di browser, jadi kamu lanjut dari misi terakhir."
+  ],
+  "ctrlH": "Kontrol",
+  "ctrl": [
+   "PC: WASD untuk jalan atau menyetir, mouse untuk membidik dan klik untuk menembak. F naik/turun, Shift lari, Spasi rem tangan, Q/E ganti senjata, R ganti radio, M buka peta, P jeda, H klakson.",
+   "HP: sentuh dan geser di sisi kiri untuk jalan atau menyetir. Tombol di kanan: 🔫 tembak (rem tangan saat menyetir), 🚗 naik/turun, ⇄ senjata, 🗺 peta, 📻 radio."
+  ],
+  "tipsH": "Tips",
+  "tips": [
+   "Cara tercepat lolos dari polisi adalah memutus pandangan: masuk gang dan sembunyi di balik gedung.",
+   "Mobil sport cepat tapi rapuh. Di misi kejar-kejaran, van atau pikap memberi kerusakan lebih besar saat menabrak.",
+   "Di Rahang Kaca, tabrakan dari samping menghentikan Phantom lebih cepat.",
+   "Biaya rumah sakit dan uang jaminan memotong uangmu. Beli rompi sebelum misi."
+  ],
+  "faqH": "Pertanyaan umum",
+  "faq": [
+   [
+    "Apakah Palmera Heat itu GTA 6?",
+    "Bukan. Palmera Heat adalah game independen buatan PickRadar dari nol dengan gaya seri GTA (dunia terbuka tampak atas, mencuri mobil, bintang buronan). Kota, tokoh, dan ceritanya sepenuhnya milik kami."
+   ],
+   [
+    "Gratis? Perlu unduh?",
+    "Sepenuhnya gratis dan berjalan di browser. Tanpa unduh, instalasi, atau akun."
+   ],
+   [
+    "Bisa dimainkan di HP?",
+    "Bisa. Di layar sentuh muncul stik virtual di kiri serta tombol tembak, mobil, senjata, dan peta di kanan."
+   ],
+   [
+    "Ada berapa misi?",
+    "Ada 8 misi cerita. Setelah tamat, jelajah bebas terus berlanjut dan misi yang selesai bisa diulang dari menu."
+   ]
+  ],
+  "aboutH": "Tentang game ini",
+  "about": "Palmera Heat adalah game orisinal PickRadar. Tidak berafiliasi dengan Rockstar Games atau Take-Two Interactive; GTA dan Grand Theft Auto adalah merek dagang Take-Two Interactive. Semua grafik dan suara dibuat dengan kode."
+ }
+}
