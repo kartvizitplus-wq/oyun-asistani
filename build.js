@@ -3,14 +3,14 @@
 const fs = require('fs'), path = require('path');
 const R = p => path.join(__dirname, p);
 const read = p => JSON.parse(fs.readFileSync(R(p), 'utf8'));
-const cfg = read('config.json'), I18N = read('src/i18n.json'), ITEMS_TR = read('data/mlbb-items-tr.json'), GUIDE = read('src/guide.json'), CG = read('src/colorgame.json'), ND = read('src/nightdrop.json'), MB = read('src/moba.json'), SITE = read('src/site.json');
+const cfg = read('config.json'), I18N = read('src/i18n.json'), ITEMS_TR = read('data/mlbb-items-tr.json'), GUIDE = read('src/guide.json'), CG = read('src/colorgame.json'), ND = read('src/nightdrop.json'), MB = read('src/moba.json'), SITE = read('src/site.json'), RS = read('src/redscarf.json');
 /* The old pick-assistant pages (hero, tier, draft, news, guide) are no longer built: PickRadar is a games site now. */
 const LEGACY = false;
 const Engine = require('./src/engine.js'), Icons = require('./src/icons.js');
 const OUT = R('dist');
 /* Cache-busting: asset URLs carry a hash of their content so browsers never mix old and new scripts. */
 const crypto = require('crypto');
-const VER = Object.fromEntries(['style.css', 'app.js', 'engine.js', 'icons.js', 'colorgame.js', 'nightdrop.js', 'moba.js', 'chibi.js'].map(f => [f, crypto.createHash('md5').update(fs.readFileSync(R('src/' + f))).digest('hex').slice(0, 8)]));
+const VER = Object.fromEntries(['style.css', 'app.js', 'engine.js', 'icons.js', 'colorgame.js', 'nightdrop.js', 'moba.js', 'chibi.js', 'redscarf.js'].map(f => [f, crypto.createHash('md5').update(fs.readFileSync(R('src/' + f))).digest('hex').slice(0, 8)]));
 const asset = f => `/assets/${f}?v=${VER[f]}`;
 
 /* Games shown on the site. kind: moba (heroes + items), bs (Brawl Stars), ff (Free Fire). */
@@ -23,6 +23,7 @@ const GAMES = [
 ];
 /* PickRadar's own browser games, in menu order. */
 const PLAY = [
+  { slug: 'red-scarf', name: l => RS[l].name, desc: l => RS[l].desc, bg: '#050508' },
   { slug: 'night-drop', name: l => ND[l].name, desc: l => ND[l].desc, bg: '#0a0e16' },
   { slug: 'crown-clash', name: () => MB.games.crown.name, desc: l => MB.pages[l].crown.desc, bg: '#14261b' },
   { slug: 'jade-lanes', name: () => MB.games.jade.name, desc: l => MB.pages[l].jade.desc, bg: '#132a26' },
@@ -37,6 +38,7 @@ const COVER = {
   'duel-peak': '<rect width="320" height="180" fill="#1a1a2e"/><path d="M30 160 L290 20" stroke="#3d3550" stroke-width="34"/><path d="M-10 -10 L330 190" stroke="#1b2f55" stroke-width="16" opacity=".8"/><circle cx="135" cy="104" r="14" fill="#a48bff" stroke="#4a9bea" stroke-width="4"/><circle cx="185" cy="77" r="14" fill="#ff5fa2" stroke="#e2595b" stroke-width="4"/><path d="M152 95 L170 86" stroke="#fff" stroke-width="3"/><rect x="72" y="128" width="16" height="16" fill="#4a9bea"/><rect x="232" y="36" width="16" height="16" fill="#e2595b"/>',
   'color-gradient': Array.from({ length: 40 }, (_, i) => { const x = i % 8, y = Math.floor(i / 8); return `<rect x="${12 + x * 37}" y="${8 + y * 33}" width="34" height="30" rx="4" fill="hsl(${200 + x * 14 - y * 9} ${55 + y * 6}% ${72 - y * 9 - x * 2}%)"/>`; }).join('') + '<circle cx="29" cy="23" r="4" fill="#0006"/><circle cx="288" cy="155" r="4" fill="#0006"/>'
 };
+COVER['red-scarf'] = '<rect width="320" height="180" fill="#050508"/><path d="M0 40h120v30H60v70H0zM200 0h30v110h90v30H200z" fill="#26262f"/><path d="M150 120 L300 60 L300 170 Z" fill="#ff2d48" opacity=".18"/><circle cx="150" cy="120" r="14" fill="#4a5a6a" stroke="#15121c" stroke-width="3"/><ellipse cx="150" cy="108" rx="20" ry="7" fill="#c9a25e"/><circle cx="95" cy="125" r="13" fill="#101016" stroke="#d4142e" stroke-width="3"/><rect x="98" y="120" width="12" height="5" rx="2" fill="#e8c4a0"/><path d="M83 128 q-20 4 -34 -2 M83 132 q-18 10 -30 8" stroke="#d4142e" stroke-width="5" fill="none" stroke-linecap="round"/><circle cx="260" cy="30" r="12" fill="#d8dde8" opacity=".8"/>';
 const cover = slug => `<svg viewBox="0 0 320 180" width="320" height="180" aria-hidden="true" preserveAspectRatio="xMidYMid slice">${COVER[slug]}</svg>`;
 const NEWS = fs.existsSync(R('data/news')) ? fs.readdirSync(R('data/news')).filter(f => f.endsWith('.json')).map(f => read('data/news/' + f)).sort((a, b) => b.date.localeCompare(a.date)) : [];
 
@@ -473,6 +475,52 @@ ${G.sections.map((sec, i) => `<h2 id="s${i + 1}">${esc(sec.h)}</h2><ol>${sec.ste
     }));
   }
 
+  /* Red Scarf: ninja stealth in a dark, generated labyrinth (own script + chibi painter). */
+  {
+    const R = RS[lang] || RS.en, rel = `${lang}/red-scarf/`;
+    const ui = Object.fromEntries(['name', 'play', 'level', 'key', 'best', 'running', 'sneaking', 'dash', 'keys', 'locked', 'gotKey', 'alarm', 'levelStart', 'dead', 'reached', 'reset', 'again', 'clear', 'clearText', 'nextInfo', 'next', 'causes', 'moves', 'story'].map(k => [k, R[k]]));
+    const li = a => a.map(x => `<li>${esc(x)}</li>`).join('');
+    write(`${rel}index.html`, layout({
+      lang, rel, active: 'red-scarf', title: `${R.title} · ${cfg.siteName}`, desc: R.desc, lastmod: '2026-11-20',
+      crumbs: [[t.home, `${lang}/`], [R.name, rel]],
+      jsonld: { '@context': 'https://schema.org', '@type': 'VideoGame', name: R.name, description: R.desc, url: `${base}/${rel}`, inLanguage: lang,
+        genre: ['Stealth', 'Action', 'Roguelike'], gamePlatform: 'Web browser', applicationCategory: 'Game', operatingSystem: 'Any', isAccessibleForFree: true, playMode: 'SinglePlayer',
+        publisher: { '@type': 'Organization', name: cfg.siteName, url: `${base}/` } },
+      body: `<section><h1>${esc(R.h1)}</h1><p class="lead">${esc(R.intro)}</p></section>
+<section id="rs" class="rs" data-t="${esc(JSON.stringify(ui))}">
+<div class="rs-stage"><canvas aria-label="${esc(R.name)}"></canvas>
+<div class="rs-pad" hidden><button type="button" data-k="dash" aria-label="${esc(R.dash)}">⚡</button></div>
+<button type="button" class="rs-full" data-k="full" aria-label="Full screen">⛶</button>
+<div class="rs-ov"></div></div>
+<noscript><p class="note">JavaScript is required to play.</p></noscript>
+</section>
+<article class="prose"><h2>${esc(R.storyH)}</h2>${R.storyFull.map(x => `<p>${esc(x)}</p>`).join('')}
+<h2>${esc(R.howH)}</h2><ol>${li(R.how)}</ol>
+<h2>${esc(R.trapsH)}</h2><ul>${li(R.traps)}</ul>
+<h2>${esc(R.movesH)}</h2><p>${esc(R.movesList)}</p>
+<h2>${esc(R.ctrlH)}</h2><ul>${li(R.ctrl)}</ul>
+<h2>${esc(R.tipsH)}</h2><ul>${li(R.tips)}</ul>
+<h2>${esc(R.aboutH)}</h2><p>${esc(R.about)}</p></article>
+<style>
+.rs-stage{position:relative;width:100%;height:min(78vh,640px);min-height:380px;border:1px solid #d4142e66;border-radius:10px;overflow:hidden;background:#050508;touch-action:none;user-select:none;-webkit-user-select:none;box-shadow:0 0 50px -16px #d4142e}
+.rs-stage:fullscreen{height:100%;border:0;border-radius:0}
+.rs-stage canvas{display:block;width:100%;height:100%;touch-action:none}
+.rs-ov{position:absolute;inset:0;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:12px;text-align:center;background:radial-gradient(circle at 50% 40%,rgba(60,4,12,.75),rgba(3,2,5,.92));padding:22px;overflow:auto}
+.rs-ov[hidden]{display:none}
+.rs-ov h3{font-size:2rem;color:#ff4d63;letter-spacing:.04em}
+.rs-ov p{margin:0;color:#c9c9d6;max-width:52ch}
+.rs-ov .rs-story{font-style:italic;color:#e0d6d8}
+.rs-ov .rs-reset{color:#ff4d63;font-weight:600}
+.rs-ov .btn{background:linear-gradient(180deg,#ff3a52,#a80f22);color:#fff;box-shadow:0 8px 24px -10px #ff2d48}
+.rs-pad{position:absolute;right:16px;bottom:16px}
+.rs-pad[hidden]{display:none}
+.rs-pad button{width:76px;height:76px;border-radius:50%;border:2px solid rgba(255,77,99,.7);background:rgba(160,10,30,.55);color:#fff;font-size:1.8rem;touch-action:none}
+.rs-full{position:absolute;left:10px;bottom:40px;width:40px;height:40px;border-radius:8px;border:1px solid rgba(255,255,255,.25);background:rgba(10,6,10,.6);color:#fff;cursor:pointer}
+</style>
+<script src="${asset('chibi.js')}" defer></script><script src="${asset('redscarf.js')}" defer></script>`
+    }));
+  }
+
   /* Night Drop: top-down battle royale against bots (standalone page, own script). */
   {
     const N = ND[lang] || ND.en, rel = `${lang}/night-drop/`;
@@ -597,7 +645,7 @@ var n=(s||navigator.language||'en').slice(0,2).toLowerCase();location.replace('/
 ${cfg.langs.map(l => `<a style="color:#e8b44a;margin-right:12px" href="/${l}/">${esc(I18N[l].langName)}</a>`).join('')}
 </body></html>`);
 fs.mkdirSync(path.join(OUT, 'assets'), { recursive: true });
-for (const f of ['style.css', 'app.js', 'engine.js', 'icons.js', 'colorgame.js', 'nightdrop.js', 'moba.js', 'chibi.js']) fs.copyFileSync(R('src/' + f), path.join(OUT, 'assets', f));
+for (const f of ['style.css', 'app.js', 'engine.js', 'icons.js', 'colorgame.js', 'nightdrop.js', 'moba.js', 'chibi.js', 'redscarf.js']) fs.copyFileSync(R('src/' + f), path.join(OUT, 'assets', f));
 if (fs.existsSync(R('static'))) fs.cpSync(R('static'), OUT, { recursive: true });
 fs.writeFileSync(path.join(OUT, 'manifest.webmanifest'), JSON.stringify({
   name: cfg.siteName + ' – ' + SITE.en.tagline, short_name: cfg.siteName, start_url: '/', scope: '/', display: 'standalone',
