@@ -1,4 +1,5 @@
-/* Night Drop: a top-down battle royale in the dark. You see only what your torch lights up; walls block the light.
+/* Night Drop: a top-down battle royale on the rain-soaked neon rooftops of a city. You see only around you (walls block the view);
+   a sonar pulse shows enemies through walls but gives your position away, and every shot reveals the shooter.
    1 player + 11 bots, loot on the ground, a shrinking safe zone, last one standing wins.
    Controls: WASD/arrows + mouse (click to shoot, R reload, Q/H heal, E pick up) or two touch sticks on phones. */
 (function () {
@@ -15,7 +16,9 @@
 
   /* ---------- constants ---------- */
   const W = 2600, BOTS = 11, PR = 17;
-  const CONE = 0.62, RANGE = 560, AMBIENT = 125;
+  const VIS = 340, SONAR_R = 1150, SONAR_CD = 6;
+  /* neon palette of the rain city */
+  const NEON = ['#2ef2ff', '#ff3df2', '#ffd23d', '#7dff6b', '#ff7a3d', '#9d7bff'];
   const WEAPONS = {
     pistol: { tier: 1, dmg: 18, rate: 3.2, spread: .05, speed: 1500, range: 620, mag: 12, reload: 1.1, pellets: 1, col: '#c9d1e0' },
     smg: { tier: 2, dmg: 11, rate: 10, spread: .12, speed: 1500, range: 560, mag: 30, reload: 1.6, pellets: 1, col: '#7fd6ff' },
@@ -47,7 +50,7 @@
   }
 
   /* ---------- state ---------- */
-  let rects, loot, ents, bullets, fx, noises, feed, zone, me, state = 'menu', time, msg, spectate;
+  let houses, puddles, pings, pulses, rain = [], rects, loot, ents, bullets, fx, noises, feed, zone, me, state = 'menu', time, msg, spectate;
 
   function nearRects(x, y, rad) { return rects.filter(r => x + rad > r.x && x - rad < r.x + r.w && y + rad > r.y && y - rad < r.y + r.h); }
   function blocked(x1, y1, x2, y2, list) {
@@ -74,13 +77,14 @@
     while (blocks.filter(b => b.house).length < 9 && tries++ < 300) {
       const w = rnd(300, 520), h = rnd(240, 400), x = rnd(120, W - w - 120), y = rnd(120, W - h - 120);
       if (!free(x, y, w, h, 130)) continue;
-      blocks.push({ x, y, w, h, house: 1 });
+      const neon = NEON[blocks.filter(b => b.house).length % NEON.length];
+      blocks.push({ x, y, w, h, house: 1, neon });
       const doors = [0, 1, 2, 3].sort(() => Math.random() - .5).slice(0, 2 + (Math.random() < .4));
       const side = (s, x1, y1, len, horiz) => {
-        if (!doors.includes(s)) { rects.push(horiz ? { x: x1, y: y1, w: len, h: th, wall: 1 } : { x: x1, y: y1, w: th, h: len, wall: 1 }); return; }
+        if (!doors.includes(s)) { rects.push(horiz ? { x: x1, y: y1, w: len, h: th, wall: 1, neon } : { x: x1, y: y1, w: th, h: len, wall: 1, neon }); return; }
         const at = rnd(40, len - door - 40);
-        if (horiz) { rects.push({ x: x1, y: y1, w: at, h: th, wall: 1 }, { x: x1 + at + door, y: y1, w: len - at - door, h: th, wall: 1 }); }
-        else { rects.push({ x: x1, y: y1, w: th, h: at, wall: 1 }, { x: x1, y: y1 + at + door, w: th, h: len - at - door, wall: 1 }); }
+        if (horiz) { rects.push({ x: x1, y: y1, w: at, h: th, wall: 1, neon }, { x: x1 + at + door, y: y1, w: len - at - door, h: th, wall: 1, neon }); }
+        else { rects.push({ x: x1, y: y1, w: th, h: at, wall: 1, neon }, { x: x1, y: y1 + at + door, w: th, h: len - at - door, wall: 1, neon }); }
       };
       side(0, x, y, w, true); side(1, x, y + h - th, w, true); side(2, x, y + th, h - 2 * th, false); side(3, x + w - th, y + th, h - 2 * th, false);
       if (Math.random() < .7) { const cw = rnd(40, 70); rects.push({ x: x + rnd(60, w - 60 - cw), y: y + rnd(60, h - 60 - cw), w: cw, h: cw, crate: 1 }); }
@@ -95,7 +99,9 @@
       rects.push({ x, y, w: ww, h: hh, crate: !big, rock: big });
     }
     loot = [];
-    const houses = blocks.filter(b => b.house);
+    houses = blocks.filter(b => b.house);
+    puddles = Array.from({ length: 70 }, () => { const p = freePoint(10); return { x: p.x, y: p.y, rx: rnd(30, 110), ry: rnd(16, 50), a: rnd(0, 3.14), c: NEON[Math.floor(Math.random() * NEON.length)] }; });
+    for (const r of rects) if (r.rock) r.tank = true;
     const spot = inside => {
       if (inside && houses.length) {
         for (let i = 0; i < 30; i++) {
@@ -114,7 +120,7 @@
   function newEnt(name, bot) {
     const p = freePoint(40);
     return { x: p.x, y: p.y, r: PR, hp: 100, armor: 0, ang: rnd(-3, 3), w: 'pistol', mag: WEAPONS.pistol.mag, reloadT: 0, cool: 0, healCd: 0,
-      meds: 0, alive: true, kills: 0, name, bot, hitT: 0,
+      meds: 0, alive: true, kills: 0, name, bot, hitT: 0, walk: 0, sonarCd: 2, revealT: 0,
       ai: bot ? { wp: null, tgt: null, seenT: 0, last: null, think: 0, react: rnd(.22, .5), err: rnd(.07, .17), strafe: Math.random() < .5 ? 1 : -1, stuckT: 0, px: 0, py: 0, heard: null } : null };
   }
 
@@ -122,10 +128,12 @@
     makeMap();
     ents = []; bullets = []; fx = []; noises = []; feed = []; time = 0; msg = null; spectate = null;
     me = newEnt(T.you || 'You', false);
-    ents.push(me);
+    me.pal = { suit: '#e8b44a', dark: '#4a3510', glow: '#2ef2ff' };
+    ents.push(me); pings = []; pulses = [];
     const names = NAMES.slice().sort(() => Math.random() - .5);
     for (let i = 0; i < BOTS; i++) {
       const b = newEnt(names[i], true);
+      const hue = (i * 37 + 200) % 360; b.pal = { suit: `hsl(${hue} 55% 46%)`, dark: `hsl(${hue} 45% 20%)`, glow: `hsl(${(hue + 160) % 360} 100% 62%)` };
       for (let k = 0; k < 20 && ents.some(e => dist(e, b) < 520); k++) Object.assign(b, freePoint(40));
       ents.push(b);
     }
@@ -168,7 +176,15 @@
     }
     fx.push({ type: 'flash', x: e.x + Math.cos(e.ang) * (e.r + 10), y: e.y + Math.sin(e.ang) * (e.r + 10), t: .06, owner: e });
     noises.push({ x: e.x, y: e.y, t: .7, owner: e });
+    e.revealT = .9;
     if (e.mag <= 0) reload(e);
+  }
+  /* Sonar: an expanding ring that shows every enemy it passes for a moment, through walls.
+     It also gives you away: bots inside the ring learn where you are. */
+  function sonar(e) {
+    if (!e.alive || e.sonarCd > 0) return;
+    e.sonarCd = SONAR_CD;
+    pulses.push({ x: e.x, y: e.y, r: 0, owner: e, hit: new Set() });
   }
   function reload(e) { if (e.reloadT > 0 || e.mag >= WEAPONS[e.w].mag) return; e.reloadT = WEAPONS[e.w].reload; }
   function heal(e) {
@@ -215,6 +231,7 @@
 
   /* ---------- movement & AI ---------- */
   function move(e, vx, vy, dt) {
+    e.walk += Math.hypot(vx, vy) * dt * .09;
     e.x += vx * dt; e.y += vy * dt;
     for (const r of nearRects(e.x, e.y, e.r + 2)) {
       const cx = clamp(e.x, r.x, r.x + r.w), cy = clamp(e.y, r.y, r.y + r.h), dx = e.x - cx, dy = e.y - cy, d2 = dx * dx + dy * dy;
@@ -230,9 +247,7 @@
 
   function sees(a, b) {
     const d = dist(a, b);
-    if (d > RANGE + b.r) return false;
-    const inCone = Math.abs(angDiff(a.ang, Math.atan2(b.y - a.y, b.x - a.x))) < CONE + .08;
-    if (!(d < AMBIENT + b.r || inCone)) return false;
+    if (d > VIS + b.r + (b.revealT > 0 ? 500 : 0)) return false;
     return !blocked(a.x, a.y, b.x, b.y, nearRects((a.x + b.x) / 2, (a.y + b.y) / 2, d / 2 + 5));
   }
 
@@ -267,6 +282,7 @@
       if (Math.hypot(A.last.x - b.x, A.last.y - b.y) < 30) A.seenT = 0;
     } else {
       if (b.hp < 70 && b.meds > 0) heal(b);
+      if (b.sonarCd <= 0 && Math.random() < .004) { b.sonarCd = SONAR_CD * 2; noises.push({ x: b.x, y: b.y, t: .7, owner: b }); }
       if (b.mag < WEAPONS[b.w].mag) reload(b);
       let want = null, wd = 380;
       for (const l of loot) {
@@ -330,6 +346,7 @@
     if (k === 'r') reload(me);
     if (k === 'q' || k === 'h') heal(me);
     if (k === 'e') { const i = weaponUnder(me); if (i > -1) swapWeapon(me, i); }
+    if (k === 'f') sonar(me);
   });
   addEventListener('keyup', e => { keys[e.key.toLowerCase()] = false; });
   const local = e => { const b = cv.getBoundingClientRect(); return { x: e.clientX - b.left, y: e.clientY - b.top, w: b.width, h: b.height }; };
@@ -367,6 +384,7 @@
     }
     else if (k === 'reload') reload(me);
     else if (k === 'heal') heal(me);
+    else if (k === 'sonar') sonar(me);
     else if (k === 'pick') { const i = weaponUnder(me); if (i > -1) swapWeapon(me, i); }
     else if (k === 'full') {
       try { if (document.fullscreenElement) document.exitFullscreen(); else stage.requestFullscreen().then(() => { try { screen.orientation.lock('landscape').catch(() => {}); } catch (x) {} }).catch(() => {}); } catch (x) {}
@@ -382,6 +400,7 @@
     updateZone(dt);
     for (const e of ents) {
       if (!e.alive) continue;
+      e.sonarCd = Math.max(0, e.sonarCd - dt); e.revealT = Math.max(0, e.revealT - dt);
       e.cool = Math.max(0, e.cool - dt); e.healCd = Math.max(0, e.healCd - dt); e.hitT = Math.max(0, e.hitT - dt);
       if (e.reloadT > 0) { e.reloadT -= dt; if (e.reloadT <= 0) { e.reloadT = 0; e.mag = WEAPONS[e.w].mag; } }
       if (outside(e)) { e.zoneT = (e.zoneT || 0) + dt; if (e.zoneT > .5) { e.zoneT = 0; damage(e, zoneDps() * .5, null); } }
@@ -413,21 +432,31 @@
       if (hit) { if (hit !== 'wall') damage(hit, b.dmg, b.owner); else fx.push({ type: 'spark', x: b.x, y: b.y, t: .12 }); bullets.splice(i, 1); }
       else if (b.left <= 0) bullets.splice(i, 1);
     }
+    for (let i = pulses.length - 1; i >= 0; i--) {
+      const p = pulses[i]; p.r += 950 * dt;
+      for (const e of ents) {
+        if (!e.alive || e === p.owner || p.hit.has(e) || Math.hypot(e.x - p.x, e.y - p.y) > p.r) continue;
+        p.hit.add(e);
+        if (p.owner === me) pings.push({ x: e.x, y: e.y, t: 1.8 });
+        if (e.bot && !e.ai.tgt) { e.ai.last = { x: p.owner.x, y: p.owner.y }; e.ai.seenT = 2.2; }
+      }
+      if (p.r > SONAR_R) pulses.splice(i, 1);
+    }
+    for (let i = pings.length - 1; i >= 0; i--) if ((pings[i].t -= dt) <= 0) pings.splice(i, 1);
+    if (me.alive && !me.sonarAuto && time > 1.5) { me.sonarAuto = true; sonar(me); }
     for (const list of [fx, noises, feed]) for (let i = list.length - 1; i >= 0; i--) { list[i].t -= dt; if (list[i].t <= 0) list.splice(i, 1); }
     if (msg) { msg.t -= dt; if (msg.t <= 0) msg = null; }
   }
 
   /* ---------- drawing ---------- */
-  const camOff = () => ({ x: Math.cos(me.ang) * 70, y: Math.sin(me.ang) * 70 });
+  const camOff = () => ({ x: Math.cos(me.ang) * 60, y: Math.sin(me.ang) * 60 });
   function visPoly(e) {
-    const pts = [], N = 260, near = nearRects(e.x, e.y, RANGE + 10);
+    const pts = [], N = 220, near = nearRects(e.x, e.y, VIS + 10);
     for (let i = 0; i < N; i++) {
-      const a = -Math.PI + i / N * Math.PI * 2, inC = Math.abs(angDiff(e.ang, a));
-      const R = inC < CONE ? RANGE : inC < CONE + .12 ? AMBIENT + (RANGE - AMBIENT) * (1 - (inC - CONE) / .12) : AMBIENT;
-      const dx = Math.cos(a) * R, dy = Math.sin(a) * R;
+      const a = -Math.PI + i / N * Math.PI * 2, dx = Math.cos(a) * VIS, dy = Math.sin(a) * VIS;
       let t = 1;
       for (const r of near) { const h = segRect(e.x, e.y, dx, dy, r); if (h != null && h < t) t = h; }
-      pts.push(e.x + dx * Math.max(t, 0) + (t < 1 ? Math.cos(a) * 4 : 0), e.y + dy * Math.max(t, 0) + (t < 1 ? Math.sin(a) * 4 : 0));
+      pts.push(e.x + dx * Math.max(t, 0) + (t < 1 ? Math.cos(a) * 5 : 0), e.y + dy * Math.max(t, 0) + (t < 1 ? Math.sin(a) * 5 : 0));
     }
     return pts;
   }
@@ -439,40 +468,105 @@
     }
     return c;
   }
-
   function resize() {
     const dpr = Math.min(2, devicePixelRatio || 1), r = stage.getBoundingClientRect();
     cw = r.width; ch = r.height;
     cv.width = Math.round(cw * dpr); cv.height = Math.round(ch * dpr);
     ctx.setTransform(dpr, 0, 0, dpr, 0, 0);
-    cam.s = clamp(Math.sqrt(cw * ch) / 760, .5, 1.25);
+    cam.s = clamp(Math.sqrt(cw * ch) / 720, .5, 1.3);
+    rain = Array.from({ length: Math.round(cw * ch / 5000) }, () => ({ x: Math.random() * cw, y: Math.random() * ch, l: rnd(8, 18), v: rnd(500, 800) }));
   }
+  const rr = (x, y, w, h, r) => { ctx.beginPath(); ctx.roundRect ? ctx.roundRect(x, y, w, h, r) : ctx.rect(x, y, w, h); };
 
-  function drawEnt(e, self) {
-    ctx.save(); ctx.translate(e.x, e.y); ctx.rotate(e.ang);
-    ctx.fillStyle = '#0b0f17'; ctx.fillRect(e.r - 4, -4, 20, 8);
-    ctx.fillStyle = WEAPONS[e.w].col; ctx.fillRect(e.r - 2, -2.5, 16, 5);
-    ctx.restore();
-    ctx.beginPath(); ctx.arc(e.x, e.y, e.r, 0, 6.283);
-    ctx.fillStyle = e.hitT > 0 ? '#fff' : self ? '#e8b44a' : '#e2595b'; ctx.fill();
-    ctx.lineWidth = 3; ctx.strokeStyle = self ? '#7a5a17' : '#6d1f22'; ctx.stroke();
-    if (e.armor > 0) { ctx.beginPath(); ctx.arc(e.x, e.y, e.r + 4, 0, 6.283 * e.armor / 100); ctx.strokeStyle = '#4a9bea'; ctx.lineWidth = 2.5; ctx.stroke(); }
+  /* A runner seen from above: legs swing, arms hold the gun, a glowing visor shows where they look. */
+  function drawHuman(e, self) {
+    const P = e.pal || { suit: '#888', dark: '#333', glow: '#fff' }, sw = Math.sin(e.walk) * 6;
+    ctx.save(); ctx.translate(e.x, e.y); ctx.scale(1.3, 1.3);
+    ctx.fillStyle = 'rgba(0,0,0,.4)'; ctx.beginPath(); ctx.ellipse(4, 6, 19, 15, 0, 0, 6.283); ctx.fill();
+    if (self) { ctx.strokeStyle = 'rgba(46,242,255,.5)'; ctx.lineWidth = 2; ctx.beginPath(); ctx.arc(0, 0, 26, 0, 6.283); ctx.stroke(); }
+    ctx.rotate(e.ang);
+    ctx.fillStyle = P.dark; rr(-6 + sw, -10, 13, 7, 3); ctx.fill(); rr(-6 - sw, 3, 13, 7, 3); ctx.fill();
+    ctx.fillStyle = '#0a0c12'; ctx.fillRect(6, 2, 26, 6);
+    ctx.fillStyle = WEAPONS[e.w].col; ctx.fillRect(12, 3.5, 19, 3);
+    ctx.fillStyle = P.dark; rr(-15, -9, 8, 18, 3); ctx.fill();
+    ctx.fillStyle = e.hitT > 0 ? '#fff' : P.suit; ctx.beginPath(); ctx.ellipse(-1, 0, 10, 16, 0, 0, 6.283); ctx.fill();
+    ctx.strokeStyle = e.hitT > 0 ? '#fff' : P.suit; ctx.lineWidth = 5; ctx.lineCap = 'round';
+    ctx.beginPath(); ctx.moveTo(1, -12); ctx.lineTo(15, 2); ctx.moveTo(1, 12); ctx.lineTo(11, 7); ctx.stroke();
+    ctx.fillStyle = P.dark; ctx.beginPath(); ctx.arc(1, 0, 8.5, 0, 6.283); ctx.fill();
+    ctx.fillStyle = P.glow; ctx.beginPath(); ctx.arc(1, 0, 8.5, -.85, .85); ctx.lineTo(3, 0); ctx.closePath(); ctx.fill();
+    ctx.globalCompositeOperation = 'lighter'; ctx.fillStyle = P.glow; ctx.globalAlpha = .25; ctx.beginPath(); ctx.arc(8, 0, 9, 0, 6.283); ctx.fill();
+    ctx.restore(); ctx.globalAlpha = 1; ctx.globalCompositeOperation = 'source-over';
+    if (e.armor > 0) { ctx.beginPath(); ctx.arc(e.x, e.y, 28, -1.57, -1.57 + 6.283 * e.armor / 100); ctx.strokeStyle = '#4a9bea'; ctx.lineWidth = 2.5; ctx.stroke(); }
     if (!self) {
-      ctx.font = '600 12px "IBM Plex Sans",system-ui'; ctx.textAlign = 'center'; ctx.fillStyle = '#ffd9d9'; ctx.fillText(e.name, e.x, e.y - e.r - 14);
-      ctx.fillStyle = '#300'; ctx.fillRect(e.x - 18, e.y - e.r - 10, 36, 4); ctx.fillStyle = '#ff6b6b'; ctx.fillRect(e.x - 18, e.y - e.r - 10, 36 * e.hp / 100, 4);
+      ctx.font = '600 12px "IBM Plex Sans",system-ui'; ctx.textAlign = 'center'; ctx.fillStyle = P.glow; ctx.fillText(e.name, e.x, e.y - 38);
+      ctx.fillStyle = 'rgba(0,0,0,.6)'; ctx.fillRect(e.x - 18, e.y - 34, 36, 4); ctx.fillStyle = '#ff4d6d'; ctx.fillRect(e.x - 18, e.y - 34, 36 * e.hp / 100, 4);
     }
   }
-  const LOOT_COL = { med: '#4fc28a', armor: '#4a9bea' };
   function drawLoot(l) {
     ctx.save(); ctx.translate(l.x, l.y);
-    const pulse = 1 + Math.sin(time * 4 + l.x) * .08; ctx.scale(pulse, pulse);
-    if (l.type === 'w') { ctx.rotate(.4); ctx.fillStyle = '#0b0f17'; ctx.fillRect(-15, -6, 30, 12); ctx.fillStyle = WEAPONS[l.w].col; ctx.fillRect(-13, -4, 26, 8); }
-    else { ctx.fillStyle = LOOT_COL[l.type]; ctx.beginPath(); ctx.arc(0, 0, 10, 0, 6.283); ctx.fill(); ctx.fillStyle = '#fff'; ctx.font = '700 13px system-ui'; ctx.textAlign = 'center'; ctx.textBaseline = 'middle'; ctx.fillText(l.type === 'med' ? '+' : '◆', 0, 1); ctx.textBaseline = 'alphabetic'; }
+    const k = 1 + Math.sin(time * 4 + l.x) * .1;
+    const col = l.type === 'w' ? WEAPONS[l.w].col : l.type === 'med' ? '#7dff6b' : '#2ef2ff';
+    ctx.globalCompositeOperation = 'lighter'; ctx.fillStyle = col; ctx.globalAlpha = .18; ctx.beginPath(); ctx.arc(0, 0, 24 * k, 0, 6.283); ctx.fill();
+    ctx.globalAlpha = 1; ctx.globalCompositeOperation = 'source-over';
+    ctx.rotate(time * .8);
+    if (l.type === 'w') { ctx.fillStyle = '#0a0c12'; ctx.fillRect(-15, -5, 30, 10); ctx.fillStyle = col; ctx.fillRect(-13, -3, 26, 6); }
+    else { ctx.strokeStyle = col; ctx.lineWidth = 3; ctx.beginPath(); for (let i = 0; i < 6; i++) { const a = i / 6 * 6.283; ctx.lineTo(Math.cos(a) * 10, Math.sin(a) * 10); } ctx.closePath(); ctx.stroke(); ctx.fillStyle = col; ctx.font = '700 12px system-ui'; ctx.textAlign = 'center'; ctx.textBaseline = 'middle'; ctx.rotate(-time * .8); ctx.fillText(l.type === 'med' ? '+' : '◆', 0, 1); ctx.textBaseline = 'alphabetic'; }
     ctx.restore();
+  }
+  function drawCity(vx0, vy0, vx1, vy1, lite) {
+    ctx.fillStyle = '#0c1222'; ctx.fillRect(Math.max(0, vx0), Math.max(0, vy0), Math.min(W, vx1) - Math.max(0, vx0), Math.min(W, vy1) - Math.max(0, vy0));
+    ctx.strokeStyle = 'rgba(110,140,255,.06)'; ctx.lineWidth = 2; ctx.beginPath();
+    for (let x = Math.max(0, Math.floor(vx0 / 120) * 120); x <= Math.min(W, vx1); x += 120) { ctx.moveTo(x, Math.max(0, vy0)); ctx.lineTo(x, Math.min(W, vy1)); }
+    for (let y = Math.max(0, Math.floor(vy0 / 120) * 120); y <= Math.min(W, vy1); y += 120) { ctx.moveTo(Math.max(0, vx0), y); ctx.lineTo(Math.min(W, vx1), y); }
+    ctx.stroke();
+    /* puddles reflect the neon */
+    ctx.globalCompositeOperation = 'lighter';
+    for (const p of puddles) {
+      if (p.x + p.rx < vx0 || p.x - p.rx > vx1 || p.y + p.rx < vy0 || p.y - p.rx > vy1) continue;
+      ctx.save(); ctx.translate(p.x, p.y); ctx.rotate(p.a); ctx.scale(1, p.ry / p.rx);
+      const g = ctx.createRadialGradient(0, 0, 4, 0, 0, p.rx); g.addColorStop(0, p.c + '30'); g.addColorStop(1, p.c + '00');
+      ctx.fillStyle = g; ctx.beginPath(); ctx.arc(0, 0, p.rx, 0, 6.283); ctx.fill();
+      ctx.restore();
+    }
+    ctx.globalCompositeOperation = 'source-over';
+    /* indoor floors */
+    for (const h of houses) {
+      if (h.x > vx1 || h.x + h.w < vx0 || h.y > vy1 || h.y + h.h < vy0) continue;
+      ctx.fillStyle = '#151b30'; ctx.fillRect(h.x, h.y, h.w, h.h);
+      ctx.strokeStyle = 'rgba(255,255,255,.03)'; ctx.lineWidth = 1; ctx.beginPath();
+      for (let x = h.x; x < h.x + h.w; x += 30) { ctx.moveTo(x, h.y); ctx.lineTo(x, h.y + h.h); } ctx.stroke();
+    }
+  }
+  function drawBlocks(vis) {
+    for (const r of vis) {
+      if (r.wall) {
+        ctx.fillStyle = '#1f2848'; ctx.fillRect(r.x, r.y, r.w, r.h);
+        ctx.fillStyle = 'rgba(255,255,255,.06)'; ctx.fillRect(r.x, r.y, r.w, 4);
+      } else if (r.tank) {
+        ctx.fillStyle = '#18233a'; rr(r.x, r.y, r.w, r.h, 10); ctx.fill();
+        ctx.strokeStyle = '#2a3a5c'; ctx.lineWidth = 3; ctx.beginPath(); ctx.ellipse(r.x + r.w / 2, r.y + r.h / 2, r.w / 2 - 6, r.h / 2 - 6, 0, 0, 6.283); ctx.stroke();
+        ctx.fillStyle = '#2a3a5c'; ctx.fillRect(r.x + r.w / 2 - 3, r.y + 4, 6, r.h - 8);
+      } else {
+        ctx.fillStyle = '#251a3a'; ctx.fillRect(r.x, r.y, r.w, r.h);
+        ctx.fillStyle = '#ff3df2'; ctx.globalAlpha = .55; ctx.fillRect(r.x + 4, r.y + r.h * .45, r.w - 8, 3); ctx.globalAlpha = 1;
+        ctx.strokeStyle = '#3a2a5a'; ctx.lineWidth = 2; ctx.strokeRect(r.x + 1, r.y + 1, r.w - 2, r.h - 2);
+      }
+    }
+  }
+  /* neon strips on buildings glow even in the dark */
+  function drawNeon(vis) {
+    ctx.globalCompositeOperation = 'lighter';
+    for (const r of vis) {
+      if (!r.wall || !r.neon) continue;
+      const flick = .75 + Math.sin(time * 3 + r.x * .01) * .08 + (Math.random() < .004 ? -.5 : 0);
+      ctx.strokeStyle = r.neon; ctx.globalAlpha = .18 * flick; ctx.lineWidth = 12; ctx.strokeRect(r.x + 3, r.y + 3, r.w - 6, r.h - 6);
+      ctx.globalAlpha = .9 * flick; ctx.lineWidth = 2; ctx.strokeRect(r.x + 3, r.y + 3, r.w - 6, r.h - 6);
+    }
+    ctx.globalAlpha = 1; ctx.globalCompositeOperation = 'source-over';
   }
 
   function draw() {
-    ctx.fillStyle = '#04060b'; ctx.fillRect(0, 0, cw, ch);
+    ctx.fillStyle = '#05070f'; ctx.fillRect(0, 0, cw, ch);
     if (!ents) return;
     const focus = me.alive || !spectate || !spectate.alive ? me : spectate;
     const off = focus === me && me.alive ? camOff() : { x: 0, y: 0 };
@@ -480,53 +574,60 @@
     ctx.save();
     ctx.translate(cw / 2, ch / 2); ctx.scale(cam.s, cam.s); ctx.translate(-cam.x, -cam.y);
     const vx0 = cam.x - cw / 2 / cam.s, vy0 = cam.y - ch / 2 / cam.s, vx1 = cam.x + cw / 2 / cam.s, vy1 = cam.y + ch / 2 / cam.s;
-    /* dark map: floor grid and walls are always faintly visible */
-    ctx.fillStyle = '#0a0e16'; ctx.fillRect(0, 0, W, W);
-    ctx.strokeStyle = 'rgba(120,140,180,.05)'; ctx.lineWidth = 1; ctx.beginPath();
-    for (let x = Math.max(0, Math.floor(vx0 / 100) * 100); x <= Math.min(W, vx1); x += 100) { ctx.moveTo(x, Math.max(0, vy0)); ctx.lineTo(x, Math.min(W, vy1)); }
-    for (let y = Math.max(0, Math.floor(vy0 / 100) * 100); y <= Math.min(W, vy1); y += 100) { ctx.moveTo(Math.max(0, vx0), y); ctx.lineTo(Math.min(W, vx1), y); }
-    ctx.stroke();
     const vis = rects.filter(r => r.x < vx1 && r.x + r.w > vx0 && r.y < vy1 && r.y + r.h > vy0);
-    /* light */
+    drawCity(vx0, vy0, vx1, vy1);
+    drawBlocks(vis);
     const poly = focus.alive ? visPoly(focus) : null;
-    if (poly) {
-      ctx.save(); ctx.beginPath(); ctx.moveTo(poly[0], poly[1]); for (let i = 2; i < poly.length; i += 2) ctx.lineTo(poly[i], poly[i + 1]); ctx.closePath(); ctx.clip();
-      const g = ctx.createRadialGradient(focus.x, focus.y, 20, focus.x, focus.y, RANGE);
-      g.addColorStop(0, '#3a3f4c'); g.addColorStop(.5, '#262b37'); g.addColorStop(1, '#151a25');
-      ctx.fillStyle = g; ctx.fillRect(focus.x - RANGE, focus.y - RANGE, RANGE * 2, RANGE * 2);
-      ctx.strokeStyle = 'rgba(200,210,230,.07)'; ctx.beginPath();
-      for (let x = Math.floor((focus.x - RANGE) / 100) * 100; x <= focus.x + RANGE; x += 100) { ctx.moveTo(x, focus.y - RANGE); ctx.lineTo(x, focus.y + RANGE); }
-      for (let y = Math.floor((focus.y - RANGE) / 100) * 100; y <= focus.y + RANGE; y += 100) { ctx.moveTo(focus.x - RANGE, y); ctx.lineTo(focus.x + RANGE, y); }
-      ctx.stroke();
-      for (const l of loot) if (Math.abs(l.x - focus.x) < RANGE && Math.abs(l.y - focus.y) < RANGE) drawLoot(l);
-      for (const b of bullets) { ctx.strokeStyle = b.col; ctx.lineWidth = 2.5; ctx.beginPath(); ctx.moveTo(b.x, b.y); ctx.lineTo(b.x - b.vx * .018, b.y - b.vy * .018); ctx.stroke(); }
-      for (const e of ents) if (e.alive && e !== focus && inPoly(poly, e.x, e.y)) drawEnt(e, false);
-      ctx.restore();
+    const seen = (x, y) => poly && Math.hypot(x - focus.x, y - focus.y) < VIS + 30 && inPoly(poly, x, y);
+    for (const l of loot) if (seen(l.x, l.y)) drawLoot(l);
+    /* darkness outside what you can see (walls block it) */
+    ctx.beginPath(); ctx.rect(vx0 - 20, vy0 - 20, vx1 - vx0 + 40, vy1 - vy0 + 40);
+    if (poly) { ctx.moveTo(poly[0], poly[1]); for (let i = 2; i < poly.length; i += 2) ctx.lineTo(poly[i], poly[i + 1]); ctx.closePath(); }
+    ctx.fillStyle = 'rgba(3,4,12,.62)'; ctx.fill('evenodd');
+    if (poly) { const g = ctx.createRadialGradient(focus.x, focus.y, VIS * .55, focus.x, focus.y, VIS); g.addColorStop(0, 'rgba(3,4,12,0)'); g.addColorStop(1, 'rgba(3,4,12,.5)'); ctx.save(); ctx.beginPath(); ctx.moveTo(poly[0], poly[1]); for (let i = 2; i < poly.length; i += 2) ctx.lineTo(poly[i], poly[i + 1]); ctx.closePath(); ctx.clip(); ctx.fillStyle = g; ctx.fillRect(focus.x - VIS, focus.y - VIS, VIS * 2, VIS * 2); ctx.restore(); }
+    if (poly) { ctx.save(); ctx.beginPath(); ctx.moveTo(poly[0], poly[1]); for (let i = 2; i < poly.length; i += 2) ctx.lineTo(poly[i], poly[i + 1]); ctx.closePath(); ctx.clip();
+      ctx.globalCompositeOperation = 'lighter'; const g2 = ctx.createRadialGradient(focus.x, focus.y, 10, focus.x, focus.y, VIS); g2.addColorStop(0, 'rgba(140,170,255,.22)'); g2.addColorStop(.6, 'rgba(90,110,200,.08)'); g2.addColorStop(1, 'rgba(0,0,0,0)');
+      ctx.fillStyle = g2; ctx.fillRect(focus.x - VIS, focus.y - VIS, VIS * 2, VIS * 2); ctx.restore(); ctx.globalCompositeOperation = 'source-over'; }
+    drawNeon(vis);
+    /* bullets: neon tracers */
+    ctx.globalCompositeOperation = 'lighter';
+    for (const b of bullets) {
+      if (b.owner !== focus && !seen(b.x, b.y)) continue;
+      ctx.strokeStyle = b.col; ctx.lineCap = 'round';
+      ctx.globalAlpha = .25; ctx.lineWidth = 7; ctx.beginPath(); ctx.moveTo(b.x, b.y); ctx.lineTo(b.x - b.vx * .02, b.y - b.vy * .02); ctx.stroke();
+      ctx.globalAlpha = 1; ctx.lineWidth = 2; ctx.stroke();
     }
-    for (const r of vis) {
-      ctx.fillStyle = r.wall ? '#252e40' : r.rock ? '#2a2f3a' : '#3a2f22';
-      ctx.fillRect(r.x, r.y, r.w, r.h);
-      ctx.strokeStyle = r.wall ? '#3a4660' : r.rock ? '#3c4250' : '#5a4630'; ctx.lineWidth = 2; ctx.strokeRect(r.x + 1, r.y + 1, r.w - 2, r.h - 2);
-      if (r.crate) { ctx.beginPath(); ctx.moveTo(r.x + 4, r.y + 4); ctx.lineTo(r.x + r.w - 4, r.y + r.h - 4); ctx.moveTo(r.x + r.w - 4, r.y + 4); ctx.lineTo(r.x + 4, r.y + r.h - 4); ctx.stroke(); }
-    }
-    /* own bullets are always visible; unseen gunfire shows as a red flash (you hear it) */
-    for (const b of bullets) if (b.owner === focus && !(poly && inPoly(poly, b.x, b.y))) { ctx.strokeStyle = b.col; ctx.lineWidth = 2; ctx.beginPath(); ctx.moveTo(b.x, b.y); ctx.lineTo(b.x - b.vx * .018, b.y - b.vy * .018); ctx.stroke(); }
+    ctx.globalCompositeOperation = 'source-over'; ctx.globalAlpha = 1;
+    for (const e of ents) if (e.alive && e !== focus && seen(e.x, e.y)) drawHuman(e, false);
+    /* revealed shooters and sonar pings: shown as glowing outlines, even behind walls */
+    for (const e of ents) if (e.alive && e !== focus && e.revealT > 0 && !seen(e.x, e.y)) { ctx.strokeStyle = `rgba(255,77,109,${e.revealT})`; ctx.lineWidth = 3; ctx.beginPath(); ctx.arc(e.x, e.y, 18, 0, 6.283); ctx.stroke(); ctx.beginPath(); ctx.arc(e.x, e.y, 30 * (1.4 - e.revealT * .4), 0, 6.283); ctx.stroke(); }
+    for (const p of pings) { const a = Math.min(1, p.t); ctx.save(); ctx.translate(p.x, p.y); ctx.rotate(.785); ctx.strokeStyle = `rgba(46,242,255,${a})`; ctx.lineWidth = 3; ctx.strokeRect(-12, -12, 24, 24); ctx.restore(); }
+    for (const p of pulses) { const a = 1 - p.r / SONAR_R; ctx.strokeStyle = `rgba(46,242,255,${a * .8})`; ctx.lineWidth = 3 / cam.s; ctx.beginPath(); ctx.arc(p.x, p.y, p.r, 0, 6.283); ctx.stroke(); ctx.lineWidth = 18 / cam.s; ctx.strokeStyle = `rgba(46,242,255,${a * .12})`; ctx.stroke(); }
     for (const f of fx) {
       if (f.type === 'flash') {
-        const seen = f.owner === focus || (poly && inPoly(poly, f.x, f.y));
-        ctx.beginPath(); ctx.arc(f.x, f.y, seen ? 9 : 14, 0, 6.283); ctx.fillStyle = seen ? 'rgba(255,230,150,.9)' : 'rgba(255,70,70,.55)'; ctx.fill();
-      } else if (f.type === 'spark') { ctx.fillStyle = 'rgba(255,220,150,.8)'; ctx.fillRect(f.x - 2, f.y - 2, 4, 4); }
-      else if (f.type === 'boom') { ctx.beginPath(); ctx.arc(f.x, f.y, 40 * (1 - f.t / .5) + 10, 0, 6.283); ctx.strokeStyle = `rgba(255,120,90,${f.t * 2})`; ctx.lineWidth = 3; ctx.stroke(); }
+        const vis2 = f.owner === focus || seen(f.x, f.y);
+        ctx.globalCompositeOperation = 'lighter'; ctx.beginPath(); ctx.arc(f.x, f.y, vis2 ? 14 : 18, 0, 6.283); ctx.fillStyle = vis2 ? 'rgba(255,230,150,.9)' : 'rgba(255,60,90,.5)'; ctx.fill(); ctx.globalCompositeOperation = 'source-over';
+      } else if (f.type === 'spark') { ctx.fillStyle = 'rgba(46,242,255,.9)'; ctx.fillRect(f.x - 2, f.y - 2, 4, 4); ctx.fillRect(f.x + 4, f.y - 5, 2, 2); }
+      else if (f.type === 'boom') { ctx.beginPath(); ctx.arc(f.x, f.y, 50 * (1 - f.t / .5) + 10, 0, 6.283); ctx.strokeStyle = `rgba(255,61,242,${f.t * 2})`; ctx.lineWidth = 4; ctx.stroke(); }
     }
-    if (focus.alive) drawEnt(focus, focus === me);
+    if (focus.alive) drawHuman(focus, focus === me);
     for (const f of fx) if (f.type === 'txt') { ctx.font = '700 15px "Chakra Petch",system-ui'; ctx.textAlign = 'center'; ctx.fillStyle = f.col; ctx.globalAlpha = Math.min(1, f.t * 2); ctx.fillText(f.text, f.x, f.y - (1 - f.t) * 25); ctx.globalAlpha = 1; }
-    /* zone: tint outside, outline now and next */
+    /* acid storm outside the safe zone */
     ctx.beginPath(); ctx.rect(vx0 - 10, vy0 - 10, vx1 - vx0 + 20, vy1 - vy0 + 20); ctx.moveTo(zone.x + zone.r, zone.y); ctx.arc(zone.x, zone.y, zone.r, 0, 6.283);
-    ctx.fillStyle = 'rgba(160,30,60,.22)'; ctx.fill('evenodd');
-    ctx.lineWidth = 4 / cam.s; ctx.strokeStyle = 'rgba(255,90,120,.8)'; ctx.beginPath(); ctx.arc(zone.x, zone.y, zone.r, 0, 6.283); ctx.stroke();
-    if (PHASES[zone.phase]) { ctx.setLineDash([14, 12]); ctx.lineWidth = 2 / cam.s; ctx.strokeStyle = 'rgba(255,255,255,.5)'; ctx.beginPath(); ctx.arc(zone.nx, zone.ny, zone.nr, 0, 6.283); ctx.stroke(); ctx.setLineDash([]); }
+    ctx.fillStyle = `rgba(70,255,150,${.13 + Math.sin(time * 2) * .03})`; ctx.fill('evenodd');
+    ctx.globalCompositeOperation = 'lighter';
+    ctx.lineWidth = 16 / cam.s; ctx.strokeStyle = 'rgba(125,255,107,.18)'; ctx.beginPath(); ctx.arc(zone.x, zone.y, zone.r, 0, 6.283); ctx.stroke();
+    ctx.lineWidth = 3 / cam.s; ctx.strokeStyle = 'rgba(125,255,107,.9)'; ctx.stroke();
+    ctx.globalCompositeOperation = 'source-over';
+    if (PHASES[zone.phase]) { ctx.setLineDash([14, 12]); ctx.lineWidth = 2 / cam.s; ctx.strokeStyle = 'rgba(255,255,255,.45)'; ctx.beginPath(); ctx.arc(zone.nx, zone.ny, zone.nr, 0, 6.283); ctx.stroke(); ctx.setLineDash([]); }
     ctx.restore();
-    /* heard shots off-screen: red marks on the screen edge */
+    /* rain over everything */
+    ctx.strokeStyle = 'rgba(170,200,255,.22)'; ctx.lineWidth = 1; ctx.beginPath();
+    for (const d of rain) {
+      d.y += d.v / 60; d.x -= d.v / 300; if (d.y > ch) { d.y = -20; d.x = Math.random() * (cw + 60); }
+      ctx.moveTo(d.x, d.y); ctx.lineTo(d.x + d.l * .2, d.y - d.l);
+    }
+    ctx.stroke();
     for (const n of noises) {
       if (n.owner === focus || !focus.alive) continue;
       const dx = n.x - focus.x, dy = n.y - focus.y, d = Math.hypot(dx, dy);
@@ -534,7 +635,7 @@
       const sx = (n.x - cam.x) * cam.s + cw / 2, sy = (n.y - cam.y) * cam.s + ch / 2;
       if (sx > 10 && sx < cw - 10 && sy > 10 && sy < ch - 10) continue;
       const a = Math.atan2(dy, dx), ex = clamp(cw / 2 + Math.cos(a) * cw, 14, cw - 14), ey = clamp(ch / 2 + Math.sin(a) * ch, 14, ch - 14);
-      ctx.save(); ctx.translate(ex, ey); ctx.rotate(a); ctx.fillStyle = `rgba(255,80,80,${n.t})`; ctx.beginPath(); ctx.moveTo(10, 0); ctx.lineTo(-6, -8); ctx.lineTo(-6, 8); ctx.fill(); ctx.restore();
+      ctx.save(); ctx.translate(ex, ey); ctx.rotate(a); ctx.fillStyle = `rgba(255,61,120,${n.t})`; ctx.beginPath(); ctx.moveTo(10, 0); ctx.lineTo(-6, -8); ctx.lineTo(-6, 8); ctx.fill(); ctx.restore();
     }
     hud(focus);
   }
@@ -564,7 +665,9 @@
     ctx.fillStyle = '#4a9bea'; ctx.fillRect(bx, by + 11, bw * me.armor / 100, 4);
     ctx.textAlign = 'left'; ctx.font = '700 14px "Chakra Petch",system-ui'; ctx.fillStyle = WEAPONS[me.w].col;
     ctx.fillText(`${T.w[me.w]}  ${me.reloadT > 0 ? T.reloading : me.mag + '/' + WEAPONS[me.w].mag}`, bx, by - 8);
-    ctx.textAlign = 'right'; ctx.fillStyle = '#4fc28a'; ctx.fillText(`+ ${me.meds}`, bx + bw, by - 8);
+    ctx.textAlign = 'right'; ctx.fillStyle = '#7dff6b'; ctx.fillText(`+ ${me.meds}`, bx + bw, by - 8);
+    ctx.fillStyle = me.sonarCd > 0 ? '#5a6a8a' : '#2ef2ff'; ctx.fillText(`◎ ${me.sonarCd > 0 ? Math.ceil(me.sonarCd) + 's' : (touch ? '' : 'F')}`, bx + bw - 44, by - 8);
+    if (btns) { const sb = btns.querySelector('[data-k=sonar]'); if (sb) sb.classList.toggle('cd', me.sonarCd > 0); }
     const wi = weaponUnder(me);
     if (btns) btns.querySelector('[data-k=pick]').hidden = wi < 0;
     if (wi > -1) { ctx.textAlign = 'center'; ctx.font = '600 14px "IBM Plex Sans",system-ui'; ctx.fillStyle = '#fff'; ctx.fillText((touch ? '' : 'E: ') + T.pick + ' ' + T.w[loot[wi].w], cw / 2, by - 40); }
@@ -595,7 +698,7 @@
   resize();
   /* menu: a quiet preview map behind the start screen */
   makeMap(); ents = []; bullets = []; fx = []; noises = []; feed = []; time = 0;
-  me = newEnt('', false); ents.push(me);
+  me = newEnt('', false); me.pal = { suit: '#e8b44a', dark: '#4a3510', glow: '#2ef2ff' }; ents.push(me); pings = []; pulses = [];
   zone = { x: W / 2, y: W / 2, r: W * .75, nx: W / 2, ny: W / 2, nr: W * .45, phase: 0, t: 0 };
   const s = store.get('stats', null);
   showOverlay(T.name, T.startText + (s ? `<br><small>${T.statsLine.replace('{games}', s.games).replace('{wins}', s.wins).replace('{best}', s.best === 99 ? '–' : '#' + s.best).replace('{kills}', s.kills)}</small>` : ''), T.play);

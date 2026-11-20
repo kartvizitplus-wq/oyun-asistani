@@ -487,7 +487,7 @@ ${G.sections.map((sec, i) => `<h2 id="s${i + 1}">${esc(sec.h)}</h2><ol>${sec.ste
       body: `<section><h1>${esc(N.h1)}</h1><p class="lead">${esc(N.intro)}</p></section>
 <section id="nd" class="nd" data-t="${esc(JSON.stringify(ui))}">
 <div class="nd-stage"><canvas aria-label="${esc(N.name)}"></canvas>
-<div class="nd-btns" hidden><button type="button" data-k="pick" hidden>↑</button><button type="button" data-k="heal" aria-label="${esc(N.heal)}">+</button><button type="button" data-k="reload" aria-label="${esc(N.reload)}">⟳</button></div>
+<div class="nd-btns" hidden><button type="button" data-k="pick" hidden>↑</button><button type="button" data-k="sonar" aria-label="${esc(N.sonar)}">◎</button><button type="button" data-k="heal" aria-label="${esc(N.heal)}">+</button><button type="button" data-k="reload" aria-label="${esc(N.reload)}">⟳</button></div>
 <button type="button" class="nd-full" data-k="full" aria-label="${esc(N.fullscreen)}">⛶</button>
 <div class="nd-ov"></div></div>
 <noscript><p class="note">JavaScript is required to play.</p></noscript>
@@ -498,7 +498,7 @@ ${G.sections.map((sec, i) => `<h2 id="s${i + 1}">${esc(sec.h)}</h2><ol>${sec.ste
 <h2>${esc(N.tipsH)}</h2><ul>${li(N.tips)}</ul>
 <h2>${esc(N.aboutH)}</h2><p>${esc(N.about)}</p></article>
 <style>
-.nd-stage{position:relative;width:100%;height:min(76vh,620px);min-height:380px;border:1px solid var(--line);border-radius:10px;overflow:hidden;background:#04060b;touch-action:none;user-select:none;-webkit-user-select:none}
+.nd-stage{position:relative;width:100%;height:min(76vh,620px);min-height:380px;border:1px solid #2ef2ff55;border-radius:10px;overflow:hidden;background:#05070f;box-shadow:0 0 40px -12px #ff3df2aa;touch-action:none;user-select:none;-webkit-user-select:none}
 .nd-stage:fullscreen{height:100%;border:0;border-radius:0}
 .nd-stage canvas{display:block;width:100%;height:100%;touch-action:none}
 .nd-ov{position:absolute;inset:0;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:10px;text-align:center;background:rgba(4,6,11,.72);padding:20px}
@@ -510,6 +510,8 @@ ${G.sections.map((sec, i) => `<h2 id="s${i + 1}">${esc(sec.h)}</h2><ol>${sec.ste
 .nd-btns[hidden],.nd-btns [hidden]{display:none}
 .nd-btns button,.nd-full{width:52px;height:52px;border-radius:50%;border:1px solid rgba(255,255,255,.25);background:rgba(10,14,22,.6);color:#fff;font:700 1.3rem var(--display);cursor:pointer}
 .nd-btns button[data-k=pick]{background:rgba(232,180,74,.85);color:#1a1405}
+.nd-btns button[data-k=sonar]{border-color:#2ef2ff;color:#2ef2ff}
+.nd-btns button.cd{opacity:.4}
 .nd-full{position:absolute;left:10px;bottom:10px;width:40px;height:40px;font-size:1.1rem;border-radius:8px}
 </style>
 <script src="${asset('nightdrop.js')}" defer></script>`
