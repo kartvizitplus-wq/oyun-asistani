@@ -128,12 +128,12 @@
     makeMap();
     ents = []; bullets = []; fx = []; noises = []; feed = []; time = 0; msg = null; spectate = null;
     me = newEnt(T.you || 'You', false);
-    me.pal = { suit: '#e8b44a', dark: '#4a3510', glow: '#2ef2ff' };
+    me.look = { skin: '#f1c9a0', hair: 'cap', hairCol: '#1f1f2a', shirt: '#e8b44a', vest: '#7a5a17', pants: '#2a3048', accent: '#2ef2ff' };
     ents.push(me); pings = []; pulses = [];
     const names = NAMES.slice().sort(() => Math.random() - .5);
     for (let i = 0; i < BOTS; i++) {
       const b = newEnt(names[i], true);
-      const hue = (i * 37 + 200) % 360; b.pal = { suit: `hsl(${hue} 55% 46%)`, dark: `hsl(${hue} 45% 20%)`, glow: `hsl(${(hue + 160) % 360} 100% 62%)` };
+      b.look = window.Chibi.randomLook(i);
       for (let k = 0; k < 20 && ents.some(e => dist(e, b) < 520); k++) Object.assign(b, freePoint(40));
       ents.push(b);
     }
@@ -473,33 +473,20 @@
     cw = r.width; ch = r.height;
     cv.width = Math.round(cw * dpr); cv.height = Math.round(ch * dpr);
     ctx.setTransform(dpr, 0, 0, dpr, 0, 0);
-    cam.s = clamp(Math.sqrt(cw * ch) / 720, .5, 1.3);
+    cam.s = clamp(Math.sqrt(cw * ch) / 600, .6, 1.45);
     rain = Array.from({ length: Math.round(cw * ch / 5000) }, () => ({ x: Math.random() * cw, y: Math.random() * ch, l: rnd(8, 18), v: rnd(500, 800) }));
   }
   const rr = (x, y, w, h, r) => { ctx.beginPath(); ctx.roundRect ? ctx.roundRect(x, y, w, h, r) : ctx.rect(x, y, w, h); };
 
   /* A runner seen from above: legs swing, arms hold the gun, a glowing visor shows where they look. */
   function drawHuman(e, self) {
-    const P = e.pal || { suit: '#888', dark: '#333', glow: '#fff' }, sw = Math.sin(e.walk) * 6;
-    ctx.save(); ctx.translate(e.x, e.y); ctx.scale(1.3, 1.3);
-    ctx.fillStyle = 'rgba(0,0,0,.4)'; ctx.beginPath(); ctx.ellipse(4, 6, 19, 15, 0, 0, 6.283); ctx.fill();
-    if (self) { ctx.strokeStyle = 'rgba(46,242,255,.5)'; ctx.lineWidth = 2; ctx.beginPath(); ctx.arc(0, 0, 26, 0, 6.283); ctx.stroke(); }
-    ctx.rotate(e.ang);
-    ctx.fillStyle = P.dark; rr(-6 + sw, -10, 13, 7, 3); ctx.fill(); rr(-6 - sw, 3, 13, 7, 3); ctx.fill();
-    ctx.fillStyle = '#0a0c12'; ctx.fillRect(6, 2, 26, 6);
-    ctx.fillStyle = WEAPONS[e.w].col; ctx.fillRect(12, 3.5, 19, 3);
-    ctx.fillStyle = P.dark; rr(-15, -9, 8, 18, 3); ctx.fill();
-    ctx.fillStyle = e.hitT > 0 ? '#fff' : P.suit; ctx.beginPath(); ctx.ellipse(-1, 0, 10, 16, 0, 0, 6.283); ctx.fill();
-    ctx.strokeStyle = e.hitT > 0 ? '#fff' : P.suit; ctx.lineWidth = 5; ctx.lineCap = 'round';
-    ctx.beginPath(); ctx.moveTo(1, -12); ctx.lineTo(15, 2); ctx.moveTo(1, 12); ctx.lineTo(11, 7); ctx.stroke();
-    ctx.fillStyle = P.dark; ctx.beginPath(); ctx.arc(1, 0, 8.5, 0, 6.283); ctx.fill();
-    ctx.fillStyle = P.glow; ctx.beginPath(); ctx.arc(1, 0, 8.5, -.85, .85); ctx.lineTo(3, 0); ctx.closePath(); ctx.fill();
-    ctx.globalCompositeOperation = 'lighter'; ctx.fillStyle = P.glow; ctx.globalAlpha = .25; ctx.beginPath(); ctx.arc(8, 0, 9, 0, 6.283); ctx.fill();
-    ctx.restore(); ctx.globalAlpha = 1; ctx.globalCompositeOperation = 'source-over';
-    if (e.armor > 0) { ctx.beginPath(); ctx.arc(e.x, e.y, 28, -1.57, -1.57 + 6.283 * e.armor / 100); ctx.strokeStyle = '#4a9bea'; ctx.lineWidth = 2.5; ctx.stroke(); }
+    const moving = e.walk !== e.lastWalk; e.lastWalk = e.walk;
+    window.Chibi.draw(ctx, e.x, e.y + 4, Object.assign({}, e.look, { s: 1.12, aim: e.ang, walk: e.walk * 2.2, moving, weapon: e.w, wcol: WEAPONS[e.w].col,
+      glow: self ? '#7dff6b' : '#ff3d5a', ring: self ? '#ffd23d' : null, hit: e.hitT, angry: !self }));
+    if (e.armor > 0) { ctx.beginPath(); ctx.ellipse(e.x, e.y + 21, 26, 10, 0, 0, 6.283 * e.armor / 100); ctx.strokeStyle = '#2ef2ff'; ctx.lineWidth = 2.5; ctx.stroke(); }
     if (!self) {
-      ctx.font = '600 12px "IBM Plex Sans",system-ui'; ctx.textAlign = 'center'; ctx.fillStyle = P.glow; ctx.fillText(e.name, e.x, e.y - 38);
-      ctx.fillStyle = 'rgba(0,0,0,.6)'; ctx.fillRect(e.x - 18, e.y - 34, 36, 4); ctx.fillStyle = '#ff4d6d'; ctx.fillRect(e.x - 18, e.y - 34, 36 * e.hp / 100, 4);
+      ctx.font = '700 12px "IBM Plex Sans",system-ui'; ctx.textAlign = 'center'; ctx.lineWidth = 3; ctx.strokeStyle = 'rgba(0,0,0,.7)'; ctx.strokeText(e.name, e.x, e.y - 58); ctx.fillStyle = '#ffd0d8'; ctx.fillText(e.name, e.x, e.y - 58);
+      ctx.fillStyle = 'rgba(0,0,0,.7)'; ctx.fillRect(e.x - 20, e.y - 54, 40, 5); ctx.fillStyle = '#ff3d5a'; ctx.fillRect(e.x - 20, e.y - 54, 40 * e.hp / 100, 5);
     }
   }
   function drawLoot(l) {
@@ -698,7 +685,7 @@
   resize();
   /* menu: a quiet preview map behind the start screen */
   makeMap(); ents = []; bullets = []; fx = []; noises = []; feed = []; time = 0;
-  me = newEnt('', false); me.pal = { suit: '#e8b44a', dark: '#4a3510', glow: '#2ef2ff' }; ents.push(me); pings = []; pulses = [];
+  me = newEnt('', false); me.look = { skin: '#f1c9a0', hair: 'cap', hairCol: '#1f1f2a', shirt: '#e8b44a', vest: '#7a5a17', pants: '#2a3048', accent: '#2ef2ff' }; ents.push(me); pings = []; pulses = [];
   zone = { x: W / 2, y: W / 2, r: W * .75, nx: W / 2, ny: W / 2, nr: W * .45, phase: 0, t: 0 };
   const s = store.get('stats', null);
   showOverlay(T.name, T.startText + (s ? `<br><small>${T.statsLine.replace('{games}', s.games).replace('{wins}', s.wins).replace('{best}', s.best === 99 ? '–' : '#' + s.best).replace('{kills}', s.kills)}</small>` : ''), T.play);

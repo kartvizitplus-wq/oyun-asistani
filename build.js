@@ -10,7 +10,7 @@ const Engine = require('./src/engine.js'), Icons = require('./src/icons.js');
 const OUT = R('dist');
 /* Cache-busting: asset URLs carry a hash of their content so browsers never mix old and new scripts. */
 const crypto = require('crypto');
-const VER = Object.fromEntries(['style.css', 'app.js', 'engine.js', 'icons.js', 'colorgame.js', 'nightdrop.js', 'moba.js'].map(f => [f, crypto.createHash('md5').update(fs.readFileSync(R('src/' + f))).digest('hex').slice(0, 8)]));
+const VER = Object.fromEntries(['style.css', 'app.js', 'engine.js', 'icons.js', 'colorgame.js', 'nightdrop.js', 'moba.js', 'chibi.js'].map(f => [f, crypto.createHash('md5').update(fs.readFileSync(R('src/' + f))).digest('hex').slice(0, 8)]));
 const asset = f => `/assets/${f}?v=${VER[f]}`;
 
 /* Games shown on the site. kind: moba (heroes + items), bs (Brawl Stars), ff (Free Fire). */
@@ -514,7 +514,7 @@ ${G.sections.map((sec, i) => `<h2 id="s${i + 1}">${esc(sec.h)}</h2><ol>${sec.ste
 .nd-btns button.cd{opacity:.4}
 .nd-full{position:absolute;left:10px;bottom:10px;width:40px;height:40px;font-size:1.1rem;border-radius:8px}
 </style>
-<script src="${asset('nightdrop.js')}" defer></script>`
+<script src="${asset('chibi.js')}" defer></script><script src="${asset('nightdrop.js')}" defer></script>`
     }));
   }
 
@@ -568,7 +568,7 @@ ${G.sections.map((sec, i) => `<h2 id="s${i + 1}">${esc(sec.h)}</h2><ol>${sec.ste
 .mb-pad .sm{right:170px;bottom:0;width:44px;height:44px;font-size:1.1rem}
 .mb-full{position:absolute;left:10px;bottom:10px;width:40px;height:40px;border-radius:8px;border:1px solid rgba(255,255,255,.25);background:rgba(10,14,22,.6);color:#fff;cursor:pointer}
 </style>
-<script src="${asset('moba.js')}" defer></script>`
+<script src="${asset('chibi.js')}" defer></script><script src="${asset('moba.js')}" defer></script>`
     }));
   }
 
@@ -597,7 +597,7 @@ var n=(s||navigator.language||'en').slice(0,2).toLowerCase();location.replace('/
 ${cfg.langs.map(l => `<a style="color:#e8b44a;margin-right:12px" href="/${l}/">${esc(I18N[l].langName)}</a>`).join('')}
 </body></html>`);
 fs.mkdirSync(path.join(OUT, 'assets'), { recursive: true });
-for (const f of ['style.css', 'app.js', 'engine.js', 'icons.js', 'colorgame.js', 'nightdrop.js', 'moba.js']) fs.copyFileSync(R('src/' + f), path.join(OUT, 'assets', f));
+for (const f of ['style.css', 'app.js', 'engine.js', 'icons.js', 'colorgame.js', 'nightdrop.js', 'moba.js', 'chibi.js']) fs.copyFileSync(R('src/' + f), path.join(OUT, 'assets', f));
 if (fs.existsSync(R('static'))) fs.cpSync(R('static'), OUT, { recursive: true });
 fs.writeFileSync(path.join(OUT, 'manifest.webmanifest'), JSON.stringify({
   name: cfg.siteName + ' – ' + SITE.en.tagline, short_name: cfg.siteName, start_url: '/', scope: '/', display: 'standalone',

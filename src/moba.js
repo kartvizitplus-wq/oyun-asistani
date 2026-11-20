@@ -596,7 +596,7 @@
   function resize() {
     const dpr = Math.min(2, devicePixelRatio || 1), r = stage.getBoundingClientRect();
     cw = r.width; ch = r.height; cv.width = Math.round(cw * dpr); cv.height = Math.round(ch * dpr); ctx.setTransform(dpr, 0, 0, dpr, 0, 0);
-    cam.s = clamp(Math.sqrt(cw * ch) / 900, .45, 1.15);
+    cam.s = clamp(Math.sqrt(cw * ch) / 760, .55, 1.3);
   }
   function lanePath(l) { const p = LANES[l]; ctx.beginPath(); ctx.moveTo(p[0].x, p[0].y); for (const q of p.slice(1)) ctx.lineTo(q.x, q.y); }
   function drawMap(x0, y0, x1, y1) {
@@ -644,37 +644,25 @@
   }
   const textCol = () => WORLD === 'ink' ? '#1e1e24' : '#f4f6fb';
   /* heroes are drawn as small figures seen from above, each class with its own weapon */
+  const GEAR = {
+    tank: { weapon: 'shield', hair: 'helmet', vest: '#5a6478', beard: true },
+    fighter: { weapon: 'sword', hair: 'spiky', vest: '#3a2a1e' },
+    assassin: { weapon: 'daggers', hair: 'hood', mask: '#22202c' },
+    mage: { weapon: 'staff', hair: 'wizard' },
+    marksman: { weapon: 'bow', hair: 'long' },
+    support: { weapon: 'lantern', hair: 'bun' }
+  };
+  const SKINS = ['#f5d6b8', '#f1c9a0', '#d9a477', '#b07a50'];
   function drawHero(u) {
-    const col = TEAM_COL[u.team], sw = Math.sin(u.walk || 0) * 6;
-    ctx.save(); ctx.translate(u.x, u.y);
-    ctx.fillStyle = col + '44'; ctx.beginPath(); ctx.ellipse(0, 10, 30, 15, 0, 0, 6.283); ctx.fill();
-    ctx.strokeStyle = u === me ? '#ffd23d' : col; ctx.lineWidth = 3; ctx.stroke();
-    ctx.rotate(u.ang || 0);
-    const dark = '#1c1c26';
-    ctx.fillStyle = dark; ctx.beginPath(); ctx.ellipse(-3 + sw, -9, 7, 5, 0, 0, 6.283); ctx.fill(); ctx.beginPath(); ctx.ellipse(-3 - sw, 9, 7, 5, 0, 0, 6.283); ctx.fill();
-    /* cape */
-    ctx.fillStyle = col; ctx.beginPath(); ctx.moveTo(-4, -15); ctx.quadraticCurveTo(-26 - Math.abs(sw), 0, -4, 15); ctx.closePath(); ctx.fill();
-    /* weapon */
-    ctx.lineCap = 'round';
-    const A = u.arch;
-    if (A === 'tank') { ctx.fillStyle = '#c9d2e3'; ctx.fillRect(12, -18, 9, 36); ctx.fillStyle = col; ctx.fillRect(14, -12, 5, 24); }
-    else if (A === 'fighter') { ctx.strokeStyle = '#dfe6f2'; ctx.lineWidth = 5; ctx.beginPath(); ctx.moveTo(10, 10); ctx.lineTo(44, 10); ctx.stroke(); ctx.strokeStyle = '#8a6a2a'; ctx.lineWidth = 4; ctx.beginPath(); ctx.moveTo(8, 4); ctx.lineTo(8, 16); ctx.stroke(); }
-    else if (A === 'assassin') { ctx.strokeStyle = '#e8e8f0'; ctx.lineWidth = 3; ctx.beginPath(); ctx.moveTo(12, -10); ctx.lineTo(28, -14); ctx.moveTo(12, 10); ctx.lineTo(28, 14); ctx.stroke(); }
-    else if (A === 'mage') { ctx.strokeStyle = '#6b4a2e'; ctx.lineWidth = 4; ctx.beginPath(); ctx.moveTo(6, 12); ctx.lineTo(38, 12); ctx.stroke(); ctx.fillStyle = u.col; ctx.beginPath(); ctx.arc(40, 12, 7 + Math.sin(time * 5) * 1.5, 0, 6.283); ctx.fill(); ctx.globalAlpha = .3; ctx.beginPath(); ctx.arc(40, 12, 14, 0, 6.283); ctx.fill(); ctx.globalAlpha = 1; }
-    else if (A === 'marksman') { ctx.strokeStyle = '#8a5a2a'; ctx.lineWidth = 4; ctx.beginPath(); ctx.arc(10, 0, 20, -1.1, 1.1); ctx.stroke(); ctx.strokeStyle = '#eee'; ctx.lineWidth = 1; ctx.beginPath(); ctx.moveTo(10 + Math.cos(-1.1) * 20, Math.sin(-1.1) * 20); ctx.lineTo(10 + Math.cos(1.1) * 20, Math.sin(1.1) * 20); ctx.stroke(); }
-    else { ctx.strokeStyle = '#e8d8a8'; ctx.lineWidth = 3; ctx.beginPath(); ctx.moveTo(6, 12); ctx.lineTo(34, 12); ctx.stroke(); ctx.strokeStyle = '#ffd23d'; ctx.lineWidth = 3; ctx.beginPath(); ctx.arc(38, 12, 7, 0, 6.283); ctx.stroke(); }
-    /* body, arms, head */
-    ctx.fillStyle = u.col; ctx.beginPath(); ctx.ellipse(0, 0, 11, 17, 0, 0, 6.283); ctx.fill();
-    ctx.strokeStyle = 'rgba(0,0,0,.35)'; ctx.lineWidth = 2; ctx.stroke();
-    ctx.strokeStyle = u.col; ctx.lineWidth = 6; ctx.beginPath(); ctx.moveTo(2, -13); ctx.lineTo(12, -8); ctx.moveTo(2, 13); ctx.lineTo(12, 10); ctx.stroke();
-    ctx.fillStyle = '#f1c9a0'; ctx.beginPath(); ctx.arc(2, 0, 8.5, 0, 6.283); ctx.fill();
-    ctx.fillStyle = dark; ctx.beginPath(); ctx.arc(0, 0, 8.5, 1.9, 4.4); ctx.fill();
-    if (A === 'tank' || A === 'fighter') { ctx.fillStyle = '#9aa6bb'; ctx.beginPath(); ctx.arc(1, 0, 8.5, 1.2, 5.1); ctx.fill(); }
-    ctx.restore();
-    if (u.shield > 0) { ctx.beginPath(); ctx.arc(u.x, u.y, 32, 0, 6.283); ctx.strokeStyle = 'rgba(255,255,255,.8)'; ctx.lineWidth = 2; ctx.stroke(); }
-    if (u.stunT > 0) { ctx.fillStyle = '#ffd23d'; ctx.font = '700 14px system-ui'; ctx.textAlign = 'center'; ctx.fillText('✦ ✦', u.x, u.y - 52); }
-    bar(u.x, u.y - 40, 56, u.hp / u.maxHp, u.team === 0 ? (u === me ? '#4fc28a' : '#4a9bea') : '#e2595b', 6);
-    ctx.fillStyle = textCol(); ctx.font = '600 11px "IBM Plex Sans",system-ui'; ctx.textAlign = 'center'; ctx.fillText(`${u.lvl} · ${u.name}`, u.x, u.y - 45);
+    const col = TEAM_COL[u.team];
+    const moving = u.walk !== u.lastWalk; u.lastWalk = u.walk;
+    if (!u.look) { const n = u.name.length; u.look = Object.assign({ skin: SKINS[n % SKINS.length], hairCol: ['#2b2018', '#d9b25a', '#5a3a1e', '#1f1f2a', '#e05a2a'][n % 5], pants: '#2a2d3a', cape: u.arch === 'tank' || u.arch === 'fighter' || u.arch === 'mage' ? u.col : null }, GEAR[u.arch]); }
+    window.Chibi.draw(ctx, u.x, u.y + 6, Object.assign({}, u.look, { s: 1.3, shirt: u.col, accent: col, emblem: col, wcol: u.col, aim: u.ang || 0, walk: u.walk * 1.4, moving,
+      glow: u.team === 0 ? '#4a9bea' : '#ff3d5a', ring: u === me ? '#ffd23d' : null, angry: u.team !== 0 }));
+    if (u.shield > 0) { ctx.beginPath(); ctx.arc(u.x, u.y - 14, 44, 0, 6.283); ctx.strokeStyle = 'rgba(255,255,255,.8)'; ctx.lineWidth = 2; ctx.stroke(); }
+    if (u.stunT > 0) { ctx.fillStyle = '#ffd23d'; ctx.font = '700 15px system-ui'; ctx.textAlign = 'center'; ctx.fillText('✦ ✦ ✦', u.x, u.y - 92); }
+    bar(u.x, u.y - 72, 60, u.hp / u.maxHp, u.team === 0 ? (u === me ? '#4fc28a' : '#4a9bea') : '#e2595b', 7);
+    ctx.font = '700 12px "IBM Plex Sans",system-ui'; ctx.textAlign = 'center'; ctx.lineWidth = 3; ctx.strokeStyle = WORLD === 'ink' ? 'rgba(255,255,255,.8)' : 'rgba(0,0,0,.7)'; ctx.strokeText(`${u.lvl} · ${u.name}`, u.x, u.y - 78); ctx.fillStyle = textCol(); ctx.fillText(`${u.lvl} · ${u.name}`, u.x, u.y - 78);
   }
   function drawMinion(u, col) {
     ctx.save(); ctx.translate(u.x, u.y);
