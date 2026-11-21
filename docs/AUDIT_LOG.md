@@ -111,3 +111,10 @@ Technical SEO, AI visibility, usability and ad-readiness checks. Content (patch 
 - Teacher Tycoon gets a LIVE mode for streamers on the same URL (`?live=1`, stream output `?live=1&clean=1`); no new pages, canonical unchanged.
 - Viewers become part of the school: commenters take a seat as students, gifts make the sender teacher / vice principal / principal / inspector / Minister of Education (fictional characters, thresholds set by the streamer), top supporters become class president and vice president. Fixed, stated effect per gift; no chance-based rewards. Name and word filter, blocked-user list, duplicate-event protection.
 - Data source today is a clearly labelled simulator (SIMULATION / DEMO on screen). Not connected to TikTok; official TikTok LIVE access is pending, third-party providers stay off unless the owner approves.
+
+## 2026-11-21 – Teacher Tycoon LIVE: TikFinity source (beta)
+- LIVE panel gets an opt-in data source "TikFinity · on your own computer (beta)". The page connects to the creator's own TikFinity desktop app at ws://localhost:21213 and maps chat/like/follow/gift events into the existing ingest() pipeline (dedupe, filters, rate limit unchanged).
+- Nothing passes through PickRadar servers; no keys. Off by default; turned on by the creator (panel button) or `&src=tikfinity` in the OBS link. No demo/fake viewers while it is on.
+- Gift streaks are applied once, at the streak's final message. Unknown events are ignored.
+- Owner asked for a creator-run solution on 2026-11-21. TikFinity is third-party and unofficial; labelled beta in the UI. Official TikTok access row stays "waiting for partner access".
+- Additive only: no change to page titles, URLs, links or the normal game.

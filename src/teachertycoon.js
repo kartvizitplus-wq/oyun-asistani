@@ -167,7 +167,11 @@ const LIVE_TXT = {
   simH: 'Simulator', sComment: 'Comment', sFollow: 'Follow', auto: 'Auto demo: fake viewers (shown as DEMO on stream)', dup: 'Resend last event (duplicate test)',
   mapH: 'Gift → role (minimum coins)', blockH: 'Blocked words and users (comma separated)', obsH: 'Stream output for OBS / LIVE Studio', copy: 'Copy', copied: 'Copied!',
   obsNote: 'Add as a browser source at 1080 × 1920. Until TikTok access is approved the output plays the DEMO class.', logH: 'Event queue', panel: 'Panel',
-  st: { ok: 'APPLIED', dup: 'DUPLICATE', queue: 'QUEUED', filt: 'FILTERED' }, liveBtn: 'LIVE Mode · for creators'
+  st: { ok: 'APPLIED', dup: 'DUPLICATE', queue: 'QUEUED', filt: 'FILTERED' }, liveBtn: 'LIVE Mode · for creators',
+  srcTF: 'TikFinity · on your own computer (beta)', tfSt: { off: 'OFF', wait: 'CONNECTING…', on: 'CONNECTED', err: 'TIKFINITY NOT FOUND' }, tfUse: 'Connect my LIVE', tfStop: 'Disconnect',
+  tfHelp: 'Free and runs only on your computer: install the TikFinity desktop app, log in with your TikTok account and keep it open while you are LIVE. This page reads your stream events from it (ws://localhost:21213). No keys, nothing passes through our servers. TikFinity is a third-party tool, not made by TikTok or by us.',
+  tfPerm: 'If Chrome asks for “local network access”, click Allow.', tfNote: 'Real LIVE data from TikFinity on this computer. Simulator buttons still work for testing.',
+  tfMode: '', tfWait: 'TIKFINITY…', obsNoteTF: 'Add as a browser source at 1080 × 1920 on the same computer where TikFinity is running. The class reacts to your real comments, likes and gifts.'
  },
  tr: {
   cls: 'Canlı ders', likeGoal: 'Beğeni hedefi · sınıf alkışı', legendH: 'Okula katıl', cmt: 'Yorum', cmtE: 'Sınıfa öğrenci olarak otur', cmdQ: 'soru', cmdE: 'Öğrencin parmak kaldırır', rose: 'Gül',
@@ -181,7 +185,11 @@ const LIVE_TXT = {
   simH: 'Simülatör', sComment: 'Yorum', sFollow: 'Takip', auto: 'Otomatik demo: sahte izleyiciler (yayında DEMO yazar)', dup: 'Son olayı tekrar gönder (tekrar testi)',
   mapH: 'Hediye → rol (en az jeton)', blockH: 'Engelli kelimeler ve kullanıcılar (virgülle)', obsH: 'OBS / LIVE Studio yayın çıktısı', copy: 'Kopyala', copied: 'Kopyalandı!',
   obsNote: '1080 × 1920 tarayıcı kaynağı olarak ekle. TikTok erişimi onaylanana kadar çıktı DEMO sınıfı oynatır.', logH: 'Olay kuyruğu', panel: 'Panel',
-  st: { ok: 'UYGULANDI', dup: 'TEKRAR', queue: 'SIRADA', filt: 'FİLTRE' }, liveBtn: 'LIVE Modu · yayıncılar için'
+  st: { ok: 'UYGULANDI', dup: 'TEKRAR', queue: 'SIRADA', filt: 'FİLTRE' }, liveBtn: 'LIVE Modu · yayıncılar için',
+  srcTF: 'TikFinity · kendi bilgisayarında (beta)', tfSt: { off: 'KAPALI', wait: 'BAĞLANIYOR…', on: 'BAĞLANDI', err: 'TIKFINITY BULUNAMADI' }, tfUse: 'Yayınımı bağla', tfStop: 'Bağlantıyı kes',
+  tfHelp: 'Ücretsiz ve yalnızca senin bilgisayarında çalışır: TikFinity masaüstü uygulamasını kur, TikTok hesabınla giriş yap ve yayın boyunca açık tut. Bu sayfa yayın olaylarını oradan okur (ws://localhost:21213). Anahtar yok, hiçbir veri bizim sunucumuzdan geçmez. TikFinity üçüncü taraf bir araçtır; TikTok ya da biz yapmadık.',
+  tfPerm: 'Chrome “yerel ağ erişimi” izni sorarsa İzin ver’e bas.', tfNote: 'Bu bilgisayardaki TikFinity’den gerçek LIVE verisi geliyor. Simülatör düğmeleri test için yine çalışır.',
+  tfMode: '', tfWait: 'TIKFINITY…', obsNoteTF: 'TikFinity’nin açık olduğu aynı bilgisayarda 1080 × 1920 tarayıcı kaynağı olarak ekle. Sınıf gerçek yorumlarına, beğenilerine ve hediyelerine tepki verir.'
  },
  es: {
   cls: 'Clase en directo', likeGoal: 'Meta de me gusta · aplauso', legendH: 'Únete a la escuela', cmt: 'Comenta', cmtE: 'Te sientas en clase como alumno', cmdQ: 'pregunta', cmdE: 'Tu alumno levanta la mano', rose: 'Rosa',
@@ -1466,7 +1474,9 @@ function mount(host, opts) {
  const DEF_CFG = { teacher: 1, vp: 99, principal: 299, inspector: 999, minister: 4999, likeGoal: 1000, block: '' };
  let CFG = Object.assign({}, DEF_CFG, store.get('livecfg', {}));
  try { const c = QS.get('cfg'); if (c) CFG = Object.assign({}, DEF_CFG, JSON.parse(decodeURIComponent(escape(atob(c))))); } catch (e) { }
- const demoMode = QS.get('demo') === '1';
+ const srcMode = QS.get('src') || (clean ? '' : store.get('livesrc', ''));
+ const TF = { on: srcMode === 'tikfinity', ws: null, st: 'off', retry: 0, t: null, n: 0, port: Math.round(+QS.get('port')) || 21213 };
+ const demoMode = QS.get('demo') === '1' && !TF.on;
  const LS = { users: new Map(), seen: new Set(), seenQ: [], viewers: [], visitQ: [], visit: null, guest: null, likes: 0, goal: CFG.likeGoal, log: [], leaders: [], autoT: 0, auto: demoMode, aiT: 4, n: 0, last: null };
  const FREE_SEATS = live ? SEATS_LIVE.map((_, i) => i).filter(i => !KID_SEAT_LIVE.includes(i)) : [];
  const BAD_WORDS = ['fuck', 'shit', 'bitch', 'dick', 'cunt', 'nigg', 'fag', 'whore', 'slut', 'amk', 'aq', 'orospu', 'sik', 'piç', 'pic', 'yarrak', 'göt', 'got', 'ibne', 'puta', 'mierda', 'pendej', 'caralho', 'porra', 'anjing', 'bangsat', 'kontol', 'memek'];
@@ -1500,7 +1510,7 @@ function mount(host, opts) {
 .lv-top{position:absolute;left:10px;right:10px;top:10px;display:flex;gap:8px;align-items:center;flex-wrap:wrap;pointer-events:none}
 .lv-pill{font:800 12px system-ui,sans-serif;letter-spacing:1px;padding:4px 10px;border-radius:999px;background:#ff6b5b;color:#1e2235}
 .lv-name{font-weight:800;font-size:16px;padding:2px 12px;border-radius:999px;background:rgba(255,247,232,.94)}
-.lv-mode{font:800 11px system-ui,sans-serif;letter-spacing:1px;padding:4px 9px;border-radius:999px;background:#ffc93c;color:#1e2235}
+.lv-mode:empty{display:none}.lv-mode{font:800 11px system-ui,sans-serif;letter-spacing:1px;padding:4px 9px;border-radius:999px;background:#ffc93c;color:#1e2235}
 .lv-like{position:absolute;left:10px;right:10px;top:46px;padding:7px 12px;border-radius:14px;background:rgba(255,247,232,.94);pointer-events:none}
 .lv-like .r{display:flex;justify-content:space-between;font:800 11px system-ui,sans-serif;letter-spacing:1px;color:#1f5e55}
 .lv-like .b{margin-top:5px;height:10px;border-radius:9px;background:#e6ded0;overflow:hidden}.lv-like .b i{display:block;height:100%;width:0;background:#ff6b5b;transition:width .3s}
@@ -1549,7 +1559,11 @@ function mount(host, opts) {
   lv.leg = el('div', 'lv-leg');
   [lv.top, lv.like, lv.ban, lv.lead, lv.leg].forEach(e => ui.appendChild(e));
   renderLegend(); renderLeaders(); renderLikes();
-  lv.top.querySelector('.lv-mode').textContent = LS.auto ? LV.demo : LV.sim;
+  modeLabel();
+ }
+ function modeLabel() {
+  if (!lv) return;
+  lv.top.querySelector('.lv-mode').textContent = TF.on ? (TF.st === 'on' ? LV.tfMode : LV.tfWait) : LS.auto ? LV.demo : LV.sim;
  }
  function renderLegend() {
   const c = { teacher: '#ff8fb1', vp: '#5bc0eb', principal: '#ffc93c', inspector: '#b39ddb', minister: '#ff6b5b' };
@@ -1572,11 +1586,9 @@ function mount(host, opts) {
  function livePanel() {
   pn = el('aside', 'lv-panel');
   pn.innerHTML = `<div style="display:flex;justify-content:space-between;align-items:center"><h3>${esc(LV.panelH)}</h3><a class="lv-btn g" href="${location.pathname}">${esc(LV.back)}</a></div>
-<div class="note">${esc(LV.note)}</div>
+<div class="note"></div>
 <h5>${esc(LV.source)}</h5>
-<div class="lv-src on">● ${esc(LV.srcSim)}<em>${esc(LV.active)}</em></div>
-<div class="lv-src">○ ${esc(LV.srcTT)}<em>${esc(LV.srcTTn)}</em></div>
-<div class="lv-src">○ ${esc(LV.src3)}<em>${esc(LV.src3n)}</em></div>
+<div class="lv-srcs"></div>
 <h5>${esc(LV.simH)}</h5>
 <div class="lv-sim">
 <button data-s="comment" style="background:#eef1f8">${esc(LV.sComment)}</button><button data-s="cmd" style="background:#7fd3c6">!${esc(LV.cmdQ)}</button><button data-s="follow" style="background:#c9f2c7">${esc(LV.sFollow)}</button>
@@ -1592,7 +1604,7 @@ ${ROLES.map(r => `<div class="lv-row"><label>${esc(LV.role[r])}</label><input ty
 <div class="lv-row"><input type="text" data-k="block" value="${esc(CFG.block)}" placeholder="word1, user2"></div>
 <h5>${esc(LV.obsH)}</h5>
 <div class="lv-url"><input readonly data-u="obs"><button class="lv-btn" data-s="copy">${esc(LV.copy)}</button></div>
-<div style="margin-top:6px;color:#8e99b8;font-size:11.5px">${esc(LV.obsNote)}</div>
+<div class="lv-obsn" style="margin-top:6px;color:#8e99b8;font-size:11.5px"></div>
 <h5>${esc(LV.logH)}</h5><ul class="lv-log"></ul>`;
   outer.appendChild(pn);
   const tog = el('button', 'lv-btn lv-tog', esc(LV.panel)); outer.appendChild(tog);
@@ -1602,22 +1614,35 @@ ${ROLES.map(r => `<div class="lv-row"><label>${esc(LV.role[r])}</label><input ty
    const s = b.dataset.s;
    if (s === 'copy') { const i = pn.querySelector('[data-u=obs]'); i.select(); try { navigator.clipboard.writeText(i.value); } catch (er) { document.execCommand && document.execCommand('copy'); } b.textContent = LV.copied; setTimeout(() => b.textContent = LV.copy, 1500); return; }
    if (s === 'dup') { if (LS.last) ingest(Object.assign({}, LS.last)); return; }
+   if (s === 'tf') { if (TF.on) tfStop(); else tfStart(); store.set('livesrc', TF.on ? 'tikfinity' : 'sim'); obsUrl(); return; }
    simEvent(s);
   });
   pn.addEventListener('change', e => {
    const t = e.target;
-   if (t.dataset.c === 'auto') { LS.auto = t.checked; lv.top.querySelector('.lv-mode').textContent = LS.auto ? LV.demo : LV.sim; return; }
+   if (t.dataset.c === 'auto') { LS.auto = t.checked; if (LS.auto && TF.on) { tfStop(); store.set('livesrc', 'sim'); obsUrl(); } modeLabel(); return; }
    const k = t.dataset.k; if (!k) return;
    CFG[k] = k === 'block' ? t.value : Math.max(1, Math.round(+t.value || DEF_CFG[k]));
    if (k === 'likeGoal') LS.goal = CFG.likeGoal;
    store.set('livecfg', CFG); renderLegend(); renderLikes(); obsUrl();
   });
-  obsUrl(); renderLog();
+  renderSrc(); obsUrl(); renderLog();
+ }
+ function renderSrc() {
+  if (!pn) return;
+  const tfc = { off: '#8e99b8', wait: '#ffc93c', on: '#3ecf7a', err: '#ff8a7d' }[TF.st];
+  pn.querySelector('.note').textContent = TF.on ? LV.tfNote : LV.note;
+  pn.querySelector('.lv-srcs').innerHTML = `<div class="lv-src${TF.on ? '' : ' on'}">${TF.on ? '○' : '●'} ${esc(LV.srcSim)}<em>${TF.on ? '' : esc(LV.active)}</em></div>
+<div class="lv-src${TF.on ? ' on' : ''}" style="flex-wrap:wrap">${TF.on ? '●' : '○'} ${esc(LV.srcTF)}<em style="color:${tfc}">${esc(LV.tfSt[TF.st])}</em>
+<div style="flex-basis:100%;font-size:11.5px;line-height:1.45;color:#aab4cf;margin-top:4px">${esc(LV.tfHelp)} ${esc(LV.tfPerm)}</div>
+<button class="lv-btn${TF.on ? ' g' : ''}" data-s="tf" style="margin-top:6px">${esc(TF.on ? LV.tfStop : LV.tfUse)}</button></div>
+<div class="lv-src">○ ${esc(LV.srcTT)}<em>${esc(LV.srcTTn)}</em></div>`;
  }
  function obsUrl() {
   if (!pn) return;
   const c = btoa(unescape(encodeURIComponent(JSON.stringify(CFG))));
-  pn.querySelector('[data-u=obs]').value = `${location.origin}${location.pathname}?live=1&clean=1&demo=1&cfg=${c}`;
+  const src = TF.on ? '&src=tikfinity' + (TF.port !== 21213 ? '&port=' + TF.port : '') : '&demo=1';
+  pn.querySelector('[data-u=obs]').value = `${location.origin}${location.pathname}?live=1&clean=1${src}&cfg=${c}`;
+  pn.querySelector('.lv-obsn').textContent = TF.on ? LV.obsNoteTF : LV.obsNote;
  }
  function renderLog() {
   if (!pn) return;
@@ -1646,6 +1671,47 @@ ${ROLES.map(r => `<div class="lv-row"><label>${esc(LV.role[r])}</label><input ty
   LS.autoT = 1.4 + Math.random() * 2.2;
   const r = Math.random();
   simEvent(r < .5 ? 'comment' : r < .62 ? 'cmd' : r < .74 ? 'like' : r < .84 ? 'rose' : r < .9 ? 'follow' : r < .955 ? 'vp' : r < .98 ? 'principal' : r < .993 ? 'inspector' : 'minister');
+ }
+
+ /* --- TikFinity adapter (beta). Reads the creator's own TikFinity desktop app over ws://localhost.
+    Everything stays on the creator's computer: no keys, nothing goes through our servers.
+    Off unless the creator turns it on (panel button or &src=tikfinity in the OBS link). --- */
+ function tfConnect() {
+  if (!TF.on) return;
+  clearTimeout(TF.t);
+  if (TF.st !== 'on') tfSet(TF.retry ? 'err' : 'wait');
+  let ws;
+  try { ws = new WebSocket('ws://localhost:' + TF.port + '/'); } catch (e) { tfSet('err'); TF.t = setTimeout(tfConnect, 5000); return; }
+  TF.ws = ws;
+  ws.onopen = () => { if (TF.ws !== ws) return; TF.retry = 0; tfSet('on'); };
+  ws.onmessage = m => { if (TF.ws !== ws) return; let j; try { j = JSON.parse(m.data); } catch (e) { return; } let ev = null; try { ev = tfMap(j); } catch (e) { } if (ev) ingest(ev); };
+  ws.onclose = () => { if (TF.ws !== ws) return; TF.ws = null; if (!TF.on) return; TF.retry++; tfSet('err'); TF.t = setTimeout(tfConnect, Math.min(10000, 1500 + TF.retry * 1000)); };
+  ws.onerror = () => { };
+ }
+ function tfSet(st) { TF.st = st; modeLabel(); renderSrc(); }
+ function tfStart() { TF.on = true; TF.retry = 0; LS.auto = false; const a = pn && pn.querySelector('[data-c=auto]'); if (a) a.checked = false; tfSet('wait'); tfConnect(); }
+ function tfStop() { TF.on = false; clearTimeout(TF.t); const w = TF.ws; TF.ws = null; if (w) try { w.close(); } catch (e) { } tfSet('off'); }
+ function tfMap(j) {
+  if (!j || typeof j !== 'object') return null;
+  const kind = String(j.event || j.type || '').toLowerCase(), d = j.data || {}, u = d.user || {};
+  const uid = String(d.uniqueId || u.uniqueId || d.userId || u.userId || '');
+  if (!uid) return null;
+  const base = { user: { id: uid, name: String(d.nickname || u.nickname || uid) }, src: 'tikfinity' };
+  const mid = d.msgId || (d.common && d.common.msgId);
+  const id = x => 'tf_' + (mid ? mid + (x || '') : uid + '_' + kind + '_' + (++TF.n) + '_' + Date.now().toString(36));
+  if (kind === 'chat' || kind === 'comment') return Object.assign(base, { id: id(), type: 'comment', text: String(d.comment || d.text || '') });
+  if (kind === 'like') return Object.assign(base, { id: id(), type: 'like', count: Math.max(1, +(d.likeCount || d.count || 1) | 0) });
+  if (kind === 'follow' || (kind === 'social' && /follow/i.test(String(d.displayType || d.label || '')))) return Object.assign(base, { id: id(), type: 'follow' });
+  if (kind === 'gift') {
+   const gd = d.giftDetails || d.extendedGiftInfo || {};
+   const gtype = +(d.giftType != null ? d.giftType : gd.giftType);
+   if (gtype === 1 && !d.repeatEnd) return null; // streak still running: wait for its final message
+   const dia = +(d.diamondCount || gd.diamondCount || gd.diamond_count || 0) | 0;
+   if (dia <= 0) return null;
+   const rep = Math.max(1, +(d.repeatCount || 1) | 0);
+   return Object.assign(base, { id: id('_' + rep), type: 'gift', gift: String(d.giftName || gd.giftName || gd.name || 'Gift'), coins: dia, repeat: rep });
+  }
+  return null;
  }
 
  /* --- event pipeline: dedupe by id, filter, apply --- */
@@ -1859,6 +1925,7 @@ ${ROLES.map(r => `<div class="lv-row"><label>${esc(LV.role[r])}</label><input ty
   hud.style.display = 'none'; ov.hidden = true; ov.innerHTML = '';
   liveUI();
   if (!clean) livePanel();
+  if (TF.on) { tfSet('wait'); tfConnect(); }
   teacher.root.position.set(BOARD.spotX, 0, BOARD.spotZ);
   kids.forEach(k => startState(k, 'focus'));
   banner(LV.cls, LV.welcome, false, 4);
