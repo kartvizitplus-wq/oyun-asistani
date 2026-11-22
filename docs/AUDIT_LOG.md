@@ -121,3 +121,14 @@ Technical SEO, AI visibility, usability and ad-readiness checks. Content (patch 
 
 ## 2026-11-22 – Teacher Tycoon LIVE panel in es / pt / id
 - Creator panel texts (incl. TikFinity setup help) translated to Spanish, Portuguese and Indonesian; previously fell back to English. Text-only, additive.
+
+## 2026-11-22 – Teacher Tycoon LIVE: Twitch, YouTube Live, Kick (+ others)
+- Owner asked on 2026-11-22 to support all streaming platforms and put it live.
+- New opt-in data sources in the creator panel, all mapped into the same ingest() pipeline (dedupe, filters, rate limit unchanged):
+  - Twitch: official Twitch chat (IRC WebSocket, anonymous read-only). Bits and subs count as gifts.
+  - YouTube Live: official YouTube Data API v3 with the creator's own API key. Super Chat / Super Sticker / memberships count as gifts. Old backlog is skipped.
+  - Kick and others: the creator's own Social Stream Ninja session (third-party tool, labelled beta).
+- Donations are converted to the coin table at a stated fixed rate ($1 ≈ 75 coins). Fixed effects, no chance mechanics.
+- Nothing passes through PickRadar servers; keys stay in the creator's browser / OBS link (UI warns not to share it).
+- Profanity filter now also catches stretched words (e.g. "biiitch").
+- Additive only: no change to page titles, URLs, links or the normal game.

@@ -171,6 +171,13 @@ const LIVE_TXT = {
   srcTF: 'TikFinity · on your own computer (beta)', tfSt: { off: 'OFF', wait: 'CONNECTING…', on: 'CONNECTED', err: 'TIKFINITY NOT FOUND' }, tfUse: 'Connect my LIVE', tfStop: 'Disconnect',
   tfHelp: 'Free and runs only on your computer: install the TikFinity desktop app, log in with your TikTok account and keep it open while you are LIVE. This page reads your stream events from it (ws://localhost:21213). No keys, nothing passes through our servers. TikFinity is a third-party tool, not made by TikTok or by us.',
   tfPerm: 'If Chrome asks for “local network access”, click Allow.', tfNote: 'Real LIVE data from TikFinity on this computer. Simulator buttons still work for testing.',
+  srcN: { tikfinity: 'TikTok · via TikFinity (beta)', twitch: 'Twitch', youtube: 'YouTube Live', ssn: 'Kick + other platforms · via Social Stream Ninja (beta)' },
+  srcH: { twitch: 'Official Twitch chat, free, nothing to install: type your channel name and connect. Bits and subs count as gifts. (Twitch does not send follows to chat.)',
+   youtube: 'Official YouTube API, free. One-time setup: in Google Cloud Console turn on “YouTube Data API v3”, create an API key (restrict it to pickradar.net) and paste it here with your live video link. The free daily quota lasts about 3 hours of streaming. Super Chats, Super Stickers and memberships count as gifts.',
+   ssn: 'For Kick and any other platform: use the free Social Stream Ninja app or browser extension. In its settings under Mechanics turn on “Enable remote API control” and “Send chat messages to API server”, then paste your session ID here. Donations count as gifts. Social Stream Ninja is a third-party tool, not made by us.' },
+  moneyNote: 'Twitch, YouTube and Kick donations are converted to coins: $1 ≈ 75 coins (100 Bits = $1, a sub ≈ $5).', twCh: 'Twitch channel name', ytKey: 'YouTube API key', ytVid: 'Live video link or ID', ssSess: 'Social Stream session ID', anyGift: 'Any gift', errGen: 'CANNOT CONNECT',
+  needCh: 'Type your Twitch channel name first.', needYt: 'Paste your API key and live video link first.', needSs: 'Paste your Social Stream session ID first.', ytBadKey: 'YouTube rejected the key, or today’s free quota is used up.', ytNoLive: 'No active live chat on this video yet. Retrying…',
+  obsNoteNet: 'Add as a browser source at 1080 × 1920. The class reacts to your real chat and donations.', keyWarn: 'This link contains your API key, do not share it.', liveNote: 'Real live data is connected. Simulator buttons still work for testing.',
   tfMode: '', tfWait: 'TIKFINITY…', obsNoteTF: 'Add as a browser source at 1080 × 1920 on the same computer where TikFinity is running. The class reacts to your real comments, likes and gifts.'
  },
  tr: {
@@ -189,6 +196,13 @@ const LIVE_TXT = {
   srcTF: 'TikFinity · kendi bilgisayarında (beta)', tfSt: { off: 'KAPALI', wait: 'BAĞLANIYOR…', on: 'BAĞLANDI', err: 'TIKFINITY BULUNAMADI' }, tfUse: 'Yayınımı bağla', tfStop: 'Bağlantıyı kes',
   tfHelp: 'Ücretsiz ve yalnızca senin bilgisayarında çalışır: TikFinity masaüstü uygulamasını kur, TikTok hesabınla giriş yap ve yayın boyunca açık tut. Bu sayfa yayın olaylarını oradan okur (ws://localhost:21213). Anahtar yok, hiçbir veri bizim sunucumuzdan geçmez. TikFinity üçüncü taraf bir araçtır; TikTok ya da biz yapmadık.',
   tfPerm: 'Chrome “yerel ağ erişimi” izni sorarsa İzin ver’e bas.', tfNote: 'Bu bilgisayardaki TikFinity’den gerçek LIVE verisi geliyor. Simülatör düğmeleri test için yine çalışır.',
+  srcN: { tikfinity: 'TikTok · TikFinity ile (beta)', twitch: 'Twitch', youtube: 'YouTube Live', ssn: 'Kick + diğer platformlar · Social Stream Ninja ile (beta)' },
+  srcH: { twitch: 'Resmî Twitch sohbeti, ücretsiz, kurulum yok: kanal adını yaz ve bağla. Bits ve abonelikler hediye sayılır. (Twitch takipleri sohbete göndermez.)',
+   youtube: 'Resmî YouTube API’si, ücretsiz. Tek seferlik kurulum: Google Cloud Console’da “YouTube Data API v3”ü aç, bir API anahtarı oluştur (pickradar.net ile sınırla) ve canlı yayın linkinle birlikte buraya yapıştır. Ücretsiz günlük kota yaklaşık 3 saatlik yayına yeter. Süper Sohbet, Süper Çıkartma ve kanal üyelikleri hediye sayılır.',
+   ssn: 'Kick ve diğer tüm platformlar için: ücretsiz Social Stream Ninja uygulamasını ya da tarayıcı eklentisini kullan. Ayarlarında Mechanics bölümünden “Enable remote API control” ve “Send chat messages to API server” seçeneklerini aç, sonra oturum ID’ni buraya yapıştır. Bağışlar hediye sayılır. Social Stream Ninja üçüncü taraf bir araçtır; biz yapmadık.' },
+  moneyNote: 'Twitch, YouTube ve Kick bağışları jetona çevrilir: 1 $ ≈ 75 jeton (100 Bits = 1 $, bir abonelik ≈ 5 $).', twCh: 'Twitch kanal adı', ytKey: 'YouTube API anahtarı', ytVid: 'Canlı yayın linki veya ID', ssSess: 'Social Stream oturum ID', anyGift: 'Her hediye', errGen: 'BAĞLANAMADI',
+  needCh: 'Önce Twitch kanal adını yaz.', needYt: 'Önce API anahtarını ve canlı yayın linkini yapıştır.', needSs: 'Önce Social Stream oturum ID’ni yapıştır.', ytBadKey: 'YouTube anahtarı kabul etmedi ya da bugünkü ücretsiz kota doldu.', ytNoLive: 'Bu videoda henüz aktif canlı sohbet yok. Tekrar deneniyor…',
+  obsNoteNet: '1080 × 1920 tarayıcı kaynağı olarak ekle. Sınıf gerçek sohbetine ve bağışlarına tepki verir.', keyWarn: 'Bu link API anahtarını içerir, kimseyle paylaşma.', liveNote: 'Gerçek canlı yayın verisi bağlı. Simülatör düğmeleri test için yine çalışır.',
   tfMode: '', tfWait: 'TIKFINITY…', obsNoteTF: 'TikFinity’nin açık olduğu aynı bilgisayarda 1080 × 1920 tarayıcı kaynağı olarak ekle. Sınıf gerçek yorumlarına, beğenilerine ve hediyelerine tepki verir.'
  },
  es: {
@@ -208,6 +222,13 @@ const LIVE_TXT = {
   srcTF: 'TikFinity · en tu propio ordenador (beta)', tfSt: { off: 'APAGADO', wait: 'CONECTANDO…', on: 'CONECTADO', err: 'TIKFINITY NO ENCONTRADO' }, tfUse: 'Conectar mi LIVE', tfStop: 'Desconectar',
   tfHelp: 'Gratis y solo en tu ordenador: instala la app de escritorio TikFinity, inicia sesión con tu cuenta de TikTok y mantenla abierta durante el directo. Esta página lee los eventos de tu directo desde ella (ws://localhost:21213). Sin claves; nada pasa por nuestros servidores. TikFinity es una herramienta de terceros, no la hizo TikTok ni nosotros.',
   tfPerm: 'Si Chrome pide «acceso a la red local», pulsa Permitir.', tfNote: 'Datos reales del LIVE desde TikFinity en este ordenador. Los botones del simulador siguen funcionando para pruebas.',
+  srcN: { tikfinity: 'TikTok · con TikFinity (beta)', twitch: 'Twitch', youtube: 'YouTube Live', ssn: 'Kick + otras plataformas · con Social Stream Ninja (beta)' },
+  srcH: { twitch: 'Chat oficial de Twitch, gratis, sin instalar nada: escribe el nombre de tu canal y conecta. Los Bits y las suscripciones cuentan como regalos. (Twitch no envía los follows al chat.)',
+   youtube: 'API oficial de YouTube, gratis. Configuración única: en Google Cloud Console activa “YouTube Data API v3”, crea una clave de API (restríngela a pickradar.net) y pégala aquí con el enlace de tu directo. La cuota diaria gratuita alcanza para unas 3 horas de directo. Super Chats, Super Stickers y membresías cuentan como regalos.',
+   ssn: 'Para Kick y cualquier otra plataforma: usa la app o extensión gratuita Social Stream Ninja. En su configuración, en Mechanics, activa “Enable remote API control” y “Send chat messages to API server” y pega aquí tu ID de sesión. Las donaciones cuentan como regalos. Social Stream Ninja es una herramienta de terceros, no la hicimos nosotros.' },
+  moneyNote: 'Las donaciones de Twitch, YouTube y Kick se convierten en monedas: 1 $ ≈ 75 monedas (100 Bits = 1 $, una suscripción ≈ 5 $).', twCh: 'Nombre del canal de Twitch', ytKey: 'Clave de API de YouTube', ytVid: 'Enlace o ID del directo', ssSess: 'ID de sesión de Social Stream', anyGift: 'Cualquier regalo', errGen: 'NO SE PUEDE CONECTAR',
+  needCh: 'Escribe primero el nombre de tu canal de Twitch.', needYt: 'Pega primero tu clave de API y el enlace del directo.', needSs: 'Pega primero tu ID de sesión de Social Stream.', ytBadKey: 'YouTube rechazó la clave o la cuota gratuita de hoy se agotó.', ytNoLive: 'Este vídeo aún no tiene chat en directo activo. Reintentando…',
+  obsNoteNet: 'Añádelo como fuente de navegador de 1080 × 1920. La clase reacciona a tu chat y donaciones reales.', keyWarn: 'Este enlace contiene tu clave de API, no lo compartas.', liveNote: 'Datos reales del directo conectados. Los botones del simulador siguen funcionando para pruebas.',
   tfWait: 'TIKFINITY…', obsNoteTF: 'Añádelo como fuente de navegador de 1080 × 1920 en el mismo ordenador donde está abierto TikFinity. La clase reacciona a tus comentarios, me gusta y regalos reales.'
  },
  pt: {
@@ -227,6 +248,13 @@ const LIVE_TXT = {
   srcTF: 'TikFinity · no seu próprio computador (beta)', tfSt: { off: 'DESLIGADO', wait: 'CONECTANDO…', on: 'CONECTADO', err: 'TIKFINITY NÃO ENCONTRADO' }, tfUse: 'Conectar minha LIVE', tfStop: 'Desconectar',
   tfHelp: 'Grátis e só no seu computador: instale o app de desktop TikFinity, entre com sua conta do TikTok e deixe-o aberto durante a live. Esta página lê os eventos da sua live a partir dele (ws://localhost:21213). Sem chaves; nada passa pelos nossos servidores. TikFinity é uma ferramenta de terceiros, não foi feita pelo TikTok nem por nós.',
   tfPerm: 'Se o Chrome pedir “acesso à rede local”, clique em Permitir.', tfNote: 'Dados reais da LIVE vindos do TikFinity neste computador. Os botões do simulador continuam funcionando para testes.',
+  srcN: { tikfinity: 'TikTok · com TikFinity (beta)', twitch: 'Twitch', youtube: 'YouTube Live', ssn: 'Kick + outras plataformas · com Social Stream Ninja (beta)' },
+  srcH: { twitch: 'Chat oficial da Twitch, grátis, sem instalar nada: digite o nome do seu canal e conecte. Bits e inscrições contam como presentes. (A Twitch não envia follows para o chat.)',
+   youtube: 'API oficial do YouTube, grátis. Configuração única: no Google Cloud Console ative a “YouTube Data API v3”, crie uma chave de API (restrinja a pickradar.net) e cole aqui com o link da sua live. A cota diária grátis dá para cerca de 3 horas de live. Super Chats, Super Stickers e assinaturas de canal contam como presentes.',
+   ssn: 'Para Kick e qualquer outra plataforma: use o app ou a extensão gratuita Social Stream Ninja. Nas configurações, em Mechanics, ative “Enable remote API control” e “Send chat messages to API server” e cole aqui o seu ID de sessão. Doações contam como presentes. Social Stream Ninja é uma ferramenta de terceiros, não foi feita por nós.' },
+  moneyNote: 'Doações da Twitch, YouTube e Kick viram moedas: US$ 1 ≈ 75 moedas (100 Bits = US$ 1, uma inscrição ≈ US$ 5).', twCh: 'Nome do canal da Twitch', ytKey: 'Chave de API do YouTube', ytVid: 'Link ou ID da live', ssSess: 'ID de sessão do Social Stream', anyGift: 'Qualquer presente', errGen: 'NÃO FOI POSSÍVEL CONECTAR',
+  needCh: 'Digite primeiro o nome do seu canal da Twitch.', needYt: 'Cole primeiro sua chave de API e o link da live.', needSs: 'Cole primeiro seu ID de sessão do Social Stream.', ytBadKey: 'O YouTube recusou a chave ou a cota grátis de hoje acabou.', ytNoLive: 'Este vídeo ainda não tem chat ao vivo ativo. Tentando de novo…',
+  obsNoteNet: 'Adicione como fonte de navegador de 1080 × 1920. A turma reage ao seu chat e às doações reais.', keyWarn: 'Este link contém sua chave de API, não compartilhe.', liveNote: 'Dados reais da live conectados. Os botões do simulador continuam funcionando para testes.',
   tfWait: 'TIKFINITY…', obsNoteTF: 'Adicione como fonte de navegador de 1080 × 1920 no mesmo computador em que o TikFinity está aberto. A turma reage aos seus comentários, curtidas e presentes reais.'
  },
  id: {
@@ -246,6 +274,13 @@ const LIVE_TXT = {
   srcTF: 'TikFinity · di komputermu sendiri (beta)', tfSt: { off: 'MATI', wait: 'MENGHUBUNGKAN…', on: 'TERHUBUNG', err: 'TIKFINITY TIDAK DITEMUKAN' }, tfUse: 'Hubungkan LIVE-ku', tfStop: 'Putuskan',
   tfHelp: 'Gratis dan hanya berjalan di komputermu: pasang aplikasi desktop TikFinity, masuk dengan akun TikTok-mu dan biarkan terbuka selama LIVE. Halaman ini membaca event siaranmu dari sana (ws://localhost:21213). Tanpa kunci; tidak ada data yang lewat server kami. TikFinity adalah alat pihak ketiga, bukan buatan TikTok atau kami.',
   tfPerm: 'Jika Chrome meminta “akses jaringan lokal”, klik Izinkan.', tfNote: 'Data LIVE asli dari TikFinity di komputer ini. Tombol simulator tetap bisa dipakai untuk uji.',
+  srcN: { tikfinity: 'TikTok · lewat TikFinity (beta)', twitch: 'Twitch', youtube: 'YouTube Live', ssn: 'Kick + platform lain · lewat Social Stream Ninja (beta)' },
+  srcH: { twitch: 'Chat Twitch resmi, gratis, tanpa instalasi: ketik nama channel-mu lalu hubungkan. Bits dan langganan dihitung sebagai hadiah. (Twitch tidak mengirim follow ke chat.)',
+   youtube: 'API YouTube resmi, gratis. Pengaturan sekali saja: di Google Cloud Console aktifkan “YouTube Data API v3”, buat API key (batasi ke pickradar.net) lalu tempel di sini bersama link live-mu. Kuota harian gratis cukup untuk sekitar 3 jam siaran. Super Chat, Super Sticker, dan keanggotaan dihitung sebagai hadiah.',
+   ssn: 'Untuk Kick dan platform lainnya: pakai aplikasi atau ekstensi gratis Social Stream Ninja. Di pengaturannya, bagian Mechanics, nyalakan “Enable remote API control” dan “Send chat messages to API server”, lalu tempel session ID-mu di sini. Donasi dihitung sebagai hadiah. Social Stream Ninja adalah alat pihak ketiga, bukan buatan kami.' },
+  moneyNote: 'Donasi Twitch, YouTube, dan Kick diubah jadi koin: $1 ≈ 75 koin (100 Bits = $1, satu langganan ≈ $5).', twCh: 'Nama channel Twitch', ytKey: 'API key YouTube', ytVid: 'Link atau ID video live', ssSess: 'Session ID Social Stream', anyGift: 'Hadiah apa pun', errGen: 'TIDAK BISA TERHUBUNG',
+  needCh: 'Ketik dulu nama channel Twitch-mu.', needYt: 'Tempel dulu API key dan link video live-mu.', needSs: 'Tempel dulu session ID Social Stream-mu.', ytBadKey: 'YouTube menolak key ini, atau kuota gratis hari ini sudah habis.', ytNoLive: 'Video ini belum punya live chat aktif. Mencoba lagi…',
+  obsNoteNet: 'Tambahkan sebagai browser source 1080 × 1920. Kelas bereaksi pada chat dan donasi aslimu.', keyWarn: 'Link ini berisi API key-mu, jangan dibagikan.', liveNote: 'Data live asli terhubung. Tombol simulator tetap bisa dipakai untuk uji.',
   tfWait: 'TIKFINITY…', obsNoteTF: 'Tambahkan sebagai browser source 1080 × 1920 di komputer yang sama tempat TikFinity terbuka. Kelas bereaksi pada komentar, suka, dan hadiah aslimu.'
  }
 };
@@ -1507,16 +1542,18 @@ function mount(host, opts) {
  const DEF_CFG = { teacher: 1, vp: 99, principal: 299, inspector: 999, minister: 4999, likeGoal: 1000, block: '' };
  let CFG = Object.assign({}, DEF_CFG, store.get('livecfg', {}));
  try { const c = QS.get('cfg'); if (c) CFG = Object.assign({}, DEF_CFG, JSON.parse(decodeURIComponent(escape(atob(c))))); } catch (e) { }
- const srcMode = QS.get('src') || (clean ? '' : store.get('livesrc', ''));
- const TF = { on: srcMode === 'tikfinity', ws: null, st: 'off', retry: 0, t: null, n: 0, port: Math.round(+QS.get('port')) || 21213 };
- const demoMode = QS.get('demo') === '1' && !TF.on;
+ const SAVED = clean ? {} : store.get('livesrc2', store.get('livesrc', '') === 'tikfinity' ? { kind: 'tikfinity' } : {});
+ const SRC = { kind: 'sim', on: false, ws: null, st: 'off', msg: '', retry: 0, t: null, n: 0, gen: 0,
+  opt: { port: Math.round(+QS.get('port')) || 21213, ch: QS.get('ch') || SAVED.ch || '', yk: QS.get('yk') || SAVED.yk || '', yv: QS.get('yv') || SAVED.yv || '', ss: QS.get('ss') || SAVED.ss || '' } };
+ const srcWant = QS.get('src') || SAVED.kind || '';
+ const demoMode = QS.get('demo') === '1' && !srcWant;
  const LS = { users: new Map(), seen: new Set(), seenQ: [], viewers: [], visitQ: [], visit: null, guest: null, likes: 0, goal: CFG.likeGoal, log: [], leaders: [], autoT: 0, auto: demoMode, aiT: 4, n: 0, last: null };
  const FREE_SEATS = live ? SEATS_LIVE.map((_, i) => i).filter(i => !KID_SEAT_LIVE.includes(i)) : [];
  const BAD_WORDS = ['fuck', 'shit', 'bitch', 'dick', 'cunt', 'nigg', 'fag', 'whore', 'slut', 'amk', 'aq', 'orospu', 'sik', 'piç', 'pic', 'yarrak', 'göt', 'got', 'ibne', 'puta', 'mierda', 'pendej', 'caralho', 'porra', 'anjing', 'bangsat', 'kontol', 'memek'];
  const blockList = () => CFG.block.split(',').map(x => x.trim().toLowerCase()).filter(Boolean);
  function cleanText(t, max) {
   t = String(t || '').replace(/https?:\/\/\S+|www\.\S+/gi, '').replace(/[<>]/g, '').trim().slice(0, max || 46);
-  for (const w of BAD_WORDS.concat(blockList())) if (w) t = t.replace(new RegExp('(^|[^\\p{L}])(' + w.replace(/[.*+?^${}()|[\]\\]/g, '\\$&') + ')(?=$|[^\\p{L}])', 'giu'), (m, a, b) => a + '*'.repeat(b.length));
+  for (const w of BAD_WORDS.concat(blockList())) if (w) t = t.replace(new RegExp('(^|[^\\p{L}])(' + [...w].map(c => c.replace(/[.*+?^${}()|[\]\\]/g, '\\$&') + '+').join('') + ')(?=$|[^\\p{L}])', 'giu'), (m, a, b) => a + '*'.repeat(b.length));
   return t;
  }
  const cleanName = n => { const c = cleanText(String(n || '').replace(/^@/, ''), 18); return c.includes('*') ? 'viewer' : c || 'viewer'; };
@@ -1574,6 +1611,7 @@ function mount(host, opts) {
 .lv-row{display:flex;gap:6px;align-items:center;margin-top:5px}.lv-row label{flex:1}
 .lv-row input[type=number],.lv-row input[type=text]{width:92px;padding:5px 7px;border-radius:8px;border:1px solid #2a3555;background:#0e1628;color:#eef1f8;font:700 13px system-ui,sans-serif}
 .lv-row input[type=text]{width:100%}
+.lv-src input{padding:7px 9px;border-radius:8px;border:1px solid #2a3555;background:#0e1628;color:#eef1f8;font:600 12.5px system-ui,sans-serif;box-sizing:border-box}
 .lv-url{display:flex;gap:6px}.lv-url input{flex:1;min-width:0;padding:7px;border-radius:8px;border:1px solid #2a3555;background:#0e1628;color:#c2cae0;font:12px ui-monospace,monospace}
 .lv-btn{border:0;border-radius:9px;padding:7px 12px;background:#ffc93c;color:#1e2235;font:800 12px system-ui,sans-serif;cursor:pointer}
 .lv-btn.g{background:transparent;border:2px solid #5a6585;color:#eef1f8}
@@ -1596,11 +1634,11 @@ function mount(host, opts) {
  }
  function modeLabel() {
   if (!lv) return;
-  lv.top.querySelector('.lv-mode').textContent = TF.on ? (TF.st === 'on' ? LV.tfMode : LV.tfWait) : LS.auto ? LV.demo : LV.sim;
+  lv.top.querySelector('.lv-mode').textContent = SRC.on ? (SRC.st === 'on' ? '' : SHORT[SRC.kind].toUpperCase() + '…') : LS.auto ? LV.demo : LV.sim;
  }
  function renderLegend() {
   const c = { teacher: '#ff8fb1', vp: '#5bc0eb', principal: '#ffc93c', inspector: '#b39ddb', minister: '#ff6b5b' };
-  const rows = [[LV.cmt, LV.cmtE, '#eef1f8'], ['!' + LV.cmdQ, LV.cmdE, '#7fd3c6']].concat(ROLES.map(r => [r === 'teacher' ? LV.rose : CFG[r] + '+', LV.role[r], c[r]]));
+  const rows = [[LV.cmt, LV.cmtE, '#eef1f8'], ['!' + LV.cmdQ, LV.cmdE, '#7fd3c6']].concat(ROLES.map(r => [r === 'teacher' ? (SRC.kind === 'sim' || SRC.kind === 'tikfinity' ? LV.rose : LV.anyGift) : SRC.kind === 'sim' || SRC.kind === 'tikfinity' ? CFG[r] + '+' : '$' + (CFG[r] / 75).toFixed(2) + '+', LV.role[r], c[r]]));
   lv.leg.innerHTML = `<h4>${esc(LV.legendH)}</h4><div class="g">${rows.map(([a, b, col]) => `<div><span style="background:${col}">${esc(a)}</span>${esc(b)}</div>`).join('')}</div>`;
  }
  function renderLikes() { lv.like.querySelector('.n').textContent = `${LS.likes.toLocaleString('en-US')} / ${LS.goal.toLocaleString('en-US')}`; lv.like.querySelector('i').style.width = Math.min(100, LS.likes / LS.goal * 100) + '%'; }
@@ -1647,12 +1685,23 @@ ${ROLES.map(r => `<div class="lv-row"><label>${esc(LV.role[r])}</label><input ty
    const s = b.dataset.s;
    if (s === 'copy') { const i = pn.querySelector('[data-u=obs]'); i.select(); try { navigator.clipboard.writeText(i.value); } catch (er) { document.execCommand && document.execCommand('copy'); } b.textContent = LV.copied; setTimeout(() => b.textContent = LV.copy, 1500); return; }
    if (s === 'dup') { if (LS.last) ingest(Object.assign({}, LS.last)); return; }
-   if (s === 'tf') { if (TF.on) tfStop(); else tfStart(); store.set('livesrc', TF.on ? 'tikfinity' : 'sim'); obsUrl(); return; }
+   if (s === 'src') {
+    const k = b.dataset.k;
+    if (SRC.on && SRC.kind === k) srcStop();
+    else {
+     readOpts();
+     const miss = (NEED[k] || []).find(([o]) => !SRC.opt[o]);
+     if (miss) { const r = b.closest('[data-row]'); r.querySelector('.msg').textContent = LV[miss[1]]; const f = r.querySelector(`[data-o=${miss[0]}]`); if (f) f.focus(); return; }
+     srcStart(k);
+    }
+    saveSrc(); obsUrl(); return;
+   }
    simEvent(s);
   });
   pn.addEventListener('change', e => {
    const t = e.target;
-   if (t.dataset.c === 'auto') { LS.auto = t.checked; if (LS.auto && TF.on) { tfStop(); store.set('livesrc', 'sim'); obsUrl(); } modeLabel(); return; }
+   if (t.dataset.c === 'auto') { LS.auto = t.checked; if (LS.auto && SRC.on) { srcStop(); saveSrc(); obsUrl(); } modeLabel(); return; }
+   if (t.dataset.o) { readOpts(); if (SRC.on && t.closest('[data-row]').dataset.row === SRC.kind) srcStart(SRC.kind); saveSrc(); obsUrl(); return; }
    const k = t.dataset.k; if (!k) return;
    CFG[k] = k === 'block' ? t.value : Math.max(1, Math.round(+t.value || DEF_CFG[k]));
    if (k === 'likeGoal') LS.goal = CFG.likeGoal;
@@ -1662,20 +1711,47 @@ ${ROLES.map(r => `<div class="lv-row"><label>${esc(LV.role[r])}</label><input ty
  }
  function renderSrc() {
   if (!pn) return;
-  const tfc = { off: '#8e99b8', wait: '#ffc93c', on: '#3ecf7a', err: '#ff8a7d' }[TF.st];
-  pn.querySelector('.note').textContent = TF.on ? LV.tfNote : LV.note;
-  pn.querySelector('.lv-srcs').innerHTML = `<div class="lv-src${TF.on ? '' : ' on'}">${TF.on ? '○' : '●'} ${esc(LV.srcSim)}<em>${TF.on ? '' : esc(LV.active)}</em></div>
-<div class="lv-src${TF.on ? ' on' : ''}" style="flex-wrap:wrap">${TF.on ? '●' : '○'} ${esc(LV.srcTF)}<em style="color:${tfc}">${esc(LV.tfSt[TF.st])}</em>
-<div style="flex-basis:100%;font-size:11.5px;line-height:1.45;color:#aab4cf;margin-top:4px">${esc(LV.tfHelp)} ${esc(LV.tfPerm)}</div>
-<button class="lv-btn${TF.on ? ' g' : ''}" data-s="tf" style="margin-top:6px">${esc(TF.on ? LV.tfStop : LV.tfUse)}</button></div>
+  const inp = (o, ph, type) => `<input data-o="${o}" type="${type || 'text'}" placeholder="${esc(ph)}" value="${esc(SRC.opt[o])}" autocomplete="off" spellcheck="false" style="width:100%;margin-top:6px">`;
+  const F = { tikfinity: '', twitch: inp('ch', LV.twCh), youtube: inp('yk', LV.ytKey, 'password') + inp('yv', LV.ytVid), ssn: inp('ss', LV.ssSess) };
+  pn.querySelector('.lv-srcs').innerHTML = `<div class="lv-src" data-row="sim"><span class="dot"></span> ${esc(LV.srcSim)}<em></em></div>
+${KINDS.map(k => `<div class="lv-src" data-row="${k}" style="flex-wrap:wrap"><span class="dot"></span> ${esc(LV.srcN[k])}<em></em>
+<div style="flex-basis:100%;font-size:11.5px;line-height:1.45;color:#aab4cf;margin-top:4px">${esc(LV.srcH[k])}</div>${F[k]}
+<div class="msg" style="flex-basis:100%;font-size:11.5px;color:#ff8a7d;margin-top:4px"></div>
+<button class="lv-btn" data-s="src" data-k="${k}" style="margin-top:6px"></button></div>`).join('')}
+<div style="font-size:11.5px;color:#8e99b8;margin-top:6px">${esc(LV.moneyNote)}</div>
 <div class="lv-src">○ ${esc(LV.srcTT)}<em>${esc(LV.srcTTn)}</em></div>`;
+  updSrc();
  }
+ function updSrc() {
+  if (!pn) return;
+  const col = { off: '#8e99b8', wait: '#ffc93c', on: '#3ecf7a', err: '#ff8a7d' };
+  pn.querySelector('.note').textContent = SRC.on ? LV.liveNote : LV.note;
+  pn.querySelectorAll('[data-row]').forEach(r => {
+   const k = r.dataset.row, act = k === 'sim' ? !SRC.on : SRC.on && SRC.kind === k, st = act && k !== 'sim' ? SRC.st : 'off';
+   r.classList.toggle('on', act); r.querySelector('.dot').textContent = act ? '●' : '○';
+   const em = r.querySelector('em'); em.style.color = k === 'sim' ? '' : col[st];
+   em.textContent = k === 'sim' ? (act ? LV.active : '') : act ? (st === 'err' && k === 'tikfinity' ? LV.tfSt.err : st === 'err' ? LV.errGen : LV.tfSt[st]) : '';
+   const m = r.querySelector('.msg'); if (m) m.textContent = act ? SRC.msg : '';
+   const b = r.querySelector('button'); if (b) { b.textContent = act ? LV.tfStop : LV.tfUse; b.classList.toggle('g', act); }
+  });
+ }
+ function readOpts() {
+  if (!pn) return;
+  pn.querySelectorAll('[data-o]').forEach(i => {
+   let v = i.value.trim();
+   if (i.dataset.o === 'ch') v = v.toLowerCase().replace(/^.*twitch\.tv\//, '').replace(/[^a-z0-9_]/g, '');
+   if (i.dataset.o === 'ss') v = v.replace(/^.*[?&]session=/, '').replace(/[&#].*$/, '').replace(/[^\w-]/g, '');
+   SRC.opt[i.dataset.o] = v; if (v !== i.value.trim() && document.activeElement !== i) i.value = v;
+  });
+ }
+ function saveSrc() { const o = SRC.opt; store.set('livesrc2', { kind: SRC.on ? SRC.kind : 'sim', ch: o.ch, yk: o.yk, yv: o.yv, ss: o.ss }); }
  function obsUrl() {
   if (!pn) return;
   const c = btoa(unescape(encodeURIComponent(JSON.stringify(CFG))));
-  const src = TF.on ? '&src=tikfinity' + (TF.port !== 21213 ? '&port=' + TF.port : '') : '&demo=1';
+  const o = SRC.opt, q = encodeURIComponent;
+  const src = !SRC.on ? '&demo=1' : '&src=' + SRC.kind + ({ tikfinity: o.port !== 21213 ? '&port=' + o.port : '', twitch: '&ch=' + q(o.ch), youtube: '&yk=' + q(o.yk) + '&yv=' + q(o.yv), ssn: '&ss=' + q(o.ss) })[SRC.kind];
   pn.querySelector('[data-u=obs]').value = `${location.origin}${location.pathname}?live=1&clean=1${src}&cfg=${c}`;
-  pn.querySelector('.lv-obsn').textContent = TF.on ? LV.obsNoteTF : LV.obsNote;
+  pn.querySelector('.lv-obsn').textContent = !SRC.on ? LV.obsNote : SRC.kind === 'tikfinity' ? LV.obsNoteTF : LV.obsNoteNet + (SRC.kind === 'youtube' ? ' ' + LV.keyWarn : '');
  }
  function renderLog() {
   if (!pn) return;
@@ -1706,32 +1782,56 @@ ${ROLES.map(r => `<div class="lv-row"><label>${esc(LV.role[r])}</label><input ty
   simEvent(r < .5 ? 'comment' : r < .62 ? 'cmd' : r < .74 ? 'like' : r < .84 ? 'rose' : r < .9 ? 'follow' : r < .955 ? 'vp' : r < .98 ? 'principal' : r < .993 ? 'inspector' : 'minister');
  }
 
- /* --- TikFinity adapter (beta). Reads the creator's own TikFinity desktop app over ws://localhost.
-    Everything stays on the creator's computer: no keys, nothing goes through our servers.
-    Off unless the creator turns it on (panel button or &src=tikfinity in the OBS link). --- */
- function tfConnect() {
-  if (!TF.on) return;
-  clearTimeout(TF.t);
-  if (TF.st !== 'on') tfSet(TF.retry ? 'err' : 'wait');
-  let ws;
-  try { ws = new WebSocket('ws://localhost:' + TF.port + '/'); } catch (e) { tfSet('err'); TF.t = setTimeout(tfConnect, 5000); return; }
-  TF.ws = ws;
-  ws.onopen = () => { if (TF.ws !== ws) return; TF.retry = 0; tfSet('on'); };
-  ws.onmessage = m => { if (TF.ws !== ws) return; let j; try { j = JSON.parse(m.data); } catch (e) { return; } let ev = null; try { ev = tfMap(j); } catch (e) { } if (ev) ingest(ev); };
-  ws.onclose = () => { if (TF.ws !== ws) return; TF.ws = null; if (!TF.on) return; TF.retry++; tfSet('err'); TF.t = setTimeout(tfConnect, Math.min(10000, 1500 + TF.retry * 1000)); };
+ /* --- data sources. One is active at a time; each turns platform events into the same
+    { id, user, type, text, gift, coins, repeat, count } shape and calls ingest().
+    Nothing passes through our servers: the page talks to the platform (or the creator's own tool) directly.
+    tikfinity: creator's TikFinity desktop app (ws://localhost)  · twitch: official Twitch chat, read-only, anonymous
+    youtube: official YouTube Data API with the creator's own key · ssn: creator's Social Stream Ninja session (Kick + others) --- */
+ const KINDS = ['tikfinity', 'twitch', 'youtube', 'ssn'];
+ const SHORT = { tikfinity: 'TikFinity', twitch: 'Twitch', youtube: 'YouTube', ssn: 'Social Stream' };
+ const NEED = { twitch: [['ch', 'needCh']], youtube: [['yk', 'needYt'], ['yv', 'needYt']], ssn: [['ss', 'needSs']] };
+ LV.srcH = Object.assign({ tikfinity: LV.tfHelp + ' ' + LV.tfPerm }, LV.srcH);
+ const usdToCoins = u => Math.max(1, Math.round((+u || 0) * 75)); // ≈ price of TikTok coins, so one gift table works everywhere
+ const FX = { USD: 1, EUR: 1.08, GBP: 1.27, TRY: .029, BRL: .18, MXN: .055, IDR: .000062, INR: .012, JPY: .0067, CAD: .73, AUD: .66, NZD: .6, CHF: 1.13, ARS: .001, COP: .00025, CLP: .0011, PEN: .27, PHP: .017, KRW: .00072, RUB: .011, PLN: .25, SAR: .27, AED: .27, MYR: .22, THB: .028, VND: .00004, SEK: .095, NOK: .093, DKK: .145, CZK: .043, HUF: .0027, ZAR: .055, EGP: .02, HKD: .128, TWD: .031, SGD: .74 };
+ const toUsd = (amt, cur) => (+amt || 0) * (FX[String(cur || 'USD').toUpperCase()] || 1);
+ const noHtml = t => { const d = document.createElement('textarea'); d.innerHTML = String(t || '').replace(/<[^>]*>/g, ' '); return d.value.replace(/\s+/g, ' ').trim(); };
+ function srcSet(st, msg) { SRC.st = st; SRC.msg = msg || ''; modeLabel(); updSrc(); }
+ function srcStart(kind) {
+  srcStop(true);
+  SRC.kind = kind; SRC.on = true; SRC.retry = 0; SRC.gen++;
+  LS.auto = false; const a = pn && pn.querySelector('[data-c=auto]'); if (a) a.checked = false;
+  srcSet('wait'); if (lv) renderLegend();
+  ({ tikfinity: tfConnect, twitch: twConnect, youtube: ytConnect, ssn: ssnConnect })[kind](SRC.gen);
+ }
+ function srcStop(quiet) {
+  SRC.on = false; SRC.gen++; clearTimeout(SRC.t);
+  const w = SRC.ws; SRC.ws = null; if (w) try { w.close(); } catch (e) { }
+  if (!quiet) { SRC.kind = 'sim'; srcSet('off'); if (lv) renderLegend(); }
+ }
+ function retryLater(gen, fn, ms) { if (gen !== SRC.gen || !SRC.on) return; SRC.retry++; clearTimeout(SRC.t); SRC.t = setTimeout(() => fn(gen), ms || Math.min(10000, 1500 + SRC.retry * 1000)); }
+ function wsOpen(gen, url, onOpen, onMsg, again) {
+  if (gen !== SRC.gen) return;
+  let ws; try { ws = new WebSocket(url); } catch (e) { srcSet('err'); return retryLater(gen, again, 5000); }
+  SRC.ws = ws;
+  ws.onopen = () => { if (SRC.ws !== ws) return; SRC.retry = 0; onOpen && onOpen(ws); };
+  ws.onmessage = m => { if (SRC.ws !== ws) return; try { onMsg(m.data, ws); } catch (e) { } };
+  ws.onclose = () => { if (SRC.ws !== ws) return; SRC.ws = null; if (!SRC.on) return; srcSet('err'); retryLater(gen, again); };
   ws.onerror = () => { };
  }
- function tfSet(st) { TF.st = st; modeLabel(); renderSrc(); }
- function tfStart() { TF.on = true; TF.retry = 0; LS.auto = false; const a = pn && pn.querySelector('[data-c=auto]'); if (a) a.checked = false; tfSet('wait'); tfConnect(); }
- function tfStop() { TF.on = false; clearTimeout(TF.t); const w = TF.ws; TF.ws = null; if (w) try { w.close(); } catch (e) { } tfSet('off'); }
+ const emit = ev => { if (ev) ingest(ev); };
+
+ /* TikFinity (TikTok) */
+ function tfConnect(gen) {
+  wsOpen(gen, 'ws://localhost:' + SRC.opt.port + '/', () => srcSet('on'), d => { let j; try { j = JSON.parse(d); } catch (e) { return; } emit(tfMap(j)); }, tfConnect);
+ }
  function tfMap(j) {
   if (!j || typeof j !== 'object') return null;
   const kind = String(j.event || j.type || '').toLowerCase(), d = j.data || {}, u = d.user || {};
   const uid = String(d.uniqueId || u.uniqueId || d.userId || u.userId || '');
   if (!uid) return null;
-  const base = { user: { id: uid, name: String(d.nickname || u.nickname || uid) }, src: 'tikfinity' };
+  const base = { user: { id: 'tt:' + uid, name: String(d.nickname || u.nickname || uid) }, src: 'tikfinity' };
   const mid = d.msgId || (d.common && d.common.msgId);
-  const id = x => 'tf_' + (mid ? mid + (x || '') : uid + '_' + kind + '_' + (++TF.n) + '_' + Date.now().toString(36));
+  const id = x => 'tf_' + (mid ? mid + (x || '') : uid + '_' + kind + '_' + (++SRC.n) + '_' + Date.now().toString(36));
   if (kind === 'chat' || kind === 'comment') return Object.assign(base, { id: id(), type: 'comment', text: String(d.comment || d.text || '') });
   if (kind === 'like') return Object.assign(base, { id: id(), type: 'like', count: Math.max(1, +(d.likeCount || d.count || 1) | 0) });
   if (kind === 'follow' || (kind === 'social' && /follow/i.test(String(d.displayType || d.label || '')))) return Object.assign(base, { id: id(), type: 'follow' });
@@ -1745,6 +1845,122 @@ ${ROLES.map(r => `<div class="lv-row"><label>${esc(LV.role[r])}</label><input ty
    return Object.assign(base, { id: id('_' + rep), type: 'gift', gift: String(d.giftName || gd.giftName || gd.name || 'Gift'), coins: dia, repeat: rep });
   }
   return null;
+ }
+
+ /* Twitch: official chat over IRC WebSocket, anonymous read-only login (no account, no key) */
+ function twConnect(gen) {
+  const ch = String(SRC.opt.ch || '').trim().toLowerCase().replace(/^.*twitch\.tv\//, '').replace(/[^a-z0-9_]/g, '');
+  if (!ch) { srcSet('err', LV.needCh); return; }
+  wsOpen(gen, 'wss://irc-ws.chat.twitch.tv:443', ws => {
+   ws.send('CAP REQ :twitch.tv/tags twitch.tv/commands'); ws.send('PASS SCHMOOPIIE'); ws.send('NICK justinfan' + (10000 + Math.floor(Math.random() * 80000))); ws.send('JOIN #' + ch);
+  }, (data, ws) => {
+   String(data).split('\r\n').forEach(line => {
+    if (!line) return;
+    if (line.startsWith('PING')) { ws.send('PONG :tmi.twitch.tv'); return; }
+    const m = ircParse(line);
+    if (m.cmd === 'ROOMSTATE' || m.cmd === 'JOIN' && SRC.st !== 'on') srcSet('on');
+    else if (m.cmd === 'NOTICE' && /not exist|suspended|banned/i.test(m.trailing)) srcSet('err', m.trailing);
+    else emit(twMap(m));
+   });
+  }, twConnect);
+ }
+ function ircParse(line) {
+  const tags = {}; let rest = line;
+  if (rest[0] === '@') { const i = rest.indexOf(' '); rest.slice(1, i).split(';').forEach(kv => { const j = kv.indexOf('='); tags[kv.slice(0, j)] = kv.slice(j + 1).replace(/\\s/g, ' ').replace(/\\:/g, ';').replace(/\\\\/g, '\\'); }); rest = rest.slice(i + 1); }
+  let prefix = ''; if (rest[0] === ':') { const i = rest.indexOf(' '); prefix = rest.slice(1, i); rest = rest.slice(i + 1); }
+  const ti = rest.indexOf(' :'), trailing = ti >= 0 ? rest.slice(ti + 2) : '';
+  const parts = (ti >= 0 ? rest.slice(0, ti) : rest).split(' ');
+  return { tags, prefix, cmd: parts[0], trailing };
+ }
+ function twMap(m) {
+  const t = m.tags, login = t.login || m.prefix.split('!')[0];
+  if (m.cmd !== 'PRIVMSG' && m.cmd !== 'USERNOTICE') return null;
+  const uid = t['user-id'] || login; if (!uid) return null;
+  const base = { id: 'tw_' + (t.id || uid + '_' + (++SRC.n) + '_' + Date.now().toString(36)), user: { id: 'tw:' + uid, name: t['display-name'] || login }, src: 'twitch' };
+  if (m.cmd === 'PRIVMSG') {
+   const bits = +t.bits || 0;
+   if (bits > 0) return Object.assign(base, { type: 'gift', gift: bits + ' Bits', coins: usdToCoins(bits / 100) });
+   return Object.assign(base, { type: 'comment', text: m.trailing });
+  }
+  const kind = t['msg-id'], plan = t['msg-param-sub-plan'], usd = plan === '3000' ? 25 : plan === '2000' ? 10 : 5;
+  if (kind === 'sub' || kind === 'resub' || kind === 'subgift') return Object.assign(base, { type: 'gift', gift: 'Sub', coins: usdToCoins(usd) });
+  if (kind === 'submysterygift') { const n = Math.max(1, +t['msg-param-mass-gift-count'] || 1); return Object.assign(base, { type: 'gift', gift: n + ' Subs', coins: usdToCoins(usd * n) }); }
+  if (kind === 'raid') return Object.assign(base, { type: 'follow' });
+  return null;
+ }
+
+ /* YouTube Live: official YouTube Data API v3 with the creator's own API key (read-only, public chat) */
+ const ytVid = s => { s = String(s || '').trim(); const m = s.match(/(?:v=|youtu\.be\/|\/live\/|\/shorts\/|\/embed\/)([\w-]{11})/); return m ? m[1] : /^[\w-]{11}$/.test(s) ? s : ''; };
+ async function ytConnect(gen) {
+  const key = String(SRC.opt.yk || '').trim(), vid = ytVid(SRC.opt.yv);
+  if (!key || !vid) { srcSet('err', LV.needYt); return; }
+  const G = 'https://www.googleapis.com/youtube/v3/';
+  let chat = null;
+  try {
+   const j = await (await fetch(`${G}videos?part=liveStreamingDetails&id=${vid}&key=${encodeURIComponent(key)}`)).json();
+   if (gen !== SRC.gen) return;
+   if (j.error) { srcSet('err', LV.ytBadKey); return retryLater(gen, ytConnect, 60000); }
+   chat = j.items && j.items[0] && j.items[0].liveStreamingDetails && j.items[0].liveStreamingDetails.activeLiveChatId;
+   if (!chat) { srcSet('err', LV.ytNoLive); return retryLater(gen, ytConnect, 30000); }
+  } catch (e) { if (gen !== SRC.gen) return; srcSet('err'); return retryLater(gen, ytConnect, 15000); }
+  let page = '', first = true;
+  const poll = async () => {
+   if (gen !== SRC.gen) return;
+   let wait = 6000;
+   try {
+    const j = await (await fetch(`${G}liveChat/messages?liveChatId=${encodeURIComponent(chat)}&part=snippet,authorDetails&maxResults=200&key=${encodeURIComponent(key)}${page ? '&pageToken=' + page : ''}`)).json();
+    if (gen !== SRC.gen) return;
+    if (j.error) { srcSet('err', LV.ytBadKey); wait = 60000; }
+    else {
+     if (!first) (j.items || []).forEach(m => emit(ytMap(m))); // skip the backlog that was there before we connected
+     first = false; page = j.nextPageToken || page; wait = Math.max(6000, +j.pollingIntervalMillis || 0);
+     if (j.offlineAt) { srcSet('err', LV.ytNoLive); return retryLater(gen, ytConnect, 30000); }
+     srcSet('on');
+    }
+   } catch (e) { if (gen !== SRC.gen) return; srcSet('err'); wait = 10000; }
+   clearTimeout(SRC.t); SRC.t = setTimeout(poll, wait);
+  };
+  poll();
+ }
+ function ytMap(m) {
+  const s = m.snippet || {}, a = m.authorDetails || {};
+  if (!a.channelId) return null;
+  const base = { id: 'yt_' + m.id, user: { id: 'yt:' + a.channelId, name: a.displayName || 'viewer' }, src: 'youtube' };
+  const det = s.superChatDetails || s.superStickerDetails;
+  if (det) return Object.assign(base, { type: 'gift', gift: s.type === 'superStickerEvent' ? 'Super Sticker' : 'Super Chat', coins: usdToCoins(toUsd(det.amountMicros / 1e6, det.currency)) });
+  if (s.type === 'newSponsorEvent' || s.type === 'memberMilestoneChatEvent') return Object.assign(base, { type: 'gift', gift: 'Member', coins: usdToCoins(5) });
+  if (s.type === 'membershipGiftingEvent') { const n = Math.max(1, +(s.membershipGiftingDetails && s.membershipGiftingDetails.giftMembershipsCount) || 1); return Object.assign(base, { type: 'gift', gift: n + ' Members', coins: usdToCoins(5 * n) }); }
+  if (s.type === 'textMessageEvent') return Object.assign(base, { type: 'comment', text: s.displayMessage || (s.textMessageDetails && s.textMessageDetails.messageText) || '' });
+  return null;
+ }
+
+ /* Social Stream Ninja: the creator's own free multi-platform tool (Kick, YouTube, Twitch, TikTok, …) via its relay */
+ function ssnConnect(gen) {
+  const ss = String(SRC.opt.ss || '').trim().replace(/^.*[?&]session=/, '').replace(/[&#].*$/, '').replace(/[^\w-]/g, '');
+  if (!ss) { srcSet('err', LV.needSs); return; }
+  wsOpen(gen, 'wss://io.socialstream.ninja/join/' + ss + '/4', () => srcSet('on'), d => {
+   let j; try { j = JSON.parse(d); } catch (e) { return; }
+   [].concat(j).forEach(x => emit(ssnMap(x && (x.overlayNinja || x.contents || x))));
+  }, ssnConnect);
+ }
+ function ssnMap(d) {
+  if (!d || typeof d !== 'object' || !d.chatname) return null;
+  const plat = String(d.type || 'chat').toLowerCase().replace(/[^a-z0-9]/g, '') || 'chat';
+  const name = noHtml(d.chatname), uid = plat + ':' + (d.userid || name);
+  const base = { id: 'ssn_' + (d.id != null && d.id !== '' ? plat + '_' + d.id : uid + '_' + (++SRC.n) + '_' + Date.now().toString(36)), user: { id: uid, name }, src: 'ssn' };
+  const ev = String(d.event || '').toLowerCase();
+  if (d.hasDonation || +d.donoValue > 0) {
+   const usd = +d.donoValue > 0 ? +d.donoValue : plat === 'tiktok' ? .013 : parseFloat(String(d.hasDonation).replace(/[^0-9.]/g, '')) || 1;
+   return Object.assign(base, { type: 'gift', gift: noHtml(d.hasDonation) || 'Donation', coins: usdToCoins(usd) });
+  }
+  if (ev && ev !== 'false') {
+   if (/follow/.test(ev)) return Object.assign(base, { type: 'follow' });
+   if (/sub|member|sponsor/.test(ev)) return Object.assign(base, { type: 'gift', gift: noHtml(d.membership) || 'Sub', coins: usdToCoins(5) });
+   if (/like/.test(ev)) return Object.assign(base, { type: 'like', count: Math.max(1, parseInt(noHtml(d.chatmessage)) || 1) });
+   return null;
+  }
+  const text = noHtml(d.chatmessage);
+  return text ? Object.assign(base, { type: 'comment', text }) : null;
  }
 
  /* --- event pipeline: dedupe by id, filter, apply --- */
@@ -1958,7 +2174,7 @@ ${ROLES.map(r => `<div class="lv-row"><label>${esc(LV.role[r])}</label><input ty
   hud.style.display = 'none'; ov.hidden = true; ov.innerHTML = '';
   liveUI();
   if (!clean) livePanel();
-  if (TF.on) { tfSet('wait'); tfConnect(); }
+  if (KINDS.includes(srcWant)) srcStart(srcWant);
   teacher.root.position.set(BOARD.spotX, 0, BOARD.spotZ);
   kids.forEach(k => startState(k, 'focus'));
   banner(LV.cls, LV.welcome, false, 4);
