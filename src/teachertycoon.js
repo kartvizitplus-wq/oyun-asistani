@@ -197,7 +197,18 @@ const LIVE_TXT = {
   visit: { vp: 'El subdirector {u} revisa la clase', principal: '¡Llega el director {u}! ¡Todos de pie!', inspector: 'El inspector {u} inspecciona la clase…', minister: '¡El ministro de Educación {u} visita la escuela!' },
   teacherNow: '¡{u} es ahora el profesor!', follow: '{u} te sigue · ¡bienvenido a clase!', president: '¡{u} es el nuevo delegado!', applause: '¡Meta alcanzada! Toda la clase aplaude',
   inspGood: '¡Inspección superada! Gracias, {u}', inspBad: 'El inspector hizo un informe: la clase hacía demasiado ruido', welcome: 'Comenta para sentarte en clase', leadEmpty: 'Delegado: envía el primer regalo',
-  sample: ['¡hola!', 'hola profe', 'qué clase tan loca', '¿quién tiró eso?', 'otra vez Max 😂', 'quiero la primera fila', '¡vamos Ada!', 'despierta Nilo', 'jajaja', 'me encanta esta clase'], liveBtn: 'Modo LIVE · para creadores'
+  sample: ['¡hola!', 'hola profe', 'qué clase tan loca', '¿quién tiró eso?', 'otra vez Max 😂', 'quiero la primera fila', '¡vamos Ada!', 'despierta Nilo', 'jajaja', 'me encanta esta clase'], liveBtn: 'Modo LIVE · para creadores',
+  demo: 'DEMO', sim: 'SIMULACIÓN',
+  panelH: 'Panel del creador', back: '← Juego', note: 'Modo simulación: esta página no está conectada a TikTok. Todos los eventos aquí son de prueba, creados por ti o por la Demo automática.',
+  source: 'Fuente de datos', srcSim: 'Simulador de prueba', active: 'ACTIVO', srcTT: 'TikTok LIVE (oficial)', srcTTn: 'ESPERANDO ACCESO DE SOCIO', src3: 'Proveedor externo', src3n: 'APAGADO · REQUIERE APROBACIÓN DEL DUEÑO',
+  simH: 'Simulador', sComment: 'Comentario', sFollow: 'Seguir', auto: 'Demo automática: espectadores falsos (en el directo aparece DEMO)', dup: 'Reenviar el último evento (prueba de duplicado)',
+  mapH: 'Regalo → rol (monedas mínimas)', blockH: 'Palabras y usuarios bloqueados (separados por comas)', obsH: 'Salida del directo para OBS / LIVE Studio', copy: 'Copiar', copied: '¡Copiado!',
+  obsNote: 'Añádelo como fuente de navegador de 1080 × 1920. Sin conexión, la salida muestra la clase DEMO.', logH: 'Cola de eventos', panel: 'Panel',
+  st: { ok: 'APLICADO', dup: 'DUPLICADO', queue: 'EN COLA', filt: 'FILTRADO' },
+  srcTF: 'TikFinity · en tu propio ordenador (beta)', tfSt: { off: 'APAGADO', wait: 'CONECTANDO…', on: 'CONECTADO', err: 'TIKFINITY NO ENCONTRADO' }, tfUse: 'Conectar mi LIVE', tfStop: 'Desconectar',
+  tfHelp: 'Gratis y solo en tu ordenador: instala la app de escritorio TikFinity, inicia sesión con tu cuenta de TikTok y mantenla abierta durante el directo. Esta página lee los eventos de tu directo desde ella (ws://localhost:21213). Sin claves; nada pasa por nuestros servidores. TikFinity es una herramienta de terceros, no la hizo TikTok ni nosotros.',
+  tfPerm: 'Si Chrome pide «acceso a la red local», pulsa Permitir.', tfNote: 'Datos reales del LIVE desde TikFinity en este ordenador. Los botones del simulador siguen funcionando para pruebas.',
+  tfWait: 'TIKFINITY…', obsNoteTF: 'Añádelo como fuente de navegador de 1080 × 1920 en el mismo ordenador donde está abierto TikFinity. La clase reacciona a tus comentarios, me gusta y regalos reales.'
  },
  pt: {
   cls: 'Aula ao vivo', likeGoal: 'Meta de curtidas · aplauso', legendH: 'Entre na escola', cmt: 'Comente', cmtE: 'Você senta na sala como aluno', cmdQ: 'pergunta', cmdE: 'Seu aluno levanta a mão', rose: 'Rosa',
@@ -205,7 +216,18 @@ const LIVE_TXT = {
   visit: { vp: 'O vice-diretor {u} está olhando a turma', principal: 'O diretor {u} chegou! Todos de pé!', inspector: 'O inspetor {u} está inspecionando a turma…', minister: 'O ministro da Educação {u} visita a escola!' },
   teacherNow: '{u} agora é o professor!', follow: '{u} seguiu · bem-vindo à turma!', president: '{u} é o novo representante!', applause: 'Meta batida! A turma toda aplaude',
   inspGood: 'Inspeção aprovada! Obrigado, {u}', inspBad: 'O inspetor fez um relatório: a turma estava barulhenta demais', welcome: 'Comente para sentar na sala', leadEmpty: 'Representante: mande o primeiro presente',
-  sample: ['oi!', 'oi professora', 'que turma doida', 'quem jogou isso?', 'Max de novo 😂', 'quero sentar na frente', 'vai Ada!', 'acorda Nilo', 'kkkk', 'amo essa turma'], liveBtn: 'Modo LIVE · para criadores'
+  sample: ['oi!', 'oi professora', 'que turma doida', 'quem jogou isso?', 'Max de novo 😂', 'quero sentar na frente', 'vai Ada!', 'acorda Nilo', 'kkkk', 'amo essa turma'], liveBtn: 'Modo LIVE · para criadores',
+  demo: 'DEMO', sim: 'SIMULAÇÃO',
+  panelH: 'Painel do criador', back: '← Jogo', note: 'Modo simulação: esta página não está conectada ao TikTok. Todos os eventos aqui são de teste, criados por você ou pela Demo automática.',
+  source: 'Fonte de dados', srcSim: 'Simulador de teste', active: 'ATIVO', srcTT: 'TikTok LIVE (oficial)', srcTTn: 'AGUARDANDO ACESSO DE PARCEIRO', src3: 'Provedor terceiro', src3n: 'DESLIGADO · PRECISA DE APROVAÇÃO DO DONO',
+  simH: 'Simulador', sComment: 'Comentário', sFollow: 'Seguir', auto: 'Demo automática: espectadores falsos (aparece DEMO na live)', dup: 'Reenviar o último evento (teste de duplicado)',
+  mapH: 'Presente → papel (moedas mínimas)', blockH: 'Palavras e usuários bloqueados (separados por vírgula)', obsH: 'Saída da live para OBS / LIVE Studio', copy: 'Copiar', copied: 'Copiado!',
+  obsNote: 'Adicione como fonte de navegador de 1080 × 1920. Sem conexão, a saída mostra a turma DEMO.', logH: 'Fila de eventos', panel: 'Painel',
+  st: { ok: 'APLICADO', dup: 'DUPLICADO', queue: 'NA FILA', filt: 'FILTRADO' },
+  srcTF: 'TikFinity · no seu próprio computador (beta)', tfSt: { off: 'DESLIGADO', wait: 'CONECTANDO…', on: 'CONECTADO', err: 'TIKFINITY NÃO ENCONTRADO' }, tfUse: 'Conectar minha LIVE', tfStop: 'Desconectar',
+  tfHelp: 'Grátis e só no seu computador: instale o app de desktop TikFinity, entre com sua conta do TikTok e deixe-o aberto durante a live. Esta página lê os eventos da sua live a partir dele (ws://localhost:21213). Sem chaves; nada passa pelos nossos servidores. TikFinity é uma ferramenta de terceiros, não foi feita pelo TikTok nem por nós.',
+  tfPerm: 'Se o Chrome pedir “acesso à rede local”, clique em Permitir.', tfNote: 'Dados reais da LIVE vindos do TikFinity neste computador. Os botões do simulador continuam funcionando para testes.',
+  tfWait: 'TIKFINITY…', obsNoteTF: 'Adicione como fonte de navegador de 1080 × 1920 no mesmo computador em que o TikFinity está aberto. A turma reage aos seus comentários, curtidas e presentes reais.'
  },
  id: {
   cls: 'Kelas live', likeGoal: 'Target suka · tepuk tangan', legendH: 'Ikut sekolah', cmt: 'Komentar', cmtE: 'Kamu duduk di kelas sebagai murid', cmdQ: 'tanya', cmdE: 'Muridmu mengangkat tangan', rose: 'Mawar',
@@ -213,7 +235,18 @@ const LIVE_TXT = {
   visit: { vp: 'Wakil kepala sekolah {u} memeriksa kelas', principal: 'Kepala sekolah {u} datang! Semua berdiri!', inspector: 'Pengawas {u} sedang memeriksa kelas…', minister: 'Menteri Pendidikan {u} mengunjungi sekolah!' },
   teacherNow: '{u} sekarang jadi guru!', follow: '{u} mengikuti · selamat datang di kelas!', president: '{u} jadi ketua kelas baru!', applause: 'Target suka tercapai! Seisi kelas bertepuk tangan',
   inspGood: 'Pemeriksaan lulus! Terima kasih, {u}', inspBad: 'Pengawas membuat catatan: kelas terlalu ribut', welcome: 'Komentar untuk duduk di kelas', leadEmpty: 'Ketua kelas: kirim hadiah pertama',
-  sample: ['halo!', 'halo bu guru', 'kelas ini kacau', 'siapa yang lempar?', 'Max lagi 😂', 'mau duduk di depan', 'ayo Ada!', 'bangun Nilo', 'wkwk', 'suka kelas ini'], liveBtn: 'Mode LIVE · untuk kreator'
+  sample: ['halo!', 'halo bu guru', 'kelas ini kacau', 'siapa yang lempar?', 'Max lagi 😂', 'mau duduk di depan', 'ayo Ada!', 'bangun Nilo', 'wkwk', 'suka kelas ini'], liveBtn: 'Mode LIVE · untuk kreator',
+  demo: 'DEMO', sim: 'SIMULASI',
+  panelH: 'Panel kreator', back: '← Game', note: 'Mode simulasi: halaman ini tidak terhubung ke TikTok. Semua event di sini adalah event uji yang dibuat olehmu atau oleh Demo otomatis.',
+  source: 'Sumber data', srcSim: 'Simulator uji', active: 'AKTIF', srcTT: 'TikTok LIVE (resmi)', srcTTn: 'MENUNGGU AKSES PARTNER', src3: 'Penyedia pihak ketiga', src3n: 'MATI · PERLU PERSETUJUAN PEMILIK',
+  simH: 'Simulator', sComment: 'Komentar', sFollow: 'Ikuti', auto: 'Demo otomatis: penonton palsu (di siaran tertulis DEMO)', dup: 'Kirim ulang event terakhir (uji duplikat)',
+  mapH: 'Hadiah → peran (koin minimum)', blockH: 'Kata dan pengguna yang diblokir (pisahkan dengan koma)', obsH: 'Output siaran untuk OBS / LIVE Studio', copy: 'Salin', copied: 'Tersalin!',
+  obsNote: 'Tambahkan sebagai browser source 1080 × 1920. Tanpa koneksi, output menampilkan kelas DEMO.', logH: 'Antrean event', panel: 'Panel',
+  st: { ok: 'DITERAPKAN', dup: 'DUPLIKAT', queue: 'ANTRE', filt: 'DISARING' },
+  srcTF: 'TikFinity · di komputermu sendiri (beta)', tfSt: { off: 'MATI', wait: 'MENGHUBUNGKAN…', on: 'TERHUBUNG', err: 'TIKFINITY TIDAK DITEMUKAN' }, tfUse: 'Hubungkan LIVE-ku', tfStop: 'Putuskan',
+  tfHelp: 'Gratis dan hanya berjalan di komputermu: pasang aplikasi desktop TikFinity, masuk dengan akun TikTok-mu dan biarkan terbuka selama LIVE. Halaman ini membaca event siaranmu dari sana (ws://localhost:21213). Tanpa kunci; tidak ada data yang lewat server kami. TikFinity adalah alat pihak ketiga, bukan buatan TikTok atau kami.',
+  tfPerm: 'Jika Chrome meminta “akses jaringan lokal”, klik Izinkan.', tfNote: 'Data LIVE asli dari TikFinity di komputer ini. Tombol simulator tetap bisa dipakai untuk uji.',
+  tfWait: 'TIKFINITY…', obsNoteTF: 'Tambahkan sebagai browser source 1080 × 1920 di komputer yang sama tempat TikFinity terbuka. Kelas bereaksi pada komentar, suka, dan hadiah aslimu.'
  }
 };
 

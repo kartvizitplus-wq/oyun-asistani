@@ -118,3 +118,6 @@ Technical SEO, AI visibility, usability and ad-readiness checks. Content (patch 
 - Gift streaks are applied once, at the streak's final message. Unknown events are ignored.
 - Owner asked for a creator-run solution on 2026-11-21. TikFinity is third-party and unofficial; labelled beta in the UI. Official TikTok access row stays "waiting for partner access".
 - Additive only: no change to page titles, URLs, links or the normal game.
+
+## 2026-11-22 – Teacher Tycoon LIVE panel in es / pt / id
+- Creator panel texts (incl. TikFinity setup help) translated to Spanish, Portuguese and Indonesian; previously fell back to English. Text-only, additive.
