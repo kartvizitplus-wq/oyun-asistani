@@ -66,6 +66,16 @@
    "Answer Ada's raised hand quickly: correct answers add to the lesson progress.",
    "Before the principal arrives, wake Nilo and stop any chat or phone."
   ],
+  "liveH": "For streamers: LIVE mode (TikTok, Twitch, YouTube, Kick)",
+  "liveP": "If you stream, your viewers can join the class: whoever comments takes a seat as a student, and gifts or donations bring the sender in as the teacher, vice principal, principal, inspector or Minister of Education. The top supporters become class president and vice president.",
+  "liveL": [
+   "TikTok: connects through the free TikFinity app running on your computer.",
+   "Twitch: nothing to install, just type your channel name. Bits and subs count as gifts.",
+   "YouTube Live: connects with your own free YouTube API key. Super Chats and memberships count as gifts.",
+   "Kick and other platforms: connect through the free Social Stream Ninja tool."
+  ],
+  "liveN": "Copy the stream link from the creator panel and add it to OBS or LIVE Studio as a 1080 × 1920 browser source. Every gift has a fixed effect shown on screen; there are no chance-based rewards. Connections run directly between your computer and the platform; your data does not pass through our servers.",
+  "liveC": "Open LIVE mode",
   "faqH": "FAQ",
   "faq": [
    [
@@ -83,6 +93,10 @@
    [
     "Will there be more lessons and students?",
     "Yes. New subjects, students and classroom upgrades are planned for future updates."
+   ],
+   [
+    "Can I use Teacher Tycoon on a live stream?",
+    "Yes. LIVE mode works with TikTok, Twitch, YouTube Live and Kick and is free. Your viewers become students by commenting and teachers or principals by sending gifts."
    ]
   ],
   "aboutH": "About this game",
@@ -155,6 +169,16 @@
    "Ada'nın kaldırdığı parmağa hızlı söz ver: doğru cevaplar dersin ilerlemesine eklenir.",
    "Müdür gelmeden önce Nilo'yu uyandır, sohbetleri ve telefonları bitir."
   ],
+  "liveH": "Yayıncılar için: LIVE modu (TikTok, Twitch, YouTube, Kick)",
+  "liveP": "Canlı yayın yapıyorsan izleyicilerin sınıfa katılabilir: yorum yazan öğrenci olarak sıraya oturur, hediye ya da bağış gönderen öğretmen, müdür yardımcısı, okul müdürü, müfettiş veya Milli Eğitim Bakanı olarak sınıfa gelir. En çok destek verenler sınıf başkanı ve başkan yardımcısı olur.",
+  "liveL": [
+   "TikTok: bilgisayarında açık olan ücretsiz TikFinity uygulaması üzerinden bağlanır.",
+   "Twitch: kurulum yok, kanal adını yazman yeterli. Bits ve abonelikler hediye sayılır.",
+   "YouTube Live: kendi ücretsiz YouTube API anahtarınla bağlanır. Süper Sohbet ve kanal üyelikleri hediye sayılır.",
+   "Kick ve diğer platformlar: ücretsiz Social Stream Ninja aracıyla bağlanır."
+  ],
+  "liveN": "Yayıncı panelinden yayın linkini kopyala ve OBS ya da LIVE Studio'ya 1080 × 1920 tarayıcı kaynağı olarak ekle. Her hediyenin etkisi sabittir ve ekranda yazar; şansa dayalı ödül yoktur. Bağlantılar doğrudan senin bilgisayarınla platform arasında çalışır, verilerin bizim sunucumuzdan geçmez.",
+  "liveC": "LIVE modunu aç",
   "faqH": "Sık sorulan sorular",
   "faq": [
    [
@@ -172,6 +196,10 @@
    [
     "Yeni dersler ve öğrenciler gelecek mi?",
     "Evet. Yeni dersler, öğrenciler ve sınıf geliştirmeleri sonraki güncellemeler için planlanıyor."
+   ],
+   [
+    "Teacher Tycoon'u canlı yayında kullanabilir miyim?",
+    "Evet. LIVE modu TikTok, Twitch, YouTube Live ve Kick ile çalışır ve ücretsizdir. İzleyicilerin yorum yazarak öğrenci, hediye göndererek öğretmen ya da müdür olur."
    ]
   ],
   "aboutH": "Bu oyun hakkında",
@@ -244,6 +272,16 @@
    "Da la palabra rápido a Ada: sus respuestas correctas suman progreso a la lección.",
    "Antes de que llegue la directora, despierta a Nilo y corta las charlas y el móvil."
   ],
+  "liveH": "Para creadores: modo LIVE (TikTok, Twitch, YouTube, Kick)",
+  "liveP": "Si haces directos, tus espectadores pueden entrar en la clase: quien comenta se sienta como alumno, y los regalos o donaciones traen a quien los envía como profesor, subdirector, director, inspector o ministro de Educación. Los que más apoyan se convierten en delegado y subdelegado.",
+  "liveL": [
+   "TikTok: se conecta mediante la app gratuita TikFinity abierta en tu ordenador.",
+   "Twitch: sin instalar nada, solo escribe el nombre de tu canal. Los Bits y las suscripciones cuentan como regalos.",
+   "YouTube Live: se conecta con tu propia clave gratuita de la API de YouTube. Super Chats y membresías cuentan como regalos.",
+   "Kick y otras plataformas: se conectan con la herramienta gratuita Social Stream Ninja."
+  ],
+  "liveN": "Copia el enlace del directo desde el panel del creador y añádelo en OBS o LIVE Studio como fuente de navegador de 1080 × 1920. Cada regalo tiene un efecto fijo que se muestra en pantalla; no hay premios al azar. Las conexiones van directamente entre tu ordenador y la plataforma; tus datos no pasan por nuestros servidores.",
+  "liveC": "Abrir el modo LIVE",
   "faqH": "Preguntas frecuentes",
   "faq": [
    [
@@ -261,6 +299,10 @@
    [
     "¿Habrá más clases y alumnos?",
     "Sí. Hay nuevas asignaturas, alumnos y mejoras del aula previstas para próximas actualizaciones."
+   ],
+   [
+    "¿Puedo usar Teacher Tycoon en un directo?",
+    "Sí. El modo LIVE funciona con TikTok, Twitch, YouTube Live y Kick y es gratis. Tus espectadores se vuelven alumnos al comentar y profesores o directores al enviar regalos."
    ]
   ],
   "aboutH": "Sobre este juego",
@@ -333,6 +375,16 @@
    "Dê a vez rápido para a Ada: respostas certas somam progresso à lição.",
    "Antes de a diretora chegar, acorde o Nilo e acabe com conversas e celular."
   ],
+  "liveH": "Para criadores: modo LIVE (TikTok, Twitch, YouTube, Kick)",
+  "liveP": "Se você faz lives, seus espectadores podem entrar na turma: quem comenta senta como aluno, e presentes ou doações trazem quem enviou como professor, vice-diretor, diretor, inspetor ou ministro da Educação. Quem mais apoia vira representante e vice-representante da turma.",
+  "liveL": [
+   "TikTok: conecta pelo app gratuito TikFinity aberto no seu computador.",
+   "Twitch: sem instalar nada, basta digitar o nome do seu canal. Bits e inscrições contam como presentes.",
+   "YouTube Live: conecta com a sua própria chave gratuita da API do YouTube. Super Chats e assinaturas de canal contam como presentes.",
+   "Kick e outras plataformas: conectam pela ferramenta gratuita Social Stream Ninja."
+  ],
+  "liveN": "Copie o link da live no painel do criador e adicione no OBS ou no LIVE Studio como fonte de navegador de 1080 × 1920. Cada presente tem um efeito fixo mostrado na tela; não há prêmios por sorte. As conexões vão direto entre o seu computador e a plataforma; seus dados não passam pelos nossos servidores.",
+  "liveC": "Abrir o modo LIVE",
   "faqH": "Perguntas frequentes",
   "faq": [
    [
@@ -350,6 +402,10 @@
    [
     "Vai ter mais aulas e alunos?",
     "Sim. Novas matérias, alunos e melhorias da sala estão planejados para as próximas atualizações."
+   ],
+   [
+    "Posso usar o Teacher Tycoon numa live?",
+    "Sim. O modo LIVE funciona com TikTok, Twitch, YouTube Live e Kick e é grátis. Seus espectadores viram alunos comentando e professores ou diretores enviando presentes."
    ]
   ],
   "aboutH": "Sobre este jogo",
@@ -422,6 +478,16 @@
    "Cepat beri giliran pada Ada: jawaban benar menambah kemajuan pelajaran.",
    "Sebelum kepala sekolah datang, bangunkan Nilo dan hentikan obrolan serta HP."
   ],
+  "liveH": "Untuk kreator: mode LIVE (TikTok, Twitch, YouTube, Kick)",
+  "liveP": "Kalau kamu siaran langsung, penontonmu bisa ikut masuk kelas: yang berkomentar duduk sebagai murid, dan hadiah atau donasi membawa pengirimnya masuk sebagai guru, wakil kepala sekolah, kepala sekolah, pengawas, atau Menteri Pendidikan. Pendukung terbesar jadi ketua dan wakil ketua kelas.",
+  "liveL": [
+   "TikTok: terhubung lewat aplikasi gratis TikFinity yang terbuka di komputermu.",
+   "Twitch: tanpa instalasi, cukup ketik nama channel-mu. Bits dan langganan dihitung sebagai hadiah.",
+   "YouTube Live: terhubung dengan API key YouTube gratis milikmu sendiri. Super Chat dan keanggotaan dihitung sebagai hadiah.",
+   "Kick dan platform lain: terhubung lewat alat gratis Social Stream Ninja."
+  ],
+  "liveN": "Salin link siaran dari panel kreator dan tambahkan ke OBS atau LIVE Studio sebagai browser source 1080 × 1920. Setiap hadiah punya efek tetap yang tampil di layar; tidak ada hadiah acak. Koneksi berjalan langsung antara komputermu dan platform; datamu tidak lewat server kami.",
+  "liveC": "Buka mode LIVE",
   "faqH": "Pertanyaan umum",
   "faq": [
    [
@@ -439,6 +505,10 @@
    [
     "Akan ada pelajaran dan murid baru?",
     "Ya. Mata pelajaran, murid, dan peningkatan kelas baru direncanakan untuk pembaruan berikutnya."
+   ],
+   [
+    "Bisakah Teacher Tycoon dipakai saat siaran langsung?",
+    "Bisa. Mode LIVE bekerja dengan TikTok, Twitch, YouTube Live, dan Kick, dan gratis. Penontonmu jadi murid dengan berkomentar dan jadi guru atau kepala sekolah dengan mengirim hadiah."
    ]
   ],
   "aboutH": "Tentang game ini",

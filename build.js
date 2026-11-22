@@ -570,7 +570,7 @@ ${G.sections.map((sec, i) => `<h2 id="s${i + 1}">${esc(sec.h)}</h2><ol>${sec.ste
     const R = TTJ[lang] || TTJ.en, rel = `${lang}/teacher-tycoon/`;
     const li = a => a.map(x => `<li>${esc(x)}</li>`).join('');
     write(`${rel}index.html`, layout({
-      lang, rel, active: 'teacher-tycoon', title: `${R.title} · ${cfg.siteName}`, desc: R.desc, lastmod: '2026-11-21', img: 'teacher-tycoon',
+      lang, rel, active: 'teacher-tycoon', title: `${R.title} · ${cfg.siteName}`, desc: R.desc, lastmod: '2026-11-22', img: 'teacher-tycoon',
       crumbs: [[t.home, `${lang}/`], [R.name, rel]],
       jsonld: [{ '@context': 'https://schema.org', '@type': 'VideoGame', name: R.name, description: R.desc, url: `${base}/${rel}`, inLanguage: lang, image: `${base}/og/teacher-tycoon.png`,
         genre: ['Simulation', 'Management', 'Casual'], gamePlatform: 'Web browser', applicationCategory: 'Game', operatingSystem: 'Any', isAccessibleForFree: true, playMode: 'SinglePlayer',
@@ -584,6 +584,7 @@ ${G.sections.map((sec, i) => `<h2 id="s${i + 1}">${esc(sec.h)}</h2><ol>${sec.ste
 <h2>${esc(R.eventsH)}</h2><ul>${li(R.events)}</ul>
 <h2>${esc(R.ctrlH)}</h2><ul>${li(R.ctrl)}</ul>
 <h2>${esc(R.tipsH)}</h2><ul>${li(R.tips)}</ul>
+<h2 id="live">${esc(R.liveH)}</h2><p>${esc(R.liveP)}</p><ul>${li(R.liveL)}</ul><p>${esc(R.liveN)}</p><p><a class="btn" href="?live=1" rel="nofollow">${esc(R.liveC)}</a></p>
 <h2>${esc(R.faqH)}</h2>${R.faq.map(([q, a]) => `<h3>${esc(q)}</h3><p>${esc(a)}</p>`).join('')}
 <h2>${esc(R.aboutH)}</h2><p>${esc(R.about)}</p></article>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@600;700;800&display=swap">

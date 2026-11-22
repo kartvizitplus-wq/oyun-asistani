@@ -135,3 +135,6 @@ Technical SEO, AI visibility, usability and ad-readiness checks. Content (patch 
 
 ## 2026-11-22 – Teacher Tycoon LIVE: full-screen fix
 - LIVE / OBS view now sits above the site header (container moved to <body>). Normal game page unchanged.
+
+## 2026-11-22 – Teacher Tycoon page: streamer section
+- Added a "For streamers: LIVE mode (TikTok, Twitch, YouTube, Kick)" section and one FAQ entry to the Teacher Tycoon page in 5 languages. Title, description, URL and links unchanged; LIVE button is rel=nofollow. lastmod 2026-11-22.
