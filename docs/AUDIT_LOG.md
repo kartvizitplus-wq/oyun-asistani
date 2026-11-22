@@ -132,3 +132,6 @@ Technical SEO, AI visibility, usability and ad-readiness checks. Content (patch 
 - Nothing passes through PickRadar servers; keys stay in the creator's browser / OBS link (UI warns not to share it).
 - Profanity filter now also catches stretched words (e.g. "biiitch").
 - Additive only: no change to page titles, URLs, links or the normal game.
+
+## 2026-11-22 – Teacher Tycoon LIVE: full-screen fix
+- LIVE / OBS view now sits above the site header (container moved to <body>). Normal game page unchanged.

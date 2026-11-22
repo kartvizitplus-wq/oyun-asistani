@@ -332,6 +332,8 @@ function mount(host, opts) {
  if (live) {
   // LIVE mode takes the whole window: a stage for the stream picture and (unless clean) the creator panel
   document.documentElement.style.overflow = 'hidden';
+  // move to <body> so no page container (stacking context / sticky header) can sit on top of the stream picture
+  if (document.body && outer.parentNode !== document.body) document.body.appendChild(outer);
   outer.style.cssText = 'position:fixed;inset:0;z-index:2147483000;width:auto;height:auto;margin:0;border:0;border-radius:0;box-shadow:none;background:#0e1628';
   if (!clean) { const stage = document.createElement('div'); stage.className = 'tt-stage'; outer.appendChild(stage); host = stage; }
  }
