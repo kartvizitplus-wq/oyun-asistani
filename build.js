@@ -3,7 +3,7 @@
 const fs = require('fs'), path = require('path');
 const R = p => path.join(__dirname, p);
 const read = p => JSON.parse(fs.readFileSync(R(p), 'utf8'));
-const cfg = read('config.json'), I18N = read('src/i18n.json'), ITEMS_TR = read('data/mlbb-items-tr.json'), GUIDE = read('src/guide.json'), CG = read('src/colorgame.json'), ND = read('src/nightdrop.json'), MB = read('src/moba.json'), SITE = read('src/site.json'), RS = read('src/redscarf.json'), STORY = read('src/stories.json'), PH = read('src/palmera.json'), TTJ = read('src/teachertycoon.json'), RRJ = read('src/roperumble.json');
+const cfg = read('config.json'), I18N = read('src/i18n.json'), ITEMS_TR = read('data/mlbb-items-tr.json'), GUIDE = read('src/guide.json'), CG = read('src/colorgame.json'), ND = read('src/nightdrop.json'), MB = read('src/moba.json'), SITE = read('src/site.json'), RS = read('src/redscarf.json'), STORY = read('src/stories.json'), PH = read('src/palmera.json'), TTJ = read('src/teachertycoon.json'), RRJ = read('src/roperumble.json'), STJ = read('src/streamer.json');
 /* The old pick-assistant pages (hero, tier, draft, news, guide) are no longer built: PickRadar is a games site now. */
 const LEGACY = false;
 const Engine = require('./src/engine.js'), Icons = require('./src/icons.js');
@@ -45,6 +45,24 @@ COVER['palmera-heat'] = '<defs><linearGradient id="ihs" x1="0" y1="0" x2="0" y2=
 COVER['red-scarf'] = '<rect width="320" height="180" fill="#050508"/><path d="M0 40h120v30H60v70H0zM200 0h30v110h90v30H200z" fill="#26262f"/><path d="M150 120 L300 60 L300 170 Z" fill="#ff2d48" opacity=".18"/><circle cx="150" cy="120" r="14" fill="#4a5a6a" stroke="#15121c" stroke-width="3"/><ellipse cx="150" cy="108" rx="20" ry="7" fill="#c9a25e"/><circle cx="95" cy="125" r="13" fill="#101016" stroke="#d4142e" stroke-width="3"/><rect x="98" y="120" width="12" height="5" rx="2" fill="#e8c4a0"/><path d="M83 128 q-20 4 -34 -2 M83 132 q-18 10 -30 8" stroke="#d4142e" stroke-width="5" fill="none" stroke-linecap="round"/><circle cx="260" cy="30" r="12" fill="#d8dde8" opacity=".8"/>';
 COVER['teacher-tycoon'] = '<rect width="320" height="180" fill="#bfe0f0"/><image href="/img/teacher-tycoon-card.webp" x="0" y="0" width="320" height="180" preserveAspectRatio="xMidYMid slice"/>';
 COVER['rope-rumble'] = '<rect width="320" height="180" fill="#86cc74"/><image href="/img/rope-rumble-card.webp" x="0" y="0" width="320" height="180" preserveAspectRatio="xMidYMid slice"/>';
+const LIVE_GAMES = ['rope-rumble', 'teacher-tycoon'];
+const liveCards = lang => { const X = STJ[lang]; return `<div class="lgrid">${LIVE_GAMES.map(s => { const g = PLAY.find(p => p.slug === s); return `<div class="lcard" style="--ac:${ACCENT[s]}"><a class="lc-art" href="/${lang}/${s}/"><img src="/img/${s}-card.webp" alt="${esc(g.name(lang))}" width="640" height="360" loading="lazy"><span class="lc-live">LIVE</span></a><div class="lc-body"><h3><a href="/${lang}/${s}/">${esc(g.name(lang))}</a></h3><p>${esc(X.pitch[s])}</p><div class="bar"><a class="btn" href="/${lang}/${s}/">▶ ${esc(X.play)}</a><a class="btn ghost" href="/${lang}/${s}/?live=1" rel="nofollow">🔴 ${esc(X.live)}</a></div></div></div>`; }).join('')}</div>`; };
+const LIVE_CSS = `<style>
+.nav-live{color:#ff6b5b!important;font-weight:700}
+.lband{margin:22px 0;padding:20px;border-radius:16px;border:1px solid #ff2d4866;background:radial-gradient(120% 140% at 0% 0%,#ff2d4826,transparent 60%),linear-gradient(180deg,var(--panel),#0c1019);box-shadow:0 24px 70px -40px #ff2d48}
+.lband-h{display:flex;flex-wrap:wrap;align-items:baseline;justify-content:space-between;gap:8px}
+.lband-h h2{margin:0;font-size:clamp(1.4rem,3vw,2rem);text-transform:none;letter-spacing:0;color:var(--fg)}
+.lband-k{display:inline-block;font:700 .72rem var(--display);letter-spacing:.06em;text-transform:uppercase;color:#ff6b5b}
+.lgrid{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:16px;margin-top:14px}
+.lcard{display:flex;flex-direction:column;border:1px solid var(--line);border-radius:14px;overflow:hidden;background:#0c1019}
+.lcard:hover{border-color:var(--ac)}
+.lc-art{position:relative;display:block;aspect-ratio:16/9;overflow:hidden}
+.lc-art img{width:100%;height:100%;object-fit:cover;display:block}
+.lc-live{position:absolute;left:10px;top:10px;background:#ff2d48;color:#fff;font:700 .72rem var(--display);padding:3px 9px;border-radius:999px;letter-spacing:.08em}
+.lc-body{padding:12px 14px 14px;display:flex;flex-direction:column;gap:8px}
+.lc-body h3{margin:0}.lc-body h3 a{color:var(--fg);text-decoration:none}
+.lc-body p{margin:0;color:var(--muted)}
+</style>`;
 const ACCENT = { 'rope-rumble': '#e94f37', 'teacher-tycoon': '#ffc93c', 'palmera-heat': '#e30a17', 'red-scarf': '#ff2d48', 'night-drop': '#2ef2ff', 'crown-clash': '#5aa7ff', 'jade-lanes': '#3fbf8f', 'duel-peak': '#ff8a3d', 'color-gradient': '#b48cff' };
 const NEW_LBL = { en: 'New', tr: 'Yeni', id: 'Baru', es: 'Nuevo', pt: 'Novo' };
 /* Story block shown at the top of each game's text */
@@ -110,7 +128,7 @@ function layout({ lang, rel, title, desc, body, active, app, type, jsonld, img, 
   const ads = cfg.adsenseClient ? `<meta name="google-adsense-account" content="${esc(cfg.adsenseClient)}"><script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=${esc(cfg.adsenseClient)}" crossorigin="anonymous"></script>` : '';
   const verify = cfg.googleVerification ? `<meta name="google-site-verification" content="${esc(cfg.googleVerification)}">` : '';
   const appJs = app ? `<script>window.APP=${JSON.stringify(app).replace(/</g, '\\u003c')}</script><script src="${asset('engine.js')}"></script>` : '';
-  const nav = PLAY.map(g => `<a href="/${lang}/${g.slug}/"${active === g.slug ? ' aria-current="page"' : ''}>${esc(g.name(lang))}</a>`).join('');
+  const nav = `<a class="nav-live" href="/${lang}/streamer-games/"${active === 'streamer-games' ? ' aria-current="page"' : ''}>${esc(STJ[lang].nav)}</a>` + PLAY.map(g => `<a href="/${lang}/${g.slug}/"${active === g.slug ? ' aria-current="page"' : ''}>${esc(g.name(lang))}</a>`).join('');
   return `<!doctype html>
 <html lang="${lang}">
 <head>
@@ -183,6 +201,7 @@ for (const lang of cfg.langs) {
 <div class="hx-body"><span class="kicker">${esc(S.tagline)}</span><h1>${esc(S.homeH1)}</h1><p class="lead">${esc(S.homeText)}</p>
 <p class="hx-feat"><span class="badge">${NEW_LBL[lang]}</span> <b>${esc(PH[lang].name)}</b> – ${esc(PH[lang].teaser)} ${esc(PH[lang].card)}</p>
 <div class="bar"><a class="btn" href="/${lang}/palmera-heat/">▶ ${esc(S.play)}: ${esc(PH[lang].name)}</a><a class="btn ghost" href="#games">${esc(S.gamesH)} ↓</a></div></div></section>
+<section class="lband" id="live"><div class="lband-h"><div><span class="lband-k">${esc(STJ[lang].kicker)}</span><h2>${esc(STJ[lang].homeH)}</h2></div><a class="btn ghost" href="/${lang}/streamer-games/">${esc(STJ[lang].all)} →</a></div><p class="lead" style="margin:6px 0 0">${esc(STJ[lang].homeP)}</p>${liveCards(lang)}</section>${LIVE_CSS}
 <section id="games"><h2>${esc(S.gamesH)}</h2><div class="playgrid">
 ${PLAY.map(g => `<a class="pc" href="/${lang}/${g.slug}/" style="--ac:${ACCENT[g.slug]}"><span class="pc-art">${cover(g.slug)}<canvas data-scene="${g.slug}" aria-hidden="true"></canvas><span class="chip">${esc(S.genre[g.slug])}</span></span><span class="pc-body"><h3>${esc(g.name(lang))}</h3><span class="teaser">${esc(STORY[lang][g.slug].teaser)}</span><span class="note">${esc(g.desc(lang))}</span><span class="go">▶ ${esc(S.play)}</span></span></a>`).join('\n')}
 </div></section>
@@ -625,6 +644,24 @@ ${G.sections.map((sec, i) => `<h2 id="s${i + 1}">${esc(sec.h)}</h2><ol>${sec.ste
 .ph-bar{display:flex;justify-content:flex-end;gap:8px;margin-top:8px;flex-wrap:wrap}
 </style>
 <script src="${asset('three.min.js')}"></script><script src="${asset('roperumble.js')}"></script><script>RopeRumble.mount(document.getElementById('rrHost'), { lang: '${lang}' });</script>`
+    }));
+  }
+
+  /* Streamer games hub: every game with a LIVE mode, how to connect, FAQ. */
+  {
+    const X = STJ[lang], rel = `${lang}/streamer-games/`;
+    const li = a => a.map(x => `<li>${esc(x)}</li>`).join('');
+    write(`${rel}index.html`, layout({
+      lang, rel, active: 'streamer-games', title: `${X.title} · ${cfg.siteName}`, desc: X.desc, lastmod: '2026-11-24', img: 'rope-rumble',
+      crumbs: [[t.home, `${lang}/`], [X.h1, rel]],
+      jsonld: [{ '@context': 'https://schema.org', '@type': 'CollectionPage', name: X.h1, description: X.desc, url: `${base}/${rel}`, inLanguage: lang,
+        mainEntity: { '@type': 'ItemList', itemListElement: LIVE_GAMES.map((s, i) => ({ '@type': 'ListItem', position: i + 1, url: `${base}/${lang}/${s}/`, name: PLAY.find(p => p.slug === s).name(lang) })) } },
+        { '@context': 'https://schema.org', '@type': 'FAQPage', mainEntity: X.faq.map(([q, a]) => ({ '@type': 'Question', name: q, acceptedAnswer: { '@type': 'Answer', text: a } })) }],
+      body: `<section><span class="lband-k">${esc(X.kicker)}</span><h1>${esc(X.h1)}</h1><p class="lead">${esc(X.intro)}</p></section>
+<section class="lband">${liveCards(lang)}</section>${LIVE_CSS}
+<article class="prose"><h2>${esc(X.howH)}</h2><ol>${li(X.how)}</ol>
+<h2>${esc(X.whyH)}</h2><ul>${li(X.why)}</ul>
+<h2>${esc(X.faqH)}</h2>${X.faq.map(([q, a]) => `<h3>${esc(q)}</h3><p>${esc(a)}</p>`).join('')}</article>`
     }));
   }
 

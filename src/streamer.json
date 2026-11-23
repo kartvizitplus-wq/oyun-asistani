@@ -1,0 +1,197 @@
+{
+ "en": {
+  "nav": "🔴 Streamer games",
+  "title": "Streamer Games: Free Interactive LIVE Games for Streams",
+  "desc": "Free interactive games for TikTok LIVE, Twitch, YouTube and Kick: viewers join by commenting and gifts change the game. Nothing to install: add the OBS link and go live.",
+  "h1": "Streamer games",
+  "kicker": "For TikTok LIVE · Twitch · YouTube · Kick",
+  "intro": "Free browser games built for live streams, where your viewers do not just watch, they play. A comment puts them in the game, likes and gifts change what happens on screen. Nothing to download: open LIVE mode, copy the stream link into OBS or LIVE Studio and start.",
+  "homeH": "🔴 Streamer games",
+  "homeP": "Interactive games for your live stream: viewers join by commenting, gifts change the game. Free, works with TikTok, Twitch, YouTube and Kick.",
+  "all": "All streamer games",
+  "play": "Play",
+  "live": "LIVE mode",
+  "pitch": {
+   "rope-rumble": "Tug of war with a mud pit. Viewers comment RED or BLUE (or your own team names) to join; gifts bring extra people to their team, the losers fall into the mud.",
+   "teacher-tycoon": "A 3D classroom. Commenters take a seat as students, gifts bring in the teacher, the principal, the inspector or even the Minister of Education."
+  },
+  "howH": "How it works",
+  "how": [
+   "Pick a game and open its LIVE mode.",
+   "Connect your platform: TikTok through the free TikFinity app, Twitch with your channel name, YouTube Live with your own free API key, Kick and others through Social Stream Ninja.",
+   "Copy the stream link from the creator panel and add it to OBS or LIVE Studio as a 1080 × 1920 browser source.",
+   "Go live. Viewers join by commenting; the panel shows every event as it arrives."
+  ],
+  "whyH": "Why streamers use them",
+  "why": [
+   "Free, nothing to install, works in OBS and LIVE Studio.",
+   "Every gift has a fixed effect shown on screen; there are no chance-based rewards.",
+   "Bad-word filter plus your own list of blocked words and users.",
+   "Your stream data goes straight from your computer to the game; it does not pass through our servers.",
+   "Panels and games in English, Turkish, Spanish, Portuguese and Indonesian."
+  ],
+  "faqH": "Frequently asked questions",
+  "faq": [
+   ["Are the streamer games free?", "Yes. All games and their LIVE modes are free. Some connection tools on your side may offer paid extras, but the games themselves cost nothing."],
+   ["Which platforms are supported?", "TikTok LIVE (through TikFinity), Twitch, YouTube Live and Kick (through Social Stream Ninja). There is also a simulator and an auto demo to test without going live."],
+   ["Do I need to install anything?", "Not for Twitch or YouTube. For TikTok you need the free TikFinity desktop app, for Kick the free Social Stream Ninja app or extension."],
+   ["Is this an official TikTok game?", "No. These are independent games made by PickRadar. They read your stream events through the tools listed above."]
+  ]
+ },
+ "tr": {
+  "nav": "🔴 Yayıncı Oyunları",
+  "title": "Yayıncı Oyunları: Ücretsiz Etkileşimli Canlı Yayın Oyunları",
+  "desc": "TikTok LIVE, Twitch, YouTube ve Kick için ücretsiz etkileşimli oyunlar: izleyiciler yorum yazarak oyuna girer, hediyeler oyunu değiştirir. Kurulum yok: OBS linkini ekle ve yayına başla.",
+  "h1": "Yayıncı Oyunları",
+  "kicker": "TikTok LIVE · Twitch · YouTube · Kick için",
+  "intro": "İzleyicilerin sadece izlemediği, oynadığı canlı yayınlar için yapılmış ücretsiz tarayıcı oyunları. Bir yorum onları oyuna sokar, beğeniler ve hediyeler ekranda olanları değiştirir. İndirme yok: LIVE modunu aç, yayın linkini OBS'e ya da LIVE Studio'ya kopyala ve başla.",
+  "homeH": "🔴 Yayıncı Oyunları",
+  "homeP": "Canlı yayının için etkileşimli oyunlar: izleyiciler yorum yazarak katılır, hediyeler oyunu değiştirir. Ücretsiz; TikTok, Twitch, YouTube ve Kick ile çalışır.",
+  "all": "Tüm yayıncı oyunları",
+  "play": "Oyna",
+  "live": "LIVE modu",
+  "pitch": {
+   "rope-rumble": "Çamur havuzlu halat savaşı. İzleyiciler yoruma KIRMIZI ya da MAVİ (ya da senin koyduğun takım adlarını) yazarak katılır; hediyeler takımına ekstra kişi getirir, kaybedenler çamura düşer.",
+   "teacher-tycoon": "3D bir sınıf. Yorum yazanlar sıraya öğrenci olarak oturur, hediyeler öğretmeni, müdürü, müfettişi, hatta Milli Eğitim Bakanı'nı getirir."
+  },
+  "howH": "Nasıl çalışır",
+  "how": [
+   "Bir oyun seç ve LIVE modunu aç.",
+   "Platformunu bağla: TikTok'u ücretsiz TikFinity uygulamasıyla, Twitch'i kanal adınla, YouTube Live'ı kendi ücretsiz API anahtarınla, Kick ve diğerlerini Social Stream Ninja ile.",
+   "Yayıncı panelinden yayın linkini kopyala ve OBS'e ya da LIVE Studio'ya 1080 × 1920 tarayıcı kaynağı olarak ekle.",
+   "Yayını aç. İzleyiciler yorum yazarak katılır; panel gelen her olayı anında gösterir."
+  ],
+  "whyH": "Yayıncılar neden kullanıyor",
+  "why": [
+   "Ücretsiz, kurulum yok, OBS ve LIVE Studio'da çalışır.",
+   "Her hediyenin etkisi sabittir ve ekranda yazar; şansa dayalı ödül yoktur.",
+   "Küfür filtresi ve kendi engelli kelime ve kullanıcı listen.",
+   "Yayın verilerin bilgisayarından doğrudan oyuna gider; bizim sunucumuzdan geçmez.",
+   "Panel ve oyunlar Türkçe, İngilizce, İspanyolca, Portekizce ve Endonezce."
+  ],
+  "faqH": "Sık sorulan sorular",
+  "faq": [
+   ["Yayıncı oyunları ücretsiz mi?", "Evet. Tüm oyunlar ve LIVE modları ücretsiz. Senin tarafındaki bazı bağlantı araçlarının ücretli ek özellikleri olabilir ama oyunların kendisi ücretsizdir."],
+   ["Hangi platformlar destekleniyor?", "TikTok LIVE (TikFinity ile), Twitch, YouTube Live ve Kick (Social Stream Ninja ile). Yayına çıkmadan denemek için simülatör ve otomatik demo da var."],
+   ["Bir şey kurmam gerekiyor mu?", "Twitch ve YouTube için hayır. TikTok için ücretsiz TikFinity masaüstü uygulaması, Kick için ücretsiz Social Stream Ninja uygulaması ya da eklentisi gerekir."],
+   ["Bunlar resmî TikTok oyunları mı?", "Hayır. Bunlar PickRadar'ın yaptığı bağımsız oyunlardır. Yayın olaylarını yukarıdaki araçlar üzerinden okurlar."]
+  ]
+ },
+ "es": {
+  "nav": "🔴 Juegos para streamers",
+  "title": "Juegos para Streamers: Juegos Interactivos Gratis para Directos",
+  "desc": "Juegos interactivos gratis para TikTok LIVE, Twitch, YouTube y Kick: los espectadores entran comentando y los regalos cambian el juego. Nada que instalar: añade el enlace a OBS y empieza.",
+  "h1": "Juegos para streamers",
+  "kicker": "Para TikTok LIVE · Twitch · YouTube · Kick",
+  "intro": "Juegos de navegador gratis hechos para directos, donde tus espectadores no solo miran, juegan. Un comentario los mete en el juego; los me gusta y los regalos cambian lo que pasa en pantalla. Nada que descargar: abre el modo LIVE, copia el enlace en OBS o LIVE Studio y empieza.",
+  "homeH": "🔴 Juegos para streamers",
+  "homeP": "Juegos interactivos para tu directo: los espectadores entran comentando y los regalos cambian el juego. Gratis; funciona con TikTok, Twitch, YouTube y Kick.",
+  "all": "Todos los juegos para streamers",
+  "play": "Jugar",
+  "live": "Modo LIVE",
+  "pitch": {
+   "rope-rumble": "El juego de la soga con charco de barro. Los espectadores comentan ROJO o AZUL (o tus propios nombres de equipo) para unirse; los regalos traen gente extra y los que pierden caen al barro.",
+   "teacher-tycoon": "Un aula en 3D. Quien comenta se sienta como alumno; los regalos traen al profesor, al director, al inspector o incluso al ministro de Educación."
+  },
+  "howH": "Cómo funciona",
+  "how": [
+   "Elige un juego y abre su modo LIVE.",
+   "Conecta tu plataforma: TikTok con la app gratuita TikFinity, Twitch con el nombre de tu canal, YouTube Live con tu propia clave gratuita de API, Kick y otras con Social Stream Ninja.",
+   "Copia el enlace del directo desde el panel y añádelo en OBS o LIVE Studio como fuente de navegador de 1080 × 1920.",
+   "Empieza el directo. Los espectadores entran comentando; el panel muestra cada evento al llegar."
+  ],
+  "whyH": "Por qué los usan los streamers",
+  "why": [
+   "Gratis, sin instalar nada, funciona en OBS y LIVE Studio.",
+   "Cada regalo tiene un efecto fijo y visible; no hay premios al azar.",
+   "Filtro de palabrotas y tu propia lista de palabras y usuarios bloqueados.",
+   "Los datos de tu directo van de tu ordenador al juego; no pasan por nuestros servidores.",
+   "Paneles y juegos en español, inglés, turco, portugués e indonesio."
+  ],
+  "faqH": "Preguntas frecuentes",
+  "faq": [
+   ["¿Los juegos para streamers son gratis?", "Sí. Todos los juegos y sus modos LIVE son gratis. Algunas herramientas de conexión de tu lado pueden tener extras de pago, pero los juegos no cuestan nada."],
+   ["¿Qué plataformas funcionan?", "TikTok LIVE (con TikFinity), Twitch, YouTube Live y Kick (con Social Stream Ninja). También hay simulador y demo automática para probar sin estar en directo."],
+   ["¿Tengo que instalar algo?", "Para Twitch y YouTube no. Para TikTok necesitas la app gratuita TikFinity y para Kick la app o extensión gratuita Social Stream Ninja."],
+   ["¿Son juegos oficiales de TikTok?", "No. Son juegos independientes hechos por PickRadar que leen los eventos de tu directo con las herramientas de arriba."]
+  ]
+ },
+ "pt": {
+  "nav": "🔴 Jogos para streamers",
+  "title": "Jogos para Streamers: Jogos Interativos Grátis para Lives",
+  "desc": "Jogos interativos grátis para TikTok LIVE, Twitch, YouTube e Kick: os espectadores entram comentando e os presentes mudam o jogo. Nada para instalar: adicione o link no OBS e comece.",
+  "h1": "Jogos para streamers",
+  "kicker": "Para TikTok LIVE · Twitch · YouTube · Kick",
+  "intro": "Jogos de navegador grátis feitos para lives, em que seus espectadores não só assistem, eles jogam. Um comentário coloca a pessoa no jogo; curtidas e presentes mudam o que acontece na tela. Nada para baixar: abra o modo LIVE, copie o link no OBS ou no LIVE Studio e comece.",
+  "homeH": "🔴 Jogos para streamers",
+  "homeP": "Jogos interativos para a sua live: os espectadores entram comentando e os presentes mudam o jogo. Grátis; funciona com TikTok, Twitch, YouTube e Kick.",
+  "all": "Todos os jogos para streamers",
+  "play": "Jogar",
+  "live": "Modo LIVE",
+  "pitch": {
+   "rope-rumble": "Cabo de guerra com poça de lama. Os espectadores comentam VERMELHO ou AZUL (ou os nomes de time que você escolher) para entrar; presentes trazem gente extra e quem perde cai na lama.",
+   "teacher-tycoon": "Uma sala de aula em 3D. Quem comenta senta como aluno; presentes trazem o professor, o diretor, o inspetor ou até o ministro da Educação."
+  },
+  "howH": "Como funciona",
+  "how": [
+   "Escolha um jogo e abra o modo LIVE.",
+   "Conecte sua plataforma: TikTok pelo app gratuito TikFinity, Twitch com o nome do canal, YouTube Live com sua própria chave gratuita de API, Kick e outras pelo Social Stream Ninja.",
+   "Copie o link da live no painel e adicione no OBS ou no LIVE Studio como fonte de navegador de 1080 × 1920.",
+   "Entre ao vivo. Os espectadores entram comentando; o painel mostra cada evento na hora."
+  ],
+  "whyH": "Por que os streamers usam",
+  "why": [
+   "Grátis, sem instalar nada, funciona no OBS e no LIVE Studio.",
+   "Cada presente tem um efeito fixo mostrado na tela; não há prêmios por sorte.",
+   "Filtro de palavrões e sua própria lista de palavras e usuários bloqueados.",
+   "Os dados da sua live vão do seu computador direto para o jogo; não passam pelos nossos servidores.",
+   "Painéis e jogos em português, inglês, turco, espanhol e indonésio."
+  ],
+  "faqH": "Perguntas frequentes",
+  "faq": [
+   ["Os jogos para streamers são grátis?", "Sim. Todos os jogos e os modos LIVE são grátis. Algumas ferramentas de conexão do seu lado podem ter extras pagos, mas os jogos não custam nada."],
+   ["Quais plataformas funcionam?", "TikTok LIVE (pelo TikFinity), Twitch, YouTube Live e Kick (pelo Social Stream Ninja). Também há simulador e demo automática para testar sem estar ao vivo."],
+   ["Preciso instalar alguma coisa?", "Para Twitch e YouTube, não. Para TikTok você precisa do app gratuito TikFinity e para Kick do app ou extensão gratuita Social Stream Ninja."],
+   ["São jogos oficiais do TikTok?", "Não. São jogos independentes feitos pelo PickRadar que leem os eventos da sua live pelas ferramentas acima."]
+  ]
+ },
+ "id": {
+  "nav": "🔴 Game untuk streamer",
+  "title": "Game untuk Streamer: Game Interaktif Gratis untuk Siaran Live",
+  "desc": "Game interaktif gratis untuk TikTok LIVE, Twitch, YouTube, dan Kick: penonton ikut dengan berkomentar dan hadiah mengubah permainan. Tanpa instalasi: tambahkan link ke OBS lalu mulai.",
+  "h1": "Game untuk streamer",
+  "kicker": "Untuk TikTok LIVE · Twitch · YouTube · Kick",
+  "intro": "Game browser gratis yang dibuat untuk siaran live, di mana penontonmu tidak cuma menonton, tapi ikut bermain. Satu komentar membawa mereka masuk game; suka dan hadiah mengubah apa yang terjadi di layar. Tanpa unduhan: buka mode LIVE, salin link ke OBS atau LIVE Studio, lalu mulai.",
+  "homeH": "🔴 Game untuk streamer",
+  "homeP": "Game interaktif untuk siaran live-mu: penonton ikut dengan berkomentar, hadiah mengubah permainan. Gratis; bekerja dengan TikTok, Twitch, YouTube, dan Kick.",
+  "all": "Semua game untuk streamer",
+  "play": "Main",
+  "live": "Mode LIVE",
+  "pitch": {
+   "rope-rumble": "Tarik tambang dengan kubangan lumpur. Penonton berkomentar MERAH atau BIRU (atau nama tim buatanmu) untuk ikut; hadiah membawa orang tambahan dan yang kalah jatuh ke lumpur.",
+   "teacher-tycoon": "Kelas 3D. Yang berkomentar duduk sebagai murid; hadiah mendatangkan guru, kepala sekolah, pengawas, bahkan Menteri Pendidikan."
+  },
+  "howH": "Cara kerjanya",
+  "how": [
+   "Pilih game dan buka mode LIVE-nya.",
+   "Hubungkan platformmu: TikTok lewat aplikasi gratis TikFinity, Twitch dengan nama channel, YouTube Live dengan API key gratis milikmu, Kick dan lainnya lewat Social Stream Ninja.",
+   "Salin link siaran dari panel kreator dan tambahkan ke OBS atau LIVE Studio sebagai browser source 1080 × 1920.",
+   "Mulai siaran. Penonton ikut dengan berkomentar; panel menampilkan setiap event yang masuk."
+  ],
+  "whyH": "Kenapa streamer memakainya",
+  "why": [
+   "Gratis, tanpa instalasi, bekerja di OBS dan LIVE Studio.",
+   "Setiap hadiah punya efek tetap yang tampil di layar; tidak ada hadiah acak.",
+   "Filter kata kasar dan daftar kata serta pengguna yang kamu blokir.",
+   "Data siaranmu langsung dari komputermu ke game; tidak lewat server kami.",
+   "Panel dan game dalam bahasa Indonesia, Inggris, Turki, Spanyol, dan Portugis."
+  ],
+  "faqH": "Pertanyaan umum",
+  "faq": [
+   ["Apakah game untuk streamer gratis?", "Ya. Semua game dan mode LIVE-nya gratis. Beberapa alat koneksi di sisimu mungkin punya fitur berbayar, tapi game-nya sendiri gratis."],
+   ["Platform apa saja yang didukung?", "TikTok LIVE (lewat TikFinity), Twitch, YouTube Live, dan Kick (lewat Social Stream Ninja). Ada juga simulator dan demo otomatis untuk mencoba tanpa siaran."],
+   ["Apakah perlu memasang sesuatu?", "Untuk Twitch dan YouTube tidak. Untuk TikTok perlu aplikasi gratis TikFinity, untuk Kick aplikasi atau ekstensi gratis Social Stream Ninja."],
+   ["Apakah ini game resmi TikTok?", "Bukan. Ini game independen buatan PickRadar yang membaca event siaranmu lewat alat-alat di atas."]
+  ]
+ }
+}
