@@ -144,3 +144,4 @@ Technical SEO, AI visibility, usability and ad-readiness checks. Content (patch 
 - Normal mode: red team vs CPU, tap/click/SPACE to pull, 2 rounds per match, levels saved in the browser.
 - LIVE mode (`?live=1`, OBS output `&clean=1`): viewers join RED/BLUE by comment keyword (5 languages + emoji), others auto-join the smaller team. Comments and likes add short pull bursts; gifts add extra people to the sender's team until the end of the round at a fixed, stated rate (default 20 coins = 1 person, min 1 per gift, configurable). No chance mechanics.
 - Data sources reuse the Teacher Tycoon adapters (simulator, TikFinity, Twitch, YouTube API key, Social Stream Ninja). Nothing passes through PickRadar servers.
+- 2026-11-24: Streamer can rename both teams, pick their colours and add extra join words (panel, saved in the OBS link). Viewers join by team name words, 1 / 2 or the extra words. No club names, logos or colours are shipped as presets.

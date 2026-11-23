@@ -14,11 +14,11 @@ const LANG = {
 };
 
 const LIVE_RR = {
- en: { cls: 'Live match', wait: 'Waiting for both teams… comment RED or BLUE!', legendH: 'Join a team: comment', cmtK: 'Comment', cmt: 'your team pulls', likeK: '♥ Like', likes: 'more power', giftK: 'Gift', giftE: 'at least +1 person', giftRow: '+1 person per {c} coins', giftRowUsd: '+1 person per {c} donated', joined: 'joined {t}', brought: '@{u} brought {n} people to {t}!', strong: 'Strongman @{u} joins {t}!', mvpH: 'Top supporter', actH: 'Most active', newMatch: 'New match! Comment your team', roundOnly: 'Gift people stay until the end of the round.', note: 'Simulation mode: this page is not connected to a live stream. All events here are test events made by you or by Auto demo.', obsNote: 'Add as a browser source at 1080 × 1920. Without a connection the output plays a DEMO match.', auto: 'Auto demo: fake viewers (shown as DEMO on stream)', sRed: 'Comment RED', sBlue: 'Comment BLUE', sAny: 'Comment', sGift: 'Gift', cfgH: 'Game settings', cpp: 'Coins per extra person', roundSec: 'Round length (seconds)', winR: 'Rounds to win the match' },
- tr: { cls: 'Canlı maç', wait: 'İki takım bekleniyor… yoruma KIRMIZI ya da MAVİ yaz!', legendH: 'Takıma katıl: yoruma yaz', cmtK: 'Yorum', cmt: 'takımın asılır', likeK: '♥ Beğeni', likes: 'güç verir', giftK: 'Hediye', giftE: 'en az +1 kişi', giftRow: 'her {c} jetona +1 kişi', giftRowUsd: 'her {c} bağışa +1 kişi', joined: '{t} takımına katıldı', brought: '@{u}, {t} takımına {n} kişi getirdi!', strong: 'Pehlivan @{u}, {t} takımında!', mvpH: 'En büyük destekçi', actH: 'En aktif', newMatch: 'Yeni maç! Takımını yoruma yaz', roundOnly: 'Hediyeyle gelen kişiler tur sonuna kadar kalır.', note: 'Simülasyon modu: bu sayfa bir canlı yayına bağlı değil. Buradaki tüm olaylar senin ya da Otomatik demonun oluşturduğu test olaylarıdır.', obsNote: '1080 × 1920 tarayıcı kaynağı olarak ekle. Bağlantı yokken çıktı DEMO maçı oynatır.', auto: 'Otomatik demo: sahte izleyiciler (yayında DEMO yazar)', sRed: 'Yorum: KIRMIZI', sBlue: 'Yorum: MAVİ', sAny: 'Yorum', sGift: 'Hediye', cfgH: 'Oyun ayarları', cpp: 'Ekstra 1 kişi için jeton', roundSec: 'Tur süresi (saniye)', winR: 'Maçı kazanmak için tur' },
- es: { cls: 'Partido en directo', wait: 'Esperando a los dos equipos… ¡comenta ROJO o AZUL!', legendH: 'Únete a un equipo: comenta', cmtK: 'Comentario', cmt: 'tu equipo tira', likeK: '♥ Me gusta', likes: 'más fuerza', giftK: 'Regalo', giftE: 'mínimo +1 persona', giftRow: '+1 persona cada {c} monedas', giftRowUsd: '+1 persona cada {c} donados', joined: 'se unió a {t}', brought: '¡@{u} trajo {n} personas a {t}!', strong: '¡El forzudo @{u} se une a {t}!', mvpH: 'Mayor apoyo', actH: 'Más activo', newMatch: '¡Nuevo partido! Comenta tu equipo', roundOnly: 'Las personas de los regalos se quedan hasta el final de la ronda.', note: 'Modo simulación: esta página no está conectada a un directo. Todos los eventos aquí son de prueba, creados por ti o por la Demo automática.', obsNote: 'Añádelo como fuente de navegador de 1080 × 1920. Sin conexión, la salida muestra un partido DEMO.', auto: 'Demo automática: espectadores falsos (en el directo aparece DEMO)', sRed: 'Comentar ROJO', sBlue: 'Comentar AZUL', sAny: 'Comentario', sGift: 'Regalo', cfgH: 'Ajustes del juego', cpp: 'Monedas por persona extra', roundSec: 'Duración de la ronda (segundos)', winR: 'Rondas para ganar' },
- pt: { cls: 'Partida ao vivo', wait: 'Esperando os dois times… comente VERMELHO ou AZUL!', legendH: 'Entre num time: comente', cmtK: 'Comentário', cmt: 'seu time puxa', likeK: '♥ Curtida', likes: 'mais força', giftK: 'Presente', giftE: 'no mínimo +1 pessoa', giftRow: '+1 pessoa a cada {c} moedas', giftRowUsd: '+1 pessoa a cada {c} doados', joined: 'entrou no {t}', brought: '@{u} trouxe {n} pessoas para o {t}!', strong: 'O fortão @{u} entra no {t}!', mvpH: 'Maior apoiador', actH: 'Mais ativo', newMatch: 'Nova partida! Comente seu time', roundOnly: 'As pessoas dos presentes ficam até o fim da rodada.', note: 'Modo simulação: esta página não está conectada a uma live. Todos os eventos aqui são de teste, criados por você ou pela Demo automática.', obsNote: 'Adicione como fonte de navegador de 1080 × 1920. Sem conexão, a saída mostra uma partida DEMO.', auto: 'Demo automática: espectadores falsos (aparece DEMO na live)', sRed: 'Comentar VERMELHO', sBlue: 'Comentar AZUL', sAny: 'Comentário', sGift: 'Presente', cfgH: 'Ajustes do jogo', cpp: 'Moedas por pessoa extra', roundSec: 'Duração da rodada (segundos)', winR: 'Rodadas para vencer' },
- id: { cls: 'Pertandingan live', wait: 'Menunggu kedua tim… komentar MERAH atau BIRU!', legendH: 'Ikut tim: komentar', cmtK: 'Komentar', cmt: 'timmu menarik', likeK: '♥ Suka', likes: 'tambah kekuatan', giftK: 'Hadiah', giftE: 'minimal +1 orang', giftRow: '+1 orang tiap {c} koin', giftRowUsd: '+1 orang tiap donasi {c}', joined: 'bergabung ke {t}', brought: '@{u} membawa {n} orang ke {t}!', strong: 'Si kuat @{u} bergabung ke {t}!', mvpH: 'Pendukung terbesar', actH: 'Paling aktif', newMatch: 'Pertandingan baru! Komentar timmu', roundOnly: 'Orang dari hadiah tetap ada sampai ronde selesai.', note: 'Mode simulasi: halaman ini tidak terhubung ke siaran live. Semua event di sini adalah event uji yang dibuat olehmu atau oleh Demo otomatis.', obsNote: 'Tambahkan sebagai browser source 1080 × 1920. Tanpa koneksi, output menampilkan pertandingan DEMO.', auto: 'Demo otomatis: penonton palsu (di siaran tertulis DEMO)', sRed: 'Komentar MERAH', sBlue: 'Komentar BIRU', sAny: 'Komentar', sGift: 'Hadiah', cfgH: 'Pengaturan game', cpp: 'Koin per orang tambahan', roundSec: 'Lama ronde (detik)', winR: 'Ronde untuk menang' }
+ en: { cls: 'Live match', wait: 'Waiting for both teams… comment RED or BLUE!', legendH: 'Join a team: comment', cmtK: 'Comment', cmt: 'your team pulls', likeK: '♥ Like', likes: 'more power', giftK: 'Gift', giftE: 'at least +1 person', giftRow: '+1 person per {c} coins', giftRowUsd: '+1 person per {c} donated', joined: 'joined {t}', brought: '@{u} brought {n} people to {t}!', strong: 'Strongman @{u} joins {t}!', mvpH: 'Top supporter', actH: 'Most active', newMatch: 'New match! Comment your team', roundOnly: 'Gift people stay until the end of the round.', note: 'Simulation mode: this page is not connected to a live stream. All events here are test events made by you or by Auto demo.', obsNote: 'Add as a browser source at 1080 × 1920. Without a connection the output plays a DEMO match.', auto: 'Auto demo: fake viewers (shown as DEMO on stream)', sRed: 'Comment RED', sBlue: 'Comment BLUE', sAny: 'Comment', sGift: 'Gift', teamsH: "Teams", team: "Team {n}", tName: "Name (empty = RED / BLUE)", tColor: "Colour", tKeys: "Extra join words, comma separated", tHint: "Viewers join by commenting the team name, its number (1 or 2) or an extra word. Team names and colours are yours to choose; please do not use logos you do not have the rights to.", orNum: "or write 1 / 2", cfgH: 'Game settings', cpp: 'Coins per extra person', roundSec: 'Round length (seconds)', winR: 'Rounds to win the match' },
+ tr: { cls: 'Canlı maç', wait: 'İki takım bekleniyor… yoruma KIRMIZI ya da MAVİ yaz!', legendH: 'Takıma katıl: yoruma yaz', cmtK: 'Yorum', cmt: 'takımın asılır', likeK: '♥ Beğeni', likes: 'güç verir', giftK: 'Hediye', giftE: 'en az +1 kişi', giftRow: 'her {c} jetona +1 kişi', giftRowUsd: 'her {c} bağışa +1 kişi', joined: '{t} takımına katıldı', brought: '@{u}, {t} takımına {n} kişi getirdi!', strong: 'Pehlivan @{u}, {t} takımında!', mvpH: 'En büyük destekçi', actH: 'En aktif', newMatch: 'Yeni maç! Takımını yoruma yaz', roundOnly: 'Hediyeyle gelen kişiler tur sonuna kadar kalır.', note: 'Simülasyon modu: bu sayfa bir canlı yayına bağlı değil. Buradaki tüm olaylar senin ya da Otomatik demonun oluşturduğu test olaylarıdır.', obsNote: '1080 × 1920 tarayıcı kaynağı olarak ekle. Bağlantı yokken çıktı DEMO maçı oynatır.', auto: 'Otomatik demo: sahte izleyiciler (yayında DEMO yazar)', sRed: 'Yorum: KIRMIZI', sBlue: 'Yorum: MAVİ', sAny: 'Yorum', sGift: 'Hediye', teamsH: "Takımlar", team: "{n}. takım", tName: "Ad (boş = KIRMIZI / MAVİ)", tColor: "Renk", tKeys: "Ek katılım kelimeleri, virgülle", tHint: "İzleyiciler takım adını, numarasını (1 ya da 2) ya da ek bir kelimeyi yorum yazarak katılır. Takım adlarını ve renklerini sen seçersin; hakkına sahip olmadığın logoları kullanma.", orNum: "ya da 1 / 2 yaz", cfgH: 'Oyun ayarları', cpp: 'Ekstra 1 kişi için jeton', roundSec: 'Tur süresi (saniye)', winR: 'Maçı kazanmak için tur' },
+ es: { cls: 'Partido en directo', wait: 'Esperando a los dos equipos… ¡comenta ROJO o AZUL!', legendH: 'Únete a un equipo: comenta', cmtK: 'Comentario', cmt: 'tu equipo tira', likeK: '♥ Me gusta', likes: 'más fuerza', giftK: 'Regalo', giftE: 'mínimo +1 persona', giftRow: '+1 persona cada {c} monedas', giftRowUsd: '+1 persona cada {c} donados', joined: 'se unió a {t}', brought: '¡@{u} trajo {n} personas a {t}!', strong: '¡El forzudo @{u} se une a {t}!', mvpH: 'Mayor apoyo', actH: 'Más activo', newMatch: '¡Nuevo partido! Comenta tu equipo', roundOnly: 'Las personas de los regalos se quedan hasta el final de la ronda.', note: 'Modo simulación: esta página no está conectada a un directo. Todos los eventos aquí son de prueba, creados por ti o por la Demo automática.', obsNote: 'Añádelo como fuente de navegador de 1080 × 1920. Sin conexión, la salida muestra un partido DEMO.', auto: 'Demo automática: espectadores falsos (en el directo aparece DEMO)', sRed: 'Comentar ROJO', sBlue: 'Comentar AZUL', sAny: 'Comentario', sGift: 'Regalo', teamsH: "Equipos", team: "Equipo {n}", tName: "Nombre (vacío = ROJO / AZUL)", tColor: "Color", tKeys: "Palabras extra para unirse, separadas por comas", tHint: "Los espectadores se unen comentando el nombre del equipo, su número (1 o 2) o una palabra extra. Tú eliges nombres y colores; no uses logos sobre los que no tengas derechos.", orNum: "o escribe 1 / 2", cfgH: 'Ajustes del juego', cpp: 'Monedas por persona extra', roundSec: 'Duración de la ronda (segundos)', winR: 'Rondas para ganar' },
+ pt: { cls: 'Partida ao vivo', wait: 'Esperando os dois times… comente VERMELHO ou AZUL!', legendH: 'Entre num time: comente', cmtK: 'Comentário', cmt: 'seu time puxa', likeK: '♥ Curtida', likes: 'mais força', giftK: 'Presente', giftE: 'no mínimo +1 pessoa', giftRow: '+1 pessoa a cada {c} moedas', giftRowUsd: '+1 pessoa a cada {c} doados', joined: 'entrou no {t}', brought: '@{u} trouxe {n} pessoas para o {t}!', strong: 'O fortão @{u} entra no {t}!', mvpH: 'Maior apoiador', actH: 'Mais ativo', newMatch: 'Nova partida! Comente seu time', roundOnly: 'As pessoas dos presentes ficam até o fim da rodada.', note: 'Modo simulação: esta página não está conectada a uma live. Todos os eventos aqui são de teste, criados por você ou pela Demo automática.', obsNote: 'Adicione como fonte de navegador de 1080 × 1920. Sem conexão, a saída mostra uma partida DEMO.', auto: 'Demo automática: espectadores falsos (aparece DEMO na live)', sRed: 'Comentar VERMELHO', sBlue: 'Comentar AZUL', sAny: 'Comentário', sGift: 'Presente', teamsH: "Times", team: "Time {n}", tName: "Nome (vazio = VERMELHO / AZUL)", tColor: "Cor", tKeys: "Palavras extras para entrar, separadas por vírgula", tHint: "Os espectadores entram comentando o nome do time, o número (1 ou 2) ou uma palavra extra. Você escolhe nomes e cores; não use logos sobre os quais você não tem direitos.", orNum: "ou escreva 1 / 2", cfgH: 'Ajustes do jogo', cpp: 'Moedas por pessoa extra', roundSec: 'Duração da rodada (segundos)', winR: 'Rodadas para vencer' },
+ id: { cls: 'Pertandingan live', wait: 'Menunggu kedua tim… komentar MERAH atau BIRU!', legendH: 'Ikut tim: komentar', cmtK: 'Komentar', cmt: 'timmu menarik', likeK: '♥ Suka', likes: 'tambah kekuatan', giftK: 'Hadiah', giftE: 'minimal +1 orang', giftRow: '+1 orang tiap {c} koin', giftRowUsd: '+1 orang tiap donasi {c}', joined: 'bergabung ke {t}', brought: '@{u} membawa {n} orang ke {t}!', strong: 'Si kuat @{u} bergabung ke {t}!', mvpH: 'Pendukung terbesar', actH: 'Paling aktif', newMatch: 'Pertandingan baru! Komentar timmu', roundOnly: 'Orang dari hadiah tetap ada sampai ronde selesai.', note: 'Mode simulasi: halaman ini tidak terhubung ke siaran live. Semua event di sini adalah event uji yang dibuat olehmu atau oleh Demo otomatis.', obsNote: 'Tambahkan sebagai browser source 1080 × 1920. Tanpa koneksi, output menampilkan pertandingan DEMO.', auto: 'Demo otomatis: penonton palsu (di siaran tertulis DEMO)', sRed: 'Komentar MERAH', sBlue: 'Komentar BIRU', sAny: 'Komentar', sGift: 'Hadiah', teamsH: "Tim", team: "Tim {n}", tName: "Nama (kosong = MERAH / BIRU)", tColor: "Warna", tKeys: "Kata tambahan untuk ikut, pisahkan dengan koma", tHint: "Penonton ikut dengan mengomentari nama tim, nomornya (1 atau 2), atau kata tambahan. Nama dan warna tim kamu yang pilih; jangan pakai logo yang bukan hakmu.", orNum: "atau tulis 1 / 2", cfgH: 'Pengaturan game', cpp: 'Koin per orang tambahan', roundSec: 'Lama ronde (detik)', winR: 'Ronde untuk menang' }
 };
 const SRC_TXT = {"en": {"demo": "DEMO", "sim": "SIMULATION", "panelH": "Creator panel", "back": "← Game", "source": "Data source", "srcSim": "Test simulator", "active": "ACTIVE", "srcTT": "TikTok LIVE (official)", "srcTTn": "WAITING FOR PARTNER ACCESS", "simH": "Simulator", "blockH": "Blocked words and users (comma separated)", "obsH": "Stream output for OBS / LIVE Studio", "copy": "Copy", "copied": "Copied!", "logH": "Event queue", "panel": "Panel", "st": {"ok": "APPLIED", "dup": "DUPLICATE", "queue": "QUEUED", "filt": "FILTERED"}, "srcN": {"tikfinity": "TikTok · via TikFinity (beta)", "twitch": "Twitch", "youtube": "YouTube Live", "ssn": "Kick + other platforms · via Social Stream Ninja (beta)"}, "srcH": {"twitch": "Official Twitch chat, free, nothing to install: type your channel name and connect. Bits and subs count as gifts. (Twitch does not send follows to chat.)", "youtube": "Official YouTube API, free. One-time setup: in Google Cloud Console turn on “YouTube Data API v3”, create an API key (restrict it to pickradar.net) and paste it here with your live video link. The free daily quota lasts about 3 hours of streaming. Super Chats, Super Stickers and memberships count as gifts.", "ssn": "For Kick and any other platform: use the free Social Stream Ninja app or browser extension. In its settings under Mechanics turn on “Enable remote API control” and “Send chat messages to API server”, then paste your session ID here. Donations count as gifts. Social Stream Ninja is a third-party tool, not made by us."}, "moneyNote": "Twitch, YouTube and Kick donations are converted to coins: $1 ≈ 75 coins (100 Bits = $1, a sub ≈ $5).", "twCh": "Twitch channel name", "ytKey": "YouTube API key", "ytVid": "Live video link or ID", "ssSess": "Social Stream session ID", "anyGift": "Any gift", "errGen": "CANNOT CONNECT", "needCh": "Type your Twitch channel name first.", "needYt": "Paste your API key and live video link first.", "needSs": "Paste your Social Stream session ID first.", "ytBadKey": "YouTube rejected the key, or today’s free quota is used up.", "ytNoLive": "No active live chat on this video yet. Retrying…", "obsNoteNet": "Add as a browser source at 1080 × 1920. The class reacts to your real chat and donations.", "keyWarn": "This link contains your API key, do not share it.", "liveNote": "Real live data is connected. Simulator buttons still work for testing.", "tfSt": {"off": "OFF", "wait": "CONNECTING…", "on": "CONNECTED", "err": "TIKFINITY NOT FOUND"}, "tfUse": "Connect my LIVE", "tfStop": "Disconnect", "tfHelp": "Free and runs only on your computer: install the TikFinity desktop app, log in with your TikTok account and keep it open while you are LIVE. This page reads your stream events from it (ws://localhost:21213). No keys, nothing passes through our servers. TikFinity is a third-party tool, not made by TikTok or by us.", "tfPerm": "If Chrome asks for “local network access”, click Allow.", "obsNoteTF": "Add as a browser source at 1080 × 1920 on the same computer where TikFinity is running. The class reacts to your real comments, likes and gifts.", "sFollow": "Follow"}, "tr": {"demo": "DEMO", "sim": "SİMÜLASYON", "panelH": "Yayıncı paneli", "back": "← Oyun", "source": "Veri kaynağı", "srcSim": "Test simülatörü", "active": "AKTİF", "srcTT": "TikTok LIVE (resmî)", "srcTTn": "PARTNER ONAYI BEKLENİYOR", "simH": "Simülatör", "blockH": "Engelli kelimeler ve kullanıcılar (virgülle)", "obsH": "OBS / LIVE Studio yayın çıktısı", "copy": "Kopyala", "copied": "Kopyalandı!", "logH": "Olay kuyruğu", "panel": "Panel", "st": {"ok": "UYGULANDI", "dup": "TEKRAR", "queue": "SIRADA", "filt": "FİLTRE"}, "srcN": {"tikfinity": "TikTok · TikFinity ile (beta)", "twitch": "Twitch", "youtube": "YouTube Live", "ssn": "Kick + diğer platformlar · Social Stream Ninja ile (beta)"}, "srcH": {"twitch": "Resmî Twitch sohbeti, ücretsiz, kurulum yok: kanal adını yaz ve bağla. Bits ve abonelikler hediye sayılır. (Twitch takipleri sohbete göndermez.)", "youtube": "Resmî YouTube API’si, ücretsiz. Tek seferlik kurulum: Google Cloud Console’da “YouTube Data API v3”ü aç, bir API anahtarı oluştur (pickradar.net ile sınırla) ve canlı yayın linkinle birlikte buraya yapıştır. Ücretsiz günlük kota yaklaşık 3 saatlik yayına yeter. Süper Sohbet, Süper Çıkartma ve kanal üyelikleri hediye sayılır.", "ssn": "Kick ve diğer tüm platformlar için: ücretsiz Social Stream Ninja uygulamasını ya da tarayıcı eklentisini kullan. Ayarlarında Mechanics bölümünden “Enable remote API control” ve “Send chat messages to API server” seçeneklerini aç, sonra oturum ID’ni buraya yapıştır. Bağışlar hediye sayılır. Social Stream Ninja üçüncü taraf bir araçtır; biz yapmadık."}, "moneyNote": "Twitch, YouTube ve Kick bağışları jetona çevrilir: 1 $ ≈ 75 jeton (100 Bits = 1 $, bir abonelik ≈ 5 $).", "twCh": "Twitch kanal adı", "ytKey": "YouTube API anahtarı", "ytVid": "Canlı yayın linki veya ID", "ssSess": "Social Stream oturum ID", "anyGift": "Her hediye", "errGen": "BAĞLANAMADI", "needCh": "Önce Twitch kanal adını yaz.", "needYt": "Önce API anahtarını ve canlı yayın linkini yapıştır.", "needSs": "Önce Social Stream oturum ID’ni yapıştır.", "ytBadKey": "YouTube anahtarı kabul etmedi ya da bugünkü ücretsiz kota doldu.", "ytNoLive": "Bu videoda henüz aktif canlı sohbet yok. Tekrar deneniyor…", "obsNoteNet": "1080 × 1920 tarayıcı kaynağı olarak ekle. Sınıf gerçek sohbetine ve bağışlarına tepki verir.", "keyWarn": "Bu link API anahtarını içerir, kimseyle paylaşma.", "liveNote": "Gerçek canlı yayın verisi bağlı. Simülatör düğmeleri test için yine çalışır.", "tfSt": {"off": "KAPALI", "wait": "BAĞLANIYOR…", "on": "BAĞLANDI", "err": "TIKFINITY BULUNAMADI"}, "tfUse": "Yayınımı bağla", "tfStop": "Bağlantıyı kes", "tfHelp": "Ücretsiz ve yalnızca senin bilgisayarında çalışır: TikFinity masaüstü uygulamasını kur, TikTok hesabınla giriş yap ve yayın boyunca açık tut. Bu sayfa yayın olaylarını oradan okur (ws://localhost:21213). Anahtar yok, hiçbir veri bizim sunucumuzdan geçmez. TikFinity üçüncü taraf bir araçtır; TikTok ya da biz yapmadık.", "tfPerm": "Chrome “yerel ağ erişimi” izni sorarsa İzin ver’e bas.", "obsNoteTF": "TikFinity’nin açık olduğu aynı bilgisayarda 1080 × 1920 tarayıcı kaynağı olarak ekle. Sınıf gerçek yorumlarına, beğenilerine ve hediyelerine tepki verir.", "sFollow": "Takip"}, "es": {"demo": "DEMO", "sim": "SIMULACIÓN", "panelH": "Panel del creador", "back": "← Juego", "source": "Fuente de datos", "srcSim": "Simulador de prueba", "active": "ACTIVO", "srcTT": "TikTok LIVE (oficial)", "srcTTn": "ESPERANDO ACCESO DE SOCIO", "simH": "Simulador", "blockH": "Palabras y usuarios bloqueados (separados por comas)", "obsH": "Salida del directo para OBS / LIVE Studio", "copy": "Copiar", "copied": "¡Copiado!", "logH": "Cola de eventos", "panel": "Panel", "st": {"ok": "APLICADO", "dup": "DUPLICADO", "queue": "EN COLA", "filt": "FILTRADO"}, "srcN": {"tikfinity": "TikTok · con TikFinity (beta)", "twitch": "Twitch", "youtube": "YouTube Live", "ssn": "Kick + otras plataformas · con Social Stream Ninja (beta)"}, "srcH": {"twitch": "Chat oficial de Twitch, gratis, sin instalar nada: escribe el nombre de tu canal y conecta. Los Bits y las suscripciones cuentan como regalos. (Twitch no envía los follows al chat.)", "youtube": "API oficial de YouTube, gratis. Configuración única: en Google Cloud Console activa “YouTube Data API v3”, crea una clave de API (restríngela a pickradar.net) y pégala aquí con el enlace de tu directo. La cuota diaria gratuita alcanza para unas 3 horas de directo. Super Chats, Super Stickers y membresías cuentan como regalos.", "ssn": "Para Kick y cualquier otra plataforma: usa la app o extensión gratuita Social Stream Ninja. En su configuración, en Mechanics, activa “Enable remote API control” y “Send chat messages to API server” y pega aquí tu ID de sesión. Las donaciones cuentan como regalos. Social Stream Ninja es una herramienta de terceros, no la hicimos nosotros."}, "moneyNote": "Las donaciones de Twitch, YouTube y Kick se convierten en monedas: 1 $ ≈ 75 monedas (100 Bits = 1 $, una suscripción ≈ 5 $).", "twCh": "Nombre del canal de Twitch", "ytKey": "Clave de API de YouTube", "ytVid": "Enlace o ID del directo", "ssSess": "ID de sesión de Social Stream", "anyGift": "Cualquier regalo", "errGen": "NO SE PUEDE CONECTAR", "needCh": "Escribe primero el nombre de tu canal de Twitch.", "needYt": "Pega primero tu clave de API y el enlace del directo.", "needSs": "Pega primero tu ID de sesión de Social Stream.", "ytBadKey": "YouTube rechazó la clave o la cuota gratuita de hoy se agotó.", "ytNoLive": "Este vídeo aún no tiene chat en directo activo. Reintentando…", "obsNoteNet": "Añádelo como fuente de navegador de 1080 × 1920. La clase reacciona a tu chat y donaciones reales.", "keyWarn": "Este enlace contiene tu clave de API, no lo compartas.", "liveNote": "Datos reales del directo conectados. Los botones del simulador siguen funcionando para pruebas.", "tfSt": {"off": "APAGADO", "wait": "CONECTANDO…", "on": "CONECTADO", "err": "TIKFINITY NO ENCONTRADO"}, "tfUse": "Conectar mi LIVE", "tfStop": "Desconectar", "tfHelp": "Gratis y solo en tu ordenador: instala la app de escritorio TikFinity, inicia sesión con tu cuenta de TikTok y mantenla abierta durante el directo. Esta página lee los eventos de tu directo desde ella (ws://localhost:21213). Sin claves; nada pasa por nuestros servidores. TikFinity es una herramienta de terceros, no la hizo TikTok ni nosotros.", "tfPerm": "Si Chrome pide «acceso a la red local», pulsa Permitir.", "obsNoteTF": "Añádelo como fuente de navegador de 1080 × 1920 en el mismo ordenador donde está abierto TikFinity. La clase reacciona a tus comentarios, me gusta y regalos reales.", "sFollow": "Seguir"}, "pt": {"demo": "DEMO", "sim": "SIMULAÇÃO", "panelH": "Painel do criador", "back": "← Jogo", "source": "Fonte de dados", "srcSim": "Simulador de teste", "active": "ATIVO", "srcTT": "TikTok LIVE (oficial)", "srcTTn": "AGUARDANDO ACESSO DE PARCEIRO", "simH": "Simulador", "blockH": "Palavras e usuários bloqueados (separados por vírgula)", "obsH": "Saída da live para OBS / LIVE Studio", "copy": "Copiar", "copied": "Copiado!", "logH": "Fila de eventos", "panel": "Painel", "st": {"ok": "APLICADO", "dup": "DUPLICADO", "queue": "NA FILA", "filt": "FILTRADO"}, "srcN": {"tikfinity": "TikTok · com TikFinity (beta)", "twitch": "Twitch", "youtube": "YouTube Live", "ssn": "Kick + outras plataformas · com Social Stream Ninja (beta)"}, "srcH": {"twitch": "Chat oficial da Twitch, grátis, sem instalar nada: digite o nome do seu canal e conecte. Bits e inscrições contam como presentes. (A Twitch não envia follows para o chat.)", "youtube": "API oficial do YouTube, grátis. Configuração única: no Google Cloud Console ative a “YouTube Data API v3”, crie uma chave de API (restrinja a pickradar.net) e cole aqui com o link da sua live. A cota diária grátis dá para cerca de 3 horas de live. Super Chats, Super Stickers e assinaturas de canal contam como presentes.", "ssn": "Para Kick e qualquer outra plataforma: use o app ou a extensão gratuita Social Stream Ninja. Nas configurações, em Mechanics, ative “Enable remote API control” e “Send chat messages to API server” e cole aqui o seu ID de sessão. Doações contam como presentes. Social Stream Ninja é uma ferramenta de terceiros, não foi feita por nós."}, "moneyNote": "Doações da Twitch, YouTube e Kick viram moedas: US$ 1 ≈ 75 moedas (100 Bits = US$ 1, uma inscrição ≈ US$ 5).", "twCh": "Nome do canal da Twitch", "ytKey": "Chave de API do YouTube", "ytVid": "Link ou ID da live", "ssSess": "ID de sessão do Social Stream", "anyGift": "Qualquer presente", "errGen": "NÃO FOI POSSÍVEL CONECTAR", "needCh": "Digite primeiro o nome do seu canal da Twitch.", "needYt": "Cole primeiro sua chave de API e o link da live.", "needSs": "Cole primeiro seu ID de sessão do Social Stream.", "ytBadKey": "O YouTube recusou a chave ou a cota grátis de hoje acabou.", "ytNoLive": "Este vídeo ainda não tem chat ao vivo ativo. Tentando de novo…", "obsNoteNet": "Adicione como fonte de navegador de 1080 × 1920. A turma reage ao seu chat e às doações reais.", "keyWarn": "Este link contém sua chave de API, não compartilhe.", "liveNote": "Dados reais da live conectados. Os botões do simulador continuam funcionando para testes.", "tfSt": {"off": "DESLIGADO", "wait": "CONECTANDO…", "on": "CONECTADO", "err": "TIKFINITY NÃO ENCONTRADO"}, "tfUse": "Conectar minha LIVE", "tfStop": "Desconectar", "tfHelp": "Grátis e só no seu computador: instale o app de desktop TikFinity, entre com sua conta do TikTok e deixe-o aberto durante a live. Esta página lê os eventos da sua live a partir dele (ws://localhost:21213). Sem chaves; nada passa pelos nossos servidores. TikFinity é uma ferramenta de terceiros, não foi feita pelo TikTok nem por nós.", "tfPerm": "Se o Chrome pedir “acesso à rede local”, clique em Permitir.", "obsNoteTF": "Adicione como fonte de navegador de 1080 × 1920 no mesmo computador em que o TikFinity está aberto. A turma reage aos seus comentários, curtidas e presentes reais.", "sFollow": "Seguir"}, "id": {"demo": "DEMO", "sim": "SIMULASI", "panelH": "Panel kreator", "back": "← Game", "source": "Sumber data", "srcSim": "Simulator uji", "active": "AKTIF", "srcTT": "TikTok LIVE (resmi)", "srcTTn": "MENUNGGU AKSES PARTNER", "simH": "Simulator", "blockH": "Kata dan pengguna yang diblokir (pisahkan dengan koma)", "obsH": "Output siaran untuk OBS / LIVE Studio", "copy": "Salin", "copied": "Tersalin!", "logH": "Antrean event", "panel": "Panel", "st": {"ok": "DITERAPKAN", "dup": "DUPLIKAT", "queue": "ANTRE", "filt": "DISARING"}, "srcN": {"tikfinity": "TikTok · lewat TikFinity (beta)", "twitch": "Twitch", "youtube": "YouTube Live", "ssn": "Kick + platform lain · lewat Social Stream Ninja (beta)"}, "srcH": {"twitch": "Chat Twitch resmi, gratis, tanpa instalasi: ketik nama channel-mu lalu hubungkan. Bits dan langganan dihitung sebagai hadiah. (Twitch tidak mengirim follow ke chat.)", "youtube": "API YouTube resmi, gratis. Pengaturan sekali saja: di Google Cloud Console aktifkan “YouTube Data API v3”, buat API key (batasi ke pickradar.net) lalu tempel di sini bersama link live-mu. Kuota harian gratis cukup untuk sekitar 3 jam siaran. Super Chat, Super Sticker, dan keanggotaan dihitung sebagai hadiah.", "ssn": "Untuk Kick dan platform lainnya: pakai aplikasi atau ekstensi gratis Social Stream Ninja. Di pengaturannya, bagian Mechanics, nyalakan “Enable remote API control” dan “Send chat messages to API server”, lalu tempel session ID-mu di sini. Donasi dihitung sebagai hadiah. Social Stream Ninja adalah alat pihak ketiga, bukan buatan kami."}, "moneyNote": "Donasi Twitch, YouTube, dan Kick diubah jadi koin: $1 ≈ 75 koin (100 Bits = $1, satu langganan ≈ $5).", "twCh": "Nama channel Twitch", "ytKey": "API key YouTube", "ytVid": "Link atau ID video live", "ssSess": "Session ID Social Stream", "anyGift": "Hadiah apa pun", "errGen": "TIDAK BISA TERHUBUNG", "needCh": "Ketik dulu nama channel Twitch-mu.", "needYt": "Tempel dulu API key dan link video live-mu.", "needSs": "Tempel dulu session ID Social Stream-mu.", "ytBadKey": "YouTube menolak key ini, atau kuota gratis hari ini sudah habis.", "ytNoLive": "Video ini belum punya live chat aktif. Mencoba lagi…", "obsNoteNet": "Tambahkan sebagai browser source 1080 × 1920. Kelas bereaksi pada chat dan donasi aslimu.", "keyWarn": "Link ini berisi API key-mu, jangan dibagikan.", "liveNote": "Data live asli terhubung. Tombol simulator tetap bisa dipakai untuk uji.", "tfSt": {"off": "MATI", "wait": "MENGHUBUNGKAN…", "on": "TERHUBUNG", "err": "TIKFINITY TIDAK DITEMUKAN"}, "tfUse": "Hubungkan LIVE-ku", "tfStop": "Putuskan", "tfHelp": "Gratis dan hanya berjalan di komputermu: pasang aplikasi desktop TikFinity, masuk dengan akun TikTok-mu dan biarkan terbuka selama LIVE. Halaman ini membaca event siaranmu dari sana (ws://localhost:21213). Tanpa kunci; tidak ada data yang lewat server kami. TikFinity adalah alat pihak ketiga, bukan buatan TikTok atau kami.", "tfPerm": "Jika Chrome meminta “akses jaringan lokal”, klik Izinkan.", "obsNoteTF": "Tambahkan sebagai browser source 1080 × 1920 di komputer yang sama tempat TikFinity terbuka. Kelas bereaksi pada komentar, suka, dan hadiah aslimu.", "sFollow": "Ikuti"}};
 // team keywords work in every language, so mixed audiences can join
@@ -55,7 +55,22 @@ function mount(host, opts) {
  };
  const el = (tag, cls, html) => { const e = document.createElement(tag); if (cls) e.className = cls; if (html != null) e.innerHTML = html; return e; };
  const esc = s => String(s).replace(/[&<>"]/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[c]));
- const TN = t => t === 'r' ? L.red : L.blue;
+ const DEF_CFG = { cpp: 20, roundSec: 60, winR: 2, block: '', nR: '', nB: '', cR: COL.r, cB: COL.b, kR: '', kB: '' };
+ let CFG = Object.assign({}, DEF_CFG, live ? store.get('livecfg', {}) : {});
+ try { const c = QS.get('cfg'); if (c && live) CFG = Object.assign({}, DEF_CFG, JSON.parse(decodeURIComponent(escape(atob(c))))); } catch (e) { }
+ // team names and colours: the streamer can rename the teams (any two names) and pick their colours
+ const tname = t => String((t === 'r' ? CFG.nR : CFG.nB) || '').replace(/[<>]/g, '').trim().slice(0, 16);
+ const TN = t => { const n = live ? tname(t) : ''; return n ? n.toLocaleUpperCase(lang) : t === 'r' ? L.red : L.blue; };
+ const hexOk = h => /^#[0-9a-f]{6}$/i.test(String(h || ''));
+ const shade = (h, f) => '#' + [1, 3, 5].map(i => Math.round(parseInt(h.substr(i, 2), 16) * f).toString(16).padStart(2, '0')).join('');
+ const lum = h => { const [r, g, b] = [1, 3, 5].map(i => parseInt(h.substr(i, 2), 16) / 255); return .2126 * r + .7152 * g + .0722 * b; };
+ const TC = {};
+ function teamColors() {
+  TC.r = live && hexOk(CFG.cR) ? CFG.cR : COL.r; TC.b = live && hexOk(CFG.cB) ? CFG.cB : COL.b;
+  for (const t of ['r', 'b']) { TC[t + 'D'] = lum(TC[t]) > .62 ? shade(TC[t], .55) : shade(TC[t], .74); TC[t + 'T'] = lum(TC[t]) > .62 ? '#1e2235' : '#ffffff'; }
+  for (const k of ['r', 'b', 'rD', 'bD', 'rT', 'bT']) host.style.setProperty('--rr-' + k, TC[k]);
+ }
+ teamColors();
 
  /* ---------- styles ---------- */
  const css = document.createElement('style');
@@ -64,33 +79,33 @@ function mount(host, opts) {
 .rr canvas{display:block;width:100%;height:100%;outline:none}
 .rr-ui,.rr-labels{position:absolute;inset:0;pointer-events:none}
 .rr-np{position:absolute;transform:translate(-50%,-100%);white-space:nowrap;padding:1px 7px;border-radius:9px;color:#fff;font:800 11px system-ui,sans-serif;box-shadow:0 2px 0 rgba(0,0,0,.25)}
-.rr-np.r{background:${COL.r}}.rr-np.b{background:${COL.b}}.rr-np.big{font-size:13px;padding:2px 9px;background:#ffc93c;color:#1e2235}
+.rr-np.r{background:var(--rr-r);color:var(--rr-rT)}.rr-np.b{background:var(--rr-b);color:var(--rr-bT)}.rr-np.big{font-size:13px;padding:2px 9px;background:#ffc93c;color:#1e2235}
 .rr-score{position:absolute;left:10px;right:10px;top:10px;display:grid;grid-template-columns:1fr auto 1fr;align-items:center;gap:6px;padding:6px 10px;border-radius:16px;background:rgba(255,247,232,.95);box-shadow:0 4px 0 rgba(0,0,0,.18)}
 .rr-score .t{display:flex;align-items:center;gap:6px;font-weight:800;font-size:17px;line-height:1;min-width:0}
 .rr-score .t span{overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
 .rr-score .t.b{justify-content:flex-end}
-.rr-score .t.r span{color:${COL.rD}}.rr-score .t.b span{color:${COL.bD}}
+.rr-score .t.r span{color:var(--rr-rD)}.rr-score .t.b span{color:var(--rr-bD)}
 .rr-score i{flex:none;width:11px;height:11px;border-radius:50%;background:#e2d8c6;display:inline-block}
-.rr-score .t.r i.on{background:${COL.r}}.rr-score .t.b i.on{background:${COL.b}}
+.rr-score .t.r i.on{background:var(--rr-r)}.rr-score .t.b i.on{background:var(--rr-b)}
 .rr-score .c{text-align:center;font:800 12px system-ui,sans-serif;letter-spacing:.5px;color:#1f5e55}
 .rr-score .c b{display:block;font:800 20px 'Baloo 2',system-ui,sans-serif;color:#1e2235;line-height:1}
 .rr-pow{position:absolute;left:10px;right:10px;top:70px;height:24px;border-radius:12px;overflow:hidden;display:flex;box-shadow:0 3px 0 rgba(0,0,0,.18);background:#e2d8c6}
 .rr-pow div{display:flex;align-items:center;font:800 12px system-ui,sans-serif;color:#fff;white-space:nowrap;transition:width .25s}
-.rr-pow .r{background:linear-gradient(90deg,${COL.rD},${COL.r});padding-left:9px}
-.rr-pow .b{background:linear-gradient(90deg,${COL.b},${COL.bD});justify-content:flex-end;padding-right:9px}
+.rr-pow .r{background:linear-gradient(90deg,var(--rr-rD),var(--rr-r));padding-left:9px;color:var(--rr-rT)}
+.rr-pow .b{background:linear-gradient(90deg,var(--rr-b),var(--rr-bD));justify-content:flex-end;padding-right:9px;color:var(--rr-bT)}
 .rr-big{position:absolute;left:0;right:0;top:40%;text-align:center;font-weight:800;font-size:64px;line-height:1;color:#fff7e8;text-shadow:0 5px 0 #1e2235,0 0 18px rgba(0,0,0,.25);transition:opacity .25s,transform .25s;pointer-events:none}
 .rr-big.off{opacity:0;transform:scale(.7)}
 .rr-big small{display:block;font-size:22px;margin-top:6px;text-shadow:0 3px 0 #1e2235}
 .rr-ban{position:absolute;left:10px;right:10px;top:104px;padding:8px 12px;border-radius:14px;background:#1e2235;color:#fff7e8;box-shadow:0 4px 0 rgba(0,0,0,.3);transition:opacity .3s,transform .3s}
 .rr-ban.off{opacity:0;transform:translateY(-8px)}
 .rr-ban b{display:block;font-size:18px;line-height:1.15}
-.rr-ban.r{background:linear-gradient(90deg,${COL.rD},${COL.r})}.rr-ban.b{background:linear-gradient(90deg,${COL.bD},${COL.b})}.rr-ban.gold{background:linear-gradient(90deg,#b5461f,#f2a23a)}
+.rr-ban.r{background:linear-gradient(90deg,var(--rr-rD),var(--rr-r));color:var(--rr-rT)}.rr-ban.b{background:linear-gradient(90deg,var(--rr-bD),var(--rr-b));color:var(--rr-bT)}.rr-ban.gold{background:linear-gradient(90deg,#b5461f,#f2a23a)}
 .rr-btn{pointer-events:auto;border:0;border-radius:14px;padding:12px 22px;font:800 18px 'Baloo 2',system-ui,sans-serif;background:#ffc93c;color:#1e2235;cursor:pointer;box-shadow:0 5px 0 #b5461f;text-decoration:none;display:inline-block}
 .rr-btn:active{transform:translateY(3px);box-shadow:0 2px 0 #b5461f}
 .rr-btn.g{background:#fff7e8;box-shadow:0 5px 0 #8e99b8}
 .rr-ov{position:absolute;inset:0;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:12px;padding:18px;text-align:center;background:rgba(14,22,40,.55);pointer-events:auto}
 .rr-ov[hidden]{display:none}
-.rr-ov h2{margin:0;font-weight:800;font-size:54px;line-height:.85;color:#fff7e8;text-shadow:0 5px 0 ${COL.rD}}
+.rr-ov h2{margin:0;font-weight:800;font-size:54px;line-height:.85;color:#fff7e8;text-shadow:0 5px 0 #b5321f}
 .rr-ov h2 span{display:block;color:#ffc93c;font-size:.62em;text-shadow:0 4px 0 #1f5e55;margin-top:6px}
 .rr-ov p{margin:0;max-width:440px;color:#fff7e8;font:600 15px/1.4 system-ui,sans-serif}
 .rr-ov .row{display:flex;gap:10px;flex-wrap:wrap;justify-content:center}
@@ -163,8 +178,9 @@ function mount(host, opts) {
  ground.rotation.x = -Math.PI / 2; ground.castShadow = false;
  // chalk court
  const chalk = MB('#f6f3ea');
+ const TM = { r: new T3.MeshStandardMaterial({ color: TC.r, roughness: .6 }), b: new T3.MeshStandardMaterial({ color: TC.b, roughness: .6 }), rD: new T3.MeshStandardMaterial({ color: TC.rD, roughness: .7 }), bD: new T3.MeshStandardMaterial({ color: TC.bD, roughness: .7 }), lr: new T3.MeshBasicMaterial({ color: TC.r }), lb: new T3.MeshBasicMaterial({ color: TC.b }) };
  for (const z of [-2.1, 2.1]) mesh(G.box, chalk, 0, .012, z, 17, .01, .07, null, false);
- for (const s of [-1, 1]) { mesh(G.box, chalk, s * 8.5, .012, 0, .07, .01, 4.2, null, false); mesh(G.box, MB(s < 0 ? COL.r : COL.b), s * LINE, .016, 0, .14, .01, 3.2, null, false); }
+ for (const s of [-1, 1]) { mesh(G.box, chalk, s * 8.5, .012, 0, .07, .01, 4.2, null, false); mesh(G.box, s < 0 ? TM.lr : TM.lb, s * LINE, .016, 0, .14, .01, 3.2, null, false); }
  // mud pit
  const mudTex = canvasTex(256, 256, (c, w, h) => {
   c.fillStyle = '#6b4226'; c.fillRect(0, 0, w, h);
@@ -176,7 +192,7 @@ function mount(host, opts) {
  // line posts with flags
  for (const s of [-1, 1]) for (const z of [-2.3, 2.3]) {
   mesh(G.cyl, M('#f6f3ea', .5), s * LINE, .55, z, .04, 1.1, .04);
-  const f = mesh(G.box, M(s < 0 ? COL.r : COL.b, .6), s * LINE + s * .2, .98, z, .38, .24, .02); f.castShadow = true;
+  const f = mesh(G.box, s < 0 ? TM.r : TM.b, s * LINE + s * .2, .98, z, .38, .24, .02); f.castShadow = true;
  }
  // scenery: trees, fence, team banners
  const trunk = M('#8a5a3b', .8), leaf = [M('#3e9e5c', .8), M('#4fb06a', .8), M('#2f8a4e', .8)];
@@ -189,14 +205,14 @@ function mount(host, opts) {
   const x = s * (10.5 + (i % 2) * 1.6 + ((i * 31) % 5) * .2), z = -5 + i * 1.7, sc = .8 + ((i * 17) % 5) * .1;
   mesh(G.cyl, trunk, x, .6 * sc, z, .14 * sc, 1.2 * sc, .14 * sc); mesh(G.sph, leaf[i % 3], x, 1.7 * sc, z, .95 * sc, 1.05 * sc, .95 * sc);
  }
- for (const s of [-1, 1]) for (const z of [-1.2, 1.2]) { mesh(G.cyl, M('#f6f3ea', .5), s * 9.3, 1.1, z, .05, 2.2, .05); mesh(G.box, M(s < 0 ? COL.r : COL.b, .7), s * 9.3, 1.9, z + .45, .03, .55, .9); }
+ for (const s of [-1, 1]) for (const z of [-1.2, 1.2]) { mesh(G.cyl, M('#f6f3ea', .5), s * 9.3, 1.1, z, .05, 2.2, .05); mesh(G.box, s < 0 ? TM.r : TM.b, s * 9.3, 1.9, z + .45, .03, .55, .9); }
  const fenceM = M('#f2e4c9', .7);
  for (let i = -12; i <= 12; i++) mesh(G.box, fenceM, i, .4, -4.2, .08, .8, .08);
  for (const y of [.3, .6]) mesh(G.box, fenceM, 0, y, -4.2, 24.2, .07, .05);
  for (const s of [-1, 1]) for (let i = 0; i < 3; i++) {
   const x = s * (4 + i * 2.4);
   mesh(G.cyl, M('#f6f3ea', .5), x, 1.3, -4.6, .05, 2.6, .05);
-  mesh(G.box, M(i % 2 ? (s < 0 ? COL.rD : COL.bD) : (s < 0 ? COL.r : COL.b), .7), x + s * .45, 2.2, -4.6, .9, .55, .03);
+  mesh(G.box, i % 2 ? (s < 0 ? TM.rD : TM.bD) : (s < 0 ? TM.r : TM.b), x + s * .45, 2.2, -4.6, .9, .55, .03);
  }
 
  // rope + ribbon
@@ -219,7 +235,7 @@ function mount(host, opts) {
  const hash = s => { let h = 2166136261; s = String(s); for (let i = 0; i < s.length; i++) { h ^= s.charCodeAt(i); h = Math.imul(h, 16777619); } return h >>> 0; };
  function makeChar(team, seed, strong) {
   const h = hash(seed), R = .3;
-  const skinC = pick(LOOK.skin, h, 0), skin = M(skinC, .55), shirt = M(strong ? (team === 'r' ? COL.rD : COL.bD) : COL[team], .7), shorts = M('#2b2b36', .7);
+  const skinC = pick(LOOK.skin, h, 0), skin = M(skinC, .55), shirt = M(strong ? TC[team + 'D'] : TC[team], .7), shorts = M('#2b2b36', .7);
   const root = new T3.Group(), hips = new T3.Group(); hips.position.y = .78; root.add(hips);
   const body = new T3.Group(); hips.add(body);
   const torso = mesh(G.sph, shirt, 0, .3, 0, strong ? .3 : .23, .34, strong ? .22 : .18, body);
@@ -248,13 +264,13 @@ function mount(host, opts) {
   mouths.smile.rotation.z = Math.PI;
   // hair / headband in team colour so teams read at a glance
   const style = pick(LOOK.hair, h, 5), hm = M(pick(LOOK.hairC, h, 9), .55);
-  if (style !== 'bald') { const cap = mesh(new T3.SphereGeometry(1, 22, 12, 0, TAU, 0, 1.6), style === 'cap' ? M(COL[team], .6) : hm, 0, .03 * R, -.03 * R, R * 1.07, R * 1.07, R * 1.07, head); cap.rotation.x = -.6; }
+  if (style !== 'bald') { const cap = mesh(new T3.SphereGeometry(1, 22, 12, 0, TAU, 0, 1.6), style === 'cap' ? M(TC[team], .6) : hm, 0, .03 * R, -.03 * R, R * 1.07, R * 1.07, R * 1.07, head); cap.rotation.x = -.6; }
   if (style === 'spiky') for (let i = 0; i < 5; i++) { const c = mesh(G.cone, hm, (i - 2) * .12 * R, .95 * R, -.15 * R, .14 * R, .35 * R, .14 * R, head); c.rotation.z = (i - 2) * -.25; }
   if (style === 'pony') mesh(G.sph, hm, 0, .1 * R, -1.05 * R, .28 * R, .6 * R, .28 * R, head);
   if (style === 'buns') for (const s of [-1, 1]) mesh(G.sph, hm, s * .62 * R, .78 * R, -.1 * R, .32 * R, .32 * R, .32 * R, head);
   if (style === 'afro') mesh(G.sph, hm, 0, .25 * R, -.12 * R, R * 1.25, R * 1.1, R * 1.2, head);
-  if (style === 'cap') mesh(G.cyl, M(COL[team], .6), 0, .35 * R, .95 * R, .5 * R, .05 * R, .45 * R, head);
-  if (style !== 'cap') { const band = mesh(G.torus, M(COL[team], .5), 0, .38 * R, 0, R * 1.03, R * 1.03, R * 1.03, head); band.rotation.x = Math.PI / 2 - .25; }
+  if (style === 'cap') mesh(G.cyl, M(TC[team], .6), 0, .35 * R, .95 * R, .5 * R, .05 * R, .45 * R, head);
+  if (style !== 'cap') { const band = mesh(G.torus, M(TC[team], .5), 0, .38 * R, 0, R * 1.03, R * 1.03, R * 1.03, head); band.rotation.x = Math.PI / 2 - .25; }
   // arms
   const arms = [];
   for (const s of [-1, 1]) {
@@ -271,7 +287,7 @@ function mount(host, opts) {
    const hp = new T3.Group(); hp.position.set(s * .1, 0, 0); hips.add(hp);
    mesh(capG(.08, .2), skin, 0, -.17, 0, 1, 1, 1, hp);
    const kn = new T3.Group(); kn.position.y = -.38; hp.add(kn);
-   mesh(capG(.068, .18), M(COL[team], .7), 0, -.14, 0, 1, 1, 1, kn);
+   mesh(capG(.068, .18), M(TC[team], .7), 0, -.14, 0, 1, 1, 1, kn);
    mesh(G.sph, M('#f6f3ea', .5), 0, -.33, .05, .08, .06, .13, kn);
    legs.push({ hp, kn });
   }
@@ -358,7 +374,7 @@ function mount(host, opts) {
   }
  }
  function confetti(team) {
-  const mats = [M(COL[team], .5), M('#ffc93c', .5), M('#ffffff', .5)];
+  const mats = [M(TC[team], .5), M('#ffc93c', .5), M('#ffffff', .5)];
   for (let i = 0; i < 60; i++) {
    const p = mesh(G.box, mats[i % 3], (team === 'r' ? -1 : 1) * (2 + Math.random() * 4), 3 + Math.random() * 2, (Math.random() - .5) * 3, .08, .02, .12, null, false);
    p.userData = { v: new T3.Vector3((Math.random() - .5) * 2, Math.random() * 2, (Math.random() - .5) * 2), t: 3.5, spin: Math.random() * 8 };
@@ -400,8 +416,8 @@ function mount(host, opts) {
  function bigText(txt, sub, dur) { big.innerHTML = esc(txt) + (sub ? `<small>${esc(sub)}</small>` : ''); big.className = 'rr-big'; bigT = dur || 1; }
  function renderScore() {
   const n = CFGW(), dots = t => Array.from({ length: n }, (_, i) => `<i class="${i < st.wins[t] ? 'on' : ''}"></i>`).join('');
-  score.querySelector('.t.r span').textContent = live ? L.red : L.you;
-  score.querySelector('.t.b span').textContent = live ? L.blue : L.cpu;
+  score.querySelector('.t.r span').textContent = live ? TN('r') : L.you;
+  score.querySelector('.t.b span').textContent = live ? TN('b') : L.cpu;
   score.querySelector('.t.r em').innerHTML = dots('r'); score.querySelector('.t.b em').innerHTML = dots('b');
   score.querySelector('.c span').textContent = fmt(L.round, { n: st.round });
  }
@@ -608,9 +624,6 @@ function mount(host, opts) {
  const LV = Object.assign({}, SRC_TXT.en, SRC_TXT[lang]);
  const LVR = Object.assign({}, LIVE_RR.en, LIVE_RR[lang]);
  Object.assign(LV, LVR);
- const DEF_CFG = { cpp: 20, roundSec: 60, winR: 2, block: '' };
- let CFG = Object.assign({}, DEF_CFG, store.get('livecfg', {}));
- try { const c = QS.get('cfg'); if (c) CFG = Object.assign({}, DEF_CFG, JSON.parse(decodeURIComponent(escape(atob(c))))); } catch (e) { }
  const SAVED = clean ? {} : store.get('livesrc', {});
  const SRC = { kind: 'sim', on: false, ws: null, st: 'off', msg: '', retry: 0, t: null, n: 0, gen: 0,
   opt: { port: Math.round(+QS.get('port')) || 21213, ch: QS.get('ch') || SAVED.ch || '', yk: QS.get('yk') || SAVED.yk || '', yv: QS.get('yv') || SAVED.yv || '', ss: QS.get('ss') || SAVED.ss || '' } };
@@ -628,11 +641,18 @@ function mount(host, opts) {
  const isCoins = () => SRC.kind === 'sim' || SRC.kind === 'tikfinity';
 
  // which team does a comment ask for?
+ const norm = x => String(x || '').toLocaleLowerCase('tr').normalize('NFKD').replace(/[\u0300-\u036f]/g, '').replace(/ı/g, 'i').toLowerCase();
+ function keyList(k) {
+  // default teams: colour words in every language; renamed teams: the words of the name + the streamer's extra words
+  const name = tname(k), extra = String((k === 'r' ? CFG.kR : CFG.kB) || '').split(',').map(x => norm(x).trim()).filter(Boolean);
+  const base = name ? norm(name).split(/[^a-z0-9]+/).filter(w => w.length >= 3) : WORDS[k].map(norm);
+  return base.concat(extra);
+ }
  function teamWord(text) {
-  const t = String(text || '').toLowerCase().normalize('NFKD').replace(/[̀-ͯ]/g, '').replace(/ı/g, 'i');
+  const t = norm(text);
   const raw = String(text || '');
-  const words = t.split(/[^a-z0-9]+/).filter(Boolean);
-  const has = k => WORDS[k].some(w => words.includes(w.normalize('NFKD').replace(/[̀-ͯ]/g, '').replace(/ı/g, 'i'))) || EMO[k].some(e => raw.includes(e));
+  const words = t.split(/[^a-z0-9]+/).filter(Boolean), flat = ' ' + words.join(' ') + ' ';
+  const has = k => keyList(k).some(w => /[^a-z0-9]/.test(w) ? flat.includes(' ' + w.split(/[^a-z0-9]+/).filter(Boolean).join(' ') + ' ') : words.includes(w)) || (!tname(k) && EMO[k].some(e => raw.includes(e)));
   const r = has('r') || words[0] === '1' && words.length === 1, b = has('b') || words[0] === '2' && words.length === 1;
   return r && !b ? 'r' : b && !r ? 'b' : null;
  }
@@ -658,7 +678,7 @@ function mount(host, opts) {
 .lv-leg{position:absolute;left:10px;right:10px;bottom:10px;padding:10px;border-radius:16px;background:rgba(17,24,43,.88);color:#fff7e8}
 .lv-leg h4{margin:0 0 7px;text-align:center;font:800 12px system-ui,sans-serif;letter-spacing:1px;color:#ffc93c;text-transform:uppercase}
 .lv-leg .k{display:grid;grid-template-columns:1fr 1fr;gap:8px}
-.lv-leg .k div{text-align:center;padding:6px 4px;border-radius:12px;font-weight:800;font-size:24px;line-height:1;color:#fff}
+.lv-leg .k div{text-align:center;padding:6px 4px;border-radius:12px;font-weight:800;font-size:24px;line-height:1;color:#fff;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
 .lv-leg .g{display:grid;grid-template-columns:1fr 1fr;gap:5px;margin-top:8px}
 .lv-leg .g div{display:flex;gap:6px;align-items:center;padding:4px 7px;border-radius:10px;background:rgba(255,247,232,.08);font:700 12px/1.2 system-ui,sans-serif}
 .lv-leg .g span{flex:none;padding:2px 6px;border-radius:8px;font:800 11px system-ui,sans-serif;color:#1e2235;background:#eef1f8}
@@ -699,7 +719,7 @@ function mount(host, opts) {
  function renderLegend() {
   if (!lv) return;
   const c = isCoins() ? String(CFG.cpp) : '$' + (CFG.cpp / 75).toFixed(2);
-  lv.leg.innerHTML = `<h4>${esc(LVR.legendH)}</h4><div class="k"><div style="background:${COL.r}">🔴 ${esc(L.red)}</div><div style="background:${COL.b}">🔵 ${esc(L.blue)}</div></div>
+  lv.leg.innerHTML = `<h4>${esc(LVR.legendH)}</h4><div class="k">${['r', 'b'].map((t, i) => `<div style="background:${TC[t]};color:${TC[t + 'T']}">${tname(t) ? (i + 1) + ' · ' : t === 'r' ? '🔴 ' : '🔵 '}${esc(TN(t))}</div>`).join('')}</div><div class="n" style="margin:4px 0 0">${esc(LVR.orNum)}</div>
 <div class="g"><div><span>${esc(LVR.cmtK)}</span>${esc(LVR.cmt)}</div><div><span>${esc(LVR.likeK)}</span>${esc(LVR.likes)}</div>
 <div><span>${esc(LVR.giftK)}</span>${esc(LVR.giftE)}</div><div><span>🎁 ${esc(c)}</span>${esc(fmt(isCoins() ? LVR.giftRow : LVR.giftRowUsd, { c }).replace(/^.*?(\+)/, '+'))}</div></div>
 <div class="n">${esc(LVR.roundOnly)}</div>`;
@@ -714,7 +734,7 @@ function mount(host, opts) {
 <h5>${esc(LV.source)}</h5><div class="lv-srcs"></div>
 <h5>${esc(LV.simH)}</h5>
 <div class="lv-sim">
-<button data-s="cr" style="background:#ff9a8a">${esc(LVR.sRed)}</button><button data-s="cb" style="background:#8cc0ff">${esc(LVR.sBlue)}</button><button data-s="c" style="background:#eef1f8">${esc(LVR.sAny)}</button>
+<button data-s="cr" style="background:#ff9a8a"></button><button data-s="cb" style="background:#8cc0ff"></button><button data-s="c" style="background:#eef1f8">${esc(LVR.sAny)}</button>
 <button data-s="like" style="background:#ffb3a7">+100 ♥</button><button data-s="g1" style="background:#ff8fb1">🎁 1</button><button data-s="g99" style="background:#ffc93c">🎁 99</button>
 <button data-s="g299" style="background:#b39ddb">🎁 299</button><button data-s="g999" style="background:#ff6b5b">🎁 999</button><button data-s="follow" style="background:#c9f2c7">${esc(LV.sFollow)}</button>
 </div>
@@ -723,6 +743,11 @@ function mount(host, opts) {
 <div class="lv-row"><label>${esc(LVR.cpp)}</label><input type="number" min="1" step="1" data-k="cpp" value="${CFG.cpp}"></div>
 <div class="lv-row"><label>${esc(LVR.roundSec)}</label><input type="number" min="20" max="300" step="5" data-k="roundSec" value="${CFG.roundSec}"></div>
 <div class="lv-row"><label>${esc(LVR.winR)}</label><input type="number" min="1" max="5" step="1" data-k="winR" value="${CFG.winR}"></div>
+<h5>${esc(LVR.teamsH)}</h5>
+${['R', 'B'].map((T, i) => `<div class="lv-team" style="margin-top:6px;padding:8px;border-radius:10px;background:#151c30"><b>${esc(fmt(LVR.team, { n: i + 1 }))}</b>
+<div class="lv-row"><input type="text" maxlength="16" data-k="n${T}" value="${esc(CFG['n' + T])}" placeholder="${esc(LVR.tName)}"><input type="color" data-k="c${T}" value="${esc(TC[T.toLowerCase()])}" title="${esc(LVR.tColor)}" style="width:44px;height:30px;padding:0;border:0;background:none;flex:none"></div>
+<div class="lv-row"><input type="text" data-k="k${T}" value="${esc(CFG['k' + T])}" placeholder="${esc(LVR.tKeys)}"></div></div>`).join('')}
+<div style="margin-top:6px;color:#8e99b8;font-size:11.5px">${esc(LVR.tHint)}</div>
 <h5>${esc(LV.blockH)}</h5>
 <div class="lv-row"><input type="text" data-k="block" value="${esc(CFG.block)}" placeholder="word1, user2"></div>
 <h5>${esc(LV.obsH)}</h5>
@@ -754,12 +779,15 @@ function mount(host, opts) {
    if (t.dataset.c === 'auto') { LS.auto = t.checked; if (LS.auto && SRC.on) { srcStop(); saveSrc(); obsUrl(); } modeLabel(); return; }
    if (t.dataset.o) { readOpts(); if (SRC.on && t.closest('[data-row]').dataset.row === SRC.kind) srcStart(SRC.kind); saveSrc(); obsUrl(); return; }
    const k = t.dataset.k; if (!k) return;
-   CFG[k] = k === 'block' ? t.value : clamp(Math.round(+t.value || DEF_CFG[k]), k === 'roundSec' ? 20 : 1, k === 'roundSec' ? 300 : k === 'winR' ? 5 : 100000);
+   const TXT = ['block', 'nR', 'nB', 'kR', 'kB', 'cR', 'cB'];
+   if (TXT.includes(k)) { CFG[k] = k[0] === 'n' ? cleanText(t.value, 16) : t.value; if (k[0] === 'n') t.value = CFG[k]; store.set('livecfg', CFG); if (k !== 'block') applyTeams(); obsUrl(); return; }
+   CFG[k] = clamp(Math.round(+t.value || DEF_CFG[k]), k === 'roundSec' ? 20 : 1, k === 'roundSec' ? 300 : k === 'winR' ? 5 : 100000);
    t.value = CFG[k];
    store.set('livecfg', CFG); renderLegend(); renderScore(); obsUrl();
   });
-  renderSrc(); obsUrl(); renderLog();
+  renderSrc(); obsUrl(); renderLog(); simLabels();
  }
+ function simLabels() { if (!pn) return; pn.querySelector('[data-s=cr]').textContent = LVR.sAny + ': ' + TN('r'); pn.querySelector('[data-s=cb]').textContent = LVR.sAny + ': ' + TN('b'); }
  function renderSrc() {
   if (!pn) return;
   const inp = (o, ph, type) => `<input data-o="${o}" type="${type || 'text'}" placeholder="${esc(ph)}" value="${esc(SRC.opt[o])}" autocomplete="off" spellcheck="false" style="width:100%;margin-top:6px">`;
@@ -813,7 +841,8 @@ ${KINDS.map(k => `<div class="lv-src" data-row="${k}" style="flex-wrap:wrap"><sp
 
  /* --- simulator: same event shape a real adapter produces --- */
  const SIM_USERS = ['ayse_23', 'leo.plays', 'mira.k', 'tomasz', 'yuki_s', 'omar.dev', 'ella.b', 'kemal34', 'nina.r', 'sam_w', 'deniz.k', 'lina_m', 'arif07', 'joao.p', 'putri', 'carlos.m', 'zeynep.t', 'mert_34', 'ana.luz', 'budi_s'];
- const SAMPLE = { r: [L.red.toLowerCase(), '🔴', L.red.toLowerCase() + '!!', 'go ' + L.red.toLowerCase()], b: [L.blue.toLowerCase(), '🔵', L.blue.toLowerCase() + '!!', 'go ' + L.blue.toLowerCase()], c: ['hahaha', '💪💪', 'çek!', 'pull!!', 'gg', '😂', 'come on', 'vamos'] };
+ const sampleFor = k => { const w = TN(k).toLocaleLowerCase(lang); return [w, k === 'r' ? '1' : '2', w + '!!', 'go ' + w]; };
+ const SAMPLE = { get r() { return sampleFor('r'); }, get b() { return sampleFor('b'); }, c: ['hahaha', '💪💪', 'çek!', 'pull!!', 'gg', '😂', 'come on', 'vamos'] };
  function simEvent(kind) {
   LS.n++;
   const name = SIM_USERS[(LS.n * 7 + kind.length * 3) % SIM_USERS.length];
@@ -1052,6 +1081,13 @@ ${KINDS.map(k => `<div class="lv-src" data-row="${k}" style="flex-wrap:wrap"><sp
  }
 
  /* --- who stands on the rope: strongmen (big gifts) at the back, most recent players in front --- */
+ function applyTeams() {
+  teamColors();
+  for (const k of ['r', 'b', 'rD', 'bD']) TM[k].color.set(TC[k]);
+  TM.lr.color.set(TC.r); TM.lb.color.set(TC.b);
+  for (const t of ['r', 'b']) slots[t].forEach(s2 => { if (s2) s2.key = null; });
+  refreshSlots(true); renderLegend(); renderScore(); simLabels();
+ }
  function refreshSlots(force) {
   for (const t of ['r', 'b']) {
    const us = [...LS.members[t]].map(id => LS.users.get(id)).filter(Boolean);
