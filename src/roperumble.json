@@ -1,0 +1,242 @@
+{
+ "en": {
+  "name": "Rope Rumble",
+  "title": "Rope Rumble – Free Tug of War Game + LIVE Mode",
+  "desc": "Play Rope Rumble, a free 3D tug of war game in your browser: tap fast, drag the CPU into the mud. Streamers: viewers join RED or BLUE by commenting on TikTok, Twitch, YouTube or Kick.",
+  "card": "3D tug of war: tap fast, pull the other team into the mud. LIVE mode for streamers.",
+  "h1": "Rope Rumble: tug of war with a mud pit",
+  "intro": "Two teams, one rope and a pit full of mud in the middle. Tap as fast as you can and your red team pulls harder; drag the ribbon over your line and the CPU's front players go face first into the mud. Win two rounds to take the match, then the CPU gets stronger.",
+  "howH": "How to play",
+  "how": [
+   "Press Play. After the 3-2-1 countdown the round starts.",
+   "Click, tap the PULL button or press SPACE as fast as you can. Every tap gives your team a short burst of power.",
+   "The power bar at the top shows who is pulling harder. The yellow ribbon moves toward the stronger team.",
+   "When the ribbon crosses your red line you win the round. If time runs out, the team that is ahead wins it.",
+   "Win 2 rounds to win the match and go up a level. Each level the CPU pulls a little faster."
+  ],
+  "liveH": "For streamers: LIVE mode (TikTok, Twitch, YouTube, Kick)",
+  "liveP": "Rope Rumble was made for live streams. Viewers pick a side by commenting RED or BLUE (or 🔴 / 🔵, also in Turkish, Spanish, Portuguese and Indonesian). Anyone who comments without picking a side goes to the smaller team, so the teams stay even.",
+  "liveL": [
+   "Comments make the commenter's team pull, likes add power.",
+   "Gifts and donations bring extra people to the sender's team for the rest of the round: every 20 coins (you can change this) is one more person, and any gift is at least one. Big gifters stand at the front as strongmen with their name above them.",
+   "The losing team's front players fall into the mud. Win 2 rounds (you can change this) to win the match; at the end the top supporter and the most active viewer are shown.",
+   "Connect TikTok through the free TikFinity app, Twitch with just your channel name, YouTube Live with your own free API key, and Kick or other platforms through Social Stream Ninja."
+  ],
+  "liveN": "Copy the stream link from the creator panel and add it to OBS or LIVE Studio as a 1080 × 1920 browser source. Every gift has a fixed, stated effect; there are no chance-based rewards. Connections run directly between your computer and the platform; your data does not pass through our servers.",
+  "liveC": "Open LIVE mode",
+  "ctrlH": "Controls",
+  "ctrl": [
+   "Computer: click anywhere on the field or press SPACE (or Enter) to pull. The pause button is in the bottom right corner.",
+   "Phone and tablet: tap the big PULL button at the bottom. In portrait mode the camera follows the rope from the end so the players are bigger."
+  ],
+  "tipsH": "Tips",
+  "tips": [
+   "Steady rhythm beats panic: about six or seven taps a second is enough for the first levels.",
+   "Your taps only count for a moment, so keep tapping until the ribbon is over the line.",
+   "The CPU has surges; hold on during them and push back when they end.",
+   "In LIVE mode, ask your chat to comment their team at the start of every match: new players join the smaller team automatically."
+  ],
+  "faqH": "Frequently asked questions",
+  "faq": [
+   ["Is Rope Rumble free?", "Yes. It runs in your browser for free, with nothing to download or sign up for."],
+   ["Can I use Rope Rumble on a live stream?", "Yes. LIVE mode works with TikTok, Twitch, YouTube Live and Kick and is free. Viewers join a team by commenting RED or BLUE, and gifts add extra people to their team."],
+   ["How do gifts work in LIVE mode?", "Every 20 coins of a gift (TikTok) or about $0.27 of a donation on other platforms adds one person to the sender's team until the end of the round; any gift adds at least one. The streamer can change the rate in the panel. Effects are fixed and shown on screen."],
+   ["Does it work on phones?", "Yes. It works on phones, tablets and computers. On phones the camera switches to a view along the rope that fits the portrait screen."],
+   ["Is my progress saved?", "Your level and sound setting are saved only in your own browser."]
+  ],
+  "aboutH": "About the game",
+  "about": "Rope Rumble is an original game made by PickRadar. The field, the players and the sounds are generated in code with three.js; no downloaded models or pictures are used. The game stores only your level and settings in your browser."
+ },
+ "tr": {
+  "name": "Rope Rumble",
+  "title": "Rope Rumble – Ücretsiz Halat Çekme Oyunu + LIVE Modu",
+  "desc": "Rope Rumble'ı tarayıcında ücretsiz oyna: 3D halat çekme oyununda hızlı dokun, rakibi çamura çek. Yayıncılar: izleyiciler TikTok, Twitch, YouTube ya da Kick'te yoruma KIRMIZI ya da MAVİ yazarak takıma girer.",
+  "card": "3D halat çekme: hızlı dokun, rakip takımı çamura çek. Yayıncılar için LIVE modu.",
+  "h1": "Rope Rumble: çamur havuzlu halat savaşı",
+  "intro": "İki takım, bir halat ve ortada çamurla dolu bir havuz. Ne kadar hızlı dokunursan kırmızı takımın o kadar güçlü çeker; kurdeleyi kendi çizgine geçirdiğinde bilgisayarın öndeki oyuncuları yüzüstü çamura düşer. İki turu alan maçı kazanır, sonra bilgisayar daha da güçlenir.",
+  "howH": "Nasıl oynanır",
+  "how": [
+   "Oyna'ya bas. 3-2-1 geri sayımından sonra tur başlar.",
+   "Olabildiğince hızlı tıkla, ÇEK düğmesine dokun ya da BOŞLUK tuşuna bas. Her dokunuş takımına kısa bir güç patlaması verir.",
+   "Üstteki güç çubuğu hangi takımın daha güçlü çektiğini gösterir. Sarı kurdele güçlü takıma doğru kayar.",
+   "Kurdele senin kırmızı çizgini geçince turu kazanırsın. Süre biterse önde olan takım turu alır.",
+   "2 turu kazanırsan maçı alır ve seviye atlarsın. Her seviyede bilgisayar biraz daha hızlı çeker."
+  ],
+  "liveH": "Yayıncılar için: LIVE modu (TikTok, Twitch, YouTube, Kick)",
+  "liveP": "Rope Rumble canlı yayınlar için yapıldı. İzleyiciler yoruma KIRMIZI ya da MAVİ yazarak (ya da 🔴 / 🔵; İngilizce, İspanyolca, Portekizce ve Endonezce kelimeler de çalışır) takımını seçer. Takım yazmadan yorum yapan, takımlar dengede kalsın diye az kişili takıma geçer.",
+  "liveL": [
+   "Yorumlar yorum yapanın takımını asıltır, beğeniler güç katar.",
+   "Hediyeler ve bağışlar gönderenin takımına tur sonuna kadar ekstra kişi getirir: her 20 jeton (değiştirebilirsin) bir kişi, her hediye en az bir kişi. Büyük hediye gönderenler adlarıyla birlikte en önde pehlivan olarak durur.",
+   "Kaybeden takımın öndeki oyuncuları çamura düşer. 2 turu (değiştirebilirsin) alan maçı kazanır; maç sonunda en büyük destekçi ve en aktif izleyici ekranda gösterilir.",
+   "TikTok'u ücretsiz TikFinity uygulamasıyla, Twitch'i sadece kanal adınla, YouTube Live'ı kendi ücretsiz API anahtarınla, Kick ve diğer platformları Social Stream Ninja ile bağlarsın."
+  ],
+  "liveN": "Yayıncı panelinden yayın linkini kopyala ve OBS ya da LIVE Studio'ya 1080 × 1920 tarayıcı kaynağı olarak ekle. Her hediyenin etkisi sabittir ve ekranda yazar; şansa dayalı ödül yoktur. Bağlantılar doğrudan senin bilgisayarınla platform arasında çalışır, verilerin bizim sunucumuzdan geçmez.",
+  "liveC": "LIVE modunu aç",
+  "ctrlH": "Kontroller",
+  "ctrl": [
+   "Bilgisayar: çekmek için sahada herhangi bir yere tıkla ya da BOŞLUK (veya Enter) tuşuna bas. Duraklatma düğmesi sağ alt köşede.",
+   "Telefon ve tablet: alttaki büyük ÇEK düğmesine dokun. Dikey ekranda kamera halatı uçtan izler, böylece oyuncular daha büyük görünür."
+  ],
+  "tipsH": "İpuçları",
+  "tips": [
+   "Panik yerine düzenli ritim kazandırır: ilk seviyeler için saniyede altı yedi dokunuş yeter.",
+   "Dokunuşların sadece kısa bir süre etkili olur; kurdele çizgiyi geçene kadar dokunmaya devam et.",
+   "Bilgisayarın ani atakları var; o anlarda dayan, atak bitince sen yüklen.",
+   "LIVE modunda her maçın başında sohbetten takımlarını yoruma yazmalarını iste: yeni gelenler otomatik olarak az kişili takıma geçer."
+  ],
+  "faqH": "Sık sorulan sorular",
+  "faq": [
+   ["Rope Rumble ücretsiz mi?", "Evet. Tarayıcında ücretsiz çalışır; indirme ya da üyelik gerekmez."],
+   ["Rope Rumble'ı canlı yayında kullanabilir miyim?", "Evet. LIVE modu TikTok, Twitch, YouTube Live ve Kick ile çalışır ve ücretsizdir. İzleyiciler yoruma KIRMIZI ya da MAVİ yazarak takıma girer, hediyeler takımlarına ekstra kişi getirir."],
+   ["LIVE modunda hediyeler nasıl çalışır?", "Bir hediyenin her 20 jetonu (TikTok) ya da diğer platformlarda yaklaşık 0,27 $ bağış, gönderenin takımına tur sonuna kadar bir kişi ekler; her hediye en az bir kişi getirir. Yayıncı oranı panelden değiştirebilir. Etkiler sabittir ve ekranda yazar."],
+   ["Telefonda çalışır mı?", "Evet. Telefon, tablet ve bilgisayarda çalışır. Telefonda kamera dikey ekrana uyan, halat boyunca bakan bir açıya geçer."],
+   ["İlerlemem kaydediliyor mu?", "Seviyen ve ses ayarın yalnızca kendi tarayıcında saklanır."]
+  ],
+  "aboutH": "Oyun hakkında",
+  "about": "Rope Rumble, PickRadar'ın yaptığı özgün bir oyundur. Saha, oyuncular ve sesler three.js ile kodla üretilir; indirilen bir model ya da görsel yoktur. Oyun tarayıcında yalnızca seviyeni ve ayarlarını saklar."
+ },
+ "es": {
+  "name": "Rope Rumble",
+  "title": "Rope Rumble – Juego de la Soga Gratis + Modo LIVE",
+  "desc": "Juega gratis a Rope Rumble, un juego de la soga en 3D en tu navegador: toca rápido y arrastra a la CPU al barro. Creadores: los espectadores se unen a ROJO o AZUL comentando en TikTok, Twitch, YouTube o Kick.",
+  "card": "Juego de la soga en 3D: toca rápido y lleva al otro equipo al barro. Modo LIVE para creadores.",
+  "h1": "Rope Rumble: el juego de la soga con charco de barro",
+  "intro": "Dos equipos, una cuerda y un charco de barro en medio. Cuanto más rápido toques, más fuerte tira tu equipo rojo; lleva la cinta hasta tu línea y los primeros jugadores de la CPU caen de cara al barro. Gana dos rondas para llevarte el partido; después la CPU se vuelve más fuerte.",
+  "howH": "Cómo se juega",
+  "how": [
+   "Pulsa Jugar. Tras la cuenta 3-2-1 empieza la ronda.",
+   "Haz clic, toca el botón TIRA o pulsa ESPACIO lo más rápido que puedas. Cada toque da a tu equipo un empujón corto de fuerza.",
+   "La barra de fuerza de arriba muestra quién tira más fuerte. La cinta amarilla se mueve hacia el equipo más fuerte.",
+   "Cuando la cinta cruza tu línea roja, ganas la ronda. Si se acaba el tiempo, gana el equipo que va por delante.",
+   "Gana 2 rondas para ganar el partido y subir de nivel. En cada nivel la CPU tira un poco más rápido."
+  ],
+  "liveH": "Para creadores: modo LIVE (TikTok, Twitch, YouTube, Kick)",
+  "liveP": "Rope Rumble está hecho para directos. Los espectadores eligen bando comentando ROJO o AZUL (o 🔴 / 🔵; también funcionan las palabras en inglés, turco, portugués e indonesio). Quien comenta sin elegir bando va al equipo con menos gente, así los equipos se mantienen igualados.",
+  "liveL": [
+   "Los comentarios hacen tirar al equipo de quien comenta y los me gusta suman fuerza.",
+   "Los regalos y donaciones traen personas extra al equipo de quien los envía hasta el final de la ronda: cada 20 monedas (puedes cambiarlo) es una persona más, y cualquier regalo vale al menos una. Los que más regalan se ponen delante como forzudos, con su nombre encima.",
+   "Los primeros jugadores del equipo que pierde caen al barro. Gana 2 rondas (puedes cambiarlo) para ganar el partido; al final se muestran el mayor apoyo y el espectador más activo.",
+   "Conecta TikTok con la app gratuita TikFinity, Twitch solo con el nombre de tu canal, YouTube Live con tu propia clave gratuita de API, y Kick u otras plataformas con Social Stream Ninja."
+  ],
+  "liveN": "Copia el enlace del directo desde el panel del creador y añádelo en OBS o LIVE Studio como fuente de navegador de 1080 × 1920. Cada regalo tiene un efecto fijo y visible; no hay premios al azar. Las conexiones van directamente entre tu ordenador y la plataforma; tus datos no pasan por nuestros servidores.",
+  "liveC": "Abrir el modo LIVE",
+  "ctrlH": "Controles",
+  "ctrl": [
+   "Ordenador: haz clic en cualquier parte del campo o pulsa ESPACIO (o Intro) para tirar. El botón de pausa está abajo a la derecha.",
+   "Móvil y tableta: toca el botón grande TIRA de abajo. En vertical, la cámara sigue la cuerda desde un extremo para que los jugadores se vean más grandes."
+  ],
+  "tipsH": "Consejos",
+  "tips": [
+   "Un ritmo constante gana al pánico: seis o siete toques por segundo bastan para los primeros niveles.",
+   "Tus toques solo cuentan un momento, así que sigue tocando hasta que la cinta pase la línea.",
+   "La CPU tiene arrebatos; aguanta durante ellos y empuja cuando terminen.",
+   "En el modo LIVE, pide a tu chat que comente su equipo al empezar cada partido: los nuevos se unen solos al equipo con menos gente."
+  ],
+  "faqH": "Preguntas frecuentes",
+  "faq": [
+   ["¿Rope Rumble es gratis?", "Sí. Funciona gratis en tu navegador, sin descargas ni registro."],
+   ["¿Puedo usar Rope Rumble en un directo?", "Sí. El modo LIVE funciona con TikTok, Twitch, YouTube Live y Kick y es gratis. Los espectadores se unen a un equipo comentando ROJO o AZUL, y los regalos suman personas extra a su equipo."],
+   ["¿Cómo funcionan los regalos en el modo LIVE?", "Cada 20 monedas de un regalo (TikTok) o unos 0,27 $ de donación en otras plataformas suman una persona al equipo de quien lo envía hasta el final de la ronda; cualquier regalo suma al menos una. El creador puede cambiar la proporción en el panel. Los efectos son fijos y se muestran en pantalla."],
+   ["¿Funciona en el móvil?", "Sí. Funciona en móviles, tabletas y ordenadores. En el móvil la cámara cambia a una vista a lo largo de la cuerda que encaja en la pantalla vertical."],
+   ["¿Se guarda mi progreso?", "Tu nivel y el ajuste de sonido se guardan solo en tu propio navegador."]
+  ],
+  "aboutH": "Sobre el juego",
+  "about": "Rope Rumble es un juego original hecho por PickRadar. El campo, los jugadores y los sonidos se generan con código usando three.js; no se usan modelos ni imágenes descargados. El juego solo guarda tu nivel y tus ajustes en tu navegador."
+ },
+ "pt": {
+  "name": "Rope Rumble",
+  "title": "Rope Rumble – Cabo de Guerra Grátis + Modo LIVE",
+  "desc": "Jogue Rope Rumble de graça no navegador: cabo de guerra em 3D, toque rápido e arraste a CPU para a lama. Criadores: os espectadores entram no VERMELHO ou no AZUL comentando na TikTok, Twitch, YouTube ou Kick.",
+  "card": "Cabo de guerra em 3D: toque rápido e puxe o outro time para a lama. Modo LIVE para criadores.",
+  "h1": "Rope Rumble: cabo de guerra com poça de lama",
+  "intro": "Dois times, uma corda e uma poça de lama no meio. Quanto mais rápido você tocar, mais forte seu time vermelho puxa; leve a fita até a sua linha e os primeiros jogadores da CPU caem de cara na lama. Vença duas rodadas para levar a partida; depois a CPU fica mais forte.",
+  "howH": "Como jogar",
+  "how": [
+   "Aperte Jogar. Depois da contagem 3-2-1 a rodada começa.",
+   "Clique, toque no botão PUXA ou aperte ESPAÇO o mais rápido que puder. Cada toque dá ao seu time um impulso curto de força.",
+   "A barra de força no topo mostra quem está puxando mais forte. A fita amarela vai para o lado do time mais forte.",
+   "Quando a fita cruza a sua linha vermelha, você vence a rodada. Se o tempo acabar, vence o time que estiver na frente.",
+   "Vença 2 rodadas para ganhar a partida e subir de nível. A cada nível a CPU puxa um pouco mais rápido."
+  ],
+  "liveH": "Para criadores: modo LIVE (TikTok, Twitch, YouTube, Kick)",
+  "liveP": "Rope Rumble foi feito para lives. Os espectadores escolhem o lado comentando VERMELHO ou AZUL (ou 🔴 / 🔵; palavras em inglês, turco, espanhol e indonésio também funcionam). Quem comenta sem escolher vai para o time com menos gente, assim os times ficam equilibrados.",
+  "liveL": [
+   "Comentários fazem o time de quem comentou puxar, e curtidas somam força.",
+   "Presentes e doações trazem pessoas extras para o time de quem enviou até o fim da rodada: cada 20 moedas (você pode mudar) é mais uma pessoa, e qualquer presente vale pelo menos uma. Quem mais presenteia fica na frente como fortão, com o nome em cima.",
+   "Os primeiros jogadores do time que perde caem na lama. Vença 2 rodadas (você pode mudar) para ganhar a partida; no fim aparecem o maior apoiador e o espectador mais ativo.",
+   "Conecte a TikTok pelo app gratuito TikFinity, a Twitch só com o nome do canal, o YouTube Live com sua própria chave gratuita de API, e a Kick ou outras plataformas pelo Social Stream Ninja."
+  ],
+  "liveN": "Copie o link da live no painel do criador e adicione no OBS ou no LIVE Studio como fonte de navegador de 1080 × 1920. Cada presente tem um efeito fixo e mostrado na tela; não há prêmios por sorte. As conexões vão direto entre o seu computador e a plataforma; seus dados não passam pelos nossos servidores.",
+  "liveC": "Abrir o modo LIVE",
+  "ctrlH": "Controles",
+  "ctrl": [
+   "Computador: clique em qualquer lugar do campo ou aperte ESPAÇO (ou Enter) para puxar. O botão de pausa fica no canto inferior direito.",
+   "Celular e tablet: toque no botão grande PUXA embaixo. Na vertical, a câmera acompanha a corda a partir de uma ponta para os jogadores ficarem maiores."
+  ],
+  "tipsH": "Dicas",
+  "tips": [
+   "Ritmo constante vence o desespero: seis ou sete toques por segundo bastam nos primeiros níveis.",
+   "Seus toques valem só por um instante; continue tocando até a fita passar a linha.",
+   "A CPU tem arrancadas; aguente firme durante elas e reaja quando acabarem.",
+   "No modo LIVE, peça ao chat para comentar o time no começo de cada partida: quem chega entra sozinho no time com menos gente."
+  ],
+  "faqH": "Perguntas frequentes",
+  "faq": [
+   ["O Rope Rumble é grátis?", "Sim. Ele roda de graça no seu navegador, sem download nem cadastro."],
+   ["Posso usar o Rope Rumble numa live?", "Sim. O modo LIVE funciona com TikTok, Twitch, YouTube Live e Kick e é grátis. Os espectadores entram num time comentando VERMELHO ou AZUL, e os presentes trazem pessoas extras para o time deles."],
+   ["Como funcionam os presentes no modo LIVE?", "Cada 20 moedas de um presente (TikTok) ou cerca de US$ 0,27 de doação em outras plataformas somam uma pessoa ao time de quem enviou até o fim da rodada; qualquer presente soma pelo menos uma. O criador pode mudar a proporção no painel. Os efeitos são fixos e aparecem na tela."],
+   ["Funciona no celular?", "Sim. Funciona em celulares, tablets e computadores. No celular a câmera muda para uma vista ao longo da corda que cabe na tela vertical."],
+   ["Meu progresso fica salvo?", "Seu nível e a configuração de som ficam salvos só no seu navegador."]
+  ],
+  "aboutH": "Sobre o jogo",
+  "about": "Rope Rumble é um jogo original feito pelo PickRadar. O campo, os jogadores e os sons são gerados em código com three.js; nenhum modelo ou imagem baixado é usado. O jogo guarda apenas seu nível e suas configurações no navegador."
+ },
+ "id": {
+  "name": "Rope Rumble",
+  "title": "Rope Rumble – Game Tarik Tambang Gratis + Mode LIVE",
+  "desc": "Main Rope Rumble gratis di browser: tarik tambang 3D, ketuk cepat dan tarik CPU ke kubangan lumpur. Kreator: penonton masuk tim MERAH atau BIRU dengan berkomentar di TikTok, Twitch, YouTube, atau Kick.",
+  "card": "Tarik tambang 3D: ketuk cepat, tarik tim lawan ke lumpur. Mode LIVE untuk kreator.",
+  "h1": "Rope Rumble: tarik tambang dengan kubangan lumpur",
+  "intro": "Dua tim, satu tali, dan kubangan lumpur di tengah. Makin cepat kamu mengetuk, makin kuat tim merahmu menarik; tarik pita melewati garismu dan pemain depan CPU jatuh tertelungkup ke lumpur. Menangkan dua ronde untuk merebut pertandingan, lalu CPU makin kuat.",
+  "howH": "Cara bermain",
+  "how": [
+   "Tekan Main. Setelah hitungan 3-2-1, ronde dimulai.",
+   "Klik, ketuk tombol TARIK, atau tekan SPASI secepat mungkin. Setiap ketukan memberi timmu dorongan tenaga singkat.",
+   "Bar kekuatan di atas menunjukkan siapa yang menarik lebih kuat. Pita kuning bergeser ke tim yang lebih kuat.",
+   "Saat pita melewati garis merahmu, kamu menang ronde. Jika waktu habis, tim yang unggul menang ronde itu.",
+   "Menangkan 2 ronde untuk memenangkan pertandingan dan naik level. Setiap level CPU menarik sedikit lebih cepat."
+  ],
+  "liveH": "Untuk kreator: mode LIVE (TikTok, Twitch, YouTube, Kick)",
+  "liveP": "Rope Rumble dibuat untuk siaran langsung. Penonton memilih sisi dengan berkomentar MERAH atau BIRU (atau 🔴 / 🔵; kata dalam bahasa Inggris, Turki, Spanyol, dan Portugis juga bisa). Yang berkomentar tanpa memilih sisi masuk ke tim yang lebih sedikit, jadi tim tetap seimbang.",
+  "liveL": [
+   "Komentar membuat tim si pengirim menarik, suka menambah kekuatan.",
+   "Hadiah dan donasi membawa orang tambahan ke tim pengirim sampai ronde selesai: setiap 20 koin (bisa diubah) jadi satu orang, dan hadiah apa pun minimal satu orang. Pemberi hadiah besar berdiri paling depan sebagai si kuat dengan namanya di atas.",
+   "Pemain depan tim yang kalah jatuh ke lumpur. Menangkan 2 ronde (bisa diubah) untuk memenangkan pertandingan; di akhir, pendukung terbesar dan penonton paling aktif ditampilkan.",
+   "Hubungkan TikTok lewat aplikasi gratis TikFinity, Twitch cukup dengan nama channel, YouTube Live dengan API key gratis milikmu sendiri, dan Kick atau platform lain lewat Social Stream Ninja."
+  ],
+  "liveN": "Salin link siaran dari panel kreator dan tambahkan ke OBS atau LIVE Studio sebagai browser source 1080 × 1920. Setiap hadiah punya efek tetap yang tampil di layar; tidak ada hadiah acak. Koneksi berjalan langsung antara komputermu dan platform; datamu tidak lewat server kami.",
+  "liveC": "Buka mode LIVE",
+  "ctrlH": "Kontrol",
+  "ctrl": [
+   "Komputer: klik di mana saja di lapangan atau tekan SPASI (atau Enter) untuk menarik. Tombol jeda ada di pojok kanan bawah.",
+   "Ponsel dan tablet: ketuk tombol besar TARIK di bawah. Dalam mode tegak, kamera mengikuti tali dari ujung agar pemain terlihat lebih besar."
+  ],
+  "tipsH": "Tips",
+  "tips": [
+   "Ritme yang stabil mengalahkan panik: enam atau tujuh ketukan per detik cukup untuk level awal.",
+   "Ketukanmu hanya berlaku sebentar, jadi terus ketuk sampai pita melewati garis.",
+   "CPU punya serangan mendadak; bertahanlah saat itu dan balas setelahnya.",
+   "Di mode LIVE, minta chat menulis timnya di awal setiap pertandingan: pendatang baru otomatis masuk ke tim yang lebih sedikit."
+  ],
+  "faqH": "Pertanyaan umum",
+  "faq": [
+   ["Apakah Rope Rumble gratis?", "Ya. Game ini berjalan gratis di browser, tanpa unduhan atau pendaftaran."],
+   ["Bisakah Rope Rumble dipakai saat siaran langsung?", "Bisa. Mode LIVE bekerja dengan TikTok, Twitch, YouTube Live, dan Kick, dan gratis. Penonton masuk tim dengan berkomentar MERAH atau BIRU, dan hadiah menambah orang ke tim mereka."],
+   ["Bagaimana hadiah bekerja di mode LIVE?", "Setiap 20 koin hadiah (TikTok) atau sekitar $0,27 donasi di platform lain menambah satu orang ke tim pengirim sampai ronde selesai; hadiah apa pun menambah minimal satu. Kreator bisa mengubah rasionya di panel. Efeknya tetap dan tampil di layar."],
+   ["Apakah bisa dimainkan di ponsel?", "Bisa. Game ini berjalan di ponsel, tablet, dan komputer. Di ponsel kamera beralih ke tampilan sepanjang tali yang pas untuk layar tegak."],
+   ["Apakah progresku disimpan?", "Level dan pengaturan suaramu hanya disimpan di browser-mu sendiri."]
+  ],
+  "aboutH": "Tentang game",
+  "about": "Rope Rumble adalah game orisinal buatan PickRadar. Lapangan, pemain, dan suaranya dibuat dengan kode memakai three.js; tidak ada model atau gambar yang diunduh. Game hanya menyimpan level dan pengaturanmu di browser."
+ }
+}

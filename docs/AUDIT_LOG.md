@@ -138,3 +138,9 @@ Technical SEO, AI visibility, usability and ad-readiness checks. Content (patch 
 
 ## 2026-11-22 – Teacher Tycoon page: streamer section
 - Added a "For streamers: LIVE mode (TikTok, Twitch, YouTube, Kick)" section and one FAQ entry to the Teacher Tycoon page in 5 languages. Title, description, URL and links unchanged; LIVE button is rel=nofollow. lastmod 2026-11-22.
+
+## 2026-11-24 – Rope Rumble (3D tug of war) + LIVE mode
+- New game page `/{lang}/rope-rumble/` in 5 languages (own title, description, FAQ JSON-LD, OG image, card). Added to the games list, nav and sitemap like earlier games. No existing page titles, URLs or links changed.
+- Normal mode: red team vs CPU, tap/click/SPACE to pull, 2 rounds per match, levels saved in the browser.
+- LIVE mode (`?live=1`, OBS output `&clean=1`): viewers join RED/BLUE by comment keyword (5 languages + emoji), others auto-join the smaller team. Comments and likes add short pull bursts; gifts add extra people to the sender's team until the end of the round at a fixed, stated rate (default 20 coins = 1 person, min 1 per gift, configurable). No chance mechanics.
+- Data sources reuse the Teacher Tycoon adapters (simulator, TikFinity, Twitch, YouTube API key, Social Stream Ninja). Nothing passes through PickRadar servers.
