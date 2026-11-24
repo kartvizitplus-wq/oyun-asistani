@@ -460,7 +460,7 @@ function mount(host, opts) {
   if (!lv || !BOOK) return;
   const [a, b] = BOOK.secs[st.sec], left = (b - a) - st.rev.size;
   const sm = lv.nx.querySelector('small'), bb = lv.nx.querySelector('b'), em = lv.nx.querySelector('em');
-  if (st.phase === 'done' || st.phase === 'end') { sm.textContent = '✓'; bb.className = 'fr'; bb.textContent = st.phase === 'end' ? L.end : fmt(LVR.nextIn, { s: Math.max(0, Math.ceil(st.t)) }); em.textContent = ''; return; }
+  if (st.phase === 'done' || st.phase === 'end') { sm.textContent = '✓'; bb.className = 'fr'; bb.textContent = st.phase === 'end' || st.sec >= BOOK.secs.length - 1 ? L.end : fmt(LVR.nextIn, { s: Math.max(0, Math.ceil(st.t)) }); em.textContent = ''; return; }
   if (CFG.mode === 'free') { sm.textContent = '💬'; bb.className = 'fr'; bb.textContent = LVR.freeL; em.textContent = fmt(LVR.leftN, { n: left }); }
   else { sm.textContent = LVR.nextL; bb.className = ''; bb.textContent = st.ptr < b ? BOOK.words[st.ptr].t : '…'; em.textContent = fmt(LVR.leftN, { n: left }); }
  }
