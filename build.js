@@ -3,14 +3,14 @@
 const fs = require('fs'), path = require('path');
 const R = p => path.join(__dirname, p);
 const read = p => JSON.parse(fs.readFileSync(R(p), 'utf8'));
-const cfg = read('config.json'), I18N = read('src/i18n.json'), ITEMS_TR = read('data/mlbb-items-tr.json'), GUIDE = read('src/guide.json'), CG = read('src/colorgame.json'), ND = read('src/nightdrop.json'), MB = read('src/moba.json'), SITE = read('src/site.json'), RS = read('src/redscarf.json'), STORY = read('src/stories.json'), PH = read('src/palmera.json'), TTJ = read('src/teachertycoon.json'), RRJ = read('src/roperumble.json'), STJ = read('src/streamer.json'), CFJ = read('src/chatfc.json');
+const cfg = read('config.json'), I18N = read('src/i18n.json'), ITEMS_TR = read('data/mlbb-items-tr.json'), GUIDE = read('src/guide.json'), CG = read('src/colorgame.json'), ND = read('src/nightdrop.json'), MB = read('src/moba.json'), SITE = read('src/site.json'), RS = read('src/redscarf.json'), STORY = read('src/stories.json'), PH = read('src/palmera.json'), TTJ = read('src/teachertycoon.json'), RRJ = read('src/roperumble.json'), STJ = read('src/streamer.json'), CFJ = read('src/chatfc.json'), CRJ = read('src/chatreads.json');
 /* The old pick-assistant pages (hero, tier, draft, news, guide) are no longer built: PickRadar is a games site now. */
 const LEGACY = false;
 const Engine = require('./src/engine.js'), Icons = require('./src/icons.js');
 const OUT = R('dist');
 /* Cache-busting: asset URLs carry a hash of their content so browsers never mix old and new scripts. */
 const crypto = require('crypto');
-const VER = Object.fromEntries(['style.css', 'app.js', 'engine.js', 'icons.js', 'colorgame.js', 'nightdrop.js', 'moba.js', 'chibi.js', 'redscarf.js', 'home.js', 'istanbul.js', 'three.min.js', 'teachertycoon.js', 'roperumble.js', 'chatfc.js'].map(f => [f, crypto.createHash('md5').update(fs.readFileSync(R('src/' + f))).digest('hex').slice(0, 8)]));
+const VER = Object.fromEntries(['style.css', 'app.js', 'engine.js', 'icons.js', 'colorgame.js', 'nightdrop.js', 'moba.js', 'chibi.js', 'redscarf.js', 'home.js', 'istanbul.js', 'three.min.js', 'teachertycoon.js', 'roperumble.js', 'chatfc.js', 'chatreads.js', 'jszip.min.js'].map(f => [f, crypto.createHash('md5').update(fs.readFileSync(R('src/' + f))).digest('hex').slice(0, 8)]));
 const asset = f => `/assets/${f}?v=${VER[f]}`;
 
 /* Games shown on the site. kind: moba (heroes + items), bs (Brawl Stars), ff (Free Fire). */
@@ -32,7 +32,8 @@ const PLAY = [
   { slug: 'color-gradient', name: l => CG[l].name, desc: l => CG[l].desc, bg: '#121825' },
   { slug: 'teacher-tycoon', name: l => TTJ[l].name, desc: l => TTJ[l].card, bg: '#1f5e55' },
   { slug: 'rope-rumble', name: l => RRJ[l].name, desc: l => RRJ[l].card, bg: '#3e7d3a' },
-  { slug: 'chat-fc', name: l => CFJ[l].name, desc: l => CFJ[l].card, bg: '#2f7a35' }
+  { slug: 'chat-fc', name: l => CFJ[l].name, desc: l => CFJ[l].card, bg: '#2f7a35' },
+  { slug: 'chat-reads', name: l => CRJ[l].name, desc: l => CRJ[l].card, bg: '#3a2e22' }
 ];
 /* Small original cover drawings for the game cards (inline SVG, no image files). */
 const COVER = {
@@ -47,7 +48,8 @@ COVER['red-scarf'] = '<rect width="320" height="180" fill="#050508"/><path d="M0
 COVER['teacher-tycoon'] = '<rect width="320" height="180" fill="#bfe0f0"/><image href="/img/teacher-tycoon-card.webp" x="0" y="0" width="320" height="180" preserveAspectRatio="xMidYMid slice"/>';
 COVER['rope-rumble'] = '<rect width="320" height="180" fill="#86cc74"/><image href="/img/rope-rumble-card.webp" x="0" y="0" width="320" height="180" preserveAspectRatio="xMidYMid slice"/>';
 COVER['chat-fc'] = '<rect width="320" height="180" fill="#2f7a35"/><image href="/img/chat-fc-card.webp" x="0" y="0" width="320" height="180" preserveAspectRatio="xMidYMid slice"/>';
-const LIVE_GAMES = ['chat-fc', 'rope-rumble', 'teacher-tycoon'];
+COVER['chat-reads'] = '<rect width="320" height="180" fill="#3a2e22"/><image href="/img/chat-reads-card.webp" x="0" y="0" width="320" height="180" preserveAspectRatio="xMidYMid slice"/>';
+const LIVE_GAMES = ['chat-fc', 'chat-reads', 'rope-rumble', 'teacher-tycoon'];
 const liveCards = lang => { const X = STJ[lang]; return `<div class="lgrid">${LIVE_GAMES.map(s => { const g = PLAY.find(p => p.slug === s); return `<div class="lcard" style="--ac:${ACCENT[s]}"><a class="lc-art" href="/${lang}/${s}/"><img src="/img/${s}-card.webp" alt="${esc(g.name(lang))}" width="640" height="360" loading="lazy"><span class="lc-live">LIVE</span></a><div class="lc-body"><h3><a href="/${lang}/${s}/">${esc(g.name(lang))}</a></h3><p>${esc(X.pitch[s])}</p><div class="bar"><a class="btn" href="/${lang}/${s}/">▶ ${esc(X.play)}</a><a class="btn ghost" href="/${lang}/${s}/?live=1" rel="nofollow">🔴 ${esc(X.live)}</a></div></div></div>`; }).join('')}</div>`; };
 const LIVE_CSS = `<style>
 .nav-live{color:#ff6b5b!important;font-weight:700}
@@ -65,7 +67,7 @@ const LIVE_CSS = `<style>
 .lc-body h3{margin:0}.lc-body h3 a{color:var(--fg);text-decoration:none}
 .lc-body p{margin:0;color:var(--muted)}
 </style>`;
-const ACCENT = { 'chat-fc': '#9fe870', 'rope-rumble': '#e94f37', 'teacher-tycoon': '#ffc93c', 'palmera-heat': '#e30a17', 'red-scarf': '#ff2d48', 'night-drop': '#2ef2ff', 'crown-clash': '#5aa7ff', 'jade-lanes': '#3fbf8f', 'duel-peak': '#ff8a3d', 'color-gradient': '#b48cff' };
+const ACCENT = { 'chat-fc': '#9fe870', 'chat-reads': '#e9b44c', 'rope-rumble': '#e94f37', 'teacher-tycoon': '#ffc93c', 'palmera-heat': '#e30a17', 'red-scarf': '#ff2d48', 'night-drop': '#2ef2ff', 'crown-clash': '#5aa7ff', 'jade-lanes': '#3fbf8f', 'duel-peak': '#ff8a3d', 'color-gradient': '#b48cff' };
 const NEW_LBL = { en: 'New', tr: 'Yeni', id: 'Baru', es: 'Nuevo', pt: 'Novo' };
 /* Story block shown at the top of each game's text */
 const storyBlock = (lang, slug) => { const st = (STORY[lang] || STORY.en)[slug]; return st && st.story ? `<h2>${esc(RS[lang].storyH)}</h2>${st.story.map(p => `<p>${esc(p)}</p>`).join('')}` : ''; };
@@ -678,6 +680,35 @@ ${G.sections.map((sec, i) => `<h2 id="s${i + 1}">${esc(sec.h)}</h2><ol>${sec.ste
     }));
   }
 
+  /* Chat Reads – read a book word by word, alone or with a live chat. */
+  {
+    const R = CRJ[lang] || CRJ.en, rel = `${lang}/chat-reads/`;
+    const li = a => a.map(x => `<li>${esc(x)}</li>`).join('');
+    write(`${rel}index.html`, layout({
+      lang, rel, active: 'chat-reads', title: `${R.title} · ${cfg.siteName}`, desc: R.desc, lastmod: '2026-11-24', img: 'chat-reads',
+      crumbs: [[t.home, `${lang}/`], [R.name, rel]],
+      jsonld: [{ '@context': 'https://schema.org', '@type': 'VideoGame', name: R.name, description: R.desc, url: `${base}/${rel}`, inLanguage: lang, image: `${base}/og/chat-reads.png`,
+        genre: ['Educational', 'Word', 'Party'], gamePlatform: 'Web browser', applicationCategory: 'Game', operatingSystem: 'Any', isAccessibleForFree: true, playMode: ['SinglePlayer', 'MultiPlayer'],
+        publisher: { '@type': 'Organization', name: cfg.siteName, url: `${base}/` } },
+        { '@context': 'https://schema.org', '@type': 'FAQPage', mainEntity: R.faq.map(([q, a]) => ({ '@type': 'Question', name: q, acceptedAnswer: { '@type': 'Answer', text: a } })) }],
+      body: `<section><h1>${esc(R.h1)}</h1><p class="lead">${esc(R.intro)}</p></section>
+<section class="ttp"><div class="cr-host" id="crHost"></div><div class="ph-bar"><a class="btn ghost" href="?live=1" rel="nofollow">🔴 ${esc(R.liveC)}</a><button class="btn ghost" type="button" onclick="var h=document.getElementById('crHost');(h.requestFullscreen||h.webkitRequestFullscreen).call(h)">⛶ ${{ tr: 'Tam ekran', en: 'Fullscreen', es: 'Pantalla completa', pt: 'Tela cheia', id: 'Layar penuh' }[lang]}</button></div><noscript><p class="note">JavaScript is required to play.</p></noscript></section>
+<article class="prose"><h2>${esc(R.howH)}</h2><ol>${li(R.how)}</ol>
+<h2 id="live">${esc(R.liveH)}</h2><p>${esc(R.liveP)}</p><ul>${li(R.liveL)}</ul><p>${esc(R.liveN)}</p><p><a class="btn" href="?live=1" rel="nofollow">${esc(R.liveC)}</a></p>
+<h2>${esc(R.ctrlH)}</h2><ul>${li(R.ctrl)}</ul>
+<h2>${esc(R.tipsH)}</h2><ul>${li(R.tips)}</ul>
+<h2>${esc(R.faqH)}</h2>${R.faq.map(([q, a]) => `<h3>${esc(q)}</h3><p>${esc(a)}</p>`).join('')}
+<h2>${esc(R.aboutH)}</h2><p>${esc(R.about)}</p></article>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lora:wght@400;600&display=swap">
+<style>
+.cr-host{position:relative;width:100%;height:min(80vh,680px);min-height:440px;border:1px solid #e9b44c66;border-radius:12px;overflow:hidden;background:#14110d;box-shadow:0 0 60px -22px #e9b44c}
+.cr-host:fullscreen{height:100%;border:0;border-radius:0}
+.ph-bar{display:flex;justify-content:flex-end;gap:8px;margin-top:8px;flex-wrap:wrap}
+</style>
+<script src="${asset('chatreads.js')}"></script><script>ChatReads.mount(document.getElementById('crHost'), { lang: '${lang}', jszip: '${asset('jszip.min.js')}' });</script>`
+    }));
+  }
+
   /* Streamer games hub: every game with a LIVE mode, how to connect, FAQ. */
   {
     const X = STJ[lang], rel = `${lang}/streamer-games/`;
@@ -820,7 +851,7 @@ var n=(s||navigator.language||'en').slice(0,2).toLowerCase();location.replace('/
 ${cfg.langs.map(l => `<a style="color:#e8b44a;margin-right:12px" href="/${l}/">${esc(I18N[l].langName)}</a>`).join('')}
 </body></html>`);
 fs.mkdirSync(path.join(OUT, 'assets'), { recursive: true });
-for (const f of ['style.css', 'app.js', 'engine.js', 'icons.js', 'colorgame.js', 'nightdrop.js', 'moba.js', 'chibi.js', 'redscarf.js', 'home.js', 'istanbul.js', 'three.min.js', 'teachertycoon.js', 'roperumble.js', 'chatfc.js']) fs.copyFileSync(R('src/' + f), path.join(OUT, 'assets', f));
+for (const f of ['style.css', 'app.js', 'engine.js', 'icons.js', 'colorgame.js', 'nightdrop.js', 'moba.js', 'chibi.js', 'redscarf.js', 'home.js', 'istanbul.js', 'three.min.js', 'teachertycoon.js', 'roperumble.js', 'chatfc.js', 'chatreads.js', 'jszip.min.js']) fs.copyFileSync(R('src/' + f), path.join(OUT, 'assets', f));
 if (fs.existsSync(R('static'))) fs.cpSync(R('static'), OUT, { recursive: true });
 fs.writeFileSync(path.join(OUT, 'manifest.webmanifest'), JSON.stringify({
   name: cfg.siteName + ' – ' + SITE.en.tagline, short_name: cfg.siteName, start_url: '/', scope: '/', display: 'standalone',

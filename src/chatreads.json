@@ -1,0 +1,322 @@
+{
+ "tr": {
+  "name": "Chat Reads",
+  "title": "Chat Reads – Sohbetle Kitap Okuma Oyunu (TikTok, Twitch, YouTube, Kick)",
+  "desc": "Chat Reads ile kitabı izleyicilerinle birlikte oku: sayfadaki silik kelimeler yorumlarla mürekkebe döner. EPUB ya da TXT yükle; TikTok LIVE, Twitch, YouTube ve Kick ile ücretsiz çalışır.",
+  "card": "Sohbetle kitap okuma: silik kelimeler yorumlarla mürekkebe döner. Kitap yayıncıları için LIVE modu.",
+  "h1": "Chat Reads: kitabı sohbetinle birlikte oku",
+  "intro": "Sayfadaki kelimeler silik başlar. Sıradaki kelimeyi yazan onu mürekkebe çevirir; kelime kelime, sayfa sayfa bütün kitap açılır. Tek başına bir okuma ve yazma oyunu olarak oyna ya da canlı yayında izleyicilerinle birlikte oku: her kelimeyi bir izleyici açar.",
+  "howH": "Nasıl oynanır",
+  "how": [
+   "Örnek hikâyeyi seç ya da kendi kitabını yükle (EPUB ya da TXT) veya metni yapıştır. Dosya cihazından çıkmaz, bizim sunucumuza gelmez.",
+   "Turuncu çizgili kelime sıradaki kelimedir. Onu yaz; doğruysa kendiliğinden mürekkebe döner. Türkçe karakterler, büyük-küçük harf ve noktalama farkı sorun değil.",
+   "Sayfa bitince bir sonraki sayfa açılır. Okuma hızın (kelime/dk) ve doğru serin alt köşede görünür.",
+   "Kaldığın sayfa tarayıcında kaydedilir; sonra kaldığın yerden devam edersin."
+  ],
+  "liveH": "Yayıncılar için: LIVE okuma modu (TikTok, Twitch, YouTube, Kick)",
+  "liveP": "Chat Reads kitap ve okuma yayınları için yapıldı. Sen kitabı yüklersin, izleyicilerin yorum yazarak sayfayı açar. Ekranın altında sıradaki kelime büyük harflerle durur; telefonla izleyen herkes hemen katılabilir.",
+  "liveL": [
+   "Sıralı modda yalnızca sıradaki kelime kabul edilir ve metin soldan sağa ilerler. Serbest modda sayfadaki herhangi bir kelimeyi yazan açar; kalabalık yayınlar için hızlıdır.",
+   "Kelimeyi açan izleyicinin adı kelimenin üstünde kısa bir an görünür. En çok kelime açanlar Kitap Kurtları listesinde yer alır ve kitap boyunca saklanır.",
+   "Küçük kelimeler (ve, bir, da…) istersen kendiliğinden açılır. Sohbet bir kelimede takılırsa belirlediğin süre sonunda kelime atlanır.",
+   "Sayfa bitince birkaç saniye beklenir: sen o sayfayı sesli okursun, sonra sonraki sayfa kendiliğinden gelir. Sayfa başına kelime sayısını sen seçersin.",
+   "Hediye ve bağışların etkisi sabittir ve ekranda yazar: her hediye sonraki 3 kelimeyi açar, 99 jeton ve üstü cümlenin geri kalanını açar. Gönderenin adı sayfanın altına “Bu sayfayı destekledi” diye yazılır. Şansa bağlı hiçbir şey yoktur.",
+   "TikTok'u ücretsiz TikFinity uygulamasıyla, Twitch'i sadece kanal adınla, YouTube Live'ı kendi ücretsiz API anahtarınla, Kick ve diğer platformları Social Stream Ninja ile bağlarsın."
+  ],
+  "liveN": "Yayın linkini OBS ya da LIVE Studio'ya 1080 × 1920 tarayıcı kaynağı olarak ekleyebilir ya da paneldeki “Yayın penceresini aç” düğmesiyle açılan pencereyi Pencere Yakalama ile yakalayabilirsin. Yüklediğin kitap senin tarayıcında kalır. Telif hakkı süren kitapların tamamını yayında gösterme; telifsiz kitaplar için Vikikaynak ve Project Gutenberg'e bakabilirsin. Türkiye'de yazarın ölümünden 70 yıl sonra eser serbest kalır, ama çeviriler çevirmenin hakkıdır.",
+  "liveC": "LIVE modunu aç",
+  "ctrlH": "Kontroller",
+  "ctrl": [
+   "Bilgisayar: kelimeyi yaz; doğruysa kendiliğinden kabul edilir. Yanlış kelimeden sonra boşluk ya da Enter kutuyu temizler.",
+   "Telefon ve tablet: sayfaya dokun, klavye açılır. ☰ düğmesi kitap seçimine döner."
+  ],
+  "tipsH": "İpuçları",
+  "tips": [
+   "Kelimeyi bitirir bitirmez sonraki kelimeye geç; boşluk tuşuna basman gerekmez.",
+   "Sesli okurken yazmak hem hızını hem anlamayı artırır.",
+   "LIVE: küçük sohbetlerde sıralı modu ve 25-40 kelimelik sayfaları, kalabalık yayınlarda serbest modu ve 60-80 kelimelik sayfaları dene.",
+   "LIVE: sayfa sonu beklemesini 10-15 saniyeye çıkarırsan sayfayı rahatça sesli okursun."
+  ],
+  "faqH": "Sık sorulan sorular",
+  "faq": [
+   [
+    "Chat Reads ücretsiz mi?",
+    "Evet. Tarayıcında ücretsiz çalışır; indirme ya da üyelik gerekmez."
+   ],
+   [
+    "Hangi kitapları yükleyebilirim?",
+    "DRM korumasız EPUB ve TXT dosyalarını ya da yapıştırdığın metni. Dosya sadece senin cihazında açılır; sunucumuza yüklenmez."
+   ],
+   [
+    "Canlı yayında kitap okumak telif hakkına aykırı mı?",
+    "Telif hakkı süren bir kitabın tamamını yayında göstermek sorun olabilir. Telifsiz eserleri (Vikikaynak, Project Gutenberg) ya da kendi metinlerini kullan. Türkiye'de yazarın ölümünden 70 yıl sonra eser serbest kalır; çeviriler ise çevirmenin hakkıdır."
+   ],
+   [
+    "Hediyeler nasıl çalışır?",
+    "Her hediye sonraki 3 kelimeyi, 99 jeton ve üstü cümlenin geri kalanını açar; gönderenin adı sayfanın altına yazılır. Etkiler sabittir. Twitch, YouTube ve Kick bağışları 1 $ ≈ 75 jeton sayılır."
+   ],
+   [
+    "Kaldığım yer kaydediliyor mu?",
+    "Evet, kitap ve sayfa numarası oyunu açtığın tarayıcıda saklanır."
+   ]
+  ],
+  "aboutH": "Oyun hakkında",
+  "about": "Chat Reads, PickRadar'ın yaptığı özgün bir oyundur. Örnek hikâye bu oyun için yazıldı. Yüklediğin kitaplar ve ilerlemen yalnızca tarayıcında saklanır."
+ },
+ "en": {
+  "name": "Chat Reads",
+  "title": "Chat Reads – Read a Book Together with Your Live Chat (TikTok, Twitch, YouTube, Kick)",
+  "desc": "Read a book together with your viewers in Chat Reads: faded words on the page turn to ink as your chat comments them. Load an EPUB or TXT; free with TikTok LIVE, Twitch, YouTube and Kick.",
+  "card": "Read a book with your chat: faded words turn to ink as viewers comment them. LIVE mode for book streamers.",
+  "h1": "Chat Reads: read a book together with your chat",
+  "intro": "The words on the page start out faded. Whoever types the next word turns it to ink, word by word, page by page, until the whole book is open. Play it alone as a reading and typing game, or read together with your viewers on a live stream: every word is opened by someone in your chat.",
+  "howH": "How to play",
+  "how": [
+   "Choose the sample story, load your own book (EPUB or TXT) or paste a text. The file stays on your device; it is never sent to our server.",
+   "The word with the orange underline is next. Type it; when it is right it turns to ink by itself. Accents, capitals and punctuation don't matter.",
+   "When the page is done the next one opens. Your reading speed (words/min) and streak show in the corner.",
+   "Your page is saved in your browser so you can continue later."
+  ],
+  "liveH": "For streamers: LIVE reading mode (TikTok, Twitch, YouTube, Kick)",
+  "liveP": "Chat Reads is made for book and reading streams. You load the book, your viewers open the page by commenting. The next word stands in big letters at the bottom of the screen, so anyone watching on a phone can join at once.",
+  "liveL": [
+   "In order mode only the next word counts and the text opens from left to right. In free mode any word on the page counts, which is fast for big streams.",
+   "The name of the viewer who opened a word appears above it for a moment. The viewers who open the most words are listed as Bookworms, kept for the whole book.",
+   "Small words (and, the, of…) can open by themselves. If chat gets stuck on a word, it is skipped after the time you set.",
+   "When a page is done the game waits a few seconds: you read the page aloud, then the next page comes by itself. You choose how many words a page has.",
+   "Gifts and donations have fixed effects written on screen: every gift opens the next 3 words, 99 coins or more open the rest of the sentence, and the sender's name appears under the page as its supporter. Nothing is random.",
+   "Connect TikTok with the free TikFinity app, Twitch with just your channel name, YouTube Live with your own free API key, and Kick and other platforms with Social Stream Ninja."
+  ],
+  "liveN": "Add the stream link to OBS or LIVE Studio as a 1080 × 1920 browser source, or press “Open stream window” in the panel and capture that window. The book you load stays in your browser. Please don't show the full text of copyrighted books on stream; Wikisource and Project Gutenberg have free public-domain books. Translations usually have their own copyright.",
+  "liveC": "Open LIVE mode",
+  "ctrlH": "Controls",
+  "ctrl": [
+   "Computer: type the word; when it is right it is accepted by itself. After a wrong word, Space or Enter clears the box.",
+   "Phone and tablet: tap the page to open the keyboard. ☰ goes back to the book choice."
+  ],
+  "tipsH": "Tips",
+  "tips": [
+   "Move to the next word as soon as one is done; you don't need to press Space.",
+   "Typing while reading aloud improves both speed and understanding.",
+   "LIVE: for small chats try in-order mode and 25–40-word pages; for big streams try free mode and 60–80-word pages.",
+   "LIVE: set the page pause to 10–15 seconds to read each page aloud comfortably."
+  ],
+  "faqH": "Frequently asked questions",
+  "faq": [
+   [
+    "Is Chat Reads free?",
+    "Yes. It runs free in your browser; no download or sign-up."
+   ],
+   [
+    "Which books can I load?",
+    "EPUB and TXT files without DRM, or any text you paste. The file is opened on your device only and is not uploaded to our server."
+   ],
+   [
+    "Is reading a book on stream allowed?",
+    "Showing the full text of a copyrighted book on stream can be a problem. Use public-domain works (Wikisource, Project Gutenberg) or your own texts. Translations usually have their own copyright."
+   ],
+   [
+    "How do gifts work?",
+    "Every gift opens the next 3 words, 99 coins or more open the rest of the sentence, and the sender's name appears under the page. Effects are fixed. On Twitch, YouTube and Kick donations count as $1 ≈ 75 coins."
+   ],
+   [
+    "Is my place saved?",
+    "Yes, the book and page are saved in the browser where you play."
+   ]
+  ],
+  "aboutH": "About the game",
+  "about": "Chat Reads is an original game made by PickRadar. The sample story was written for this game. Books you load and your progress are stored only in your browser."
+ },
+ "es": {
+  "name": "Chat Reads",
+  "title": "Chat Reads – Lee un Libro con tu Chat en Directo (TikTok, Twitch, YouTube, Kick)",
+  "desc": "Lee un libro junto a tus espectadores con Chat Reads: las palabras desvaídas de la página se vuelven tinta cuando tu chat las comenta. Carga un EPUB o TXT; gratis con TikTok LIVE, Twitch, YouTube y Kick.",
+  "card": "Lee un libro con tu chat: las palabras desvaídas se vuelven tinta con los comentarios. Modo LIVE para streamers de libros.",
+  "h1": "Chat Reads: lee un libro junto a tu chat",
+  "intro": "Las palabras de la página empiezan desvaídas. Quien escribe la siguiente palabra la convierte en tinta, palabra a palabra, página a página, hasta abrir todo el libro. Juega solo como juego de lectura y escritura o lee con tus espectadores en un directo: cada palabra la abre alguien de tu chat.",
+  "howH": "Cómo se juega",
+  "how": [
+   "Elige el cuento de ejemplo, carga tu propio libro (EPUB o TXT) o pega un texto. El archivo se queda en tu dispositivo; nunca se envía a nuestro servidor.",
+   "La palabra subrayada en naranja es la siguiente. Escríbela; si es correcta se vuelve tinta sola. Tildes, mayúsculas y puntuación no importan.",
+   "Al terminar la página se abre la siguiente. Tu velocidad (palabras/min) y tu racha aparecen en la esquina.",
+   "Tu página se guarda en el navegador para que sigas después."
+  ],
+  "liveH": "Para streamers: modo de lectura LIVE (TikTok, Twitch, YouTube, Kick)",
+  "liveP": "Chat Reads está hecho para directos de libros y lectura. Tú cargas el libro y tus espectadores abren la página comentando. La siguiente palabra aparece en grande abajo, así cualquiera que mire desde el móvil puede unirse enseguida.",
+  "liveL": [
+   "En modo en orden solo cuenta la siguiente palabra y el texto se abre de izquierda a derecha. En modo libre cuenta cualquier palabra de la página, rápido para directos grandes.",
+   "El nombre de quien abrió una palabra aparece encima un momento. Quienes abren más palabras aparecen como Ratones de biblioteca durante todo el libro.",
+   "Las palabras cortas (y, el, de…) pueden abrirse solas. Si el chat se atasca en una palabra, se salta tras el tiempo que elijas.",
+   "Al terminar una página el juego espera unos segundos: la lees en voz alta y la siguiente llega sola. Tú eliges cuántas palabras tiene cada página.",
+   "Los regalos y donaciones tienen efectos fijos escritos en pantalla: cada regalo abre las 3 palabras siguientes, 99 monedas o más abren el resto de la frase y el nombre de quien envía aparece bajo la página como su apoyo. Nada es aleatorio.",
+   "Conecta TikTok con la app gratuita TikFinity, Twitch solo con el nombre de tu canal, YouTube Live con tu propia clave API gratuita, y Kick y otras plataformas con Social Stream Ninja."
+  ],
+  "liveN": "Añade el enlace a OBS o LIVE Studio como fuente de navegador de 1080 × 1920, o pulsa «Abrir ventana del directo» en el panel y captura esa ventana. El libro que cargas se queda en tu navegador. No muestres en directo el texto completo de libros con derechos de autor; Wikisource y Project Gutenberg tienen libros libres. Las traducciones suelen tener sus propios derechos.",
+  "liveC": "Abrir modo LIVE",
+  "ctrlH": "Controles",
+  "ctrl": [
+   "Ordenador: escribe la palabra; si es correcta se acepta sola. Tras una palabra incorrecta, Espacio o Enter vacían la caja.",
+   "Móvil y tableta: toca la página para abrir el teclado. ☰ vuelve a la elección de libro."
+  ],
+  "tipsH": "Consejos",
+  "tips": [
+   "Pasa a la siguiente palabra en cuanto termines una; no hace falta pulsar Espacio.",
+   "Escribir mientras lees en voz alta mejora la velocidad y la comprensión.",
+   "LIVE: con chats pequeños usa el modo en orden y páginas de 25–40 palabras; en directos grandes, modo libre y 60–80 palabras.",
+   "LIVE: pon la pausa de página en 10–15 segundos para leer cada página con calma."
+  ],
+  "faqH": "Preguntas frecuentes",
+  "faq": [
+   [
+    "¿Chat Reads es gratis?",
+    "Sí. Funciona gratis en tu navegador; sin descargas ni registro."
+   ],
+   [
+    "¿Qué libros puedo cargar?",
+    "Archivos EPUB y TXT sin DRM, o cualquier texto que pegues. El archivo se abre solo en tu dispositivo y no se sube a nuestro servidor."
+   ],
+   [
+    "¿Puedo leer un libro en directo?",
+    "Mostrar en directo el texto completo de un libro con derechos de autor puede ser un problema. Usa obras de dominio público (Wikisource, Project Gutenberg) o tus propios textos. Las traducciones suelen tener sus propios derechos."
+   ],
+   [
+    "¿Cómo funcionan los regalos?",
+    "Cada regalo abre las 3 palabras siguientes, 99 monedas o más abren el resto de la frase y el nombre de quien envía aparece bajo la página. Efectos fijos. En Twitch, YouTube y Kick las donaciones cuentan como 1 $ ≈ 75 monedas."
+   ],
+   [
+    "¿Se guarda por dónde voy?",
+    "Sí, el libro y la página se guardan en el navegador donde juegas."
+   ]
+  ],
+  "aboutH": "Sobre el juego",
+  "about": "Chat Reads es un juego original de PickRadar. El cuento de ejemplo se escribió para este juego. Los libros que cargas y tu progreso se guardan solo en tu navegador."
+ },
+ "pt": {
+  "name": "Chat Reads",
+  "title": "Chat Reads – Leia um Livro com o Chat da Live (TikTok, Twitch, YouTube, Kick)",
+  "desc": "Leia um livro junto com seus espectadores no Chat Reads: as palavras apagadas da página viram tinta quando o chat as comenta. Carregue um EPUB ou TXT; grátis com TikTok LIVE, Twitch, YouTube e Kick.",
+  "card": "Leia um livro com o seu chat: palavras apagadas viram tinta com os comentários. Modo LIVE para streamers de livros.",
+  "h1": "Chat Reads: leia um livro junto com o seu chat",
+  "intro": "As palavras da página começam apagadas. Quem digita a próxima palavra a transforma em tinta, palavra por palavra, página por página, até o livro inteiro se abrir. Jogue sozinho como jogo de leitura e digitação ou leia com seus espectadores numa live: cada palavra é aberta por alguém do chat.",
+  "howH": "Como jogar",
+  "how": [
+   "Escolha o conto de exemplo, carregue o seu livro (EPUB ou TXT) ou cole um texto. O arquivo fica no seu aparelho; nunca é enviado ao nosso servidor.",
+   "A palavra sublinhada em laranja é a próxima. Digite-a; se estiver certa, vira tinta sozinha. Acentos, maiúsculas e pontuação não importam.",
+   "Ao terminar a página, a próxima se abre. Sua velocidade (palavras/min) e sequência aparecem no canto.",
+   "Sua página fica salva no navegador para continuar depois."
+  ],
+  "liveH": "Para streamers: modo de leitura LIVE (TikTok, Twitch, YouTube, Kick)",
+  "liveP": "Chat Reads foi feito para lives de livros e leitura. Você carrega o livro e os espectadores abrem a página comentando. A próxima palavra aparece em letras grandes embaixo, então quem assiste pelo celular entra na hora.",
+  "liveL": [
+   "No modo em ordem só a próxima palavra conta e o texto se abre da esquerda para a direita. No modo livre qualquer palavra da página conta, rápido para lives grandes.",
+   "O nome de quem abriu uma palavra aparece em cima dela por um instante. Quem abre mais palavras aparece como Traças de livro durante o livro todo.",
+   "Palavras curtas (e, o, de…) podem abrir sozinhas. Se o chat travar numa palavra, ela é pulada depois do tempo que você escolher.",
+   "Ao terminar uma página o jogo espera alguns segundos: você lê a página em voz alta e a próxima vem sozinha. Você escolhe quantas palavras cada página tem.",
+   "Presentes e doações têm efeitos fixos escritos na tela: todo presente abre as 3 próximas palavras, 99 moedas ou mais abrem o resto da frase e o nome de quem enviou aparece sob a página como apoio. Nada é aleatório.",
+   "Conecte o TikTok com o app grátis TikFinity, a Twitch só com o nome do canal, o YouTube Live com a sua própria chave de API grátis, e o Kick e outras plataformas com o Social Stream Ninja."
+  ],
+  "liveN": "Adicione o link no OBS ou LIVE Studio como fonte de navegador 1080 × 1920, ou aperte «Abrir janela da live» no painel e capture essa janela. O livro carregado fica no seu navegador. Não mostre na live o texto completo de livros com direitos autorais; Wikisource e Project Gutenberg têm livros livres. Traduções costumam ter direitos próprios.",
+  "liveC": "Abrir modo LIVE",
+  "ctrlH": "Controles",
+  "ctrl": [
+   "Computador: digite a palavra; se estiver certa, é aceita sozinha. Depois de uma palavra errada, Espaço ou Enter limpa a caixa.",
+   "Celular e tablet: toque na página para abrir o teclado. ☰ volta à escolha do livro."
+  ],
+  "tipsH": "Dicas",
+  "tips": [
+   "Passe para a próxima palavra assim que terminar uma; não precisa apertar Espaço.",
+   "Digitar enquanto lê em voz alta melhora a velocidade e a compreensão.",
+   "LIVE: com chats pequenos use o modo em ordem e páginas de 25–40 palavras; em lives grandes, modo livre e 60–80 palavras.",
+   "LIVE: deixe a pausa de página em 10–15 segundos para ler cada página com calma."
+  ],
+  "faqH": "Perguntas frequentes",
+  "faq": [
+   [
+    "Chat Reads é grátis?",
+    "Sim. Roda grátis no navegador; sem download nem cadastro."
+   ],
+   [
+    "Quais livros posso carregar?",
+    "Arquivos EPUB e TXT sem DRM, ou qualquer texto colado. O arquivo é aberto só no seu aparelho e não vai para o nosso servidor."
+   ],
+   [
+    "Posso ler um livro na live?",
+    "Mostrar na live o texto completo de um livro com direitos autorais pode ser um problema. Use obras em domínio público (Wikisource, Project Gutenberg) ou textos seus. Traduções costumam ter direitos próprios."
+   ],
+   [
+    "Como funcionam os presentes?",
+    "Todo presente abre as 3 próximas palavras, 99 moedas ou mais abrem o resto da frase e o nome de quem enviou aparece sob a página. Efeitos fixos. Na Twitch, YouTube e Kick as doações contam como US$ 1 ≈ 75 moedas."
+   ],
+   [
+    "Onde parei fica salvo?",
+    "Sim, o livro e a página ficam salvos no navegador em que você joga."
+   ]
+  ],
+  "aboutH": "Sobre o jogo",
+  "about": "Chat Reads é um jogo original da PickRadar. O conto de exemplo foi escrito para este jogo. Os livros carregados e o seu progresso ficam só no seu navegador."
+ },
+ "id": {
+  "name": "Chat Reads",
+  "title": "Chat Reads – Baca Buku Bareng Chat Live (TikTok, Twitch, YouTube, Kick)",
+  "desc": "Baca buku bersama penontonmu di Chat Reads: kata-kata pudar di halaman menjadi tinta saat chat mengomentarinya. Muat EPUB atau TXT; gratis dengan TikTok LIVE, Twitch, YouTube dan Kick.",
+  "card": "Baca buku bareng chat: kata pudar menjadi tinta lewat komentar. Mode LIVE untuk streamer buku.",
+  "h1": "Chat Reads: baca buku bersama chat-mu",
+  "intro": "Kata-kata di halaman mulai dalam keadaan pudar. Siapa yang mengetik kata berikutnya mengubahnya menjadi tinta, kata demi kata, halaman demi halaman, sampai seluruh buku terbuka. Mainkan sendiri sebagai game membaca dan mengetik, atau baca bersama penontonmu saat live: setiap kata dibuka oleh seseorang di chat.",
+  "howH": "Cara main",
+  "how": [
+   "Pilih cerita contoh, muat bukumu sendiri (EPUB atau TXT) atau tempel teks. File tetap di perangkatmu; tidak pernah dikirim ke server kami.",
+   "Kata bergaris bawah oranye adalah kata berikutnya. Ketik kata itu; jika benar, kata itu menjadi tinta sendiri. Aksen, huruf besar dan tanda baca tidak berpengaruh.",
+   "Setelah halaman selesai, halaman berikutnya terbuka. Kecepatan baca (kata/mnt) dan rentetanmu tampil di pojok.",
+   "Halamanmu tersimpan di browser agar bisa dilanjutkan nanti."
+  ],
+  "liveH": "Untuk streamer: mode baca LIVE (TikTok, Twitch, YouTube, Kick)",
+  "liveP": "Chat Reads dibuat untuk siaran buku dan membaca. Kamu memuat buku, penonton membuka halaman dengan berkomentar. Kata berikutnya tampil besar di bawah layar, jadi siapa pun yang menonton lewat ponsel bisa langsung ikut.",
+  "liveL": [
+   "Di mode berurutan hanya kata berikutnya yang dihitung dan teks terbuka dari kiri ke kanan. Di mode bebas kata mana pun di halaman dihitung, cepat untuk siaran besar.",
+   "Nama penonton yang membuka sebuah kata muncul sebentar di atasnya. Penonton yang membuka kata terbanyak tampil sebagai Kutu buku selama satu buku.",
+   "Kata pendek (dan, di, yang…) bisa terbuka sendiri. Jika chat macet di satu kata, kata itu dilewati setelah waktu yang kamu tentukan.",
+   "Setelah satu halaman selesai, game menunggu beberapa detik: kamu membacakan halaman itu, lalu halaman berikutnya datang sendiri. Jumlah kata per halaman kamu yang pilih.",
+   "Hadiah dan donasi punya efek tetap yang tertulis di layar: tiap hadiah membuka 3 kata berikutnya, 99 koin atau lebih membuka sisa kalimat, dan nama pengirim tampil di bawah halaman sebagai pendukungnya. Tidak ada yang acak.",
+   "Hubungkan TikTok dengan aplikasi gratis TikFinity, Twitch cukup dengan nama channel, YouTube Live dengan kunci API gratismu sendiri, serta Kick dan platform lain dengan Social Stream Ninja."
+  ],
+  "liveN": "Tambahkan link siaran ke OBS atau LIVE Studio sebagai browser source 1080 × 1920, atau tekan “Buka jendela siaran” di panel dan tangkap jendela itu. Buku yang kamu muat tetap di browsermu. Jangan tampilkan seluruh teks buku berhak cipta di siaran; Wikisource dan Project Gutenberg punya buku domain publik gratis. Terjemahan biasanya punya hak cipta sendiri.",
+  "liveC": "Buka mode LIVE",
+  "ctrlH": "Kontrol",
+  "ctrl": [
+   "Komputer: ketik katanya; jika benar langsung diterima. Setelah kata salah, Spasi atau Enter mengosongkan kotak.",
+   "Ponsel dan tablet: ketuk halaman untuk membuka keyboard. ☰ kembali ke pilihan buku."
+  ],
+  "tipsH": "Tips",
+  "tips": [
+   "Langsung pindah ke kata berikutnya begitu satu kata selesai; tidak perlu menekan Spasi.",
+   "Mengetik sambil membaca keras meningkatkan kecepatan dan pemahaman.",
+   "LIVE: untuk chat kecil pakai mode berurutan dan halaman 25–40 kata; untuk siaran besar pakai mode bebas dan 60–80 kata.",
+   "LIVE: atur jeda halaman 10–15 detik agar nyaman membacakan tiap halaman."
+  ],
+  "faqH": "Pertanyaan umum",
+  "faq": [
+   [
+    "Apakah Chat Reads gratis?",
+    "Ya. Berjalan gratis di browser; tanpa unduhan atau pendaftaran."
+   ],
+   [
+    "Buku apa yang bisa dimuat?",
+    "File EPUB dan TXT tanpa DRM, atau teks apa pun yang kamu tempel. File hanya dibuka di perangkatmu dan tidak diunggah ke server kami."
+   ],
+   [
+    "Bolehkah membaca buku saat live?",
+    "Menampilkan seluruh teks buku berhak cipta di siaran bisa bermasalah. Pakai karya domain publik (Wikisource, Project Gutenberg) atau tulisanmu sendiri. Terjemahan biasanya punya hak cipta sendiri."
+   ],
+   [
+    "Bagaimana hadiah bekerja?",
+    "Tiap hadiah membuka 3 kata berikutnya, 99 koin atau lebih membuka sisa kalimat, dan nama pengirim tampil di bawah halaman. Efeknya tetap. Di Twitch, YouTube dan Kick donasi dihitung 1 $ ≈ 75 koin."
+   ],
+   [
+    "Apakah posisiku tersimpan?",
+    "Ya, buku dan halaman tersimpan di browser tempat kamu bermain."
+   ]
+  ],
+  "aboutH": "Tentang game",
+  "about": "Chat Reads adalah game orisinal buatan PickRadar. Cerita contoh ditulis untuk game ini. Buku yang kamu muat dan progresmu hanya disimpan di browsermu."
+ }
+}

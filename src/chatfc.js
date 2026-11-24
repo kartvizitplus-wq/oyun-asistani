@@ -513,7 +513,7 @@ function mount(host, opts) {
  }
 
  /* ---------- match state ---------- */
- const st = { phase: 'idle', t: 0, clock: 0, sc: [0, 0], poss: 0, bar: 1, passK: 1, grace: 0, R: [0, 0], acc: [0, 0], P: [0, 0], chat: [0, 0], slow: 2.2, star: [0, 0], starN: [0, 0], keeper: [0, 0], bigN: [0, 0], duel: null, zoom: 0, cine: null,
+ const st = { fire: [0, 0], heat: [0, 0], starBy: ['', ''], xiT: 0, phase: 'idle', t: 0, clock: 0, sc: [0, 0], poss: 0, bar: 1, passK: 1, grace: 0, R: [0, 0], acc: [0, 0], P: [0, 0], chat: [0, 0], slow: 2.2, star: [0, 0], starN: [0, 0], keeper: [0, 0], bigN: [0, 0], duel: null, zoom: 0, cine: null,
   teams: [TEAMS[0], TEAMS[1]], kit: ['#e94f37', '#2f7fe0'], lastBy: ['', ''], lastByT: [0, 0], assist: ['', ''], contrib: new Map(), mid: 0, laneZ: 0, quick: false, cpu: 3, sideT: 0, tapT: [] };
  function setKits() {
   const [a, b] = st.teams; let ca = a.color, cb = b.color;
@@ -1473,7 +1473,7 @@ ${KINDS.map(k => `<div class="lv-src" data-row="${k}" style="flex-wrap:wrap"><sp
   LS.seen.add(ev.id); LS.seenQ.push(ev.id); if (LS.seenQ.length > 5000) LS.seen.delete(LS.seenQ.shift());
   LS.last = ev;
   if (blockList().includes(ev.user.name.toLowerCase())) { log(ev, ev.type, 'filt'); return; }
-  const u = LS.users.get(ev.user.id) || { id: ev.user.id, name: ev.user.name, side: null, lastMsg: 0, coins: 0 };
+  const u = LS.users.get(ev.user.id) || { id: ev.user.id, name: ev.user.name, side: null, lastMsg: -1e9, coins: 0 };
   LS.users.set(u.id, u); u.name = ev.user.name;
   const now = performance.now() / 1000;
   LS.evRate = (LS.evRate || 0) * Math.exp(-(now - (LS.evT || now)) / 20) + 1 / 20; LS.evT = now;

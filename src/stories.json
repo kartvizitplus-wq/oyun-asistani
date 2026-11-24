@@ -58,6 +58,10 @@
   "chat-fc": {
    "teaser": "Eleven passes, one keeper and a stadium full of chat.",
    "story": null
+  },
+  "chat-reads": {
+   "teaser": "Faded words, one chat, a book that opens word by word.",
+   "story": null
   }
  },
  "tr": {
@@ -118,6 +122,10 @@
   },
   "chat-fc": {
    "teaser": "On bir pas, bir kaleci ve sohbetle dolu bir stadyum.",
+   "story": null
+  },
+  "chat-reads": {
+   "teaser": "Silik kelimeler, tek bir sohbet, kelime kelime açılan bir kitap.",
    "story": null
   }
  },
@@ -180,6 +188,10 @@
   "chat-fc": {
    "teaser": "Sebelas operan, satu kiper, dan stadion penuh chat.",
    "story": null
+  },
+  "chat-reads": {
+   "teaser": "Kata-kata pudar, satu chat, dan buku yang terbuka kata demi kata.",
+   "story": null
   }
  },
  "es": {
@@ -241,6 +253,10 @@
   "chat-fc": {
    "teaser": "Once pases, un portero y un estadio lleno de chat.",
    "story": null
+  },
+  "chat-reads": {
+   "teaser": "Palabras desvaídas, un chat y un libro que se abre palabra a palabra.",
+   "story": null
   }
  },
  "pt": {
@@ -301,6 +317,10 @@
   },
   "chat-fc": {
    "teaser": "Onze passes, um goleiro e um estádio cheio de chat.",
+   "story": null
+  },
+  "chat-reads": {
+   "teaser": "Palavras apagadas, um chat e um livro que se abre palavra por palavra.",
    "story": null
   }
  }

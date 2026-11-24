@@ -13,6 +13,7 @@
   "live": "LIVE mode",
   "pitch": {
    "chat-fc": "A football league your chat plays: viewers comment their team's code, every comment is a pass and 11 passes bring a one-on-one. You name the league, the teams and the sponsor.",
+   "chat-reads": "Read a book with your chat: faded words turn to ink as viewers comment the next word. Load an EPUB or TXT, read each page aloud, and see who opens the most words.",
    "rope-rumble": "Tug of war with a mud pit. Viewers comment RED or BLUE (or your own team names) to join; gifts bring extra people to their team, the losers fall into the mud.",
    "teacher-tycoon": "A 3D classroom. Commenters take a seat as students, gifts bring in the teacher, the principal, the inspector or even the Minister of Education."
   },
@@ -65,6 +66,7 @@
   "live": "LIVE modu",
   "pitch": {
    "chat-fc": "Sohbetin oynadığı futbol ligi: izleyiciler takımının kodunu yazar, her yorum pas olur, 11 pas kaleciyle karşı karşıya getirir. Ligin, takımların ve sponsorun adını sen koyarsın.",
+   "chat-reads": "Kitabı sohbetinle birlikte oku: izleyiciler sıradaki kelimeyi yazdıkça silik kelimeler mürekkebe döner. EPUB ya da TXT yükle, her sayfayı sesli oku, en çok kelimeyi kimin açtığını gör.",
    "rope-rumble": "Çamur havuzlu halat savaşı. İzleyiciler yoruma KIRMIZI ya da MAVİ (ya da senin koyduğun takım adlarını) yazarak katılır; hediyeler takımına ekstra kişi getirir, kaybedenler çamura düşer.",
    "teacher-tycoon": "3D bir sınıf. Yorum yazanlar sıraya öğrenci olarak oturur, hediyeler öğretmeni, müdürü, müfettişi, hatta Milli Eğitim Bakanı'nı getirir."
   },
@@ -117,6 +119,7 @@
   "live": "Modo LIVE",
   "pitch": {
    "chat-fc": "Una liga de fútbol que juega tu chat: los espectadores comentan el código de su equipo, cada comentario es un pase y 11 pases traen un mano a mano. Tú pones la liga, los equipos y el patrocinador.",
+   "chat-reads": "Lee un libro con tu chat: las palabras desvaídas se vuelven tinta cuando comentan la siguiente. Carga un EPUB o TXT, lee cada página en voz alta y mira quién abre más palabras.",
    "rope-rumble": "El juego de la soga con charco de barro. Los espectadores comentan ROJO o AZUL (o tus propios nombres de equipo) para unirse; los regalos traen gente extra y los que pierden caen al barro.",
    "teacher-tycoon": "Un aula en 3D. Quien comenta se sienta como alumno; los regalos traen al profesor, al director, al inspector o incluso al ministro de Educación."
   },
@@ -169,6 +172,7 @@
   "live": "Modo LIVE",
   "pitch": {
    "chat-fc": "Uma liga de futebol que o seu chat joga: os espectadores comentam o código do time, cada comentário é um passe e 11 passes trazem um cara a cara. Você escolhe a liga, os times e o patrocinador.",
+   "chat-reads": "Leia um livro com o chat: as palavras apagadas viram tinta quando comentam a próxima. Carregue um EPUB ou TXT, leia cada página em voz alta e veja quem abre mais palavras.",
    "rope-rumble": "Cabo de guerra com poça de lama. Os espectadores comentam VERMELHO ou AZUL (ou os nomes de time que você escolher) para entrar; presentes trazem gente extra e quem perde cai na lama.",
    "teacher-tycoon": "Uma sala de aula em 3D. Quem comenta senta como aluno; presentes trazem o professor, o diretor, o inspetor ou até o ministro da Educação."
   },
@@ -221,6 +225,7 @@
   "live": "Mode LIVE",
   "pitch": {
    "chat-fc": "Liga sepak bola yang dimainkan chat-mu: penonton mengomentari kode timnya, tiap komentar jadi operan dan 11 operan membawa satu lawan satu. Kamu yang menamai liga, tim, dan sponsornya.",
+   "chat-reads": "Baca buku bareng chat: kata pudar menjadi tinta saat penonton mengomentari kata berikutnya. Muat EPUB atau TXT, bacakan tiap halaman, dan lihat siapa yang membuka kata terbanyak.",
    "rope-rumble": "Tarik tambang dengan kubangan lumpur. Penonton berkomentar MERAH atau BIRU (atau nama tim buatanmu) untuk ikut; hadiah membawa orang tambahan dan yang kalah jatuh ke lumpur.",
    "teacher-tycoon": "Kelas 3D. Yang berkomentar duduk sebagai murid; hadiah mendatangkan guru, kepala sekolah, pengawas, bahkan Menteri Pendidikan."
   },
