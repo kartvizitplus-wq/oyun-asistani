@@ -19,7 +19,8 @@
   "liveL": [
    "Eleven passes bring a one-on-one. Both sides then get a few seconds: the attacking fans comment to shoot, the defending fans comment to save. The side that writes more wins the moment; nothing is left to dice.",
    "A big chat doesn't win automatically: each viewer counts at most once every 1.2 seconds and extra comments add less and less. If nobody supports the opponent, the CPU plays for it at about your chat's level, so small and big streams both get close matches.",
-   "Gifts and donations have fixed effects written on screen: every gift adds +3 comment power; 99 coins or more bring a star player for 10 seconds (3 per team per match); 299 coins or more give a free kick when your team has the ball, or keeper mode when it doesn't (2 per team per match). You can change the coin amounts. A gift never guarantees a goal.",
+   "Gifts and donations have fixed effects written on screen: every gift adds +3 comment power and hangs a banner with the sender's name in the stand; 99 coins or more make the sender the star striker for 10 seconds (+30% power, a goal in that time is credited to them; 3 per team per match); 299 coins or more give a free kick when your team has the ball, or keeper mode when it doesn't (2 per team per match). You can change the coin amounts. A gift never guarantees a goal.",
+   "Viewers are the team and the crowd: the 11 players carry the names of their team's most active viewers, everyone else fills the stand in the team's colours. Comments and likes fill the crowd meter; when it is full the stand catches fire for 6 seconds (+15% power, fixed).",
    "League: 6, 10 or 18 teams. Each match is a week; the week's other results are simulated. After every match the table and top scorers (the viewers who scored) are shown and the next match starts by itself. Derby mode plays two teams without a table.",
    "Goals show the viewer who scored and the one who made the 11th pass. You can download the table as an image to share.",
    "Connect TikTok with the free TikFinity app, Twitch with just your channel name, YouTube Live with your own free API key, and Kick and other platforms with Social Stream Ninja."
@@ -54,7 +55,7 @@
    ],
    [
     "How do gifts work?",
-    "Every gift adds +3 comment power to the sender's team. 99 coins or more give a star player for 10 seconds, 299 coins or more give a free kick (or keeper mode when defending). Both are limited per match and never guarantee a goal. On Twitch, YouTube and Kick donations count as $1 ≈ 75 coins."
+    "Every gift adds +3 comment power to the sender's team and a banner with their name in the stand. 99 coins or more make the sender the star striker for 10 seconds, and a goal in that time is credited to them; 299 coins or more give a free kick (or keeper mode when defending). Both are limited per match and never guarantee a goal. On Twitch, YouTube and Kick donations count as $1 ≈ 75 coins."
    ],
    [
     "Is my league saved?",
@@ -84,7 +85,8 @@
   "liveL": [
    "11 pas kaleciyle karşı karşıya getirir. İki tarafa da birkaç saniye verilir: hücum eden taraftarlar şut için, savunan taraftarlar kurtarış için yazar. O anı daha çok yazan kazanır; hiçbir şey zara bırakılmaz.",
    "Kalabalık sohbet kendiliğinden kazanmaz: her izleyici en fazla 1,2 saniyede bir sayılır ve fazladan yorumların etkisi giderek azalır. Rakibi destekleyen yoksa onun yerine bilgisayar, senin sohbetine yakın bir güçte oynar; böylece küçük ve büyük yayınlarda maçlar çekişmeli geçer.",
-   "Hediye ve bağışların etkisi sabittir ve ekranda yazar: her hediye +3 yorum gücü verir; 99 jeton ve üstü 10 saniyelik yıldız oyuncu getirir (maçta takım başına 3); 299 jeton ve üstü top sendeyken serbest vuruş, değilken kaleci modu verir (maçta takım başına 2). Jeton miktarlarını değiştirebilirsin. Hediye asla gol garantisi vermez.",
+   "Hediye ve bağışların etkisi sabittir ve ekranda yazar: her hediye +3 yorum gücü verir ve gönderenin adıyla tribüne pankart asar; 99 jeton ve üstü gönderen 10 saniye yıldız forvet olur (+%30 güç, bu sürede atılan gol onun adına yazılır; maçta takım başına 3); 299 jeton ve üstü top sendeyken serbest vuruş, değilken kaleci modu verir (maçta takım başına 2). Jeton miktarlarını değiştirebilirsin. Hediye asla gol garantisi vermez.",
+   "İzleyiciler hem takım hem taraftar: sahadaki 11 oyuncu takımının en aktif izleyicilerinin adını taşır, diğerleri tribünü takım rengiyle doldurur. Yorum ve beğeniler tezahürat ölçerini doldurur; dolunca tribün 6 saniye ateşlenir (+%15 güç, sabit).",
    "Lig: 6, 10 ya da 18 takım. Her maç bir haftadır; haftanın diğer sonuçları simüle edilir. Her maçtan sonra puan durumu ve gol krallığı (gol atan izleyiciler) gösterilir, sonraki maç kendiliğinden başlar. Derbi modunda iki takım puan tablosu olmadan oynar.",
    "Gollerde golü atan izleyici ve 11. pası veren izleyici ekranda yazar. Puan durumunu resim olarak indirip paylaşabilirsin.",
    "TikTok'u ücretsiz TikFinity uygulamasıyla, Twitch'i sadece kanal adınla, YouTube Live'ı kendi ücretsiz API anahtarınla, Kick ve diğer platformları Social Stream Ninja ile bağlarsın."
@@ -119,7 +121,7 @@
    ],
    [
     "Hediyeler nasıl çalışır?",
-    "Her hediye gönderenin takımına +3 yorum gücü verir. 99 jeton ve üstü 10 saniyelik yıldız oyuncu, 299 jeton ve üstü serbest vuruş (savunmadaysan kaleci modu) verir. İkisi de maç başına sınırlıdır ve gol garantisi vermez. Twitch, YouTube ve Kick bağışları 1 $ ≈ 75 jeton sayılır."
+    "Her hediye gönderenin takımına +3 yorum gücü verir ve tribüne onun adıyla pankart asar. 99 jeton ve üstü gönderen 10 saniye yıldız forvet olur, bu sürede atılan gol onun adına yazılır; 299 jeton ve üstü serbest vuruş (savunmadaysan kaleci modu) verir. İkisi de maç başına sınırlıdır ve gol garantisi vermez. Twitch, YouTube ve Kick bağışları 1 $ ≈ 75 jeton sayılır."
    ],
    [
     "Ligim kaydediliyor mu?",
@@ -149,7 +151,8 @@
   "liveL": [
    "Once pases traen un mano a mano. Entonces los dos bandos tienen unos segundos: los hinchas del ataque comentan para chutar y los de la defensa para parar. Gana el momento quien escribe más; nada queda al azar.",
    "Un chat grande no gana solo: cada espectador cuenta como mucho una vez cada 1,2 segundos y los comentarios extra suman cada vez menos. Si nadie apoya al rival, la CPU juega por él más o menos al nivel de tu chat, así los partidos son reñidos en directos pequeños y grandes.",
-   "Los regalos y donaciones tienen efectos fijos escritos en pantalla: cada regalo da +3 de poder; 99 monedas o más traen un jugador estrella 10 segundos (3 por equipo y partido); 299 monedas o más dan un tiro libre si tu equipo tiene el balón, o modo portero si no (2 por equipo y partido). Puedes cambiar las cantidades. Un regalo nunca garantiza un gol.",
+   "Los regalos y donaciones tienen efectos fijos escritos en pantalla: cada regalo da +3 de poder y cuelga una pancarta con el nombre de quien lo envía en la grada; con 99 monedas o más quien lo envía es el delantero estrella 10 segundos (+30% de poder, un gol en ese tiempo va a su nombre; 3 por equipo y partido); 299 monedas o más dan un tiro libre si tu equipo tiene el balón, o modo portero si no (2 por equipo y partido). Puedes cambiar las cantidades. Un regalo nunca garantiza un gol.",
+   "Los espectadores son el equipo y la hinchada: los 11 jugadores llevan el nombre de los espectadores más activos de su equipo y los demás llenan la grada con sus colores. Comentarios y likes llenan el medidor de la grada; cuando se llena, la grada arde 6 segundos (+15% de poder, fijo).",
    "Liga: 6, 10 o 18 equipos. Cada partido es una jornada; los demás resultados se simulan. Tras cada partido se muestran la clasificación y los goleadores (los espectadores que marcaron) y el siguiente partido empieza solo. El modo derbi juega dos equipos sin tabla.",
    "En cada gol aparecen el espectador que marcó y el que dio el pase número 11. Puedes descargar la clasificación como imagen para compartirla.",
    "Conecta TikTok con la app gratuita TikFinity, Twitch solo con el nombre de tu canal, YouTube Live con tu propia clave API gratuita, y Kick y otras plataformas con Social Stream Ninja."
@@ -184,7 +187,7 @@
    ],
    [
     "¿Cómo funcionan los regalos?",
-    "Cada regalo da +3 de poder al equipo de quien lo envía. Con 99 monedas o más llega un jugador estrella 10 segundos y con 299 o más un tiro libre (o modo portero al defender). Ambos tienen límite por partido y nunca garantizan un gol. En Twitch, YouTube y Kick las donaciones cuentan como 1 $ ≈ 75 monedas."
+    "Cada regalo da +3 de poder al equipo de quien lo envía y una pancarta con su nombre en la grada. Con 99 monedas o más es el delantero estrella 10 segundos y un gol en ese tiempo va a su nombre; con 299 o más llega un tiro libre (o modo portero al defender). Ambos tienen límite por partido y nunca garantizan un gol. En Twitch, YouTube y Kick las donaciones cuentan como 1 $ ≈ 75 monedas."
    ],
    [
     "¿Se guarda mi liga?",
@@ -214,7 +217,8 @@
   "liveL": [
    "Onze passes trazem um cara a cara. Os dois lados ganham alguns segundos: a torcida do ataque comenta para chutar e a da defesa comenta para defender. Quem escreve mais vence o lance; nada fica por conta da sorte.",
    "Chat grande não vence sozinho: cada espectador conta no máximo uma vez a cada 1,2 segundo e comentários extras valem cada vez menos. Se ninguém torce pelo adversário, a CPU joga por ele mais ou menos no nível do seu chat, então lives pequenas e grandes têm jogos equilibrados.",
-   "Presentes e doações têm efeitos fixos escritos na tela: todo presente dá +3 de força; 99 moedas ou mais trazem um craque por 10 segundos (3 por time por partida); 299 moedas ou mais dão uma falta quando o seu time tem a bola, ou modo goleiro quando não tem (2 por time por partida). Você pode mudar os valores. Presente nunca garante gol.",
+   "Presentes e doações têm efeitos fixos escritos na tela: todo presente dá +3 de força e pendura uma faixa com o nome de quem enviou na arquibancada; com 99 moedas ou mais quem enviou vira o atacante craque por 10 segundos (+30% de força, um gol nesse tempo fica no nome dele; 3 por time por partida); 299 moedas ou mais dão uma falta quando o seu time tem a bola, ou modo goleiro quando não tem (2 por time por partida). Você pode mudar os valores. Presente nunca garante gol.",
+   "Os espectadores são o time e a torcida: os 11 jogadores levam o nome dos espectadores mais ativos do time e o resto enche a arquibancada com as cores do time. Comentários e curtidas enchem o medidor da torcida; quando enche, a arquibancada pega fogo por 6 segundos (+15% de força, fixo).",
    "Liga: 6, 10 ou 18 times. Cada partida é uma rodada; os outros resultados são simulados. Depois de cada jogo aparecem a tabela e a artilharia (os espectadores que marcaram) e a próxima partida começa sozinha. O modo clássico joga dois times sem tabela.",
    "Nos gols aparecem o espectador que marcou e quem deu o 11º passe. Você pode baixar a tabela como imagem para compartilhar.",
    "Conecte o TikTok com o app grátis TikFinity, a Twitch só com o nome do canal, o YouTube Live com a sua própria chave de API grátis, e o Kick e outras plataformas com o Social Stream Ninja."
@@ -249,7 +253,7 @@
    ],
    [
     "Como funcionam os presentes?",
-    "Todo presente dá +3 de força ao time de quem enviou. Com 99 moedas ou mais vem um craque por 10 segundos e com 299 ou mais uma falta (ou modo goleiro na defesa). Os dois têm limite por partida e nunca garantem gol. Na Twitch, YouTube e Kick as doações contam como US$ 1 ≈ 75 moedas."
+    "Todo presente dá +3 de força ao time de quem enviou e uma faixa com o nome dele na arquibancada. Com 99 moedas ou mais ele vira o atacante craque por 10 segundos e um gol nesse tempo fica no nome dele; com 299 ou mais vem uma falta (ou modo goleiro na defesa). Os dois têm limite por partida e nunca garantem gol. Na Twitch, YouTube e Kick as doações contam como US$ 1 ≈ 75 moedas."
    ],
    [
     "Minha liga fica salva?",
@@ -279,7 +283,8 @@
   "liveL": [
    "Sebelas operan membawa satu lawan satu. Kedua pihak lalu dapat beberapa detik: suporter penyerang berkomentar untuk menendang, suporter bertahan berkomentar untuk menepis. Pihak yang menulis lebih banyak memenangkan momen itu; tidak ada yang diundi.",
    "Chat besar tidak otomatis menang: tiap penonton dihitung paling banyak sekali per 1,2 detik dan komentar tambahan makin kecil pengaruhnya. Jika tidak ada yang mendukung lawan, CPU bermain untuknya kira-kira setingkat chat-mu, jadi siaran kecil maupun besar dapat laga ketat.",
-   "Hadiah dan donasi punya efek tetap yang tertulis di layar: tiap hadiah memberi +3 tenaga komentar; 99 koin atau lebih membawa pemain bintang 10 detik (3 per tim per laga); 299 koin atau lebih memberi tendangan bebas saat timmu pegang bola, atau mode kiper saat tidak (2 per tim per laga). Jumlah koin bisa kamu ubah. Hadiah tidak pernah menjamin gol.",
+   "Hadiah dan donasi punya efek tetap yang tertulis di layar: tiap hadiah memberi +3 tenaga komentar dan memasang spanduk nama pengirim di tribun; 99 koin atau lebih membuat pengirim jadi striker bintang 10 detik (+30% tenaga, gol pada waktu itu dicatat atas namanya; 3 per tim per laga); 299 koin atau lebih memberi tendangan bebas saat timmu pegang bola, atau mode kiper saat tidak (2 per tim per laga). Jumlah koin bisa kamu ubah. Hadiah tidak pernah menjamin gol.",
+   "Penonton adalah tim sekaligus suporter: 11 pemain memakai nama penonton paling aktif dari timnya, sisanya memenuhi tribun dengan warna tim. Komentar dan like mengisi meter tribun; saat penuh, tribun membara 6 detik (+15% tenaga, tetap).",
    "Liga: 6, 10 atau 18 tim. Tiap laga adalah satu pekan; hasil laga lain disimulasikan. Setelah tiap laga klasemen dan top skor (penonton yang mencetak gol) ditampilkan dan laga berikutnya mulai sendiri. Mode derby memainkan dua tim tanpa klasemen.",
    "Saat gol, nama penonton pencetak gol dan pemberi operan ke-11 tampil di layar. Klasemen bisa kamu unduh sebagai gambar untuk dibagikan.",
    "Hubungkan TikTok dengan aplikasi gratis TikFinity, Twitch cukup dengan nama channel, YouTube Live dengan kunci API gratismu sendiri, serta Kick dan platform lain dengan Social Stream Ninja."
@@ -314,7 +319,7 @@
    ],
    [
     "Bagaimana hadiah bekerja?",
-    "Tiap hadiah memberi +3 tenaga komentar untuk tim pengirim. 99 koin atau lebih memberi pemain bintang 10 detik, 299 koin atau lebih memberi tendangan bebas (atau mode kiper saat bertahan). Keduanya dibatasi per laga dan tidak pernah menjamin gol. Di Twitch, YouTube dan Kick donasi dihitung 1 $ ≈ 75 koin."
+    "Tiap hadiah memberi +3 tenaga komentar untuk tim pengirim dan spanduk namanya di tribun. 99 koin atau lebih membuat pengirim jadi striker bintang 10 detik dan gol pada waktu itu dicatat atas namanya; 299 koin atau lebih memberi tendangan bebas (atau mode kiper saat bertahan). Keduanya dibatasi per laga dan tidak pernah menjamin gol. Di Twitch, YouTube dan Kick donasi dihitung 1 $ ≈ 75 koin."
    ],
    [
     "Apakah ligaku tersimpan?",

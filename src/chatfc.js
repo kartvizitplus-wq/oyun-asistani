@@ -15,11 +15,11 @@ const LANG = {
 };
 
 const LIVE_FC = {
- en: { cls: 'Live match', legendH: 'Pick your team · comment', any: 'Then every comment is a pass for your team', or12: 'or 1 / 2', gSup: '🎁 Any gift: +3 comment power', gStar: '⭐ {c}+: star player 10 s (max 3)', gFk: '⚡ {c}+: free kick or keeper mode (max 2)', fair: 'Gifts never guarantee a goal. Effects are fixed.', likes: '♥ Likes add a little power', introH: 'Pick your team!', introS: 'Kick-off in {s}', note: 'Simulation mode: this page is not connected to a live stream. All events here are test events made by you or by Auto demo.', obsNote: 'Add as a browser source at 1080 × 1920. Without a connection the output plays a DEMO match.', obsNoteNet: 'Add as a browser source at 1080 × 1920. The match reacts to your real chat and donations.', auto: 'Auto demo: fake viewers (shown as DEMO on stream)', cfgH: 'Game settings', modeL: 'Mode', mLeague: 'League', mDerby: 'Derby (two teams, no table)', lgName: 'League name (e.g. your sponsor)', lgSize: 'Teams in the league', homeH: 'Your team', oppH: 'Opponents', tName: 'Team name', tCode: 'Comment code, e.g. CFC', tColor: 'Colour', oppPh: 'One team per line: Name | CODE', oppN: 'Empty = fictional teams. In derby mode the first line is the opponent. You type the names; do not use logos or crests you have no rights to.', sponsorL: 'Pitch-side board text', sponsorN: 'For a paid promotion, turn on your platform’s paid-promotion label.', matchSec: 'Match length (seconds)', duelSec: 'Shot duel (seconds)', breakSec: 'Break between matches (seconds)', starC: 'Coins for a star player', fkC: 'Coins for a free kick', btnNext: 'Skip to next match', btnReset: 'Reset league', btnPng: '📷 Standings image (PNG)', resetQ: 'Reset the league and start a new season?', saveN: 'The league is saved in this browser. Your OBS source keeps its own league and plays the next match on its own.', sAny: 'Comment', support: '@{u}: +{n} power · {t}', joined: '@{u} joined {t}', mvp: 'Man of the match', duelA: '{t}: comment to SHOOT!', duelD: '{t}: comment to SAVE!', passBy: '@{u} pass', fans: '{n} fans' },
- tr: { cls: 'Canlı maç', legendH: 'Takımını seç · yoruma yaz', any: 'Sonra her yorumun takımına pas olur', or12: 'ya da 1 / 2', gSup: '🎁 Her hediye: +3 yorum gücü', gStar: '⭐ {c}+: yıldız oyuncu 10 sn (en çok 3)', gFk: '⚡ {c}+: serbest vuruş ya da kaleci modu (en çok 2)', fair: 'Hediye gol garantisi vermez. Etkiler sabittir.', likes: '♥ Beğeniler biraz güç katar', introH: 'Takımını seç!', introS: 'Başlama vuruşu {s} sn sonra', note: 'Simülasyon modu: bu sayfa bir canlı yayına bağlı değil. Buradaki tüm olaylar senin ya da otomatik demonun ürettiği test olaylarıdır.', obsNote: 'OBS ya da LIVE Studio\'ya 1080 × 1920 tarayıcı kaynağı olarak ekle. Bağlantı yoksa yayında DEMO maç oynanır.', obsNoteNet: 'OBS ya da LIVE Studio\'ya 1080 × 1920 tarayıcı kaynağı olarak ekle. Maç gerçek sohbetine ve bağışlarına tepki verir.', auto: 'Otomatik demo: sahte izleyiciler (yayında DEMO yazar)', cfgH: 'Oyun ayarları', modeL: 'Mod', mLeague: 'Lig', mDerby: 'Derbi (iki takım, puan tablosu yok)', lgName: 'Lig adı (örn. sponsorun)', lgSize: 'Ligdeki takım sayısı', homeH: 'Senin takımın', oppH: 'Rakip takımlar', tName: 'Takım adı', tCode: 'Yorum kodu, örn. CFC', tColor: 'Renk', oppPh: 'Her satıra bir takım: İsim | KOD', oppN: 'Boş bırakırsan hayali takımlar gelir. Derbi modunda ilk satır rakiptir. İsimleri sen yazarsın; hakkın olmayan logo ve armaları kullanma.', sponsorL: 'Saha kenarı pano yazısı', sponsorN: 'Ücretli tanıtımsa platformunun reklam/ücretli tanıtım etiketini aç.', matchSec: 'Maç süresi (saniye)', duelSec: 'Şut düellosu (saniye)', breakSec: 'Maç arası (saniye)', starC: 'Yıldız oyuncu için jeton', fkC: 'Serbest vuruş için jeton', btnNext: 'Sonraki maça geç', btnReset: 'Ligi sıfırla', btnPng: '📷 Puan durumu resmi (PNG)', resetQ: 'Lig sıfırlanıp yeni sezon başlasın mı?', saveN: 'Lig bu tarayıcıda kaydedilir. OBS kaynağın kendi ligini tutar ve sonraki maçı kendiliğinden başlatır.', sAny: 'Yorum', support: '@{u}: +{n} güç · {t}', joined: '@{u} → {t}', mvp: 'Maçın oyuncusu', duelA: '{t}: ŞUT için yaz!', duelD: '{t}: KURTARIŞ için yaz!', passBy: '@{u} pası', fans: '{n} taraftar' },
- es: { cls: 'Partido en directo', legendH: 'Elige equipo · comenta', any: 'Luego cada comentario es un pase para tu equipo', or12: 'o 1 / 2', gSup: '🎁 Cualquier regalo: +3 de poder', gStar: '⭐ {c}+: jugador estrella 10 s (máx. 3)', gFk: '⚡ {c}+: tiro libre o modo portero (máx. 2)', fair: 'Un regalo nunca garantiza un gol. Efectos fijos.', likes: '♥ Los likes suman un poco de poder', introH: '¡Elige tu equipo!', introS: 'Saque en {s}', note: 'Modo simulación: esta página no está conectada a un directo. Todos los eventos son de prueba, tuyos o de la demo automática.', obsNote: 'Añádelo como fuente de navegador de 1080 × 1920. Sin conexión se juega un partido DEMO.', obsNoteNet: 'Añádelo como fuente de navegador de 1080 × 1920. El partido reacciona a tu chat y donaciones reales.', auto: 'Demo automática: espectadores falsos (se ve DEMO en el directo)', cfgH: 'Ajustes del juego', modeL: 'Modo', mLeague: 'Liga', mDerby: 'Derbi (dos equipos, sin tabla)', lgName: 'Nombre de la liga (p. ej. tu patrocinador)', lgSize: 'Equipos en la liga', homeH: 'Tu equipo', oppH: 'Rivales', tName: 'Nombre del equipo', tCode: 'Código de comentario, p. ej. CFC', tColor: 'Color', oppPh: 'Un equipo por línea: Nombre | CÓDIGO', oppN: 'Vacío = equipos ficticios. En modo derbi la primera línea es el rival. Tú escribes los nombres; no uses escudos ni logos sin derechos.', sponsorL: 'Texto de las vallas del campo', sponsorN: 'Si es una promoción pagada, activa la etiqueta de promoción pagada de tu plataforma.', matchSec: 'Duración del partido (segundos)', duelSec: 'Duelo de tiro (segundos)', breakSec: 'Pausa entre partidos (segundos)', starC: 'Monedas para jugador estrella', fkC: 'Monedas para tiro libre', btnNext: 'Pasar al siguiente partido', btnReset: 'Reiniciar liga', btnPng: '📷 Imagen de la clasificación (PNG)', resetQ: '¿Reiniciar la liga y empezar una temporada nueva?', saveN: 'La liga se guarda en este navegador. Tu fuente de OBS guarda su propia liga y juega el siguiente partido sola.', sAny: 'Comentario', support: '@{u}: +{n} de poder · {t}', joined: '@{u} → {t}', mvp: 'Jugador del partido', duelA: '{t}: ¡comenta para CHUTAR!', duelD: '{t}: ¡comenta para PARAR!', passBy: 'pase de @{u}', fans: '{n} hinchas' },
- pt: { cls: 'Partida ao vivo', legendH: 'Escolha o time · comente', any: 'Depois, cada comentário é um passe do seu time', or12: 'ou 1 / 2', gSup: '🎁 Qualquer presente: +3 de força', gStar: '⭐ {c}+: craque por 10 s (máx. 3)', gFk: '⚡ {c}+: falta ou modo goleiro (máx. 2)', fair: 'Presente nunca garante gol. Efeitos fixos.', likes: '♥ Curtidas dão um pouco de força', introH: 'Escolha seu time!', introS: 'Saída de bola em {s}', note: 'Modo simulação: esta página não está ligada a uma live. Todos os eventos aqui são de teste, seus ou da demo automática.', obsNote: 'Adicione como fonte de navegador 1080 × 1920. Sem conexão a saída mostra uma partida DEMO.', obsNoteNet: 'Adicione como fonte de navegador 1080 × 1920. A partida reage ao seu chat e doações reais.', auto: 'Demo automática: espectadores falsos (aparece DEMO na live)', cfgH: 'Ajustes do jogo', modeL: 'Modo', mLeague: 'Liga', mDerby: 'Clássico (dois times, sem tabela)', lgName: 'Nome da liga (ex. seu patrocinador)', lgSize: 'Times na liga', homeH: 'Seu time', oppH: 'Adversários', tName: 'Nome do time', tCode: 'Código de comentário, ex. CFC', tColor: 'Cor', oppPh: 'Um time por linha: Nome | CÓDIGO', oppN: 'Vazio = times fictícios. No modo clássico a primeira linha é o adversário. Você digita os nomes; não use escudos ou logos sem direitos.', sponsorL: 'Texto das placas do campo', sponsorN: 'Se for publicidade paga, ative o selo de promoção paga da sua plataforma.', matchSec: 'Duração da partida (segundos)', duelSec: 'Duelo de chute (segundos)', breakSec: 'Intervalo entre partidas (segundos)', starC: 'Moedas para craque', fkC: 'Moedas para falta', btnNext: 'Pular para a próxima partida', btnReset: 'Reiniciar liga', btnPng: '📷 Imagem da classificação (PNG)', resetQ: 'Reiniciar a liga e começar nova temporada?', saveN: 'A liga fica salva neste navegador. Sua fonte do OBS guarda a própria liga e joga a próxima partida sozinha.', sAny: 'Comentário', support: '@{u}: +{n} de força · {t}', joined: '@{u} → {t}', mvp: 'Craque da partida', duelA: '{t}: comente para CHUTAR!', duelD: '{t}: comente para DEFENDER!', passBy: 'passe de @{u}', fans: '{n} torcedores' },
- id: { cls: 'Laga live', legendH: 'Pilih tim · komentar', any: 'Lalu tiap komentar jadi operan untuk timmu', or12: 'atau 1 / 2', gSup: '🎁 Hadiah apa pun: +3 tenaga komentar', gStar: '⭐ {c}+: pemain bintang 10 dtk (maks. 3)', gFk: '⚡ {c}+: tendangan bebas atau mode kiper (maks. 2)', fair: 'Hadiah tidak menjamin gol. Efeknya tetap.', likes: '♥ Like menambah sedikit tenaga', introH: 'Pilih timmu!', introS: 'Kick-off dalam {s}', note: 'Mode simulasi: halaman ini tidak terhubung ke siaran live. Semua peristiwa di sini adalah tes buatanmu atau demo otomatis.', obsNote: 'Tambahkan sebagai browser source 1080 × 1920. Tanpa koneksi, output memutar laga DEMO.', obsNoteNet: 'Tambahkan sebagai browser source 1080 × 1920. Laga bereaksi pada chat dan donasi aslimu.', auto: 'Demo otomatis: penonton palsu (tampil DEMO di siaran)', cfgH: 'Pengaturan game', modeL: 'Mode', mLeague: 'Liga', mDerby: 'Derby (dua tim, tanpa klasemen)', lgName: 'Nama liga (mis. sponsormu)', lgSize: 'Jumlah tim di liga', homeH: 'Timmu', oppH: 'Lawan', tName: 'Nama tim', tCode: 'Kode komentar, mis. CFC', tColor: 'Warna', oppPh: 'Satu tim per baris: Nama | KODE', oppN: 'Kosong = tim fiksi. Di mode derby baris pertama adalah lawan. Kamu yang menulis nama; jangan pakai logo atau lambang tanpa hak.', sponsorL: 'Teks papan pinggir lapangan', sponsorN: 'Jika promosi berbayar, nyalakan label promosi berbayar platformmu.', matchSec: 'Durasi laga (detik)', duelSec: 'Duel tendangan (detik)', breakSec: 'Jeda antar laga (detik)', starC: 'Koin untuk pemain bintang', fkC: 'Koin untuk tendangan bebas', btnNext: 'Lompat ke laga berikutnya', btnReset: 'Reset liga', btnPng: '📷 Gambar klasemen (PNG)', resetQ: 'Reset liga dan mulai musim baru?', saveN: 'Liga disimpan di browser ini. Source OBS-mu menyimpan ligamu sendiri dan memulai laga berikutnya otomatis.', sAny: 'Komentar', support: '@{u}: +{n} tenaga · {t}', joined: '@{u} → {t}', mvp: 'Pemain terbaik', duelA: '{t}: komentar untuk MENENDANG!', duelD: '{t}: komentar untuk MENEPIS!', passBy: 'operan @{u}', fans: '{n} suporter' }
+ en: { fire: "🔥 CROWD ON FIRE: {t}!", gFire: "🔥 Comments + likes fill the stand → 6 s +15% power", cls: 'Live match', legendH: 'Pick your team · comment', any: 'Then every comment is a pass for your team', or12: 'or 1 / 2', gSup: "🎁 Any gift: +3 power + your banner in the stand", gStar: "⭐ {c}+: you are the star striker for 10 s (+30%), goals count as yours (max 3)", gFk: '⚡ {c}+: free kick or keeper mode (max 2)', fair: 'Gifts never guarantee a goal. Effects are fixed.', likes: '♥ Likes add a little power', introH: 'Pick your team!', introS: 'Kick-off in {s}', note: 'Simulation mode: this page is not connected to a live stream. All events here are test events made by you or by Auto demo.', obsNote: 'Add as a browser source at 1080 × 1920. Without a connection the output plays a DEMO match.', obsNoteNet: 'Add as a browser source at 1080 × 1920. The match reacts to your real chat and donations.', auto: 'Auto demo: fake viewers (shown as DEMO on stream)', cfgH: 'Game settings', modeL: 'Mode', mLeague: 'League', mDerby: 'Derby (two teams, no table)', lgName: 'League name (e.g. your sponsor)', lgSize: 'Teams in the league', homeH: 'Your team', oppH: 'Opponents', tName: 'Team name', tCode: 'Comment code, e.g. CFC', tColor: 'Colour', oppPh: 'One team per line: Name | CODE', oppN: 'Empty = fictional teams. In derby mode the first line is the opponent. You type the names; do not use logos or crests you have no rights to.', sponsorL: 'Pitch-side board text', sponsorN: 'For a paid promotion, turn on your platform’s paid-promotion label.', matchSec: 'Match length (seconds)', duelSec: 'Shot duel (seconds)', breakSec: 'Break between matches (seconds)', starC: 'Coins for a star player', fkC: 'Coins for a free kick', btnNext: 'Skip to next match', btnReset: 'Reset league', btnPng: '📷 Standings image (PNG)', resetQ: 'Reset the league and start a new season?', saveN: 'The league is saved in this browser. Your OBS source keeps its own league and plays the next match on its own.', sAny: 'Comment', support: '@{u}: +{n} power · {t}', joined: '@{u} joined {t}', mvp: 'Man of the match', duelA: '{t}: comment to SHOOT!', duelD: '{t}: comment to SAVE!', passBy: '@{u} pass', fans: '{n} fans' },
+ tr: { fire: "🔥 TRİBÜN ATEŞİ: {t}!", gFire: "🔥 Yorum + beğeni tribünü doldurur → 6 sn +%15 güç", cls: 'Canlı maç', legendH: 'Takımını seç · yoruma yaz', any: 'Sonra her yorumun takımına pas olur', or12: 'ya da 1 / 2', gSup: "🎁 Her hediye: +3 güç + tribünde pankartın", gStar: "⭐ {c}+: 10 sn yıldız forvet sensin (+%30), gol senin adına (en çok 3)", gFk: '⚡ {c}+: serbest vuruş ya da kaleci modu (en çok 2)', fair: 'Hediye gol garantisi vermez. Etkiler sabittir.', likes: '♥ Beğeniler biraz güç katar', introH: 'Takımını seç!', introS: 'Başlama vuruşu {s} sn sonra', note: 'Simülasyon modu: bu sayfa bir canlı yayına bağlı değil. Buradaki tüm olaylar senin ya da otomatik demonun ürettiği test olaylarıdır.', obsNote: 'OBS ya da LIVE Studio\'ya 1080 × 1920 tarayıcı kaynağı olarak ekle. Bağlantı yoksa yayında DEMO maç oynanır.', obsNoteNet: 'OBS ya da LIVE Studio\'ya 1080 × 1920 tarayıcı kaynağı olarak ekle. Maç gerçek sohbetine ve bağışlarına tepki verir.', auto: 'Otomatik demo: sahte izleyiciler (yayında DEMO yazar)', cfgH: 'Oyun ayarları', modeL: 'Mod', mLeague: 'Lig', mDerby: 'Derbi (iki takım, puan tablosu yok)', lgName: 'Lig adı (örn. sponsorun)', lgSize: 'Ligdeki takım sayısı', homeH: 'Senin takımın', oppH: 'Rakip takımlar', tName: 'Takım adı', tCode: 'Yorum kodu, örn. CFC', tColor: 'Renk', oppPh: 'Her satıra bir takım: İsim | KOD', oppN: 'Boş bırakırsan hayali takımlar gelir. Derbi modunda ilk satır rakiptir. İsimleri sen yazarsın; hakkın olmayan logo ve armaları kullanma.', sponsorL: 'Saha kenarı pano yazısı', sponsorN: 'Ücretli tanıtımsa platformunun reklam/ücretli tanıtım etiketini aç.', matchSec: 'Maç süresi (saniye)', duelSec: 'Şut düellosu (saniye)', breakSec: 'Maç arası (saniye)', starC: 'Yıldız oyuncu için jeton', fkC: 'Serbest vuruş için jeton', btnNext: 'Sonraki maça geç', btnReset: 'Ligi sıfırla', btnPng: '📷 Puan durumu resmi (PNG)', resetQ: 'Lig sıfırlanıp yeni sezon başlasın mı?', saveN: 'Lig bu tarayıcıda kaydedilir. OBS kaynağın kendi ligini tutar ve sonraki maçı kendiliğinden başlatır.', sAny: 'Yorum', support: '@{u}: +{n} güç · {t}', joined: '@{u} → {t}', mvp: 'Maçın oyuncusu', duelA: '{t}: ŞUT için yaz!', duelD: '{t}: KURTARIŞ için yaz!', passBy: '@{u} pası', fans: '{n} taraftar' },
+ es: { fire: "🔥 ¡LA GRADA ARDE: {t}!", gFire: "🔥 Comentarios + likes llenan la grada → 6 s +15% de poder", cls: 'Partido en directo', legendH: 'Elige equipo · comenta', any: 'Luego cada comentario es un pase para tu equipo', or12: 'o 1 / 2', gSup: "🎁 Cualquier regalo: +3 de poder + tu pancarta en la grada", gStar: "⭐ {c}+: eres el delantero estrella 10 s (+30%), los goles son tuyos (máx. 3)", gFk: '⚡ {c}+: tiro libre o modo portero (máx. 2)', fair: 'Un regalo nunca garantiza un gol. Efectos fijos.', likes: '♥ Los likes suman un poco de poder', introH: '¡Elige tu equipo!', introS: 'Saque en {s}', note: 'Modo simulación: esta página no está conectada a un directo. Todos los eventos son de prueba, tuyos o de la demo automática.', obsNote: 'Añádelo como fuente de navegador de 1080 × 1920. Sin conexión se juega un partido DEMO.', obsNoteNet: 'Añádelo como fuente de navegador de 1080 × 1920. El partido reacciona a tu chat y donaciones reales.', auto: 'Demo automática: espectadores falsos (se ve DEMO en el directo)', cfgH: 'Ajustes del juego', modeL: 'Modo', mLeague: 'Liga', mDerby: 'Derbi (dos equipos, sin tabla)', lgName: 'Nombre de la liga (p. ej. tu patrocinador)', lgSize: 'Equipos en la liga', homeH: 'Tu equipo', oppH: 'Rivales', tName: 'Nombre del equipo', tCode: 'Código de comentario, p. ej. CFC', tColor: 'Color', oppPh: 'Un equipo por línea: Nombre | CÓDIGO', oppN: 'Vacío = equipos ficticios. En modo derbi la primera línea es el rival. Tú escribes los nombres; no uses escudos ni logos sin derechos.', sponsorL: 'Texto de las vallas del campo', sponsorN: 'Si es una promoción pagada, activa la etiqueta de promoción pagada de tu plataforma.', matchSec: 'Duración del partido (segundos)', duelSec: 'Duelo de tiro (segundos)', breakSec: 'Pausa entre partidos (segundos)', starC: 'Monedas para jugador estrella', fkC: 'Monedas para tiro libre', btnNext: 'Pasar al siguiente partido', btnReset: 'Reiniciar liga', btnPng: '📷 Imagen de la clasificación (PNG)', resetQ: '¿Reiniciar la liga y empezar una temporada nueva?', saveN: 'La liga se guarda en este navegador. Tu fuente de OBS guarda su propia liga y juega el siguiente partido sola.', sAny: 'Comentario', support: '@{u}: +{n} de poder · {t}', joined: '@{u} → {t}', mvp: 'Jugador del partido', duelA: '{t}: ¡comenta para CHUTAR!', duelD: '{t}: ¡comenta para PARAR!', passBy: 'pase de @{u}', fans: '{n} hinchas' },
+ pt: { fire: "🔥 TORCIDA EM CHAMAS: {t}!", gFire: "🔥 Comentários + curtidas enchem a arquibancada → 6 s +15% de força", cls: 'Partida ao vivo', legendH: 'Escolha o time · comente', any: 'Depois, cada comentário é um passe do seu time', or12: 'ou 1 / 2', gSup: "🎁 Qualquer presente: +3 de força + sua faixa na arquibancada", gStar: "⭐ {c}+: você é o atacante craque por 10 s (+30%), gols no seu nome (máx. 3)", gFk: '⚡ {c}+: falta ou modo goleiro (máx. 2)', fair: 'Presente nunca garante gol. Efeitos fixos.', likes: '♥ Curtidas dão um pouco de força', introH: 'Escolha seu time!', introS: 'Saída de bola em {s}', note: 'Modo simulação: esta página não está ligada a uma live. Todos os eventos aqui são de teste, seus ou da demo automática.', obsNote: 'Adicione como fonte de navegador 1080 × 1920. Sem conexão a saída mostra uma partida DEMO.', obsNoteNet: 'Adicione como fonte de navegador 1080 × 1920. A partida reage ao seu chat e doações reais.', auto: 'Demo automática: espectadores falsos (aparece DEMO na live)', cfgH: 'Ajustes do jogo', modeL: 'Modo', mLeague: 'Liga', mDerby: 'Clássico (dois times, sem tabela)', lgName: 'Nome da liga (ex. seu patrocinador)', lgSize: 'Times na liga', homeH: 'Seu time', oppH: 'Adversários', tName: 'Nome do time', tCode: 'Código de comentário, ex. CFC', tColor: 'Cor', oppPh: 'Um time por linha: Nome | CÓDIGO', oppN: 'Vazio = times fictícios. No modo clássico a primeira linha é o adversário. Você digita os nomes; não use escudos ou logos sem direitos.', sponsorL: 'Texto das placas do campo', sponsorN: 'Se for publicidade paga, ative o selo de promoção paga da sua plataforma.', matchSec: 'Duração da partida (segundos)', duelSec: 'Duelo de chute (segundos)', breakSec: 'Intervalo entre partidas (segundos)', starC: 'Moedas para craque', fkC: 'Moedas para falta', btnNext: 'Pular para a próxima partida', btnReset: 'Reiniciar liga', btnPng: '📷 Imagem da classificação (PNG)', resetQ: 'Reiniciar a liga e começar nova temporada?', saveN: 'A liga fica salva neste navegador. Sua fonte do OBS guarda a própria liga e joga a próxima partida sozinha.', sAny: 'Comentário', support: '@{u}: +{n} de força · {t}', joined: '@{u} → {t}', mvp: 'Craque da partida', duelA: '{t}: comente para CHUTAR!', duelD: '{t}: comente para DEFENDER!', passBy: 'passe de @{u}', fans: '{n} torcedores' },
+ id: { fire: "🔥 TRIBUN MEMBARA: {t}!", gFire: "🔥 Komentar + like mengisi tribun → 6 dtk +15% tenaga", cls: 'Laga live', legendH: 'Pilih tim · komentar', any: 'Lalu tiap komentar jadi operan untuk timmu', or12: 'atau 1 / 2', gSup: "🎁 Hadiah apa pun: +3 tenaga + spanduk namamu di tribun", gStar: "⭐ {c}+: kamu striker bintang 10 dtk (+30%), golnya atas namamu (maks. 3)", gFk: '⚡ {c}+: tendangan bebas atau mode kiper (maks. 2)', fair: 'Hadiah tidak menjamin gol. Efeknya tetap.', likes: '♥ Like menambah sedikit tenaga', introH: 'Pilih timmu!', introS: 'Kick-off dalam {s}', note: 'Mode simulasi: halaman ini tidak terhubung ke siaran live. Semua peristiwa di sini adalah tes buatanmu atau demo otomatis.', obsNote: 'Tambahkan sebagai browser source 1080 × 1920. Tanpa koneksi, output memutar laga DEMO.', obsNoteNet: 'Tambahkan sebagai browser source 1080 × 1920. Laga bereaksi pada chat dan donasi aslimu.', auto: 'Demo otomatis: penonton palsu (tampil DEMO di siaran)', cfgH: 'Pengaturan game', modeL: 'Mode', mLeague: 'Liga', mDerby: 'Derby (dua tim, tanpa klasemen)', lgName: 'Nama liga (mis. sponsormu)', lgSize: 'Jumlah tim di liga', homeH: 'Timmu', oppH: 'Lawan', tName: 'Nama tim', tCode: 'Kode komentar, mis. CFC', tColor: 'Warna', oppPh: 'Satu tim per baris: Nama | KODE', oppN: 'Kosong = tim fiksi. Di mode derby baris pertama adalah lawan. Kamu yang menulis nama; jangan pakai logo atau lambang tanpa hak.', sponsorL: 'Teks papan pinggir lapangan', sponsorN: 'Jika promosi berbayar, nyalakan label promosi berbayar platformmu.', matchSec: 'Durasi laga (detik)', duelSec: 'Duel tendangan (detik)', breakSec: 'Jeda antar laga (detik)', starC: 'Koin untuk pemain bintang', fkC: 'Koin untuk tendangan bebas', btnNext: 'Lompat ke laga berikutnya', btnReset: 'Reset liga', btnPng: '📷 Gambar klasemen (PNG)', resetQ: 'Reset liga dan mulai musim baru?', saveN: 'Liga disimpan di browser ini. Source OBS-mu menyimpan ligamu sendiri dan memulai laga berikutnya otomatis.', sAny: 'Komentar', support: '@{u}: +{n} tenaga · {t}', joined: '@{u} → {t}', mvp: 'Pemain terbaik', duelA: '{t}: komentar untuk MENENDANG!', duelD: '{t}: komentar untuk MENEPIS!', passBy: 'operan @{u}', fans: '{n} suporter' }
 };
 
 // fictional clubs (no real names, crests or kits) used when the streamer leaves the opponents empty
@@ -143,6 +143,8 @@ function mount(host, opts) {
 .cf canvas{display:block;width:100%;height:100%;outline:none}
 .cf-ui,.cf-labels{position:absolute;inset:0;pointer-events:none}
 .cf-np{position:absolute;transform:translate(-50%,-100%);white-space:nowrap;padding:1px 7px;border-radius:6px;font:700 12px system-ui,sans-serif;background:rgba(10,16,34,.82);color:#fff;border-left:3px solid var(--c,#ffc93c)}
+.cf-nm{position:absolute;transform:translate(-50%,-100%);white-space:nowrap;padding:0 5px;border-radius:5px;font:700 10px system-ui,sans-serif;background:rgba(10,16,34,.62);color:#fff;border-bottom:2px solid var(--c,#fff)}
+.cf-nm.st{background:#ffc93c;color:#10172b;font-size:11px}
 .cf-np.hot{font-size:14px;background:#ffc93c;color:#10172b;border-left-color:#10172b}
 .cf-bug{position:absolute;left:50%;top:10px;transform:translateX(-50%);display:flex;align-items:stretch;border-radius:8px;overflow:hidden;box-shadow:0 6px 18px rgba(0,0,0,.45);background:#10172b;max-width:calc(100% - 20px)}
 .cf-bug .tm{display:flex;align-items:center;gap:7px;padding:6px 11px;font-weight:800;font-size:19px;letter-spacing:.5px;text-transform:uppercase;white-space:nowrap;min-width:0}
@@ -286,21 +288,28 @@ function mount(host, opts) {
   for (const t of [-1, 1]) { mesh(G.cyl, M('#f4f6fb', .4), gx, .5, t * HW, .03, 1, .03); mesh(G.box, M('#ffc93c', .5), gx, .9, t * HW + .14 * -t, .02, .2, .28); }
  }
  // stands with a painted crowd, roof band and the stadium lights
- const crowdTex = [0, 1].map(v => canvasTex(512, 256, (c, w, h) => {
+ function paintCrowd(c, v, w, h, cols) {
   c.fillStyle = '#151b2c'; c.fillRect(0, 0, w, h);
   for (let r = 0; r < 16; r++) { c.fillStyle = r % 2 ? '#1a2135' : '#1d253a'; c.fillRect(0, r * 16, w, 16); }
-  const cols = ['#e94f37', '#ffffff', '#2f7fe0', '#ffc93c', '#c8d0e0', '#e94f37', '#3e9e5c', '#20283c'];
   for (let r = 0; r < 16; r++) for (let i = 0; i < 46; i++) {
    if ((i * 31 + r * 17 + v * 5) % 9 === 0) continue;
    const x = i * 11.1 + (r % 2) * 5 + ((i * r * 7) % 4), y = r * 16 + 4;
-   c.fillStyle = cols[(i * 7 + r * 13 + v * 3) % cols.length]; c.fillRect(x, y + 5, 8, 8);
+   c.fillStyle = typeof cols === 'function' ? cols(i, r, v) : cols[(i * 7 + r * 13 + v * 3) % cols.length]; c.fillRect(x, y + 5, 8, 8);
    c.fillStyle = ['#f2c7a5', '#c68b63', '#8a5a3b', '#e0ac85'][(i + r) % 4]; c.beginPath(); c.arc(x + 4, y + 3, 3.3, 0, TAU); c.fill();
   }
- }, [6, 1]));
+ }
+ const CROWD0 = ['#e94f37', '#ffffff', '#2f7fe0', '#ffc93c', '#c8d0e0', '#e94f37', '#3e9e5c', '#20283c'];
+ const crowdTex = [0, 1].map(v => canvasTex(512, 256, (c, w, h) => paintCrowd(c, v, w, h, CROWD0), [6, 1]));
+ const standTexs = [];
+ // the stands fill with the colours of the two teams' fans (LIVE): share = home fans / all fans
+ function recolorCrowd(share, ca, cb) {
+  crowdTex.forEach((t, v) => paintCrowd(t.userData.canvas.getContext('2d'), v, 512, 256, (i, r) => { const k = hash(i + ':' + r + ':' + v) % 1000 / 1000; return k < .22 ? ['#ffffff', '#c8d0e0', '#20283c'][(i + r) % 3] : (k - .22) / .78 < share ? ca : cb; }));
+  standTexs.forEach(t => t.needsUpdate = true);
+ }
  const stands = new T3.Group(); scene.add(stands);
  function stand(w, depth, x, z, ry, tex) {
   const g = new T3.Group(); g.position.set(x, 0, z); g.rotation.y = ry; stands.add(g);
-  const t = tex.clone(); t.needsUpdate = true; t.repeat.set(w / 10, 3);
+  const t = tex.clone(); t.needsUpdate = true; t.repeat.set(w / 10, 3); standTexs.push(t);
   const p = mesh(new T3.PlaneGeometry(w, depth), new T3.MeshStandardMaterial({ map: t, roughness: .9 }), 0, depth * .26, -depth * .43, 1, 1, 1, g);
   p.rotation.x = -Math.PI / 2 + .52;
   mesh(G.box, M('#24314f', .8), 0, .45, .4, w, .9, .6, g);
@@ -312,6 +321,26 @@ function mount(host, opts) {
  stand(PW + 14, 24, 0, HW + 4.5, Math.PI, crowdTex[1]);
  stand(PH + 10, 20, -(HL + 5.5), 0, Math.PI / 2, crowdTex[1]);
  stand(PH + 10, 20, HL + 5.5, 0, -Math.PI / 2, crowdTex[0]);
+ const BANNER_POS = [[HL + 5.6, 1.9, -12, -Math.PI / 2], [-20, 1.9, -(HW + 4.6), 0], [HL + 5.6, 1.9, 6, -Math.PI / 2], [8, 1.9, -(HW + 4.6), 0], [HL + 5.6, 1.9, -3, -Math.PI / 2], [-6, 1.9, -(HW + 4.6), 0], [HL + 5.6, 1.9, 14, -Math.PI / 2], [21, 1.9, -(HW + 4.6), 0]];
+ const banners = []; let bannerN = 0;
+ function addBanner(name, color) {
+  const old = banners.filter(b => b.name === name); old.forEach(b => { scene.remove(b.m); b.m.material.map.dispose(); banners.splice(banners.indexOf(b), 1); });
+  for (let k = 0; k < 2; k++) {
+   const pos = BANNER_POS[(bannerN++) % BANNER_POS.length];
+   const prev = banners.find(b => b.slot === pos); if (prev) { scene.remove(prev.m); banners.splice(banners.indexOf(prev), 1); }
+   const tex = canvasTex(512, 150, (c, w, h) => {
+    c.fillStyle = color; c.fillRect(0, 0, w, h); c.fillStyle = 'rgba(255,255,255,.9)'; c.fillRect(0, 0, w, 10); c.fillRect(0, h - 10, w, 10);
+    c.fillStyle = lum(color) > .6 ? '#10172b' : '#ffffff'; c.textAlign = 'center'; c.textBaseline = 'middle';
+    let fs = 92; c.font = `800 ${fs}px "Barlow Condensed","Arial Narrow",system-ui,sans-serif`; const txt = '@' + name;
+    while (c.measureText(txt).width > w - 40 && fs > 40) { fs -= 4; c.font = `800 ${fs}px "Barlow Condensed","Arial Narrow",system-ui,sans-serif`; }
+    c.fillText(txt, w / 2, h / 2 + 4);
+   });
+   const m = mesh(new T3.PlaneGeometry(6.4, 1.9), new T3.MeshBasicMaterial({ map: tex, side: T3.DoubleSide }), pos[0], pos[1], pos[2]);
+   m.rotation.y = pos[3]; m.rotateX(-.35);
+   banners.push({ name, m, slot: pos });
+  }
+ }
+ function clearBanners() { banners.splice(0).forEach(b => scene.remove(b.m)); }
  const glowTex = canvasTex(128, 128, (c, w) => { const g = c.createRadialGradient(w / 2, w / 2, 0, w / 2, w / 2, w / 2); g.addColorStop(0, 'rgba(255,252,235,1)'); g.addColorStop(.25, 'rgba(255,248,220,.55)'); g.addColorStop(1, 'rgba(255,248,220,0)'); c.fillStyle = g; c.fillRect(0, 0, w, w); });
  for (const sx of [-1, 1]) for (const sz of [-1, 1]) {
   const x = sx * (HL + 16), z = sz * (HW + 18);
@@ -508,6 +537,9 @@ function mount(host, opts) {
   st.teams = [home, away]; setKits(); st.mid++;
   st.sc = [0, 0]; st.clock = 0; st.R = [0, 0]; st.acc = [0, 0]; st.star = [0, 0]; st.starN = [0, 0]; st.keeper = [0, 0]; st.bigN = [0, 0];
   st.lastBy = ['', '']; st.assist = ['', '']; st.contrib = new Map(); st.duel = null; st.cine = null;
+  st.starBy = ['', '']; st.fire = [0, 0]; st.heat = [0, 0]; st.xiT = 0;
+  for (const s of [0, 1]) for (const p of P[s]) setName(p, '');
+  clearBanners();
   resetPositions(0, true); camSnap = true;
   renderBug(); renderAtt(); duel.hidden = true;
   if (live) { st.phase = 'intro'; st.t = 10; resetFans(); showIntro(); } else { st.phase = 'kick'; st.t = 1.4; }
@@ -528,7 +560,7 @@ function mount(host, opts) {
    st.P[0] = Math.max(st.chat[0], 1.3 * wob(0));
    st.P[1] = Math.max(st.chat[1], st.slow * (st.teams[1].str || 1) * .95 * wob(1));
   }
-  for (const s of [0, 1]) { if (st.star[s] > 0) { st.star[s] -= dt; st.P[s] *= 1.3; } }
+  for (const s of [0, 1]) { if (st.star[s] > 0) { st.star[s] -= dt; st.P[s] *= 1.3; if (st.star[s] <= 0) st.starBy[s] = ''; } if (st.fire[s] > 0) { st.fire[s] -= dt; st.P[s] *= 1.15; } }
  }
  function addC(s, w, name) {
   if (!['play', 'chance', 'kick', 'shot', 'intro'].includes(st.phase)) return;
@@ -588,6 +620,7 @@ function mount(host, opts) {
   const a = st.poss;
   st.phase = 'chance'; st.t = live ? clamp(+CFG.duelSec || 3, 2, 6) : 2.6;
   st.duel = { a, SA: 0, SD: 0, by: [{}, {}], T: st.t };
+  if (live && st.star[a] > 0 && st.starBy[a] && ball.mode === 'carry' && ball.car !== P[a][9]) passTo(P[a][9]);
   bigText(L.chance, '', 1.1, '#ffc93c'); beep('ooh');
   feedAdd('⚡ ' + L.chance + ' ' + TN(a), TC(a));
   duel.hidden = false;
@@ -621,6 +654,7 @@ function mount(host, opts) {
   }
  }
  function scorerName(a, car) {
+  if (live && st.star[a] > 0 && st.starBy[a]) return st.starBy[a];
   const by = st.duel ? st.duel.by[a] : {};
   const top = Object.entries(by).sort((x, y) => y[1] - x[1])[0];
   if (top) return top[0];
@@ -750,9 +784,23 @@ function mount(host, opts) {
   p.tag.textContent = txt; p.tag.className = 'cf-np' + (hot ? ' hot' : ''); p.tag.style.setProperty('--c', TC(p.side)); p.tagT = dur;
  }
  const tagV = new T3.Vector3();
+ function setName(p, name, star) {
+  p.who = name || '';
+  if (!name) { if (p.nm) { p.nm.remove(); p.nm = null; } return; }
+  if (!p.nm) { p.nm = el('div', 'cf-nm'); labels.appendChild(p.nm); }
+  const t = (star ? '⭐ ' : '') + '@' + name.slice(0, 12);
+  if (p.nm.textContent !== t) p.nm.textContent = t;
+  p.nm.style.setProperty('--c', TC(p.side)); p.nm.classList.toggle('st', !!star);
+ }
  function placeTags() {
   const W = host.clientWidth, H = host.clientHeight;
   for (const s of [0, 1]) for (const p of P[s]) {
+   if (p.nm) {
+    tagV.set(p.pos.x, 1.42, p.pos.z).project(camera);
+    const vis = tagV.z < 1 && !p.tag;
+    p.nm.style.display = vis ? '' : 'none';
+    if (vis) { p.nm.style.left = ((tagV.x + 1) / 2 * W).toFixed(1) + 'px'; p.nm.style.top = ((1 - tagV.y) / 2 * H).toFixed(1) + 'px'; }
+   }
    if (!p.tag) continue;
    tagV.set(p.pos.x, 1.6, p.pos.z).project(camera);
    const vis = tagV.z < 1;
@@ -987,6 +1035,7 @@ function mount(host, opts) {
 .lv-leg .k b{display:block;font-size:30px;letter-spacing:1px}
 .lv-leg .k span{display:block;font:700 11.5px system-ui,sans-serif;margin-top:3px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;opacity:.92}
 .lv-leg .g{display:grid;grid-template-columns:1fr 1fr;gap:4px 8px;margin-top:7px;font:700 11.5px/1.25 system-ui,sans-serif;color:#dce4f7}
+.lv-leg .ht{display:block;height:5px;margin:4px 6px 0;border-radius:3px;background:rgba(0,0,0,.28);overflow:hidden}.lv-leg .ht i{display:block;height:100%;width:0;background:#ffc93c}
 .lv-leg .n{margin-top:5px;text-align:center;font:600 10.5px system-ui,sans-serif;color:#9aa6c4}
 .lv-intro{display:flex;flex-direction:column;align-items:center;gap:10px}
 .lv-intro .vs{display:flex;align-items:center;gap:14px;font-weight:800;font-size:34px;text-transform:uppercase}
@@ -1030,9 +1079,9 @@ function mount(host, opts) {
  const coinTxt = c => isCoins() ? String(c) : '$' + (c / 75).toFixed(2);
  function renderLegend() {
   if (!lv) return;
-  lv.leg.innerHTML = `<h4>${esc(LVR.legendH)}</h4><div class="k">${[0, 1].map(s => `<div style="background:${TC(s)};color:${lum(TC(s)) > .6 ? '#10172b' : '#fff'}"><b>${esc(st.teams[s].code)}</b><span>${s + 1} · ${esc(TN(s))} · ${esc(fmt(LVR.fans, { n: LS.fans[s].size }))}</span></div>`).join('')}</div>
+  lv.leg.innerHTML = `<h4>${esc(LVR.legendH)}</h4><div class="k">${[0, 1].map(s => `<div style="background:${TC(s)};color:${lum(TC(s)) > .6 ? '#10172b' : '#fff'}"><b>${esc(st.teams[s].code)}</b><span>${s + 1} · ${esc(TN(s))} · ${esc(fmt(LVR.fans, { n: LS.fans[s].size }))}</span><em class="ht"><i data-h="${s}"></i></em></div>`).join('')}</div>
 <div class="n" style="margin:4px 0 0">${esc(LVR.or12)} · ${esc(LVR.any)}</div>
-<div class="g"><div>${esc(LVR.gSup)}</div><div>${esc(LVR.likes)}</div><div>${esc(fmt(LVR.gStar, { c: coinTxt(CFG.starC) }))}</div><div>${esc(fmt(LVR.gFk, { c: coinTxt(CFG.fkC) }))}</div></div>
+<div class="g"><div>${esc(LVR.gSup)}</div><div>${esc(LVR.gFire)}</div><div>${esc(fmt(LVR.gStar, { c: coinTxt(CFG.starC) }))}</div><div>${esc(fmt(LVR.gFk, { c: coinTxt(CFG.fkC) }))}</div></div>
 <div class="n">${esc(LVR.fair)}</div>`;
   lv.legKey = [st.teams[0].code, st.teams[1].code, LS.fans[0].size, LS.fans[1].size, st.kit.join()].join('|');
  }
@@ -1040,6 +1089,36 @@ function mount(host, opts) {
   if (!lv) return;
   const k = [st.teams[0].code, st.teams[1].code, LS.fans[0].size, LS.fans[1].size, st.kit.join()].join('|');
   if (k !== lv.legKey) renderLegend();
+  lv.leg.querySelectorAll('[data-h]').forEach(i => { const s2 = +i.dataset.h; i.style.width = (st.fire[s2] > 0 ? 100 : clamp(st.heat[s2] / heatThr() * 100, 0, 100)).toFixed(0) + '%'; i.style.background = st.fire[s2] > 0 ? '#ff6b5b' : '#ffc93c'; });
+  if ((st.xiT -= .1) <= 0) { st.xiT = 1.5; assignXI(); }
+  const tot = LS.fans[0].size + LS.fans[1].size, share = tot ? LS.fans[0].size / tot : -1, ck = st.kit.join() + '|' + (share < 0 ? 'x' : Math.round(share * 10));
+  if (ck !== LS.crowdKey && (share >= 0 || LS.crowdKey)) { LS.crowdKey = ck; if (share < 0) recolorCrowd(.5, st.kit[0], st.kit[1]); else recolorCrowd(share, st.kit[0], st.kit[1]); }
+ }
+ // the 11 players of each team carry the names of that team's most active viewers; a star gifter plays up front
+ const XI_ORDER = [9, 10, 6, 7, 5, 8, 2, 3, 1, 4, 0];
+ function assignXI() {
+  const now = performance.now();
+  for (const s of [0, 1]) {
+   const act = [...LS.fans[s]].map(id => LS.users.get(id)).filter(u => u && now - (u.lastAct || 0) < 30000);
+   const names = new Set(act.map(u => u.name));
+   const star = st.star[s] > 0 ? st.starBy[s] : '';
+   const keep = P[s].map(p => p.who && names.has(p.who) && p.who !== star ? p.who : '');
+   if (star) { const i = keep.indexOf(star); if (i >= 0) keep[i] = ''; keep[9] && keep[9] !== star && (keep[keep.findIndex((x, j) => !x && j !== 9 && j !== 0)] = keep[9]); keep[9] = star; }
+   const used = new Set(keep.filter(Boolean));
+   const pool = act.filter(u => !used.has(u.name)).sort((a, b) => (b.cnt || 0) - (a.cnt || 0) || (b.lastAct || 0) - (a.lastAct || 0));
+   for (const i of XI_ORDER) if (!keep[i] && pool.length) keep[i] = pool.shift().name;
+   P[s].forEach((p, i) => setName(p, keep[i], !!star && i === 9));
+  }
+ }
+ // the stand fills from comments, likes and gifts; when full the team gets a short fixed boost (6 s, +15%)
+ const heatThr = () => clamp((LS.evRate || 0) * 18, 22, 400);
+ function addHeat(s, w) {
+  if (!['play', 'chance', 'kick', 'shot'].includes(st.phase) || st.fire[s] > 0) return;
+  st.heat[s] += w;
+  if (st.heat[s] >= heatThr()) {
+   st.heat[s] = 0; st.fire[s] = 6; st.bounce = 3;
+   banner(fmt(LVR.fire, { t: TN(s) }), TC(s), 3); feedAdd(fmt(LVR.fire, { t: TN(s) }), TC(s)); beep('roar');
+  }
  }
  function showIntro() {
   const [h, a] = st.teams;
@@ -1397,23 +1476,27 @@ ${KINDS.map(k => `<div class="lv-src" data-row="${k}" style="flex-wrap:wrap"><sp
   const u = LS.users.get(ev.user.id) || { id: ev.user.id, name: ev.user.name, side: null, lastMsg: 0, coins: 0 };
   LS.users.set(u.id, u); u.name = ev.user.name;
   const now = performance.now() / 1000;
+  LS.evRate = (LS.evRate || 0) * Math.exp(-(now - (LS.evT || now)) / 20) + 1 / 20; LS.evT = now;
   if (ev.type === 'comment') {
    const want = teamWord(ev.text);
    if (now - u.lastMsg < 1.2 && !(want != null && want !== u.side)) { log(ev, LVR.sAny, 'filt'); return; }
    u.lastMsg = now;
    const s = joinSide(u, want);
-   addC(s, 1, u.name);
+   u.lastAct = performance.now(); u.cnt = (u.cnt || 0) + 1;
+   addC(s, 1, u.name); addHeat(s, 1);
    log(ev, TN(s) + ' · “' + cleanText(ev.text) + '”', 'ok');
   } else if (ev.type === 'like') {
    const s = u.side != null ? u.side : 0;
-   addC(s, Math.min(2, .04 * Math.max(1, ev.count | 0)), null);
+   addC(s, Math.min(2, .04 * Math.max(1, ev.count | 0)), null); addHeat(s, Math.min(5, .05 * Math.max(1, ev.count | 0)));
    log(ev, '+' + (ev.count | 0) + ' ♥', 'ok');
   } else if (ev.type === 'follow') { joinSide(u, null); log(ev, LV.sFollow, 'ok'); }
   else if (ev.type === 'gift') {
    const coins = Math.max(1, (ev.coins | 0) * Math.max(1, ev.repeat | 0));
    const s = joinSide(u, null); u.coins += coins;
    const sup = Math.min(15, 3 + Math.floor(coins / 20));
-   addC(s, sup, u.name);
+   addC(s, sup, u.name); addHeat(s, 5);
+   u.lastAct = performance.now(); u.cnt = (u.cnt || 0) + 3;
+   addBanner(u.name, TC(s));
    let what = fmt(LVR.support, { u: u.name, n: sup, t: TN(s) }), col = TC(s);
    const playing = ['play', 'chance', 'kick', 'shot'].includes(st.phase);
    if (coins >= CFG.fkC && st.bigN[s] < 2 && playing) {
@@ -1421,8 +1504,8 @@ ${KINDS.map(k => `<div class="lv-src" data-row="${k}" style="flex-wrap:wrap"><sp
     if (st.phase === 'play' && st.poss === s && ball.mode === 'carry') { st.bar = 11; st.passK = 11; st.assist[s] = u.name; what = fmt(L.fk, { t: TN(s) }) + ' @' + u.name; }
     else { st.keeper[s] = 1; what = fmt(L.keeper, { t: TN(s) }) + ' @' + u.name; }
    } else if (coins >= CFG.starC && st.starN[s] < 3 && playing) {
-    st.starN[s]++; st.star[s] = 10; what = fmt(L.star, { t: TN(s) }) + ' @' + u.name;
-    const pl = P[s][9 + (st.starN[s] % 2)]; setTag(pl, '⭐ @' + u.name, 10, true);
+    st.starN[s]++; st.star[s] = 10; st.starBy[s] = u.name; what = fmt(L.star, { t: TN(s) }) + ' @' + u.name;
+    st.xiT = 0; setTag(P[s][9], '⭐ @' + u.name, 2.5, true);
    }
    banner(what, col, 3); feedAdd('🎁 ' + what, col); beep('gift');
    log(ev, `${ev.gift} → ${what}`, 'ok');
