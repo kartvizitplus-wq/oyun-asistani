@@ -54,6 +54,10 @@
   "rope-rumble": {
    "teaser": "Two teams, one rope and a pit full of mud.",
    "story": null
+  },
+  "chat-fc": {
+   "teaser": "Eleven passes, one keeper and a stadium full of chat.",
+   "story": null
   }
  },
  "tr": {
@@ -110,6 +114,10 @@
   },
   "rope-rumble": {
    "teaser": "İki takım, bir halat ve çamurla dolu bir havuz.",
+   "story": null
+  },
+  "chat-fc": {
+   "teaser": "On bir pas, bir kaleci ve sohbetle dolu bir stadyum.",
    "story": null
   }
  },
@@ -168,6 +176,10 @@
   "rope-rumble": {
    "teaser": "Dua tim, satu tali, dan kubangan lumpur.",
    "story": null
+  },
+  "chat-fc": {
+   "teaser": "Sebelas operan, satu kiper, dan stadion penuh chat.",
+   "story": null
   }
  },
  "es": {
@@ -225,6 +237,10 @@
   "rope-rumble": {
    "teaser": "Dos equipos, una cuerda y un charco de barro.",
    "story": null
+  },
+  "chat-fc": {
+   "teaser": "Once pases, un portero y un estadio lleno de chat.",
+   "story": null
   }
  },
  "pt": {
@@ -281,6 +297,10 @@
   },
   "rope-rumble": {
    "teaser": "Dois times, uma corda e uma poça de lama.",
+   "story": null
+  },
+  "chat-fc": {
+   "teaser": "Onze passes, um goleiro e um estádio cheio de chat.",
    "story": null
   }
  }

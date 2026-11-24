@@ -1,0 +1,327 @@
+{
+ "en": {
+  "name": "Chat FC",
+  "title": "Chat FC – Free Live-Stream Football League Game (TikTok, Twitch, YouTube, Kick)",
+  "desc": "Play Chat FC free in your browser: a 3D football match where every tap is a pass. Streamers: run a football league on TikTok LIVE, Twitch, YouTube or Kick where viewers play by commenting their team's code.",
+  "card": "3D football your chat plays: comments become passes, 11 passes bring a one-on-one. League mode for streamers.",
+  "h1": "Chat FC: the football league your chat plays",
+  "intro": "A 90-second football match in a floodlit 3D stadium. You don't steer players: you drive your team. Every tap is a pass when your team has the ball and pressing when the other team has it. Eleven passes put your striker one on one with the keeper, then a short shooting duel decides goal or save. Win and the CPU gets stronger, or play a 6-team league and chase the title.",
+  "howH": "How to play",
+  "how": [
+   "Choose Quick match or League. The match starts with a kick-off.",
+   "Tap the big button (or click the pitch, or press SPACE) as fast as you can. With the ball it reads PASS: each tap pushes your attack forward. Without the ball it reads PRESS: each tap helps win the ball back.",
+   "The bar at the top counts passes. At 11/11 your player is one on one with the keeper.",
+   "One on one: tap like crazy for 2–3 seconds. If your shooting beats the keeper, it's a goal. When the CPU breaks through, tap to help your keeper save.",
+   "After 90 seconds the team with more goals wins. In League mode every match is a week of the season; the table and top scorers are saved in your browser."
+  ],
+  "liveH": "For streamers: LIVE league mode (TikTok, Twitch, YouTube, Kick)",
+  "liveP": "Chat FC is made for live streams. You name your team and its comment code (for example CFC), the league and the pitch-side sponsor, and type your opponents or use fictional clubs. In each match viewers pick a side by commenting a team's code or 1 / 2. After that every comment counts: it is a pass when their team has the ball and pressing when it doesn't.",
+  "liveL": [
+   "Eleven passes bring a one-on-one. Both sides then get a few seconds: the attacking fans comment to shoot, the defending fans comment to save. The side that writes more wins the moment; nothing is left to dice.",
+   "A big chat doesn't win automatically: each viewer counts at most once every 1.2 seconds and extra comments add less and less. If nobody supports the opponent, the CPU plays for it at about your chat's level, so small and big streams both get close matches.",
+   "Gifts and donations have fixed effects written on screen: every gift adds +3 comment power; 99 coins or more bring a star player for 10 seconds (3 per team per match); 299 coins or more give a free kick when your team has the ball, or keeper mode when it doesn't (2 per team per match). You can change the coin amounts. A gift never guarantees a goal.",
+   "League: 6, 10 or 18 teams. Each match is a week; the week's other results are simulated. After every match the table and top scorers (the viewers who scored) are shown and the next match starts by itself. Derby mode plays two teams without a table.",
+   "Goals show the viewer who scored and the one who made the 11th pass. You can download the table as an image to share.",
+   "Connect TikTok with the free TikFinity app, Twitch with just your channel name, YouTube Live with your own free API key, and Kick and other platforms with Social Stream Ninja."
+  ],
+  "liveN": "Copy the stream link from the creator panel and add it to OBS or LIVE Studio as a 1080 × 1920 browser source; the league is saved in that source. Team names, codes and sponsor text are yours to type: don't use crests or logos you have no rights to, and turn on your platform's paid-promotion label if a sponsor pays you. Connections run directly between your computer and the platform; nothing passes through our servers.",
+  "liveC": "Open LIVE mode",
+  "ctrlH": "Controls",
+  "ctrl": [
+   "Computer: click the pitch or the button, or press SPACE / Enter. P or Esc pauses.",
+   "Phone and tablet: tap the big button at the bottom. In portrait the camera looks down the pitch from behind your goal, so your team always attacks upward."
+  ],
+  "tipsH": "Tips",
+  "tips": [
+   "A steady rhythm beats panic: about five taps a second wins most early matches.",
+   "Keep tapping when you lose the ball: pressing wins it back before the CPU's bar reaches 11.",
+   "Save your energy for the one-on-one: those 2–3 seconds decide matches.",
+   "LIVE: at kick-off ask chat to comment your team's code; anyone who comments without a code joins your team."
+  ],
+  "faqH": "Frequently asked questions",
+  "faq": [
+   [
+    "Is Chat FC free?",
+    "Yes. It runs free in your browser; no download or sign-up."
+   ],
+   [
+    "Can I use Chat FC on a live stream?",
+    "Yes. The LIVE mode works with TikTok LIVE, Twitch, YouTube Live and Kick and is free. Viewers join a team by commenting its code (or 1 / 2), and their comments become passes, pressing, shots and saves."
+   ],
+   [
+    "Can I use real club names?",
+    "You type the team names and codes yourself; the game ships no real clubs, crests or league brands. Don't use logos or crests you have no rights to."
+   ],
+   [
+    "How do gifts work?",
+    "Every gift adds +3 comment power to the sender's team. 99 coins or more give a star player for 10 seconds, 299 coins or more give a free kick (or keeper mode when defending). Both are limited per match and never guarantee a goal. On Twitch, YouTube and Kick donations count as $1 ≈ 75 coins."
+   ],
+   [
+    "Is my league saved?",
+    "Yes, in the browser that runs the game (for streamers: the OBS browser source). Nothing is stored on our servers."
+   ]
+  ],
+  "aboutH": "About the game",
+  "about": "Chat FC is an original game made by PickRadar. The stadium, players and sounds are generated in code with three.js; there are no downloaded models or images and no real clubs, players or leagues. The game stores only your level, league and settings in your browser."
+ },
+ "tr": {
+  "name": "Chat FC",
+  "title": "Chat FC – Ücretsiz Canlı Yayın Futbol Ligi Oyunu (TikTok, Twitch, YouTube, Kick)",
+  "desc": "Chat FC'yi tarayıcında ücretsiz oyna: her dokunuşun pas olduğu 3D futbol maçı. Yayıncılar: TikTok LIVE, Twitch, YouTube ya da Kick'te kendi futbol ligini kur; izleyiciler takımının kodunu yoruma yazarak oynar.",
+  "card": "Sohbetin oynadığı 3D futbol: yorumlar pasa dönüşür, 11 pas kaleciyle karşı karşıya getirir. Yayıncılar için lig modu.",
+  "h1": "Chat FC: sohbetin oynadığı futbol ligi",
+  "intro": "Işıklı bir 3D stadyumda 90 saniyelik futbol maçı. Oyuncuları tek tek yönetmezsin, takımına güç verirsin. Top sendeyken her dokunuş pas, rakipteyken baskıdır. 11 pas forvetini kaleciyle karşı karşıya getirir; kısa bir şut düellosu gol mü kurtarış mı olacağına karar verir. Kazandıkça bilgisayar güçlenir; istersen 6 takımlı ligde şampiyonluğa oyna.",
+  "howH": "Nasıl oynanır",
+  "how": [
+   "Hızlı maç ya da Lig'i seç. Maç başlama vuruşuyla açılır.",
+   "Büyük düğmeye (ya da sahaya tıkla, ya da BOŞLUK tuşuna bas) olabildiğince hızlı dokun. Top sendeyken düğmede PAS yazar: her dokunuş atağını ileri taşır. Top rakipteyken BAS yazar: her dokunuş topu geri kazanmana yardım eder.",
+   "Üstteki çubuk pasları sayar. 11/11 olunca oyuncun kaleciyle karşı karşıya kalır.",
+   "Karşı karşıya: 2-3 saniye boyunca çılgınca dokun. Şutun kaleciyi geçerse gol olur. Bilgisayar kaleye çıkınca kalecinin kurtarması için dokun.",
+   "90 saniye sonunda çok gol atan kazanır. Lig modunda her maç sezonun bir haftasıdır; puan tablosu ve gol krallığı tarayıcında kaydedilir."
+  ],
+  "liveH": "Yayıncılar için: LIVE lig modu (TikTok, Twitch, YouTube, Kick)",
+  "liveP": "Chat FC canlı yayınlar için yapıldı. Takımının adını ve yorum kodunu (örneğin CFC), ligin adını ve saha kenarındaki sponsor yazısını sen belirlersin; rakipleri kendin yazarsın ya da hayali kulüpleri kullanırsın. Her maçta izleyiciler bir takımın kodunu ya da 1 / 2 yazarak tarafını seçer. Sonra yazdıkları her yorum sayılır: takımı topa sahipken pas, değilken baskı olur.",
+  "liveL": [
+   "11 pas kaleciyle karşı karşıya getirir. İki tarafa da birkaç saniye verilir: hücum eden taraftarlar şut için, savunan taraftarlar kurtarış için yazar. O anı daha çok yazan kazanır; hiçbir şey zara bırakılmaz.",
+   "Kalabalık sohbet kendiliğinden kazanmaz: her izleyici en fazla 1,2 saniyede bir sayılır ve fazladan yorumların etkisi giderek azalır. Rakibi destekleyen yoksa onun yerine bilgisayar, senin sohbetine yakın bir güçte oynar; böylece küçük ve büyük yayınlarda maçlar çekişmeli geçer.",
+   "Hediye ve bağışların etkisi sabittir ve ekranda yazar: her hediye +3 yorum gücü verir; 99 jeton ve üstü 10 saniyelik yıldız oyuncu getirir (maçta takım başına 3); 299 jeton ve üstü top sendeyken serbest vuruş, değilken kaleci modu verir (maçta takım başına 2). Jeton miktarlarını değiştirebilirsin. Hediye asla gol garantisi vermez.",
+   "Lig: 6, 10 ya da 18 takım. Her maç bir haftadır; haftanın diğer sonuçları simüle edilir. Her maçtan sonra puan durumu ve gol krallığı (gol atan izleyiciler) gösterilir, sonraki maç kendiliğinden başlar. Derbi modunda iki takım puan tablosu olmadan oynar.",
+   "Gollerde golü atan izleyici ve 11. pası veren izleyici ekranda yazar. Puan durumunu resim olarak indirip paylaşabilirsin.",
+   "TikTok'u ücretsiz TikFinity uygulamasıyla, Twitch'i sadece kanal adınla, YouTube Live'ı kendi ücretsiz API anahtarınla, Kick ve diğer platformları Social Stream Ninja ile bağlarsın."
+  ],
+  "liveN": "Yayıncı panelinden yayın linkini kopyala ve OBS ya da LIVE Studio'ya 1080 × 1920 tarayıcı kaynağı olarak ekle; lig o kaynakta kaydedilir. Takım adlarını, kodları ve sponsor yazısını sen yazarsın: hakkın olmayan arma ve logoları kullanma, sponsor sana ödeme yapıyorsa platformunun ücretli tanıtım etiketini aç. Bağlantılar doğrudan bilgisayarınla platform arasında çalışır; hiçbir veri bizim sunucumuzdan geçmez.",
+  "liveC": "LIVE modunu aç",
+  "ctrlH": "Kontroller",
+  "ctrl": [
+   "Bilgisayar: sahaya ya da düğmeye tıkla veya BOŞLUK / Enter tuşuna bas. P ya da Esc oyunu durdurur.",
+   "Telefon ve tablet: alttaki büyük düğmeye dokun. Dikey ekranda kamera sahaya senin kalenin arkasından bakar; takımın hep yukarı doğru hücum eder."
+  ],
+  "tipsH": "İpuçları",
+  "tips": [
+   "Panik yerine düzenli ritim kazandırır: ilk maçlar için saniyede beş dokunuş çoğu zaman yeter.",
+   "Topu kaybedince dokunmayı bırakma: baskı, bilgisayarın çubuğu 11'e ulaşmadan topu geri almanı sağlar.",
+   "Gücünü karşı karşıya anına sakla: o 2-3 saniye maçları belirler.",
+   "LIVE: başlama vuruşunda sohbetten takımının kodunu yazmasını iste; kod yazmadan yorum yapanlar senin takımına katılır."
+  ],
+  "faqH": "Sık sorulan sorular",
+  "faq": [
+   [
+    "Chat FC ücretsiz mi?",
+    "Evet. Tarayıcında ücretsiz çalışır; indirme ya da üyelik gerekmez."
+   ],
+   [
+    "Chat FC'yi canlı yayında kullanabilir miyim?",
+    "Evet. LIVE modu TikTok LIVE, Twitch, YouTube Live ve Kick ile çalışır ve ücretsizdir. İzleyiciler takımın kodunu (ya da 1 / 2) yazarak takıma girer; yorumları pas, baskı, şut ve kurtarışa dönüşür."
+   ],
+   [
+    "Gerçek kulüp isimlerini kullanabilir miyim?",
+    "Takım adlarını ve kodlarını sen yazarsın; oyunda hazır gerçek kulüp, arma ya da lig markası yoktur. Hakkın olmayan logo ve armaları kullanma."
+   ],
+   [
+    "Hediyeler nasıl çalışır?",
+    "Her hediye gönderenin takımına +3 yorum gücü verir. 99 jeton ve üstü 10 saniyelik yıldız oyuncu, 299 jeton ve üstü serbest vuruş (savunmadaysan kaleci modu) verir. İkisi de maç başına sınırlıdır ve gol garantisi vermez. Twitch, YouTube ve Kick bağışları 1 $ ≈ 75 jeton sayılır."
+   ],
+   [
+    "Ligim kaydediliyor mu?",
+    "Evet, oyunu çalıştıran tarayıcıda (yayıncılar için OBS tarayıcı kaynağında). Bizim sunucumuzda hiçbir şey saklanmaz."
+   ]
+  ],
+  "aboutH": "Oyun hakkında",
+  "about": "Chat FC, PickRadar'ın yaptığı özgün bir oyundur. Stadyum, oyuncular ve sesler three.js ile kodla üretilir; indirilen model ya da görsel, gerçek kulüp, oyuncu ya da lig yoktur. Oyun tarayıcında yalnızca seviyeni, ligini ve ayarlarını saklar."
+ },
+ "es": {
+  "name": "Chat FC",
+  "title": "Chat FC – Juego Gratis de Liga de Fútbol para Directos (TikTok, Twitch, YouTube, Kick)",
+  "desc": "Juega gratis a Chat FC en tu navegador: un partido de fútbol 3D donde cada toque es un pase. Streamers: crea una liga de fútbol en TikTok LIVE, Twitch, YouTube o Kick en la que los espectadores juegan comentando el código de su equipo.",
+  "card": "Fútbol 3D que juega tu chat: los comentarios son pases y 11 pases te dejan mano a mano. Modo liga para streamers.",
+  "h1": "Chat FC: la liga de fútbol que juega tu chat",
+  "intro": "Un partido de fútbol de 90 segundos en un estadio 3D iluminado. No manejas a los jugadores: impulsas a tu equipo. Cada toque es un pase cuando tu equipo tiene el balón y presión cuando lo tiene el rival. Once pases dejan a tu delantero mano a mano con el portero y un breve duelo de tiro decide gol o parada. Gana y la CPU se hace más fuerte, o juega una liga de 6 equipos y ve a por el título.",
+  "howH": "Cómo se juega",
+  "how": [
+   "Elige Partido rápido o Liga. El partido empieza con el saque inicial.",
+   "Toca el botón grande (o haz clic en el campo, o pulsa ESPACIO) lo más rápido que puedas. Con el balón pone PASE: cada toque empuja tu ataque. Sin el balón pone PRESIÓN: cada toque ayuda a recuperarlo.",
+   "La barra de arriba cuenta los pases. Con 11/11 tu jugador queda mano a mano con el portero.",
+   "Mano a mano: toca sin parar durante 2–3 segundos. Si tu tiro supera al portero, es gol. Cuando la CPU llega a tu área, toca para ayudar a tu portero.",
+   "A los 90 segundos gana quien marque más. En modo Liga cada partido es una jornada; la clasificación y los goleadores se guardan en tu navegador."
+  ],
+  "liveH": "Para streamers: modo liga LIVE (TikTok, Twitch, YouTube, Kick)",
+  "liveP": "Chat FC está hecho para directos. Tú pones el nombre de tu equipo y su código de comentario (por ejemplo CFC), el nombre de la liga y el patrocinador de las vallas, y escribes tus rivales o usas clubes ficticios. En cada partido los espectadores eligen bando comentando el código de un equipo o 1 / 2. Desde ahí cada comentario cuenta: es un pase si su equipo tiene el balón y presión si no.",
+  "liveL": [
+   "Once pases traen un mano a mano. Entonces los dos bandos tienen unos segundos: los hinchas del ataque comentan para chutar y los de la defensa para parar. Gana el momento quien escribe más; nada queda al azar.",
+   "Un chat grande no gana solo: cada espectador cuenta como mucho una vez cada 1,2 segundos y los comentarios extra suman cada vez menos. Si nadie apoya al rival, la CPU juega por él más o menos al nivel de tu chat, así los partidos son reñidos en directos pequeños y grandes.",
+   "Los regalos y donaciones tienen efectos fijos escritos en pantalla: cada regalo da +3 de poder; 99 monedas o más traen un jugador estrella 10 segundos (3 por equipo y partido); 299 monedas o más dan un tiro libre si tu equipo tiene el balón, o modo portero si no (2 por equipo y partido). Puedes cambiar las cantidades. Un regalo nunca garantiza un gol.",
+   "Liga: 6, 10 o 18 equipos. Cada partido es una jornada; los demás resultados se simulan. Tras cada partido se muestran la clasificación y los goleadores (los espectadores que marcaron) y el siguiente partido empieza solo. El modo derbi juega dos equipos sin tabla.",
+   "En cada gol aparecen el espectador que marcó y el que dio el pase número 11. Puedes descargar la clasificación como imagen para compartirla.",
+   "Conecta TikTok con la app gratuita TikFinity, Twitch solo con el nombre de tu canal, YouTube Live con tu propia clave API gratuita, y Kick y otras plataformas con Social Stream Ninja."
+  ],
+  "liveN": "Copia el enlace del directo desde el panel y añádelo a OBS o LIVE Studio como fuente de navegador de 1080 × 1920; la liga se guarda en esa fuente. Los nombres, códigos y el texto del patrocinador los escribes tú: no uses escudos ni logos sin derechos y activa la etiqueta de promoción pagada de tu plataforma si un patrocinador te paga. Las conexiones van directamente entre tu ordenador y la plataforma; nada pasa por nuestros servidores.",
+  "liveC": "Abrir modo LIVE",
+  "ctrlH": "Controles",
+  "ctrl": [
+   "Ordenador: haz clic en el campo o en el botón, o pulsa ESPACIO / Enter. P o Esc pausa.",
+   "Móvil y tableta: toca el botón grande de abajo. En vertical la cámara mira el campo desde detrás de tu portería, así tu equipo siempre ataca hacia arriba."
+  ],
+  "tipsH": "Consejos",
+  "tips": [
+   "Un ritmo constante vale más que el pánico: unos cinco toques por segundo ganan casi todos los primeros partidos.",
+   "Sigue tocando al perder el balón: la presión lo recupera antes de que la barra de la CPU llegue a 11.",
+   "Guarda fuerzas para el mano a mano: esos 2–3 segundos deciden los partidos.",
+   "LIVE: en el saque pide al chat que comente el código de tu equipo; quien comente sin código se une a tu equipo."
+  ],
+  "faqH": "Preguntas frecuentes",
+  "faq": [
+   [
+    "¿Chat FC es gratis?",
+    "Sí. Funciona gratis en tu navegador; sin descargas ni registro."
+   ],
+   [
+    "¿Puedo usar Chat FC en un directo?",
+    "Sí. El modo LIVE funciona con TikTok LIVE, Twitch, YouTube Live y Kick y es gratis. Los espectadores entran en un equipo comentando su código (o 1 / 2) y sus comentarios se convierten en pases, presión, tiros y paradas."
+   ],
+   [
+    "¿Puedo usar nombres de clubes reales?",
+    "Los nombres y códigos los escribes tú; el juego no trae clubes, escudos ni marcas de ligas reales. No uses logos ni escudos sin derechos."
+   ],
+   [
+    "¿Cómo funcionan los regalos?",
+    "Cada regalo da +3 de poder al equipo de quien lo envía. Con 99 monedas o más llega un jugador estrella 10 segundos y con 299 o más un tiro libre (o modo portero al defender). Ambos tienen límite por partido y nunca garantizan un gol. En Twitch, YouTube y Kick las donaciones cuentan como 1 $ ≈ 75 monedas."
+   ],
+   [
+    "¿Se guarda mi liga?",
+    "Sí, en el navegador donde corre el juego (para streamers: la fuente de navegador de OBS). No se guarda nada en nuestros servidores."
+   ]
+  ],
+  "aboutH": "Sobre el juego",
+  "about": "Chat FC es un juego original de PickRadar. El estadio, los jugadores y los sonidos se generan con código en three.js; no hay modelos ni imágenes descargadas, ni clubes, jugadores o ligas reales. El juego solo guarda tu nivel, tu liga y tus ajustes en tu navegador."
+ },
+ "pt": {
+  "name": "Chat FC",
+  "title": "Chat FC – Jogo Grátis de Liga de Futebol para Lives (TikTok, Twitch, YouTube, Kick)",
+  "desc": "Jogue Chat FC grátis no navegador: uma partida de futebol 3D em que cada toque é um passe. Streamers: crie uma liga de futebol na TikTok LIVE, Twitch, YouTube ou Kick em que os espectadores jogam comentando o código do time.",
+  "card": "Futebol 3D que o seu chat joga: comentários viram passes e 11 passes deixam cara a cara. Modo liga para streamers.",
+  "h1": "Chat FC: a liga de futebol que o seu chat joga",
+  "intro": "Uma partida de futebol de 90 segundos num estádio 3D iluminado. Você não controla os jogadores: você empurra o seu time. Cada toque é um passe quando o seu time tem a bola e pressão quando o adversário tem. Onze passes deixam o seu atacante cara a cara com o goleiro, e um curto duelo de chute decide gol ou defesa. Vença e a CPU fica mais forte, ou jogue uma liga de 6 times e busque o título.",
+  "howH": "Como jogar",
+  "how": [
+   "Escolha Partida rápida ou Liga. A partida começa com a saída de bola.",
+   "Toque no botão grande (ou clique no campo, ou aperte ESPAÇO) o mais rápido que puder. Com a bola aparece PASSE: cada toque leva o ataque para frente. Sem a bola aparece PRESSÃO: cada toque ajuda a recuperá-la.",
+   "A barra no topo conta os passes. Em 11/11 o seu jogador fica cara a cara com o goleiro.",
+   "Cara a cara: toque sem parar por 2–3 segundos. Se o chute vencer o goleiro, é gol. Quando a CPU chega na sua área, toque para ajudar o seu goleiro.",
+   "Depois de 90 segundos vence quem fez mais gols. No modo Liga cada partida é uma rodada; a tabela e a artilharia ficam salvas no navegador."
+  ],
+  "liveH": "Para streamers: modo liga LIVE (TikTok, Twitch, YouTube, Kick)",
+  "liveP": "Chat FC foi feito para lives. Você define o nome do seu time e o código de comentário (por exemplo CFC), o nome da liga e o patrocinador das placas, e digita os adversários ou usa clubes fictícios. Em cada partida os espectadores escolhem um lado comentando o código de um time ou 1 / 2. Depois disso todo comentário conta: é passe quando o time deles tem a bola e pressão quando não tem.",
+  "liveL": [
+   "Onze passes trazem um cara a cara. Os dois lados ganham alguns segundos: a torcida do ataque comenta para chutar e a da defesa comenta para defender. Quem escreve mais vence o lance; nada fica por conta da sorte.",
+   "Chat grande não vence sozinho: cada espectador conta no máximo uma vez a cada 1,2 segundo e comentários extras valem cada vez menos. Se ninguém torce pelo adversário, a CPU joga por ele mais ou menos no nível do seu chat, então lives pequenas e grandes têm jogos equilibrados.",
+   "Presentes e doações têm efeitos fixos escritos na tela: todo presente dá +3 de força; 99 moedas ou mais trazem um craque por 10 segundos (3 por time por partida); 299 moedas ou mais dão uma falta quando o seu time tem a bola, ou modo goleiro quando não tem (2 por time por partida). Você pode mudar os valores. Presente nunca garante gol.",
+   "Liga: 6, 10 ou 18 times. Cada partida é uma rodada; os outros resultados são simulados. Depois de cada jogo aparecem a tabela e a artilharia (os espectadores que marcaram) e a próxima partida começa sozinha. O modo clássico joga dois times sem tabela.",
+   "Nos gols aparecem o espectador que marcou e quem deu o 11º passe. Você pode baixar a tabela como imagem para compartilhar.",
+   "Conecte o TikTok com o app grátis TikFinity, a Twitch só com o nome do canal, o YouTube Live com a sua própria chave de API grátis, e o Kick e outras plataformas com o Social Stream Ninja."
+  ],
+  "liveN": "Copie o link da live no painel e adicione no OBS ou LIVE Studio como fonte de navegador 1080 × 1920; a liga fica salva nessa fonte. Nomes, códigos e texto do patrocinador são digitados por você: não use escudos ou logos sem direitos e ative o selo de promoção paga da sua plataforma se um patrocinador pagar você. As conexões vão direto entre o seu computador e a plataforma; nada passa pelos nossos servidores.",
+  "liveC": "Abrir modo LIVE",
+  "ctrlH": "Controles",
+  "ctrl": [
+   "Computador: clique no campo ou no botão, ou aperte ESPAÇO / Enter. P ou Esc pausa.",
+   "Celular e tablet: toque no botão grande embaixo. Na vertical a câmera olha o campo de trás do seu gol, então o seu time sempre ataca para cima."
+  ],
+  "tipsH": "Dicas",
+  "tips": [
+   "Ritmo constante vale mais que desespero: uns cinco toques por segundo vencem a maioria das primeiras partidas.",
+   "Continue tocando quando perder a bola: a pressão recupera antes que a barra da CPU chegue a 11.",
+   "Guarde energia para o cara a cara: esses 2–3 segundos decidem jogos.",
+   "LIVE: na saída de bola peça ao chat para comentar o código do seu time; quem comenta sem código entra no seu time."
+  ],
+  "faqH": "Perguntas frequentes",
+  "faq": [
+   [
+    "Chat FC é grátis?",
+    "Sim. Roda grátis no navegador; sem download nem cadastro."
+   ],
+   [
+    "Posso usar o Chat FC numa live?",
+    "Sim. O modo LIVE funciona com TikTok LIVE, Twitch, YouTube Live e Kick e é grátis. Os espectadores entram num time comentando o código (ou 1 / 2) e os comentários viram passes, pressão, chutes e defesas."
+   ],
+   [
+    "Posso usar nomes de clubes reais?",
+    "Você digita os nomes e códigos; o jogo não traz clubes, escudos ou marcas de ligas reais. Não use logos ou escudos sem direitos."
+   ],
+   [
+    "Como funcionam os presentes?",
+    "Todo presente dá +3 de força ao time de quem enviou. Com 99 moedas ou mais vem um craque por 10 segundos e com 299 ou mais uma falta (ou modo goleiro na defesa). Os dois têm limite por partida e nunca garantem gol. Na Twitch, YouTube e Kick as doações contam como US$ 1 ≈ 75 moedas."
+   ],
+   [
+    "Minha liga fica salva?",
+    "Sim, no navegador que roda o jogo (para streamers: a fonte de navegador do OBS). Nada é guardado nos nossos servidores."
+   ]
+  ],
+  "aboutH": "Sobre o jogo",
+  "about": "Chat FC é um jogo original da PickRadar. Estádio, jogadores e sons são gerados em código com three.js; não há modelos ou imagens baixadas nem clubes, jogadores ou ligas reais. O jogo guarda só o seu nível, a sua liga e os seus ajustes no navegador."
+ },
+ "id": {
+  "name": "Chat FC",
+  "title": "Chat FC – Game Liga Sepak Bola Gratis untuk Live Streaming (TikTok, Twitch, YouTube, Kick)",
+  "desc": "Main Chat FC gratis di browser: laga sepak bola 3D di mana tiap ketukan adalah operan. Streamer: buat liga sepak bola di TikTok LIVE, Twitch, YouTube atau Kick, penonton bermain dengan mengomentari kode timnya.",
+  "card": "Sepak bola 3D yang dimainkan chat: komentar jadi operan, 11 operan membawa satu lawan satu. Mode liga untuk streamer.",
+  "h1": "Chat FC: liga sepak bola yang dimainkan chat-mu",
+  "intro": "Laga sepak bola 90 detik di stadion 3D bermandikan lampu. Kamu tidak mengendalikan pemain satu per satu, tapi mendorong timmu. Tiap ketukan adalah operan saat timmu pegang bola dan tekanan saat lawan yang pegang. Sebelas operan membuat penyerangmu satu lawan satu dengan kiper, lalu duel tendangan singkat menentukan gol atau tepisan. Menang dan CPU makin kuat, atau main liga 6 tim dan kejar gelar juara.",
+  "howH": "Cara main",
+  "how": [
+   "Pilih Laga cepat atau Liga. Laga dimulai dengan kick-off.",
+   "Ketuk tombol besar (atau klik lapangan, atau tekan SPASI) secepat mungkin. Saat pegang bola tertulis OPER: tiap ketukan mendorong seranganmu. Saat tidak pegang bola tertulis TEKAN: tiap ketukan membantu merebut bola.",
+   "Bar di atas menghitung operan. Di 11/11 pemainmu satu lawan satu dengan kiper.",
+   "Satu lawan satu: ketuk sekencangnya selama 2–3 detik. Jika tendanganmu mengalahkan kiper, gol. Saat CPU menembus pertahanan, ketuk untuk membantu kipermu.",
+   "Setelah 90 detik, tim dengan gol terbanyak menang. Di mode Liga tiap laga adalah satu pekan; klasemen dan top skor disimpan di browsermu."
+  ],
+  "liveH": "Untuk streamer: mode liga LIVE (TikTok, Twitch, YouTube, Kick)",
+  "liveP": "Chat FC dibuat untuk siaran live. Kamu menentukan nama tim dan kode komentarnya (misalnya CFC), nama liga dan sponsor di papan pinggir lapangan, lalu menulis lawan-lawanmu atau memakai klub fiksi. Di tiap laga penonton memilih pihak dengan mengomentari kode tim atau 1 / 2. Setelah itu tiap komentar dihitung: jadi operan saat timnya pegang bola dan tekanan saat tidak.",
+  "liveL": [
+   "Sebelas operan membawa satu lawan satu. Kedua pihak lalu dapat beberapa detik: suporter penyerang berkomentar untuk menendang, suporter bertahan berkomentar untuk menepis. Pihak yang menulis lebih banyak memenangkan momen itu; tidak ada yang diundi.",
+   "Chat besar tidak otomatis menang: tiap penonton dihitung paling banyak sekali per 1,2 detik dan komentar tambahan makin kecil pengaruhnya. Jika tidak ada yang mendukung lawan, CPU bermain untuknya kira-kira setingkat chat-mu, jadi siaran kecil maupun besar dapat laga ketat.",
+   "Hadiah dan donasi punya efek tetap yang tertulis di layar: tiap hadiah memberi +3 tenaga komentar; 99 koin atau lebih membawa pemain bintang 10 detik (3 per tim per laga); 299 koin atau lebih memberi tendangan bebas saat timmu pegang bola, atau mode kiper saat tidak (2 per tim per laga). Jumlah koin bisa kamu ubah. Hadiah tidak pernah menjamin gol.",
+   "Liga: 6, 10 atau 18 tim. Tiap laga adalah satu pekan; hasil laga lain disimulasikan. Setelah tiap laga klasemen dan top skor (penonton yang mencetak gol) ditampilkan dan laga berikutnya mulai sendiri. Mode derby memainkan dua tim tanpa klasemen.",
+   "Saat gol, nama penonton pencetak gol dan pemberi operan ke-11 tampil di layar. Klasemen bisa kamu unduh sebagai gambar untuk dibagikan.",
+   "Hubungkan TikTok dengan aplikasi gratis TikFinity, Twitch cukup dengan nama channel, YouTube Live dengan kunci API gratismu sendiri, serta Kick dan platform lain dengan Social Stream Ninja."
+  ],
+  "liveN": "Salin link siaran dari panel kreator dan tambahkan ke OBS atau LIVE Studio sebagai browser source 1080 × 1920; liga tersimpan di source itu. Nama tim, kode, dan teks sponsor kamu tulis sendiri: jangan pakai lambang atau logo tanpa hak, dan nyalakan label promosi berbayar platformmu jika sponsor membayarmu. Koneksi berjalan langsung antara komputermu dan platform; tidak ada yang lewat server kami.",
+  "liveC": "Buka mode LIVE",
+  "ctrlH": "Kontrol",
+  "ctrl": [
+   "Komputer: klik lapangan atau tombol, atau tekan SPASI / Enter. P atau Esc untuk jeda.",
+   "Ponsel dan tablet: ketuk tombol besar di bawah. Dalam mode potret kamera melihat lapangan dari belakang gawangmu, jadi timmu selalu menyerang ke atas."
+  ],
+  "tipsH": "Tips",
+  "tips": [
+   "Ritme stabil lebih baik daripada panik: sekitar lima ketukan per detik cukup untuk memenangkan sebagian besar laga awal.",
+   "Terus ketuk saat kehilangan bola: tekanan merebutnya kembali sebelum bar CPU mencapai 11.",
+   "Simpan tenaga untuk satu lawan satu: 2–3 detik itu menentukan laga.",
+   "LIVE: saat kick-off minta chat mengomentari kode timmu; yang berkomentar tanpa kode masuk ke timmu."
+  ],
+  "faqH": "Pertanyaan umum",
+  "faq": [
+   [
+    "Apakah Chat FC gratis?",
+    "Ya. Berjalan gratis di browser; tanpa unduhan atau pendaftaran."
+   ],
+   [
+    "Bisakah Chat FC dipakai saat live?",
+    "Bisa. Mode LIVE bekerja dengan TikTok LIVE, Twitch, YouTube Live dan Kick dan gratis. Penonton masuk tim dengan mengomentari kodenya (atau 1 / 2), dan komentar mereka jadi operan, tekanan, tendangan dan tepisan."
+   ],
+   [
+    "Bisakah memakai nama klub asli?",
+    "Nama tim dan kode kamu tulis sendiri; game tidak menyertakan klub, lambang atau merek liga asli. Jangan pakai logo atau lambang tanpa hak."
+   ],
+   [
+    "Bagaimana hadiah bekerja?",
+    "Tiap hadiah memberi +3 tenaga komentar untuk tim pengirim. 99 koin atau lebih memberi pemain bintang 10 detik, 299 koin atau lebih memberi tendangan bebas (atau mode kiper saat bertahan). Keduanya dibatasi per laga dan tidak pernah menjamin gol. Di Twitch, YouTube dan Kick donasi dihitung 1 $ ≈ 75 koin."
+   ],
+   [
+    "Apakah ligaku tersimpan?",
+    "Ya, di browser yang menjalankan game (untuk streamer: browser source OBS). Tidak ada yang disimpan di server kami."
+   ]
+  ],
+  "aboutH": "Tentang game",
+  "about": "Chat FC adalah game orisinal buatan PickRadar. Stadion, pemain dan suara dibuat dengan kode three.js; tidak ada model atau gambar unduhan, juga tidak ada klub, pemain atau liga asli. Game hanya menyimpan level, liga dan pengaturanmu di browser."
+ }
+}
