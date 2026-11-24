@@ -5,22 +5,22 @@
   "desc": "Play Rope Rumble, a free 3D tug of war game in your browser: tap fast, drag the CPU into the mud. Streamers: viewers join RED or BLUE by commenting on TikTok, Twitch, YouTube or Kick.",
   "card": "3D tug of war: tap fast, pull the other team into the mud. LIVE mode for streamers.",
   "h1": "Rope Rumble: tug of war with a mud pit",
-  "intro": "Two teams, one rope and a pit full of mud in the middle. Tap as fast as you can and your red team pulls harder; drag the ribbon over your line and the CPU's front players go face first into the mud. Win two rounds to take the match, then the CPU gets stronger.",
+  "intro": "Two teams, one rope and a pit full of mud in the middle. Every time the ribbon crosses a line, the losing team's front player sinks into the mud. The last team standing wins; if time runs out, the team that sank more wins. Tap as fast as you can and your red team pulls harder; after each win the CPU gets stronger.",
   "howH": "How to play",
   "how": [
-   "Press Play. After the 3-2-1 countdown the round starts.",
+   "Press Play. After the 3-2-1 countdown the match starts.",
    "Click, tap the PULL button or press SPACE as fast as you can. Every tap gives your team a short burst of power.",
    "The power bar at the top shows who is pulling harder. The yellow ribbon moves toward the stronger team.",
-   "When the ribbon crosses your red line you win the round. If time runs out, the team that is ahead wins it.",
-   "Win 2 rounds to win the match and go up a level. Each level the CPU pulls a little faster."
+   "When the ribbon crosses your red line, one CPU player sinks into the mud and the ribbon goes back to the middle. If it crosses the blue line, one of yours sinks.",
+   "Sink all 6 CPU players to win. If the 2 minutes run out, the team that sank more wins; on a tie the next sinking decides it (golden pull)."
   ],
   "liveH": "For streamers: LIVE mode (TikTok, Twitch, YouTube, Kick)",
   "liveP": "Rope Rumble was made for live streams. Viewers pick a side by commenting RED or BLUE (or 🔴 / 🔵, also in Turkish, Spanish, Portuguese and Indonesian). Anyone who comments without picking a side goes to the smaller team, so the teams stay even.",
   "liveL": [
    "Comments make the commenter's team pull, likes add power.",
    "You can rename the teams and pick their colours, for example two rival clubs, two cities or you against your chat. Viewers then join by commenting the team name, its number (1 or 2) or extra words you add.",
-   "Gifts and donations bring extra people to the sender's team for the rest of the round: every 20 coins (you can change this) is one more person, and any gift is at least one. Big gifters stand at the front as strongmen with their name above them.",
-   "The losing team's front players fall into the mud. Win 2 rounds (you can change this) to win the match; at the end the top supporter and the most active viewer are shown.",
+   "Gifts and donations bring extra helpers to the sender's team for the whole match: every 20 coins (you can change this) is one more helper, and any gift is at least one. Helpers stand in front and are shields: when the team loses a pull, they sink first. Big gifters stand at the front as strongmen with their name above them.",
+   "Each lost pull sinks the front of the losing team (about one in eight players, so big streams still finish). The last team standing wins; when the match time (3 minutes by default) runs out, the team that sank more wins. Sunk viewers cheer from the mud, and new viewers who arrive after the first 30 seconds join the next match. At the end the top supporter and the most active viewer are shown.",
    "Connect TikTok through the free TikFinity app, Twitch with just your channel name, YouTube Live with your own free API key, and Kick or other platforms through Social Stream Ninja."
   ],
   "liveN": "Copy the stream link from the creator panel and add it to OBS or LIVE Studio as a 1080 × 1920 browser source. Every gift has a fixed, stated effect; there are no chance-based rewards. Connections run directly between your computer and the platform; your data does not pass through our servers.",
@@ -49,7 +49,7 @@
    ],
    [
     "How do gifts work in LIVE mode?",
-    "Every 20 coins of a gift (TikTok) or about $0.27 of a donation on other platforms adds one person to the sender's team until the end of the round; any gift adds at least one. The streamer can change the rate in the panel. Effects are fixed and shown on screen."
+    "Every 20 coins of a gift (TikTok) or about $0.27 of a donation on other platforms adds one helper to the sender's team for the rest of the match; any gift adds at least one. Helpers pull with the team and sink first when the team loses a pull. The streamer can change the rate in the panel. Effects are fixed and shown on screen."
    ],
    [
     "Does it work on phones?",
@@ -69,22 +69,22 @@
   "desc": "Rope Rumble'ı tarayıcında ücretsiz oyna: 3D halat çekme oyununda hızlı dokun, rakibi çamura çek. Yayıncılar: izleyiciler TikTok, Twitch, YouTube ya da Kick'te yoruma KIRMIZI ya da MAVİ yazarak takıma girer.",
   "card": "3D halat çekme: hızlı dokun, rakip takımı çamura çek. Yayıncılar için LIVE modu.",
   "h1": "Rope Rumble: çamur havuzlu halat savaşı",
-  "intro": "İki takım, bir halat ve ortada çamurla dolu bir havuz. Ne kadar hızlı dokunursan kırmızı takımın o kadar güçlü çeker; kurdeleyi kendi çizgine geçirdiğinde bilgisayarın öndeki oyuncuları yüzüstü çamura düşer. İki turu alan maçı kazanır, sonra bilgisayar daha da güçlenir.",
+  "intro": "İki takım, bir halat ve ortada çamurla dolu bir havuz. Kurdele bir çizgiyi her geçtiğinde kaybeden takımın öndeki oyuncusu çamura batar. Son kalan takım kazanır; süre biterse daha çok batıran kazanır. Ne kadar hızlı dokunursan kırmızı takımın o kadar güçlü çeker; her galibiyetten sonra bilgisayar güçlenir.",
   "howH": "Nasıl oynanır",
   "how": [
-   "Oyna'ya bas. 3-2-1 geri sayımından sonra tur başlar.",
+   "Oyna'ya bas. 3-2-1 geri sayımından sonra maç başlar.",
    "Olabildiğince hızlı tıkla, ÇEK düğmesine dokun ya da BOŞLUK tuşuna bas. Her dokunuş takımına kısa bir güç patlaması verir.",
    "Üstteki güç çubuğu hangi takımın daha güçlü çektiğini gösterir. Sarı kurdele güçlü takıma doğru kayar.",
-   "Kurdele senin kırmızı çizgini geçince turu kazanırsın. Süre biterse önde olan takım turu alır.",
-   "2 turu kazanırsan maçı alır ve seviye atlarsın. Her seviyede bilgisayar biraz daha hızlı çeker."
+   "Kurdele senin kırmızı çizgini geçince bilgisayardan bir oyuncu çamura batar ve kurdele ortaya döner. Mavi çizgiyi geçerse seninkilerden biri batar.",
+   "Bilgisayarın 6 oyuncusunu da batırırsan kazanırsın. 2 dakika dolarsa daha çok batıran kazanır; eşitlikte ilk batıran kazanır (altın çekiş)."
   ],
   "liveH": "Yayıncılar için: LIVE modu (TikTok, Twitch, YouTube, Kick)",
   "liveP": "Rope Rumble canlı yayınlar için yapıldı. İzleyiciler yoruma KIRMIZI ya da MAVİ yazarak (ya da 🔴 / 🔵; İngilizce, İspanyolca, Portekizce ve Endonezce kelimeler de çalışır) takımını seçer. Takım yazmadan yorum yapan, takımlar dengede kalsın diye az kişili takıma geçer.",
   "liveL": [
    "Yorumlar yorum yapanın takımını asıltır, beğeniler güç katar.",
    "Takımların adını ve rengini değiştirebilirsin: örneğin iki rakip kulüp, iki şehir ya da sen ve sohbetin. İzleyiciler o zaman takım adını, numarasını (1 ya da 2) ya da senin eklediğin kelimeleri yorum yazarak katılır.",
-   "Hediyeler ve bağışlar gönderenin takımına tur sonuna kadar ekstra kişi getirir: her 20 jeton (değiştirebilirsin) bir kişi, her hediye en az bir kişi. Büyük hediye gönderenler adlarıyla birlikte en önde pehlivan olarak durur.",
-   "Kaybeden takımın öndeki oyuncuları çamura düşer. 2 turu (değiştirebilirsin) alan maçı kazanır; maç sonunda en büyük destekçi ve en aktif izleyici ekranda gösterilir.",
+   "Hediyeler ve bağışlar gönderenin takımına maç boyunca ekstra yardımcı getirir: her 20 jeton (değiştirebilirsin) bir yardımcı, her hediye en az bir yardımcı. Yardımcılar en önde durur ve kalkan olur: takım bir çekişi kaybedince önce onlar çamura batar. Büyük hediye gönderenler adlarıyla birlikte en önde pehlivan olarak durur.",
+   "Kaybedilen her çekişte kaybeden takımın önü çamura batar (kalabalık yayınlar da bitsin diye oyuncuların yaklaşık sekizde biri). Son kalan takım kazanır; maç süresi (varsayılan 3 dakika) dolunca daha çok batıran kazanır. Çamura batan izleyiciler çamurdan tezahürat yapar, ilk 30 saniyeden sonra gelen yeni izleyiciler bir sonraki maça katılır. Maç sonunda en büyük destekçi ve en aktif izleyici ekranda gösterilir.",
    "TikTok'u ücretsiz TikFinity uygulamasıyla, Twitch'i sadece kanal adınla, YouTube Live'ı kendi ücretsiz API anahtarınla, Kick ve diğer platformları Social Stream Ninja ile bağlarsın."
   ],
   "liveN": "Yayıncı panelinden yayın linkini kopyala ve OBS ya da LIVE Studio'ya 1080 × 1920 tarayıcı kaynağı olarak ekle. Her hediyenin etkisi sabittir ve ekranda yazar; şansa dayalı ödül yoktur. Bağlantılar doğrudan senin bilgisayarınla platform arasında çalışır, verilerin bizim sunucumuzdan geçmez.",
@@ -113,7 +113,7 @@
    ],
    [
     "LIVE modunda hediyeler nasıl çalışır?",
-    "Bir hediyenin her 20 jetonu (TikTok) ya da diğer platformlarda yaklaşık 0,27 $ bağış, gönderenin takımına tur sonuna kadar bir kişi ekler; her hediye en az bir kişi getirir. Yayıncı oranı panelden değiştirebilir. Etkiler sabittir ve ekranda yazar."
+    "Bir hediyenin her 20 jetonu (TikTok) ya da diğer platformlarda yaklaşık 0,27 $ bağış, gönderenin takımına maç sonuna kadar bir yardımcı ekler; her hediye en az bir yardımcı getirir. Yardımcılar takımla birlikte çeker ve takım bir çekişi kaybedince önce onlar batar. Yayıncı oranı panelden değiştirebilir. Etkiler sabittir ve ekranda yazar."
    ],
    [
     "Telefonda çalışır mı?",
@@ -133,22 +133,22 @@
   "desc": "Juega gratis a Rope Rumble, un juego de la soga en 3D en tu navegador: toca rápido y arrastra a la CPU al barro. Creadores: los espectadores se unen a ROJO o AZUL comentando en TikTok, Twitch, YouTube o Kick.",
   "card": "Juego de la soga en 3D: toca rápido y lleva al otro equipo al barro. Modo LIVE para creadores.",
   "h1": "Rope Rumble: el juego de la soga con charco de barro",
-  "intro": "Dos equipos, una cuerda y un charco de barro en medio. Cuanto más rápido toques, más fuerte tira tu equipo rojo; lleva la cinta hasta tu línea y los primeros jugadores de la CPU caen de cara al barro. Gana dos rondas para llevarte el partido; después la CPU se vuelve más fuerte.",
+  "intro": "Dos equipos, una cuerda y un charco de barro en medio. Cada vez que la cinta cruza una línea, el primer jugador del equipo que pierde se hunde en el barro. Gana el último equipo en pie; si se acaba el tiempo, gana quien hundió más. Cuanto más rápido toques, más fuerte tira tu equipo rojo; tras cada victoria la CPU se vuelve más fuerte.",
   "howH": "Cómo se juega",
   "how": [
-   "Pulsa Jugar. Tras la cuenta 3-2-1 empieza la ronda.",
+   "Pulsa Jugar. Tras la cuenta 3-2-1 empieza el partido.",
    "Haz clic, toca el botón TIRA o pulsa ESPACIO lo más rápido que puedas. Cada toque da a tu equipo un empujón corto de fuerza.",
    "La barra de fuerza de arriba muestra quién tira más fuerte. La cinta amarilla se mueve hacia el equipo más fuerte.",
-   "Cuando la cinta cruza tu línea roja, ganas la ronda. Si se acaba el tiempo, gana el equipo que va por delante.",
-   "Gana 2 rondas para ganar el partido y subir de nivel. En cada nivel la CPU tira un poco más rápido."
+   "Cuando la cinta cruza tu línea roja, un jugador de la CPU se hunde en el barro y la cinta vuelve al centro. Si cruza la línea azul, se hunde uno de los tuyos.",
+   "Hunde a los 6 jugadores de la CPU para ganar. Si pasan los 2 minutos, gana quien hundió más; en empate decide el siguiente hundimiento (tirón de oro)."
   ],
   "liveH": "Para creadores: modo LIVE (TikTok, Twitch, YouTube, Kick)",
   "liveP": "Rope Rumble está hecho para directos. Los espectadores eligen bando comentando ROJO o AZUL (o 🔴 / 🔵; también funcionan las palabras en inglés, turco, portugués e indonesio). Quien comenta sin elegir bando va al equipo con menos gente, así los equipos se mantienen igualados.",
   "liveL": [
    "Los comentarios hacen tirar al equipo de quien comenta y los me gusta suman fuerza.",
    "Puedes cambiar el nombre y el color de los equipos, por ejemplo dos clubes rivales, dos ciudades o tú contra tu chat. Los espectadores se unen comentando el nombre del equipo, su número (1 o 2) o las palabras extra que añadas.",
-   "Los regalos y donaciones traen personas extra al equipo de quien los envía hasta el final de la ronda: cada 20 monedas (puedes cambiarlo) es una persona más, y cualquier regalo vale al menos una. Los que más regalan se ponen delante como forzudos, con su nombre encima.",
-   "Los primeros jugadores del equipo que pierde caen al barro. Gana 2 rondas (puedes cambiarlo) para ganar el partido; al final se muestran el mayor apoyo y el espectador más activo.",
+   "Los regalos y donaciones traen ayudantes extra al equipo de quien los envía durante todo el partido: cada 20 monedas (puedes cambiarlo) es un ayudante más, y cualquier regalo vale al menos uno. Los ayudantes van delante y hacen de escudo: cuando el equipo pierde un tirón, se hunden primero. Los que más regalan se ponen delante como forzudos, con su nombre encima.",
+   "Cada tirón perdido hunde la parte delantera del equipo que pierde (más o menos uno de cada ocho jugadores, para que los directos grandes también terminen). Gana el último equipo en pie; cuando se acaba el tiempo del partido (3 minutos por defecto), gana quien hundió más. Los hundidos animan desde el barro, y quien llega después de los primeros 30 segundos entra en el siguiente partido. Al final se muestran el mayor apoyo y el espectador más activo.",
    "Conecta TikTok con la app gratuita TikFinity, Twitch solo con el nombre de tu canal, YouTube Live con tu propia clave gratuita de API, y Kick u otras plataformas con Social Stream Ninja."
   ],
   "liveN": "Copia el enlace del directo desde el panel del creador y añádelo en OBS o LIVE Studio como fuente de navegador de 1080 × 1920. Cada regalo tiene un efecto fijo y visible; no hay premios al azar. Las conexiones van directamente entre tu ordenador y la plataforma; tus datos no pasan por nuestros servidores.",
@@ -177,7 +177,7 @@
    ],
    [
     "¿Cómo funcionan los regalos en el modo LIVE?",
-    "Cada 20 monedas de un regalo (TikTok) o unos 0,27 $ de donación en otras plataformas suman una persona al equipo de quien lo envía hasta el final de la ronda; cualquier regalo suma al menos una. El creador puede cambiar la proporción en el panel. Los efectos son fijos y se muestran en pantalla."
+    "Cada 20 monedas de un regalo (TikTok) o unos 0,27 $ de donación en otras plataformas suman un ayudante al equipo de quien lo envía hasta el final del partido; cualquier regalo suma al menos uno. Los ayudantes tiran con el equipo y se hunden primero cuando el equipo pierde un tirón. El creador puede cambiar la proporción en el panel. Los efectos son fijos y se muestran en pantalla."
    ],
    [
     "¿Funciona en el móvil?",
@@ -197,22 +197,22 @@
   "desc": "Jogue Rope Rumble de graça no navegador: cabo de guerra em 3D, toque rápido e arraste a CPU para a lama. Criadores: os espectadores entram no VERMELHO ou no AZUL comentando na TikTok, Twitch, YouTube ou Kick.",
   "card": "Cabo de guerra em 3D: toque rápido e puxe o outro time para a lama. Modo LIVE para criadores.",
   "h1": "Rope Rumble: cabo de guerra com poça de lama",
-  "intro": "Dois times, uma corda e uma poça de lama no meio. Quanto mais rápido você tocar, mais forte seu time vermelho puxa; leve a fita até a sua linha e os primeiros jogadores da CPU caem de cara na lama. Vença duas rodadas para levar a partida; depois a CPU fica mais forte.",
+  "intro": "Dois times, uma corda e uma poça de lama no meio. Cada vez que a fita cruza uma linha, o primeiro jogador do time que perdeu afunda na lama. Vence o último time de pé; se o tempo acabar, vence quem afundou mais. Quanto mais rápido você tocar, mais forte seu time vermelho puxa; depois de cada vitória a CPU fica mais forte.",
   "howH": "Como jogar",
   "how": [
-   "Aperte Jogar. Depois da contagem 3-2-1 a rodada começa.",
+   "Aperte Jogar. Depois da contagem 3-2-1 a partida começa.",
    "Clique, toque no botão PUXA ou aperte ESPAÇO o mais rápido que puder. Cada toque dá ao seu time um impulso curto de força.",
    "A barra de força no topo mostra quem está puxando mais forte. A fita amarela vai para o lado do time mais forte.",
-   "Quando a fita cruza a sua linha vermelha, você vence a rodada. Se o tempo acabar, vence o time que estiver na frente.",
-   "Vença 2 rodadas para ganhar a partida e subir de nível. A cada nível a CPU puxa um pouco mais rápido."
+   "Quando a fita cruza a sua linha vermelha, um jogador da CPU afunda na lama e a fita volta ao meio. Se cruzar a linha azul, afunda um dos seus.",
+   "Afunde os 6 jogadores da CPU para vencer. Se os 2 minutos acabarem, vence quem afundou mais; no empate decide o próximo afundamento (puxada de ouro)."
   ],
   "liveH": "Para criadores: modo LIVE (TikTok, Twitch, YouTube, Kick)",
   "liveP": "Rope Rumble foi feito para lives. Os espectadores escolhem o lado comentando VERMELHO ou AZUL (ou 🔴 / 🔵; palavras em inglês, turco, espanhol e indonésio também funcionam). Quem comenta sem escolher vai para o time com menos gente, assim os times ficam equilibrados.",
   "liveL": [
    "Comentários fazem o time de quem comentou puxar, e curtidas somam força.",
    "Você pode mudar o nome e a cor dos times, por exemplo dois clubes rivais, duas cidades ou você contra o seu chat. Os espectadores entram comentando o nome do time, o número (1 ou 2) ou as palavras extras que você adicionar.",
-   "Presentes e doações trazem pessoas extras para o time de quem enviou até o fim da rodada: cada 20 moedas (você pode mudar) é mais uma pessoa, e qualquer presente vale pelo menos uma. Quem mais presenteia fica na frente como fortão, com o nome em cima.",
-   "Os primeiros jogadores do time que perde caem na lama. Vença 2 rodadas (você pode mudar) para ganhar a partida; no fim aparecem o maior apoiador e o espectador mais ativo.",
+   "Presentes e doações trazem ajudantes extras para o time de quem enviou durante a partida toda: cada 20 moedas (você pode mudar) é mais um ajudante, e qualquer presente vale pelo menos um. Os ajudantes ficam na frente e servem de escudo: quando o time perde uma puxada, eles afundam primeiro. Quem mais presenteia fica na frente como fortão, com o nome em cima.",
+   "Cada puxada perdida afunda a frente do time que perdeu (cerca de um em cada oito jogadores, para lives grandes também terminarem). Vence o último time de pé; quando o tempo da partida (3 minutos por padrão) acaba, vence quem afundou mais. Quem afundou torce da lama, e quem chega depois dos primeiros 30 segundos entra na próxima partida. No fim aparecem o maior apoiador e o espectador mais ativo.",
    "Conecte a TikTok pelo app gratuito TikFinity, a Twitch só com o nome do canal, o YouTube Live com sua própria chave gratuita de API, e a Kick ou outras plataformas pelo Social Stream Ninja."
   ],
   "liveN": "Copie o link da live no painel do criador e adicione no OBS ou no LIVE Studio como fonte de navegador de 1080 × 1920. Cada presente tem um efeito fixo e mostrado na tela; não há prêmios por sorte. As conexões vão direto entre o seu computador e a plataforma; seus dados não passam pelos nossos servidores.",
@@ -241,7 +241,7 @@
    ],
    [
     "Como funcionam os presentes no modo LIVE?",
-    "Cada 20 moedas de um presente (TikTok) ou cerca de US$ 0,27 de doação em outras plataformas somam uma pessoa ao time de quem enviou até o fim da rodada; qualquer presente soma pelo menos uma. O criador pode mudar a proporção no painel. Os efeitos são fixos e aparecem na tela."
+    "Cada 20 moedas de um presente (TikTok) ou cerca de US$ 0,27 de doação em outras plataformas somam um ajudante ao time de quem enviou até o fim da partida; qualquer presente soma pelo menos um. Os ajudantes puxam com o time e afundam primeiro quando o time perde uma puxada. O criador pode mudar a proporção no painel. Os efeitos são fixos e aparecem na tela."
    ],
    [
     "Funciona no celular?",
@@ -261,22 +261,22 @@
   "desc": "Main Rope Rumble gratis di browser: tarik tambang 3D, ketuk cepat dan tarik CPU ke kubangan lumpur. Kreator: penonton masuk tim MERAH atau BIRU dengan berkomentar di TikTok, Twitch, YouTube, atau Kick.",
   "card": "Tarik tambang 3D: ketuk cepat, tarik tim lawan ke lumpur. Mode LIVE untuk kreator.",
   "h1": "Rope Rumble: tarik tambang dengan kubangan lumpur",
-  "intro": "Dua tim, satu tali, dan kubangan lumpur di tengah. Makin cepat kamu mengetuk, makin kuat tim merahmu menarik; tarik pita melewati garismu dan pemain depan CPU jatuh tertelungkup ke lumpur. Menangkan dua ronde untuk merebut pertandingan, lalu CPU makin kuat.",
+  "intro": "Dua tim, satu tali, dan kubangan lumpur di tengah. Setiap kali pita melewati garis, pemain depan tim yang kalah tenggelam ke lumpur. Tim terakhir yang bertahan menang; jika waktu habis, yang menenggelamkan lebih banyak menang. Makin cepat kamu mengetuk, makin kuat tim merahmu menarik; setiap kali menang, CPU makin kuat.",
   "howH": "Cara bermain",
   "how": [
-   "Tekan Main. Setelah hitungan 3-2-1, ronde dimulai.",
+   "Tekan Main. Setelah hitungan 3-2-1, pertandingan dimulai.",
    "Klik, ketuk tombol TARIK, atau tekan SPASI secepat mungkin. Setiap ketukan memberi timmu dorongan tenaga singkat.",
    "Bar kekuatan di atas menunjukkan siapa yang menarik lebih kuat. Pita kuning bergeser ke tim yang lebih kuat.",
-   "Saat pita melewati garis merahmu, kamu menang ronde. Jika waktu habis, tim yang unggul menang ronde itu.",
-   "Menangkan 2 ronde untuk memenangkan pertandingan dan naik level. Setiap level CPU menarik sedikit lebih cepat."
+   "Saat pita melewati garis merahmu, satu pemain CPU tenggelam ke lumpur dan pita kembali ke tengah. Jika melewati garis biru, satu pemainmu yang tenggelam.",
+   "Tenggelamkan keenam pemain CPU untuk menang. Jika 2 menit habis, yang menenggelamkan lebih banyak menang; jika seri, tenggelam berikutnya menentukan (tarikan emas)."
   ],
   "liveH": "Untuk kreator: mode LIVE (TikTok, Twitch, YouTube, Kick)",
   "liveP": "Rope Rumble dibuat untuk siaran langsung. Penonton memilih sisi dengan berkomentar MERAH atau BIRU (atau 🔴 / 🔵; kata dalam bahasa Inggris, Turki, Spanyol, dan Portugis juga bisa). Yang berkomentar tanpa memilih sisi masuk ke tim yang lebih sedikit, jadi tim tetap seimbang.",
   "liveL": [
    "Komentar membuat tim si pengirim menarik, suka menambah kekuatan.",
    "Kamu bisa mengganti nama dan warna tim, misalnya dua klub rival, dua kota, atau kamu melawan chat-mu. Penonton lalu ikut dengan mengomentari nama tim, nomornya (1 atau 2), atau kata tambahan yang kamu buat.",
-   "Hadiah dan donasi membawa orang tambahan ke tim pengirim sampai ronde selesai: setiap 20 koin (bisa diubah) jadi satu orang, dan hadiah apa pun minimal satu orang. Pemberi hadiah besar berdiri paling depan sebagai si kuat dengan namanya di atas.",
-   "Pemain depan tim yang kalah jatuh ke lumpur. Menangkan 2 ronde (bisa diubah) untuk memenangkan pertandingan; di akhir, pendukung terbesar dan penonton paling aktif ditampilkan.",
+   "Hadiah dan donasi membawa pembantu tambahan ke tim pengirim selama pertandingan: setiap 20 koin (bisa diubah) jadi satu pembantu, dan hadiah apa pun minimal satu. Pembantu berdiri paling depan dan jadi tameng: saat tim kalah tarikan, mereka tenggelam duluan. Pemberi hadiah besar berdiri di depan sebagai si kuat dengan namanya di atas.",
+   "Setiap tarikan yang kalah menenggelamkan bagian depan tim yang kalah (sekitar satu dari delapan pemain, agar siaran besar tetap selesai). Tim terakhir yang bertahan menang; saat waktu pertandingan (default 3 menit) habis, yang menenggelamkan lebih banyak menang. Penonton yang tenggelam menyemangati dari lumpur, dan penonton baru yang datang setelah 30 detik pertama ikut pertandingan berikutnya. Di akhir, pendukung terbesar dan penonton paling aktif ditampilkan.",
    "Hubungkan TikTok lewat aplikasi gratis TikFinity, Twitch cukup dengan nama channel, YouTube Live dengan API key gratis milikmu sendiri, dan Kick atau platform lain lewat Social Stream Ninja."
   ],
   "liveN": "Salin link siaran dari panel kreator dan tambahkan ke OBS atau LIVE Studio sebagai browser source 1080 × 1920. Setiap hadiah punya efek tetap yang tampil di layar; tidak ada hadiah acak. Koneksi berjalan langsung antara komputermu dan platform; datamu tidak lewat server kami.",
@@ -305,7 +305,7 @@
    ],
    [
     "Bagaimana hadiah bekerja di mode LIVE?",
-    "Setiap 20 koin hadiah (TikTok) atau sekitar $0,27 donasi di platform lain menambah satu orang ke tim pengirim sampai ronde selesai; hadiah apa pun menambah minimal satu. Kreator bisa mengubah rasionya di panel. Efeknya tetap dan tampil di layar."
+    "Setiap 20 koin hadiah (TikTok) atau sekitar $0,27 donasi di platform lain menambah satu pembantu ke tim pengirim sampai pertandingan selesai; hadiah apa pun menambah minimal satu. Pembantu ikut menarik dan tenggelam duluan saat tim kalah tarikan. Kreator bisa mengubah rasionya di panel. Efeknya tetap dan tampil di layar."
    ],
    [
     "Apakah bisa dimainkan di ponsel?",

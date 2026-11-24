@@ -6,19 +6,19 @@
 'use strict';
 
 const LANG = {
- en: { name: 'Rope Rumble', sub: 'Tug of War', red: 'RED', blue: 'BLUE', round: 'Round {n}', ready: 'Ready…', go: 'PULL!', roundWin: '{t} wins the round!', draw: 'Draw! Nobody scores', matchWin: '{t} wins the match!', play: 'Play', playAgain: 'Play again', next: 'Next level', retry: 'Try again', youWin: 'You win!', youLose: 'You lose!', level: 'Level {n}', best: 'Best level: {n}', you: 'YOU', cpu: 'CPU', tapD: 'Click or press SPACE as fast as you can!', tapM: 'Tap PULL as fast as you can!', pull: 'PULL!', intro: 'Your red team against the CPU. Pull the ribbon over your line: the faster you tap, the harder your team pulls. Win 2 rounds.', liveBtn: 'LIVE mode · for streamers', soundOn: 'Sound: on', soundOff: 'Sound: off', webgl: 'Your browser could not start 3D graphics. Try another browser or turn on hardware acceleration.', paused: 'Paused', resume: 'Resume', menu: 'Menu', power: 'Power' },
- tr: { name: 'Rope Rumble', sub: 'Halat Savaşı', red: 'KIRMIZI', blue: 'MAVİ', round: 'Tur {n}', ready: 'Hazır…', go: 'ÇEK!', roundWin: 'Turu {t} aldı!', draw: 'Berabere! Puan yok', matchWin: 'Maçı {t} kazandı!', play: 'Oyna', playAgain: 'Tekrar oyna', next: 'Sonraki seviye', retry: 'Tekrar dene', youWin: 'Kazandın!', youLose: 'Kaybettin!', level: 'Seviye {n}', best: 'En iyi seviye: {n}', you: 'SEN', cpu: 'BİLGİSAYAR', tapD: 'Olabildiğince hızlı tıkla ya da BOŞLUK tuşuna bas!', tapM: 'ÇEK düğmesine olabildiğince hızlı dokun!', pull: 'ÇEK!', intro: 'Kırmızı takımın bilgisayara karşı. Kurdeleyi kendi çizgine çek: ne kadar hızlı dokunursan takımın o kadar güçlü çeker. 2 turu alan maçı kazanır.', liveBtn: 'LIVE modu · yayıncılar için', soundOn: 'Ses: açık', soundOff: 'Ses: kapalı', webgl: 'Tarayıcın 3D grafikleri başlatamadı. Başka bir tarayıcı dene ya da donanım hızlandırmayı aç.', paused: 'Duraklatıldı', resume: 'Devam', menu: 'Menü', power: 'Güç' },
- es: { name: 'Rope Rumble', sub: 'Juego de la Soga', red: 'ROJO', blue: 'AZUL', round: 'Ronda {n}', ready: 'Listos…', go: '¡TIRA!', roundWin: '¡{t} gana la ronda!', draw: '¡Empate! Nadie suma', matchWin: '¡{t} gana el partido!', play: 'Jugar', playAgain: 'Jugar otra vez', next: 'Siguiente nivel', retry: 'Reintentar', youWin: '¡Ganaste!', youLose: '¡Perdiste!', level: 'Nivel {n}', best: 'Mejor nivel: {n}', you: 'TÚ', cpu: 'CPU', tapD: '¡Haz clic o pulsa ESPACIO lo más rápido que puedas!', tapM: '¡Toca TIRA lo más rápido que puedas!', pull: '¡TIRA!', intro: 'Tu equipo rojo contra la CPU. Lleva la cinta hasta tu línea: cuanto más rápido toques, más fuerte tira tu equipo. Gana 2 rondas.', liveBtn: 'Modo LIVE · para creadores', soundOn: 'Sonido: sí', soundOff: 'Sonido: no', webgl: 'Tu navegador no pudo iniciar los gráficos 3D. Prueba otro navegador o activa la aceleración por hardware.', paused: 'Pausa', resume: 'Seguir', menu: 'Menú', power: 'Fuerza' },
- pt: { name: 'Rope Rumble', sub: 'Cabo de Guerra', red: 'VERMELHO', blue: 'AZUL', round: 'Rodada {n}', ready: 'Prontos…', go: 'PUXA!', roundWin: '{t} vence a rodada!', draw: 'Empate! Ninguém pontua', matchWin: '{t} vence a partida!', play: 'Jogar', playAgain: 'Jogar de novo', next: 'Próximo nível', retry: 'Tentar de novo', youWin: 'Você venceu!', youLose: 'Você perdeu!', level: 'Nível {n}', best: 'Melhor nível: {n}', you: 'VOCÊ', cpu: 'CPU', tapD: 'Clique ou aperte ESPAÇO o mais rápido que puder!', tapM: 'Toque em PUXA o mais rápido que puder!', pull: 'PUXA!', intro: 'Seu time vermelho contra a CPU. Puxe a fita até a sua linha: quanto mais rápido você tocar, mais forte seu time puxa. Vença 2 rodadas.', liveBtn: 'Modo LIVE · para criadores', soundOn: 'Som: ligado', soundOff: 'Som: desligado', webgl: 'Seu navegador não conseguiu iniciar os gráficos 3D. Tente outro navegador ou ative a aceleração de hardware.', paused: 'Pausado', resume: 'Continuar', menu: 'Menu', power: 'Força' },
- id: { name: 'Rope Rumble', sub: 'Tarik Tambang', red: 'MERAH', blue: 'BIRU', round: 'Ronde {n}', ready: 'Siap…', go: 'TARIK!', roundWin: '{t} menang ronde ini!', draw: 'Seri! Tidak ada poin', matchWin: '{t} menang pertandingan!', play: 'Main', playAgain: 'Main lagi', next: 'Level berikutnya', retry: 'Coba lagi', youWin: 'Kamu menang!', youLose: 'Kamu kalah!', level: 'Level {n}', best: 'Level terbaik: {n}', you: 'KAMU', cpu: 'CPU', tapD: 'Klik atau tekan SPASI secepat mungkin!', tapM: 'Ketuk TARIK secepat mungkin!', pull: 'TARIK!', intro: 'Tim merahmu melawan CPU. Tarik pita ke garismu: makin cepat kamu mengetuk, makin kuat timmu menarik. Menangkan 2 ronde.', liveBtn: 'Mode LIVE · untuk kreator', soundOn: 'Suara: nyala', soundOff: 'Suara: mati', webgl: 'Browser-mu tidak bisa memulai grafis 3D. Coba browser lain atau nyalakan akselerasi hardware.', paused: 'Jeda', resume: 'Lanjut', menu: 'Menu', power: 'Kekuatan' }
+ en: { name: 'Rope Rumble', sub: 'Tug of War', red: 'RED', blue: 'BLUE', round: 'Round {n}', ready: 'Ready…', go: 'PULL!', roundWin: '{t} wins the round!', draw: 'Draw! Nobody scores', matchWin: '{t} wins the match!', play: 'Play', playAgain: 'Play again', next: 'Next level', retry: 'Try again', youWin: 'You win!', youLose: 'You lose!', level: 'Level {n}', best: 'Best level: {n}', you: 'YOU', cpu: 'CPU', tapD: 'Click or press SPACE as fast as you can!', tapM: 'Tap PULL as fast as you can!', pull: 'PULL!', intro: "Your red team against the CPU. Every time the ribbon crosses your line, one CPU player sinks into the mud. Tap fast: sink all 6 before they sink yours. If time runs out, whoever sank more wins.", liveBtn: 'LIVE mode · for streamers', soundOn: 'Sound: on', soundOff: 'Sound: off', webgl: 'Your browser could not start 3D graphics. Try another browser or turn on hardware acceleration.', paused: 'Paused', resume: 'Resume', menu: 'Menu', power: 'Power', left: "{n} left", sunk: "💦 {who} sank into the mud!", more: "+{n} more", shieldSunk: "🛡️ {n} {t} helpers sank instead!", golden: "GOLDEN PULL!", goldenSub: "Next one to sink wins", timeUp: "Time!", mud: "In the mud", cpuSunk: "A CPU player sank! 💦", youSunk: "One of yours sank! 💦" },
+ tr: { name: 'Rope Rumble', sub: 'Halat Savaşı', red: 'KIRMIZI', blue: 'MAVİ', round: 'Tur {n}', ready: 'Hazır…', go: 'ÇEK!', roundWin: 'Turu {t} aldı!', draw: 'Berabere! Puan yok', matchWin: 'Maçı {t} kazandı!', play: 'Oyna', playAgain: 'Tekrar oyna', next: 'Sonraki seviye', retry: 'Tekrar dene', youWin: 'Kazandın!', youLose: 'Kaybettin!', level: 'Seviye {n}', best: 'En iyi seviye: {n}', you: 'SEN', cpu: 'BİLGİSAYAR', tapD: 'Olabildiğince hızlı tıkla ya da BOŞLUK tuşuna bas!', tapM: 'ÇEK düğmesine olabildiğince hızlı dokun!', pull: 'ÇEK!', intro: "Kırmızı takımın bilgisayara karşı. Kurdele senin çizgini her geçtiğinde bilgisayardan bir oyuncu çamura batar. Hızlı dokun: onlar seninkileri batırmadan 6'sını da batır. Süre biterse daha çok batıran kazanır.", liveBtn: 'LIVE modu · yayıncılar için', soundOn: 'Ses: açık', soundOff: 'Ses: kapalı', webgl: 'Tarayıcın 3D grafikleri başlatamadı. Başka bir tarayıcı dene ya da donanım hızlandırmayı aç.', paused: 'Duraklatıldı', resume: 'Devam', menu: 'Menü', power: 'Güç', left: "{n} kişi", sunk: "💦 {who} çamura battı!", more: "+{n} kişi daha", shieldSunk: "🛡️ {t} takımının {n} yardımcısı çamura battı!", golden: "ALTIN ÇEKİŞ!", goldenSub: "İlk batıran kazanır", timeUp: "Süre bitti!", mud: "Çamurdakiler", cpuSunk: "Bilgisayardan biri çamura battı! 💦", youSunk: "Seninkilerden biri çamura battı! 💦" },
+ es: { name: 'Rope Rumble', sub: 'Juego de la Soga', red: 'ROJO', blue: 'AZUL', round: 'Ronda {n}', ready: 'Listos…', go: '¡TIRA!', roundWin: '¡{t} gana la ronda!', draw: '¡Empate! Nadie suma', matchWin: '¡{t} gana el partido!', play: 'Jugar', playAgain: 'Jugar otra vez', next: 'Siguiente nivel', retry: 'Reintentar', youWin: '¡Ganaste!', youLose: '¡Perdiste!', level: 'Nivel {n}', best: 'Mejor nivel: {n}', you: 'TÚ', cpu: 'CPU', tapD: '¡Haz clic o pulsa ESPACIO lo más rápido que puedas!', tapM: '¡Toca TIRA lo más rápido que puedas!', pull: '¡TIRA!', intro: "Tu equipo rojo contra la CPU. Cada vez que la cinta cruza tu línea, un jugador de la CPU se hunde en el barro. Toca rápido: hunde a los 6 antes de que hundan a los tuyos. Si se acaba el tiempo, gana quien hundió más.", liveBtn: 'Modo LIVE · para creadores', soundOn: 'Sonido: sí', soundOff: 'Sonido: no', webgl: 'Tu navegador no pudo iniciar los gráficos 3D. Prueba otro navegador o activa la aceleración por hardware.', paused: 'Pausa', resume: 'Seguir', menu: 'Menú', power: 'Fuerza', left: "quedan {n}", sunk: "💦 ¡{who} se hundió en el barro!", more: "+{n} más", shieldSunk: "🛡️ ¡{n} ayudantes de {t} se hundieron!", golden: "¡TIRÓN DE ORO!", goldenSub: "El próximo que hunda gana", timeUp: "¡Tiempo!", mud: "En el barro", cpuSunk: "¡Un jugador de la CPU se hundió! 💦", youSunk: "¡Uno de los tuyos se hundió! 💦" },
+ pt: { name: 'Rope Rumble', sub: 'Cabo de Guerra', red: 'VERMELHO', blue: 'AZUL', round: 'Rodada {n}', ready: 'Prontos…', go: 'PUXA!', roundWin: '{t} vence a rodada!', draw: 'Empate! Ninguém pontua', matchWin: '{t} vence a partida!', play: 'Jogar', playAgain: 'Jogar de novo', next: 'Próximo nível', retry: 'Tentar de novo', youWin: 'Você venceu!', youLose: 'Você perdeu!', level: 'Nível {n}', best: 'Melhor nível: {n}', you: 'VOCÊ', cpu: 'CPU', tapD: 'Clique ou aperte ESPAÇO o mais rápido que puder!', tapM: 'Toque em PUXA o mais rápido que puder!', pull: 'PUXA!', intro: "Seu time vermelho contra a CPU. Cada vez que a fita cruza a sua linha, um jogador da CPU afunda na lama. Toque rápido: afunde os 6 antes que afundem os seus. Se o tempo acabar, vence quem afundou mais.", liveBtn: 'Modo LIVE · para criadores', soundOn: 'Som: ligado', soundOff: 'Som: desligado', webgl: 'Seu navegador não conseguiu iniciar os gráficos 3D. Tente outro navegador ou ative a aceleração de hardware.', paused: 'Pausado', resume: 'Continuar', menu: 'Menu', power: 'Força', left: "restam {n}", sunk: "💦 {who} afundou na lama!", more: "+{n}", shieldSunk: "🛡️ {n} ajudantes do {t} afundaram!", golden: "PUXADA DE OURO!", goldenSub: "Quem afundar primeiro vence", timeUp: "Tempo!", mud: "Na lama", cpuSunk: "Um jogador da CPU afundou! 💦", youSunk: "Um dos seus afundou! 💦" },
+ id: { name: 'Rope Rumble', sub: 'Tarik Tambang', red: 'MERAH', blue: 'BIRU', round: 'Ronde {n}', ready: 'Siap…', go: 'TARIK!', roundWin: '{t} menang ronde ini!', draw: 'Seri! Tidak ada poin', matchWin: '{t} menang pertandingan!', play: 'Main', playAgain: 'Main lagi', next: 'Level berikutnya', retry: 'Coba lagi', youWin: 'Kamu menang!', youLose: 'Kamu kalah!', level: 'Level {n}', best: 'Level terbaik: {n}', you: 'KAMU', cpu: 'CPU', tapD: 'Klik atau tekan SPASI secepat mungkin!', tapM: 'Ketuk TARIK secepat mungkin!', pull: 'TARIK!', intro: "Tim merahmu melawan CPU. Setiap kali pita melewati garismu, satu pemain CPU tenggelam di lumpur. Ketuk cepat: tenggelamkan keenamnya sebelum mereka menenggelamkan timmu. Jika waktu habis, yang menenggelamkan lebih banyak menang.", liveBtn: 'Mode LIVE · untuk kreator', soundOn: 'Suara: nyala', soundOff: 'Suara: mati', webgl: 'Browser-mu tidak bisa memulai grafis 3D. Coba browser lain atau nyalakan akselerasi hardware.', paused: 'Jeda', resume: 'Lanjut', menu: 'Menu', power: 'Kekuatan', left: "sisa {n}", sunk: "💦 {who} tenggelam di lumpur!", more: "+{n} lagi", shieldSunk: "🛡️ {n} pembantu {t} tenggelam!", golden: "TARIKAN EMAS!", goldenSub: "Yang pertama menenggelamkan menang", timeUp: "Waktu habis!", mud: "Di lumpur", cpuSunk: "Satu pemain CPU tenggelam! 💦", youSunk: "Satu pemainmu tenggelam! 💦" }
 };
 
 const LIVE_RR = {
- en: { cls: 'Live match', wait: 'Waiting for both teams… comment RED or BLUE!', legendH: 'Join a team: comment', cmtK: 'Comment', cmt: 'your team pulls', likeK: '♥ Like', likes: 'more power', giftK: 'Gift', giftE: 'at least +1 person', giftRow: '+1 person per {c} coins', giftRowUsd: '+1 person per {c} donated', joined: 'joined {t}', brought: '@{u} brought {n} people to {t}!', strong: 'Strongman @{u} joins {t}!', mvpH: 'Top supporter', actH: 'Most active', newMatch: 'New match! Comment your team', roundOnly: 'Gift people stay until the end of the round.', note: 'Simulation mode: this page is not connected to a live stream. All events here are test events made by you or by Auto demo.', obsNote: 'Add as a browser source at 1080 × 1920. Without a connection the output plays a DEMO match.', auto: 'Auto demo: fake viewers (shown as DEMO on stream)', sRed: 'Comment RED', sBlue: 'Comment BLUE', sAny: 'Comment', sGift: 'Gift', teamsH: "Teams", team: "Team {n}", tName: "Name (empty = RED / BLUE)", tColor: "Colour", tKeys: "Extra join words, comma separated", tHint: "Viewers join by commenting the team name, its number (1 or 2) or an extra word. Team names and colours are yours to choose; please do not use logos you do not have the rights to.", orNum: "or write 1 / 2", cfgH: 'Game settings', cpp: 'Coins per extra person', roundSec: 'Round length (seconds)', winR: 'Rounds to win the match' },
- tr: { cls: 'Canlı maç', wait: 'İki takım bekleniyor… yoruma KIRMIZI ya da MAVİ yaz!', legendH: 'Takıma katıl: yoruma yaz', cmtK: 'Yorum', cmt: 'takımın asılır', likeK: '♥ Beğeni', likes: 'güç verir', giftK: 'Hediye', giftE: 'en az +1 kişi', giftRow: 'her {c} jetona +1 kişi', giftRowUsd: 'her {c} bağışa +1 kişi', joined: '{t} takımına katıldı', brought: '@{u}, {t} takımına {n} kişi getirdi!', strong: 'Pehlivan @{u}, {t} takımında!', mvpH: 'En büyük destekçi', actH: 'En aktif', newMatch: 'Yeni maç! Takımını yoruma yaz', roundOnly: 'Hediyeyle gelen kişiler tur sonuna kadar kalır.', note: 'Simülasyon modu: bu sayfa bir canlı yayına bağlı değil. Buradaki tüm olaylar senin ya da Otomatik demonun oluşturduğu test olaylarıdır.', obsNote: '1080 × 1920 tarayıcı kaynağı olarak ekle. Bağlantı yokken çıktı DEMO maçı oynatır.', auto: 'Otomatik demo: sahte izleyiciler (yayında DEMO yazar)', sRed: 'Yorum: KIRMIZI', sBlue: 'Yorum: MAVİ', sAny: 'Yorum', sGift: 'Hediye', teamsH: "Takımlar", team: "{n}. takım", tName: "Ad (boş = KIRMIZI / MAVİ)", tColor: "Renk", tKeys: "Ek katılım kelimeleri, virgülle", tHint: "İzleyiciler takım adını, numarasını (1 ya da 2) ya da ek bir kelimeyi yorum yazarak katılır. Takım adlarını ve renklerini sen seçersin; hakkına sahip olmadığın logoları kullanma.", orNum: "ya da 1 / 2 yaz", cfgH: 'Oyun ayarları', cpp: 'Ekstra 1 kişi için jeton', roundSec: 'Tur süresi (saniye)', winR: 'Maçı kazanmak için tur' },
- es: { cls: 'Partido en directo', wait: 'Esperando a los dos equipos… ¡comenta ROJO o AZUL!', legendH: 'Únete a un equipo: comenta', cmtK: 'Comentario', cmt: 'tu equipo tira', likeK: '♥ Me gusta', likes: 'más fuerza', giftK: 'Regalo', giftE: 'mínimo +1 persona', giftRow: '+1 persona cada {c} monedas', giftRowUsd: '+1 persona cada {c} donados', joined: 'se unió a {t}', brought: '¡@{u} trajo {n} personas a {t}!', strong: '¡El forzudo @{u} se une a {t}!', mvpH: 'Mayor apoyo', actH: 'Más activo', newMatch: '¡Nuevo partido! Comenta tu equipo', roundOnly: 'Las personas de los regalos se quedan hasta el final de la ronda.', note: 'Modo simulación: esta página no está conectada a un directo. Todos los eventos aquí son de prueba, creados por ti o por la Demo automática.', obsNote: 'Añádelo como fuente de navegador de 1080 × 1920. Sin conexión, la salida muestra un partido DEMO.', auto: 'Demo automática: espectadores falsos (en el directo aparece DEMO)', sRed: 'Comentar ROJO', sBlue: 'Comentar AZUL', sAny: 'Comentario', sGift: 'Regalo', teamsH: "Equipos", team: "Equipo {n}", tName: "Nombre (vacío = ROJO / AZUL)", tColor: "Color", tKeys: "Palabras extra para unirse, separadas por comas", tHint: "Los espectadores se unen comentando el nombre del equipo, su número (1 o 2) o una palabra extra. Tú eliges nombres y colores; no uses logos sobre los que no tengas derechos.", orNum: "o escribe 1 / 2", cfgH: 'Ajustes del juego', cpp: 'Monedas por persona extra', roundSec: 'Duración de la ronda (segundos)', winR: 'Rondas para ganar' },
- pt: { cls: 'Partida ao vivo', wait: 'Esperando os dois times… comente VERMELHO ou AZUL!', legendH: 'Entre num time: comente', cmtK: 'Comentário', cmt: 'seu time puxa', likeK: '♥ Curtida', likes: 'mais força', giftK: 'Presente', giftE: 'no mínimo +1 pessoa', giftRow: '+1 pessoa a cada {c} moedas', giftRowUsd: '+1 pessoa a cada {c} doados', joined: 'entrou no {t}', brought: '@{u} trouxe {n} pessoas para o {t}!', strong: 'O fortão @{u} entra no {t}!', mvpH: 'Maior apoiador', actH: 'Mais ativo', newMatch: 'Nova partida! Comente seu time', roundOnly: 'As pessoas dos presentes ficam até o fim da rodada.', note: 'Modo simulação: esta página não está conectada a uma live. Todos os eventos aqui são de teste, criados por você ou pela Demo automática.', obsNote: 'Adicione como fonte de navegador de 1080 × 1920. Sem conexão, a saída mostra uma partida DEMO.', auto: 'Demo automática: espectadores falsos (aparece DEMO na live)', sRed: 'Comentar VERMELHO', sBlue: 'Comentar AZUL', sAny: 'Comentário', sGift: 'Presente', teamsH: "Times", team: "Time {n}", tName: "Nome (vazio = VERMELHO / AZUL)", tColor: "Cor", tKeys: "Palavras extras para entrar, separadas por vírgula", tHint: "Os espectadores entram comentando o nome do time, o número (1 ou 2) ou uma palavra extra. Você escolhe nomes e cores; não use logos sobre os quais você não tem direitos.", orNum: "ou escreva 1 / 2", cfgH: 'Ajustes do jogo', cpp: 'Moedas por pessoa extra', roundSec: 'Duração da rodada (segundos)', winR: 'Rodadas para vencer' },
- id: { cls: 'Pertandingan live', wait: 'Menunggu kedua tim… komentar MERAH atau BIRU!', legendH: 'Ikut tim: komentar', cmtK: 'Komentar', cmt: 'timmu menarik', likeK: '♥ Suka', likes: 'tambah kekuatan', giftK: 'Hadiah', giftE: 'minimal +1 orang', giftRow: '+1 orang tiap {c} koin', giftRowUsd: '+1 orang tiap donasi {c}', joined: 'bergabung ke {t}', brought: '@{u} membawa {n} orang ke {t}!', strong: 'Si kuat @{u} bergabung ke {t}!', mvpH: 'Pendukung terbesar', actH: 'Paling aktif', newMatch: 'Pertandingan baru! Komentar timmu', roundOnly: 'Orang dari hadiah tetap ada sampai ronde selesai.', note: 'Mode simulasi: halaman ini tidak terhubung ke siaran live. Semua event di sini adalah event uji yang dibuat olehmu atau oleh Demo otomatis.', obsNote: 'Tambahkan sebagai browser source 1080 × 1920. Tanpa koneksi, output menampilkan pertandingan DEMO.', auto: 'Demo otomatis: penonton palsu (di siaran tertulis DEMO)', sRed: 'Komentar MERAH', sBlue: 'Komentar BIRU', sAny: 'Komentar', sGift: 'Hadiah', teamsH: "Tim", team: "Tim {n}", tName: "Nama (kosong = MERAH / BIRU)", tColor: "Warna", tKeys: "Kata tambahan untuk ikut, pisahkan dengan koma", tHint: "Penonton ikut dengan mengomentari nama tim, nomornya (1 atau 2), atau kata tambahan. Nama dan warna tim kamu yang pilih; jangan pakai logo yang bukan hakmu.", orNum: "atau tulis 1 / 2", cfgH: 'Pengaturan game', cpp: 'Koin per orang tambahan', roundSec: 'Lama ronde (detik)', winR: 'Ronde untuk menang' }
+ en: { cls: 'Live match', wait: 'Waiting for both teams… comment RED or BLUE!', legendH: 'Join a team: comment', cmtK: 'Comment', cmt: 'your team pulls', likeK: '♥ Like', likes: 'more power', giftK: 'Gift', giftE: 'at least +1 person', giftRow: '+1 person per {c} coins', giftRowUsd: '+1 person per {c} donated', joined: 'joined {t}', brought: '@{u} brought {n} people to {t}!', strong: 'Strongman @{u} joins {t}!', mvpH: 'Top supporter', actH: 'Most active', newMatch: 'New match! Comment your team', roundOnly: 'Gift people stay until the end of the round.', note: 'Simulation mode: this page is not connected to a live stream. All events here are test events made by you or by Auto demo.', obsNote: 'Add as a browser source at 1080 × 1920. Without a connection the output plays a DEMO match.', auto: 'Auto demo: fake viewers (shown as DEMO on stream)', sRed: 'Comment RED', sBlue: 'Comment BLUE', sAny: 'Comment', sGift: 'Gift', teamsH: "Teams", team: "Team {n}", tName: "Name (empty = RED / BLUE)", tColor: "Colour", tKeys: "Extra join words, comma separated", tHint: "Viewers join by commenting the team name, its number (1 or 2) or an extra word. Team names and colours are yours to choose; please do not use logos you do not have the rights to.", orNum: "or write 1 / 2", rule: "Lose a pull and your front players sink. Last team standing wins.", shieldN: "Gift people are shields: they sink first.", regOpen: "Join now: {s}s", regClosed: "Joining closed: you are in the next match!", matchSec: "Match length (seconds)", regSec: "Joining time at the start (seconds)", cheer: "cheers from the mud", cfgH: 'Game settings', cpp: 'Coins per extra person', roundSec: 'Round length (seconds)', winR: 'Rounds to win the match' },
+ tr: { cls: 'Canlı maç', wait: 'İki takım bekleniyor… yoruma KIRMIZI ya da MAVİ yaz!', legendH: 'Takıma katıl: yoruma yaz', cmtK: 'Yorum', cmt: 'takımın asılır', likeK: '♥ Beğeni', likes: 'güç verir', giftK: 'Hediye', giftE: 'en az +1 kişi', giftRow: 'her {c} jetona +1 kişi', giftRowUsd: 'her {c} bağışa +1 kişi', joined: '{t} takımına katıldı', brought: '@{u}, {t} takımına {n} kişi getirdi!', strong: 'Pehlivan @{u}, {t} takımında!', mvpH: 'En büyük destekçi', actH: 'En aktif', newMatch: 'Yeni maç! Takımını yoruma yaz', roundOnly: 'Hediyeyle gelen kişiler tur sonuna kadar kalır.', note: 'Simülasyon modu: bu sayfa bir canlı yayına bağlı değil. Buradaki tüm olaylar senin ya da Otomatik demonun oluşturduğu test olaylarıdır.', obsNote: '1080 × 1920 tarayıcı kaynağı olarak ekle. Bağlantı yokken çıktı DEMO maçı oynatır.', auto: 'Otomatik demo: sahte izleyiciler (yayında DEMO yazar)', sRed: 'Yorum: KIRMIZI', sBlue: 'Yorum: MAVİ', sAny: 'Yorum', sGift: 'Hediye', teamsH: "Takımlar", team: "{n}. takım", tName: "Ad (boş = KIRMIZI / MAVİ)", tColor: "Renk", tKeys: "Ek katılım kelimeleri, virgülle", tHint: "İzleyiciler takım adını, numarasını (1 ya da 2) ya da ek bir kelimeyi yorum yazarak katılır. Takım adlarını ve renklerini sen seçersin; hakkına sahip olmadığın logoları kullanma.", orNum: "ya da 1 / 2 yaz", rule: "Çekişi kaybeden takımın öndekileri çamura batar. Son kalan takım kazanır.", shieldN: "Hediyeyle gelenler kalkandır: önce onlar batar.", regOpen: "Katılım: {s} sn", regClosed: "Katılım kapandı: bir sonraki maçtasın!", matchSec: "Maç süresi (saniye)", regSec: "Baştaki katılım süresi (saniye)", cheer: "çamurdan tezahürat", cfgH: 'Oyun ayarları', cpp: 'Ekstra 1 kişi için jeton', roundSec: 'Tur süresi (saniye)', winR: 'Maçı kazanmak için tur' },
+ es: { cls: 'Partido en directo', wait: 'Esperando a los dos equipos… ¡comenta ROJO o AZUL!', legendH: 'Únete a un equipo: comenta', cmtK: 'Comentario', cmt: 'tu equipo tira', likeK: '♥ Me gusta', likes: 'más fuerza', giftK: 'Regalo', giftE: 'mínimo +1 persona', giftRow: '+1 persona cada {c} monedas', giftRowUsd: '+1 persona cada {c} donados', joined: 'se unió a {t}', brought: '¡@{u} trajo {n} personas a {t}!', strong: '¡El forzudo @{u} se une a {t}!', mvpH: 'Mayor apoyo', actH: 'Más activo', newMatch: '¡Nuevo partido! Comenta tu equipo', roundOnly: 'Las personas de los regalos se quedan hasta el final de la ronda.', note: 'Modo simulación: esta página no está conectada a un directo. Todos los eventos aquí son de prueba, creados por ti o por la Demo automática.', obsNote: 'Añádelo como fuente de navegador de 1080 × 1920. Sin conexión, la salida muestra un partido DEMO.', auto: 'Demo automática: espectadores falsos (en el directo aparece DEMO)', sRed: 'Comentar ROJO', sBlue: 'Comentar AZUL', sAny: 'Comentario', sGift: 'Regalo', teamsH: "Equipos", team: "Equipo {n}", tName: "Nombre (vacío = ROJO / AZUL)", tColor: "Color", tKeys: "Palabras extra para unirse, separadas por comas", tHint: "Los espectadores se unen comentando el nombre del equipo, su número (1 o 2) o una palabra extra. Tú eliges nombres y colores; no uses logos sobre los que no tengas derechos.", orNum: "o escribe 1 / 2", rule: "Si pierdes un tirón, tus primeros jugadores se hunden. Gana el último equipo en pie.", shieldN: "Las personas de los regalos son escudos: se hunden primero.", regOpen: "Únete: {s} s", regClosed: "Inscripción cerrada: ¡estás en el próximo partido!", matchSec: "Duración del partido (segundos)", regSec: "Tiempo para unirse al inicio (segundos)", cheer: "anima desde el barro", cfgH: 'Ajustes del juego', cpp: 'Monedas por persona extra', roundSec: 'Duración de la ronda (segundos)', winR: 'Rondas para ganar' },
+ pt: { cls: 'Partida ao vivo', wait: 'Esperando os dois times… comente VERMELHO ou AZUL!', legendH: 'Entre num time: comente', cmtK: 'Comentário', cmt: 'seu time puxa', likeK: '♥ Curtida', likes: 'mais força', giftK: 'Presente', giftE: 'no mínimo +1 pessoa', giftRow: '+1 pessoa a cada {c} moedas', giftRowUsd: '+1 pessoa a cada {c} doados', joined: 'entrou no {t}', brought: '@{u} trouxe {n} pessoas para o {t}!', strong: 'O fortão @{u} entra no {t}!', mvpH: 'Maior apoiador', actH: 'Mais ativo', newMatch: 'Nova partida! Comente seu time', roundOnly: 'As pessoas dos presentes ficam até o fim da rodada.', note: 'Modo simulação: esta página não está conectada a uma live. Todos os eventos aqui são de teste, criados por você ou pela Demo automática.', obsNote: 'Adicione como fonte de navegador de 1080 × 1920. Sem conexão, a saída mostra uma partida DEMO.', auto: 'Demo automática: espectadores falsos (aparece DEMO na live)', sRed: 'Comentar VERMELHO', sBlue: 'Comentar AZUL', sAny: 'Comentário', sGift: 'Presente', teamsH: "Times", team: "Time {n}", tName: "Nome (vazio = VERMELHO / AZUL)", tColor: "Cor", tKeys: "Palavras extras para entrar, separadas por vírgula", tHint: "Os espectadores entram comentando o nome do time, o número (1 ou 2) ou uma palavra extra. Você escolhe nomes e cores; não use logos sobre os quais você não tem direitos.", orNum: "ou escreva 1 / 2", rule: "Perdeu a puxada, os da frente afundam. Vence o último time de pé.", shieldN: "As pessoas dos presentes são escudos: afundam primeiro.", regOpen: "Entre já: {s} s", regClosed: "Entradas encerradas: você está na próxima partida!", matchSec: "Duração da partida (segundos)", regSec: "Tempo para entrar no início (segundos)", cheer: "torce da lama", cfgH: 'Ajustes do jogo', cpp: 'Moedas por pessoa extra', roundSec: 'Duração da rodada (segundos)', winR: 'Rodadas para vencer' },
+ id: { cls: 'Pertandingan live', wait: 'Menunggu kedua tim… komentar MERAH atau BIRU!', legendH: 'Ikut tim: komentar', cmtK: 'Komentar', cmt: 'timmu menarik', likeK: '♥ Suka', likes: 'tambah kekuatan', giftK: 'Hadiah', giftE: 'minimal +1 orang', giftRow: '+1 orang tiap {c} koin', giftRowUsd: '+1 orang tiap donasi {c}', joined: 'bergabung ke {t}', brought: '@{u} membawa {n} orang ke {t}!', strong: 'Si kuat @{u} bergabung ke {t}!', mvpH: 'Pendukung terbesar', actH: 'Paling aktif', newMatch: 'Pertandingan baru! Komentar timmu', roundOnly: 'Orang dari hadiah tetap ada sampai ronde selesai.', note: 'Mode simulasi: halaman ini tidak terhubung ke siaran live. Semua event di sini adalah event uji yang dibuat olehmu atau oleh Demo otomatis.', obsNote: 'Tambahkan sebagai browser source 1080 × 1920. Tanpa koneksi, output menampilkan pertandingan DEMO.', auto: 'Demo otomatis: penonton palsu (di siaran tertulis DEMO)', sRed: 'Komentar MERAH', sBlue: 'Komentar BIRU', sAny: 'Komentar', sGift: 'Hadiah', teamsH: "Tim", team: "Tim {n}", tName: "Nama (kosong = MERAH / BIRU)", tColor: "Warna", tKeys: "Kata tambahan untuk ikut, pisahkan dengan koma", tHint: "Penonton ikut dengan mengomentari nama tim, nomornya (1 atau 2), atau kata tambahan. Nama dan warna tim kamu yang pilih; jangan pakai logo yang bukan hakmu.", orNum: "atau tulis 1 / 2", rule: "Kalah tarikan, pemain depan tenggelam. Tim terakhir yang bertahan menang.", shieldN: "Orang dari hadiah jadi tameng: mereka tenggelam duluan.", regOpen: "Ikut sekarang: {s} dtk", regClosed: "Pendaftaran ditutup: kamu ikut pertandingan berikutnya!", matchSec: "Lama pertandingan (detik)", regSec: "Waktu ikut di awal (detik)", cheer: "menyemangati dari lumpur", cfgH: 'Pengaturan game', cpp: 'Koin per orang tambahan', roundSec: 'Lama ronde (detik)', winR: 'Ronde untuk menang' }
 };
 const SRC_TXT = {"en": {"demo": "DEMO", "sim": "SIMULATION", "panelH": "Creator panel", "back": "← Game", "source": "Data source", "srcSim": "Test simulator", "active": "ACTIVE", "srcTT": "TikTok LIVE (official)", "srcTTn": "WAITING FOR PARTNER ACCESS", "simH": "Simulator", "blockH": "Blocked words and users (comma separated)", "obsH": "Stream output for OBS / LIVE Studio", "copy": "Copy", "copied": "Copied!", "logH": "Event queue", "panel": "Panel", "st": {"ok": "APPLIED", "dup": "DUPLICATE", "queue": "QUEUED", "filt": "FILTERED"}, "srcN": {"tikfinity": "TikTok · via TikFinity (beta)", "twitch": "Twitch", "youtube": "YouTube Live", "ssn": "Kick + other platforms · via Social Stream Ninja (beta)"}, "srcH": {"twitch": "Official Twitch chat, free, nothing to install: type your channel name and connect. Bits and subs count as gifts. (Twitch does not send follows to chat.)", "youtube": "Official YouTube API, free. One-time setup: in Google Cloud Console turn on “YouTube Data API v3”, create an API key (restrict it to pickradar.net) and paste it here with your live video link. The free daily quota lasts about 3 hours of streaming. Super Chats, Super Stickers and memberships count as gifts.", "ssn": "For Kick and any other platform: use the free Social Stream Ninja app or browser extension. In its settings under Mechanics turn on “Enable remote API control” and “Send chat messages to API server”, then paste your session ID here. Donations count as gifts. Social Stream Ninja is a third-party tool, not made by us."}, "moneyNote": "Twitch, YouTube and Kick donations are converted to coins: $1 ≈ 75 coins (100 Bits = $1, a sub ≈ $5).", "twCh": "Twitch channel name", "ytKey": "YouTube API key", "ytVid": "Live video link or ID", "ssSess": "Social Stream session ID", "anyGift": "Any gift", "errGen": "CANNOT CONNECT", "needCh": "Type your Twitch channel name first.", "needYt": "Paste your API key and live video link first.", "needSs": "Paste your Social Stream session ID first.", "ytBadKey": "YouTube rejected the key, or today’s free quota is used up.", "ytNoLive": "No active live chat on this video yet. Retrying…", "obsNoteNet": "Add as a browser source at 1080 × 1920. The class reacts to your real chat and donations.", "keyWarn": "This link contains your API key, do not share it.", "liveNote": "Real live data is connected. Simulator buttons still work for testing.", "tfSt": {"off": "OFF", "wait": "CONNECTING…", "on": "CONNECTED", "err": "TIKFINITY NOT FOUND"}, "tfUse": "Connect my LIVE", "tfStop": "Disconnect", "tfHelp": "Free and runs only on your computer: install the TikFinity desktop app, log in with your TikTok account and keep it open while you are LIVE. This page reads your stream events from it (ws://localhost:21213). No keys, nothing passes through our servers. TikFinity is a third-party tool, not made by TikTok or by us.", "tfPerm": "If Chrome asks for “local network access”, click Allow.", "obsNoteTF": "Add as a browser source at 1080 × 1920 on the same computer where TikFinity is running. The class reacts to your real comments, likes and gifts.", "sFollow": "Follow"}, "tr": {"demo": "DEMO", "sim": "SİMÜLASYON", "panelH": "Yayıncı paneli", "back": "← Oyun", "source": "Veri kaynağı", "srcSim": "Test simülatörü", "active": "AKTİF", "srcTT": "TikTok LIVE (resmî)", "srcTTn": "PARTNER ONAYI BEKLENİYOR", "simH": "Simülatör", "blockH": "Engelli kelimeler ve kullanıcılar (virgülle)", "obsH": "OBS / LIVE Studio yayın çıktısı", "copy": "Kopyala", "copied": "Kopyalandı!", "logH": "Olay kuyruğu", "panel": "Panel", "st": {"ok": "UYGULANDI", "dup": "TEKRAR", "queue": "SIRADA", "filt": "FİLTRE"}, "srcN": {"tikfinity": "TikTok · TikFinity ile (beta)", "twitch": "Twitch", "youtube": "YouTube Live", "ssn": "Kick + diğer platformlar · Social Stream Ninja ile (beta)"}, "srcH": {"twitch": "Resmî Twitch sohbeti, ücretsiz, kurulum yok: kanal adını yaz ve bağla. Bits ve abonelikler hediye sayılır. (Twitch takipleri sohbete göndermez.)", "youtube": "Resmî YouTube API’si, ücretsiz. Tek seferlik kurulum: Google Cloud Console’da “YouTube Data API v3”ü aç, bir API anahtarı oluştur (pickradar.net ile sınırla) ve canlı yayın linkinle birlikte buraya yapıştır. Ücretsiz günlük kota yaklaşık 3 saatlik yayına yeter. Süper Sohbet, Süper Çıkartma ve kanal üyelikleri hediye sayılır.", "ssn": "Kick ve diğer tüm platformlar için: ücretsiz Social Stream Ninja uygulamasını ya da tarayıcı eklentisini kullan. Ayarlarında Mechanics bölümünden “Enable remote API control” ve “Send chat messages to API server” seçeneklerini aç, sonra oturum ID’ni buraya yapıştır. Bağışlar hediye sayılır. Social Stream Ninja üçüncü taraf bir araçtır; biz yapmadık."}, "moneyNote": "Twitch, YouTube ve Kick bağışları jetona çevrilir: 1 $ ≈ 75 jeton (100 Bits = 1 $, bir abonelik ≈ 5 $).", "twCh": "Twitch kanal adı", "ytKey": "YouTube API anahtarı", "ytVid": "Canlı yayın linki veya ID", "ssSess": "Social Stream oturum ID", "anyGift": "Her hediye", "errGen": "BAĞLANAMADI", "needCh": "Önce Twitch kanal adını yaz.", "needYt": "Önce API anahtarını ve canlı yayın linkini yapıştır.", "needSs": "Önce Social Stream oturum ID’ni yapıştır.", "ytBadKey": "YouTube anahtarı kabul etmedi ya da bugünkü ücretsiz kota doldu.", "ytNoLive": "Bu videoda henüz aktif canlı sohbet yok. Tekrar deneniyor…", "obsNoteNet": "1080 × 1920 tarayıcı kaynağı olarak ekle. Sınıf gerçek sohbetine ve bağışlarına tepki verir.", "keyWarn": "Bu link API anahtarını içerir, kimseyle paylaşma.", "liveNote": "Gerçek canlı yayın verisi bağlı. Simülatör düğmeleri test için yine çalışır.", "tfSt": {"off": "KAPALI", "wait": "BAĞLANIYOR…", "on": "BAĞLANDI", "err": "TIKFINITY BULUNAMADI"}, "tfUse": "Yayınımı bağla", "tfStop": "Bağlantıyı kes", "tfHelp": "Ücretsiz ve yalnızca senin bilgisayarında çalışır: TikFinity masaüstü uygulamasını kur, TikTok hesabınla giriş yap ve yayın boyunca açık tut. Bu sayfa yayın olaylarını oradan okur (ws://localhost:21213). Anahtar yok, hiçbir veri bizim sunucumuzdan geçmez. TikFinity üçüncü taraf bir araçtır; TikTok ya da biz yapmadık.", "tfPerm": "Chrome “yerel ağ erişimi” izni sorarsa İzin ver’e bas.", "obsNoteTF": "TikFinity’nin açık olduğu aynı bilgisayarda 1080 × 1920 tarayıcı kaynağı olarak ekle. Sınıf gerçek yorumlarına, beğenilerine ve hediyelerine tepki verir.", "sFollow": "Takip"}, "es": {"demo": "DEMO", "sim": "SIMULACIÓN", "panelH": "Panel del creador", "back": "← Juego", "source": "Fuente de datos", "srcSim": "Simulador de prueba", "active": "ACTIVO", "srcTT": "TikTok LIVE (oficial)", "srcTTn": "ESPERANDO ACCESO DE SOCIO", "simH": "Simulador", "blockH": "Palabras y usuarios bloqueados (separados por comas)", "obsH": "Salida del directo para OBS / LIVE Studio", "copy": "Copiar", "copied": "¡Copiado!", "logH": "Cola de eventos", "panel": "Panel", "st": {"ok": "APLICADO", "dup": "DUPLICADO", "queue": "EN COLA", "filt": "FILTRADO"}, "srcN": {"tikfinity": "TikTok · con TikFinity (beta)", "twitch": "Twitch", "youtube": "YouTube Live", "ssn": "Kick + otras plataformas · con Social Stream Ninja (beta)"}, "srcH": {"twitch": "Chat oficial de Twitch, gratis, sin instalar nada: escribe el nombre de tu canal y conecta. Los Bits y las suscripciones cuentan como regalos. (Twitch no envía los follows al chat.)", "youtube": "API oficial de YouTube, gratis. Configuración única: en Google Cloud Console activa “YouTube Data API v3”, crea una clave de API (restríngela a pickradar.net) y pégala aquí con el enlace de tu directo. La cuota diaria gratuita alcanza para unas 3 horas de directo. Super Chats, Super Stickers y membresías cuentan como regalos.", "ssn": "Para Kick y cualquier otra plataforma: usa la app o extensión gratuita Social Stream Ninja. En su configuración, en Mechanics, activa “Enable remote API control” y “Send chat messages to API server” y pega aquí tu ID de sesión. Las donaciones cuentan como regalos. Social Stream Ninja es una herramienta de terceros, no la hicimos nosotros."}, "moneyNote": "Las donaciones de Twitch, YouTube y Kick se convierten en monedas: 1 $ ≈ 75 monedas (100 Bits = 1 $, una suscripción ≈ 5 $).", "twCh": "Nombre del canal de Twitch", "ytKey": "Clave de API de YouTube", "ytVid": "Enlace o ID del directo", "ssSess": "ID de sesión de Social Stream", "anyGift": "Cualquier regalo", "errGen": "NO SE PUEDE CONECTAR", "needCh": "Escribe primero el nombre de tu canal de Twitch.", "needYt": "Pega primero tu clave de API y el enlace del directo.", "needSs": "Pega primero tu ID de sesión de Social Stream.", "ytBadKey": "YouTube rechazó la clave o la cuota gratuita de hoy se agotó.", "ytNoLive": "Este vídeo aún no tiene chat en directo activo. Reintentando…", "obsNoteNet": "Añádelo como fuente de navegador de 1080 × 1920. La clase reacciona a tu chat y donaciones reales.", "keyWarn": "Este enlace contiene tu clave de API, no lo compartas.", "liveNote": "Datos reales del directo conectados. Los botones del simulador siguen funcionando para pruebas.", "tfSt": {"off": "APAGADO", "wait": "CONECTANDO…", "on": "CONECTADO", "err": "TIKFINITY NO ENCONTRADO"}, "tfUse": "Conectar mi LIVE", "tfStop": "Desconectar", "tfHelp": "Gratis y solo en tu ordenador: instala la app de escritorio TikFinity, inicia sesión con tu cuenta de TikTok y mantenla abierta durante el directo. Esta página lee los eventos de tu directo desde ella (ws://localhost:21213). Sin claves; nada pasa por nuestros servidores. TikFinity es una herramienta de terceros, no la hizo TikTok ni nosotros.", "tfPerm": "Si Chrome pide «acceso a la red local», pulsa Permitir.", "obsNoteTF": "Añádelo como fuente de navegador de 1080 × 1920 en el mismo ordenador donde está abierto TikFinity. La clase reacciona a tus comentarios, me gusta y regalos reales.", "sFollow": "Seguir"}, "pt": {"demo": "DEMO", "sim": "SIMULAÇÃO", "panelH": "Painel do criador", "back": "← Jogo", "source": "Fonte de dados", "srcSim": "Simulador de teste", "active": "ATIVO", "srcTT": "TikTok LIVE (oficial)", "srcTTn": "AGUARDANDO ACESSO DE PARCEIRO", "simH": "Simulador", "blockH": "Palavras e usuários bloqueados (separados por vírgula)", "obsH": "Saída da live para OBS / LIVE Studio", "copy": "Copiar", "copied": "Copiado!", "logH": "Fila de eventos", "panel": "Painel", "st": {"ok": "APLICADO", "dup": "DUPLICADO", "queue": "NA FILA", "filt": "FILTRADO"}, "srcN": {"tikfinity": "TikTok · com TikFinity (beta)", "twitch": "Twitch", "youtube": "YouTube Live", "ssn": "Kick + outras plataformas · com Social Stream Ninja (beta)"}, "srcH": {"twitch": "Chat oficial da Twitch, grátis, sem instalar nada: digite o nome do seu canal e conecte. Bits e inscrições contam como presentes. (A Twitch não envia follows para o chat.)", "youtube": "API oficial do YouTube, grátis. Configuração única: no Google Cloud Console ative a “YouTube Data API v3”, crie uma chave de API (restrinja a pickradar.net) e cole aqui com o link da sua live. A cota diária grátis dá para cerca de 3 horas de live. Super Chats, Super Stickers e assinaturas de canal contam como presentes.", "ssn": "Para Kick e qualquer outra plataforma: use o app ou a extensão gratuita Social Stream Ninja. Nas configurações, em Mechanics, ative “Enable remote API control” e “Send chat messages to API server” e cole aqui o seu ID de sessão. Doações contam como presentes. Social Stream Ninja é uma ferramenta de terceiros, não foi feita por nós."}, "moneyNote": "Doações da Twitch, YouTube e Kick viram moedas: US$ 1 ≈ 75 moedas (100 Bits = US$ 1, uma inscrição ≈ US$ 5).", "twCh": "Nome do canal da Twitch", "ytKey": "Chave de API do YouTube", "ytVid": "Link ou ID da live", "ssSess": "ID de sessão do Social Stream", "anyGift": "Qualquer presente", "errGen": "NÃO FOI POSSÍVEL CONECTAR", "needCh": "Digite primeiro o nome do seu canal da Twitch.", "needYt": "Cole primeiro sua chave de API e o link da live.", "needSs": "Cole primeiro seu ID de sessão do Social Stream.", "ytBadKey": "O YouTube recusou a chave ou a cota grátis de hoje acabou.", "ytNoLive": "Este vídeo ainda não tem chat ao vivo ativo. Tentando de novo…", "obsNoteNet": "Adicione como fonte de navegador de 1080 × 1920. A turma reage ao seu chat e às doações reais.", "keyWarn": "Este link contém sua chave de API, não compartilhe.", "liveNote": "Dados reais da live conectados. Os botões do simulador continuam funcionando para testes.", "tfSt": {"off": "DESLIGADO", "wait": "CONECTANDO…", "on": "CONECTADO", "err": "TIKFINITY NÃO ENCONTRADO"}, "tfUse": "Conectar minha LIVE", "tfStop": "Desconectar", "tfHelp": "Grátis e só no seu computador: instale o app de desktop TikFinity, entre com sua conta do TikTok e deixe-o aberto durante a live. Esta página lê os eventos da sua live a partir dele (ws://localhost:21213). Sem chaves; nada passa pelos nossos servidores. TikFinity é uma ferramenta de terceiros, não foi feita pelo TikTok nem por nós.", "tfPerm": "Se o Chrome pedir “acesso à rede local”, clique em Permitir.", "obsNoteTF": "Adicione como fonte de navegador de 1080 × 1920 no mesmo computador em que o TikFinity está aberto. A turma reage aos seus comentários, curtidas e presentes reais.", "sFollow": "Seguir"}, "id": {"demo": "DEMO", "sim": "SIMULASI", "panelH": "Panel kreator", "back": "← Game", "source": "Sumber data", "srcSim": "Simulator uji", "active": "AKTIF", "srcTT": "TikTok LIVE (resmi)", "srcTTn": "MENUNGGU AKSES PARTNER", "simH": "Simulator", "blockH": "Kata dan pengguna yang diblokir (pisahkan dengan koma)", "obsH": "Output siaran untuk OBS / LIVE Studio", "copy": "Salin", "copied": "Tersalin!", "logH": "Antrean event", "panel": "Panel", "st": {"ok": "DITERAPKAN", "dup": "DUPLIKAT", "queue": "ANTRE", "filt": "DISARING"}, "srcN": {"tikfinity": "TikTok · lewat TikFinity (beta)", "twitch": "Twitch", "youtube": "YouTube Live", "ssn": "Kick + platform lain · lewat Social Stream Ninja (beta)"}, "srcH": {"twitch": "Chat Twitch resmi, gratis, tanpa instalasi: ketik nama channel-mu lalu hubungkan. Bits dan langganan dihitung sebagai hadiah. (Twitch tidak mengirim follow ke chat.)", "youtube": "API YouTube resmi, gratis. Pengaturan sekali saja: di Google Cloud Console aktifkan “YouTube Data API v3”, buat API key (batasi ke pickradar.net) lalu tempel di sini bersama link live-mu. Kuota harian gratis cukup untuk sekitar 3 jam siaran. Super Chat, Super Sticker, dan keanggotaan dihitung sebagai hadiah.", "ssn": "Untuk Kick dan platform lainnya: pakai aplikasi atau ekstensi gratis Social Stream Ninja. Di pengaturannya, bagian Mechanics, nyalakan “Enable remote API control” dan “Send chat messages to API server”, lalu tempel session ID-mu di sini. Donasi dihitung sebagai hadiah. Social Stream Ninja adalah alat pihak ketiga, bukan buatan kami."}, "moneyNote": "Donasi Twitch, YouTube, dan Kick diubah jadi koin: $1 ≈ 75 koin (100 Bits = $1, satu langganan ≈ $5).", "twCh": "Nama channel Twitch", "ytKey": "API key YouTube", "ytVid": "Link atau ID video live", "ssSess": "Session ID Social Stream", "anyGift": "Hadiah apa pun", "errGen": "TIDAK BISA TERHUBUNG", "needCh": "Ketik dulu nama channel Twitch-mu.", "needYt": "Tempel dulu API key dan link video live-mu.", "needSs": "Tempel dulu session ID Social Stream-mu.", "ytBadKey": "YouTube menolak key ini, atau kuota gratis hari ini sudah habis.", "ytNoLive": "Video ini belum punya live chat aktif. Mencoba lagi…", "obsNoteNet": "Tambahkan sebagai browser source 1080 × 1920. Kelas bereaksi pada chat dan donasi aslimu.", "keyWarn": "Link ini berisi API key-mu, jangan dibagikan.", "liveNote": "Data live asli terhubung. Tombol simulator tetap bisa dipakai untuk uji.", "tfSt": {"off": "MATI", "wait": "MENGHUBUNGKAN…", "on": "TERHUBUNG", "err": "TIKFINITY TIDAK DITEMUKAN"}, "tfUse": "Hubungkan LIVE-ku", "tfStop": "Putuskan", "tfHelp": "Gratis dan hanya berjalan di komputermu: pasang aplikasi desktop TikFinity, masuk dengan akun TikTok-mu dan biarkan terbuka selama LIVE. Halaman ini membaca event siaranmu dari sana (ws://localhost:21213). Tanpa kunci; tidak ada data yang lewat server kami. TikFinity adalah alat pihak ketiga, bukan buatan TikTok atau kami.", "tfPerm": "Jika Chrome meminta “akses jaringan lokal”, klik Izinkan.", "obsNoteTF": "Tambahkan sebagai browser source 1080 × 1920 di komputer yang sama tempat TikFinity terbuka. Kelas bereaksi pada komentar, suka, dan hadiah aslimu.", "sFollow": "Ikuti"}};
 // team keywords work in every language, so mixed audiences can join
@@ -55,7 +55,7 @@ function mount(host, opts) {
  };
  const el = (tag, cls, html) => { const e = document.createElement(tag); if (cls) e.className = cls; if (html != null) e.innerHTML = html; return e; };
  const esc = s => String(s).replace(/[&<>"]/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[c]));
- const DEF_CFG = { cpp: 20, roundSec: 60, winR: 2, block: '', nR: '', nB: '', cR: COL.r, cB: COL.b, kR: '', kB: '' };
+ const DEF_CFG = { cpp: 20, matchSec: 180, regSec: 30, block: '', nR: '', nB: '', cR: COL.r, cB: COL.b, kR: '', kB: '' };
  let CFG = Object.assign({}, DEF_CFG, live ? store.get('livecfg', {}) : {});
  try { const c = QS.get('cfg'); if (c && live) CFG = Object.assign({}, DEF_CFG, JSON.parse(decodeURIComponent(escape(atob(c))))); } catch (e) { }
  // team names and colours: the streamer can rename the teams (any two names) and pick their colours
@@ -113,6 +113,7 @@ function mount(host, opts) {
 .rr-pull{position:absolute;left:50%;bottom:16px;transform:translateX(-50%);width:132px;height:132px;border-radius:50%;font-size:30px;padding:0;box-shadow:0 7px 0 #b5461f;pointer-events:auto}
 .rr-hint{position:absolute;left:0;right:0;bottom:14px;text-align:center;font:800 15px system-ui,sans-serif;color:#1e2235;text-shadow:0 1px 0 #fff}
 .rr-icon{position:absolute;right:10px;bottom:10px;width:40px;height:40px;padding:0;font-size:16px;pointer-events:auto}
+.rr-mud{position:absolute;left:10px;right:10px;bottom:206px;padding:5px 10px;border-radius:12px;background:rgba(94,58,31,.88);color:#fff7e8;font:700 12px system-ui,sans-serif;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}.rr-mud b{color:#ffc93c}
 .rr-err{position:absolute;inset:0;display:flex;align-items:center;justify-content:center;padding:24px;text-align:center;font:600 15px system-ui,sans-serif;background:#1e2235;color:#fff7e8}
 `;
  document.head.appendChild(css);
@@ -312,8 +313,9 @@ function mount(host, opts) {
  /* ---------- slots: six pullers per team, filled by viewers (LIVE) or teammates ---------- */
  const slots = { r: [], b: [] };
  function setSlot(team, i, who) {
-  // who: { key, name, strong, extra } or null for a plain teammate
+  // who: { key, name, strong, extra }, null for a plain teammate, false for an empty place in the line
   const s = slots[team][i] || (slots[team][i] = { key: null, c: null });
+  if (who === false) { if (s.c) disposeChar(s.c); s.c = null; s.key = 'empty'; s.who = null; return; }
   const key = who ? who.key + (who.strong ? '*' : '') : 'npc' + team + i;
   if (s.key === key && s.c) { if (who && s.c.tag) s.c.tag.textContent = tagText(who); return; }
   if (s.c) disposeChar(s.c);
@@ -415,11 +417,11 @@ function mount(host, opts) {
  function banner(txt, cls, dur) { ban.querySelector('b').textContent = txt; ban.className = 'rr-ban ' + (cls || ''); banT = dur || 3; }
  function bigText(txt, sub, dur) { big.innerHTML = esc(txt) + (sub ? `<small>${esc(sub)}</small>` : ''); big.className = 'rr-big'; bigT = dur || 1; }
  function renderScore() {
-  const n = CFGW(), dots = t => Array.from({ length: n }, (_, i) => `<i class="${i < st.wins[t] ? 'on' : ''}"></i>`).join('');
+  const cnt = t => `<i class="on" style="width:auto;height:auto;padding:1px 7px;border-radius:9px;font:800 12px system-ui,sans-serif;color:${TC[t + 'T']};font-style:normal">👤 ${aliveCount(t)}</i>`;
   score.querySelector('.t.r span').textContent = live ? TN('r') : L.you;
   score.querySelector('.t.b span').textContent = live ? TN('b') : L.cpu;
-  score.querySelector('.t.r em').innerHTML = dots('r'); score.querySelector('.t.b em').innerHTML = dots('b');
-  score.querySelector('.c span').textContent = fmt(L.round, { n: st.round });
+  score.querySelector('.t.r em').innerHTML = cnt('r'); score.querySelector('.t.b em').innerHTML = cnt('b');
+  score.querySelector('.c span').textContent = live && st.regT > 0 && st.phase !== 'match' ? fmt(LVR.regOpen, { s: Math.ceil(st.regT) }) : st.golden ? '★' : '⏱';
  }
  function renderPow(pr, pb) {
   const tot = pr + pb || 1, a = clamp(pr / tot * 100, 12, 88);
@@ -427,47 +429,114 @@ function mount(host, opts) {
   pow.children[0].textContent = '💪 ' + Math.round(pr); pow.children[1].textContent = Math.round(pb) + ' 💪';
  }
 
- /* ---------- match state ---------- */
- const st = { phase: 'idle', t: 0, pos: 0, vel: 0, round: 1, wins: { r: 0, b: 0 }, eff: { r: 0, b: 0 }, gift: { r: 0, b: 0 }, level: store.get('level', 1), you: 0, cpuT: 0, surge: 0, winner: null };
- const CFGW = () => live ? CFG.winR : 2;
- const roundLen = () => live ? CFG.roundSec : 30;
+ /* ---------- match state: last team standing ----------
+    Each time the ribbon crosses a line, the losing team's front bodies sink into the mud (gift helpers first).
+    A team with nobody left loses; when time runs out the team that sank more wins (tie: golden pull). */
+ const st = { phase: 'idle', t: 0, matchT: 0, regT: 0, pos: 0, vel: 0, eff: { r: 0, b: 0 }, gift: { r: 0, b: 0 }, sunk: { r: 0, b: 0 }, alive: { r: 6, b: 6 }, golden: false, level: store.get('level', 1), you: 0, cpuT: 0, surge: 0, winner: null, mudList: [] };
+ const matchLen = () => live ? CFG.matchSec : 120;
+ function aliveCount(t) { return live ? (LS.members[t].size + st.gift[t]) : st.alive[t]; }
  function teamPower(t) {
   if (live) return LS.members[t].size + st.gift[t] + st.eff[t];
-  return 6 + st.eff[t];
+  return st.alive[t] + st.eff[t];
  }
- function resetRound() {
-  st.pos = 0; st.vel = 0; st.eff.r = st.eff.b = 0; st.gift.r = st.gift.b = 0; st.winner = null;
-  if (live) { LS.users.forEach(u => { u.roundPeople = u.pending || 0; u.pending = 0; if (u.roundPeople && u.team) st.gift[u.team] += u.roundPeople; }); refreshSlots(true); }
-  for (const t of ['r', 'b']) slots[t].forEach((s, i) => { s.c.fall = 0; clearBlobs(s.c); placeSlot(t, i, 0); });
+ function recenter() {
+  st.pos = 0; st.vel = 0; st.eff.r = st.eff.b = 0;
+  if (live) refreshSlots(true); else fillCpuTeams();
+  for (const t of ['r', 'b']) slots[t].forEach((s, i) => { if (s.c) { s.c.fall = 0; clearBlobs(s.c); } placeSlot(t, i, 0); });
   renderScore();
  }
- function startRound() { resetRound(); st.phase = 'count'; st.t = 3.2; }
- function newMatch() { st.wins.r = st.wins.b = 0; st.round = 1; if (live) { LS.users.forEach(u => { u.coins = 0; u.comments = 0; }); LS.members.r.clear(); LS.members.b.clear(); LS.users.forEach(u => u.team = null); refreshSlots(true); banner(LVR.newMatch, 'gold', 4); } startRound(); }
- function endRound(w) {
-  st.phase = 'end'; st.t = 4.2; st.winner = w;
-  if (w) {
-   st.wins[w]++;
-   const lose = w === 'r' ? 'b' : 'r';
-   slots[lose].slice(0, 2).forEach((s, i) => { s.c.fall = .001 + i * .25; });
-   setTimeout(() => { splash(0, 26); beep('splash'); }, 450);
-   bigText(fmt(L.roundWin, { t: live ? TN(w) : w === 'r' ? L.you : L.cpu }), '', 2.6);
-   beep('win');
-  } else bigText(L.draw, '', 2.2);
+ function startCount() { st.phase = 'count'; st.t = 3.2; }
+ function newMatch() {
+  st.sunk.r = st.sunk.b = 0; st.alive.r = st.alive.b = 6; st.gift.r = st.gift.b = 0; st.golden = false; st.winner = null; st.matchT = matchLen();
+  clearMud();
+  if (live) {
+   // players who were active in the last few minutes stay in their team; late comers from the queue join
+   const now = performance.now();
+   LS.members.r.clear(); LS.members.b.clear();
+   LS.users.forEach(u => {
+    u.coins = 0; u.comments = 0; u.roundPeople = 0; u.out = false;
+    const want = u.queued || (now - u.lastActive < 300000 ? u.team : null);
+    u.team = null; u.queued = null;
+    if (want) { u.team = want; LS.members[want].add(u.id); }
+   });
+   st.regT = CFG.regSec;
+   banner(LVR.newMatch, 'gold', 4);
+   recenter(); st.phase = LS.members.r.size && LS.members.b.size ? 'count' : 'wait'; st.t = 3.2;
+  } else { recenter(); startCount(); }
   renderScore();
+ }
+ // the losing team loses bodies: 1 in normal mode, about one in eight of the team in LIVE so big streams still finish
+ function losePull(lose) {
+  const win = lose === 'r' ? 'b' : 'r';
+  st.phase = 'sink'; st.t = 1.9; st.winner = null;
+  let k = live ? Math.max(1, Math.ceil(aliveCount(lose) / 8)) : 1;
+  st.sunk[lose] += k;
+  const names = [];
+  if (live) {
+   // helpers from gifts go first (biggest gifter's helpers first)
+   let shield = Math.min(k, st.gift[lose]); k -= shield; st.gift[lose] -= shield;
+   const shieldN = shield;
+   while (shield > 0) {
+    const g = [...LS.users.values()].filter(u => u.team === lose && u.roundPeople > 0).sort((a, b) => b.roundPeople - a.roundPeople)[0];
+    if (!g) break; const d = Math.min(shield, g.roundPeople); g.roundPeople -= d; shield -= d;
+   }
+   // then real players, front of the line first
+   const front = slots[lose].map(s2 => s2 && s2.who && s2.who.key).filter(id => id && LS.members[lose].has(id));
+   const rest = [...LS.members[lose]].filter(id => !front.includes(id)).sort((a, b) => LS.users.get(b).lastActive - LS.users.get(a).lastActive);
+   for (const id of front.concat(rest)) {
+    if (k <= 0) break;
+    const u = LS.users.get(id); LS.members[lose].delete(id); u.out = true; k--; names.push(u.name);
+   }
+   if (names.length) banner(fmt(L.sunk, { who: names.slice(0, 2).map(n => '@' + n).join(', ') + (names.length > 2 ? ' ' + fmt(L.more, { n: names.length - 2 }) : '') }), lose, 3);
+   else banner(fmt(L.shieldSunk, { n: shieldN, t: TN(lose) }), lose, 3);
+   st.mudList = names.concat(st.mudList).slice(0, 6); renderMudList();
+  } else { st.alive[lose] = Math.max(0, st.alive[lose] - 1); bigText(lose === 'b' ? L.cpuSunk : L.youSunk, '', 1.6); }
+  // the front pullers fall into the mud
+  const n = Math.min(3, live ? Math.max(1, st.sunk[lose] ? Math.min(3, names.length || 1) : 1) : 1);
+  slots[lose].filter(s2 => s2 && s2.c).slice(0, n).forEach((s2, i) => { s2.c.fall = .001 + i * .2; });
+  setTimeout(() => { splash(0, 22); beep('splash'); }, 400);
+  for (let i = 0; i < n; i++) addMudHead(lose, names[i]);
+  beep('win'); renderScore();
+  if (aliveCount(lose) <= 0) st.endAfterSink = win;
+  else if (st.golden) st.endAfterSink = win;
+ }
+ function timeUp() {
+  if (st.sunk.r === st.sunk.b) { st.golden = true; bigText(L.golden, L.goldenSub, 2.4); beep('go'); renderScore(); return; }
+  bigText(L.timeUp, '', 1.4);
+  endMatch(st.sunk.b > st.sunk.r ? 'r' : 'b');
  }
  function endMatch(w) {
-  st.phase = 'match'; st.t = live ? 9 : 1e9; st.winner = w;
+  st.phase = 'match'; st.t = live ? 10 : 1e9; st.winner = w; st.endAfterSink = null;
   confetti(w);
   if (live) {
    const us = [...LS.users.values()];
    const mvp = us.filter(u => u.coins > 0).sort((a, b) => b.coins - a.coins)[0], act = us.filter(u => u.comments > 0).sort((a, b) => b.comments - a.comments)[0];
-   bigText(fmt(L.matchWin, { t: TN(w) }), [mvp ? `👑 ${LVR.mvpH}: @${mvp.name}` : '', act ? `💬 ${LVR.actH}: @${act.name}` : ''].filter(Boolean).join('  ·  '), 8.5);
+   bigText(fmt(L.matchWin, { t: TN(w) }), [mvp ? `👑 ${LVR.mvpH}: @${mvp.name}` : '', act ? `💬 ${LVR.actH}: @${act.name}` : ''].filter(Boolean).join('  ·  '), 9.5);
   } else {
    const won = w === 'r';
    if (won) { st.level++; store.set('level', st.level); store.set('best', Math.max(store.get('best', 1), st.level)); }
-   showOv(`<h2>${esc(won ? L.youWin : L.youLose)}</h2><small>${esc(fmt(L.level, { n: st.level }))}</small><div class="row"><button class="rr-btn" data-a="play">${esc(won ? L.next : L.retry)}</button><button class="rr-btn g" data-a="menu">${esc(L.menu)}</button></div>`);
+   setTimeout(() => showOv(`<h2>${esc(won ? L.youWin : L.youLose)}</h2><small>${esc(fmt(L.level, { n: st.level }))}</small><div class="row"><button class="rr-btn" data-a="play">${esc(won ? L.next : L.retry)}</button><button class="rr-btn g" data-a="menu">${esc(L.menu)}</button></div>`), 2300);
   }
+  renderScore();
  }
+ /* heads of the sunk players stay in the mud (funny, and shows the score) */
+ const mudHeads = [];
+ function addMudHead(team, name) {
+  const g = new T3.Group(), h = hash((name || team) + mudHeads.length);
+  mesh(G.sph, M(pick(LOOK.skin, h, 0), .55), 0, 0, 0, .2, .19, .19, g);
+  mesh(new T3.SphereGeometry(1, 16, 10, 0, TAU, 0, 1.5), M(TC[team], .6), 0, .03, -.01, .21, .21, .21, g);
+  for (const sx of [-1, 1]) { mesh(G.sph, M('#ffffff', .3), sx * .07, .02, .17, .045, .055, .03, g, false); mesh(G.sph, MB('#1b1b2a'), sx * .07, .01, .19, .025, .03, .02, g, false); }
+  mesh(G.sph, M('#5a1f2b', .6), 0, -.08, .17, .035, .045, .02, g, false);
+  const a = (mudHeads.length * 2.399) % TAU, r = .35 + (mudHeads.length % 4) * .22;
+  g.position.set(Math.cos(a) * r * MUD * .8, -.3, Math.sin(a) * r * 1.6);
+  g.userData = { y: .02 + (h % 5) * .01, ph: h % 7, t: 0 };
+  scene.add(g); mudHeads.push(g);
+  if (mudHeads.length > 14) scene.remove(mudHeads.shift());
+ }
+ function updMud(dt) { mudHeads.forEach(g => { const u = g.userData; u.t += dt; g.position.y = lerp(g.position.y, u.y + Math.sin(u.t * 2 + u.ph) * .02, clamp(dt * 2, 0, 1)); g.rotation.z = Math.sin(u.t * 1.3 + u.ph) * .15; }); }
+ function clearMud() { mudHeads.splice(0).forEach(g => scene.remove(g)); st.mudList = []; renderMudList(); }
+ const mudBox = el('div', 'rr-mud'); ui.appendChild(mudBox);
+ function renderMudList() { mudBox.innerHTML = live && st.mudList.length ? `<b>💦 ${esc(L.mud)}</b> ${st.mudList.map(n => '@' + esc(n)).join(' ')}` : ''; mudBox.style.display = mudBox.innerHTML ? '' : 'none'; }
 
  /* ---------- placing and animating the pullers ---------- */
  function clearBlobs(c) { c.blobs.forEach(b => b.parent && b.parent.remove(b)); c.blobs = []; }
@@ -475,7 +544,7 @@ function mount(host, opts) {
   const s = slots[t][i]; if (!s || !s.c) return;
   const c = s.c, sg = t === 'r' ? -1 : 1;
   let x = slotX(t, i);
-  const pulling = st.phase === 'pull' || st.phase === 'count';
+  const pulling = st.phase === 'pull' || st.phase === 'count' || st.phase === 'sink';
   const towardMe = -sg * st.vel; // >0 when my team gains
   if (c.fall > 0) {
    c.fall = Math.min(1, c.fall + dt * .9);
@@ -492,11 +561,11 @@ function mount(host, opts) {
   const effort = clamp(teamPower(t) > 0 ? .6 + .4 * Math.min(1, st.eff[t] / 6) : .2, 0, 1);
   c.ph += dt * (5 + 6 * effort);
   const heave = Math.sin(c.ph) * .06 * effort;
-  const lean = pulling || st.phase === 'end' ? (st.phase === 'end' && st.winner && st.winner !== t ? .1 : .45 + heave + clamp(towardMe, -.3, .3) * .4) : .05;
+  const lean = pulling ? .45 + heave + clamp(towardMe, -.3, .3) * .4 : st.phase === 'match' && st.winner !== t ? .1 : .05;
   c.body.rotation.x = -lean;
   c.hips.rotation.x = 0;
   // arms reach forward to the rope
-  const armA = pulling || st.phase === 'end' ? -1.25 + lean * .85 : -.1;
+  const armA = pulling ? -1.25 + lean * .85 : -.1;
   const zs = (i % 2 ? 1 : -1) * (t === 'r' ? 1 : -1); // reach across toward the rope
   c.arms.forEach((a, k) => { a.sh.rotation.x = armA; a.sh.rotation.z = (k ? -1 : 1) * .12 + zs * .28; a.elb.rotation.x = pulling ? -.25 : -.1; });
   // legs: braced forward, stepping when the rope moves
@@ -504,16 +573,16 @@ function mount(host, opts) {
   c.legs.forEach((l, k) => { l.hp.rotation.x = (pulling ? -.45 : 0) + (k ? step : -step); l.kn.rotation.x = pulling ? .55 : 0; });
   c.hips.position.y = pulling ? .7 : .78;
   // face
-  const win = st.phase === 'end' || st.phase === 'match' ? st.winner === t : towardMe > .05;
-  setFace(c, st.phase === 'end' || st.phase === 'match' ? (st.winner ? (win ? 'smile' : 'frown') : 'open') : towardMe < -.12 ? 'open' : win && st.phase === 'pull' ? 'smile' : 'grit');
+  const win = st.phase === 'match' ? st.winner === t : towardMe > .05;
+  setFace(c, st.phase === 'match' ? (win ? 'smile' : 'frown') : towardMe < -.12 ? 'open' : win && st.phase === 'pull' ? 'smile' : 'grit');
   // celebrate
-  if ((st.phase === 'match' || st.phase === 'end') && st.winner === t) { c.root.position.y = Math.abs(Math.sin(c.ph * .8)) * .18; c.arms.forEach(a => a.sh.rotation.x = -2.6 + Math.sin(c.ph) * .2); c.body.rotation.x = .05; }
+  if (st.phase === 'match' && st.winner === t) { c.root.position.y = Math.abs(Math.sin(c.ph * .8)) * .18; c.arms.forEach(a => a.sh.rotation.x = -2.6 + Math.sin(c.ph) * .2); c.body.rotation.x = .05; }
  }
  const pv = new T3.Vector3();
  function placeTags() {
   const W = host.clientWidth, H = host.clientHeight;
   for (const t of ['r', 'b']) slots[t].forEach(s => {
-   const c = s.c; if (!c || !c.tag) return;
+   const c = s && s.c; if (!c || !c.tag) return;
    c.head.getWorldPosition(pv); pv.y += c.strong ? .62 : .48; pv.project(camera);
    c.tag.style.left = ((pv.x * .5 + .5) * W) + 'px'; c.tag.style.top = ((-pv.y * .5 + .5) * H) + 'px';
   });
@@ -539,38 +608,38 @@ function mount(host, opts) {
   if (banT > 0 && (banT -= dt) <= 0) ban.className = 'rr-ban off';
   if (bigT > 0 && (bigT -= dt) <= 0) big.className = 'rr-big off';
   const timeEl = score.querySelector('.c b');
+  if (live && st.regT > 0 && (st.phase === 'count' || st.phase === 'pull' || st.phase === 'sink')) { const b0 = Math.ceil(st.regT); st.regT -= dt; if (Math.ceil(st.regT) !== b0) renderScore(); }
   if (st.phase === 'wait') {
-   timeEl.textContent = '–';
-   if (LS.members.r.size && LS.members.b.size) startRound();
+   timeEl.textContent = fmtT(st.matchT);
+   if (LS.members.r.size && LS.members.b.size) startCount();
   } else if (st.phase === 'count') {
    const n = Math.ceil(st.t - .2);
    if (n !== st.lastN) { st.lastN = n; if (n > 0) { bigText(n > 2 ? L.ready : String(n), '', .8); beep('tick'); } }
-   timeEl.textContent = fmtT(roundLen());
-   if (st.t <= .2) { st.phase = 'pull'; st.t = roundLen(); st.lastN = null; bigText(L.go, '', .9); beep('go'); }
+   timeEl.textContent = fmtT(st.matchT);
+   if (st.t <= .2) { st.phase = 'pull'; st.lastN = null; bigText(L.go, '', .9); beep('go'); }
   } else if (st.phase === 'pull') {
-   timeEl.textContent = fmtT(Math.max(0, st.t));
+   if (!st.golden) { st.matchT -= dt; if (st.matchT <= 0) { st.matchT = 0; timeUp(); } }
+   timeEl.textContent = st.golden ? '★' : fmtT(Math.max(0, st.matchT));
    if (!live) cpuStep(dt);
-   if (st.pos <= -LINE) endRound('r');
-   else if (st.pos >= LINE) endRound('b');
-   else if (st.t <= 0) endRound(Math.abs(st.pos) < .02 ? null : st.pos < 0 ? 'r' : 'b');
-  } else if (st.phase === 'end') {
+   if (st.phase === 'pull') { if (st.pos <= -LINE) losePull('b'); else if (st.pos >= LINE) losePull('r'); }
+  } else if (st.phase === 'sink') {
    if (st.t <= 0) {
-    if (st.winner && st.wins[st.winner] >= CFGW()) endMatch(st.winner);
-    else { if (st.winner) st.round++; if (live && !(LS.members.r.size && LS.members.b.size)) { resetRound(); st.phase = 'wait'; } else startRound(); }
+    if (st.endAfterSink) endMatch(st.endAfterSink);
+    else { recenter(); st.phase = live && !(LS.members.r.size + st.gift.r && LS.members.b.size + st.gift.b) ? 'wait' : 'pull'; if (st.phase === 'pull') { bigText(L.go, '', .7); beep('go'); } }
    }
   } else if (st.phase === 'match') {
    if (st.t <= 0) newMatch();
   }
   physics(dt);
-  for (const t of ['r', 'b']) slots[t].forEach((s, i) => placeSlot(t, i, dt));
-  updParts(dt);
+  for (const t of ['r', 'b']) slots[t].forEach((s2, i) => placeSlot(t, i, dt));
+  updParts(dt); updMud(dt);
   if (live) liveStep(dt);
  }
  const fmtT = s => { s = Math.ceil(s); return Math.floor(s / 60) + ':' + String(s % 60).padStart(2, '0'); };
 
  /* ---------- CPU opponent (normal mode only) ---------- */
  function cpuStep(dt) {
-  const lv = st.level, rate = Math.min(11, 4.2 + (lv - 1) * .55) * (1 + .25 * Math.sin(roundLen() - st.t) + (st.surge > 0 ? .35 : 0));
+  const lv = st.level, rate = Math.min(11, 4.2 + (lv - 1) * .55) * (1 + .25 * Math.sin(st.matchT) + (st.surge > 0 ? .35 : 0));
   st.cpuT -= dt;
   if (st.cpuT <= 0) { st.cpuT += 1 / rate; st.eff.b += 1.4; }
   st.surge -= dt; if (st.surge < -9) st.surge = 2.5;
@@ -587,7 +656,7 @@ function mount(host, opts) {
  let paused = false;
  function showOv(html) { ov.innerHTML = html; ov.hidden = false; }
  function menu() {
-  st.phase = 'idle'; resetRound();
+  st.phase = 'idle'; st.alive.r = st.alive.b = 6; clearMud(); recenter();
   const liveHref = location.pathname + '?live=1';
   showOv(`<h2>${esc(L.name)}<span>${esc(L.sub)}</span></h2><p>${esc(L.intro)}</p><small>${esc(fmt(L.level, { n: st.level }))}</small>
 <div class="row"><button class="rr-btn" data-a="play">${esc(L.play)}</button><a class="rr-btn g" href="${liveHref}">${esc(L.liveBtn)}</a></div>
@@ -617,7 +686,7 @@ function mount(host, opts) {
  }
  // the "YOU" captain in normal mode
  function fillCpuTeams() {
-  for (const t of ['r', 'b']) for (let i = 0; i < SLOTS; i++) setSlot(t, i, !live && t === 'r' && i === 0 ? { key: 'you', name: L.you, you: true } : null);
+  for (const t of ['r', 'b']) for (let i = 0; i < SLOTS; i++) setSlot(t, i, live ? null : i >= st.alive[t] ? false : t === 'r' && i === 0 ? { key: 'you', name: L.you, you: true } : null);
  }
 
  /* ======================= LIVE MODE ======================= */
@@ -657,7 +726,14 @@ function mount(host, opts) {
   return r && !b ? 'r' : b && !r ? 'b' : null;
  }
  function joinTeam(u, want) {
+  // sunk players stay with their team (they cheer from the mud); after the joining time new players wait for the next match
+  if (u.out) return u.team;
   if (u.team && (!want || want === u.team)) return u.team;
+  if (st.regT <= 0 && st.phase !== 'wait' && st.phase !== 'match') {
+   if (!u.queued) { u.queued = want || 'r'; if (want) banner('@' + u.name + ' · ' + LVR.regClosed, 'gold', 2.5); }
+   else if (want) u.queued = want;
+   return u.team;
+  }
   const t = want || (LS.members.r.size <= LS.members.b.size ? (LS.members.r.size < LS.members.b.size ? 'r' : (hash(u.id) & 1 ? 'r' : 'b')) : 'b');
   if (u.team) LS.members[u.team].delete(u.id);
   u.team = t; LS.members[t].add(u.id); u.lastActive = performance.now();
@@ -722,7 +798,7 @@ function mount(host, opts) {
   lv.leg.innerHTML = `<h4>${esc(LVR.legendH)}</h4><div class="k">${['r', 'b'].map((t, i) => `<div style="background:${TC[t]};color:${TC[t + 'T']}">${tname(t) ? (i + 1) + ' · ' : t === 'r' ? '🔴 ' : '🔵 '}${esc(TN(t))}</div>`).join('')}</div><div class="n" style="margin:4px 0 0">${esc(LVR.orNum)}</div>
 <div class="g"><div><span>${esc(LVR.cmtK)}</span>${esc(LVR.cmt)}</div><div><span>${esc(LVR.likeK)}</span>${esc(LVR.likes)}</div>
 <div><span>${esc(LVR.giftK)}</span>${esc(LVR.giftE)}</div><div><span>🎁 ${esc(c)}</span>${esc(fmt(isCoins() ? LVR.giftRow : LVR.giftRowUsd, { c }).replace(/^.*?(\+)/, '+'))}</div></div>
-<div class="n">${esc(LVR.roundOnly)}</div>`;
+<div class="n">⚔️ ${esc(LVR.rule)} ${esc(LVR.shieldN)}</div>`;
  }
 
  /* --- creator panel --- */
@@ -741,8 +817,8 @@ function mount(host, opts) {
 <div class="lv-row"><label><input type="checkbox" data-c="auto"${LS.auto ? ' checked' : ''}> ${esc(LVR.auto)}</label></div>
 <h5>${esc(LVR.cfgH)}</h5>
 <div class="lv-row"><label>${esc(LVR.cpp)}</label><input type="number" min="1" step="1" data-k="cpp" value="${CFG.cpp}"></div>
-<div class="lv-row"><label>${esc(LVR.roundSec)}</label><input type="number" min="20" max="300" step="5" data-k="roundSec" value="${CFG.roundSec}"></div>
-<div class="lv-row"><label>${esc(LVR.winR)}</label><input type="number" min="1" max="5" step="1" data-k="winR" value="${CFG.winR}"></div>
+<div class="lv-row"><label>${esc(LVR.matchSec)}</label><input type="number" min="60" max="900" step="30" data-k="matchSec" value="${CFG.matchSec}"></div>
+<div class="lv-row"><label>${esc(LVR.regSec)}</label><input type="number" min="0" max="300" step="5" data-k="regSec" value="${CFG.regSec}"></div>
 <h5>${esc(LVR.teamsH)}</h5>
 ${['R', 'B'].map((T, i) => `<div class="lv-team" style="margin-top:6px;padding:8px;border-radius:10px;background:#151c30"><b>${esc(fmt(LVR.team, { n: i + 1 }))}</b>
 <div class="lv-row"><input type="text" maxlength="16" data-k="n${T}" value="${esc(CFG['n' + T])}" placeholder="${esc(LVR.tName)}"><input type="color" data-k="c${T}" value="${esc(TC[T.toLowerCase()])}" title="${esc(LVR.tColor)}" style="width:44px;height:30px;padding:0;border:0;background:none;flex:none"></div>
@@ -781,9 +857,10 @@ ${['R', 'B'].map((T, i) => `<div class="lv-team" style="margin-top:6px;padding:8
    const k = t.dataset.k; if (!k) return;
    const TXT = ['block', 'nR', 'nB', 'kR', 'kB', 'cR', 'cB'];
    if (TXT.includes(k)) { CFG[k] = k[0] === 'n' ? cleanText(t.value, 16) : t.value; if (k[0] === 'n') t.value = CFG[k]; store.set('livecfg', CFG); if (k !== 'block') applyTeams(); obsUrl(); return; }
-   CFG[k] = clamp(Math.round(+t.value || DEF_CFG[k]), k === 'roundSec' ? 20 : 1, k === 'roundSec' ? 300 : k === 'winR' ? 5 : 100000);
+   const LIM = { cpp: [1, 100000], matchSec: [60, 900], regSec: [0, 300] }[k] || [1, 100000];
+   CFG[k] = clamp(Math.round(t.value === '' ? DEF_CFG[k] : +t.value), LIM[0], LIM[1]);
    t.value = CFG[k];
-   store.set('livecfg', CFG); renderLegend(); renderScore(); obsUrl();
+   store.set('livecfg', CFG); if (k === 'matchSec' && (st.phase === 'wait' || st.phase === 'count')) st.matchT = CFG.matchSec; renderLegend(); renderScore(); obsUrl();
   });
   renderSrc(); obsUrl(); renderLog(); simLabels();
  }
@@ -1050,7 +1127,7 @@ ${KINDS.map(k => `<div class="lv-src" data-row="${k}" style="flex-wrap:wrap"><sp
   LS.seen.add(ev.id); LS.seenQ.push(ev.id); if (LS.seenQ.length > 5000) LS.seen.delete(LS.seenQ.shift());
   LS.last = ev;
   if (blockList().includes(ev.user.name.toLowerCase())) { log(ev, ev.type, 'filt'); return; }
-  const u = LS.users.get(ev.user.id) || { id: ev.user.id, name: ev.user.name, coins: 0, comments: 0, lastMsg: 0, lastActive: 0, team: null, roundPeople: 0 };
+  const u = LS.users.get(ev.user.id) || { id: ev.user.id, name: ev.user.name, coins: 0, comments: 0, lastMsg: 0, lastActive: 0, team: null, roundPeople: 0, out: false, queued: null };
   LS.users.set(u.id, u); u.name = ev.user.name;
   const now = performance.now() / 1000;
   const playing = st.phase === 'pull';
@@ -1060,21 +1137,24 @@ ${KINDS.map(k => `<div class="lv-src" data-row="${k}" style="flex-wrap:wrap"><sp
    u.lastMsg = now; u.comments++;
    const was = u.team, t = joinTeam(u, want);
    u.lastActive = performance.now();
-   if (playing) st.eff[t] += 2;
-   log(ev, was !== t ? '→ ' + TN(t) : '“' + cleanText(ev.text) + '”', 'ok');
+   if (playing && t) st.eff[t] += u.out ? 1 : 2;
+   log(ev, !t ? '⏳' : was !== t ? '→ ' + TN(t) : (u.out ? '💦 ' : '') + '“' + cleanText(ev.text) + '”', 'ok');
   } else if (ev.type === 'like') {
    const t = joinTeam(u, null);
-   if (playing) st.eff[t] += Math.min(6, .06 * Math.max(1, ev.count | 0));
+   if (playing && t) st.eff[t] += Math.min(6, .06 * Math.max(1, ev.count | 0));
    log(ev, '+' + (ev.count | 0) + ' ♥', 'ok');
   } else if (ev.type === 'follow') { joinTeam(u, null); log(ev, LV.sFollow, 'ok'); }
   else if (ev.type === 'gift') {
    const coins = Math.max(1, (ev.coins | 0) * Math.max(1, ev.repeat | 0));
-   const t = joinTeam(u, null);
+   // a gift always helps: late gifters support the smaller team for this match
+   let t = joinTeam(u, null);
+   if (!t) { t = LS.members.r.size + st.gift.r <= LS.members.b.size + st.gift.b ? 'r' : 'b'; u.team = t; u.out = true; }
    const n = Math.max(1, Math.floor(coins / Math.max(1, CFG.cpp)));
    u.coins += coins; u.lastActive = performance.now();
-   if (st.phase === 'pull' || st.phase === 'count') { u.roundPeople += n; st.gift[t] += n; } else u.pending = (u.pending || 0) + n;
-   const strongNow = u.roundPeople >= 10;
-   banner(strongNow && u.roundPeople - n < 10 && st.phase === 'pull' ? fmt(LVR.strong, { u: u.name, t: TN(t) }) : fmt(LVR.brought, { u: u.name, n, t: TN(t) }), t, 3);
+   u.roundPeople += n; st.gift[t] += n;
+   const strongNow = u.roundPeople >= 10 && !u.out;
+   banner(strongNow && u.roundPeople - n < 10 ? fmt(LVR.strong, { u: u.name, t: TN(t) }) : fmt(LVR.brought, { u: u.name, n, t: TN(t) }), t, 3);
+   renderScore();
    beep('gift'); LS.slotT = 0;
    log(ev, `${ev.gift} → +${n} ${TN(t)}`, 'ok');
   }
@@ -1092,17 +1172,20 @@ ${KINDS.map(k => `<div class="lv-src" data-row="${k}" style="flex-wrap:wrap"><sp
   for (const t of ['r', 'b']) {
    const us = [...LS.members[t]].map(id => LS.users.get(id)).filter(Boolean);
    const strong = us.filter(u => u.roundPeople >= 10).sort((a, b) => b.roundPeople - a.roundPeople).slice(0, 2);
-   const rest = us.filter(u => !strong.includes(u)).sort((a, b) => b.lastActive - a.lastActive).slice(0, SLOTS - strong.length);
-   // big gifters get the spotlight: front of the line, right by the mud
-   const want = strong.map(u => ({ key: u.id, name: u.name, strong: true, extra: u.roundPeople }))
+   // line order: gift helpers in front (they sink first), then big gifters, then the most active players
+   const helpers = Math.min(st.gift[t] - strong.reduce((a, u) => a + u.roundPeople, 0) > 0 ? 2 : 0, SLOTS);
+   const rest = us.filter(u => !strong.includes(u)).sort((a, b) => b.lastActive - a.lastActive).slice(0, SLOTS - strong.length - helpers);
+   const want = Array(helpers).fill(null).concat(strong.map(u => ({ key: u.id, name: u.name, strong: true, extra: u.roundPeople })))
     .concat(rest.map(u => ({ key: u.id, name: u.name, extra: u.roundPeople || 0 })));
-   while (want.length < SLOTS) want.push(null);
+   // with no players yet, show plain teammates so the field is not empty
+   if (!us.length && !st.gift[t]) for (let i = 0; i < 3; i++) want.push(null);
+   while (want.length < SLOTS) want.push(false);
    want.forEach((w, i) => { const s = slots[t][i]; if (force || !s || !s.c || s.c.fall <= 0) setSlot(t, i, w); });
   }
  }
  function liveStep(dt) {
   autoDemo(dt);
-  LS.slotT -= dt; if (LS.slotT <= 0) { LS.slotT = .6; if (st.phase !== 'end') refreshSlots(false); }
+  LS.slotT -= dt; if (LS.slotT <= 0) { LS.slotT = .6; if (st.phase !== 'sink') { refreshSlots(false); renderScore(); } }
   if (st.phase === 'wait' && (!LS.waitT || (LS.waitT -= dt) <= 0)) { LS.waitT = 6; banner(LVR.wait, 'gold', 5); }
  }
  function startLive() {
@@ -1110,7 +1193,7 @@ ${KINDS.map(k => `<div class="lv-src" data-row="${k}" style="flex-wrap:wrap"><sp
   if (!clean) livePanel();
   if (KINDS.includes(srcWant)) srcStart(srcWant);
   fillCpuTeams();
-  st.phase = 'wait'; resetRound(); renderScore();
+  st.matchT = matchLen(); st.regT = CFG.regSec; recenter(); st.phase = 'wait'; renderScore(); renderMudList();
   if (!clean) {
    const fit = () => {
     const W = outer.clientWidth, H = outer.clientHeight, wide = W > 820, aw = wide ? W - 380 : W, ah = H;
@@ -1135,7 +1218,7 @@ ${KINDS.map(k => `<div class="lv-src" data-row="${k}" style="flex-wrap:wrap"><sp
  resize();
  if (live) { ov.hidden = true; startLive(); } else menu();
  requestAnimationFrame(frame);
- return { st, ingest: ev => ingest(ev), tap, newMatch, slots, camera };
+ return { st, ingest: ev => ingest(ev), tap, newMatch, slots, camera, LS: () => LS };
 }
 
 global.RopeRumble = { mount };
