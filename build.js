@@ -541,7 +541,7 @@ ${G.sections.map((sec, i) => `<h2 id="s${i + 1}">${esc(sec.h)}</h2><ol>${sec.ste
         offers: { '@type': 'Offer', price: '0', priceCurrency: 'USD' }, publisher: { '@type': 'Organization', name: cfg.siteName, url: `${base}/` } },
         { '@context': 'https://schema.org', '@type': 'FAQPage', mainEntity: R.faq.map(([q, a]) => ({ '@type': 'Question', name: q, acceptedAnswer: { '@type': 'Answer', text: a } })) }],
       body: `<section><h1>${esc(R.h1)}</h1><p class="lead">${esc(R.intro)}</p></section>
-<section class="ph"><div class="ph-host" id="phHost"></div><div class="ph-bar"><button class="btn ghost" type="button" onclick="var h=document.getElementById('phHost');(h.requestFullscreen||h.webkitRequestFullscreen).call(h)">⛶ ${{ tr: 'Tam ekran', en: 'Fullscreen', es: 'Pantalla completa', pt: 'Tela cheia', id: 'Layar penuh' }[lang]}</button></div><noscript><p class="note">JavaScript is required to play.</p></noscript></section>
+<style>.ph-host{position:relative;width:100%;height:min(82vh,720px);min-height:420px;border:1px solid #e30a1766;border-radius:12px;overflow:hidden;background:#0b0d18;box-shadow:0 0 70px -20px #e30a17}.ph-bar{display:flex;justify-content:flex-end;gap:8px;margin-top:8px;flex-wrap:wrap}</style><section class="ph"><div class="ph-host" id="phHost"></div><div class="ph-bar"><button class="btn ghost" type="button" onclick="var h=document.getElementById('phHost');(h.requestFullscreen||h.webkitRequestFullscreen).call(h)">⛶ ${{ tr: 'Tam ekran', en: 'Fullscreen', es: 'Pantalla completa', pt: 'Tela cheia', id: 'Layar penuh' }[lang]}</button></div><noscript><p class="note">JavaScript is required to play.</p></noscript></section>
 <article class="prose"><h2>${esc(R.storyH)}</h2>${R.story.map(x => `<p>${esc(x)}</p>`).join('')}
 <h2>${esc(R.missionsH)}</h2><ol>${li(R.missions)}</ol>
 <h2>${esc(R.howH)}</h2><ol>${li(R.how)}</ol>
@@ -572,7 +572,7 @@ ${G.sections.map((sec, i) => `<h2 id="s${i + 1}">${esc(sec.h)}</h2><ol>${sec.ste
         genre: ['Stealth', 'Action', 'Roguelike'], gamePlatform: 'Web browser', applicationCategory: 'Game', operatingSystem: 'Any', isAccessibleForFree: true, playMode: 'SinglePlayer',
         publisher: { '@type': 'Organization', name: cfg.siteName, url: `${base}/` } },
       body: `<section><h1>${esc(R.h1)}</h1><p class="lead">${esc(R.intro)}</p></section>
-<section class="rs"><div class="rs-host" id="rsHost"></div><noscript><p class="note">JavaScript is required to play.</p></noscript></section>
+<style>.rs-host{position:relative;width:100%;height:min(80vh,680px);min-height:400px;border:1px solid #c3081f66;border-radius:10px;overflow:hidden;background:#07060a;box-shadow:0 0 60px -18px #c3081f}.ph-bar{display:flex;justify-content:flex-end;gap:8px;margin-top:8px;flex-wrap:wrap}</style><section class="rs"><div class="rs-host" id="rsHost"></div><noscript><p class="note">JavaScript is required to play.</p></noscript></section>
 <article class="prose"><h2>${esc(R.storyH)}</h2>${R.storyFull.map(x => `<p>${esc(x)}</p>`).join('')}
 <h2>${esc(R.howH)}</h2><ol>${li(R.how)}</ol>
 <h2>${esc(R.duelH)}</h2><p>${esc(R.duelList[0])}</p><ul>${li(R.duelList.slice(1, 5))}</ul><p>${esc(R.duelList[5])}</p>
@@ -602,7 +602,7 @@ ${G.sections.map((sec, i) => `<h2 id="s${i + 1}">${esc(sec.h)}</h2><ol>${sec.ste
         publisher: { '@type': 'Organization', name: cfg.siteName, url: `${base}/` } },
         { '@context': 'https://schema.org', '@type': 'FAQPage', mainEntity: R.faq.map(([q, a]) => ({ '@type': 'Question', name: q, acceptedAnswer: { '@type': 'Answer', text: a } })) }],
       body: `<section><h1>${esc(R.h1)}</h1><p class="lead">${esc(R.intro)}</p></section>
-<section class="ttp"><div class="tt-host" id="ttHost"></div><div class="ph-bar"><button class="btn ghost" type="button" onclick="var h=document.getElementById('ttHost');(h.requestFullscreen||h.webkitRequestFullscreen).call(h)">⛶ ${{ tr: 'Tam ekran', en: 'Fullscreen', es: 'Pantalla completa', pt: 'Tela cheia', id: 'Layar penuh' }[lang]}</button></div><noscript><p class="note">JavaScript is required to play.</p></noscript></section>
+<style>.tt-host{position:relative;width:100%;height:min(80vh,680px);min-height:440px;border:1px solid #ffc93c66;border-radius:12px;overflow:hidden;background:#bfe0f0;box-shadow:0 0 60px -22px #ffc93c}html.lvpre{overflow:hidden}.lvpre .tt-host{position:fixed;inset:0;z-index:2147483000;width:auto;height:auto;min-height:0;margin:0;border:0;border-radius:0;box-shadow:none;background:#0e1628}.ph-bar{display:flex;justify-content:flex-end;gap:8px;margin-top:8px;flex-wrap:wrap}</style><script>if(/[?&]live=1/.test(location.search))document.documentElement.classList.add('lvpre')</script><section class="ttp"><div class="tt-host" id="ttHost"></div><div class="ph-bar"><button class="btn ghost" type="button" onclick="var h=document.getElementById('ttHost');(h.requestFullscreen||h.webkitRequestFullscreen).call(h)">⛶ ${{ tr: 'Tam ekran', en: 'Fullscreen', es: 'Pantalla completa', pt: 'Tela cheia', id: 'Layar penuh' }[lang]}</button></div><noscript><p class="note">JavaScript is required to play.</p></noscript></section>
 <article class="prose"><h2>${esc(R.storyH)}</h2>${R.story.map(x => `<p>${esc(x)}</p>`).join('')}
 <h2>${esc(R.howH)}</h2><ol>${li(R.how)}</ol>
 <h2>${esc(R.kidsH)}</h2><ul>${R.kids.map(([n, d]) => `<li><b>${esc(n)}</b>: ${esc(d)}</li>`).join('')}</ul>
@@ -614,7 +614,7 @@ ${G.sections.map((sec, i) => `<h2 id="s${i + 1}">${esc(sec.h)}</h2><ol>${sec.ste
 <h2>${esc(R.aboutH)}</h2><p>${esc(R.about)}</p></article>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@600;700;800&display=swap">
 <style>
-.tt-host{position:relative;width:100%;height:min(80vh,680px);min-height:440px;border:1px solid #ffc93c66;border-radius:12px;overflow:hidden;background:#bfe0f0;box-shadow:0 0 60px -22px #ffc93c}
+.tt-host{position:relative;width:100%;height:min(80vh,680px);min-height:440px;border:1px solid #ffc93c66;border-radius:12px;overflow:hidden;background:#bfe0f0;box-shadow:0 0 60px -22px #ffc93c}html.lvpre{overflow:hidden}.lvpre .tt-host{position:fixed;inset:0;z-index:2147483000;width:auto;height:auto;min-height:0;margin:0;border:0;border-radius:0;box-shadow:none;background:#0e1628}
 .tt-host:fullscreen{height:100%;border:0;border-radius:0}
 .ph-bar{display:flex;justify-content:flex-end;margin-top:8px}
 </style>
@@ -634,7 +634,7 @@ ${G.sections.map((sec, i) => `<h2 id="s${i + 1}">${esc(sec.h)}</h2><ol>${sec.ste
         publisher: { '@type': 'Organization', name: cfg.siteName, url: `${base}/` } },
         { '@context': 'https://schema.org', '@type': 'FAQPage', mainEntity: R.faq.map(([q, a]) => ({ '@type': 'Question', name: q, acceptedAnswer: { '@type': 'Answer', text: a } })) }],
       body: `<section><h1>${esc(R.h1)}</h1><p class="lead">${esc(R.intro)}</p></section>
-<section class="ttp"><div class="rr-host" id="rrHost"></div><div class="ph-bar"><a class="btn ghost" href="?live=1" rel="nofollow">🔴 ${esc(R.liveC)}</a><button class="btn ghost" type="button" onclick="var h=document.getElementById('rrHost');(h.requestFullscreen||h.webkitRequestFullscreen).call(h)">⛶ ${{ tr: 'Tam ekran', en: 'Fullscreen', es: 'Pantalla completa', pt: 'Tela cheia', id: 'Layar penuh' }[lang]}</button></div><noscript><p class="note">JavaScript is required to play.</p></noscript></section>
+<style>.rr-host{position:relative;width:100%;height:min(80vh,680px);min-height:440px;border:1px solid #e94f3766;border-radius:12px;overflow:hidden;background:#bfe0f0;box-shadow:0 0 60px -22px #e94f37}html.lvpre{overflow:hidden}.lvpre .rr-host{position:fixed;inset:0;z-index:2147483000;width:auto;height:auto;min-height:0;margin:0;border:0;border-radius:0;box-shadow:none;background:#0e1628}.ph-bar{display:flex;justify-content:flex-end;gap:8px;margin-top:8px;flex-wrap:wrap}</style><script>if(/[?&]live=1/.test(location.search))document.documentElement.classList.add('lvpre')</script><section class="ttp"><div class="rr-host" id="rrHost"></div><div class="ph-bar"><a class="btn ghost" href="?live=1" rel="nofollow">🔴 ${esc(R.liveC)}</a><button class="btn ghost" type="button" onclick="var h=document.getElementById('rrHost');(h.requestFullscreen||h.webkitRequestFullscreen).call(h)">⛶ ${{ tr: 'Tam ekran', en: 'Fullscreen', es: 'Pantalla completa', pt: 'Tela cheia', id: 'Layar penuh' }[lang]}</button></div><noscript><p class="note">JavaScript is required to play.</p></noscript></section>
 <article class="prose"><h2>${esc(R.howH)}</h2><ol>${li(R.how)}</ol>
 <h2 id="live">${esc(R.liveH)}</h2><p>${esc(R.liveP)}</p><ul>${li(R.liveL)}</ul><p>${esc(R.liveN)}</p><p><a class="btn" href="?live=1" rel="nofollow">${esc(R.liveC)}</a></p>
 <h2>${esc(R.ctrlH)}</h2><ul>${li(R.ctrl)}</ul>
@@ -643,7 +643,7 @@ ${G.sections.map((sec, i) => `<h2 id="s${i + 1}">${esc(sec.h)}</h2><ol>${sec.ste
 <h2>${esc(R.aboutH)}</h2><p>${esc(R.about)}</p></article>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@600;700;800&display=swap">
 <style>
-.rr-host{position:relative;width:100%;height:min(80vh,680px);min-height:440px;border:1px solid #e94f3766;border-radius:12px;overflow:hidden;background:#bfe0f0;box-shadow:0 0 60px -22px #e94f37}
+.rr-host{position:relative;width:100%;height:min(80vh,680px);min-height:440px;border:1px solid #e94f3766;border-radius:12px;overflow:hidden;background:#bfe0f0;box-shadow:0 0 60px -22px #e94f37}html.lvpre{overflow:hidden}.lvpre .rr-host{position:fixed;inset:0;z-index:2147483000;width:auto;height:auto;min-height:0;margin:0;border:0;border-radius:0;box-shadow:none;background:#0e1628}
 .rr-host:fullscreen{height:100%;border:0;border-radius:0}
 .ph-bar{display:flex;justify-content:flex-end;gap:8px;margin-top:8px;flex-wrap:wrap}
 </style>
@@ -663,7 +663,7 @@ ${G.sections.map((sec, i) => `<h2 id="s${i + 1}">${esc(sec.h)}</h2><ol>${sec.ste
         publisher: { '@type': 'Organization', name: cfg.siteName, url: `${base}/` } },
         { '@context': 'https://schema.org', '@type': 'FAQPage', mainEntity: R.faq.map(([q, a]) => ({ '@type': 'Question', name: q, acceptedAnswer: { '@type': 'Answer', text: a } })) }],
       body: `<section><h1>${esc(R.h1)}</h1><p class="lead">${esc(R.intro)}</p></section>
-<section class="ttp"><div class="cf-host" id="cfHost"></div><div class="ph-bar"><a class="btn ghost" href="?live=1" rel="nofollow">🔴 ${esc(R.liveC)}</a><button class="btn ghost" type="button" onclick="var h=document.getElementById('cfHost');(h.requestFullscreen||h.webkitRequestFullscreen).call(h)">⛶ ${{ tr: 'Tam ekran', en: 'Fullscreen', es: 'Pantalla completa', pt: 'Tela cheia', id: 'Layar penuh' }[lang]}</button></div><noscript><p class="note">JavaScript is required to play.</p></noscript></section>
+<style>.cf-host{position:relative;width:100%;height:min(80vh,680px);min-height:440px;border:1px solid #9fe87066;border-radius:12px;overflow:hidden;background:#070c1c;box-shadow:0 0 60px -22px #9fe870}html.lvpre{overflow:hidden}.lvpre .cf-host{position:fixed;inset:0;z-index:2147483000;width:auto;height:auto;min-height:0;margin:0;border:0;border-radius:0;box-shadow:none;background:#070c1c}.ph-bar{display:flex;justify-content:flex-end;gap:8px;margin-top:8px;flex-wrap:wrap}</style><script>if(/[?&]live=1/.test(location.search))document.documentElement.classList.add('lvpre')</script><section class="ttp"><div class="cf-host" id="cfHost"></div><div class="ph-bar"><a class="btn ghost" href="?live=1" rel="nofollow">🔴 ${esc(R.liveC)}</a><button class="btn ghost" type="button" onclick="var h=document.getElementById('cfHost');(h.requestFullscreen||h.webkitRequestFullscreen).call(h)">⛶ ${{ tr: 'Tam ekran', en: 'Fullscreen', es: 'Pantalla completa', pt: 'Tela cheia', id: 'Layar penuh' }[lang]}</button></div><noscript><p class="note">JavaScript is required to play.</p></noscript></section>
 <article class="prose"><h2>${esc(R.howH)}</h2><ol>${li(R.how)}</ol>
 <h2 id="live">${esc(R.liveH)}</h2><p>${esc(R.liveP)}</p><ul>${li(R.liveL)}</ul><p>${esc(R.liveN)}</p><p><a class="btn" href="?live=1" rel="nofollow">${esc(R.liveC)}</a></p>
 <h2>${esc(R.ctrlH)}</h2><ul>${li(R.ctrl)}</ul>
@@ -672,7 +672,7 @@ ${G.sections.map((sec, i) => `<h2 id="s${i + 1}">${esc(sec.h)}</h2><ol>${sec.ste
 <h2>${esc(R.aboutH)}</h2><p>${esc(R.about)}</p></article>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@700;800&display=swap">
 <style>
-.cf-host{position:relative;width:100%;height:min(80vh,680px);min-height:440px;border:1px solid #9fe87066;border-radius:12px;overflow:hidden;background:#070c1c;box-shadow:0 0 60px -22px #9fe870}
+.cf-host{position:relative;width:100%;height:min(80vh,680px);min-height:440px;border:1px solid #9fe87066;border-radius:12px;overflow:hidden;background:#070c1c;box-shadow:0 0 60px -22px #9fe870}html.lvpre{overflow:hidden}.lvpre .cf-host{position:fixed;inset:0;z-index:2147483000;width:auto;height:auto;min-height:0;margin:0;border:0;border-radius:0;box-shadow:none;background:#070c1c}
 .cf-host:fullscreen{height:100%;border:0;border-radius:0}
 .ph-bar{display:flex;justify-content:flex-end;gap:8px;margin-top:8px;flex-wrap:wrap}
 </style>
@@ -692,7 +692,7 @@ ${G.sections.map((sec, i) => `<h2 id="s${i + 1}">${esc(sec.h)}</h2><ol>${sec.ste
         publisher: { '@type': 'Organization', name: cfg.siteName, url: `${base}/` } },
         { '@context': 'https://schema.org', '@type': 'FAQPage', mainEntity: R.faq.map(([q, a]) => ({ '@type': 'Question', name: q, acceptedAnswer: { '@type': 'Answer', text: a } })) }],
       body: `<section><h1>${esc(R.h1)}</h1><p class="lead">${esc(R.intro)}</p></section>
-<section class="ttp"><div class="cr-host" id="crHost"></div><div class="ph-bar"><a class="btn ghost" href="?live=1" rel="nofollow">🔴 ${esc(R.liveC)}</a><button class="btn ghost" type="button" onclick="var h=document.getElementById('crHost');(h.requestFullscreen||h.webkitRequestFullscreen).call(h)">⛶ ${{ tr: 'Tam ekran', en: 'Fullscreen', es: 'Pantalla completa', pt: 'Tela cheia', id: 'Layar penuh' }[lang]}</button></div><noscript><p class="note">JavaScript is required to play.</p></noscript></section>
+<style>.cr-host{position:relative;width:100%;height:min(80vh,680px);min-height:440px;border:1px solid #e9b44c66;border-radius:12px;overflow:hidden;background:#14110d;box-shadow:0 0 60px -22px #e9b44c}html.lvpre{overflow:hidden}.lvpre .cr-host{position:fixed;inset:0;z-index:2147483000;width:auto;height:auto;min-height:0;margin:0;border:0;border-radius:0;box-shadow:none;background:#14110d}.ph-bar{display:flex;justify-content:flex-end;gap:8px;margin-top:8px;flex-wrap:wrap}</style><script>if(/[?&]live=1/.test(location.search))document.documentElement.classList.add('lvpre')</script><section class="ttp"><div class="cr-host" id="crHost"></div><div class="ph-bar"><a class="btn ghost" href="?live=1" rel="nofollow">🔴 ${esc(R.liveC)}</a><button class="btn ghost" type="button" onclick="var h=document.getElementById('crHost');(h.requestFullscreen||h.webkitRequestFullscreen).call(h)">⛶ ${{ tr: 'Tam ekran', en: 'Fullscreen', es: 'Pantalla completa', pt: 'Tela cheia', id: 'Layar penuh' }[lang]}</button></div><noscript><p class="note">JavaScript is required to play.</p></noscript></section>
 <article class="prose"><h2>${esc(R.howH)}</h2><ol>${li(R.how)}</ol>
 <h2 id="live">${esc(R.liveH)}</h2><p>${esc(R.liveP)}</p><ul>${li(R.liveL)}</ul><p>${esc(R.liveN)}</p><p><a class="btn" href="?live=1" rel="nofollow">${esc(R.liveC)}</a></p>
 <h2>${esc(R.ctrlH)}</h2><ul>${li(R.ctrl)}</ul>
@@ -701,7 +701,7 @@ ${G.sections.map((sec, i) => `<h2 id="s${i + 1}">${esc(sec.h)}</h2><ol>${sec.ste
 <h2>${esc(R.aboutH)}</h2><p>${esc(R.about)}</p></article>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lora:wght@400;600&display=swap">
 <style>
-.cr-host{position:relative;width:100%;height:min(80vh,680px);min-height:440px;border:1px solid #e9b44c66;border-radius:12px;overflow:hidden;background:#14110d;box-shadow:0 0 60px -22px #e9b44c}
+.cr-host{position:relative;width:100%;height:min(80vh,680px);min-height:440px;border:1px solid #e9b44c66;border-radius:12px;overflow:hidden;background:#14110d;box-shadow:0 0 60px -22px #e9b44c}html.lvpre{overflow:hidden}.lvpre .cr-host{position:fixed;inset:0;z-index:2147483000;width:auto;height:auto;min-height:0;margin:0;border:0;border-radius:0;box-shadow:none;background:#14110d}
 .cr-host:fullscreen{height:100%;border:0;border-radius:0}
 .ph-bar{display:flex;justify-content:flex-end;gap:8px;margin-top:8px;flex-wrap:wrap}
 </style>

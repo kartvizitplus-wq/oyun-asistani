@@ -86,7 +86,7 @@ function mount(host, opts) {
 .cr-top .pg i u{display:block;height:100%;background:#e9b44c;text-decoration:none}
 .cr-page{position:relative;flex:1;min-height:0;border-radius:.5em;padding:1.2em 1.3em;background:#f4ecdc;box-shadow:0 .6em 1.8em rgba(0,0,0,.45),inset 0 0 3em rgba(160,120,60,.22);overflow:hidden}
 .cr-page:before{content:'';position:absolute;left:0;top:0;bottom:0;width:1.1em;background:linear-gradient(90deg,rgba(90,60,20,.18),rgba(90,60,20,0))}
-.cr-txt{position:relative;height:100%;font-family:'Lora',Georgia,'Times New Roman',serif;line-height:1.55;text-align:left;hyphens:none;overflow-wrap:break-word}
+.cr-txt{position:relative;height:100%;visibility:hidden;font-family:'Lora',Georgia,'Times New Roman',serif;line-height:1.55;text-align:left;hyphens:none;overflow-wrap:break-word}
 .cr-txt .ind{display:inline-block;width:1.4em}
 .cr-txt .w{color:rgba(42,33,24,.2);transition:color .35s,background .35s;border-radius:.15em}
 .cr-txt .w.r{color:#231a12}
@@ -902,7 +902,8 @@ ${KINDS.map(k => `<div class="lv-src" data-row="${k}" style="flex-wrap:wrap"><sp
  }
  if (live) startLive(); else { normalUI(); if (!loadStored()) loadDemo(); menu(); }
  resize();
- if (document.fonts && document.fonts.ready) document.fonts.ready.then(fit);
+ const show = () => { fit(); txt.style.visibility = 'visible'; };
+ if (document.fonts && document.fonts.ready) document.fonts.ready.then(show); setTimeout(show, 1500);
  if (!manual) requestAnimationFrame(frame);
  return { st, ingest: ev => ingest(ev), simEvent, loadBook, loadDemo, openSection, book: () => BOOK, LS: () => LS, adv: (ms, n) => { for (let i = 0; i < (n || 1); i++) step(ms / 1000); }, fit, resize, banner };
 }
