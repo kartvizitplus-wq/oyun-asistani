@@ -166,3 +166,6 @@ Technical SEO, AI visibility, usability and ad-readiness checks. Content (patch 
 
 ## 2026-11-25 (owner request): layout-shift (CLS) fix on game pages
 Cloudflare Web Analytics showed poor CLS on Rope Rumble (#rrHost). Cause: each game's sizing CSS sat in a <style> at the end of <body>, so the game box first rendered with no height and then jumped; in LIVE mode the box also moved to full screen after load. Fix: a small copy of the host CSS is now inlined right before each game box (Istanbul Heat, Red Scarf, Teacher Tycoon, Rope Rumble, Chat FC, Chat Reads), and LIVE pages (`?live=1`) get an `lvpre` class before the box renders so it is full-screen from the first paint. Chat Reads keeps the page text hidden until its font size is fitted. Measured CLS in headless Chrome: 0.24–0.57 → under 0.01 on all game pages. No titles, URLs, links or visible content changed.
+
+## 2026-11-25 (owner request): Chat Reads – ranking and badges
+LIVE: the bottom bar shows this stream's top 3 (resets each stream so newcomers can win), a 👑 notice when the lead changes, and badges for the book total (📖 Reader 10, 🐛 Bookworm 50, 🏛️ Librarian 100) next to names and on word chips. Panel option to hide ranking/badges/notices. Page texts (5 languages) updated. No titles, URLs or links changed.
