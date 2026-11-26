@@ -502,7 +502,7 @@ ${pz && tab !== 'champ' ? `<div class="pz">${esc(fmt(LVR.przLine, { p: pz }))}</
   const W = host.clientWidth, H = host.clientHeight; if (!W || !H) return;
   const u = live ? Math.min(W / 540, H / 960) : clamp(Math.min(W / 640, H / 560), .72, 1.25);
   host.style.fontSize = (16 * u).toFixed(2) + 'px';
-  if (live) { const on = !!(CFG.lg && lv && lv.lg), fs = 16 * u, w = Math.max(10.8 * fs, .24 * W); host.style.paddingRight = on ? (w + 1.3 * fs).toFixed(1) + 'px' : ''; if (on) lv.lg.style.width = w.toFixed(1) + 'px'; }
+  if (live) { const on = !!(CFG.lg && lv && lv.lg), fs = 16 * u, w = Math.max(11.4 * fs, .24 * W); host.style.paddingRight = on ? (w + 1.3 * fs).toFixed(1) + 'px' : ''; if (on) lv.lg.style.width = w.toFixed(1) + 'px'; }
   fit();
  }
  new ResizeObserver(resize).observe(host);
@@ -665,7 +665,7 @@ ${pz && tab !== 'champ' ? `<div class="pz">${esc(fmt(LVR.przLine, { p: pz }))}</
 .cr-leg .bx{margin-top:.35em;padding:.3em .5em;border-radius:.4em;background:rgba(233,180,76,.18);color:#f5d28a;font-weight:800}
 .cr-leg .n{margin-top:.25em;color:#b9a682;font-weight:600;font-size:.92em;text-align:center}
 .cr.lgon .cr-nx b{font-size:1.6em}.cr.lgon .cr-nx small{width:4.6em}
-.cr-lg{position:absolute;top:.8em;right:.8em;bottom:.8em;z-index:2;display:flex;flex-direction:column;gap:.35em;padding:.55em .5em;border-radius:.6em;background:rgba(10,8,6,.8);box-shadow:0 0 0 .1em rgba(233,180,76,.35);color:#f5ead6;font:700 .7em/1.25 system-ui,sans-serif;overflow:hidden}
+.cr-lg{position:absolute;top:.8em;right:.8em;bottom:.8em;z-index:2;display:flex;flex-direction:column;gap:.35em;padding:.55em .5em;border-radius:.6em;background:rgba(10,8,6,.8);box-shadow:0 0 0 .1em rgba(233,180,76,.35);color:#f5ead6;font:700 .78em/1.25 system-ui,sans-serif;overflow:hidden}
 .cr-lg .hd{flex:none;text-align:center}
 .cr-lg .nm{font:600 1.5em/1.1 'Lora',Georgia,serif;color:#f5ead6;overflow:hidden;text-overflow:ellipsis;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical}
 .cr-lg .sp{display:flex;align-items:center;justify-content:center;gap:.35em;margin-top:.25em;color:#cbb894;font-size:.86em;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
@@ -675,7 +675,7 @@ ${pz && tab !== 'champ' ? `<div class="pz">${esc(fmt(LVR.przLine, { p: pz }))}</
 .cr-lg .pr u{text-decoration:none;padding:.15em .45em;border-radius:99em;background:#ff3b5c;color:#fff;font-size:.72em;letter-spacing:.08em}
 .cr-lg .pz{margin-top:.3em;padding:.25em .4em;border-radius:.4em;background:rgba(233,180,76,.16);color:#f5d28a;font-size:.86em}
 .cr-lg ol{flex:1;min-height:0;margin:0;padding:0;list-style:none;display:flex;flex-direction:column;gap:.12em}
-.cr-lg ol.n30{font-size:.86em}.cr-lg ol.n20{font-size:1em}.cr-lg ol.n10{font-size:1.2em}
+.cr-lg ol.n30{font-size:.92em}.cr-lg ol.n20{font-size:1.15em}.cr-lg ol.n10{font-size:1.7em}
 .cr-lg li{flex:1 1 0;max-height:2.4em;min-height:0;display:flex;align-items:center;gap:.35em;padding:0 .4em;border-radius:.35em;background:rgba(255,255,255,.05);transition:background .4s}
 .cr-lg li:nth-child(even){background:rgba(255,255,255,.09)}
 .cr-lg li.t1{background:rgba(233,180,76,.34)}.cr-lg li.t2{background:rgba(233,180,76,.24)}.cr-lg li.t3{background:rgba(233,180,76,.16)}
@@ -1240,7 +1240,7 @@ ${KINDS.map(k => `<div class="lv-src" data-row="${k}" style="flex-wrap:wrap"><sp
  const show = () => { fit(); txt.style.visibility = 'visible'; };
  if (document.fonts && document.fonts.ready) document.fonts.ready.then(show); setTimeout(show, 1500);
  if (!manual) requestAnimationFrame(frame);
- return { st, ingest: ev => ingest(ev), simEvent, loadBook, loadDemo, openSection, book: () => BOOK, LS: () => LS, lg: () => ({ LGD, LGC, period: lgPeriod() }), lgRender: renderLg, lgPng, lgShareUrl, lgOpen, src: () => SRC, adv: (ms, n) => { for (let i = 0; i < (n || 1); i++) step(ms / 1000); }, fit, resize, banner };
+ return { st, ingest: ev => ingest(ev), simEvent, loadBook, loadDemo, openSection, book: () => BOOK, LS: () => LS, lg: () => ({ LGD, LGC, period: lgPeriod() }), lgRender: renderLg, lgPng, lgShareUrl, lgOpen, lgShow: n => { lgRot = n; lgRotT = 10; renderLg(); }, src: () => SRC, adv: (ms, n) => { for (let i = 0; i < (n || 1); i++) step(ms / 1000); }, fit, resize, banner };
 }
 
 global.ChatReads = { mount };
