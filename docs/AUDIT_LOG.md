@@ -169,3 +169,6 @@ Cloudflare Web Analytics showed poor CLS on Rope Rumble (#rrHost). Cause: each g
 
 ## 2026-11-25 (owner request): Chat Reads – ranking and badges
 LIVE: the bottom bar shows this stream's top 3 (resets each stream so newcomers can win), a 👑 notice when the lead changes, and badges for the book total (📖 Reader 10, 🐛 Bookworm 50, 🏛️ Librarian 100) next to names and on word chips. Panel option to hide ranking/badges/notices. Page texts (5 languages) updated. No titles, URLs or links changed.
+
+## 2026-11-26 (owner request): Chat Reads – hidden boxes
+LIVE: the streamer can hide 1–3 boxes per page (default 1, can be turned off). The viewer whose comment opens a box word gets a pop-up with the next prize from the streamer's list (default prizes are non-monetary, e.g. reading their comment aloud). Gifts and the stuck-word skip never open box words; finders get a 🗝️ next to their name in the ranking. Panel note: prizes must not be money, gifts or coins. Page text (5 languages) gained one line. No titles, URLs or links changed.
