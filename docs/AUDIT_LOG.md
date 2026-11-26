@@ -172,3 +172,13 @@ LIVE: the bottom bar shows this stream's top 3 (resets each stream so newcomers 
 
 ## 2026-11-26 (owner request): Chat Reads – hidden boxes
 LIVE: the streamer can hide 1–3 boxes per page (default 1, can be turned off). The viewer whose comment opens a box word gets a pop-up with the next prize from the streamer's list (default prizes are non-monetary, e.g. reading their comment aloud). Gifts and the stuck-word skip never open box words; finders get a 🗝️ next to their name in the ranking. Panel note: prizes must not be money, gifts or coins. Page text (5 languages) gained one line. No titles, URLs or links changed.
+
+## 2026-11-26 · Chat Reads LIVE: league table (season)
+- Additive, game-only change (no titles, links or site structure touched). Off by default; the streamer turns it on in the creator panel.
+- Live league table on the right (top 10/20/30): this stream, week, month, year, season, plus last week/month/year champions; rotates every 10 s or a fixed period.
+- Points: 1 per word opened by a comment, +5 for a hidden box. Gifts give no points (first place cannot be bought).
+- Streamer can set a league name, sponsor name and https logo link, and their own prize text for #1 of the week/month/year.
+- Data stays in the browser where the game runs (localStorage `cr.league`, days rolled into months after 62 days); saved only with a real stream connection, never in simulation/demo. Backup download/load, new season, table as PNG (1080×1350).
+- Panel and "Open stream window" share one table (the stream window records, the panel follows via storage events).
+- Fix (all LIVE games): OBS links whose base64 settings contained "+" lost their settings; the parser now restores "+".
+- Page text: one LIVE bullet and one FAQ entry in 5 languages on the Chat Reads page.

@@ -72,7 +72,7 @@ function mount(host, opts) {
  const esc = s => String(s).replace(/[&<>"]/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[c]));
  const DEF_CFG = { mode: 'league', lg: '', size: 6, nH: '', kH: '', cH: '#e94f37', opp: '', sponsor: '', matchSec: 90, duelSec: 3, breakSec: 15, starC: 99, fkC: 299, block: '' };
  let CFG = Object.assign({}, DEF_CFG, live ? store.get('livecfg', {}) : {});
- try { const c = QS.get('cfg'); if (c && live) CFG = Object.assign({}, DEF_CFG, JSON.parse(decodeURIComponent(escape(atob(c))))); } catch (e) { }
+ try { const c = QS.get('cfg'); if (c && live) CFG = Object.assign({}, DEF_CFG, JSON.parse(decodeURIComponent(escape(atob(c.replace(/ /g, '+')))))); } catch (e) { }
  const hexOk = h => /^#[0-9a-f]{6}$/i.test(String(h || ''));
  const rgb = h => [1, 3, 5].map(i => parseInt(h.substr(i, 2), 16));
  const shade = (h, f) => '#' + rgb(h).map(v => Math.round(clamp(v * f, 0, 255)).toString(16).padStart(2, '0')).join('');

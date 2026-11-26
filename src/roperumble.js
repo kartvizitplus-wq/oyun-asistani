@@ -57,7 +57,7 @@ function mount(host, opts) {
  const esc = s => String(s).replace(/[&<>"]/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[c]));
  const DEF_CFG = { cpp: 20, matchSec: 180, regSec: 30, block: '', nR: '', nB: '', cR: COL.r, cB: COL.b, kR: '', kB: '' };
  let CFG = Object.assign({}, DEF_CFG, live ? store.get('livecfg', {}) : {});
- try { const c = QS.get('cfg'); if (c && live) CFG = Object.assign({}, DEF_CFG, JSON.parse(decodeURIComponent(escape(atob(c))))); } catch (e) { }
+ try { const c = QS.get('cfg'); if (c && live) CFG = Object.assign({}, DEF_CFG, JSON.parse(decodeURIComponent(escape(atob(c.replace(/ /g, '+')))))); } catch (e) { }
  // team names and colours: the streamer can rename the teams (any two names) and pick their colours
  const tname = t => String((t === 'r' ? CFG.nR : CFG.nB) || '').replace(/[<>]/g, '').trim().slice(0, 16);
  const TN = t => { const n = live ? tname(t) : ''; return n ? n.toLocaleUpperCase(lang) : t === 'r' ? L.red : L.blue; };

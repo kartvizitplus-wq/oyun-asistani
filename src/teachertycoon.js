@@ -1543,7 +1543,7 @@ function mount(host, opts) {
  const ROLES = ['teacher', 'vp', 'principal', 'inspector', 'minister'];
  const DEF_CFG = { teacher: 1, vp: 99, principal: 299, inspector: 999, minister: 4999, likeGoal: 1000, block: '' };
  let CFG = Object.assign({}, DEF_CFG, store.get('livecfg', {}));
- try { const c = QS.get('cfg'); if (c) CFG = Object.assign({}, DEF_CFG, JSON.parse(decodeURIComponent(escape(atob(c))))); } catch (e) { }
+ try { const c = QS.get('cfg'); if (c) CFG = Object.assign({}, DEF_CFG, JSON.parse(decodeURIComponent(escape(atob(c.replace(/ /g, '+')))))); } catch (e) { }
  const SAVED = clean ? {} : store.get('livesrc2', store.get('livesrc', '') === 'tikfinity' ? { kind: 'tikfinity' } : {});
  const SRC = { kind: 'sim', on: false, ws: null, st: 'off', msg: '', retry: 0, t: null, n: 0, gen: 0,
   opt: { port: Math.round(+QS.get('port')) || 21213, ch: QS.get('ch') || SAVED.ch || '', yk: QS.get('yk') || SAVED.yk || '', yv: QS.get('yv') || SAVED.yv || '', ss: QS.get('ss') || SAVED.ss || '' } };
