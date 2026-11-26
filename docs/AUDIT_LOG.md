@@ -182,3 +182,8 @@ LIVE: the streamer can hide 1–3 boxes per page (default 1, can be turned off).
 - Panel and "Open stream window" share one table (the stream window records, the panel follows via storage events).
 - Fix (all LIVE games): OBS links whose base64 settings contained "+" lost their settings; the parser now restores "+".
 - Page text: one LIVE bullet and one FAQ entry in 5 languages on the Chat Reads page.
+
+## 2026-11-26 · Chat Reads: shareable league link
+- New panel button "Copy league link": the table (top 30 for week/month/year/season, champions, league name, sponsor name, prize texts) is compressed into the link hash: `/<lang>/chat-reads/#lig=…`.
+- Opening the link shows the table inside the existing Chat Reads game box with tabs, "Read it yourself" and "Start your own league" buttons. No new URL, no server storage, hash is not indexed (no SEO impact).
+- Shared names and texts pass the same word filter as the stream; logos are not shown in shared links; a note says the streamer shared it and PickRadar does not verify results.
